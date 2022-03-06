@@ -1,2122 +1,6 @@
 let empresas = prompt("Seleccione una empresa");
 let meses = prompt("Seleccione la fecha");
 
-// Seleccione una empresa
-
-const aapl = [
-    {mes: "Dic/2018", revenue: 84373},
-    {mes: "Mar/2019", revenue: 57918},
-    {mes: "Jun/2019", revenue: 53741},
-    {mes: "Sep/2019", revenue: 63936},
-    {mes: "Dic/2019", revenue: 91722},
-    {mes: "Mar/2020", revenue: 58347},
-    {mes: "Jun/2020", revenue: 59415},
-    {mes: "Sep/2020", revenue: 64666},
-    {mes: "Dic/2020", revenue: 111543},
-    {mes: "Mar/2021", revenue: 89898},
-    {mes: "Jun/2021", revenue: 81494},
-    {mes: "Sep/2021", revenue: 83360},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const abev = [
-    {mes: "Dic/2018", revenue: 4207},
-    {mes: "Mar/2019", revenue: 3355},
-    {mes: "Jun/2019", revenue: 3098},
-    {mes: "Sep/2019", revenue: 3013},
-    {mes: "Dic/2019", revenue: 3852},
-    {mes: "Mar/2020", revenue: 2823},
-    {mes: "Jun/2020", revenue: 2158},
-    {mes: "Sep/2020", revenue: 2902},
-    {mes: "Dic/2020", revenue: 3437},
-    {mes: "Mar/2021", revenue: 3037},
-    {mes: "Jun/2021", revenue: 2970},
-    {mes: "Sep/2021", revenue: 3536},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const abt = [
-    {mes: "Dic/2018", revenue: 7765},
-    {mes: "Mar/2019", revenue: 7535},
-    {mes: "Jun/2019", revenue: 7979},
-    {mes: "Sep/2019", revenue: 8076},
-    {mes: "Dic/2019", revenue: 8314},
-    {mes: "Mar/2020", revenue: 7726},
-    {mes: "Jun/2020", revenue: 7328},
-    {mes: "Sep/2020", revenue: 8853},
-    {mes: "Dic/2020", revenue: 10701},
-    {mes: "Mar/2021", revenue: 10456},
-    {mes: "Jun/2021", revenue: 10223},
-    {mes: "Sep/2021", revenue: 10928},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const adbe = [
-    {mes: "Dic/2018", revenue: 2434},
-    {mes: "Mar/2019", revenue: 2592},
-    {mes: "Jun/2019", revenue: 2735},
-    {mes: "Sep/2019", revenue: 2823},
-    {mes: "Dic/2019", revenue: 2980},
-    {mes: "Mar/2020", revenue: 3084},
-    {mes: "Jun/2020", revenue: 3123},
-    {mes: "Sep/2020", revenue: 3226},
-    {mes: "Dic/2020", revenue: 3432},
-    {mes: "Mar/2021", revenue: 3916},
-    {mes: "Jun/2021", revenue: 3846},
-    {mes: "Sep/2021", revenue: 3940},
-    {mes: "Dic/2021", revenue: 4110}
-];
-
-const agro = [
-    {mes: "Dic/2018", revenue: 246.909},
-    {mes: "Mar/2019", revenue: 79.815},
-    {mes: "Jun/2019", revenue: 218.786},
-    {mes: "Sep/2019", revenue: 254.312},
-    {mes: "Dic/2019", revenue: 262.525},
-    {mes: "Mar/2020", revenue: 156.130},
-    {mes: "Jun/2020", revenue: 161.853},
-    {mes: "Sep/2020", revenue: 260.532},
-    {mes: "Dic/2020", revenue: 243.049},
-    {mes: "Mar/2021", revenue: 108.592},
-    {mes: "Jun/2021", revenue: 289.769},
-    {mes: "Sep/2021", revenue: 309.016},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const aig = [
-    {mes: "Dic/2018", revenue: 12560},
-    {mes: "Mar/2019", revenue: 12456},
-    {mes: "Jun/2019", revenue: 12561},
-    {mes: "Sep/2019", revenue: 12914},
-    {mes: "Dic/2019", revenue: 11815},
-    {mes: "Mar/2020", revenue: 14443},
-    {mes: "Jun/2020", revenue: 9396},
-    {mes: "Sep/2020", revenue: 10221},
-    {mes: "Dic/2020", revenue: 9676},
-    {mes: "Mar/2021", revenue: 14454},
-    {mes: "Jun/2021", revenue: 10681},
-    {mes: "Sep/2021", revenue: 12835},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const amd = [
-    {mes: "Dic/2018", revenue: 1419},
-    {mes: "Mar/2019", revenue: 1272},
-    {mes: "Jun/2019", revenue: 1531},
-    {mes: "Sep/2019", revenue: 1801},
-    {mes: "Dic/2019", revenue: 2127},
-    {mes: "Mar/2020", revenue: 1786},
-    {mes: "Jun/2020", revenue: 1932},
-    {mes: "Sep/2020", revenue: 2801},
-    {mes: "Dic/2020", revenue: 3244},
-    {mes: "Mar/2021", revenue: 3445},
-    {mes: "Jun/2021", revenue: 3850},
-    {mes: "Sep/2021", revenue: 4313},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const amgn = [
-    {mes: "Dic/2018", revenue: 6200},
-    {mes: "Mar/2019", revenue: 5543},
-    {mes: "Jun/2019", revenue: 5849},
-    {mes: "Sep/2019", revenue: 5711},
-    {mes: "Dic/2019", revenue: 6158},
-    {mes: "Mar/2020", revenue: 6112},
-    {mes: "Jun/2020", revenue: 6138},
-    {mes: "Sep/2020", revenue: 6382},
-    {mes: "Dic/2020", revenue: 6614},
-    {mes: "Mar/2021", revenue: 5902},
-    {mes: "Jun/2021", revenue: 6544},
-    {mes: "Sep/2021", revenue: 6711},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const amx = [
-    {mes: "Dic/2018", revenue: 13230},
-    {mes: "Mar/2019", revenue: 12793},
-    {mes: "Jun/2019", revenue: 13080},
-    {mes: "Sep/2019", revenue: 12785},
-    {mes: "Dic/2019", revenue: 13670},
-    {mes: "Mar/2020", revenue: 12477},
-    {mes: "Jun/2020", revenue: 10792},
-    {mes: "Sep/2020", revenue: 11778},
-    {mes: "Dic/2020", revenue: 12407},
-    {mes: "Mar/2021", revenue: 12192},
-    {mes: "Jun/2021", revenue: 12621},
-    {mes: "Sep/2021", revenue: 12648},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const amzn = [
-    {mes: "Dic/2018", revenue: 72383},
-    {mes: "Mar/2019", revenue: 59700},
-    {mes: "Jun/2019", revenue: 63404},
-    {mes: "Sep/2019", revenue: 69981},
-    {mes: "Dic/2019", revenue: 87437},
-    {mes: "Mar/2020", revenue: 75452},
-    {mes: "Jun/2020", revenue: 88912},
-    {mes: "Sep/2020", revenue: 96145},
-    {mes: "Dic/2020", revenue: 125555},
-    {mes: "Mar/2021", revenue: 108518},
-    {mes: "Jun/2021", revenue: 113080},
-    {mes: "Sep/2021", revenue: 110812},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const arco = [
-    {mes: "Dic/2018", revenue: 753.342},
-    {mes: "Mar/2019", revenue: 730.999},
-    {mes: "Jun/2019", revenue: 723.744},
-    {mes: "Sep/2019", revenue: 749.969},
-    {mes: "Dic/2019", revenue: 754.366},
-    {mes: "Mar/2020", revenue: 617.504},
-    {mes: "Jun/2020", revenue: 292.524},
-    {mes: "Sep/2020", revenue: 466.799},
-    {mes: "Dic/2020", revenue: 607.392},
-    {mes: "Mar/2021", revenue: 561.116},
-    {mes: "Jun/2021", revenue: 592.696},
-    {mes: "Sep/2021", revenue: 725.836},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const auy = [
-    {mes: "Dic/2018", revenue: 467.415},
-    {mes: "Mar/2019", revenue: 405.097},
-    {mes: "Jun/2019", revenue: 474.558},
-    {mes: "Sep/2019", revenue: 356.883},
-    {mes: "Dic/2019", revenue: 390.688},
-    {mes: "Mar/2020", revenue: 336.887},
-    {mes: "Jun/2020", revenue: 308.621},
-    {mes: "Sep/2020", revenue: 438.34},
-    {mes: "Dic/2020", revenue: 472.335},
-    {mes: "Mar/2021", revenue: 425.152},
-    {mes: "Jun/2021", revenue: 433.689},
-    {mes: "Sep/2021", revenue: 449.121},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const axp = [
-    {mes: "Dic/2018", revenue: 11308},
-    {mes: "Mar/2019", revenue: 11259},
-    {mes: "Jun/2019", revenue: 11729},
-    {mes: "Sep/2019", revenue: 11866},
-    {mes: "Dic/2019", revenue: 12166},
-    {mes: "Mar/2020", revenue: 11026},
-    {mes: "Jun/2020", revenue: 8217},
-    {mes: "Sep/2020", revenue: 9201},
-    {mes: "Dic/2020", revenue: 9741},
-    {mes: "Mar/2021", revenue: 9426},
-    {mes: "Jun/2021", revenue: 10565},
-    {mes: "Sep/2021", revenue: 11235},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const azn = [
-    {mes: "Dic/2018", revenue: 7189},
-    {mes: "Mar/2019", revenue: 6070},
-    {mes: "Jun/2019", revenue: 5794},
-    {mes: "Sep/2019", revenue: 6607},
-    {mes: "Dic/2019", revenue: 7154},
-    {mes: "Mar/2020", revenue: 6708},
-    {mes: "Jun/2020", revenue: 6341},
-    {mes: "Sep/2020", revenue: 6870},
-    {mes: "Dic/2020", revenue: 7987},
-    {mes: "Mar/2021", revenue: 8434},
-    {mes: "Jun/2021", revenue: 8204},
-    {mes: "Sep/2021", revenue: 9866},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const ba = [
-    {mes: "Dic/2018", revenue: 28341},
-    {mes: "Mar/2019", revenue: 22912},
-    {mes: "Jun/2019", revenue: 15750},
-    {mes: "Sep/2019", revenue: 19986},
-    {mes: "Dic/2019", revenue: 17911},
-    {mes: "Mar/2020", revenue: 16909},
-    {mes: "Jun/2020", revenue: 11807},
-    {mes: "Sep/2020", revenue: 14140},
-    {mes: "Dic/2020", revenue: 15305},
-    {mes: "Mar/2021", revenue: 15217},
-    {mes: "Jun/2021", revenue: 16998},
-    {mes: "Sep/2021", revenue: 15278},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const baba = [
-    {mes: "Dic/2018", revenue: 16954},
-    {mes: "Mar/2019", revenue: 13860},
-    {mes: "Jun/2019", revenue: 16840},
-    {mes: "Sep/2019", revenue: 16964},
-    {mes: "Dic/2019", revenue: 22917},
-    {mes: "Mar/2020", revenue: 16380},
-    {mes: "Jun/2020", revenue: 21691},
-    {mes: "Sep/2020", revenue: 22412},
-    {mes: "Dic/2020", revenue: 33362},
-    {mes: "Mar/2021", revenue: 28922},
-    {mes: "Jun/2021", revenue: 31861},
-    {mes: "Sep/2021", revenue: 31023},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bac = [
-    {mes: "Dic/2018", revenue: 28380},
-    {mes: "Mar/2019", revenue: 28373},
-    {mes: "Jun/2019", revenue: 29295},
-    {mes: "Sep/2019", revenue: 28564},
-    {mes: "Dic/2019", revenue: 29409},
-    {mes: "Mar/2020", revenue: 27541},
-    {mes: "Jun/2020", revenue: 24773},
-    {mes: "Sep/2020", revenue: 24153},
-    {mes: "Dic/2020", revenue: 22374},
-    {mes: "Mar/2021", revenue: 24460},
-    {mes: "Jun/2021", revenue: 22918},
-    {mes: "Sep/2021", revenue: 24256},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bbd = [
-    {mes: "Dic/2018", revenue: 16028},
-    {mes: "Mar/2019", revenue: 16038},
-    {mes: "Jun/2019", revenue: 15472},
-    {mes: "Sep/2019", revenue: 15178},
-    {mes: "Dic/2019", revenue: 15410},
-    {mes: "Mar/2020", revenue: 8199},
-    {mes: "Jun/2020", revenue: 5687},
-    {mes: "Sep/2020", revenue: 6732},
-    {mes: "Dic/2020", revenue: 6333},
-    {mes: "Mar/2021", revenue: 7204},
-    {mes: "Jun/2021", revenue: 5778},
-    {mes: "Sep/2021", revenue: 8193},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bbva = [
-    {mes: "Dic/2018", revenue: 7184},
-    {mes: "Mar/2019", revenue: 6890},
-    {mes: "Jun/2019", revenue: 12082},
-    {mes: "Sep/2019", revenue: 11914},
-    {mes: "Dic/2019", revenue: 10399},
-    {mes: "Mar/2020", revenue: 7142},
-    {mes: "Jun/2020", revenue: 9622},
-    {mes: "Sep/2020", revenue: 9676},
-    {mes: "Dic/2020", revenue: 6122},
-    {mes: "Mar/2021", revenue: 10366},
-    {mes: "Jun/2021", revenue: 10454},
-    {mes: "Sep/2021", revenue: 10383},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bcs = [
-    {mes: "Dic/2018", revenue: 6526},
-    {mes: "Mar/2019", revenue: 6840},
-    {mes: "Jun/2019", revenue: 7118},
-    {mes: "Sep/2019", revenue: 6830},
-    {mes: "Dic/2019", revenue: 6820},
-    {mes: "Mar/2020", revenue: 8028},
-    {mes: "Jun/2020", revenue: 6626},
-    {mes: "Sep/2020", revenue: 6721},
-    {mes: "Dic/2020", revenue: 6524},
-    {mes: "Mar/2021", revenue: 8135},
-    {mes: "Jun/2021", revenue: 7573},
-    {mes: "Sep/2021", revenue: 7530},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bg = [
-    {mes: "Dic/2018", revenue: 11543},
-    {mes: "Mar/2019", revenue: 9937},
-    {mes: "Jun/2019", revenue: 10095},
-    {mes: "Sep/2019", revenue: 10325},
-    {mes: "Dic/2019", revenue: 10786},
-    {mes: "Mar/2020", revenue: 9173},
-    {mes: "Jun/2020", revenue: 9467},
-    {mes: "Sep/2020", revenue: 10163},
-    {mes: "Dic/2020", revenue: 12614},
-    {mes: "Mar/2021", revenue: 12961},
-    {mes: "Jun/2021", revenue: 15390},
-    {mes: "Sep/2021", revenue: 14116},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bidu = [
-    {mes: "Dic/2018", revenue: 3931},
-    {mes: "Mar/2019", revenue: 3576},
-    {mes: "Jun/2019", revenue: 3858},
-    {mes: "Sep/2019", revenue: 4002},
-    {mes: "Dic/2019", revenue: 4100},
-    {mes: "Mar/2020", revenue: 3230},
-    {mes: "Jun/2020", revenue: 3673},
-    {mes: "Sep/2020", revenue: 4081},
-    {mes: "Dic/2020", revenue: 4567},
-    {mes: "Mar/2021", revenue: 4342},
-    {mes: "Jun/2021", revenue: 4855},
-    {mes: "Sep/2021", revenue: 4934},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const biib = [
-    {mes: "Dic/2018", revenue: 3148},
-    {mes: "Mar/2019", revenue: 3081},
-    {mes: "Jun/2019", revenue: 3206},
-    {mes: "Sep/2019", revenue: 3171},
-    {mes: "Dic/2019", revenue: 3257},
-    {mes: "Mar/2020", revenue: 3157},
-    {mes: "Jun/2020", revenue: 3402},
-    {mes: "Sep/2020", revenue: 3119},
-    {mes: "Dic/2020", revenue: 930.8},
-    {mes: "Mar/2021", revenue: 2694},
-    {mes: "Jun/2021", revenue: 2628},
-    {mes: "Sep/2021", revenue: 2649},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bmy = [
-    {mes: "Dic/2018", revenue: 5973},
-    {mes: "Mar/2019", revenue: 5920},
-    {mes: "Jun/2019", revenue: 6273},
-    {mes: "Sep/2019", revenue: 6007},
-    {mes: "Dic/2019", revenue: 7945},
-    {mes: "Mar/2020", revenue: 10781},
-    {mes: "Jun/2020", revenue: 10129},
-    {mes: "Sep/2020", revenue: 10540},
-    {mes: "Dic/2020", revenue: 11068},
-    {mes: "Mar/2021", revenue: 11073},
-    {mes: "Jun/2021", revenue: 11703},
-    {mes: "Sep/2021", revenue: 11624},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bp = [
-    {mes: "Dic/2018", revenue: 75048},
-    {mes: "Mar/2019", revenue: 67026},
-    {mes: "Jun/2019", revenue: 72319},
-    {mes: "Sep/2019", revenue: 67863},
-    {mes: "Dic/2019", revenue: 72074},
-    {mes: "Mar/2020", revenue: 59687},
-    {mes: "Jun/2020", revenue: 31754},
-    {mes: "Sep/2020", revenue: 45044},
-    {mes: "Dic/2020", revenue: 45170},
-    {mes: "Mar/2021", revenue: 34664},
-    {mes: "Jun/2021", revenue: 36396},
-    {mes: "Sep/2021", revenue: 36174},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const brfs = [
-    {mes: "Dic/2018", revenue: 2507},
-    {mes: "Mar/2019", revenue: 1953},
-    {mes: "Jun/2019", revenue: 2127},
-    {mes: "Sep/2019", revenue: 2132},
-    {mes: "Dic/2019", revenue: 2257},
-    {mes: "Mar/2020", revenue: 2005},
-    {mes: "Jun/2020", revenue: 1692},
-    {mes: "Sep/2020", revenue: 1849},
-    {mes: "Dic/2020", revenue: 2125},
-    {mes: "Mar/2021", revenue: 1933},
-    {mes: "Jun/2021", revenue: 2200},
-    {mes: "Sep/2021", revenue: 2369},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bsbr = [
-    {mes: "Dic/2018", revenue: 6030},
-    {mes: "Mar/2019", revenue: 6125},
-    {mes: "Jun/2019", revenue: 6083},
-    {mes: "Sep/2019", revenue: 5389},
-    {mes: "Dic/2019", revenue: 6028},
-    {mes: "Mar/2020", revenue: 2473},
-    {mes: "Jun/2020", revenue: 3133},
-    {mes: "Sep/2020", revenue: 3460},
-    {mes: "Dic/2020", revenue: 4669},
-    {mes: "Mar/2021", revenue: 3643},
-    {mes: "Jun/2021", revenue: 4951},
-    {mes: "Sep/2021", revenue: 4324},
-    {mes: "Dic/2021", revenue: 0}
-];
-// cambiar
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-
-
 // const busquedaEmpresa = aapl.find((i) => i.mes === meses);
 
 var busqueda;
@@ -2125,127 +9,458 @@ var busqueda;
     switch(empresas){
         case "Apple":
             busqueda = aapl.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+
+            function variacionAAPL_A(){
+                return parseFloat(((busqueda.revenue - aapl[aapl.findIndex(i => i.mes === meses)-4].revenue)/(aapl[aapl.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAAPL_T(){
+                return parseFloat(((busqueda.revenue - aapl[aapl.findIndex(i => i.mes === meses)-1].revenue)/(aapl[aapl.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAAPL_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAAPL_A() +"%");
+
             break;
         case "Ambev":
             busqueda = abev.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+
+            function variacionABEV_A(){
+                return parseFloat(((busqueda.revenue - abev[abev.findIndex(i => i.mes === meses)-4].revenue)/(abev[abev.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionABEV_T(){
+                return parseFloat(((busqueda.revenue - abev[abev.findIndex(i => i.mes === meses)-1].revenue)/(abev[abev.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionABEV_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionABEV_A() +"%");
+
             break;
         case "Abbott Laboratories":
             busqueda = abt.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionABT_A(){
+                return parseFloat(((busqueda.revenue - abt[abt.findIndex(i => i.mes === meses)-4].revenue)/(abt[abt.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionABT_T(){
+                return parseFloat(((busqueda.revenue - abt[abt.findIndex(i => i.mes === meses)-1].revenue)/(abt[abt.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionABT_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionABT_A() +"%");
+
             break;
         case "Adobe":
             busqueda = adbe.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionADBE_A(){
+                return parseFloat(((busqueda.revenue - adbe[adbe.findIndex(i => i.mes === meses)-4].revenue)/(adbe[adbe.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionADBE_T(){
+                return parseFloat(((busqueda.revenue - adbe[adbe.findIndex(i => i.mes === meses)-1].revenue)/(adbe[adbe.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionADBE_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionADBE_A() +"%");
+
             break; 
         case "Adecoagro":
             busqueda = agro.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
-
-            console.log((busqueda.revenue).indexOf(busqueda.revenue));
-
-
             
-            function variacion(){
-                return parseFloat(((busqueda.revenue - agro[agro.indexOf(meses)].revenue)/agro[agro.indexOf(meses)].revenue)*100).toFixed(2);
+            function variacionAGRO_A(){
+                return parseFloat(((busqueda.revenue - agro[agro.findIndex(i => i.mes === meses)-4].revenue)/(agro[agro.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
             }
-            console.log("La variacion anual fue del "+ variacion() +"%");
+            function variacionAGRO_T(){
+                return parseFloat(((busqueda.revenue - agro[agro.findIndex(i => i.mes === meses)-1].revenue)/(agro[agro.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAGRO_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAGRO_A() +"%");
+
             break;
         case "American International Group":
             busqueda = aig.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionAIG_A(){
+                return parseFloat(((busqueda.revenue - aig[aig.findIndex(i => i.mes === meses)-4].revenue)/(aig[aig.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAIG_T(){
+                return parseFloat(((busqueda.revenue - aig[aig.findIndex(i => i.mes === meses)-1].revenue)/(aig[aig.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAIG_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAIG_A() +"%");
+
             break; 
         case "Advanced Micro Devices":
             busqueda = amd.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionAMD_A(){
+                return parseFloat(((busqueda.revenue - amd[amd.findIndex(i => i.mes === meses)-4].revenue)/(amd[amd.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAMD_T(){
+                return parseFloat(((busqueda.revenue - amd[amd.findIndex(i => i.mes === meses)-1].revenue)/(amd[amd.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAMD_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAMD_A() +"%");
+
             break;
         case "Amgen":
             busqueda = amgn.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionAMGN_A(){
+                return parseFloat(((busqueda.revenue - amgn[amgn.findIndex(i => i.mes === meses)-4].revenue)/(amgn[amgn.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAMGN_T(){
+                return parseFloat(((busqueda.revenue - amgn[amgn.findIndex(i => i.mes === meses)-1].revenue)/(amgn[amgn.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAMGN_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAMGN_A() +"%");
+
             break; 
         case "America Movil":
             busqueda = amx.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionAMX_A(){
+                return parseFloat(((busqueda.revenue - amx[amx.findIndex(i => i.mes === meses)-4].revenue)/(amx[amx.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAMX_T(){
+                return parseFloat(((busqueda.revenue - amx[amx.findIndex(i => i.mes === meses)-1].revenue)/(amx[amx.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAMX_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAMX_A() +"%");
+
             break; 
         case "Amazon":
             busqueda = amzn.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionAMZN_A(){
+                return parseFloat(((busqueda.revenue - amzn[amzn.findIndex(i => i.mes === meses)-4].revenue)/(amzn[amzn.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAMZN_T(){
+                return parseFloat(((busqueda.revenue - amzn[amzn.findIndex(i => i.mes === meses)-1].revenue)/(amzn[amzn.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAMZN_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAMZN_A() +"%");
+
             break; 
         case "Arcos Dorados Holdings":
             busqueda = arco.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionARCO_A(){
+                return parseFloat(((busqueda.revenue - arco[arco.findIndex(i => i.mes === meses)-4].revenue)/(arco[arco.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionARCO_T(){
+                return parseFloat(((busqueda.revenue - arco[arco.findIndex(i => i.mes === meses)-1].revenue)/(arco[arco.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionARCO_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionARCO_A() +"%");
+
             break; 
         case "Yamana Gold":
             busqueda = auy.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionAUY_A(){
+                return parseFloat(((busqueda.revenue - auy[auy.findIndex(i => i.mes === meses)-4].revenue)/(auy[auy.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAUY_T(){
+                return parseFloat(((busqueda.revenue - auy[auy.findIndex(i => i.mes === meses)-1].revenue)/(auy[auy.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAUY_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAUY_A() +"%");
+
             break;
         case "American Express Company":
             busqueda = axp.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionAXP_A(){
+                return parseFloat(((busqueda.revenue - axp[axp.findIndex(i => i.mes === meses)-4].revenue)/(axp[axp.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAXP_T(){
+                return parseFloat(((busqueda.revenue - axp[axp.findIndex(i => i.mes === meses)-1].revenue)/(axp[axp.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAXP_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAXP_A() +"%");
+
             break;
         case "Astrazeneca":
             busqueda = azn.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionAZN_A(){
+                return parseFloat(((busqueda.revenue - azn[azn.findIndex(i => i.mes === meses)-4].revenue)/(azn[azn.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionAZN_T(){
+                return parseFloat(((busqueda.revenue - azn[azn.findIndex(i => i.mes === meses)-1].revenue)/(azn[azn.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionAZN_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAZN_A() +"%");
+
             break;
         case "Boeing Company":
             busqueda = ba.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBA_A(){
+                return parseFloat(((busqueda.revenue - ba[ba.findIndex(i => i.mes === meses)-4].revenue)/(ba[ba.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBA_T(){
+                return parseFloat(((busqueda.revenue - ba[ba.findIndex(i => i.mes === meses)-1].revenue)/(ba[ba.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBA_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBA_A() +"%");
+
             break;
         case "Alibaba Group Holdings":
             busqueda = baba.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBABA_A(){
+                return parseFloat(((busqueda.revenue - baba[baba.findIndex(i => i.mes === meses)-4].revenue)/(baba[baba.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBABA_T(){
+                return parseFloat(((busqueda.revenue - baba[baba.findIndex(i => i.mes === meses)-1].revenue)/(baba[baba.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBABA_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBABA_A() +"%");
+
             break;
         case "Bank of America Corporation":
             busqueda = bac.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBAC_A(){
+                return parseFloat(((busqueda.revenue - bac[bac.findIndex(i => i.mes === meses)-4].revenue)/(bac[bac.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBAC_T(){
+                return parseFloat(((busqueda.revenue - bac[bac.findIndex(i => i.mes === meses)-1].revenue)/(bac[bac.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBAC_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBAC_A() +"%");
+
             break;  
         case "Banco Bradesco":
             busqueda = bbd.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBBD_A(){
+                return parseFloat(((busqueda.revenue - bbd[bbd.findIndex(i => i.mes === meses)-4].revenue)/(bbd[bbd.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBBD_T(){
+                return parseFloat(((busqueda.revenue - bbd[bbd.findIndex(i => i.mes === meses)-1].revenue)/(bbd[bbd.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBBD_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBBD_A() +"%");
+
             break;
         case "Banco Bilbao Vizcaya Argentaria":
             busqueda = bbva.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBBVA_A(){
+                return parseFloat(((busqueda.revenue - bbva[bbva.findIndex(i => i.mes === meses)-4].revenue)/(bbva[bbva.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBBVA_T(){
+                return parseFloat(((busqueda.revenue - bbva[bbva.findIndex(i => i.mes === meses)-1].revenue)/(bbva[bbva.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBBVA_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBBVA_A() +"%");
+
             break;
         case "Barclays":
             busqueda = bcs.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBCS_A(){
+                return parseFloat(((busqueda.revenue - bcs[bcs.findIndex(i => i.mes === meses)-4].revenue)/(bcs[bcs.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBCS_T(){
+                return parseFloat(((busqueda.revenue - bcs[bcs.findIndex(i => i.mes === meses)-1].revenue)/(bcs[bcs.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBCS_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBCS_A() +"%");
+
             break;
         case "Bunge Limited":
             busqueda = bg.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBG_A(){
+                return parseFloat(((busqueda.revenue - bg[bg.findIndex(i => i.mes === meses)-4].revenue)/(bg[bg.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBG_T(){
+                return parseFloat(((busqueda.revenue - bg[bg.findIndex(i => i.mes === meses)-1].revenue)/(bg[bg.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBG_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBG_A() +"%");
+
             break;
         case "Baidu":
             busqueda = bidu.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBIDU_A(){
+                return parseFloat(((busqueda.revenue - bidu[bidu.findIndex(i => i.mes === meses)-4].revenue)/(bidu[bidu.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBIDU_T(){
+                return parseFloat(((busqueda.revenue - bidu[bidu.findIndex(i => i.mes === meses)-1].revenue)/(bidu[bidu.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBIDU_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBIDU_A() +"%");
+
             break;
         case "Biogen":
             busqueda = biib.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBIIB_A(){
+                return parseFloat(((busqueda.revenue - biib[biib.findIndex(i => i.mes === meses)-4].revenue)/(biib[biib.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBIIB_T(){
+                return parseFloat(((busqueda.revenue - biib[biib.findIndex(i => i.mes === meses)-1].revenue)/(biib[biib.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBIIB_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBIIB_A() +"%");
+
             break;
         case "Bristol-Myers Squibb Company":
             busqueda = bmy.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBMY_A(){
+                return parseFloat(((busqueda.revenue - bmy[bmy.findIndex(i => i.mes === meses)-4].revenue)/(bmy[bmy.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBMY_T(){
+                return parseFloat(((busqueda.revenue - bmy[bmy.findIndex(i => i.mes === meses)-1].revenue)/(bmy[bmy.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBMY_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBMY_A() +"%");
+
             break;
         case "BP":
             busqueda = bp.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBP_A(){
+                return parseFloat(((busqueda.revenue - bp[bp.findIndex(i => i.mes === meses)-4].revenue)/(bp[bp.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBP_T(){
+                return parseFloat(((busqueda.revenue - bp[bp.findIndex(i => i.mes === meses)-1].revenue)/(bp[bp.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBP_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBP_A() +"%");
+
             break;
         case "BRF":
             busqueda = brfs.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBRFS_A(){
+                return parseFloat(((busqueda.revenue - brfs[brfs.findIndex(i => i.mes === meses)-4].revenue)/(brfs[brfs.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBRFS_T(){
+                return parseFloat(((busqueda.revenue - brfs[brfs.findIndex(i => i.mes === meses)-1].revenue)/(brfs[brfs.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBRFS_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBRFS_A() +"%");
+
             break;
         case "Banco Santander Brasil":
             busqueda = bsbr.find((i) => i.mes === meses);
-            document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+            
+            function variacionBSBR_A(){
+                return parseFloat(((busqueda.revenue - bsbr[bsbr.findIndex(i => i.mes === meses)-4].revenue)/(bsbr[bsbr.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionBSBR_T(){
+                return parseFloat(((busqueda.revenue - bsbr[bsbr.findIndex(i => i.mes === meses)-1].revenue)/(bsbr[bsbr.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionBSBR_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionBSBR_A() +"%");
+
+            break;
+        case "Citigroup":
+            busqueda = c.find((i) => i.mes === meses);
+            
+            function variacionC_A(){
+                return parseFloat(((busqueda.revenue - c[c.findIndex(i => i.mes === meses)-4].revenue)/(c[c.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionC_T(){
+                return parseFloat(((busqueda.revenue - c[c.findIndex(i => i.mes === meses)-1].revenue)/(c[c.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionC_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionC_A() +"%");
+
+            break;
+        case "Caterpillar":
+            busqueda = cat.find((i) => i.mes === meses);
+            
+            function variacionCAT_A(){
+                return parseFloat(((busqueda.revenue - cat[cat.findIndex(i => i.mes === meses)-4].revenue)/(cat[cat.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionCAT_T(){
+                return parseFloat(((busqueda.revenue - cat[cat.findIndex(i => i.mes === meses)-1].revenue)/(cat[cat.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionCAT_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionCAT_A() +"%");
+
+            break;
+        case "Salesforce":
+            busqueda = crm.find((i) => i.mes === meses);
+            
+            function variacionCRM_A(){
+                return parseFloat(((busqueda.revenue - crm[crm.findIndex(i => i.mes === meses)-4].revenue)/(crm[crm.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionCRM_T(){
+                return parseFloat(((busqueda.revenue - crm[crm.findIndex(i => i.mes === meses)-1].revenue)/(crm[crm.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionCRM_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionCRM_A() +"%");
+
+            break;
+        case "Credit Suisse Group":
+            busqueda = cs.find((i) => i.mes === meses);
+            
+            function variacionCS_A(){
+                return parseFloat(((busqueda.revenue - cs[cs.findIndex(i => i.mes === meses)-4].revenue)/(cs[cs.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionCS_T(){
+                return parseFloat(((busqueda.revenue - cs[cs.findIndex(i => i.mes === meses)-1].revenue)/(cs[cs.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionCS_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionCS_A() +"%");
+
+            break;
+        case "Cisco Systems":
+            busqueda = csco.find((i) => i.mes === meses);
+            
+            function variacionCSCO_A(){
+                return parseFloat(((busqueda.revenue - csco[csco.findIndex(i => i.mes === meses)-4].revenue)/(csco[csco.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionCSCO_T(){
+                return parseFloat(((busqueda.revenue - csco[csco.findIndex(i => i.mes === meses)-1].revenue)/(csco[csco.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionCSCO_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionCSCO_A() +"%");
+
+            break;
+        case "Chevron Corporation":
+            busqueda = cvx.find((i) => i.mes === meses);
+            
+            function variacionCVX_A(){
+                return parseFloat(((busqueda.revenue - cvx[cvx.findIndex(i => i.mes === meses)-4].revenue)/(cvx[cvx.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionCVX_T(){
+                return parseFloat(((busqueda.revenue - cvx[cvx.findIndex(i => i.mes === meses)-1].revenue)/(cvx[cvx.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionCVX_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionCVX_A() +"%");
+
+            break;
+        case "Cemex":
+            busqueda = cx.find((i) => i.mes === meses);
+            
+            function variacionCX_A(){
+                return parseFloat(((busqueda.revenue - cx[cx.findIndex(i => i.mes === meses)-4].revenue)/(cx[cx.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            }
+            function variacionCX_T(){
+                return parseFloat(((busqueda.revenue - cx[cx.findIndex(i => i.mes === meses)-1].revenue)/(cx[cx.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            }
+            document.write(" <br> La variación trimestral fue del "+ variacionCX_T() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionCX_A() +"%");
+
             break;
         default:
             break;
     }
 // }
 
+console.log(aapl[aapl.findIndex(i => i.mes === meses)-4].revenue);
 console.log(busqueda.revenue);
+console.log(aapl);
+
+document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
+
+document.write("<table border='1'><tbody><tr><td></td><th> Ventas</th></tr><tr><th>"+ busqueda.mes +"</th><td>"+ busqueda.revenue +"</td></tr></tbody></table>")
 
 // if(empresas === "Apple"){
 //     let busqueda = aapl.find((i) => i.mes === meses);
