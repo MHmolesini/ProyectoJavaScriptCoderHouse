@@ -1,5 +1,5 @@
-let empresas = "Adecoagro";
-let meses = "Sep/2020";
+let empresas = prompt("Seleccione una empresa");
+let meses = prompt("Seleccione la fecha");
 
 // Seleccione una empresa
 
