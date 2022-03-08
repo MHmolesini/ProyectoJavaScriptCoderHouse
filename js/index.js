@@ -1,11 +1,13 @@
+// Se le solicita al usuario que ingrese el nombre de una de las empresas incluidas en el menu desplegable (aun no estan el 100%) y una fecha.
+
 let empresas = prompt("Seleccione una empresa");
 let meses = prompt("Seleccione la fecha");
 
-// const busquedaEmpresa = aapl.find((i) => i.mes === meses);
-
+// se crea una variable vacia, en el que posteriormente se le asignara el valor de las ventas de una determinada empresa, en una fecha en concreto.
 var busqueda;
 
-// while(empresas != ""){
+// A traves de este switch se establecera las condiciones a ejecutar dependiendo del nombre de la empresa que el usuario haya indicado anteriormente, en el que, iterando en los arrays, que estan en el otro archivo .js, y ubicandose en la fecha tambien indicada por el usuario, hasta hallar el datos de las ventas de esa empresa en concreto. 
+// A su vez, se crearon 2 funciones para que me determine la variacion trimestral y anual de las ventas.
     switch(empresas){
         case "Apple":
             busqueda = aapl.find((i) => i.mes === meses);
@@ -452,41 +454,8 @@ var busqueda;
         default:
             break;
     }
-// }
 
-console.log(aapl[aapl.findIndex(i => i.mes === meses)-4].revenue);
-console.log(busqueda.revenue);
-console.log(aapl);
-
+// Habiendo encontrado el valor de las ventas de la empresa, en un mes concreto, se procede a indicarlo en el HTML a traves de un "document.write".
 document.write("<br> Las ventas de "+ empresas +" fueron de USD "+ busqueda.revenue +" millones, en el mes de "+ meses);
 
 document.write("<table border='1'><tbody><tr><td></td><th> Ventas</th></tr><tr><th>"+ busqueda.mes +"</th><td>"+ busqueda.revenue +"</td></tr></tbody></table>")
-
-// if(empresas === "Apple"){
-//     let busqueda = aapl.find((i) => i.mes === meses);
-
-// }
-
-
-// const sep21 = [
-//     {empresa: "Apple", revenue: 366295},
-//     {empresa: "AbbVie", revenue: 55169},
-//     {empresa: "Ambev", revenue: 12980},
-//     {empresa: "Abbott Laboratories", revenue: 42308},
-//     {empresa: "Adobe", revenue: 15134},
-//     {empresa: "Adecoagro", revenue: 950},
-//     {empresa: "American International Group", revenue: 47646},
-//     {empresa: "Advanced Micro Devices", revenue: 14852}
-// ];
-
-// const busquedaEmpresa = sep21.find((i) => i.empresa === empresas);
-
-
-//     document.write("Las ventas de "+ empresas +" fueron de "+ busqueda.revenue +" en el mes de Septiembre de 2021.")
-
-
-// const busqueda = sep.map((i) => i.revenue);
-
-// console.log(busquedaEmpresa.revenue);
-// console.log(busqueda);
-
