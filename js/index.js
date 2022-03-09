@@ -5,21 +5,34 @@ let meses = prompt("Seleccione la fecha");
 
 // se crea una variable vacia, en el que posteriormente se le asignara el valor de las ventas de una determinada empresa, en una fecha en concreto.
 var busqueda;
+var empresa_bd;
 
 // A traves de este switch se establecera las condiciones a ejecutar dependiendo del nombre de la empresa que el usuario haya indicado anteriormente, en el que, iterando en los arrays, que estan en el otro archivo .js, y ubicandose en la fecha tambien indicada por el usuario, hasta hallar el datos de las ventas de esa empresa en concreto. 
 // A su vez, se crearon 2 funciones para que me determine la variacion trimestral y anual de las ventas.
     switch(empresas){
-        case "Apple":
-            busqueda = aapl.find((i) => i.mes === meses);
+        case "Apple": empresa_bd = aapl
 
-            function variacionAAPL_A(){
-                return parseFloat(((busqueda.revenue - aapl[aapl.findIndex(i => i.mes === meses)-4].revenue)/(aapl[aapl.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            busqueda = empresa_bd.find((i) => i.mes === meses);
+            // busqueda = aapl.find((i) => i.mes === meses);
+
+            function variacionAnual(){
+                return parseFloat(((busqueda.revenue - empresa_bd[empresa_bd.findIndex(i => i.mes === meses)-4].revenue)/(empresa_bd[empresa_bd.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
             }
-            function variacionAAPL_T(){
-                return parseFloat(((busqueda.revenue - aapl[aapl.findIndex(i => i.mes === meses)-1].revenue)/(aapl[aapl.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            function variacionTrimestral(){
+                return parseFloat(((busqueda.revenue - empresa_bd[empresa_bd.findIndex(i => i.mes === meses)-1].revenue)/(empresa_bd[empresa_bd.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
             }
-            document.write(" <br> La variación trimestral fue del "+ variacionAAPL_T() +"%");
-            document.write(" <br> La variación anual fue del "+ variacionAAPL_A() +"%");
+
+            // function variacionAAPL_A(){
+            //     return parseFloat(((busqueda.revenue - aapl[aapl.findIndex(i => i.mes === meses)-4].revenue)/(aapl[aapl.findIndex(i => i.mes === meses)-4].revenue))*100).toFixed(2);
+            // }
+            // function variacionAAPL_T(){
+            //     return parseFloat(((busqueda.revenue - aapl[aapl.findIndex(i => i.mes === meses)-1].revenue)/(aapl[aapl.findIndex(i => i.mes === meses)-1].revenue))*100).toFixed(2);
+            // }
+            // document.write(" <br> La variación trimestral fue del "+ variacionAAPL_T() +"%");
+            // document.write(" <br> La variación anual fue del "+ variacionAAPL_A() +"%");
+
+            document.write(" <br> La variación trimestral fue del "+ variacionTrimestral() +"%");
+            document.write(" <br> La variación anual fue del "+ variacionAnual() +"%");
 
             break;
         case "Ambev":
