@@ -1,2114 +1,284 @@
-// Base de datos del Estado de Resultados
-const aapl = [
-    {mes: "Dic/2018", revenue: 84373},
-    {mes: "Mar/2019", revenue: 57918},
-    {mes: "Jun/2019", revenue: 53741},
-    {mes: "Sep/2019", revenue: 63936},
-    {mes: "Dic/2019", revenue: 91722},
-    {mes: "Mar/2020", revenue: 58347},
-    {mes: "Jun/2020", revenue: 59415},
-    {mes: "Sep/2020", revenue: 64666},
-    {mes: "Dic/2020", revenue: 111543},
-    {mes: "Mar/2021", revenue: 89898},
-    {mes: "Jun/2021", revenue: 81494},
-    {mes: "Sep/2021", revenue: 83360},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const abev = [
-    {mes: "Dic/2018", revenue: 4207},
-    {mes: "Mar/2019", revenue: 3355},
-    {mes: "Jun/2019", revenue: 3098},
-    {mes: "Sep/2019", revenue: 3013},
-    {mes: "Dic/2019", revenue: 3852},
-    {mes: "Mar/2020", revenue: 2823},
-    {mes: "Jun/2020", revenue: 2158},
-    {mes: "Sep/2020", revenue: 2902},
-    {mes: "Dic/2020", revenue: 3437},
-    {mes: "Mar/2021", revenue: 3037},
-    {mes: "Jun/2021", revenue: 2970},
-    {mes: "Sep/2021", revenue: 3536},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const abt = [
-    {mes: "Dic/2018", revenue: 7765},
-    {mes: "Mar/2019", revenue: 7535},
-    {mes: "Jun/2019", revenue: 7979},
-    {mes: "Sep/2019", revenue: 8076},
-    {mes: "Dic/2019", revenue: 8314},
-    {mes: "Mar/2020", revenue: 7726},
-    {mes: "Jun/2020", revenue: 7328},
-    {mes: "Sep/2020", revenue: 8853},
-    {mes: "Dic/2020", revenue: 10701},
-    {mes: "Mar/2021", revenue: 10456},
-    {mes: "Jun/2021", revenue: 10223},
-    {mes: "Sep/2021", revenue: 10928},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const adbe = [
-    {mes: "Dic/2018", revenue: 2434},
-    {mes: "Mar/2019", revenue: 2592},
-    {mes: "Jun/2019", revenue: 2735},
-    {mes: "Sep/2019", revenue: 2823},
-    {mes: "Dic/2019", revenue: 2980},
-    {mes: "Mar/2020", revenue: 3084},
-    {mes: "Jun/2020", revenue: 3123},
-    {mes: "Sep/2020", revenue: 3226},
-    {mes: "Dic/2020", revenue: 3432},
-    {mes: "Mar/2021", revenue: 3916},
-    {mes: "Jun/2021", revenue: 3846},
-    {mes: "Sep/2021", revenue: 3940},
-    {mes: "Dic/2021", revenue: 4110}
-];
-
-const agro = [
-    {mes: "Dic/2018", revenue: 246.909},
-    {mes: "Mar/2019", revenue: 79.815},
-    {mes: "Jun/2019", revenue: 218.786},
-    {mes: "Sep/2019", revenue: 254.312},
-    {mes: "Dic/2019", revenue: 262.525},
-    {mes: "Mar/2020", revenue: 156.130},
-    {mes: "Jun/2020", revenue: 161.853},
-    {mes: "Sep/2020", revenue: 260.532},
-    {mes: "Dic/2020", revenue: 243.049},
-    {mes: "Mar/2021", revenue: 108.592},
-    {mes: "Jun/2021", revenue: 289.769},
-    {mes: "Sep/2021", revenue: 309.016},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const aig = [
-    {mes: "Dic/2018", revenue: 12560},
-    {mes: "Mar/2019", revenue: 12456},
-    {mes: "Jun/2019", revenue: 12561},
-    {mes: "Sep/2019", revenue: 12914},
-    {mes: "Dic/2019", revenue: 11815},
-    {mes: "Mar/2020", revenue: 14443},
-    {mes: "Jun/2020", revenue: 9396},
-    {mes: "Sep/2020", revenue: 10221},
-    {mes: "Dic/2020", revenue: 9676},
-    {mes: "Mar/2021", revenue: 14454},
-    {mes: "Jun/2021", revenue: 10681},
-    {mes: "Sep/2021", revenue: 12835},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const amd = [
-    {mes: "Dic/2018", revenue: 1419},
-    {mes: "Mar/2019", revenue: 1272},
-    {mes: "Jun/2019", revenue: 1531},
-    {mes: "Sep/2019", revenue: 1801},
-    {mes: "Dic/2019", revenue: 2127},
-    {mes: "Mar/2020", revenue: 1786},
-    {mes: "Jun/2020", revenue: 1932},
-    {mes: "Sep/2020", revenue: 2801},
-    {mes: "Dic/2020", revenue: 3244},
-    {mes: "Mar/2021", revenue: 3445},
-    {mes: "Jun/2021", revenue: 3850},
-    {mes: "Sep/2021", revenue: 4313},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const amgn = [
-    {mes: "Dic/2018", revenue: 6200},
-    {mes: "Mar/2019", revenue: 5543},
-    {mes: "Jun/2019", revenue: 5849},
-    {mes: "Sep/2019", revenue: 5711},
-    {mes: "Dic/2019", revenue: 6158},
-    {mes: "Mar/2020", revenue: 6112},
-    {mes: "Jun/2020", revenue: 6138},
-    {mes: "Sep/2020", revenue: 6382},
-    {mes: "Dic/2020", revenue: 6614},
-    {mes: "Mar/2021", revenue: 5902},
-    {mes: "Jun/2021", revenue: 6544},
-    {mes: "Sep/2021", revenue: 6711},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const amx = [
-    {mes: "Dic/2018", revenue: 13230},
-    {mes: "Mar/2019", revenue: 12793},
-    {mes: "Jun/2019", revenue: 13080},
-    {mes: "Sep/2019", revenue: 12785},
-    {mes: "Dic/2019", revenue: 13670},
-    {mes: "Mar/2020", revenue: 12477},
-    {mes: "Jun/2020", revenue: 10792},
-    {mes: "Sep/2020", revenue: 11778},
-    {mes: "Dic/2020", revenue: 12407},
-    {mes: "Mar/2021", revenue: 12192},
-    {mes: "Jun/2021", revenue: 12621},
-    {mes: "Sep/2021", revenue: 12648},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const amzn = [
-    {mes: "Dic/2018", revenue: 72383},
-    {mes: "Mar/2019", revenue: 59700},
-    {mes: "Jun/2019", revenue: 63404},
-    {mes: "Sep/2019", revenue: 69981},
-    {mes: "Dic/2019", revenue: 87437},
-    {mes: "Mar/2020", revenue: 75452},
-    {mes: "Jun/2020", revenue: 88912},
-    {mes: "Sep/2020", revenue: 96145},
-    {mes: "Dic/2020", revenue: 125555},
-    {mes: "Mar/2021", revenue: 108518},
-    {mes: "Jun/2021", revenue: 113080},
-    {mes: "Sep/2021", revenue: 110812},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const arco = [
-    {mes: "Dic/2018", revenue: 753.342},
-    {mes: "Mar/2019", revenue: 730.999},
-    {mes: "Jun/2019", revenue: 723.744},
-    {mes: "Sep/2019", revenue: 749.969},
-    {mes: "Dic/2019", revenue: 754.366},
-    {mes: "Mar/2020", revenue: 617.504},
-    {mes: "Jun/2020", revenue: 292.524},
-    {mes: "Sep/2020", revenue: 466.799},
-    {mes: "Dic/2020", revenue: 607.392},
-    {mes: "Mar/2021", revenue: 561.116},
-    {mes: "Jun/2021", revenue: 592.696},
-    {mes: "Sep/2021", revenue: 725.836},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const auy = [
-    {mes: "Dic/2018", revenue: 467.415},
-    {mes: "Mar/2019", revenue: 405.097},
-    {mes: "Jun/2019", revenue: 474.558},
-    {mes: "Sep/2019", revenue: 356.883},
-    {mes: "Dic/2019", revenue: 390.688},
-    {mes: "Mar/2020", revenue: 336.887},
-    {mes: "Jun/2020", revenue: 308.621},
-    {mes: "Sep/2020", revenue: 438.34},
-    {mes: "Dic/2020", revenue: 472.335},
-    {mes: "Mar/2021", revenue: 425.152},
-    {mes: "Jun/2021", revenue: 433.689},
-    {mes: "Sep/2021", revenue: 449.121},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const axp = [
-    {mes: "Dic/2018", revenue: 11308},
-    {mes: "Mar/2019", revenue: 11259},
-    {mes: "Jun/2019", revenue: 11729},
-    {mes: "Sep/2019", revenue: 11866},
-    {mes: "Dic/2019", revenue: 12166},
-    {mes: "Mar/2020", revenue: 11026},
-    {mes: "Jun/2020", revenue: 8217},
-    {mes: "Sep/2020", revenue: 9201},
-    {mes: "Dic/2020", revenue: 9741},
-    {mes: "Mar/2021", revenue: 9426},
-    {mes: "Jun/2021", revenue: 10565},
-    {mes: "Sep/2021", revenue: 11235},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const azn = [
-    {mes: "Dic/2018", revenue: 7189},
-    {mes: "Mar/2019", revenue: 6070},
-    {mes: "Jun/2019", revenue: 5794},
-    {mes: "Sep/2019", revenue: 6607},
-    {mes: "Dic/2019", revenue: 7154},
-    {mes: "Mar/2020", revenue: 6708},
-    {mes: "Jun/2020", revenue: 6341},
-    {mes: "Sep/2020", revenue: 6870},
-    {mes: "Dic/2020", revenue: 7987},
-    {mes: "Mar/2021", revenue: 8434},
-    {mes: "Jun/2021", revenue: 8204},
-    {mes: "Sep/2021", revenue: 9866},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const ba = [
-    {mes: "Dic/2018", revenue: 28341},
-    {mes: "Mar/2019", revenue: 22912},
-    {mes: "Jun/2019", revenue: 15750},
-    {mes: "Sep/2019", revenue: 19986},
-    {mes: "Dic/2019", revenue: 17911},
-    {mes: "Mar/2020", revenue: 16909},
-    {mes: "Jun/2020", revenue: 11807},
-    {mes: "Sep/2020", revenue: 14140},
-    {mes: "Dic/2020", revenue: 15305},
-    {mes: "Mar/2021", revenue: 15217},
-    {mes: "Jun/2021", revenue: 16998},
-    {mes: "Sep/2021", revenue: 15278},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const baba = [
-    {mes: "Dic/2018", revenue: 16954},
-    {mes: "Mar/2019", revenue: 13860},
-    {mes: "Jun/2019", revenue: 16840},
-    {mes: "Sep/2019", revenue: 16964},
-    {mes: "Dic/2019", revenue: 22917},
-    {mes: "Mar/2020", revenue: 16380},
-    {mes: "Jun/2020", revenue: 21691},
-    {mes: "Sep/2020", revenue: 22412},
-    {mes: "Dic/2020", revenue: 33362},
-    {mes: "Mar/2021", revenue: 28922},
-    {mes: "Jun/2021", revenue: 31861},
-    {mes: "Sep/2021", revenue: 31023},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bac = [
-    {mes: "Dic/2018", revenue: 28380},
-    {mes: "Mar/2019", revenue: 28373},
-    {mes: "Jun/2019", revenue: 29295},
-    {mes: "Sep/2019", revenue: 28564},
-    {mes: "Dic/2019", revenue: 29409},
-    {mes: "Mar/2020", revenue: 27541},
-    {mes: "Jun/2020", revenue: 24773},
-    {mes: "Sep/2020", revenue: 24153},
-    {mes: "Dic/2020", revenue: 22374},
-    {mes: "Mar/2021", revenue: 24460},
-    {mes: "Jun/2021", revenue: 22918},
-    {mes: "Sep/2021", revenue: 24256},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bbd = [
-    {mes: "Dic/2018", revenue: 16028},
-    {mes: "Mar/2019", revenue: 16038},
-    {mes: "Jun/2019", revenue: 15472},
-    {mes: "Sep/2019", revenue: 15178},
-    {mes: "Dic/2019", revenue: 15410},
-    {mes: "Mar/2020", revenue: 8199},
-    {mes: "Jun/2020", revenue: 5687},
-    {mes: "Sep/2020", revenue: 6732},
-    {mes: "Dic/2020", revenue: 6333},
-    {mes: "Mar/2021", revenue: 7204},
-    {mes: "Jun/2021", revenue: 5778},
-    {mes: "Sep/2021", revenue: 8193},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bbva = [
-    {mes: "Dic/2018", revenue: 7184},
-    {mes: "Mar/2019", revenue: 6890},
-    {mes: "Jun/2019", revenue: 12082},
-    {mes: "Sep/2019", revenue: 11914},
-    {mes: "Dic/2019", revenue: 10399},
-    {mes: "Mar/2020", revenue: 7142},
-    {mes: "Jun/2020", revenue: 9622},
-    {mes: "Sep/2020", revenue: 9676},
-    {mes: "Dic/2020", revenue: 6122},
-    {mes: "Mar/2021", revenue: 10366},
-    {mes: "Jun/2021", revenue: 10454},
-    {mes: "Sep/2021", revenue: 10383},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bcs = [
-    {mes: "Dic/2018", revenue: 6526},
-    {mes: "Mar/2019", revenue: 6840},
-    {mes: "Jun/2019", revenue: 7118},
-    {mes: "Sep/2019", revenue: 6830},
-    {mes: "Dic/2019", revenue: 6820},
-    {mes: "Mar/2020", revenue: 8028},
-    {mes: "Jun/2020", revenue: 6626},
-    {mes: "Sep/2020", revenue: 6721},
-    {mes: "Dic/2020", revenue: 6524},
-    {mes: "Mar/2021", revenue: 8135},
-    {mes: "Jun/2021", revenue: 7573},
-    {mes: "Sep/2021", revenue: 7530},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bg = [
-    {mes: "Dic/2018", revenue: 11543},
-    {mes: "Mar/2019", revenue: 9937},
-    {mes: "Jun/2019", revenue: 10095},
-    {mes: "Sep/2019", revenue: 10325},
-    {mes: "Dic/2019", revenue: 10786},
-    {mes: "Mar/2020", revenue: 9173},
-    {mes: "Jun/2020", revenue: 9467},
-    {mes: "Sep/2020", revenue: 10163},
-    {mes: "Dic/2020", revenue: 12614},
-    {mes: "Mar/2021", revenue: 12961},
-    {mes: "Jun/2021", revenue: 15390},
-    {mes: "Sep/2021", revenue: 14116},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bidu = [
-    {mes: "Dic/2018", revenue: 3931},
-    {mes: "Mar/2019", revenue: 3576},
-    {mes: "Jun/2019", revenue: 3858},
-    {mes: "Sep/2019", revenue: 4002},
-    {mes: "Dic/2019", revenue: 4100},
-    {mes: "Mar/2020", revenue: 3230},
-    {mes: "Jun/2020", revenue: 3673},
-    {mes: "Sep/2020", revenue: 4081},
-    {mes: "Dic/2020", revenue: 4567},
-    {mes: "Mar/2021", revenue: 4342},
-    {mes: "Jun/2021", revenue: 4855},
-    {mes: "Sep/2021", revenue: 4934},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const biib = [
-    {mes: "Dic/2018", revenue: 3148},
-    {mes: "Mar/2019", revenue: 3081},
-    {mes: "Jun/2019", revenue: 3206},
-    {mes: "Sep/2019", revenue: 3171},
-    {mes: "Dic/2019", revenue: 3257},
-    {mes: "Mar/2020", revenue: 3157},
-    {mes: "Jun/2020", revenue: 3402},
-    {mes: "Sep/2020", revenue: 3119},
-    {mes: "Dic/2020", revenue: 930.8},
-    {mes: "Mar/2021", revenue: 2694},
-    {mes: "Jun/2021", revenue: 2628},
-    {mes: "Sep/2021", revenue: 2649},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bmy = [
-    {mes: "Dic/2018", revenue: 5973},
-    {mes: "Mar/2019", revenue: 5920},
-    {mes: "Jun/2019", revenue: 6273},
-    {mes: "Sep/2019", revenue: 6007},
-    {mes: "Dic/2019", revenue: 7945},
-    {mes: "Mar/2020", revenue: 10781},
-    {mes: "Jun/2020", revenue: 10129},
-    {mes: "Sep/2020", revenue: 10540},
-    {mes: "Dic/2020", revenue: 11068},
-    {mes: "Mar/2021", revenue: 11073},
-    {mes: "Jun/2021", revenue: 11703},
-    {mes: "Sep/2021", revenue: 11624},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bp = [
-    {mes: "Dic/2018", revenue: 75048},
-    {mes: "Mar/2019", revenue: 67026},
-    {mes: "Jun/2019", revenue: 72319},
-    {mes: "Sep/2019", revenue: 67863},
-    {mes: "Dic/2019", revenue: 72074},
-    {mes: "Mar/2020", revenue: 59687},
-    {mes: "Jun/2020", revenue: 31754},
-    {mes: "Sep/2020", revenue: 45044},
-    {mes: "Dic/2020", revenue: 45170},
-    {mes: "Mar/2021", revenue: 34664},
-    {mes: "Jun/2021", revenue: 36396},
-    {mes: "Sep/2021", revenue: 36174},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const brfs = [
-    {mes: "Dic/2018", revenue: 2507},
-    {mes: "Mar/2019", revenue: 1953},
-    {mes: "Jun/2019", revenue: 2127},
-    {mes: "Sep/2019", revenue: 2132},
-    {mes: "Dic/2019", revenue: 2257},
-    {mes: "Mar/2020", revenue: 2005},
-    {mes: "Jun/2020", revenue: 1692},
-    {mes: "Sep/2020", revenue: 1849},
-    {mes: "Dic/2020", revenue: 2125},
-    {mes: "Mar/2021", revenue: 1933},
-    {mes: "Jun/2021", revenue: 2200},
-    {mes: "Sep/2021", revenue: 2369},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const bsbr = [
-    {mes: "Dic/2018", revenue: 6030},
-    {mes: "Mar/2019", revenue: 6125},
-    {mes: "Jun/2019", revenue: 6083},
-    {mes: "Sep/2019", revenue: 5389},
-    {mes: "Dic/2019", revenue: 6028},
-    {mes: "Mar/2020", revenue: 2473},
-    {mes: "Jun/2020", revenue: 3133},
-    {mes: "Sep/2020", revenue: 3460},
-    {mes: "Dic/2020", revenue: 4669},
-    {mes: "Mar/2021", revenue: 3643},
-    {mes: "Jun/2021", revenue: 4951},
-    {mes: "Sep/2021", revenue: 4324},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const c = [
-    {mes: "Dic/2018", revenue: 24091},
-    {mes: "Mar/2019", revenue: 25983},
-    {mes: "Jun/2019", revenue: 26532},
-    {mes: "Sep/2019", revenue: 26162},
-    {mes: "Dic/2019", revenue: 25021},
-    {mes: "Mar/2020", revenue: 26708},
-    {mes: "Jun/2020", revenue: 23362},
-    {mes: "Sep/2020", revenue: 20066},
-    {mes: "Dic/2020", revenue: 19178},
-    {mes: "Mar/2021", revenue: 21863},
-    {mes: "Jun/2021", revenue: 19820},
-    {mes: "Sep/2021", revenue: 19406},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const cat = [
-    {mes: "Dic/2018", revenue: 14342},
-    {mes: "Mar/2019", revenue: 13465},
-    {mes: "Jun/2019", revenue: 14432},
-    {mes: "Sep/2019", revenue: 12755},
-    {mes: "Dic/2019", revenue: 13137},
-    {mes: "Mar/2020", revenue: 10630},
-    {mes: "Jun/2020", revenue: 9986},
-    {mes: "Sep/2020", revenue: 9887},
-    {mes: "Dic/2020", revenue: 11243},
-    {mes: "Mar/2021", revenue: 11900},
-    {mes: "Jun/2021", revenue: 12899},
-    {mes: "Sep/2021", revenue: 12395},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const chl = [
-    {mes: "Dic/2018", revenue: 0},
-    {mes: "Mar/2019", revenue: 0},
-    {mes: "Jun/2019", revenue: 0},
-    {mes: "Sep/2019", revenue: 0},
-    {mes: "Dic/2019", revenue: 0},
-    {mes: "Mar/2020", revenue: 0},
-    {mes: "Jun/2020", revenue: 0},
-    {mes: "Sep/2020", revenue: 0},
-    {mes: "Dic/2020", revenue: 0},
-    {mes: "Mar/2021", revenue: 0},
-    {mes: "Jun/2021", revenue: 0},
-    {mes: "Sep/2021", revenue: 0},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const crm = [
-    {mes: "Dic/2018", revenue: 3603},
-    {mes: "Mar/2019", revenue: 3737},
-    {mes: "Jun/2019", revenue: 3997},
-    {mes: "Sep/2019", revenue: 4513},
-    {mes: "Dic/2019", revenue: 4851},
-    {mes: "Mar/2020", revenue: 4865},
-    {mes: "Jun/2020", revenue: 5151},
-    {mes: "Sep/2020", revenue: 5419},
-    {mes: "Dic/2020", revenue: 5817},
-    {mes: "Mar/2021", revenue: 5963},
-    {mes: "Jun/2021", revenue: 6340},
-    {mes: "Sep/2021", revenue: 6863},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const cs = [
-    {mes: "Dic/2018", revenue: 7936},
-    {mes: "Mar/2019", revenue: 8614},
-    {mes: "Jun/2019", revenue: 9080},
-    {mes: "Sep/2019", revenue: 8947},
-    {mes: "Dic/2019", revenue: 8742},
-    {mes: "Mar/2020", revenue: 8775},
-    {mes: "Jun/2020", revenue: 8489},
-    {mes: "Sep/2020", revenue: 7610},
-    {mes: "Dic/2020", revenue: 7642},
-    {mes: "Mar/2021", revenue: 9877},
-    {mes: "Jun/2021", revenue: 7148},
-    {mes: "Sep/2021", revenue: 7032},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const csco = [
-    {mes: "Dic/2018", revenue: 12444},
-    {mes: "Mar/2019", revenue: 12958},
-    {mes: "Jun/2019", revenue: 13429},
-    {mes: "Sep/2019", revenue: 13162},
-    {mes: "Dic/2019", revenue: 12007},
-    {mes: "Mar/2020", revenue: 11982},
-    {mes: "Jun/2020", revenue: 12151},
-    {mes: "Sep/2020", revenue: 11929},
-    {mes: "Dic/2020", revenue: 11960},
-    {mes: "Mar/2021", revenue: 12803},
-    {mes: "Jun/2021", revenue: 13126},
-    {mes: "Sep/2021", revenue: 12900},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const cvx = [
-    {mes: "Dic/2018", revenue: 39911},
-    {mes: "Mar/2019", revenue: 34427},
-    {mes: "Jun/2019", revenue: 36329},
-    {mes: "Sep/2019", revenue: 34731},
-    {mes: "Dic/2019", revenue: 34657},
-    {mes: "Mar/2020", revenue: 29244},
-    {mes: "Jun/2020", revenue: 16142},
-    {mes: "Sep/2020", revenue: 23959},
-    {mes: "Dic/2020", revenue: 25057},
-    {mes: "Mar/2021", revenue: 31350},
-    {mes: "Jun/2021", revenue: 36385},
-    {mes: "Sep/2021", revenue: 42349},
-    {mes: "Dic/2021", revenue: 0}
-];
-
-const cx = [
-    {mes: "Dic/2018", revenue: 3504},
-    {mes: "Mar/2019", revenue: 3238},
-    {mes: "Jun/2019", revenue: 3523},
-    {mes: "Sep/2019", revenue: 3494},
-    {mes: "Dic/2019", revenue: 3259},
-    {mes: "Mar/2020", revenue: 3085},
-    {mes: "Jun/2020", revenue: 2912},
-    {mes: "Sep/2020", revenue: 3436},
-    {mes: "Dic/2020", revenue: 3537},
-    {mes: "Mar/2021", revenue: 3411},
-    {mes: "Jun/2021", revenue: 3855},
-    {mes: "Sep/2021", revenue: 3747},
-    {mes: "Dic/2021", revenue: 0}
-];
-// cambiar
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-// const abev = [
-//     {mes: "Dic/2018", revenue: 4207},
-//     {mes: "Mar/2019", revenue: 3355},
-//     {mes: "Jun/2019", revenue: 3098},
-//     {mes: "Sep/2019", revenue: 3013},
-//     {mes: "Dic/2019", revenue: 3852},
-//     {mes: "Mar/2020", revenue: 2823},
-//     {mes: "Jun/2020", revenue: 2158},
-//     {mes: "Sep/2020", revenue: 2902},
-//     {mes: "Dic/2020", revenue: 3437},
-//     {mes: "Mar/2021", revenue: 3037},
-//     {mes: "Jun/2021", revenue: 2970},
-//     {mes: "Sep/2021", revenue: 3536},
-//     {mes: "Dic/2021", revenue: 0}
-// ];
-
-
+// Base de datos de Resultados
+
+const revenue = [{"Fecha":"Dic/2018","AAPL":84373,"ABEV":4207,"ABT":7765,"ADBE":2434,"AGRO":246.909,"AIG":12560,"AMD":1419,"AMGN":6200,"AMX":13230,"AMZN":72383,"ARCO":753.342,"AUY":467.415,"AXP":11308,"AZN":7189,"BA":28341,"BABA":16954,"BAC":28380,"BBD":16028,"BBVA":7184,"BCS":6526,"BG":11543,"BIDU":3931,"BIIB":3148,"BMY":5973,"BP":75048,"BRFS":2507,"BSBR":6030,"C":24091,"CAT":14342,"CRM":3603,"CS":7936,"CSCO":12444,"CVX":39911,"CX":3504,"DE":7994,"DESP":132.515,"DIS":15264,"EBAY":2848,"ERJ":1676,"FB":16914,"FDX":17824,"FMX":6311,"GE":33278,"GGB":2863,"GILD":5781,"GLOB":140.138,"GOLD":1843,"GOOGL":39151,"GS":12153,"GSK":10545,"HD":26491,"HPQ":14519,"HWM":3472,"IBM":21760,"IBN":4635,"INTC":18657,"ITUB":14048,"JD":19492,"JNJ":20397,"JPM":30569,"KO":7031,"LMT":14411,"LVS":3475,"MCD":5163,"MELI":428.019,"MMM":7945,"MO":4786,"MOD":541,"MSFT":32383,"NEM":2040,"NFLX":4187,"NKE":9371,"NOK":7838,"NVDA":2205,"OGZD":34888,"ORCL":9562,"PBR":24352,"PEP":19524,"PFE":13976,"PG":17438,"PTR":84985,"PYPL":4261,"QCOM":4842,"RDS.A":96482,"SAN":22747,"SBUX":6631,"SID":1589,"SLB":8180,"SNAP":389.822,"SONY":21298,"T":48042,"TGT":17821,"TOT":46112,"TRIP":346,"TS":2096,"TSLA":7226,"TWTR":908.836,"TX":2900,"UGP":6163,"V":5506,"VALE":9837,"VZ":34281,"WFC":19110,"WMT":138793,"X":3696,"XOM":68051,"ABBV":8305,"AVGO":5444,"BIOX":0,"BRK.B":63714,"CAAP":371.021,"DOCU":178.385,"EFX":835.3,"ETSY":200.028,"GPRK":151.2,"HAL":5936,"MA":3807,"PAAS":167.625,"PSX":28679,"SHOP":343.862,"SPOT":1706,"SQ":932.528,"UNH":58417,"UNP":5757,"WBA":33793},
+{"Fecha":"Mar/2019","AAPL":57918,"ABEV":3355,"ABT":7535,"ADBE":2592,"AGRO":79.815,"AIG":12456,"AMD":1272,"AMGN":5543,"AMX":12793,"AMZN":59700,"ARCO":730.999,"AUY":405.097,"AXP":11259,"AZN":6070,"BA":22912,"BABA":13860,"BAC":28373,"BBD":16038,"BBVA":6890,"BCS":6840,"BG":9937,"BIDU":3576,"BIIB":3081,"BMY":5920,"BP":67026,"BRFS":1953,"BSBR":6125,"C":25983,"CAT":13465,"CRM":3737,"CS":8614,"CSCO":12958,"CVX":34427,"CX":3238,"DE":11349,"DESP":133.114,"DIS":14944,"EBAY":2623,"ERJ":401.354,"FB":15077,"FDX":17010,"FMX":6038,"GE":26834,"GGB":2661,"GILD":5252,"GLOB":146.151,"GOLD":2061,"GOOGL":36202,"GS":13277,"GSK":9977,"HD":26381,"HPQ":14036,"HWM":3541,"IBM":18182,"IBN":5217,"INTC":16061,"ITUB":12966,"JD":17949,"JNJ":20042,"JPM":39569,"KO":8025,"LMT":14336,"LVS":3646,"MCD":4956,"MELI":473.77,"MMM":7863,"MO":4389,"MOD":556.7,"MSFT":30505,"NEM":1800,"NFLX":4521,"NKE":9610,"NOK":5714,"NVDA":2220,"OGZD":34763,"ORCL":9614,"PBR":21234,"PEP":12884,"PFE":13118,"PG":16462,"PTR":79459,"PYPL":4076,"QCOM":4982,"RDS.A":83880,"SAN":22374,"SBUX":6305,"SID":1594,"SLB":7879,"SNAP":320.426,"SONY":19315,"T":44827,"TGT":22977,"TOT":45158,"TRIP":376,"TS":1873,"TSLA":4541,"TWTR":786.89,"TX":2693,"UGP":5505,"V":5494,"VALE":8215,"VZ":32128,"WFC":28987,"WMT":123925,"X":3500,"XOM":61921,"ABBV":7828,"AVGO":5789,"BIOX":18.683,"BRK.B":60678,"CAAP":360.55,"DOCU":199.732,"EFX":846.1,"ETSY":169.339,"GPRK":150.139,"HAL":5737,"MA":3889,"PAAS":231.498,"PSX":23280,"SHOP":320.482,"SPOT":1716,"SQ":959.359,"UNH":60308,"UNP":5384,"WBA":34528,"ZM":105.8},
+{"Fecha":"Jun/2019","AAPL":53741,"ABEV":3098,"ABT":7979,"ADBE":2735,"AGRO":218.786,"AIG":12561,"AMD":1531,"AMGN":5849,"AMX":13080,"AMZN":63404,"ARCO":723.744,"AUY":474.558,"AXP":11729,"AZN":5794,"BA":15750,"BABA":16840,"BAC":29295,"BBD":15472,"BBVA":12082,"BCS":7118,"BG":10095,"BIDU":3858,"BIIB":3206,"BMY":6273,"BP":72319,"BRFS":2127,"BSBR":6083,"C":26532,"CAT":14432,"CRM":3997,"CS":9080,"CSCO":13429,"CVX":36329,"CX":3523,"DE":10042,"DESP":114.087,"DIS":20300,"EBAY":2674,"ERJ":583.615,"FB":16886,"FDX":17807,"FMX":6706,"GE":29231,"GGB":2590,"GILD":5649,"GLOB":157.534,"GOLD":2120,"GOOGL":38836,"GS":14167,"GSK":10036,"HD":30839,"HPQ":14505,"HWM":3691,"IBM":19161,"IBN":4869,"INTC":16505,"ITUB":13183,"JD":22021,"JNJ":20576,"JPM":38042,"KO":9998,"LMT":14427,"LVS":3334,"MCD":5341,"MELI":545.242,"MMM":8171,"MO":5193,"MOD":529,"MSFT":33622,"NEM":2254,"NFLX":4923,"NKE":10198,"NOK":6398,"NVDA":2579,"OGZD":27646,"ORCL":11136,"PBR":18511,"PEP":16450,"PFE":13264,"PG":17094,"PTR":80276,"PYPL":4247,"QCOM":9635,"RDS.A":89134,"SAN":22345,"SBUX":6821,"SID":1760,"SLB":8269,"SNAP":388.021,"SONY":17519,"T":44957,"TGT":17627,"TOT":45241,"TRIP":422,"TS":1920,"TSLA":6350,"TWTR":841.381,"TX":2829,"UGP":5534,"V":5840,"VALE":9185,"VIST":120.361,"VZ":32071,"WFC":28088,"WMT":130377,"X":3545,"XOM":67458,"ABBV":8255,"AVGO":5517,"BIOX":49.571,"BRK.B":63598,"CAAP":412.563,"DOCU":213.962,"EFX":880,"ETSY":181.095,"GPRK":169.51,"HAL":5930,"MA":4113,"PAAS":289.698,"PSX":27830,"SHOP":361.979,"SPOT":1873,"SQ":1174,"UNH":60595,"UNP":5596,"WBA":34591,"ZM":121.988},
+{"Fecha":"Sep/2019","AAPL":63936,"ABEV":3013,"ABT":8076,"ADBE":2823,"AGRO":254.312,"AIG":12914,"AMD":1801,"AMGN":5711,"AMX":12785,"AMZN":69981,"ARCO":749.969,"AUY":356.883,"AXP":11866,"AZN":6607,"BA":19986,"BABA":16964,"BAC":28564,"BBD":15178,"BBVA":11914,"BCS":6830,"BG":10325,"BIDU":4002,"BIIB":3171,"BMY":6007,"BP":67863,"BRFS":2132,"BSBR":5389,"C":26162,"CAT":12755,"CRM":4513,"CS":8947,"CSCO":13162,"CVX":34731,"CX":3494,"DE":9896,"DESP":132.048,"DIS":18799,"EBAY":2630,"ERJ":638.375,"FB":17652,"FDX":17048,"FMX":6714,"GE":23493,"GGB":2502,"GILD":5573,"GLOB":171.334,"GOLD":2670,"GOOGL":40380,"GS":12612,"GSK":11568,"HD":27223,"HPQ":15271,"HWM":3559,"IBM":18028,"IBN":5317,"INTC":19190,"ITUB":13622,"JD":19219,"JNJ":20737,"JPM":36360,"KO":9497,"LMT":15171,"LVS":3250,"MCD":5431,"MELI":603.031,"MMM":7991,"MO":5412,"MOD":500.2,"MSFT":33055,"NEM":2709,"NFLX":5245,"NKE":10652,"NOK":6322,"NVDA":3014,"OGZD":25089,"ORCL":9218,"PBR":19415,"PEP":17188,"PFE":12680,"PG":17798,"PTR":79908,"PYPL":4308,"QCOM":4814,"RDS.A":84598,"SAN":21546,"SBUX":6745,"SID":1513,"SLB":8541,"SNAP":446.199,"SONY":19772,"T":44588,"TGT":18422,"TOT":42147,"TRIP":428,"TS":1748,"TSLA":6303,"TWTR":823.717,"TX":2321,"UGP":5847,"V":6137,"VALE":10246,"VIST":105.443,"VZ":32894,"WFC":27314,"WMT":127991,"X":3069,"XOM":63278,"ABBV":8479,"AVGO":5515,"BIOX":36.252,"BRK.B":64972,"CAAP":417.095,"DOCU":235.612,"EFX":875.7,"ETSY":197.947,"GPRK":151.202,"HAL":5550,"MA":4467,"PAAS":351.284,"PSX":27147,"SHOP":390.552,"SPOT":1925,"SQ":1266,"UNH":60351,"UNP":5516,"WBA":33954,"ZM":145.826},
+{"Fecha":"Dic/2019","AAPL":91722,"ABEV":3852,"ABT":8314,"ADBE":2980,"AGRO":262.525,"AIG":11815,"AMD":2127,"AMGN":6158,"AMX":13670,"AMZN":87437,"ARCO":754.366,"AUY":390.688,"AXP":12166,"AZN":7154,"BA":17911,"BABA":22917,"BAC":29409,"BBD":15410,"BBVA":10399,"BCS":6820,"BG":10786,"BIDU":4100,"BIIB":3257,"BMY":7945,"BP":72074,"BRFS":2257,"BSBR":6028,"C":25021,"CAT":13137,"CRM":4851,"CS":8742,"CSCO":12007,"CVX":34657,"CX":3259,"DE":7629,"DESP":145.627,"DIS":20779,"EBAY":2792,"ERJ":1004,"FB":21082,"FDX":17324,"FMX":6871,"GE":26159,"GGB":2316,"GILD":5848,"GLOB":184.306,"GOLD":2927,"GOOGL":45984,"GS":14217,"GSK":11450,"HD":25782,"HPQ":14557,"HWM":3401,"IBM":21777,"IBN":5387,"INTC":20209,"ITUB":12248,"JD":24227,"JNJ":20758,"JPM":35678,"KO":9079,"LMT":15878,"LVS":3509,"MCD":5349,"MELI":674.271,"MMM":8111,"MO":4802,"MOD":473.4,"MSFT":36906,"NEM":2963,"NFLX":5467,"NKE":10325,"NOK":7639,"NVDA":3105,"OGZD":30780,"ORCL":9614,"PBR":19865,"PEP":20640,"PFE":12688,"PG":18240,"PTR":91611,"PYPL":4903,"QCOM":5077,"RDS.A":84544,"SAN":22907,"SBUX":7095,"SID":1585,"SLB":8228,"SNAP":560.888,"SONY":22658,"T":46893,"TGT":18665,"TOT":43637,"TRIP":335,"TS":1751,"TSLA":7384,"TWTR":1007,"TX":2231,"UGP":5748,"V":6054,"VALE":9965,"VIST":96.445,"VZ":34775,"WFC":25761,"WMT":141671,"X":2824,"XOM":63338,"ABBV":8704,"AVGO":5776,"BIOX":62.994,"BRK.B":65368,"CAAP":380.061,"DOCU":249.502,"EFX":905.8,"ETSY":269.998,"GPRK":158.056,"HAL":5191,"MA":4414,"PAAS":411.637,"PSX":29186,"SHOP":505.16,"SPOT":2054,"SQ":1313,"UNH":60901,"UNP":5212,"WBA":34339,"ZM":166.593},
+{"Fecha":"Mar/2020","AAPL":58347,"ABEV":2823,"ABT":7726,"ADBE":3084,"AGRO":156.13,"AIG":14443,"AMD":1786,"AMGN":6112,"AMX":12477,"AMZN":75452,"ARCO":617.504,"AUY":336.887,"AXP":11026,"AZN":6708,"BA":16909,"BABA":16380,"BAC":27541,"BBD":8199,"BBVA":7142,"BCS":8028,"BG":9173,"BIDU":3230,"BIIB":3157,"BMY":10781,"BP":59687,"BRFS":2005,"BSBR":2473,"C":26708,"CAT":10630,"CRM":4865,"CS":8775,"CSCO":11982,"CVX":29244,"CX":3085,"DE":9281,"DESP":76.082,"DIS":17913,"EBAY":2373,"ERJ":379.278,"FB":17737,"FDX":17487,"FMX":6100,"GE":21066,"GGB":2067,"GILD":5521,"GLOB":191.572,"GOLD":2594,"GOOGL":41110,"GS":9870,"GSK":11614,"HD":28260,"HPQ":12407,"HWM":3209,"IBM":17571,"IBN":5537,"INTC":19828,"ITUB":12205,"JD":20950,"JNJ":20682,"JPM":25302,"KO":8581,"LMT":15651,"LVS":1782,"MCD":4714,"MELI":652.091,"MMM":8075,"MO":5046,"MOD":472.9,"MSFT":35021,"NEM":2604,"NFLX":5768,"NKE":10125,"NOK":5414,"NVDA":3080,"OGZD":25966,"ORCL":9796,"PBR":16905,"PEP":13881,"PFE":12028,"PG":17214,"PYPL":4576,"QCOM":5216,"RDS.A":53376,"SAN":19895,"SBUX":5995,"SID":1195,"SLB":7455,"SNAP":462.478,"SONY":16047,"T":42779,"TGT":23398,"TOT":38564,"TRIP":278,"TS":1762,"TSLA":5985,"TWTR":807.637,"TX":2245,"UGP":4791,"V":5854,"VALE":7000,"VIST":73.32,"VZ":31610,"WFC":14195,"WMT":134622,"X":2748,"XOM":53898,"ABBV":8619,"AVGO":5858,"BIOX":25.717,"BRK.B":61265,"CAAP":302.829,"DOCU":274.895,"EFX":957.9,"ETSY":228.055,"GPRK":133.239,"HAL":5037,"MA":4009,"PAAS":338.709,"PSX":20199,"SHOP":470.001,"SPOT":2036,"SQ":1381,"UNH":64421,"UNP":5229,"WBA":35820,"ZM":188.251},
+{"Fecha":"Jun/2020","AAPL":59415,"ABEV":2158,"ABT":7328,"ADBE":3123,"AGRO":161.853,"AIG":9396,"AMD":1932,"AMGN":6138,"AMX":10792,"AMZN":88912,"ARCO":292.524,"AUY":308.621,"AXP":8217,"AZN":6341,"BA":11807,"BABA":21691,"BAC":24773,"BBD":5687,"BBVA":9622,"BCS":6626,"BG":9467,"BIDU":3673,"BIIB":3402,"BMY":10129,"BP":31754,"BRFS":1692,"BSBR":3133,"C":23362,"CAT":9986,"CRM":5151,"CS":8489,"CSCO":12151,"CVX":16142,"CX":2912,"DE":8917,"DESP":-9.734,"DIS":11725,"EBAY":2848,"ERJ":532.287,"FB":18687,"FDX":17358,"FMX":4912,"GE":17830,"GGB":1625,"GILD":5125,"GLOB":182.708,"GOLD":3076,"GOOGL":38146,"GS":15461,"GSK":9464,"HD":38053,"HPQ":14158,"HWM":1253,"IBM":18123,"IBN":5001,"INTC":19728,"ITUB":8357,"JD":28364,"JNJ":18338,"JPM":40207,"KO":7109,"LMT":16220,"LVS":98,"MCD":3762,"MELI":878.369,"MMM":7176,"MO":5062,"MOD":347.8,"MSFT":38033,"NEM":2323,"NFLX":6148,"NKE":6318,"NOK":5609,"NVDA":3866,"OGZD":16078,"ORCL":10440,"PBR":9458,"PEP":15945,"PFE":11801,"PG":17698,"PTR":51754,"PYPL":5228,"QCOM":4893,"RDS.A":31175,"SAN":17519,"SBUX":4222,"SID":1156,"SLB":5356,"SNAP":454.158,"SONY":18311,"T":40950,"TGT":19615,"TOT":21738,"TRIP":59,"TS":1251,"TSLA":6036,"TWTR":683.438,"TX":1724,"UGP":2950,"V":4837,"VALE":7513,"VIST":51.219,"VZ":30447,"WFC":24135,"WMT":137742,"X":2091,"XOM":32528,"ABBV":10425,"AVGO":5742,"BIOX":48.16,"BRK.B":56840,"CAAP":81.727,"DOCU":297.017,"EFX":982.8,"ETSY":428.737,"GPRK":55.65,"HAL":3196,"MA":3335,"PAAS":253.803,"PSX":11093,"SHOP":714.341,"SPOT":2080,"SQ":1924,"UNH":62138,"UNP":4244,"WBA":34631,"ZM":328.167},
+{"Fecha":"Sep/2020","AAPL":64666,"ABEV":2902,"ABT":8853,"ADBE":3226,"AGRO":260.532,"AIG":10221,"AMD":2801,"AMGN":6382,"AMX":11778,"AMZN":96145,"ARCO":466.799,"AUY":438.34,"AXP":9201,"AZN":6870,"BA":14140,"BABA":22412,"BAC":24153,"BBD":6732,"BBVA":9976,"BCS":6721,"BG":10163,"BIDU":4081,"BIIB":3119,"BMY":10540,"BP":45044,"BRFS":1849,"BSBR":3460,"C":20066,"CAT":9887,"CRM":5419,"CS":7610,"CSCO":11929,"CVX":23959,"CX":3436,"DE":9728,"DESP":11.74,"DIS":14673,"EBAY":2600,"ERJ":760.733,"FB":21470,"FDX":19321,"FMX":5727,"GE":19175,"GGB":2273,"GILD":6565,"GLOB":207.223,"GOLD":3489,"GOOGL":46195,"GS":12944,"GSK":11167,"HD":33536,"HPQ":15409,"HWM":1134,"IBM":17560,"IBN":5287,"INTC":18333,"ITUB":7699,"JD":25181,"JNJ":21079,"JPM":31809,"KO":8671,"LMT":16495,"LVS":586,"MCD":5418,"MELI":1116,"MMM":8350,"MO":5678,"MOD":461.4,"MSFT":37154,"NEM":3124,"NFLX":6436,"NKE":10580,"NOK":6188,"NVDA":4726,"OGZD":18947,"ORCL":9367,"PBR":13154,"PEP":18091,"PFE":12131,"PG":19318,"PTR":64859,"PYPL":5476,"QCOM":8346,"RDS.A":42975,"SAN":17682,"SBUX":6202,"SID":1621,"SLB":5258,"SNAP":678.668,"SONY":19912,"T":42340,"TGT":22975,"TOT":27564,"TRIP":151,"TS":1026,"TSLA":8771,"TWTR":936.233,"TX":2112,"UGP":3861,"V":5101,"VALE":10769,"VIST":69.863,"VZ":31543,"WFC":22469,"WMT":134708,"X":2340,"XOM":45722,"ABBV":12902,"AVGO":5821,"BIOX":42.105,"BRK.B":63024,"CAAP":97.572,"DOCU":342.209,"EFX":1068,"ETSY":451.478,"GPRK":98.147,"HAL":2975,"MA":3837,"PAAS":299.69,"PSX":15909,"SHOP":767.405,"SNOW":133.145,"SPOT":2308,"SQ":3034,"UNH":65115,"UNP":4919,"WBA":34746,"ZM":663.52},
+{"Fecha":"Dic/2020","AAPL":111543,"ABEV":3437,"ABT":10701,"ADBE":3432,"AGRO":243.049,"AIG":9676,"AMD":3244,"AMGN":6614,"AMX":12407,"AMZN":125555,"ARCO":607.392,"AUY":472.335,"AXP":9741,"AZN":7987,"BA":15305,"BABA":33362,"BAC":22374,"BBD":6333,"BBVA":6122,"BCS":6524,"BG":12614,"BIDU":4567,"BIIB":930.8,"BMY":11068,"BP":45170,"BRFS":2125,"BSBR":4669,"C":19178,"CAT":11243,"CRM":5817,"CS":7642,"CSCO":11960,"CVX":25057,"CX":3537,"DE":9112,"DESP":53.246,"DIS":16098,"EBAY":2876,"ERJ":1817,"FB":28072,"FDX":20493,"FMX":6340,"GE":21786,"GGB":2523,"GILD":7431,"GLOB":232.636,"GOLD":3329,"GOOGL":56899,"GS":14162,"GSK":11539,"HD":32261,"HPQ":15689,"HWM":1238,"IBM":20367,"IBN":5482,"INTC":19978,"ITUB":9496,"JD":33851,"JNJ":22473,"JPM":30523,"KO":8668,"LMT":17032,"LVS":1146,"MCD":5314,"MELI":1327,"MMM":8583,"MO":5055,"MOD":484.3,"MSFT":43076,"NEM":3366,"NFLX":6644,"NKE":11217,"NOK":7830,"NVDA":5003,"OGZD":26530,"ORCL":9800,"PBR":13886,"PEP":22455,"PFE":11684,"PG":19745,"PTR":69351,"PYPL":6154,"QCOM":8235,"RDS.A":44248,"SAN":18428,"SBUX":6749,"SID":1814,"SLB":5532,"SNAP":911.322,"SONY":25808,"T":45691,"TGT":22632,"TOT":32421,"TRIP":116,"TS":1133,"TSLA":10744,"TWTR":1289,"TX":2543,"UGP":4300,"V":5687,"VALE":14621,"VIST":79.536,"VZ":34692,"WFC":19997,"WMT":152079,"X":2562,"XOM":46022,"ABBV":13858,"AVGO":6467,"BIOX":48.003,"BRK.B":64381,"CAAP":131.519,"DOCU":382.923,"EFX":1119,"ETSY":617.355,"GPRK":106.7,"HAL":3237,"MA":4120,"PAAS":440.281,"PSX":16492,"SHOP":977.744,"SNOW":159.624,"SPOT":2585,"SQ":3159,"UNH":65467,"UNP":5141,"WBA":36307,"ZM":777.196},
+{"Fecha":"Mar/2021","AAPL":89898,"ABEV":3037,"ABT":10456,"ADBE":3916,"AGRO":108.592,"AIG":14454,"AMD":3445,"AMGN":5902,"AMX":12192,"AMZN":108518,"ARCO":561.116,"AUY":425.152,"AXP":9426,"AZN":8434,"BA":15217,"BABA":28922,"BAC":24460,"BBD":7204,"BBVA":10366,"BCS":8135,"BG":12961,"BIDU":4342,"BIIB":2694,"BMY":11073,"BP":34664,"BRFS":1933,"BSBR":3643,"C":21863,"CAT":11900,"CRM":5963,"CS":9877,"CSCO":12803,"CVX":31350,"CX":3411,"DE":12053,"DESP":56.15,"DIS":15618,"EBAY":3079,"ERJ":812.512,"FB":26171,"FDX":21480,"FMX":6115,"GE":16834,"GGB":2983,"GILD":6448,"GLOB":270.17,"GOLD":2936,"GOOGL":55423,"GS":19144,"GSK":10229,"HD":37500,"HPQ":16023,"HWM":1209,"IBM":17730,"IBN":5984,"INTC":19673,"ITUB":8391,"JD":31358,"JNJ":22304,"JPM":34789,"KO":9044,"LMT":16258,"LVS":1196,"MCD":5125,"MELI":1378,"MMM":8851,"MO":4880,"MOD":514.9,"MSFT":41706,"NEM":2908,"NFLX":7163,"NKE":10341,"NOK":6114,"NVDA":5661,"OGZD":30701,"ORCL":10085,"PBR":15727,"PEP":14821,"PFE":14582,"PG":18109,"PTR":77729,"PYPL":6092,"QCOM":7935,"RDS.A":54643,"SAN":18931,"SBUX":6668,"SID":2174,"SLB":5223,"SNAP":769.584,"SONY":20928,"T":43939,"TGT":28339,"TRIP":123,"TS":1182,"TSLA":10389,"TWTR":1036,"TX":3213,"UGP":4371,"V":5729,"VALE":12648,"VIST":115.901,"VZ":32867,"WFC":19301,"WMT":138310,"X":3674,"XOM":58064,"ABBV":13010,"AVGO":6655,"BIOX":35.536,"BRK.B":64599,"CAAP":138.193,"DOCU":430.898,"EFX":1213,"ETSY":550.646,"GPRK":146.595,"HAL":3451,"MA":4155,"PAAS":370.849,"PSX":21504,"SHOP":988.647,"SNOW":190.465,"SPOT":2586,"SQ":5057,"UNH":70196,"UNP":5001,"WBA":32779,"ZM":882.485},
+{"Fecha":"Jun/2021","AAPL":81494,"ABEV":2970,"ABT":10223,"ADBE":3846,"AGRO":289.769,"AIG":10681,"AMD":3850,"AMGN":6544,"AMX":12621,"AMZN":113080,"ARCO":592.696,"AUY":433.689,"AXP":10565,"AZN":8204,"BA":16998,"BABA":31861,"BAC":22918,"BBD":5778,"BBVA":10454,"BCS":7573,"BG":15390,"BIDU":4855,"BIIB":2628,"BMY":11703,"BP":36396,"BRFS":2200,"BSBR":4951,"C":19820,"CAT":12899,"CRM":6340,"CS":7148,"CSCO":13126,"CVX":36385,"CX":3855,"DE":11529,"DESP":70.569,"DIS":17026,"EBAY":2686,"ERJ":1120,"FB":29077,"FDX":22565,"FMX":6850,"GE":18157,"GGB":3617,"GILD":6240,"GLOB":305.257,"GOLD":2866,"GOOGL":61887,"GS":17005,"GSK":11317,"HD":41118,"HPQ":15346,"HWM":1195,"IBM":18745,"IBN":5268,"INTC":19631,"ITUB":8138,"JD":39304,"JNJ":23301,"JPM":31829,"KO":10155,"LMT":17029,"LVS":1173,"MCD":5888,"MELI":1703,"MMM":8950,"MO":5614,"MOD":494.6,"MSFT":46152,"NEM":3036,"NFLX":7342,"NKE":12355,"NOK":6405,"NVDA":6507,"OGZD":27872,"ORCL":11227,"PBR":20931,"PEP":19214,"PFE":18977,"PG":18946,"PTR":91503,"PYPL":6327,"QCOM":8060,"RDS.A":60736,"SAN":19283,"SBUX":7497,"SID":2910,"SLB":5634,"SNAP":982.108,"SONY":20630,"T":44045,"TGT":24197,"TRIP":235,"TS":1529,"TSLA":11958,"TWTR":1190,"TX":3898,"UGP":5393,"V":6130,"VALE":16609,"VIST":165.277,"VZ":33764,"WFC":20888,"WMT":141048,"X":5048,"XOM":67031,"ABBV":13959,"AVGO":6610,"BIOX":81.053,"BRK.B":69114,"CAAP":135.264,"DOCU":469.078,"EFX":1235,"ETSY":528.9,"GPRK":165.598,"HAL":3707,"MA":4529,"PAAS":378.89,"PSX":27195,"SHOP":1119,"SNOW":228.914,"SPOT":2810,"SQ":4681,"UNH":71321,"UNP":5504,"WBA":34030,"ZM":956.237},
+{"Fecha":"Sep/2021","AAPL":83360,"ABEV":3536,"ABT":10928,"ADBE":3940,"AGRO":309.016,"AIG":12835,"AMD":4313,"AMGN":6711,"AMX":12648,"AMZN":110812,"ARCO":725.836,"AUY":449.121,"AXP":11235,"AZN":9866,"BA":15278,"BABA":31023,"BAC":24256,"BBD":8193,"BBVA":10383,"BCS":7530,"BG":14116,"BIDU":4934,"BIIB":2649,"BMY":11624,"BP":36174,"BRFS":2369,"BSBR":4324,"C":19406,"CAT":12395,"CRM":6863,"CS":7032,"CSCO":12900,"CVX":42349,"CX":3747,"DE":11317,"DESP":89.868,"DIS":18537,"EBAY":2520,"ERJ":957.982,"FB":29010,"FDX":21938,"FMX":7111,"GE":18592,"GGB":4076,"GILD":7442,"GLOB":341.834,"GOLD":2837,"GOOGL":65056,"GS":14678,"GSK":12507,"HD":36820,"HPQ":16643,"HWM":1283,"IBM":17618,"IBN":5329,"INTC":19192,"ITUB":9253,"JD":33809,"JNJ":23341,"JPM":31365,"KO":10061,"LMT":16028,"LVS":857,"MCD":6201,"MELI":1857,"MMM":8942,"MO":5531,"MOD":478.9,"MSFT":45317,"NEM":2906,"NFLX":7483,"NKE":12269,"NOK":6364,"NVDA":7103,"OGZD":32287,"ORCL":9728,"PBR":23249,"PEP":20187,"PFE":24094,"PG":20338,"PTR":105698,"PYPL":6226,"QCOM":9336,"RDS.A":65076,"SAN":19378,"SBUX":8145,"SID":1959,"SLB":5847,"SNAP":1067,"SONY":21523,"T":39922,"TGT":25160,"TRIP":303,"TS":1754,"TSLA":13757,"TWTR":1284,"TX":4568,"UGP":6101,"V":6559,"VALE":12669,"VIST":175.005,"VZ":32915,"WFC":24930,"WMT":140525,"X":6024,"XOM":73488,"ABBV":14342,"AVGO":6778,"BIOX":66.354,"BRK.B":70583,"CAAP":186.878,"DOCU":511.844,"EFX":1223,"ETSY":532.429,"GPRK":173.972,"HAL":3860,"MA":4985,"PAAS":457.215,"PSX":30457,"SHOP":1124,"SNOW":272.198,"SPOT":2948,"SQ":3845,"UNH":72337,"UNP":5566,"WBA":34262,"ZM":1021}]
+
+
+
+const costOfGoods = [{"Fecha":"Dic/2018","AAPL":-52654,"ABEV":-1678,"ABT":-3682,"ADBE":-392.193,"AGRO":-201.543,"AMD":-882,"AMGN":-1096,"AMX":-8470,"AMZN":-44786,"ARCO":-640.508,"AUY":-390.931,"AXP":-3674,"AZN":-2095,"BA":-22090,"BABA":-9198,"BG":-11328,"BIDU":-2257,"BIIB":-565.8,"BMY":-1688,"BP":-69242,"BRFS":-2078,"CAT":-10122,"CRM":-1190,"CSCO":-4569,"CVX":-35070,"CX":-2325,"DE":-5798,"DESP":-49.703,"DIS":-9736,"EBAY":-631,"ERJ":-1440,"FB":-2796,"FDX":-14073,"FMX":-3841,"GE":-25576,"GGB":-2520,"GILD":-1570,"GLOB":-88.435,"GOLD":-1659,"GOOGL":-17918,"GSK":-3736,"HD":-17944,"HPQ":-12137,"HWM":-2994,"IBM":-11215,"INTC":-7469,"JD":-16786,"JNJ":-6954,"KO":-2688,"LMT":-12469,"LVS":-2081,"MCD":-2466,"MELI":-223.235,"MMM":-4053,"MO":-1864,"MOD":-449.3,"MSFT":-12423,"NEM":-1568,"NFLX":-2733,"NKE":-5259,"NOK":-4688,"NVDA":-998,"OGZD":-15661,"ORCL":-2425,"PBR":-16377,"PEP":-8951,"PFE":-4295,"PG":-8776,"PTR":-72505,"PYPL":-2548,"QCOM":-2085,"RDS.A":-90827,"SBUX":-5179,"SID":-1066,"SLB":-7193,"SNAP":-225.742,"SONY":-14047,"T":-31201,"TGT":-13065,"TOT":-43417,"TRIP":-50,"TS":-1572,"TSLA":-5783,"TWTR":-268.345,"TX":-2240,"UGP":-5761,"V":-1139,"VALE":-5835,"VZ":-19643,"WMT":-104907,"X":-3336,"XOM":-52371},
+{"Fecha":"Mar/2019","AAPL":-36270,"ABEV":-1464,"ABT":-3645,"ADBE":-443.852,"AGRO":-146.894,"AMD":-751,"AMGN":-1055,"AMX":-8029,"AMZN":-33920,"ARCO":-646.365,"AUY":-327.879,"AXP":-3697,"AZN":-1103,"BA":-18641,"BABA":-8719,"BG":-9742,"BIDU":-2200,"BIIB":-670.2,"BMY":-1832,"BP":-59506,"BRFS":-1575,"CAT":-9170,"CRM":-1191,"CSCO":-4678,"CVX":-28865,"CX":-2239,"DE":-8206,"DESP":-45.245,"DIS":-9201,"EBAY":-614,"ERJ":-325.184,"FB":-2816,"FDX":-13612,"FMX":-3809,"GE":-20252,"GGB":-2324,"GILD":-957,"GLOB":-93.146,"GOLD":-1601,"GOOGL":-16012,"GSK":-3115,"HD":-17844,"HPQ":-11330,"HWM":-2955,"IBM":-10246,"INTC":-7022,"JD":-15319,"JNJ":-6557,"KO":-3013,"LMT":-12148,"LVS":-2125,"MCD":-2419,"MELI":-236.766,"MMM":-4097,"MO":-1578,"MOD":-465.1,"MSFT":-10170,"NEM":-1362,"NFLX":-2871,"NKE":-5238,"NOK":-3920,"NVDA":-924,"OGZD":-17756,"ORCL":-2383,"PBR":-14610,"PEP":-5684,"PFE":-3594,"PG":-8342,"PTR":-70436,"PYPL":-2278,"QCOM":-2080,"RDS.A":-73304,"SBUX":-4994,"SID":-1077,"SLB":-6956,"SNAP":-220.94,"SONY":-13456,"T":-27945,"TGT":-17484,"TOT":-40229,"TRIP":-52,"TS":-1290,"TSLA":-3976,"TWTR":-264.011,"TX":-2232,"UGP":-5127,"V":-1225,"VALE":-4761,"VZ":-17221,"WMT":-93034,"X":-3311,"XOM":-48604,"ABBV":-1734,"AVGO":-3001,"BIOX":-10.996,"BRK.B":-48098,"CAAP":-250.683,"DOCU":-55.927,"EFX":-465.1,"ETSY":-52.658,"GPRK":-69.905,"HAL":-5252,"PAAS":-217.868,"PSX":-22544,"SHOP":-140.009,"SPOT":-1297,"SQ":-579.841,"UNP":-3119,"WBA":-27272,"ZM":-19.525},
+{"Fecha":"Jun/2019","AAPL":-33569,"ABEV":-1377,"ABT":-3779,"ADBE":-450.514,"AGRO":-172.665,"AMD":-910,"AMGN":-1012,"AMX":-8230,"AMZN":-36337,"ARCO":-644.791,"AUY":-381.489,"AXP":-3907,"AZN":-1044,"BA":-17803,"BABA":-9239,"BG":-9430,"BIDU":-2362,"BIIB":-546.4,"BMY":-1870,"BP":-65853,"BRFS":-1618,"CAT":-10068,"CRM":-1249,"CSCO":-4741,"CVX":-30495,"CX":-2352,"DE":-7242,"DESP":-40.342,"DIS":-14111,"EBAY":-641,"ERJ":-521.701,"FB":-3307,"FDX":-13602,"FMX":-4201,"GE":-21660,"GGB":-2266,"GILD":-1000,"GLOB":-100.997,"GOLD":-1719,"GOOGL":-17296,"GSK":-3135,"HD":-20899,"HPQ":-11715,"HWM":-3078,"IBM":-10259,"INTC":-6677,"JD":-18801,"JNJ":-6801,"KO":-3910,"LMT":-12434,"LVS":-1978,"MCD":-2512,"MELI":-272.812,"MMM":-4323,"MO":-1872,"MOD":-445.6,"MSFT":-10412,"NEM":-1996,"NFLX":-3006,"NKE":-5604,"NOK":-4078,"NVDA":-1038,"OGZD":-15688,"ORCL":-2487,"PBR":-11319,"PEP":-7321,"PFE":-3736,"PG":-8708,"PTR":-70445,"PYPL":-2344,"QCOM":-2018,"RDS.A":-82157,"SBUX":-5261,"SID":-1146,"SLB":-7236,"SNAP":-232.51,"SONY":-11244,"T":-27613,"TGT":-12829,"TOT":-41246,"TRIP":-57,"TS":-1363,"TSLA":-5429,"TWTR":-277.965,"TX":-2338,"UGP":-5181,"V":-1221,"VALE":-5405,"VIST":-94.2,"VZ":-16953,"WMT":-97923,"X":-3371,"XOM":-53461,"ABBV":-1856,"AVGO":-2891,"BIOX":-29.537,"BRK.B":-50190,"CAAP":-305.313,"DOCU":-55.125,"EFX":-459.4,"ETSY":-58.605,"GPRK":-76.137,"HAL":-5324,"PAAS":-259.99,"PSX":-26112,"SHOP":-157.096,"SPOT":-1389,"SQ":-725.266,"UNP":-3089,"WBA":-27660,"ZM":-24.104},
+{"Fecha":"Sep/2019","AAPL":-39771,"ABEV":-1469,"ABT":-3866,"ADBE":-458.917,"AGRO":-166.051,"AMD":-1024,"AMGN":-1036,"AMX":-8080,"AMZN":-41302,"ARCO":-656.648,"AUY":-279.183,"AXP":-3873,"AZN":-1273,"BA":-16921,"BABA":-9771,"BG":-9929,"BIDU":-2334,"BIIB":-498,"BMY":-1788,"BP":-61963,"BRFS":-1630,"CAT":-8751,"CRM":-1464,"CSCO":-4590,"CVX":-29729,"CX":-2307,"DE":-7222,"DESP":-42.591,"DIS":-13071,"EBAY":-639,"ERJ":-543.51,"FB":-3155,"FDX":-13552,"FMX":-4199,"GE":-17219,"GGB":-2254,"GILD":-1035,"GLOB":-109.032,"GOLD":-1994,"GOOGL":-17568,"GSK":-3867,"HD":-18334,"HPQ":-12497,"HWM":-2931,"IBM":-9989,"INTC":-7945,"JD":-16373,"JNJ":-6770,"KO":-3711,"LMT":-13108,"LVS":-1886,"MCD":-2527,"MELI":-318.689,"MMM":-4217,"MO":-1914,"MOD":-424.5,"MSFT":-10406,"NEM":-2090,"NFLX":-3098,"NKE":-5864,"NOK":-4133,"NVDA":-1098,"OGZD":-16127,"ORCL":-2371,"PBR":-12300,"PEP":-7680,"PFE":-3794,"PG":-8653,"PTR":-72275,"PYPL":-2431,"QCOM":-2118,"RDS.A":-76876,"SBUX":-5286,"SID":-1117,"SLB":-7382,"SNAP":-239.206,"SONY":-12773,"T":-27103,"TGT":-13186,"TOT":-37997,"TRIP":-57,"TS":-1257,"TSLA":-5112,"TWTR":-281.057,"TX":-1913,"UGP":-5444,"V":-1236,"VALE":-5813,"VIST":-91.66,"VZ":-17498,"WMT":-95900,"X":-3059,"XOM":-49370,"ABBV":-1962,"AVGO":-2954,"BIOX":-21.123,"BRK.B":-50684,"CAAP":-304.67,"DOCU":-65.596,"EFX":-458.6,"ETSY":-68.949,"GPRK":-73.793,"HAL":-4961,"PAAS":-292.37,"PSX":-25414,"SHOP":-173.829,"SPOT":-1438,"SQ":-783.521,"UNP":-3005,"WBA":-27253,"ZM":-36.507},
+{"Fecha":"Dic/2019","AAPL":-56773,"ABEV":-1562,"ABT":-3931,"ADBE":-494.681,"AGRO":-215.273,"AMD":-1177,"AMGN":-1253,"AMX":-8421,"AMZN":-53977,"ARCO":-644.442,"AUY":-299.073,"AXP":-3931,"AZN":-2803,"BA":-18703,"BABA":-12434,"BG":-10116,"BIDU":-2202,"BIIB":-560,"BMY":-3530,"BP":-65239,"BRFS":-1768,"CAT":-9293,"CRM":-1559,"CSCO":-4283,"CVX":-42380,"CX":-2223,"DE":-5502,"DESP":-51.387,"DIS":-14303,"EBAY":-660,"ERJ":-876.978,"FB":-3492,"FDX":-14052,"FMX":-4171,"GE":-18896,"GGB":-2152,"GILD":-1683,"GLOB":-118.894,"GOLD":-2083,"GOOGL":-21020,"GSK":-4165,"HD":-17565,"HPQ":-11771,"HWM":-2799,"IBM":-10933,"INTC":-8381,"JD":-20861,"JNJ":-7007,"KO":-3600,"LMT":-13755,"LVS":-2008,"MCD":-2503,"MELI":-365.924,"MMM":-4210,"MO":-1733,"MOD":-399.9,"MSFT":-12358,"NEM":-2255,"NFLX":-3466,"NKE":-5884,"NOK":-4846,"NVDA":-1090,"OGZD":-21224,"ORCL":-2455,"PBR":-11682,"PEP":-9327,"PFE":-3616,"PG":-8806,"PTR":-79799,"PYPL":-2732,"QCOM":-2113,"RDS.A":-79079,"SBUX":-5510,"SID":-1092,"SLB":-7127,"SNAP":-269.156,"SONY":-15293,"T":-29697,"TGT":-13510,"TOT":-39942,"TRIP":-54,"TS":-1271,"TSLA":-5993,"TWTR":-314.008,"TX":-1927,"UGP":-5414,"V":-1345,"VALE":-5735,"VIST":-79.135,"VZ":-19736,"WMT":-107748,"X":-2937,"XOM":-49638,"ABBV":-2054,"AVGO":-3089,"BIOX":-37.357,"BRK.B":-53448,"CAAP":-294.315,"DOCU":-64.921,"EFX":-469.8,"ETSY":-90.824,"GPRK":-77.814,"HAL":-4586,"PAAS":-316.494,"PSX":-28058,"SHOP":-241.317,"SPOT":-1533,"SQ":-803.071,"UNP":-2881,"WBA":-27554,"ZM":-40.758},
+{"Fecha":"Mar/2020","AAPL":-35931,"ABEV":-1378,"ABT":-3849,"ADBE":-494,"AGRO":-130.509,"AMD":-968,"AMGN":-1513,"AMX":-7709,"AMZN":-44257,"ARCO":-578.609,"AUY":-244.279,"AXP":-3511,"AZN":-1402,"BA":-16766,"BABA":-10968,"BG":-8722,"BIDU":-2104,"BIIB":-561.2,"BMY":-5931,"BP":-59478,"BRFS":-1532,"CAT":-7420,"CRM":-1613,"CSCO":-4237,"CVX":-25242,"CX":-2120,"DE":-6927,"DESP":-33.495,"DIS":-13249,"EBAY":-535,"ERJ":-282.642,"FB":-3459,"FDX":-14375,"FMX":-3813,"GE":-15583,"GGB":-1875,"GILD":-969,"GLOB":-128.566,"GOLD":-1846,"GOOGL":-18982,"GSK":-3713,"HD":-19155,"HPQ":-9995,"HWM":-2605,"IBM":-9956,"INTC":-7812,"JD":-17761,"JNJ":-6874,"KO":-3301,"LMT":-13560,"LVS":-1301,"MCD":-2381,"MELI":-339.277,"MMM":-4136,"MO":-1073,"MOD":-398,"MSFT":-10975,"NEM":-1979,"NFLX":-3600,"NKE":-5741,"NOK":-3555,"NVDA":-1076,"OGZD":-17213,"ORCL":-2364,"PBR":-10272,"PEP":-6118,"PFE":-3248,"PG":-8518,"PTR":-61810,"PYPL":-2729,"QCOM":-2297,"RDS.A":-55868,"SBUX":-5170,"SID":-910.845,"SLB":-6614,"SNAP":-269.089,"SONY":-10611,"T":-26503,"TGT":-17696,"TOT":-38694,"TRIP":-51,"TS":-1333,"TSLA":-4751,"TWTR":-284.037,"TX":-1929,"UGP":-4518,"V":-1315,"VALE":-4425,"VIST":-68.742,"VZ":-16446,"WMT":-102026,"X":-2755,"XOM":-46135,"ABBV":-1942,"AVGO":-3189,"BIOX":-17.158,"BRK.B":-48844,"CAAP":-238.083,"DOCU":-70.986,"EFX":-506,"ETSY":-82.416,"GPRK":-86.374,"HAL":-4481,"PAAS":-295.651,"PSX":-20570,"SHOP":-212.992,"SPOT":-1520,"SQ":-860.243,"UNP":-2788,"WBA":-28799,"ZM":-32.547},
+{"Fecha":"Jun/2020","AAPL":-37367,"ABEV":-1177,"ABT":-3847,"ADBE":-455,"AGRO":-145.035,"AMD":-1084,"AMGN":-1488,"AMX":-6622,"AMZN":-52660,"ARCO":-326.945,"AUY":-211.173,"AXP":-2191,"AZN":-970.371,"BA":-12971,"BABA":-12341,"BG":-8463,"BIDU":-1853,"BIIB":-523.9,"BMY":-5080,"BP":-37816,"BRFS":-1357,"CAT":-7212,"CRM":-1679,"CSCO":-4508,"CVX":-20066,"CX":-1979,"DE":-6166,"DESP":-12.101,"DIS":-9250,"EBAY":-607,"ERJ":-516.047,"FB":-3829,"FDX":-13894,"FMX":-3044,"GE":-14986,"GGB":-1492,"GILD":-1064,"GLOB":-121.47,"GOLD":-2027,"GOOGL":-18553,"GSK":-3025,"HD":-25631,"HPQ":-11923,"HWM":-992,"IBM":-9718,"INTC":-9221,"JD":-24366,"JNJ":-6495,"KO":-3048,"LMT":-14007,"LVS":-657,"MCD":-2044,"MELI":-451.197,"MMM":-3785,"MO":-725,"MOD":-300.6,"MSFT":-12339,"NEM":-1654,"NFLX":-3644,"NKE":-4037,"NOK":-3504,"NVDA":-1591,"OGZD":-12289,"ORCL":-2335,"PBR":-6448,"PEP":-7095,"PFE":-3171,"PG":-8659,"PTR":-49444,"PYPL":-2706,"QCOM":-2080,"RDS.A":-31023,"SBUX":-4516,"SID":-821.037,"SLB":-4932,"SNAP":-265.847,"SONY":-12360,"T":-25268,"TGT":-15087,"TOT":-22111,"TRIP":-42,"TS":-1074,"TSLA":-4769,"TWTR":-288.039,"TX":-1514,"UGP":-2790,"V":-1310,"VALE":-4297,"VIST":-59.633,"VZ":-15930,"WMT":-102689,"X":-2421,"XOM":-25916,"ABBV":-3677,"AVGO":-3145,"BIOX":-25.333,"BRK.B":-44971,"CAAP":-137.348,"DOCU":-76.943,"EFX":-506.1,"ETSY":-111.381,"GPRK":-48.32,"HAL":-2917,"PAAS":-208.457,"PSX":-10858,"SHOP":-339.109,"SPOT":-1553,"SQ":-1346,"UNP":-2355,"WBA":-28670,"ZM":-119.994},
+{"Fecha":"Sep/2020","AAPL":-40072,"ABEV":-1488,"ABT":-4521,"ADBE":-468,"AGRO":-158.353,"AMD":-1571,"AMGN":-1561,"AMX":-7331,"AMZN":-57106,"ARCO":-435.808,"AUY":-278.726,"AXP":-2869,"AZN":-1385,"BA":-13096,"BABA":-13420,"BG":-8861,"BIDU":-1852,"BIIB":-563.9,"BMY":-4978,"BP":-41241,"BRFS":-1442,"CAT":-7021,"CRM":-1779,"CSCO":-4249,"CVX":-22179,"CX":-2260,"DE":-6887,"DESP":-11.69,"DIS":-12338,"EBAY":-662,"ERJ":-705.547,"FB":-4194,"FDX":-15062,"FMX":-3530,"GE":-15160,"GGB":-1957,"GILD":-1141,"GLOB":-135.815,"GOLD":-2011,"GOOGL":-21117,"GSK":-3516,"HD":-22608,"HPQ":-12601,"HWM":-961,"IBM":-9417,"INTC":-8592,"JD":-21357,"JNJ":-6859,"KO":-3489,"LMT":-14359,"LVS":-795,"MCD":-2520,"MELI":-635.511,"MMM":-4327,"MO":-761,"MOD":-379.2,"MSFT":-11002,"NEM":-1947,"NFLX":-3868,"NKE":-5967,"NOK":-3995,"NVDA":-1766,"OGZD":-13396,"ORCL":-2225,"PBR":-7477,"PEP":-8155,"PFE":-3412,"PG":-9142,"PTR":-58149,"PYPL":-2815,"QCOM":-2766,"RDS.A":-39068,"SBUX":-5122,"SID":-962.459,"SLB":-4800,"SNAP":-309.284,"SONY":-12689,"T":-26869,"TGT":-16215,"TOT":-26092,"TRIP":-43,"TS":-900.64,"TSLA":-6708,"TWTR":-361.388,"TX":-1753,"UGP":-3593,"V":-1309,"VALE":-4898,"VIST":-71.959,"VZ":-16526,"WMT":-100339,"X":-2448,"XOM":-36358,"ABBV":-5043,"AVGO":-3090,"BIOX":-24.34,"BRK.B":-50760,"CAAP":-144.679,"DOCU":-94.899,"EFX":-533.9,"ETSY":-120.168,"GPRK":-59.427,"HAL":-2659,"PAAS":-179.324,"PSX":-15867,"SHOP":-362.226,"SNOW":-50.446,"SPOT":-1743,"SQ":-2257,"UNP":-2589,"WBA":-28423,"ZM":-216.765},
+{"Fecha":"Dic/2020","AAPL":-66866,"ABEV":-1625,"ABT":-5014,"ADBE":-467,"AGRO":-172.4,"AMD":-1793,"AMGN":-1597,"AMX":-7970,"AMZN":-79284,"ARCO":-495.292,"AUY":-294.263,"AXP":-3186,"AZN":-1969,"BA":-14468,"BABA":-18778,"BG":-11140,"BIDU":-2191,"BIIB":-600.1,"BMY":-4829,"BP":-43146,"BRFS":-1632,"CAT":-7900,"CRM":-1594,"CSCO":-4215,"CVX":-20341,"CX":-2432,"DE":-6252,"DESP":-25.789,"DIS":-13044,"EBAY":-749,"ERJ":-1597,"FB":-5210,"FDX":-16232,"FMX":-3810,"GE":-16067,"GGB":-2030,"GILD":-1335,"GLOB":-150.955,"GOLD":-1924,"GOOGL":-26080,"GSK":-3924,"HD":-21991,"HPQ":-12345,"HWM":-915,"IBM":-9939,"INTC":-8835,"JD":-29208,"JNJ":-7770,"KO":-3664,"LMT":-14791,"LVS":-1015,"MCD":-2545,"MELI":-838.27,"MMM":-4340,"MO":-1909,"MOD":-401.6,"MSFT":-14194,"NEM":-2289,"NFLX":-4165,"NKE":-6427,"NOK":-4561,"NVDA":-1846,"OGZD":-17356,"ORCL":-2284,"PBR":-7065,"PEP":-10392,"PFE":-3758,"PG":-9253,"PYPL":-3203,"QCOM":-3489,"RDS.A":-41949,"SBUX":-5376,"SID":-1036,"SLB":-4964,"SNAP":-402.824,"SONY":-17255,"T":-29889,"TGT":-16050,"TOT":-30856,"TRIP":-44,"TS":-928.717,"TSLA":-8678,"TWTR":-432.924,"TX":-1887,"UGP":-4057,"V":-1351,"VALE":-5786,"VIST":-74.864,"VZ":-19019,"WMT":-115261,"X":-2543,"XOM":-37616,"ABBV":-4420,"AVGO":-3314,"BIOX":-26.908,"BRK.B":-52151,"CAAP":-146.319,"DOCU":-101.812,"EFX":-582.5,"ETSY":-150.78,"GPRK":-69.357,"HAL":-2843,"PAAS":-304.405,"PSX":-16218,"SHOP":-473.493,"SNOW":-66.681,"SPOT":-1906,"SQ":-2374,"UNP":-2622,"WBA":-29643,"ZM":-289.227},
+{"Fecha":"Mar/2021","AAPL":-51099,"ABEV":-1544,"ABT":-4886,"ADBE":-492,"AGRO":-138.735,"AMD":-1858,"AMGN":-1490,"AMX":-7673,"AMZN":-62403,"ARCO":-524.416,"AUY":-275.745,"AXP":-3116,"AZN":-2304,"BA":-13805,"BABA":-19889,"BG":-11060,"BIDU":-2315,"BIIB":-625,"BMY":-4985,"BP":-26324,"BRFS":-1562,"CAT":-8149,"CRM":-1989,"CSCO":-4679,"CVX":-26904,"CX":-2302,"DE":-8137,"DESP":-29.51,"DIS":-11048,"EBAY":-831,"ERJ":-735.645,"FB":-5131,"FDX":-17335,"FMX":-3829,"GE":-12433,"GGB":-2290,"GILD":-1361,"GLOB":-176.811,"GOLD":-1819,"GOOGL":-24103,"GSK":-3373,"HD":-25345,"HPQ":-12473,"HWM":-932,"IBM":-9770,"INTC":-8819,"JD":-26919,"JNJ":-7002,"KO":-3578,"LMT":-14036,"LVS":-983,"MCD":-2465,"MELI":-787.064,"MMM":-4516,"MO":-708,"MOD":-431.1,"MSFT":-13045,"NEM":-1881,"NFLX":-3869,"NKE":-5603,"NOK":-3895,"NVDA":-2032,"OGZD":-17566,"ORCL":-2262,"PBR":-8269,"PEP":-6668,"PFE":-5062,"PG":-8922,"PTR":-66468,"PYPL":-3066,"QCOM":-3432,"RDS.A":-42274,"SBUX":-5264,"SID":-1134,"SLB":-4296,"SNAP":-430.823,"SONY":-14681,"T":-26896,"TGT":-21045,"TRIP":-41,"TS":-908.195,"TSLA":-8174,"TWTR":-381.008,"TX":-2133,"UGP":-4058,"V":-1494,"VALE":-4700,"VIST":-86.892,"VZ":-17696,"WMT":-103272,"X":-3254,"XOM":-45832,"ABBV":-4180,"AVGO":-3182,"BIOX":-20.105,"BRK.B":-51062,"CAAP":-137.869,"DOCU":-104.97,"EFX":-597.6,"ETSY":-142.917,"GPRK":-71.104,"HAL":-3033,"PAAS":-284.594,"PSX":-21672,"SHOP":-430.33,"SNOW":-83.256,"SPOT":-1933,"SQ":-4119,"UNP":-2688,"WBA":-26458,"ZM":-300.309},
+{"Fecha":"Jun/2021","AAPL":-46078,"ABEV":-1600,"ABT":-4848,"ADBE":-488,"AGRO":-225.054,"AMD":-2020,"AMGN":-1637,"AMX":-7811,"AMZN":-64176,"ARCO":-537.534,"AUY":-287.738,"AXP":-3669,"AZN":-2578,"BA":-14581,"BABA":-19694,"BG":-14188,"BIDU":-2462,"BIIB":-532.6,"BMY":-4992,"BP":-31836,"BRFS":-1813,"CAT":-8986,"CRM":-2082,"CSCO":-4861,"CVX":-30142,"CX":-2555,"DE":-7886,"DESP":-33.838,"DIS":-12473,"EBAY":-675,"ERJ":-916.591,"FB":-5399,"FDX":-17376,"FMX":-4159,"GE":-13432,"GGB":-2593,"GILD":-1390,"GLOB":-201.183,"GOLD":-1787,"GOOGL":-26227,"GSK":-3533,"HD":-28046,"HPQ":-11936,"HWM":-927,"IBM":-9955,"INTC":-8425,"JD":-34448,"JNJ":-7553,"KO":-3914,"LMT":-14878,"LVS":-969,"MCD":-2683,"MELI":-948.83,"MMM":-4699,"MO":-682,"MOD":-420,"MSFT":-13991,"NEM":-1951,"NFLX":-4018,"NKE":-6631,"NOK":-3813,"NVDA":-2292,"OGZD":-14831,"ORCL":-2464,"PBR":-10698,"PEP":-8868,"PFE":-7939,"PG":-9791,"PTR":-83346,"PYPL":-3214,"QCOM":-3404,"RDS.A":-51101,"SBUX":-5594,"SID":-1351,"SLB":-4777,"SNAP":-468.564,"SONY":-13740,"T":-26860,"TGT":-17098,"TRIP":-47,"TS":-1140,"TSLA":-9074,"TWTR":-416.932,"TX":-2417,"UGP":-5110,"V":-1488,"VALE":-5883,"VIST":-98.364,"VZ":-18275,"WMT":-105183,"X":-3874,"XOM":-50908,"ABBV":-4476,"AVGO":-3046,"BIOX":-52.63,"BRK.B":-54813,"CAAP":-137.4,"DOCU":-108.6,"EFX":-600.4,"ETSY":-148.969,"GPRK":-77.008,"HAL":-3222,"PAAS":-280.655,"PSX":-26550,"SHOP":-499.038,"SNOW":-98.598,"SPOT":-2019,"SQ":-3563,"UNP":-2747,"WBA":-27384,"ZM":-302.76},
+{"Fecha":"Sep/2021","AAPL":-48186,"ABEV":-1865,"ABT":-4868,"ADBE":-510,"AGRO":-288.025,"AMD":-2227,"AMGN":-1609,"AMX":-7778,"AMZN":-62930,"ARCO":-622.943,"AUY":-299.149,"AXP":-4150,"AZN":-4837,"BA":-13571,"BABA":-20506,"BG":-13206,"BIDU":-2493,"BIIB":-644.5,"BMY":-4855,"BP":-34377,"BRFS":-1898,"CAT":-8714,"CRM":-2424,"CSCO":-4837,"CVX":-33628,"CX":-2536,"DE":-8071,"DESP":-39.898,"DIS":-13564,"EBAY":-677,"ERJ":-776.959,"FB":-5771,"FDX":-17417,"FMX":-4460,"GE":-13332,"GGB":-2848,"GILD":-1223,"GLOB":-223.723,"GOLD":-1839,"GOOGL":-27621,"GSK":-3902,"HD":-24857,"HPQ":-13508,"HWM":-995,"IBM":-9634,"INTC":-8446,"JD":-29060,"JNJ":-7174,"KO":-3929,"LMT":-13726,"LVS":-846,"MCD":-2785,"MELI":-1051,"MMM":-4832,"MO":-758,"MOD":-411,"MSFT":-13646,"NEM":-2114,"NFLX":-4207,"NKE":-6486,"NOK":-3883,"NVDA":-2472,"OGZD":-17607,"ORCL":-2406,"PBR":-12369,"PEP":-9345,"PFE":-10923,"PG":-10365,"PTR":-88526,"PYPL":-3336,"QCOM":-3937,"RDS.A":-56114,"SBUX":-6226,"SID":-1143,"SLB":-4730,"SNAP":-471.107,"SONY":-14085,"T":-23445,"TGT":-17844,"TRIP":-50,"TS":-1240,"TSLA":-10097,"TWTR":-484.479,"TX":-2617,"UGP":-5757,"V":-1441,"VALE":-5915,"VIST":-98.729,"VZ":-17489,"WMT":-105023,"X":-4104,"XOM":-53610,"ABBV":-4316,"AVGO":-3074,"BIOX":-36.775,"BRK.B":-57452,"CAAP":-157.746,"DOCU":-117.113,"EFX":-605.5,"ETSY":-153.66,"GPRK":-76.015,"HAL":-3356,"PAAS":-363.252,"PSX":-29128,"SHOP":-515.05,"SNOW":-107.464,"SPOT":-2168,"SQ":-2712,"UNP":-2864,"WBA":-27434,"ZM":-261.256}]
+
+
+
+const deprecationAndAmortization = [{"Fecha":"Dic/2018","AAPL":-3395,"ABEV":-305.136,"ABT":-763,"ADBE":-106.72,"AGRO":-41.397,"AIG":-1549,"AMD":-43,"AMGN":-490,"AMX":-1753,"AMZN":-4262,"ARCO":-28.515,"AUY":-130.052,"AXP":-286,"AZN":-1648,"BA":-583,"BABA":-1005,"BAC":-524,"BBD":-385.17,"BBVA":-348.026,"BG":-159,"BIDU":-1938,"BIIB":-153,"BMY":-190,"BP":-3954,"BRFS":-126.33,"C":-954,"CAT":-701,"CRM":-449,"CS":-272.127,"CSCO":-487,"CVX":-5343,"CX":-211.925,"DE":-503.3,"DESP":-4.469,"DIS":-732,"EBAY":-172,"ERJ":-73.487,"FB":-1225,"FDX":-828,"FMX":-256.362,"GE":-1875,"GGB":-132.351,"GILD":-358,"GLOB":-5.605,"GOLD":-456,"GOOGL":-2580,"GS":-377,"GSK":-764.145,"HD":-549,"HPQ":-168,"HWM":-149,"IBM":-1111,"INTC":-2493,"ITUB":-242.155,"JD":-233.434,"JNJ":-1735,"JPM":-2075,"KO":-279,"LMT":-304,"LVS":-289,"MCD":-379,"MELI":-11.9,"MMM":-371,"MO":-59,"MOD":-19.1,"MSFT":-2995,"NEM":-403,"NFLX":-2086,"NKE":-171,"NOK":-418.772,"NVDA":-78,"OGZD":-2582,"ORCL":-704,"PBR":-3022,"PEP":-763,"PFE":-1641,"PG":-650,"PTR":-6453,"PYPL":-223,"QCOM":-353,"RDS.A":-5514,"SAN":-742.836,"SBUX":-350.8,"SID":-87.895,"SLB":-919,"SNAP":-22.682,"SONY":-1816,"T":-7892,"TOT":-3090,"TRIP":-31,"TS":-246.045,"TSLA":-496.737,"TWTR":-110.723,"TX":-145.281,"UGP":-55.208,"V":-159,"VALE":-766.385,"VZ":-4352,"WFC":-1371,"WMT":-2731,"X":-137,"XOM":-4599},
+{"Fecha":"Mar/2019","AAPL":-3040,"ABEV":-277.766,"ABT":-753,"ADBE":-144.898,"AGRO":-36.717,"AIG":-1299,"AMD":-46,"AMGN":-495,"AMX":-2065,"AMZN":-4854,"ARCO":-28.948,"AUY":-120.604,"AXP":-297,"AZN":-683.187,"BA":-521,"BABA":-1128,"BAC":-418,"BBD":-371.226,"BBVA":-445.102,"BG":-139,"BIDU":-222.066,"BIIB":-121.1,"BMY":-186,"BP":-4508,"BRFS":-149.863,"C":-931,"CAT":-641,"CRM":-646,"CS":-236.724,"CSCO":-481,"CVX":-4180,"CX":-267.46,"DE":-513.2,"DESP":-4.598,"DIS":-828,"EBAY":-169,"ERJ":-22.841,"FB":-1355,"FDX":-851,"FMX":-345.377,"GE":-1712,"GGB":-134.265,"GILD":-359,"GLOB":-5.646,"GOLD":-480,"GOOGL":-2613,"GS":-368,"GSK":-1541,"HD":-547,"HPQ":-181,"HWM":-137,"IBM":-1446,"INTC":-2625,"ITUB":-300.726,"JD":-65.765,"JNJ":-1761,"JPM":-2038,"KO":-275,"LMT":-277,"LVS":-301,"MCD":-392.6,"MELI":-15.694,"MMM":-375,"MO":-53,"MOD":-19.3,"MSFT":-2926,"NEM":-342,"NFLX":-2157,"NKE":-178,"NOK":-468.947,"NVDA":-91,"OGZD":-2619,"ORCL":-741,"PBR":-3926,"PEP":-498,"PFE":-1545,"PG":-711,"PTR":-8050,"PYPL":-230,"QCOM":-345,"RDS.A":-6013,"SAN":-848.192,"SBUX":-372.7,"SID":-89.362,"SLB":-903,"SNAP":-23.319,"SONY":-1924,"T":-7206,"TGT":-648,"TOT":-3469,"TRIP":-31,"TS":-131.435,"TSLA":-467.577,"TWTR":-113.474,"TX":-160.226,"UGP":-76.653,"V":-160,"VALE":-804.037,"VZ":-4231,"WFC":-1678,"WMT":-2714,"X":-143,"XOM":-4571,"ABBV":-503,"AVGO":-1452,"BRK.B":-2417,"CAAP":-45.519,"DOCU":-12,"EFX":-77.6,"ETSY":-13.512,"GPRK":-26.69,"HAL":-421,"MA":-139,"PAAS":-51.123,"PSX":-337,"SHOP":-6.832,"SPOT":-23.845,"SQ":-25.661,"UNH":-639,"UNP":-549,"WBA":-499,"ZM":-10.743},
+{"Fecha":"Jun/2019","AAPL":-2933,"ABEV":-282.94,"ABT":-751,"ADBE":-145.61,"AGRO":-64.473,"AIG":-1358,"AMD":-70,"AMGN":-501,"AMX":-2165,"AMZN":-5202,"ARCO":-30.32,"AUY":-128.801,"AXP":-286,"AZN":-723.424,"BA":-546,"BABA":-1129,"BAC":-434,"BBD":-379.265,"BBVA":-446.09,"BG":-155,"BIDU":-219.507,"BIIB":-117.1,"BMY":-184,"BP":-4565,"BRFS":-147.284,"C":-952,"CAT":-647,"CRM":-674,"CS":-228.375,"CSCO":-464,"CVX":-4371,"CX":-265.389,"DE":-505.5,"DESP":-5.772,"DIS":-1304,"EBAY":-175,"ERJ":-47.54,"FB":-1502,"FDX":-866,"FMX":-368.536,"GE":-1687,"GGB":-134.38,"GILD":-348,"GLOB":-5.801,"GOLD":-502,"GOOGL":-2835,"GS":-399,"GSK":-997.348,"HD":-560,"HPQ":-190,"HWM":-139,"IBM":-1294,"INTC":-2554,"ITUB":-287.746,"JD":-21.666,"JNJ":-1705,"JPM":-2046,"KO":-327,"LMT":-288,"LVS":-289,"MCD":-398.3,"MELI":-17.281,"MMM":-376,"MO":-53,"MOD":-18.9,"MSFT":-2924,"NEM":-560,"NFLX":-2265,"NKE":-178,"NOK":-459.574,"NVDA":-92,"OGZD":-2714,"ORCL":-754,"PBR":-3409,"PEP":-558,"PFE":-1528,"PG":-820,"PTR":-7957,"PYPL":-228,"QCOM":-353,"RDS.A":-6666,"SAN":-820.267,"SBUX":-360.1,"SID":-94.78,"SLB":-938,"SNAP":-22.66,"SONY":-1364,"T":-7101,"TGT":-644,"TOT":-3607,"TRIP":-30,"TS":-135.336,"TSLA":-578.572,"TWTR":-115.616,"UGP":-71.766,"V":-165,"VALE":-965.786,"VIST":-44.347,"VZ":-4232,"WFC":-1870,"WMT":-2722,"X":-150,"XOM":-4631,"ABBV":-502,"AVGO":-1441,"BIOX":-1549,"BRK.B":-2456,"CAAP":-47.19,"DOCU":-16.099,"EFX":-82.5,"ETSY":-9.81,"GPRK":-25.815,"HAL":-420,"MA":-144,"PAAS":-61.546,"PSX":-339,"SHOP":-7.375,"SPOT":-22.473,"SQ":-26.447,"UNH":-654,"UNP":-551,"WBA":-522,"ZM":-13.99},
+{"Fecha":"Sep/2019","AAPL":-1932,"ABEV":-316.338,"ABT":-754,"ADBE":-150.549,"AGRO":-63.94,"AIG":-1176,"AMD":-69,"AMGN":-508,"AMX":-2097,"AMZN":-5563,"ARCO":-30.402,"AUY":-114.406,"AXP":-300,"AZN":-711.512,"BA":-576,"BABA":-1143,"BAC":-438,"BBD":-376.923,"BBVA":-448.071,"BG":-134,"BIDU":-209.807,"BIIB":-113.5,"BMY":-187,"BP":-4270,"BRFS":-144.996,"C":-983,"CAT":-645,"CRM":-829,"CS":-239.363,"CSCO":-461,"CVX":-4375,"CX":-269.097,"DE":-497,"DESP":-6.232,"DIS":-1296,"EBAY":-170,"ERJ":-45.376,"FB":-1416,"FDX":-879,"FMX":-367.662,"GE":-1500,"GGB":-126.486,"GILD":-347,"GLOB":-6.046,"GOLD":-583,"GOOGL":-2920,"GS":-473,"GSK":-632.322,"HD":-594,"HPQ":-200,"HWM":-131,"IBM":-1669,"INTC":-2679,"ITUB":-289.766,"JD":-197.515,"JNJ":-1727,"JPM":-2145,"KO":-363,"LMT":-302,"LVS":-284,"MCD":-413.4,"MELI":-19.543,"MMM":-379,"MO":-57,"MOD":-19.4,"MSFT":-2971,"NEM":-610,"NFLX":-2313,"NKE":-169,"NOK":-461.413,"NVDA":-92,"OGZD":-2741,"ORCL":-750,"PBR":-3512,"PEP":-578,"PFE":-1553,"PG":-723,"PTR":-7357,"PYPL":-227,"QCOM":-350,"RDS.A":-6772,"SAN":-813.866,"SBUX":-365.7,"SID":-102.349,"SLB":-900,"SNAP":-20.646,"SONY":-1662,"T":-6949,"TGT":-623,"TOT":-3976,"TRIP":-32,"TS":-133.387,"TSLA":-530.851,"TWTR":-119.986,"UGP":-68.718,"V":-172,"VALE":-929.771,"VIST":-46.1,"VZ":-4114,"WFC":-2045,"WMT":-2723,"X":-161,"XOM":-4873,"ABBV":-503,"AVGO":-1444,"BIOX":-1156,"BRK.B":-2534,"CAAP":-38.264,"DOCU":-30.804,"EFX":-84.1,"ETSY":-12.808,"GPRK":-27.803,"HAL":-417,"MA":-163,"PAAS":-65.221,"PSX":-342,"SHOP":-8.743,"SPOT":-24.46,"SQ":-26.721,"UNH":-709,"UNP":-557,"WBA":-526,"ZM":-16.052},
+{"Fecha":"Dic/2019","AAPL":-2816,"ABEV":-308.132,"ABT":-756,"ADBE":-183.692,"AGRO":-41.609,"AIG":-1173,"AMD":-73,"AMGN":-702,"AMX":-1928,"AMZN":-6170,"ARCO":-33.548,"AUY":-123.273,"AXP":-305,"AZN":-1665,"BA":-628,"BABA":-1205,"BAC":-439,"BBD":-380.757,"BBVA":-449.5,"BG":-120,"BIDU":-275.644,"BIIB":-112.9,"BMY":-1252,"BP":-4494,"BRFS":-141.833,"C":-1039,"CAT":-644,"CRM":-862,"CS":-588.972,"CSCO":-457,"CVX":-16464,"CX":-272.645,"DE":-538,"DESP":-6.195,"DIS":-1298,"EBAY":-167,"ERJ":-39.216,"FB":-1468,"FDX":-901,"FMX":-389.38,"GE":-1406,"GGB":-131.102,"GILD":-350,"GLOB":-6.762,"GOLD":-547,"GOOGL":-3413,"GS":-464,"GSK":-674.185,"HD":-595,"HPQ":-198,"HWM":-129,"IBM":-1650,"INTC":-2968,"ITUB":-296.131,"JD":-219.374,"JNJ":-1816,"JPM":-2139,"KO":-400,"LMT":-322,"LVS":-291,"MCD":-413.6,"MELI":-20.8,"MMM":-463,"MO":-63,"MOD":-19.5,"MSFT":-3203,"NEM":-728,"NFLX":-2607,"NKE":-174,"NOK":-494.893,"NVDA":-106,"OGZD":-2985,"ORCL":-748,"PBR":-3091,"PEP":-798,"PFE":-1384,"PG":-677,"PTR":-7327,"PYPL":-227,"QCOM":-351,"RDS.A":-9363,"SAN":-876.858,"SBUX":-369.2,"SID":-118.447,"SLB":-848,"SNAP":-20.62,"SONY":-1525,"T":-6961,"TGT":-638,"TOT":-4207,"TRIP":-33,"TS":-139.146,"TSLA":-577,"TWTR":-116.473,"TX":-169.342,"UGP":-73.331,"V":-182,"VALE":-1032,"VIST":-39.511,"VZ":-4105,"WFC":-2330,"WMT":-2828,"X":-162,"XOM":-4923,"ABBV":-509,"AVGO":-1444,"BIOX":-1245,"BRK.B":-2657,"CAAP":-42.7,"DOCU":-17.635,"EFX":-86.9,"ETSY":-15.271,"GPRK":-29.784,"HAL":-372,"MA":-176,"PAAS":-72.093,"PSX":-346,"SHOP":-12.701,"SPOT":-26.571,"SQ":-26.465,"UNH":-718,"UNP":-559,"WBA":-477,"ZM":-6.905},
+{"Fecha":"Mar/2020","AAPL":-2786,"ABEV":-262.975,"ABT":-828,"ADBE":-188,"AGRO":-17.198,"AIG":-1878,"AMD":-78,"AMGN":-897,"AMX":-1929,"AMZN":-5362,"ARCO":-35.348,"AUY":-96.011,"AXP":-337,"AZN":-841.527,"BA":-556,"BABA":-1384,"BAC":-432,"BBD":-327.991,"BBVA":-437.363,"BG":-113,"BIDU":-257.777,"BIIB":-119.9,"BMY":-2470,"BP":-4062,"BRFS":-128.086,"C":-927,"CAT":-614,"CRM":-905,"CS":-326.334,"CSCO":-446,"CVX":-4338,"CX":-266.698,"DE":-529,"DESP":-7.572,"DIS":-1333,"EBAY":-147,"ERJ":-58.324,"FB":-1597,"FDX":-908,"FMX":-379.805,"GE":-1331,"GGB":-124.683,"GILD":-349,"GLOB":-11.487,"GOLD":-630,"GOOGL":-3103,"GS":-437,"GSK":-247.87,"HD":-607,"HPQ":-198,"HWM":-129,"IBM":-1634,"INTC":-3050,"ITUB":-271.261,"JD":-180.324,"JNJ":-1747,"JPM":-2197,"KO":-367,"LMT":-301,"LVS":-290,"MCD":-421.3,"MELI":-21.55,"MMM":-440,"MO":-65,"MOD":-19.3,"MSFT":-3118,"NEM":-603,"NFLX":-2512,"NKE":-170,"NOK":-316.18,"NVDA":-107,"OGZD":-2978,"ORCL":-748,"PBR":-3209,"PEP":-533,"PFE":-1218,"PG":-799,"PTR":-8195,"PYPL":-293,"QCOM":-340,"RDS.A":-6348,"SAN":-803.118,"SBUX":-377.7,"SID":-101.295,"SLB":-792,"SNAP":-21.204,"SONY":-2316,"T":-7222,"TGT":-699,"TOT":-3634,"TRIP":-32,"TS":-166.921,"TSLA":-553,"TWTR":-120.649,"TX":-164.463,"UGP":-69.791,"V":-192,"VALE":-823.449,"VIST":-33.251,"VZ":-4150,"WFC":-1868,"WMT":-2791,"X":-160,"XOM":-5819,"ABBV":-559,"AVGO":-1728,"BIOX":-1254,"BRK.B":-2585,"CAAP":-55.364,"DOCU":-18.858,"EFX":-94.3,"ETSY":-15.163,"GPRK":-40.841,"HAL":-348,"MA":-144,"PAAS":-75.802,"PSX":-348,"SHOP":-14.366,"SPOT":-28.643,"SQ":-35.186,"UNH":-723,"UNP":-547,"WBA":-492,"ZM":-23.874},
+{"Fecha":"Jun/2020","AAPL":-2752,"ABEV":-241.969,"ABT":-825,"ADBE":-191,"AGRO":-31.572,"AIG":-682,"AMD":-82,"AMGN":-930,"AMX":-1791,"AMZN":-5748,"ARCO":-30.275,"AUY":-79.749,"AXP":-374,"AZN":-711.739,"BA":-547,"BABA":-1216,"BAC":-448,"BBD":-279.705,"BBVA":-406.368,"BG":-104,"BIDU":-215.141,"BIIB":-112.8,"BMY":-2645,"BP":-3947,"BRFS":-109.628,"C":-926,"CAT":-608,"CRM":-899,"CS":-357.024,"CSCO":-444,"CVX":-6312,"CX":-279.04,"DE":-547,"DESP":-8.202,"DIS":-1377,"EBAY":-172,"ERJ":-125.764,"FB":-1704,"FDX":-927,"FMX":-329.467,"GE":-1598,"GGB":-113.632,"GILD":-350,"GLOB":-7.352,"GOLD":-581,"GOOGL":-3391,"GS":-499,"HD":-615,"HPQ":-197,"HWM":-73,"IBM":-1679,"INTC":-3063,"ITUB":-229.855,"JD":184.363,"JNJ":-1726,"JPM":-2149,"KO":-381,"LMT":-307,"LVS":-285,"MCD":-425.7,"MELI":-22.652,"MMM":-492,"MO":-65,"MOD":-18.6,"MSFT":-3504,"NEM":-568,"NFLX":-2634,"NKE":-208,"NOK":-323.773,"NVDA":-404,"OGZD":-2727,"ORCL":-723,"PBR":-2378,"PEP":-589,"PFE":-1251,"PG":-814,"PTR":-8069,"PYPL":-297,"QCOM":-363,"RDS.A":-6309,"SAN":-759.875,"SBUX":-683.2,"SID":-84.675,"SLB":-497,"SNAP":-20.925,"SONY":-1367,"T":-7285,"TGT":-641,"TOT":-3521,"TRIP":-32,"TS":-150.423,"TSLA":-567,"TWTR":-123.837,"TX":-156.29,"UGP":-59.362,"V":-197,"VALE":-805.702,"VIST":-31.723,"VZ":-4181,"WFC":-2194,"WMT":-2771,"X":-159,"XOM":-4916,"ABBV":-1549,"AVGO":-1730,"BIOX":-1100,"BRK.B":-2524,"CAAP":-50.412,"DOCU":-20.363,"EFX":-97.8,"ETSY":-14.171,"GPRK":-24.655,"HAL":-251,"MA":-145,"PAAS":-51.088,"PSX":-348,"SHOP":-19.931,"SPOT":-30.836,"SQ":-38.274,"UNH":-717,"UNP":-551,"WBA":-477,"ZM":-33.318},
+{"Fecha":"Sep/2020","AAPL":-2702,"ABEV":-246.781,"ABT":-808,"ADBE":-190,"AGRO":-42.87,"AIG":-663,"AMD":-93,"AMGN":-901,"AMX":-1874,"AMZN":-6523,"ARCO":-30.84,"AUY":-108.937,"AXP":-404,"AZN":-815.362,"BA":-565,"BABA":-1329,"BAC":-476,"BBD":-278.502,"BBVA":-427.781,"BG":-106,"BIDU":-217.242,"BIIB":-114.8,"BMY":-2636,"BP":-3467,"BRFS":-113.763,"C":-1033,"CAT":-593,"CRM":-941,"CS":-369.61,"CSCO":-451,"CVX":-4020,"CX":-276.052,"DE":-504,"DESP":-7.836,"DIS":-1335,"EBAY":-152,"ERJ":-40.05,"FB":-1698,"FDX":-926,"FMX":-337.586,"GE":-1802,"GGB":-120.347,"GILD":-354,"GLOB":-8.252,"GOLD":-591,"GOOGL":-3478,"GS":-468,"GSK":-827.91,"HD":-631,"HPQ":-196,"HWM":-68,"IBM":-1683,"INTC":-3123,"ITUB":-205.504,"JD":-191.927,"JNJ":-1818,"JPM":-2141,"KO":-358,"LMT":-319,"LVS":-292,"MCD":-440.1,"MELI":-28.234,"MMM":-481,"MO":-62,"MOD":-19.3,"MSFT":-2645,"NEM":-630,"NFLX":-2762,"NKE":-176,"NOK":-327.264,"NVDA":-299,"OGZD":-2680,"ORCL":-701,"PBR":-2602,"PEP":-609,"PFE":-1262,"PG":-671,"PTR":-6080,"PYPL":-298,"QCOM":-339,"RDS.A":-6074,"SAN":-795.952,"SBUX":-674.4,"SID":-91.127,"SLB":-464,"SNAP":-21.804,"SONY":-1494,"T":-7030,"TGT":-604,"TOT":-3241,"TRIP":-30,"TS":-179.866,"TSLA":-584,"TWTR":-121.983,"TX":-150.486,"UGP":-60.417,"V":-196,"VALE":-774.035,"VIST":-39.729,"VZ":-4192,"WFC":-2427,"WMT":-2771,"X":-162,"XOM":-4983,"ABBV":-2275,"AVGO":-1719,"BIOX":-1157,"BRK.B":-2583,"CAAP":-49.555,"DOCU":-24.732,"EFX":-103.1,"ETSY":-15.754,"GPRK":-28.246,"HAL":-230,"MA":-141,"PAAS":-52.638,"PSX":-358,"SHOP":-17.87,"SNOW":-10.452,"SPOT":-32.726,"SQ":-39.063,"UNH":-719,"UNP":-555,"WBA":-480,"ZM":-40.672},
+{"Fecha":"Dic/2020","AAPL":-2666,"ABEV":-252.675,"ABT":-866,"ADBE":-196,"AGRO":-48.544,"AIG":-897,"AMD":-101,"AMGN":-873,"AMX":-2064,"AMZN":-7618,"ARCO":-30.39,"AUY":-117.521,"AXP":-428,"AZN":-803.78,"BA":-578,"BABA":-1554,"BAC":-487,"BBD":-293.617,"BBVA":-187.174,"BG":-112,"BIDU":-242.647,"BIIB":-109.5,"BMY":-2735,"BP":-3426,"BRFS":-114.997,"C":-1051,"CAT":-617,"CRM":-1159,"CS":-393.875,"CSCO":-436,"CVX":-1882,"CX":-292.829,"DE":-538,"DESP":-9.632,"DIS":-1298,"EBAY":-137,"ERJ":-73.267,"FB":-1863,"FDX":-936,"FMX":-379.11,"GE":-1287,"GGB":-126.659,"GILD":-427,"GLOB":-9.662,"GOLD":-549.25,"GOOGL":-3725,"GS":-498,"GSK":-1260,"HD":-666,"HPQ":-203,"HWM":-67,"IBM":-1699,"INTC":-3003,"ITUB":-279.864,"JD":-218.968,"JNJ":-1940,"JPM":-2127,"KO":-430,"LMT":-363,"LVS":-293,"MCD":-464.3,"MELI":-32.556,"MMM":-498,"MO":-65,"MOD":-16.3,"MSFT":-2761,"NEM":-865,"NFLX":-3015,"NKE":-185,"NOK":-332.621,"NVDA":-287,"OGZD":-2676,"ORCL":-731,"PBR":-1915,"PEP":-817,"PFE":-1154,"PG":-671,"PYPL":-301,"QCOM":-364,"RDS.A":-6229,"SAN":-846.455,"SBUX":-696.7,"SID":-204.236,"SLB":-428,"SNAP":-22.811,"SONY":-1712,"T":-6979,"TGT":-603,"TOT":-3480,"TRIP":-31,"TS":-185.44,"TSLA":-618,"TWTR":-128.708,"TX":-151.834,"UGP":-61.586,"V":-197,"VALE":-834.468,"VIST":-45.689,"VZ":-4197,"WFC":-2292,"WMT":-2819,"X":-162,"XOM":-4991,"ABBV":-2065,"AVGO":-1728,"BIOX":-1306,"BRK.B":-2904,"CAAP":-46.249,"DOCU":-26.442,"EFX":-104.1,"ETSY":-13.101,"GPRK":-30.27,"HAL":-229,"MA":-150,"PAAS":-82.541,"PSX":-363,"SHOP":-17.893,"SNOW":-11.403,"SPOT":-34.574,"SQ":-41.942,"UNH":-732,"UNP":-557,"WBA":-475,"ZM":-46.186},
+{"Fecha":"Mar/2021","AAPL":-2797,"ABEV":-230.598,"ABT":-934,"ADBE":-194,"AGRO":-22.707,"AIG":-1423,"AMD":-107,"AMGN":-841,"AMX":-1990,"AMZN":-7508,"ARCO":-30.366,"AUY":-104.475,"AXP":-422,"AZN":-797,"BA":-536,"BABA":-1652,"BAC":-461,"BBD":-288.697,"BBVA":-372.186,"BG":-106,"BIDU":-248.792,"BIIB":-146.9,"BMY":-2735,"BP":-3367,"BRFS":-120.711,"C":-962,"CAT":-586,"CRM":-999,"CS":-401.747,"CSCO":-486,"CVX":-4290,"CX":-278.254,"DE":-516,"DESP":-9.69,"DIS":-1272,"EBAY":-140,"ERJ":-50.278,"FB":-1972,"FDX":-956,"FMX":-365.949,"GE":-753,"GGB":-118.413,"GILD":-473,"GLOB":-12.639,"GOLD":-544.034,"GOOGL":-2753,"GS":-498,"GSK":-497.78,"HD":-703,"HPQ":-186,"HWM":-68,"IBM":-1672,"INTC":-2902,"ITUB":-238.531,"JD":-221.865,"JNJ":-1894,"JPM":-2070,"KO":-366,"LMT":-336,"LVS":-255,"MCD":-453.9,"MELI":-38.416,"MMM":-460,"MO":-63,"MOD":-14.4,"MSFT":-2936,"NEM":-599,"NFLX":-2755,"NKE":-182,"NOK":-332.438,"NVDA":-281,"OGZD":-2790,"ORCL":-732,"PBR":-2594,"PEP":-560,"PFE":-1226,"PG":-683,"PTR":-8362,"PYPL":-300,"QCOM":-387,"RDS.A":-5812,"SAN":-822.664,"SBUX":-694.1,"SID":-88.032,"SLB":-431,"SNAP":-23.498,"SONY":-1690,"T":-5809,"TGT":-637,"TRIP":-29,"TS":-144.469,"TSLA":-621,"TWTR":-131.052,"TX":-149.882,"UGP":-61.589,"V":-201,"VALE":-732.11,"VIST":-45.607,"VZ":-4174,"WFC":-2237,"WMT":-2661,"X":-189,"XOM":-5004,"ABBV":-2215,"AVGO":-1533,"BIOX":-1773,"BRK.B":-2673,"DOCU":-26.281,"EFX":-116.7,"ETSY":-13.08,"GPRK":-23.752,"HAL":-226,"MA":-163,"PAAS":-77.537,"PSX":-362,"SHOP":-15.8,"SNOW":-11.85,"SPOT":-36.135,"SQ":-49.633,"UNH":-758,"UNP":-549,"WBA":-460,"ZM":-52.703},
+{"Fecha":"Jun/2021","AAPL":-2832,"ABEV":-245.811,"ABT":-874,"ADBE":-193,"AGRO":-41.841,"AIG":-947,"AMD":-110,"AMGN":-855,"AMX":-2011,"AMZN":-8038,"ARCO":-29.796,"AUY":-107.679,"AXP":-412,"AZN":-753,"BA":-551,"BABA":-1544,"BAC":-469,"BBD":-297.683,"BBVA":-367.716,"BG":-106,"BIDU":-265.744,"BIIB":-72.9,"BMY":-2643,"BP":-3631,"BRFS":-134.999,"C":-982,"CAT":-587,"CRM":-1053,"CS":-375.647,"CSCO":-489,"CVX":-4537,"CX":-291.028,"DE":-515,"DESP":-9.054,"DIS":-1266,"EBAY":-121,"ERJ":-58.084,"FB":-1986,"FDX":-975,"FMX":-368.657,"GE":-771,"GGB":-119.204,"GILD":-564,"GLOB":-14.989,"GOLD":-516.58,"GOOGL":-2945,"GS":-520,"GSK":-928.645,"HD":-711,"HPQ":-196,"HWM":-67,"IBM":-1680,"INTC":-2857,"ITUB":-238.41,"JD":-226.157,"JNJ":-1839,"JPM":-2003,"KO":-383,"LMT":-334,"LVS":-258,"MCD":-463.4,"MELI":-46.109,"MMM":-472,"MO":-65,"MOD":-13.5,"MSFT":-3344,"NEM":-618,"NFLX":-2845,"NKE":-201,"NOK":-329.136,"NVDA":-286,"OGZD":-2780,"ORCL":-752,"PBR":-2522,"PEP":-653,"PFE":-1682,"PG":-710,"PTR":-8390,"PYPL":-316,"QCOM":-406,"RDS.A":-5890,"SAN":-841.528,"SBUX":-687.1,"SID":-99.789,"SLB":-427,"SNAP":-28.27,"SONY":-1764,"T":-5761,"TGT":-667,"TRIP":-28,"TS":-149.627,"TSLA":-681,"TWTR":-134.812,"TX":-147.965,"UGP":-64.858,"V":-204,"VALE":-846.439,"VIST":-51.791,"VZ":-4020,"WFC":-1936,"WMT":-2641,"X":-202,"XOM":-4952,"ABBV":-2201,"AVGO":-1504,"BIOX":-2028,"BRK.B":-2672,"DOCU":-26.98,"EFX":-119.7,"ETSY":-12.985,"GPRK":-21.86,"HAL":-223,"MA":-186,"PAAS":-69.812,"PSX":-370,"SHOP":-14.663,"SNOW":-13.193,"SPOT":-37.374,"SQ":-49.009,"UNH":-778,"UNP":-550,"WBA":-507,"ZM":-16.387},
+{"Fecha":"Sep/2021","AAPL":-2989,"ABEV":-262.046,"ABT":-847,"AGRO":-58.291,"AIG":-1220,"AMD":-112,"AMGN":-850,"AMX":-2014,"AMZN":-8948,"ARCO":-31.032,"AUY":-112.33,"AXP":-442,"AZN":-2788,"BA":-523,"BABA":-1501,"BAC":-473,"BBD":-247.579,"BBVA":-370.119,"BG":-105,"BIDU":-205.597,"BIIB":-132.7,"BMY":-2744,"BP":-3944,"BRFS":-130.175,"C":-1035,"CAT":-593,"CRM":-1307,"CS":-343.051,"CSCO":-533,"CVX":-4340,"CX":-275.146,"DE":-481,"DESP":-11.057,"DIS":-1275,"EBAY":-119,"ERJ":-45.327,"FB":-1995,"FDX":-971,"FMX":-379.189,"GE":-726,"GGB":-128.615,"GILD":-478,"GLOB":-16.98,"GOLD":-551.221,"GOOGL":-3304,"GS":-509,"GSK":-1359,"HD":-714,"HPQ":-200,"HWM":-68,"IBM":-1683,"INTC":-2959,"ITUB":-230.969,"JD":-237.463,"JNJ":-1814,"JPM":-1928,"KO":-362,"LMT":-329,"LVS":-262,"MCD":-469.2,"MELI":-52.236,"MMM":-476,"MO":-62,"MOD":-13.1,"MSFT":-3212,"NEM":-687,"NFLX":-3033,"NKE":-177,"NOK":-327.685,"NVDA":-298,"OGZD":-2805,"ORCL":-757,"PBR":-2740,"PEP":-650,"PFE":-1360,"PG":-711,"PTR":-7338,"PYPL":-323,"QCOM":-425,"RDS.A":-6006,"SAN":-805.068,"SBUX":-694.8,"SID":-107.514,"SLB":-425,"SNAP":-32.51,"SONY":-2046,"T":-5619,"TGT":-633,"TRIP":-27,"TS":-148.465,"TSLA":-761,"TWTR":-133.448,"TX":-144.441,"UGP":-67.16,"V":-202,"VALE":-699.198,"VIST":-49.412,"VZ":-3961,"WFC":-1917,"WMT":-2650,"X":-196,"XOM":-4990,"ABBV":-2123,"AVGO":-1503,"BIOX":-1859,"BRK.B":-2668,"DOCU":-27.666,"EFX":-118.5,"ETSY":-23.211,"GPRK":-24.718,"HAL":-224,"MA":-188,"PAAS":-84.473,"PSX":-367,"SHOP":-13.604,"SNOW":-13.915,"SPOT":-38.898,"SQ":-59.043,"UNH":-796,"UNP":-553,"WBA":-675,"ZM":-17.082}]
+
+
+
+const grossProfit = [{"Fecha":"Dic/2018","AAPL":31719,"ABEV":2529,"ABT":4083,"ADBE":2041.807,"AGRO":45.365999999999985,"AMD":537,"AMGN":5104,"AMX":4760,"AMZN":27597,"ARCO":112.83399999999995,"AUY":76.48400000000004,"AXP":7634,"AZN":5094,"BA":6251,"BABA":7756,"BG":215,"BIDU":1674,"BIIB":2582.2,"BMY":4285,"BP":5806,"BRFS":429,"CAT":4220,"CRM":2413,"CSCO":7875,"CVX":4841,"CX":1179,"DE":2196,"DESP":82.81199999999998,"DIS":5528,"EBAY":2217,"ERJ":236,"FB":14118,"FDX":3751,"FMX":2470,"GE":7702,"GGB":343,"GILD":4211,"GLOB":51.703,"GOLD":184,"GOOGL":21233,"GSK":6809,"HD":8547,"HPQ":2382,"HWM":478,"IBM":10545,"INTC":11188,"JD":2706,"JNJ":13443,"KO":4343,"LMT":1942,"LVS":1394,"MCD":2697,"MELI":204.784,"MMM":3892,"MO":2922,"MOD":91.69999999999999,"MSFT":19960,"NEM":472,"NFLX":1454,"NKE":4112,"NOK":3150,"NVDA":1207,"OGZD":19227,"ORCL":7137,"PBR":7975,"PEP":10573,"PFE":9681,"PG":8662,"PTR":12480,"PYPL":1713,"QCOM":2757,"RDS.A":5655,"SBUX":1452,"SID":523,"SLB":987,"SNAP":164.08,"SONY":7251,"T":16841,"TGT":4756,"TOT":2695,"TRIP":296,"TS":524,"TSLA":1443,"TWTR":640.491,"TX":660,"UGP":402,"V":4367,"VALE":4002,"VZ":14638,"WMT":33886,"X":360,"XOM":15680,"ABBV":8305,"AVGO":5444,"BIOX":0,"BRK.B":63714,"CAAP":371.021,"DOCU":178.385,"EFX":835.3,"ETSY":200.028,"GPRK":151.2,"HAL":5936,"PAAS":167.625,"PSX":28679,"SHOP":343.862,"SNOW":0,"SPOT":1706,"SQ":932.528,"UNP":5757,"WBA":33793,"ZM":0},
+{"Fecha":"Mar/2019","AAPL":21648,"ABEV":1891,"ABT":3890,"ADBE":2148.148,"AGRO":-67.07900000000001,"AMD":521,"AMGN":4488,"AMX":4764,"AMZN":25780,"ARCO":84.63400000000001,"AUY":77.21799999999996,"AXP":7562,"AZN":4967,"BA":4271,"BABA":5141,"BG":195,"BIDU":1376,"BIIB":2410.8,"BMY":4088,"BP":7520,"BRFS":378,"CAT":4295,"CRM":2546,"CSCO":8280,"CVX":5562,"CX":999,"DE":3143,"DESP":87.869,"DIS":5743,"EBAY":2009,"ERJ":76.16999999999996,"FB":12261,"FDX":3398,"FMX":2229,"GE":6582,"GGB":337,"GILD":4295,"GLOB":53.00500000000001,"GOLD":460,"GOOGL":20190,"GSK":6862,"HD":8537,"HPQ":2706,"HWM":586,"IBM":7936,"INTC":9039,"JD":2630,"JNJ":13485,"KO":5012,"LMT":2188,"LVS":1521,"MCD":2537,"MELI":237.004,"MMM":3766,"MO":2811,"MOD":91.60000000000002,"MSFT":20335,"NEM":438,"NFLX":1650,"NKE":4372,"NOK":1794,"NVDA":1296,"OGZD":17007,"ORCL":7231,"PBR":6624,"PEP":7200,"PFE":9524,"PG":8120,"PTR":9023,"PYPL":1798,"QCOM":2902,"RDS.A":10576,"SBUX":1311,"SID":517,"SLB":923,"SNAP":99.48599999999999,"SONY":5859,"T":16882,"TGT":5493,"TOT":4929,"TRIP":324,"TS":583,"TSLA":565,"TWTR":522.8789999999999,"TX":461,"UGP":378,"V":4269,"VALE":3454,"VZ":14907,"WMT":30891,"X":189,"XOM":13317,"ABBV":6094,"AVGO":2788,"BIOX":7.686999999999999,"BRK.B":12580,"CAAP":109.86700000000002,"DOCU":143.805,"EFX":381,"ETSY":116.681,"GPRK":80.23400000000001,"HAL":485,"PAAS":13.629999999999995,"PSX":736,"SHOP":180.47300000000004,"SNOW":0,"SPOT":419,"SQ":379.51800000000003,"UNP":2265,"WBA":7256,"ZM":86.275},
+{"Fecha":"Jun/2019","AAPL":20172,"ABEV":1721,"ABT":4200,"ADBE":2284.486,"AGRO":46.12100000000001,"AMD":621,"AMGN":4837,"AMX":4850,"AMZN":27067,"ARCO":78.95299999999997,"AUY":93.06900000000002,"AXP":7822,"AZN":4750,"BA":-2053,"BABA":7601,"BG":665,"BIDU":1496,"BIIB":2659.6,"BMY":4403,"BP":6466,"BRFS":509,"CAT":4364,"CRM":2748,"CSCO":8688,"CVX":5834,"CX":1171,"DE":2800,"DESP":73.745,"DIS":6189,"EBAY":2033,"ERJ":61.91399999999999,"FB":13579,"FDX":4205,"FMX":2505,"GE":7571,"GGB":324,"GILD":4649,"GLOB":56.53699999999999,"GOLD":401,"GOOGL":21540,"GSK":6901,"HD":9940,"HPQ":2790,"HWM":613,"IBM":8902,"INTC":9828,"JD":3220,"JNJ":13775,"KO":6088,"LMT":1993,"LVS":1356,"MCD":2829,"MELI":272.42999999999995,"MMM":3848,"MO":3321,"MOD":83.39999999999998,"MSFT":23210,"NEM":258,"NFLX":1917,"NKE":4594,"NOK":2320,"NVDA":1541,"OGZD":11958,"ORCL":8649,"PBR":7192,"PEP":9129,"PFE":9528,"PG":8386,"PTR":9831,"PYPL":1903,"QCOM":7617,"RDS.A":6977,"SBUX":1560,"SID":614,"SLB":1033,"SNAP":155.51100000000002,"SONY":6275,"T":17344,"TGT":4798,"TOT":3995,"TRIP":365,"TS":557,"TSLA":921,"TWTR":563.4159999999999,"TX":491,"UGP":353,"V":4619,"VALE":3780,"VIST":26.161,"VZ":15118,"WMT":32454,"X":174,"XOM":13997,"ABBV":6399,"AVGO":2626,"BIOX":20.034,"BRK.B":13408,"CAAP":107.25,"DOCU":158.837,"EFX":420.6,"ETSY":122.49000000000001,"GPRK":93.37299999999999,"HAL":606,"PAAS":29.70799999999997,"PSX":1718,"SHOP":204.88299999999998,"SNOW":0,"SPOT":484,"SQ":448.73400000000004,"UNP":2507,"WBA":6931,"ZM":97.884},
+{"Fecha":"Sep/2019","AAPL":24165,"ABEV":1544,"ABT":4210,"ADBE":2364.083,"AGRO":88.26100000000002,"AMD":777,"AMGN":4675,"AMX":4705,"AMZN":28679,"ARCO":93.32100000000003,"AUY":77.69999999999999,"AXP":7993,"AZN":5334,"BA":3065,"BABA":7193,"BG":396,"BIDU":1668,"BIIB":2673,"BMY":4219,"BP":5900,"BRFS":502,"CAT":4004,"CRM":3049,"CSCO":8572,"CVX":5002,"CX":1187,"DE":2674,"DESP":89.457,"DIS":5728,"EBAY":1991,"ERJ":94.86500000000001,"FB":14497,"FDX":3496,"FMX":2515,"GE":6274,"GGB":248,"GILD":4538,"GLOB":62.30200000000001,"GOLD":676,"GOOGL":22812,"GSK":7701,"HD":8889,"HPQ":2774,"HWM":628,"IBM":8039,"INTC":11245,"JD":2846,"JNJ":13967,"KO":5786,"LMT":2063,"LVS":1364,"MCD":2904,"MELI":284.3419999999999,"MMM":3774,"MO":3498,"MOD":75.69999999999999,"MSFT":22649,"NEM":619,"NFLX":2147,"NKE":4788,"NOK":2189,"NVDA":1916,"OGZD":8962,"ORCL":6847,"PBR":7115,"PEP":9508,"PFE":8886,"PG":9145,"PTR":7633,"PYPL":1877,"QCOM":2696,"RDS.A":7722,"SBUX":1459,"SID":396,"SLB":1159,"SNAP":206.99300000000002,"SONY":6999,"T":17485,"TGT":5236,"TOT":4150,"TRIP":371,"TS":491,"TSLA":1191,"TWTR":542.66,"TX":408,"UGP":403,"V":4901,"VALE":4433,"VIST":13.783000000000001,"VZ":15396,"WMT":32091,"X":10,"XOM":13908,"ABBV":6517,"AVGO":2561,"BIOX":15.129000000000001,"BRK.B":14288,"CAAP":112.42500000000001,"DOCU":170.016,"EFX":417.1,"ETSY":128.998,"GPRK":77.40899999999999,"HAL":589,"PAAS":58.91399999999999,"PSX":1733,"SHOP":216.723,"SNOW":0,"SPOT":487,"SQ":482.47900000000004,"UNP":2511,"WBA":6701,"ZM":109.31899999999999},
+{"Fecha":"Dic/2019","AAPL":34949,"ABEV":2290,"ABT":4383,"ADBE":2485.319,"AGRO":47.25199999999998,"AMD":950,"AMGN":4905,"AMX":5249,"AMZN":33460,"ARCO":109.92399999999998,"AUY":91.61500000000001,"AXP":8235,"AZN":4351,"BA":-792,"BABA":10483,"BG":670,"BIDU":1898,"BIIB":2697,"BMY":4415,"BP":6835,"BRFS":489,"CAT":3844,"CRM":3292,"CSCO":7724,"CVX":-7723,"CX":1036,"DE":2127,"DESP":94.24000000000001,"DIS":6476,"EBAY":2132,"ERJ":127.02200000000005,"FB":17590,"FDX":3272,"FMX":2700,"GE":7263,"GGB":164,"GILD":4165,"GLOB":65.412,"GOLD":844,"GOOGL":24964,"GSK":7285,"HD":8217,"HPQ":2786,"HWM":602,"IBM":10844,"INTC":11828,"JD":3366,"JNJ":13751,"KO":5479,"LMT":2123,"LVS":1501,"MCD":2846,"MELI":308.347,"MMM":3901,"MO":3069,"MOD":73.5,"MSFT":24548,"NEM":708,"NFLX":2001,"NKE":4441,"NOK":2793,"NVDA":2015,"OGZD":9556,"ORCL":7159,"PBR":8183,"PEP":11313,"PFE":9072,"PG":9434,"PTR":11812,"PYPL":2171,"QCOM":2964,"RDS.A":5465,"SBUX":1585,"SID":493,"SLB":1101,"SNAP":291.732,"SONY":7365,"T":17196,"TGT":5155,"TOT":3695,"TRIP":281,"TS":480,"TSLA":1391,"TWTR":692.992,"TX":304,"UGP":334,"V":4709,"VALE":4230,"VIST":17.309999999999988,"VZ":15039,"WMT":33923,"X":-113,"XOM":13700,"ABBV":6650,"AVGO":2687,"BIOX":25.637,"BRK.B":11920,"CAAP":85.74599999999998,"DOCU":184.58100000000002,"EFX":435.99999999999994,"ETSY":179.17399999999998,"GPRK":80.24200000000002,"HAL":605,"PAAS":95.14299999999997,"PSX":1128,"SHOP":263.843,"SNOW":0,"SPOT":521,"SQ":509.929,"UNP":2331,"WBA":6785,"ZM":125.83499999999998},
+{"Fecha":"Mar/2020","AAPL":22416,"ABEV":1445,"ABT":3877,"ADBE":2590,"AGRO":25.62100000000001,"AMD":818,"AMGN":4599,"AMX":4768,"AMZN":31195,"ARCO":38.89499999999998,"AUY":92.608,"AXP":7515,"AZN":5306,"BA":143,"BABA":5412,"BG":451,"BIDU":1126,"BIIB":2595.8,"BMY":4850,"BP":209,"BRFS":473,"CAT":3210,"CRM":3252,"CSCO":7745,"CVX":4002,"CX":965,"DE":2354,"DESP":42.586999999999996,"DIS":4664,"EBAY":1838,"ERJ":96.63600000000002,"FB":14278,"FDX":3112,"FMX":2287,"GE":5483,"GGB":192,"GILD":4552,"GLOB":63.006,"GOLD":748,"GOOGL":22128,"GSK":7901,"HD":9105,"HPQ":2412,"HWM":604,"IBM":7615,"INTC":12016,"JD":3189,"JNJ":13808,"KO":5280,"LMT":2091,"LVS":481,"MCD":2333,"MELI":312.814,"MMM":3939,"MO":3973,"MOD":74.89999999999998,"MSFT":24046,"NEM":625,"NFLX":2168,"NKE":4384,"NOK":1859,"NVDA":2004,"OGZD":8753,"ORCL":7432,"PBR":6633,"PEP":7763,"PFE":8780,"PG":8696,"PTR":-61810,"PYPL":1847,"QCOM":2919,"RDS.A":-2492,"SBUX":825,"SID":284.155,"SLB":841,"SNAP":193.389,"SONY":5436,"T":16276,"TGT":5702,"TOT":-130,"TRIP":227,"TS":429,"TSLA":1234,"TWTR":523.5999999999999,"TX":316,"UGP":273,"V":4539,"VALE":2575,"VIST":4.577999999999989,"VZ":15164,"WMT":32596,"X":-7,"XOM":7763,"ABBV":6677,"AVGO":2669,"BIOX":8.558999999999997,"BRK.B":12421,"CAAP":64.74600000000001,"DOCU":203.909,"EFX":451.9,"ETSY":145.639,"GPRK":46.86500000000001,"HAL":556,"PAAS":43.05799999999999,"PSX":-371,"SHOP":257.009,"SNOW":0,"SPOT":516,"SQ":520.757,"UNP":2441,"WBA":7021,"ZM":155.704},
+{"Fecha":"Jun/2020","AAPL":22048,"ABEV":981,"ABT":3481,"ADBE":2668,"AGRO":16.818000000000012,"AMD":848,"AMGN":4650,"AMX":4170,"AMZN":36252,"ARCO":-34.42099999999999,"AUY":97.44799999999998,"AXP":6026,"AZN":5370.629,"BA":-1164,"BABA":9350,"BG":1004,"BIDU":1820,"BIIB":2878.1,"BMY":5049,"BP":-6062,"BRFS":335,"CAT":2774,"CRM":3472,"CSCO":7643,"CVX":-3924,"CX":933,"DE":2751,"DESP":-21.835,"DIS":2475,"EBAY":2241,"ERJ":16.24000000000001,"FB":14858,"FDX":3464,"FMX":1868,"GE":2844,"GGB":133,"GILD":4061,"GLOB":61.238,"GOLD":1049,"GOOGL":19593,"GSK":6439,"HD":12422,"HPQ":2235,"HWM":261,"IBM":8405,"INTC":10507,"JD":3998,"JNJ":11843,"KO":4061,"LMT":2213,"LVS":-559,"MCD":1718,"MELI":427.172,"MMM":3391,"MO":4337,"MOD":47.19999999999999,"MSFT":25694,"NEM":669,"NFLX":2504,"NKE":2281,"NOK":2105,"NVDA":2275,"OGZD":3789,"ORCL":8105,"PBR":3010,"PEP":8850,"PFE":8630,"PG":9039,"PTR":2310,"PYPL":2522,"QCOM":2813,"RDS.A":152,"SBUX":-294,"SID":334.96299999999997,"SLB":424,"SNAP":188.31100000000004,"SONY":5951,"T":15682,"TGT":4528,"TOT":-373,"TRIP":17,"TS":177,"TSLA":1267,"TWTR":395.399,"TX":210,"UGP":160,"V":3527,"VALE":3216,"VIST":-8.414000000000001,"VZ":14517,"WMT":35053,"X":-330,"XOM":6612,"ABBV":6748,"AVGO":2597,"BIOX":22.826999999999998,"BRK.B":11869,"CAAP":-55.62100000000001,"DOCU":220.074,"EFX":476.69999999999993,"ETSY":317.356,"GPRK":7.329999999999998,"HAL":279,"PAAS":45.346000000000004,"PSX":235,"SHOP":375.232,"SNOW":0,"SPOT":527,"SQ":578,"UNP":1889,"WBA":5961,"ZM":208.17299999999997},
+{"Fecha":"Sep/2020","AAPL":24594,"ABEV":1414,"ABT":4332,"ADBE":2758,"AGRO":102.17899999999997,"AMD":1230,"AMGN":4821,"AMX":4447,"AMZN":39039,"ARCO":30.990999999999985,"AUY":159.61399999999998,"AXP":6332,"AZN":5485,"BA":1044,"BABA":8992,"BG":1302,"BIDU":2229,"BIIB":2555.1,"BMY":5562,"BP":3803,"BRFS":407,"CAT":2866,"CRM":3640,"CSCO":7680,"CVX":1780,"CX":1176,"DE":2841,"DESP":0.05000000000000071,"DIS":2335,"EBAY":1938,"ERJ":55.18599999999992,"FB":17276,"FDX":4259,"FMX":2197,"GE":4015,"GGB":316,"GILD":5424,"GLOB":71.40800000000002,"GOLD":1478,"GOOGL":25078,"GSK":7651,"HD":10928,"HPQ":2808,"HWM":173,"IBM":8143,"INTC":9741,"JD":3824,"JNJ":14220,"KO":5182,"LMT":2136,"LVS":-209,"MCD":2898,"MELI":480.48900000000003,"MMM":4023,"MO":4917,"MOD":82.19999999999999,"MSFT":26152,"NEM":1177,"NFLX":2568,"NKE":4613,"NOK":2193,"NVDA":2960,"OGZD":5551,"ORCL":7142,"PBR":5677,"PEP":9936,"PFE":8719,"PG":10176,"PTR":6710,"PYPL":2661,"QCOM":5580,"RDS.A":3907,"SBUX":1080,"SID":658.541,"SLB":458,"SNAP":369.384,"SONY":7223,"T":15471,"TGT":6760,"TOT":1472,"TRIP":108,"TS":125.36000000000001,"TSLA":2063,"TWTR":574.845,"TX":359,"UGP":268,"V":3792,"VALE":5871,"VIST":-2.0960000000000036,"VZ":15017,"WMT":34369,"X":-108,"XOM":9364,"ABBV":7859,"AVGO":2731,"BIOX":17.764999999999997,"BRK.B":12264,"CAAP":-47.107,"DOCU":247.31,"EFX":534.1,"ETSY":331.31,"GPRK":38.720000000000006,"HAL":316,"PAAS":120.36599999999999,"PSX":42,"SHOP":405.179,"SNOW":82.69900000000001,"SPOT":565,"SQ":777,"UNP":2330,"WBA":6323,"ZM":446.755},
+{"Fecha":"Dic/2020","AAPL":44677,"ABEV":1812,"ABT":5687,"ADBE":2965,"AGRO":70.649,"AMD":1451,"AMGN":5017,"AMX":4437,"AMZN":46271,"ARCO":112.10000000000008,"AUY":178.072,"AXP":6555,"AZN":6018,"BA":837,"BABA":14584,"BG":1474,"BIDU":2376,"BIIB":330.69999999999993,"BMY":6239,"BP":2024,"BRFS":493,"CAT":3343,"CRM":4223,"CSCO":7745,"CVX":4716,"CX":1105,"DE":2860,"DESP":27.457,"DIS":3054,"EBAY":2127,"ERJ":220,"FB":22862,"FDX":4261,"FMX":2530,"GE":5719,"GGB":493,"GILD":6096,"GLOB":81.68099999999998,"GOLD":1405,"GOOGL":30819,"GSK":7615,"HD":10270,"HPQ":3344,"HWM":323,"IBM":10428,"INTC":11143,"JD":4643,"JNJ":14703,"KO":5004,"LMT":2241,"LVS":131,"MCD":2769,"MELI":488.73,"MMM":4243,"MO":3146,"MOD":82.69999999999999,"MSFT":28882,"NEM":1077,"NFLX":2479,"NKE":4790,"NOK":3269,"NVDA":3157,"OGZD":9174,"ORCL":7516,"PBR":6821,"PEP":12063,"PFE":7926,"PG":10492,"PTR":69351,"PYPL":2951,"QCOM":4746,"RDS.A":2299,"SBUX":1373,"SID":778,"SLB":568,"SNAP":508.498,"SONY":8553,"T":15802,"TGT":6582,"TOT":1565,"TRIP":72,"TS":204.28300000000002,"TSLA":2066,"TWTR":856.076,"TX":656,"UGP":243,"V":4336,"VALE":8835,"VIST":4.671999999999997,"VZ":15673,"WMT":36818,"X":19,"XOM":8406,"ABBV":9438,"AVGO":3153,"BIOX":21.095,"BRK.B":12230,"CAAP":-14.799999999999983,"DOCU":281.111,"EFX":536.5,"ETSY":466.57500000000005,"GPRK":37.343,"HAL":394,"PAAS":135.87600000000003,"PSX":274,"SHOP":504.25100000000003,"SNOW":92.943,"SPOT":679,"SQ":785,"UNP":2519,"WBA":6664,"ZM":487.96900000000005},
+{"Fecha":"Mar/2021","AAPL":38799,"ABEV":1493,"ABT":5570,"ADBE":3424,"AGRO":-30.143000000000015,"AMD":1587,"AMGN":4412,"AMX":4519,"AMZN":46115,"ARCO":36.69999999999993,"AUY":149.40699999999998,"AXP":6310,"AZN":6130,"BA":1412,"BABA":9033,"BG":1901,"BIDU":2027,"BIIB":2069,"BMY":6088,"BP":8340,"BRFS":371,"CAT":3751,"CHL":0,"CRM":3974,"CSCO":8124,"CVX":4446,"CX":1109,"DE":3916,"DESP":26.639999999999997,"DIS":4570,"EBAY":2248,"ERJ":76.86699999999996,"FB":21040,"FDX":4145,"FMX":2286,"GE":4401,"GGB":693,"GILD":5087,"GLOB":93.35900000000001,"GOLD":1117,"GOOGL":31320,"GSK":6856,"HD":12155,"HPQ":3550,"HWM":277,"IBM":7960,"INTC":10854,"JD":4439,"JNJ":15302,"KO":5466,"LMT":2222,"LVS":213,"MCD":2660,"MELI":590.936,"MMM":4335,"MO":4172,"MOD":83.79999999999995,"MSFT":28661,"NEM":1027,"NFLX":3294,"NKE":4738,"NOK":2219,"NVDA":3629,"OGZD":13135,"ORCL":7823,"PBR":7458,"PEP":8153,"PFE":9520,"PG":9187,"PTR":11261,"PYPL":3026,"QCOM":4503,"RDS.A":12369,"SBUX":1404,"SID":1040,"SLB":927,"SNAP":338.76099999999997,"SONY":6247,"T":17043,"TGT":7294,"TOT":0,"TRIP":82,"TS":273.80499999999995,"TSLA":2215,"TWTR":654.992,"TX":1080,"UGP":313,"V":4235,"VALE":7948,"VIST":29.009,"VZ":15171,"WMT":35038,"X":420,"XOM":12232,"ABBV":8830,"AVGO":3473,"BIOX":15.431000000000001,"BRK.B":13537,"CAAP":0.3240000000000123,"DOCU":325.928,"EFX":615.4,"ETSY":407.7289999999999,"GPRK":75.491,"HAL":418,"PAAS":86.255,"PSX":-168,"SHOP":558.317,"SNOW":107.209,"SPOT":653,"SQ":938,"UNP":2313,"WBA":6321,"ZM":582.1759999999999},
+{"Fecha":"Jun/2021","AAPL":35416,"ABEV":1370,"ABT":5375,"ADBE":3358,"AGRO":64.715,"AMD":1830,"AMGN":4907,"AMX":4810,"AMZN":48904,"ARCO":55.162000000000035,"AUY":145.95100000000002,"AXP":6896,"AZN":5626,"BA":2417,"BABA":12167,"BG":1202,"BIDU":2393,"BIIB":2095.4,"BMY":6711,"BP":4560,"BRFS":387,"CAT":3913,"CHL":0,"CRM":4258,"CSCO":8265,"CVX":6243,"CX":1300,"DE":3643,"DESP":36.731,"DIS":4553,"EBAY":2011,"ERJ":203.409,"FB":23678,"FDX":5189,"FMX":2691,"GE":4725,"GGB":1024,"GILD":4850,"GLOB":104.07400000000001,"GOLD":1079,"GOOGL":35660,"GSK":7784,"HD":13072,"HPQ":3410,"HWM":268,"IBM":8790,"INTC":11206,"JD":4856,"JNJ":15748,"KO":6241,"LMT":2151,"LVS":204,"MCD":3205,"MELI":754.17,"MMM":4251,"MO":4932,"MOD":74.60000000000002,"MSFT":32161,"NEM":1085,"NFLX":3324,"NKE":5724,"NOK":2592,"NVDA":4215,"OGZD":13041,"ORCL":8763,"PBR":10233,"PEP":10346,"PFE":11038,"PG":9155,"PTR":8157,"PYPL":3113,"QCOM":4656,"RDS.A":9635,"SBUX":1903,"SID":1559,"SLB":857,"SNAP":513.5439999999999,"SONY":6890,"T":17185,"TGT":7099,"TOT":0,"TRIP":188,"TS":389,"TSLA":2884,"TWTR":773.068,"TX":1481,"UGP":283,"V":4642,"VALE":10726,"VIST":66.91299999999998,"VZ":15489,"WMT":35865,"X":1174,"XOM":16123,"ABBV":9483,"AVGO":3564,"BIOX":28.422999999999995,"BRK.B":14301,"CAAP":-2.1359999999999957,"DOCU":360.47799999999995,"EFX":634.6,"ETSY":379.931,"GPRK":88.59000000000002,"HAL":485,"PAAS":98.23500000000001,"PSX":645,"SHOP":619.962,"SNOW":130.31599999999997,"SPOT":791,"SQ":1118,"UNP":2757,"WBA":6646,"ZM":653.477},
+{"Fecha":"Sep/2021","AAPL":35174,"ABEV":1671,"ABT":6060,"ADBE":3430,"AGRO":20.991000000000042,"AMD":2086,"AMGN":5102,"AMX":4870,"AMZN":47882,"ARCO":102.89300000000003,"AUY":149.97199999999998,"AXP":7085,"AZN":5029,"BA":1707,"BABA":10517,"BG":910,"BIDU":2441,"BIIB":2004.5,"BMY":6769,"BP":1797,"BRFS":471,"CAT":3681,"CHL":0,"CRM":4439,"CSCO":8063,"CVX":8721,"CX":1211,"DE":3246,"DESP":49.96999999999999,"DIS":4973,"EBAY":1843,"ERJ":181.02300000000002,"FB":23239,"FDX":4521,"FMX":2651,"GE":5260,"GGB":1228,"GILD":6219,"GLOB":118.11099999999999,"GOLD":998,"GOOGL":37435,"GSK":8605,"HD":11963,"HPQ":3135,"HWM":288,"IBM":7984,"INTC":10746,"JD":4749,"JNJ":16167,"KO":6132,"LMT":2302,"LVS":11,"MCD":3416,"MELI":806,"MMM":4110,"MO":4773,"MOD":67.89999999999998,"MSFT":31671,"NEM":792,"NFLX":3276,"NKE":5783,"NOK":2481,"NVDA":4631,"OGZD":14680,"ORCL":7322,"PBR":10880,"PEP":10842,"PFE":13171,"PG":9973,"PTR":17172,"PYPL":2890,"QCOM":5399,"RDS.A":8962,"SBUX":1919,"SID":816,"SLB":1117,"SNAP":595.893,"SONY":7438,"T":16477,"TGT":7316,"TOT":0,"TRIP":253,"TS":514,"TSLA":3660,"TWTR":799.521,"TX":1951,"UGP":344,"V":5118,"VALE":6754,"VIST":76.276,"VZ":15426,"WMT":35502,"X":1920,"XOM":19878,"ABBV":10026,"AVGO":3704,"BIOX":29.579,"BRK.B":13131,"CAAP":29.131999999999977,"DOCU":394.731,"EFX":617.5,"ETSY":378.769,"GPRK":97.95700000000001,"HAL":504,"PAAS":93.96299999999997,"PSX":1329,"SHOP":608.95,"SNOW":164.73399999999998,"SPOT":780,"SQ":1133,"UNP":2702,"WBA":6828,"ZM":759.744}]
+
+
+
+const operatingExpenses = [{"Fecha":"Dic/2018","AAPL":-8685,"ABEV":-939.071,"ABT":-2907,"ADBE":-1352,"AGRO":-43.301,"AIG":-3810,"AMD":-504,"AMGN":-2758,"AMX":-2876,"AMZN":-23725,"ARCO":-73.98,"AUY":-20.596,"AXP":-4392,"AZN":-3772,"BA":-2074,"BABA":-3883,"BAC":-3779,"BBD":-8001,"BBVA":-1421,"BCS":-5008,"BG":-349,"BIDU":-1514,"BIIB":-1192,"BMY":-2695,"BP":-3061,"BRFS":-416.023,"BSBR":-896.13,"C":-3911,"CAT":-2241,"CRM":-2276,"CS":-1573,"CSCO":-4468,"CVX":-2197,"CX":-776.554,"DE":-1171,"DESP":-76.9,"DIS":-2152,"EBAY":-1565,"ERJ":-327.963,"FB":-6298,"FDX":-2583,"FMX":-1780,"GE":-5125,"GGB":-103.242,"GILD":-2261,"GLOB":-30.901,"GOLD":-25.14,"GOOGL":-13155,"GS":-2420,"GSK":-4755,"HD":-4922,"HPQ":-1594,"HWM":-166,"IBM":-5805,"IBN":0,"INTC":-4925,"ITUB":-3407,"JD":-2842,"JNJ":-9237,"JPM":-4785,"KO":-2504,"LVS":-483,"MCD":-609.8,"MELI":-205.603,"MMM":-2102,"MO":-780,"MOD":-57.2,"MSFT":-9790,"NEM":-109,"NFLX":-1238,"NKE":-3142,"NOK":-2394,"NVDA":-913,"OGZD":-7331,"ORCL":-3841,"PBR":-2750,"PEP":-7820,"PFE":-6426,"PG":-4603,"PTR":-10573,"PYPL":-1068,"QCOM":-1787,"RDS.A":-3447,"SAN":-4435,"SBUX":-463.3,"SID":-302.339,"SLB":-292,"SNAP":-359.022,"SONY":-4825,"T":-10150,"TRIP":-273,"TS":-349.09,"TSLA":-1024,"TWTR":-436.617,"TX":-220.56,"UGP":-238.136,"V":-643,"VALE":-303.087,"VZ":-7405,"WFC":-2631,"WMT":-27819,"X":-85,"XOM":-11019},
+{"Fecha":"Mar/2019","AAPL":-8406,"ABEV":-870.556,"ABT":-3131,"ADBE":-1462,"AGRO":-12.51,"AIG":-3295,"AMD":-541,"AMGN":-2030,"AMX":-2847,"AMZN":-21365,"ARCO":-53.477,"AUY":-20.2,"AXP":-4301,"AZN":-3833,"BA":-1768,"BABA":-3842,"BAC":-4191,"BBD":-7443,"BBVA":-1109,"BCS":-4242,"BG":-299,"BIDU":-1515,"BIIB":-1131,"BMY":-2305,"BP":-2769,"BRFS":-333.856,"BSBR":-759.077,"C":-3619,"CAT":-2044,"CRM":-2336,"CS":-831.544,"CSCO":-4791,"CVX":-2146,"CX":-705.341,"DE":-1404,"DESP":-80.284,"DIS":-2327,"EBAY":-1382,"ERJ":-97.945,"FB":-5944,"FDX":-2483,"FMX":-1740,"GE":-4592,"GGB":-97.493,"GILD":-2087,"GLOB":-34.213,"GOLD":-48.759,"GOOGL":-12022,"GS":-2018,"GSK":-4484,"HD":-4940,"HPQ":-1692,"HWM":-200,"IBM":-6149,"IBN":0,"INTC":-4865,"ITUB":-2426,"JD":-2460,"JNJ":-8216,"JPM":-5430,"KO":-2654,"LVS":-539,"MCD":-499.1,"MELI":-226.865,"MMM":-2100,"MO":-518,"MOD":-64.2,"MSFT":-10060,"NEM":-91,"NFLX":-1191,"NKE":-3091,"NOK":-2105,"NVDA":-938,"OGZD":-6291,"ORCL":-3793,"PBR":-2560,"PEP":-5168,"PFE":-5025,"PG":-4852,"PTR":-4327,"PYPL":-1259,"QCOM":-1873,"RDS.A":-2591,"SAN":-4705,"SBUX":-475.6,"SID":-209.06,"SLB":-285,"SNAP":-415.547,"SONY":-4674,"T":-9550,"TGT":-4369,"TRIP":-293,"TS":-324.037,"TSLA":-1044,"TWTR":-429.221,"TX":-182.908,"UGP":-273.418,"V":-606,"VALE":-4485,"VZ":-7198,"WFC":-1235,"WMT":-25946,"X":-78,"XOM":-10533,"ABBV":-2802,"AVGO":-1604,"BIOX":-9.869,"BRK.B":-4432,"CAAP":-36.588,"DOCU":-206.433,"EFX":-297.4,"ETSY":-85.038,"GPRK":-15.255,"HAL":-59,"MA":-1532,"PAAS":-9.336,"PSX":-494,"SHOP":-212.985,"SPOT":-467.811,"SQ":-373.719,"UNH":-16537,"UNP":-305,"WBA":-5565,"ZM":-80.783},
+{"Fecha":"Jun/2019","AAPL":-8683,"ABEV":-859.162,"ABT":-3010,"ADBE":-1544,"AGRO":-41.585,"AIG":-3519,"AMD":-560,"AMGN":-2181,"AMX":-2866,"AMZN":-23897,"ARCO":-53.15,"AUY":-23.139,"AXP":-4251,"AZN":-4250,"BA":-1469,"BABA":-4029,"BAC":-3542,"BBD":-7733,"BBVA":-2683,"BCS":-4500,"BG":-325,"BIDU":-1462,"BIIB":-1072,"BMY":-2385,"BP":-2633,"BRFS":-444.604,"BSBR":-772.231,"C":-3738,"CAT":-2047,"CRM":-2524,"CS":-827.735,"CSCO":-4965,"CVX":-2220,"CX":-793.881,"DE":-1327,"DESP":-90.032,"DIS":-3362,"EBAY":-1481,"ERJ":-118.086,"FB":-6953,"FDX":-2573,"FMX":-1831,"GE":-4690,"GGB":-90.287,"GILD":-2255,"GLOB":-36.452,"GOLD":-50.169,"GOOGL":-12468,"GS":-2143,"GSK":-4617,"HD":-5044,"HPQ":-1789,"HWM":-195,"IBM":-6311,"IBN":-1786,"INTC":-5027,"ITUB":-2395,"JD":-2888,"JNJ":-8176,"JPM":-5644,"KO":-3015,"LVS":-452,"MCD":-533.1,"MELI":-284.918,"MMM":-2062,"MO":-544,"MOD":-63.5,"MSFT":-10900,"NEM":-125,"NFLX":-1211,"NKE":-3406,"NOK":-1906,"NVDA":-970,"OGZD":-6433,"ORCL":-4198,"PBR":-2165,"PEP":-6233,"PFE":-5325,"PG":-4902,"PTR":-4340,"PYPL":-1258,"QCOM":-1917,"RDS.A":-3091,"SAN":-4783,"SBUX":-480.2,"SID":-178.104,"SLB":-293,"SNAP":-460.329,"SONY":-4219,"T":-9508,"TGT":-3663,"TRIP":-299,"TS":-308.751,"TSLA":-971.159,"TWTR":-487.73,"TX":-251.799,"UGP":-267.164,"V":-710,"VALE":-1417,"VIST":-20.036,"VZ":-7268,"WFC":-1351,"WMT":-26871,"X":-81,"XOM":-10815,"ABBV":-2902,"AVGO":-1559,"BIOX":-14.073,"BRK.B":-4829,"CAAP":-34.907,"DOCU":-201.274,"EFX":-295.5,"ETSY":-104.642,"GPRK":-18.663,"HAL":-195,"MA":-1557,"PAAS":-13.733,"PSX":-505,"SHOP":-242.287,"SPOT":-486.542,"SQ":-415.551,"UNH":-16667,"UNP":-247,"WBA":-5797,"ZM":-96.327},
+{"Fecha":"Sep/2019","AAPL":-8688,"ABEV":-781.901,"ABT":-3008,"ADBE":-1521,"AGRO":-32.428,"AIG":-3372,"AMD":-589,"AMGN":-2225,"AMX":-2677,"AMZN":-25467,"ARCO":-51.206,"AUY":-47.578,"AXP":-4368,"AZN":-4549,"BA":-1726,"BABA":-4208,"BAC":-8011,"BBD":-7481,"BBVA":-2492,"BCS":-4059,"BG":-319,"BIDU":-1332,"BIIB":-1095,"BMY":-2417,"BP":-2604,"BRFS":-344.267,"BSBR":-907.218,"C":-3820,"CAT":-1969,"CRM":-2944,"CS":-838.786,"CSCO":-4794,"CVX":-2134,"CX":-777.385,"DE":-1433,"DESP":-89.668,"DIS":-3697,"EBAY":-1478,"ERJ":-77.345,"FB":-7312,"FDX":-2519,"FMX":-1860,"GE":-4610,"GGB":-93.811,"GILD":-6042,"GLOB":-39.826,"GOLD":-51.867,"GOOGL":-13754,"GS":-2165,"GSK":-4941,"HD":-4942,"HPQ":-1794,"HWM":-183,"IBM":-6199,"IBN":-2110,"INTC":-4694,"ITUB":-2447,"JD":-2563,"JNJ":-9884,"JPM":-5627,"KO":-3121,"LVS":-445,"MCD":-543.6,"MELI":-366.267,"MMM":-1898,"MO":-549,"MOD":-67.4,"MSFT":-9963,"NEM":-131,"NFLX":-1167,"NKE":-3328,"NOK":-1935,"NVDA":-989,"OGZD":-6120,"ORCL":-3867,"PBR":-2569,"PEP":-6544,"PFE":-5517,"PG":-4666,"PTR":-4283,"PYPL":-1250,"QCOM":-1989,"RDS.A":-2631,"SAN":-3833,"SBUX":-458.4,"SID":-231.224,"SLB":-385,"SNAP":-435.846,"SONY":-4386,"T":-9403,"TGT":-3902,"TRIP":-303,"TS":-305.285,"TSLA":-930,"TWTR":-498.515,"TX":-199.857,"UGP":-248.516,"V":-796,"VALE":-674.505,"VIST":-14.34,"VZ":-7477,"WFC":-2769,"WMT":-27373,"X":-64,"XOM":-10786,"ABBV":-2864,"AVGO":-1645,"BIOX":-9.111,"BRK.B":-4384,"CAAP":-53.718,"DOCU":-234.738,"EFX":-295.5,"ETSY":-113.066,"GPRK":-16.879,"HAL":-53,"MA":-1666,"PAAS":-14.565,"PSX":-521,"SHOP":-250.258,"SPOT":-426.946,"SQ":-418.137,"UNH":-16296,"UNP":-277,"WBA":-5744,"ZM":-107.054},
+{"Fecha":"Dic/2019","AAPL":-9648,"ABEV":-1001,"ABT":-2978,"ADBE":-1527,"AGRO":-49.388,"AIG":-3297,"AMD":-590,"AMGN":-2896,"AMX":-2831,"AMZN":-29516,"ARCO":-49.774,"AUY":-21.886,"AXP":-4781,"AZN":-3826,"BA":-1456,"BABA":-4867,"BAC":-3440,"BBD":-9835,"BBVA":-1249,"BCS":-4256,"BG":-351,"BIDU":-1237,"BIIB":-1311,"BMY":-3714,"BP":-2910,"BRFS":-311.389,"BSBR":-871.036,"C":-3875,"CAT":-1952,"CRM":-3328,"CS":-576.849,"CSCO":-4340,"CVX":-2196,"CX":-753.339,"DE":-1234,"DESP":-94.247,"DIS":-3703,"EBAY":-1505,"ERJ":-180.381,"FB":-8732,"FDX":-2652,"FMX":-1937,"GE":-4236,"GGB":-86.955,"GILD":-3103,"GLOB":-40.832,"GOLD":-46.826,"GOOGL":-15789,"GS":-2419,"GSK":-5764,"HD":-4814,"HPQ":-1689,"HWM":-196,"IBM":-6570,"IBN":-2170,"INTC":-4926,"ITUB":-2555,"JD":-3406,"JNJ":-7358,"JPM":-4787,"KO":-3239,"LVS":-484,"MCD":-654.9,"MELI":-377.234,"MMM":-2272,"MO":-527,"MOD":-63.5,"MSFT":-10657,"NEM":-152,"NFLX":-1543,"NKE":-3321,"NOK":-1770,"NVDA":-1025,"OGZD":-6773,"ORCL":-3922,"PBR":-3121,"PEP":-8557,"PFE":-7028,"PG":-4767,"PTR":-7556,"PYPL":-1430,"QCOM":-1934,"RDS.A":-3180,"SAN":-4139,"SBUX":-434.2,"SID":-300.618,"SLB":-319,"SNAP":-445.328,"SONY":-4757,"T":-10069,"TGT":-4146,"TRIP":-258,"TS":-322.827,"TSLA":-1044,"TWTR":-540.449,"TX":-220.997,"UGP":-200.091,"V":-693,"VALE":-1747,"VIST":-20.189,"VZ":-8010,"WFC":1260,"WMT":-28055,"X":-66,"XOM":-11024,"ABBV":-3177,"AVGO":-1586,"BIOX":-10.6,"BRK.B":-5677,"CAAP":-34.467,"DOCU":-228.578,"EFX":-289.4,"ETSY":-153.136,"GPRK":-24.134,"HAL":-804,"MA":-1803,"PAAS":-18.34,"PSX":-570,"SHOP":-294.78,"SPOT":-605.607,"SQ":-460.878,"UNH":-16530,"UNP":-231,"WBA":-5750,"ZM":-127.514},
+{"Fecha":"Mar/2020","AAPL":-9517,"ABEV":-799.076,"ABT":-3098,"ADBE":-1660,"AGRO":-30.27,"AIG":-3925,"AMD":-641,"AMGN":-2293,"AMX":-2772,"AMZN":-27136,"ARCO":-46.575,"AUY":-15.876,"AXP":-4038,"AZN":-4158,"BA":-1545,"BABA":-4390,"BAC":-5668,"BBD":-1931,"BBVA":-1088,"BCS":-4169,"BG":-295,"BIDU":-1189,"BIIB":-998,"BMY":-3922,"BP":-2703,"BRFS":-302.399,"BSBR":-744.2,"C":-3927,"CAT":-1769,"CRM":-3392,"CS":-750.774,"CSCO":-4098,"CVX":-1948,"CX":-705.114,"DE":-1312,"DESP":-65.462,"DIS":-3388,"EBAY":-1202,"ERJ":-59.897,"FB":-8385,"FDX":-2701,"FMX":-1798,"GE":-3761,"GGB":-92.661,"GILD":-2177,"GLOB":-39.359,"GOLD":-37.799,"GOOGL":-14200,"GS":-2405,"GSK":-5000,"HD":-5829,"HPQ":-1555,"HWM":-184,"IBM":-6377,"IBN":-2432,"INTC":-4816,"ITUB":-2084,"JD":-2856,"JNJ":-7673,"JPM":-4762,"KO":-2592,"LVS":-416,"MCD":-515.5,"MELI":-342.508,"MMM":-2288,"MO":-515,"MOD":-50.1,"MSFT":-11071,"NEM":-120,"NFLX":-1210,"NKE":-3283,"NOK":-1816,"NVDA":-1028,"OGZD":-5733,"ORCL":-3837,"PBR":-2148,"PEP":-5620,"PFE":-4587,"PG":-5172,"PTR":-5170,"PYPL":-1462,"QCOM":-1951,"RDS.A":-2638,"SAN":-4116,"SBUX":-406.5,"SID":-150.525,"SLB":-300,"SNAP":-469.753,"SONY":-4854,"T":-8619,"TGT":-4502,"TRIP":-254,"TS":-317.525,"TSLA":-951,"TWTR":-531.043,"TX":-178.616,"UGP":-167.202,"V":-602,"VALE":-453.427,"VIST":-14.26,"VZ":-7390,"WFC":-1295,"WMT":-27372,"X":-77,"XOM":-9680,"ABBV":-3057,"AVGO":-1786,"BIOX":-9.093,"BRK.B":-4699,"CAAP":-32.241,"DOCU":-246.262,"EFX":-316,"ETSY":-119.574,"GPRK":-14.647,"HAL":-54,"MA":-1755,"PAAS":-21.368,"PSX":-476,"SHOP":-314.864,"SPOT":-531.005,"SQ":-502.271,"UNH":-18425,"UNP":-298,"WBA":-5659,"ZM":-145.151},
+{"Fecha":"Jun/2020","AAPL":-9589,"ABEV":-617.747,"ABT":-2839,"ADBE":-1657,"AGRO":-29.365,"AIG":-2707,"AMD":-675,"AMGN":-2395,"AMX":-2365,"AMZN":-30119,"ARCO":-44.038,"AUY":-27.973,"AXP":-3573,"AZN":-4103,"BA":-1792,"BABA":-4454,"BAC":-3557,"BBD":-1599,"BBVA":-2301,"BCS":-4134,"BG":-346,"BIDU":-1306,"BIIB":-1137,"BMY":-4110,"BP":-2489,"BRFS":-230.585,"BSBR":-537.174,"C":-3411,"CAT":-1812,"CRM":-3294,"CS":-708.858,"CSCO":-4340,"CVX":-2633,"CX":-653.347,"DE":-1122,"DESP":-30.854,"DIS":-2455,"EBAY":-1437,"ERJ":-112.245,"FB":-8895,"FDX":-2620,"FMX":-1520,"GE":-3574,"GGB":-61.676,"GILD":-2538,"GLOB":-41.62,"GOLD":-106.807,"GOOGL":-13361,"GS":-2280,"GSK":-4754,"HD":-6355,"HPQ":-1516,"HWM":-78,"IBM":-6566,"IBN":-1508,"INTC":-4801,"ITUB":-1711,"JD":-3314,"JNJ":-7702,"JPM":-4367,"KO":-2030,"LVS":-354,"MCD":-682,"MELI":-327.734,"MMM":-1960,"MO":-474,"MOD":-45.8,"MSFT":-12287,"NEM":-233,"NFLX":-1147,"NKE":-3192,"NOK":-1608,"NVDA":-1598,"OGZD":-4513,"ORCL":-3710,"PBR":-2795,"PEP":-6294,"PFE":-5096,"PG":-5443,"PTR":-3521,"PYPL":-1557,"QCOM":-2031,"RDS.A":-2602,"SAN":-3446,"SBUX":-399.9,"SID":-129.264,"SLB":-223,"SNAP":-498.919,"SONY":-3929,"T":-9624,"TGT":-4025,"TRIP":-148,"TS":-265.302,"TSLA":-940,"TWTR":-669.329,"TX":-144.755,"UGP":-128.579,"V":-523,"VALE":-417.375,"VIST":-14.553,"VZ":-7156,"WFC":-1134,"WMT":-28594,"X":-62,"XOM":-7563,"ABBV":-3764,"AVGO":-1764,"BIOX":-11.278,"BRK.B":-4526,"CAAP":-21.139,"DOCU":-261.233,"EFX":-309.9,"ETSY":-197.616,"GPRK":-12.956,"HAL":-43,"MA":-1437,"PAAS":-14.68,"PSX":-523,"SHOP":-357.571,"SPOT":-711.419,"SQ":-563.424,"UNH":-18219,"UNP":-235,"WBA":-5570,"ZM":-184.788},
+{"Fecha":"Sep/2020","AAPL":-9914,"ABEV":-749.883,"ABT":-2876,"ADBE":-1688,"AGRO":-35.769,"AIG":-2598,"AMD":-781,"AMGN":-2409,"AMX":-2358,"AMZN":-32783,"ARCO":-35.461,"AUY":-23.244,"AXP":-4056,"AZN":-4288,"BA":-1529,"BABA":-7021,"BAC":-3767,"BBD":-1808,"BBVA":-2167,"BCS":-4478,"BG":-352,"BIDU":-1339,"BIIB":-1663,"BMY":-4196,"BP":-1973,"BRFS":-264.738,"BSBR":-579.068,"C":-3869,"CAT":-1740,"CRM":-3416,"CS":-635.947,"CSCO":-4499,"CVX":-2145,"CX":-723.498,"DE":-1454,"DESP":-34.539,"DIS":-2812,"EBAY":-1267,"ERJ":-103.115,"FB":-9236,"FDX":-2669,"FMX":-1674,"GE":-3596,"GGB":-69.477,"GILD":-2264,"GLOB":-46.949,"GOLD":-66.838,"GOOGL":-13843,"GS":-2168,"GSK":-4695,"HD":-6076,"HPQ":-1627,"HWM":-71,"IBM":-5934,"IBN":-2114,"INTC":-4707,"ITUB":-1684,"JD":-3240,"JNJ":-8258,"JPM":-4873,"KO":-2531,"LVS":-338,"MCD":-574.7,"MELI":-397.116,"MMM":-2138,"MO":-523,"MOD":-52.2,"MSFT":-10276,"NEM":-217,"NFLX":-1253,"NKE":-2974,"NOK":-1687,"NVDA":-1541,"OGZD":-4897,"ORCL":-3738,"PBR":-2067,"PEP":-6867,"PFE":-5339,"PG":-4979,"PTR":-3725,"PYPL":-1648,"QCOM":-2133,"RDS.A":-2599,"SAN":-3250,"SBUX":-439,"SID":-153.325,"SLB":-222,"SNAP":-537.248,"SONY":-4268,"T":-9228,"TGT":-4435,"TRIP":-151,"TS":-203.209,"TSLA":-1254,"TWTR":-518.738,"TX":-163.187,"UGP":-161.505,"V":-642,"VALE":-381.123,"VIST":-14.536,"VZ":-7339,"WFC":-2386,"WMT":-27991,"X":-65,"XOM":-9796,"ABBV":-4324,"AVGO":-1656,"BIOX":-10.289,"BRK.B":-4632,"CAAP":-14.196,"DOCU":-299.013,"EFX":-330,"ETSY":-212.741,"GPRK":-11.655,"HAL":-60,"MA":-1580,"PAAS":-16.973,"PSX":-490,"SHOP":-342.433,"SNOW":-160.382,"SPOT":-612.451,"SQ":-712.408,"UNH":-18828,"UNP":-299,"WBA":-5407,"ZM":-258.651},
+{"Fecha":"Dic/2020","AAPL":-10794,"ABEV":-837.898,"ABT":-3273,"ADBE":-1742,"AGRO":-44.071,"AIG":-2942,"AMD":-881,"AMGN":-3029,"AMX":-2400,"AMZN":-39894,"ARCO":-90,"AUY":-27.002,"AXP":-4448,"AZN":-4502,"BA":-2420,"BABA":-7189,"BAC":-3792,"BBD":-4008,"BBVA":-1785,"BCS":-4595,"BG":-365,"BIDU":-1624,"BIIB":-2482,"BMY":-5508,"BP":-1978,"BRFS":-289.007,"BSBR":-682.198,"C":-3786,"CAT":-1994,"CRM":-3740,"CS":-846.388,"CSCO":-4358,"CVX":-2866,"CX":-754.041,"DE":-1135,"DESP":-49.168,"DIS":-2917,"EBAY":-1442,"ERJ":-149.671,"FB":-10087,"FDX":-2818,"FMX":-1861,"GE":-4623,"GGB":-164.339,"GILD":-3012,"GLOB":-49.731,"GOLD":-39.89,"GOOGL":-15167,"GS":-2682,"GSK":-5692,"HD":-6187,"HPQ":-1847,"HWM":-62,"IBM":-8369,"IBN":-2321,"INTC":-5412,"ITUB":-1950,"JD":-4721,"JNJ":-10473,"JPM":-4537,"KO":-3040,"LVS":-325,"MCD":-784.2,"MELI":-514.16,"MMM":-2260,"MO":-563,"MOD":-56.1,"MSFT":-10985,"NEM":-97,"NFLX":-1525,"NKE":-3267,"NOK":-1857,"NVDA":-1604,"OGZD":-5417,"ORCL":-3761,"PBR":-1016,"PEP":-9422,"PFE":-7029,"PG":-5249,"PYPL":-1906,"QCOM":-2220,"RDS.A":-2950,"SAN":-4135,"SBUX":-472.1,"SID":-152.473,"SLB":-200,"SNAP":-605.734,"SONY":-5119,"T":-10166,"TGT":-4645,"TRIP":-168,"TS":-211.434,"TSLA":-1491,"TWTR":-604.193,"TX":-193.934,"UGP":-155.698,"V":-488,"VALE":-4984,"VIST":-13.225,"VZ":-8619,"WFC":-1752,"WMT":-30331,"X":-73,"XOM":-9520,"ABBV":-4926,"AVGO":-1587,"BIOX":-11.38,"BRK.B":-4952,"CAAP":-27.049,"DOCU":-329.245,"EFX":-334.6,"ETSY":-305.14,"GPRK":-18.126,"HAL":-132,"MA":-1835,"PAAS":-16.632,"PSX":-519,"SHOP":-384.739,"SNOW":-262.397,"SPOT":-758.233,"SQ":-719.537,"UNH":-19868,"UNP":-513,"WBA":-5610,"ZM":-295.727},
+{"Fecha":"Mar/2021","AAPL":-10576,"ABEV":-785.523,"ABT":-3437,"ADBE":-1959,"AGRO":-30.346,"AIG":-3318,"AMD":-929,"AMGN":-2282,"AMX":-2428,"AMZN":-37212,"ARCO":-43.163,"AUY":-22.567,"AXP":-3766,"AZN":-4251,"BA":-1536,"BABA":-10215,"BAC":-5428,"BBD":-1498,"BBVA":-2545,"BCS":-4888,"BG":-269,"BIDU":-1596,"BIIB":-1060,"BMY":-3891,"BP":-2562,"BRFS":-262.28,"BSBR":-589.83,"C":-3629,"CAT":-1880,"CRM":-3620,"CS":-717.4,"CSCO":-4642,"CVX":-2747,"CX":-702.99,"DE":-1215,"DESP":-46.772,"DIS":-3113,"EBAY":-1318,"ERJ":-111.23,"FB":-9662,"FDX":-3111,"FMX":-1804,"GE":-4005,"GGB":-86.602,"GILD":-2099,"GLOB":-59.419,"GOLD":-49.366,"GOOGL":-14774,"GS":-2611,"GSK":-4782,"HD":-6374,"HPQ":-1998,"HWM":-70,"IBM":-6341,"IBN":-2871,"INTC":-4951,"ITUB":-2729,"JD":-4195,"JNJ":-8497,"JPM":-5066,"KO":-2658,"LVS":-301,"MCD":-578,"MELI":-500.53,"MMM":-2319,"MO":-547,"MOD":-56.8,"MSFT":-11613,"NEM":-104,"NFLX":-1335,"NKE":-3040,"NOK":-1791,"NVDA":-1506,"OGZD":-6068,"ORCL":-3866,"PBR":-1665,"PEP":-5807,"PFE":-4733,"PG":-5181,"PTR":-4435,"PYPL":-1867,"QCOM":-2337,"RDS.A":-2628,"SAN":-3697,"SBUX":-464.4,"SID":-125.5,"SLB":-216,"SNAP":-642.36,"SONY":-5272,"T":-9365,"TGT":-5448,"TRIP":-166,"TS":-229.83,"TSLA":-1722,"TWTR":-602.82,"TX":-189.72,"UGP":-212.79,"V":-646,"VALE":-323.698,"VIST":-16.609,"VZ":-7178,"WFC":-1206,"WMT":-27629,"X":-89,"XOM":-9088,"ABBV":-4468,"AVGO":-1550,"BIOX":-10.319,"BRK.B":-4630,"CAAP":-19.335,"DOCU":-350.825,"EFX":-308.8,"ETSY":-257.09,"GPRK":-11.731,"HAL":-48,"MA":-1799,"PAAS":-15.432,"PSX":-547,"SHOP":-437.96,"SNOW":-307.606,"SPOT":-635.96,"SQ":-829.96,"UNH":-18553,"UNP":-320,"WBA":-5341,"ZM":-326.059},
+{"Fecha":"Jun/2021","AAPL":-11129,"ABEV":-652.191,"ABT":-3377,"ADBE":-1941,"AGRO":-42.767,"AIG":-3007,"AMD":-990,"AMGN":-2556,"AMX":-2499,"AMZN":-41191,"ARCO":-37.551,"AUY":-18.343,"AXP":-4352,"AZN":-4573,"BA":-1544,"BABA":-7391,"BAC":-4613,"BBD":-1634,"BBVA":-2786,"BCS":-5017,"BG":-296,"BIDU":-1857,"BIIB":-1168,"BMY":-5153,"BP":-2753,"BRFS":-283.22,"BSBR":-749.63,"C":-3757,"CAT":-2093,"CRM":-3926,"CS":-754.59,"CSCO":-4679,"CVX":-2827,"CX":-773.94,"DE":-1235,"DESP":-60.419,"DIS":-3168,"EBAY":-1260,"ERJ":-107.66,"FB":-11311,"FDX":-3222,"FMX":-1987,"GE":-3953,"GGB":-15.723,"GILD":-2485,"GLOB":-58.522,"GOLD":-61.474,"GOOGL":-16292,"GS":-2421,"GSK":-5252,"HD":-6433,"HPQ":-1885,"HWM":-59,"IBM":-6548,"IBN":-2178,"INTC":-5314,"ITUB":-1677,"JD":-4823,"JNJ":-9363,"JPM":-4914,"KO":-3029,"LVS":-328,"MCD":-664,"MELI":-587.75,"MMM":-2228,"MO":-538,"MOD":-60.8,"MSFT":-13066,"NEM":-109,"NFLX":-1476,"NKE":-3696,"NOK":-1784,"NVDA":-1613,"OGZD":-5845,"ORCL":-4098,"PBR":-1260,"PEP":-7142,"PFE":-5291,"PG":-5098,"PTR":-4320,"PYPL":-1896,"QCOM":-2461,"RDS.A":-3308,"SAN":-4068,"SBUX":-494.9,"SID":-171.64,"SLB":-204,"SNAP":-706.05,"SONY":-4379,"T":-9385,"TGT":-4468,"TRIP":-223,"TS":-271.03,"TSLA":-1549,"TWTR":-743.24,"TX":-227.91,"UGP":-304,"V":-573,"VALE":-453.453,"VIST":-22.051,"VZ":-7324,"WFC":-1650,"WMT":-28111,"X":-102,"XOM":-10091,"ABBV":-4856,"AVGO":-1563,"BIOX":-16.396,"BRK.B":-5000,"CAAP":-23.508,"DOCU":-371.21,"EFX":-328.4,"ETSY":-280.88,"GPRK":-14.523,"HAL":-51,"MA":-1927,"PAAS":-17.076,"PSX":-552,"SHOP":-472.3,"SNOW":-335.91,"SPOT":-776.42,"SQ":-884.97,"UNH":-18797,"UNP":-284,"WBA":-5523,"ZM":-427.16},
+{"Fecha":"Sep/2021","AAPL":-11388,"ABEV":-936.199,"ABT":-3438,"ADBE":-1984,"AGRO":-48.6,"AIG":-3596,"AMD":-1133,"AMGN":-2719,"AMX":-2466,"AMZN":-43041,"ARCO":-52.08,"AUY":-20.956,"AXP":-4627,"AZN":-5129,"BA":-1673,"BABA":-8197,"BAC":-4738,"BBD":-1503,"BBVA":-2319,"BCS":-4748,"BG":-328,"BIDU":-2085,"BIIB":-1291,"BMY":-5037,"BP":-3097,"BRFS":-340.25,"BSBR":-675.68,"C":-3994,"CAT":-1979,"CRM":-4401,"CS":-871.24,"CSCO":-4642,"CVX":-2832,"CX":-751.32,"DE":-1386,"DESP":-65.586,"DIS":-4319,"EBAY":-1161,"ERJ":-141.09,"FB":-12816,"FDX":-3092,"FMX":-2005,"GE":-3877,"GGB":164.962,"GILD":-2337,"GLOB":-65.692,"GOLD":-39.728,"GOOGL":-16466,"GS":-2646,"GSK":-5595,"HD":-6168,"HPQ":-1919,"HWM":-74,"IBM":-6005,"IBN":-2058,"INTC":-5477,"ITUB":-1809,"JD":-4440,"JNJ":-9430,"JPM":-4974,"KO":-3120,"LVS":-317,"MCD":-639.2,"MELI":-645.65,"MMM":-2257,"MO":-623,"MOD":-53.5,"MSFT":-11433,"NEM":-114,"NFLX":-1522,"NKE":-3571,"NOK":-1841,"NVDA":-1804,"OGZD":-5894,"ORCL":-3819,"PBR":-2603,"PEP":-7646,"PFE":-6202,"PG":-4926,"PTR":-11776,"PYPL":-1802,"QCOM":-2497,"RDS.A":-3037,"SAN":-3635,"SBUX":-501.2,"SID":-167.52,"SLB":-220,"SNAP":-777.18,"SONY":-4610,"T":-9108,"TGT":-4810,"TRIP":-237,"TS":-290.87,"TSLA":-1605,"TWTR":-776.18,"TX":-226.41,"UGP":-254.89,"V":-794,"VALE":-230.205,"VIST":-23.974,"VZ":-5712,"WFC":-1757,"WMT":-29510,"X":-101,"XOM":-10176,"ABBV":-4619,"AVGO":-1551,"BIOX":-16.188,"BRK.B":-5153,"CAAP":-23.224,"DOCU":-417.12,"EFX":-344.2,"ETSY":-269.99,"GPRK":-13.574,"HAL":-46,"MA":-2051,"PAAS":-16458,"PSX":-509,"SHOP":-591.62,"SNOW":-364.87,"SPOT":-691.91,"SQ":-1042,"UNH":-19323,"UNP":-270,"WBA":-5870,"ZM":-465.63}]
+
+
+
+const operatingIncome = [{"Fecha":"Dic/2018","AAPL":23034,"ABEV":1589.929,"ABT":1176,"ADBE":689.807,"AGRO":2.0649999999999835,"AIG":-148,"AMD":33,"AMGN":2346,"AMX":1884,"AMZN":3872,"ARCO":38.85399999999994,"AUY":55.888000000000034,"AXP":1831,"AZN":1322,"BA":4177,"BABA":3873,"BAC":8885,"BBD":2445,"BBVA":3564,"BCS":510.717,"BG":-134,"BIDU":160,"BIIB":1390.1999999999998,"BMY":1590,"BP":2745,"BRFS":12.976999999999975,"BSBR":1763,"C":5350,"CAT":1979,"CRM":137,"CS":767.178,"CSCO":3407,"CVX":2644,"CX":402.446,"DE":1025,"DESP":5.911999999999978,"DIS":3376,"EBAY":652,"ERJ":-91.96300000000002,"FB":7820,"FDX":1168,"FMX":690,"GE":2577,"GGB":239.75799999999998,"GILD":1950,"GLOB":20.802000000000003,"GOLD":158.86,"GOOGL":8078,"GS":3898,"GSK":2054,"HD":3625,"HPQ":788,"HWM":312,"IBM":4740,"IBN":84.928,"INTC":6263,"ITUB":2761,"JD":-136,"JNJ":4206,"JPM":8822,"KO":1839,"LMT":1942,"LVS":911,"MCD":2087.2,"MELI":-0.8190000000000168,"MMM":1790,"MO":2142,"MOD":34.499999999999986,"MSFT":10170,"NEM":363,"NFLX":216,"NKE":970,"NOK":756,"NVDA":294,"OGZD":11896,"ORCL":3296,"PBR":5225,"PEP":2753,"PFE":3255,"PG":4059,"PTR":1907,"PYPL":645,"QCOM":970,"RDS.A":2208,"SAN":6736,"SBUX":988.7,"SID":220.661,"SLB":695,"SNAP":-194.94199999999998,"SONY":2426,"T":6691,"TGT":4756,"TOT":2695,"TRIP":23,"TS":174.91000000000003,"TSLA":419,"TWTR":203.87399999999997,"TX":439.44,"UGP":163.864,"V":3724,"VALE":3698.913,"VIST":0,"VZ":7233,"WFC":7326,"WMT":6067,"X":275,"XOM":4661,"ABBV":8305,"AVGO":5444,"BIOX":0,"BRK.B":63714,"CAAP":371.021,"DOCU":178.385,"EFX":835.3,"ETSY":200.028,"GPRK":151.2,"HAL":5936,"MA":0,"PAAS":167.625,"PSX":28679,"SHOP":343.862,"SNOW":0,"SPOT":1706,"SQ":932.528,"UNH":0,"UNP":5757,"WBA":33793,"ZM":0},
+{"Fecha":"Mar/2019","AAPL":13242,"ABEV":1020.444,"ABT":759,"ADBE":686.1480000000001,"AGRO":-79.58900000000001,"AIG":1542,"AMD":-20,"AMGN":2458,"AMX":1917,"AMZN":4415,"ARCO":31.157000000000018,"AUY":57.01799999999996,"AXP":1958,"AZN":1134,"BA":2503,"BABA":1299,"BAC":8842,"BBD":1928,"BBVA":3409,"BCS":2015,"BG":-104,"BIDU":-139,"BIIB":1279.8000000000002,"BMY":1783,"BP":4751,"BRFS":44.144000000000005,"BSBR":2370,"C":6020,"CAT":2251,"CRM":210,"CS":979.998,"CSCO":3489,"CVX":3416,"CX":293.659,"DE":1739,"DESP":7.584999999999994,"DIS":3416,"EBAY":627,"ERJ":-21.775000000000034,"FB":6317,"FDX":915,"FMX":489,"GE":1990,"GGB":239.507,"GILD":2208,"GLOB":18.79200000000001,"GOLD":411.241,"GOOGL":8168,"GS":2756,"GSK":2378,"HD":3597,"HPQ":1014,"HWM":386,"IBM":1787,"IBN":238.381,"INTC":4174,"ITUB":2668,"JD":170,"JNJ":5269,"JPM":9594,"KO":2358,"LMT":2188,"LVS":982,"MCD":2037.9,"MELI":10.138999999999982,"MMM":1666,"MO":2293,"MOD":27.40000000000002,"MSFT":10275,"NEM":347,"NFLX":459,"NKE":1281,"NOK":-311,"NVDA":358,"OGZD":10716,"ORCL":3438,"PBR":4064,"PEP":2032,"PFE":4499,"PG":3268,"PTR":4696,"PYPL":539,"QCOM":1029,"RDS.A":7985,"SAN":6490,"SBUX":835.4,"SID":307.94,"SLB":638,"SNAP":-316.06100000000004,"SONY":1185,"T":7332,"TGT":1124,"TOT":4929,"TRIP":31,"TS":258.963,"TSLA":-479,"TWTR":93.6579999999999,"TX":278.092,"UGP":104.582,"V":3663,"VALE":-1031,"VIST":0,"VZ":7709,"WFC":7136,"WMT":4945,"X":111,"XOM":2784,"ABBV":3292,"AVGO":1184,"BIOX":-2.1820000000000004,"BRK.B":8148,"CAAP":73.27900000000002,"DOCU":-62.627999999999986,"EFX":83.60000000000002,"ETSY":31.643,"GPRK":64.97900000000001,"HAL":426,"MA":2218,"PAAS":4.293999999999995,"PSX":242,"SHOP":-32.51199999999997,"SNOW":0,"SPOT":-48.81099999999998,"SQ":5.799000000000035,"UNH":4832,"UNP":1960,"WBA":1691,"ZM":5.492000000000004},
+{"Fecha":"Jun/2019","AAPL":11489,"ABEV":861.838,"ABT":1190,"ADBE":740.4859999999999,"AGRO":4.5360000000000085,"AIG":2273,"AMD":61,"AMGN":2656,"AMX":1984,"AMZN":3170,"ARCO":25.802999999999976,"AUY":69.93000000000002,"AXP":2219,"AZN":500,"BA":-3522,"BABA":3572,"BAC":9082,"BBD":2099,"BBVA":3195,"BCS":2001,"BG":340,"BIDU":34,"BIIB":1587.6,"BMY":2018,"BP":3833,"BRFS":64.39600000000002,"BSBR":2545,"C":6170,"CAT":2317,"CRM":224,"CS":1171,"CSCO":3723,"CVX":3614,"CX":377.119,"DE":1473,"DESP":-16.286999999999992,"DIS":2827,"EBAY":552,"ERJ":-56.17200000000001,"FB":6626,"FDX":1632,"FMX":674,"GE":2881,"GGB":233.713,"GILD":2394,"GLOB":20.084999999999994,"GOLD":350.831,"GOOGL":9072,"GS":3193,"GSK":2284,"HD":4896,"HPQ":1001,"HWM":418,"IBM":2591,"IBN":604.985,"INTC":4801,"ITUB":2558,"JD":332,"JNJ":5599,"JPM":10526,"KO":3073,"LMT":1993,"LVS":904,"MCD":2295.9,"MELI":-12.488000000000056,"MMM":1786,"MO":2777,"MOD":19.899999999999977,"MSFT":12310,"NEM":133,"NFLX":706,"NKE":1188,"NOK":414,"NVDA":571,"OGZD":5525,"ORCL":4451,"PBR":5027,"PEP":2896,"PFE":4203,"PG":3484,"PTR":5491,"PYPL":645,"QCOM":5700,"RDS.A":3886,"SAN":5553,"SBUX":1079.8,"SID":435.89599999999996,"SLB":740,"SNAP":-304.818,"SONY":2056,"T":7836,"TGT":1135,"TOT":3995,"TRIP":66,"TS":248.24900000000002,"TSLA":-50.15899999999999,"TWTR":75.68599999999992,"TX":239.201,"UGP":85.83600000000001,"V":3909,"VALE":2363,"VIST":6.125,"VZ":7850,"WFC":8503,"WMT":5583,"X":93,"XOM":3182,"ABBV":3497,"AVGO":1067,"BIOX":5.9609999999999985,"BRK.B":8579,"CAAP":72.343,"DOCU":-42.43700000000001,"EFX":125.10000000000002,"ETSY":17.848000000000013,"GPRK":74.71,"HAL":411,"MA":2412,"PAAS":15.97499999999997,"PSX":1213,"SHOP":-37.404000000000025,"SNOW":0,"SPOT":-2.541999999999973,"SQ":33.18300000000005,"UNH":4744,"UNP":2260,"WBA":1134,"ZM":1.5570000000000022},
+{"Fecha":"Sep/2019","AAPL":15477,"ABEV":762.099,"ABT":1202,"ADBE":843.0830000000001,"AGRO":55.83300000000003,"AIG":1684,"AMD":188,"AMGN":2450,"AMX":2028,"AMZN":3212,"ARCO":42.11500000000002,"AUY":30.121999999999986,"AXP":2266,"AZN":785,"BA":1339,"BABA":2985,"BAC":7223,"BBD":1052,"BBVA":3376,"BCS":2203,"BG":77,"BIDU":336,"BIIB":1578,"BMY":1802,"BP":3296,"BRFS":157.733,"BSBR":907.346,"C":6036,"CAT":2035,"CRM":105,"CS":1106,"CSCO":3778,"CVX":2868,"CX":409.615,"DE":1241,"DESP":-0.21100000000001273,"DIS":2031,"EBAY":513,"ERJ":17.52000000000001,"FB":7185,"FDX":977,"FMX":655,"GE":1664,"GGB":154.189,"GILD":-1504,"GLOB":22.476000000000006,"GOLD":624.133,"GOOGL":9058,"GS":2463,"GSK":2760,"HD":3947,"HPQ":980,"HWM":445,"IBM":1840,"IBN":800.939,"INTC":6551,"ITUB":1263,"JD":283,"JNJ":4083,"JPM":10381,"KO":2665,"LMT":2063,"LVS":919,"MCD":2360.4,"MELI":-81.92500000000007,"MMM":1876,"MO":2949,"MOD":8.299999999999983,"MSFT":12686,"NEM":488,"NFLX":980,"NKE":1460,"NOK":254,"NVDA":927,"OGZD":2842,"ORCL":2980,"PBR":4546,"PEP":2964,"PFE":3369,"PG":4479,"PTR":3350,"PYPL":627,"QCOM":707,"RDS.A":5091,"SAN":3968,"SBUX":1000.6,"SID":164.776,"SLB":774,"SNAP":-228.85299999999998,"SONY":2613,"T":8082,"TGT":1334,"TOT":4150,"TRIP":68,"TS":185.71499999999997,"TSLA":261,"TWTR":44.14499999999998,"TX":208.143,"UGP":154.484,"V":4105,"VALE":3758.495,"VIST":-0.5569999999999986,"VZ":7919,"WFC":6327,"WMT":4718,"X":-54,"XOM":3122,"ABBV":3653,"AVGO":916,"BIOX":6.018000000000001,"BRK.B":9904,"CAAP":58.70700000000001,"DOCU":-64.72200000000001,"EFX":121.60000000000002,"ETSY":15.931999999999988,"GPRK":60.52999999999999,"HAL":536,"MA":2638,"PAAS":44.34899999999999,"PSX":1212,"SHOP":-33.535,"SNOW":0,"SPOT":60.053999999999974,"SQ":64.34200000000004,"UNH":5014,"UNP":2234,"WBA":957,"ZM":2.2649999999999864},
+{"Fecha":"Dic/2019","AAPL":25301,"ABEV":1289,"ABT":1405,"ADBE":958.319,"AGRO":-2.136000000000017,"AIG":1530,"AMD":360,"AMGN":2009,"AMX":2418,"AMZN":3944,"ARCO":60.14999999999998,"AUY":69.72900000000001,"AXP":1986,"AZN":525,"BA":-2248,"BABA":5616,"BAC":8312,"BBD":-509.933,"BBVA":3424,"BCS":1601,"BG":319,"BIDU":661,"BIIB":1386,"BMY":701,"BP":3925,"BRFS":177.611,"BSBR":1507,"C":5706,"CAT":1892,"CRM":-36,"CS":1005,"CSCO":3384,"CVX":-9919,"CX":282.66099999999994,"DE":893,"DESP":-0.006999999999990791,"DIS":2773,"EBAY":627,"ERJ":-53.35899999999995,"FB":8858,"FDX":620,"FMX":763,"GE":3027,"GGB":77.045,"GILD":1062,"GLOB":24.580000000000005,"GOLD":797.174,"GOOGL":9175,"GS":3411,"GSK":1521,"HD":3403,"HPQ":1097,"HWM":406,"IBM":4274,"IBN":949.77,"INTC":6902,"ITUB":2071,"JD":-40,"JNJ":6393,"JPM":10998,"KO":2240,"LMT":2123,"LVS":1017,"MCD":2191.1,"MELI":-68.887,"MMM":1629,"MO":2542,"MOD":10,"MSFT":13891,"NEM":556,"NFLX":458,"NKE":1120,"NOK":1023,"NVDA":990,"OGZD":2783,"ORCL":3237,"PBR":5062,"PEP":2756,"PFE":2044,"PG":4667,"PTR":4256,"PYPL":741,"QCOM":1030,"RDS.A":2285,"SAN":4416,"SBUX":1150.8,"SID":192.382,"SLB":782,"SNAP":-153.59599999999995,"SONY":2608,"T":7127,"TGT":1009,"TOT":3695,"TRIP":23,"TS":157.173,"TSLA":347,"TWTR":152.543,"TX":83.00299999999999,"UGP":133.909,"V":4016,"VALE":2483,"VIST":-2.879000000000012,"VZ":7029,"WFC":1150,"WMT":5868,"X":-179,"XOM":2676,"ABBV":3473,"AVGO":1101,"BIOX":15.037,"BRK.B":6243,"CAAP":51.27899999999998,"DOCU":-43.996999999999986,"EFX":146.59999999999997,"ETSY":26.037999999999982,"GPRK":56.10800000000002,"HAL":-199,"MA":2435,"PAAS":76.80299999999997,"PSX":558,"SHOP":-30.936999999999955,"SNOW":0,"SPOT":-84.60699999999997,"SQ":49.05099999999999,"UNH":5095,"UNP":2100,"WBA":1035,"ZM":-1.6790000000000163},
+{"Fecha":"Mar/2020","AAPL":12899,"ABEV":645.924,"ABT":779,"ADBE":930,"AGRO":-4.64899999999999,"AIG":3236,"AMD":177,"AMGN":2306,"AMX":1996,"AMZN":4059,"ARCO":-7.680000000000021,"AUY":76.732,"AXP":452,"AZN":1148,"BA":-1402,"BABA":1022,"BAC":4555,"BBD":-2334,"BBVA":3585,"BCS":1156,"BG":156,"BIDU":-63,"BIIB":1597.8000000000002,"BMY":928,"BP":-2494,"BRFS":170.601,"BSBR":-1472,"C":3165,"CAT":1441,"CRM":-140,"CS":1199,"CSCO":3647,"CVX":2054,"CX":259.88599999999997,"DE":1042,"DESP":-22.875000000000007,"DIS":1276,"EBAY":636,"ERJ":36.739000000000026,"FB":5893,"FDX":411,"FMX":489,"GE":1722,"GGB":99.339,"GILD":2375,"GLOB":23.647,"GOLD":710.201,"GOOGL":7928,"GS":1532,"GSK":2901,"HD":3276,"HPQ":857,"HWM":420,"IBM":1238,"IBN":272.917,"INTC":7200,"ITUB":-2057,"JD":333,"JNJ":6135,"JPM":3313,"KO":2688,"LMT":2091,"LVS":65,"MCD":1817.5,"MELI":-29.69399999999996,"MMM":1651,"MO":3458,"MOD":24.799999999999976,"MSFT":12975,"NEM":505,"NFLX":958,"NKE":1101,"NOK":43,"NVDA":976,"OGZD":3020,"ORCL":3595,"PBR":4485,"PEP":2143,"PFE":4193,"PG":3524,"PTR":-66980,"PYPL":385,"QCOM":968,"RDS.A":-5130,"SAN":6321,"SBUX":418.5,"SID":133.62999999999997,"SLB":541,"SNAP":-276.364,"SONY":582,"T":7657,"TGT":1200,"TOT":-130,"TRIP":-27,"TS":111.47500000000002,"TSLA":283,"TWTR":-7.443000000000097,"TX":137.384,"UGP":105.798,"V":3937,"VALE":2121.573,"VIST":-9.682000000000011,"VZ":7774,"WFC":1614,"WMT":5224,"X":-84,"XOM":-1917,"ABBV":3620,"AVGO":883,"BIOX":-0.5340000000000025,"BRK.B":7722,"CAAP":32.50500000000001,"DOCU":-42.35300000000001,"EFX":135.89999999999998,"ETSY":26.065000000000012,"GPRK":32.21800000000001,"HAL":502,"MA":2110,"PAAS":21.689999999999994,"PSX":-847,"SHOP":-57.85499999999996,"SNOW":0,"SPOT":-15.004999999999995,"SQ":18.485999999999933,"UNH":4996,"UNP":2143,"WBA":1362,"ZM":10.552999999999997},
+{"Fecha":"Jun/2020","AAPL":12459,"ABEV":363.25300000000004,"ABT":642,"ADBE":1011,"AGRO":-12.546999999999986,"AIG":-750,"AMD":173,"AMGN":2255,"AMX":1805,"AMZN":6133,"ARCO":-78.45899999999999,"AUY":69.47499999999998,"AXP":622,"AZN":1267.629,"BA":-2956,"BABA":4896,"BAC":3856,"BBD":113.981,"BBVA":3023,"BCS":477.931,"BG":658,"BIDU":514,"BIIB":1741.1,"BMY":939,"BP":-8551,"BRFS":104.41499999999999,"BSBR":25.971,"C":1412,"CAT":962,"CRM":178,"CS":1574,"CSCO":3303,"CVX":-6557,"CX":279.653,"DE":1629,"DESP":-52.689,"DIS":20,"EBAY":804,"ERJ":-96.005,"FB":5963,"FDX":844,"FMX":348,"GE":-730,"GGB":71.324,"GILD":1523,"GLOB":19.618000000000002,"GOLD":942.193,"GOOGL":6232,"GS":4251,"GSK":1685,"HD":6067,"HPQ":719,"HWM":183,"IBM":1839,"IBN":604.663,"INTC":5706,"ITUB":407.125,"JD":684,"JNJ":4141,"JPM":5683,"KO":2031,"LMT":2213,"LVS":-913,"MCD":1036,"MELI":99.43800000000005,"MMM":1431,"MO":3863,"MOD":1.3999999999999915,"MSFT":13407,"NEM":436,"NFLX":1357,"NKE":-911,"NOK":497,"NVDA":677,"OGZD":-724,"ORCL":4395,"PBR":215,"PEP":2556,"PFE":3534,"PG":3596,"PTR":-1211,"PYPL":965,"QCOM":782,"RDS.A":-2450,"SAN":2623,"SBUX":-693.9,"SID":205.69899999999996,"SLB":201,"SNAP":-310.60799999999995,"SONY":2022,"T":6058,"TGT":503,"TOT":-373,"TRIP":-131,"TS":-88.30200000000002,"TSLA":327,"TWTR":-273.92999999999995,"TX":65.245,"UGP":31.420999999999992,"V":3004,"VALE":2798.625,"VIST":-22.967000000000002,"VZ":7361,"WFC":-2731,"WMT":6459,"X":-392,"XOM":-951,"ABBV":2984,"AVGO":833,"BIOX":11.548999999999998,"BRK.B":7343,"CAAP":-76.76,"DOCU":-41.15899999999999,"EFX":166.79999999999995,"ETSY":119.73999999999998,"GPRK":-5.626000000000001,"HAL":236,"MA":1753,"PAAS":30.666000000000004,"PSX":-288,"SHOP":17.661,"SNOW":0,"SPOT":-184.41899999999998,"SQ":14.576000000000022,"UNH":9241,"UNP":1654,"WBA":391,"ZM":23.384999999999962},
+{"Fecha":"Sep/2020","AAPL":14680,"ABEV":664.117,"ABT":1456,"ADBE":1070,"AGRO":66.40999999999997,"AIG":869,"AMD":449,"AMGN":2412,"AMX":2089,"AMZN":6256,"ARCO":-4.470000000000013,"AUY":136.36999999999998,"AXP":1364,"AZN":1197,"BA":-485,"BABA":1971,"BAC":5182,"BBD":1047,"BBVA":3559,"BCS":1458,"BG":950,"BIDU":890,"BIIB":892.0999999999999,"BMY":1366,"BP":1830,"BRFS":142.262,"BSBR":877.695,"C":4102,"CAT":1126,"CRM":224,"CS":938.158,"CSCO":3181,"CVX":-365,"CX":452.50199999999995,"DE":1387,"DESP":-34.489000000000004,"DIS":-477,"EBAY":671,"ERJ":-47.92900000000007,"FB":8040,"FDX":1590,"FMX":523,"GE":419,"GGB":246.523,"GILD":3160,"GLOB":24.459000000000017,"GOLD":1411.162,"GOOGL":11235,"GS":4555,"GSK":2956,"HD":4852,"HPQ":1181,"HWM":102,"IBM":2209,"IBN":924.069,"INTC":5034,"ITUB":1009,"JD":584,"JNJ":5962,"JPM":12185,"KO":2651,"LMT":2136,"LVS":-547,"MCD":2323.3,"MELI":83.37300000000005,"MMM":1885,"MO":4394,"MOD":29.999999999999986,"MSFT":15876,"NEM":960,"NFLX":1315,"NKE":1639,"NOK":506,"NVDA":1419,"OGZD":654,"ORCL":3404,"PBR":3610,"PEP":3069,"PFE":3380,"PG":5197,"PTR":2985,"PYPL":1013,"QCOM":3447,"RDS.A":1308,"SAN":3630,"SBUX":641,"SID":505.21600000000007,"SLB":236,"SNAP":-167.86400000000003,"SONY":2955,"T":6243,"TGT":2325,"TOT":1472,"TRIP":-43,"TS":-77.84899999999999,"TSLA":809,"TWTR":56.10699999999997,"TX":195.813,"UGP":106.495,"V":3150,"VALE":5489.877,"VIST":-16.632000000000005,"VZ":7678,"WFC":3826,"WMT":6378,"X":-173,"XOM":-432,"ABBV":3535,"AVGO":1075,"BIOX":7.475999999999997,"BRK.B":7632,"CAAP":-61.303,"DOCU":-51.702999999999975,"EFX":204.10000000000002,"ETSY":118.56899999999999,"GPRK":27.065000000000005,"HAL":256,"MA":2116,"PAAS":103.39299999999999,"PSX":-448,"SHOP":62.74599999999998,"SNOW":-77.68299999999999,"SPOT":-47.45100000000002,"SQ":64.59199999999998,"UNH":4651,"UNP":2031,"WBA":916,"ZM":188.10399999999998},
+{"Fecha":"Dic/2020","AAPL":33883,"ABEV":974.102,"ABT":2414,"ADBE":1223,"AGRO":26.578000000000003,"AIG":-219,"AMD":570,"AMGN":1988,"AMX":2037,"AMZN":6377,"ARCO":22.10000000000008,"AUY":151.07,"AXP":2218,"AZN":1516,"BA":-1583,"BABA":7395,"BAC":6225,"BBD":-707.083,"BBVA":1671,"BCS":884.693,"BG":1109,"BIDU":751.029,"BIIB":-2151.3,"BMY":731,"BP":46,"BRFS":203.993,"BSBR":2045,"C":5842,"CAT":1349,"CRM":193,"CS":338.555,"CSCO":3387,"CVX":1850,"CX":350.95899999999995,"DE":1725,"DESP":-21.711,"DIS":137,"EBAY":685,"ERJ":70.32900000000001,"FB":12775,"FDX":1443,"FMX":669,"GE":1096,"GGB":328.661,"GILD":3084,"GLOB":31.94999999999998,"GOLD":1365.11,"GOOGL":15652,"GS":5565,"GSK":1923,"HD":4083,"HPQ":1497,"HWM":261,"IBM":2059,"IBN":1024,"INTC":5731,"ITUB":2778,"JD":-78,"JNJ":4230,"JPM":15190,"KO":1964,"LMT":2241,"LVS":-194,"MCD":1984.8,"MELI":-25.42999999999995,"MMM":1983,"MO":2583,"MOD":26.599999999999987,"MSFT":17897,"NEM":980,"NFLX":954,"NKE":1523,"NOK":1412,"NVDA":1553,"OGZD":3757,"ORCL":3755,"PBR":5805,"PEP":2641,"PFE":897,"PG":5243,"PTR":69351,"PYPL":1045,"QCOM":2526,"RDS.A":-651,"SAN":1561,"SBUX":900.9,"SID":625.527,"SLB":368,"SNAP":-97.23600000000005,"SONY":3434,"T":5636,"TGT":1937,"TOT":1565,"TRIP":-96,"TS":-7.150999999999982,"TSLA":575,"TWTR":251.88300000000004,"TX":462.06600000000003,"UGP":87.30199999999999,"V":3848,"VALE":3851,"VIST":-8.553000000000003,"VZ":7054,"WFC":4162,"WMT":6487,"X":-54,"XOM":-1114,"ABBV":4512,"AVGO":1566,"BIOX":9.714999999999998,"BRK.B":7278,"CAAP":-41.84899999999998,"DOCU":-48.134000000000015,"EFX":201.89999999999998,"ETSY":161.43500000000006,"GPRK":19.217000000000002,"HAL":262,"MA":2135,"PAAS":119.24400000000003,"PSX":-245,"SHOP":119.51200000000006,"SNOW":-169.454,"SPOT":-79.23299999999995,"SQ":65.46299999999997,"UNH":3517,"UNP":2006,"WBA":1054,"ZM":192.24200000000008},
+{"Fecha":"Mar/2021","AAPL":28223,"ABEV":707.477,"ABT":2133,"ADBE":1465,"AGRO":-60.48900000000002,"AIG":5129,"AMD":658,"AMGN":2130,"AMX":2091,"AMZN":8903,"ARCO":-6.463000000000065,"AUY":126.83999999999997,"AXP":3219,"AZN":1879,"BA":-124,"BABA":-1182,"BAC":5480,"BBD":-1416,"BBVA":3310,"BCS":3171,"BG":1632,"BIDU":431,"BIIB":808.4,"BMY":2197,"BP":5778,"BRFS":108.72000000000003,"BSBR":943.95,"C":10378,"CAT":1871,"CRM":354,"CS":-836.606,"CSCO":3482,"CVX":1699,"CX":406.01,"DE":2701,"DESP":-20.132,"DIS":1457,"EBAY":930,"ERJ":-34.36300000000004,"FB":11378,"FDX":1034,"FMX":482,"GE":396,"GGB":606.398,"GILD":2988,"GLOB":33.94000000000001,"GOLD":1067.634,"GOOGL":16546,"GS":8411,"GSK":2074,"HD":5781,"HPQ":1552,"HWM":207,"IBM":1619,"IBN":961.726,"INTC":5903,"ITUB":1540,"JD":244,"JNJ":6805,"JPM":17752,"KO":2808,"LMT":2222,"LVS":-88,"MCD":2082,"MELI":90.40600000000006,"MMM":2016,"MO":3625,"MOD":26.999999999999957,"MSFT":17048,"NEM":923,"NFLX":1959,"NKE":1698,"NOK":428,"NVDA":2123,"OGZD":7067,"ORCL":3957,"PBR":5793,"PEP":2346,"PFE":4787,"PG":4006,"PTR":6826,"PYPL":1159,"QCOM":2166,"RDS.A":9741,"SAN":3810,"SBUX":939.6,"SID":914.5,"SLB":711,"SNAP":-303.59900000000005,"SONY":975,"T":7678,"TGT":1846,"TOT":0,"TRIP":-84,"TS":43.97499999999994,"TSLA":493,"TWTR":52.17199999999991,"TX":890.28,"UGP":100.21000000000001,"V":3589,"VALE":7624.302,"VIST":12.399999999999999,"VZ":7993,"WFC":6751,"WMT":7409,"X":331,"XOM":3144,"ABBV":4362,"AVGO":1923,"BIOX":5.112,"BRK.B":8907,"CAAP":-19.01099999999999,"DOCU":-24.89699999999999,"EFX":306.59999999999997,"ETSY":150.63899999999995,"GPRK":63.76,"HAL":370,"MA":2193,"PAAS":70.823,"PSX":-715,"SHOP":120.35700000000003,"SNOW":-200.397,"SPOT":17.039999999999964,"SQ":108.03999999999996,"UNH":6739,"UNP":1993,"WBA":980,"ZM":256.1169999999999},
+{"Fecha":"Jun/2021","AAPL":24287,"ABEV":717.809,"ABT":1998,"ADBE":1417,"AGRO":21.948,"AIG":718,"AMD":840,"AMGN":2351,"AMX":2311,"AMZN":7713,"ARCO":17.611000000000033,"AUY":127.60800000000002,"AXP":3220,"AZN":1053,"BA":873,"BABA":4776,"BAC":8097,"BBD":1995,"BBVA":2532,"BCS":3671,"BG":906,"BIDU":536,"BIIB":927.4000000000001,"BMY":1558,"BP":1807,"BRFS":103.77999999999997,"BSBR":1970,"C":7361,"CAT":1820,"CRM":332,"CS":878.707,"CSCO":3586,"CVX":3416,"CX":526.06,"DE":2408,"DESP":-23.687999999999995,"DIS":1385,"EBAY":751,"ERJ":95.749,"FB":12367,"FDX":1967,"FMX":704,"GE":772,"GGB":1008.277,"GILD":2365,"GLOB":45.552000000000014,"GOLD":1017.526,"GOOGL":19368,"GS":7066,"GSK":2532,"HD":6639,"HPQ":1525,"HWM":209,"IBM":2242,"IBN":905.492,"INTC":5892,"ITUB":2845,"JD":33,"JNJ":6385,"JPM":15282,"KO":3212,"LMT":2151,"LVS":-124,"MCD":2541,"MELI":166.41999999999996,"MMM":2023,"MO":4394,"MOD":13.800000000000026,"MSFT":19095,"NEM":976,"NFLX":1848,"NKE":2028,"NOK":808,"NVDA":2602,"OGZD":7196,"ORCL":4665,"PBR":8973,"PEP":3204,"PFE":5747,"PG":4057,"PTR":3837,"PYPL":1217,"QCOM":2195,"RDS.A":6327,"SAN":4480,"SBUX":1408.1,"SID":1387.3600000000001,"SLB":653,"SNAP":-192.50600000000009,"SONY":2511,"T":7800,"TGT":2631,"TOT":0,"TRIP":-35,"TS":117.97000000000003,"TSLA":1335,"TWTR":29.827999999999975,"TX":1253.09,"UGP":-21,"V":4069,"VALE":10272.547,"VIST":44.86199999999998,"VZ":8165,"WFC":9889,"WMT":7754,"X":1072,"XOM":6032,"ABBV":4627,"AVGO":2001,"BIOX":12.026999999999994,"BRK.B":9301,"CAAP":-25.643999999999995,"DOCU":-10.732000000000028,"EFX":306.20000000000005,"ETSY":99.05099999999999,"GPRK":74.06700000000002,"HAL":434,"MA":2416,"PAAS":81.15900000000002,"PSX":93,"SHOP":147.66199999999998,"SNOW":-205.59400000000005,"SPOT":14.580000000000041,"SQ":233.02999999999997,"UNH":5978,"UNP":2473,"WBA":1123,"ZM":226.31699999999995},
+{"Fecha":"Sep/2021","AAPL":23786,"ABEV":734.801,"ABT":2622,"ADBE":1446,"AGRO":-27.60899999999996,"AIG":2357,"AMD":953,"AMGN":2383,"AMX":2404,"AMZN":4841,"ARCO":50.81300000000003,"AUY":129.016,"AXP":3150,"AZN":-100,"BA":34,"BABA":2320,"BAC":9016,"BBD":1692,"BBVA":3572,"BCS":2617,"BG":582,"BIDU":356,"BIIB":713.5,"BMY":1732,"BP":-1300,"BRFS":130.75,"BSBR":736.995,"C":5893,"CAT":1702,"CRM":38,"CS":1153,"CSCO":3421,"CVX":5889,"CX":459.67999999999995,"DE":1860,"DESP":-15.616000000000007,"DIS":654,"EBAY":682,"ERJ":39.93300000000002,"FB":10423,"FDX":1429,"FMX":646,"GE":1383,"GGB":1392.962,"GILD":3882,"GLOB":52.419,"GOLD":958.272,"GOOGL":20969,"GS":6894,"GSK":3010,"HD":5795,"HPQ":1216,"HWM":214,"IBM":1979,"IBN":1127,"INTC":5269,"ITUB":1964,"JD":309,"JNJ":6737,"JPM":14187,"KO":3012,"LMT":2302,"LVS":-306,"MCD":2776.8,"MELI":160.35000000000002,"MMM":1853,"MO":4150,"MOD":14.399999999999977,"MSFT":20238,"NEM":678,"NFLX":1754,"NKE":2212,"NOK":640,"NVDA":2827,"OGZD":8786,"ORCL":3503,"PBR":8277,"PEP":3196,"PFE":6969,"PG":5047,"PTR":5396,"PYPL":1088,"QCOM":2902,"RDS.A":5925,"SAN":4329,"SBUX":1417.8,"SID":648.48,"SLB":897,"SNAP":-181.28699999999992,"SONY":2828,"T":7369,"TGT":2506,"TOT":0,"TRIP":16,"TS":223.13,"TSLA":2055,"TWTR":23.341000000000008,"TX":1724.59,"UGP":89.11000000000001,"V":4324,"VALE":6523.795,"VIST":52.30199999999999,"VZ":9714,"WFC":8708,"WMT":5992,"X":1819,"XOM":9702,"ABBV":5407,"AVGO":2153,"BIOX":13.391000000000002,"BRK.B":7978,"CAAP":5.907999999999976,"DOCU":-22.38900000000001,"EFX":273.3,"ETSY":108.779,"GPRK":84.38300000000001,"HAL":458,"MA":2746,"PAAS":77.505,"PSX":820,"SHOP":17.33000000000004,"SNOW":-200.13600000000002,"SPOT":88.09000000000003,"SQ":91,"UNH":5712,"UNP":2432,"WBA":958,"ZM":294.11400000000003}]
+
+
+
+const nonOperatingIncome = [{"Fecha":"Dic/2018","AAPL":872,"ABEV":-384.348,"ABT":-229,"ADBE":9.162,"AGRO":-4.193,"AIG":-547,"AMD":-30,"AMGN":-161,"AMX":-615.257,"AMZN":-522,"ARCO":-14.413,"AUY":-68.556,"AXP":-457,"AZN":-561.297,"BA":-131,"BABA":1534,"BAC":-3839,"BBD":-754.849,"BBVA":-1753,"BCS":-29.588,"BG":151,"BIDU":47.707,"BIIB":23.8,"BMY":-43,"BP":-1032,"BRFS":-662.379,"BSBR":21.157,"C":-2334,"CAT":-612,"CRM":102,"CS":-1107,"CSCO":-64,"CVX":2254,"CX":-402.496,"DE":-348,"DESP":-0.018,"DIS":55,"EBAY":-136,"ERJ":45.388,"FB":151,"FDX":9,"FMX":1.362,"GE":-1719,"GGB":-119.787,"GILD":-934,"GLOB":-5.766,"GOLD":-535.681,"GOOGL":1994,"GS":-2108,"GSK":-293.308,"HD":-512,"HPQ":112,"HWM":-86,"IBM":-306.9,"INTC":-628,"ITUB":-1215,"JD":-535.812,"JNJ":-1084,"JPM":-2661,"KO":-1052,"LMT":-459,"LVS":-169,"MCD":-335.8,"MELI":-6.013,"MMM":-70,"MO":-432,"MOD":-7.6,"MSFT":215,"NEM":-85,"NFLX":-96.371,"NKE":27,"NOK":-228.214,"NVDA":30,"OGZD":-5086,"ORCL":-490,"PBR":-3625,"PEP":-818,"PFE":-4201,"PG":-143,"PTR":-865.231,"PYPL":41,"QCOM":-411,"RDS.A":4294,"SAN":-2871,"SBUX":-23.9,"SID":257.263,"SLB":-47,"SNAP":2.922,"SONY":594.196,"T":-946,"TOT":-1592,"TRIP":-1,"TS":-3.679,"TSLA":-187.195,"TWTR":2.663,"TX":32.479,"UGP":50.088,"V":-94,"VALE":-861.724,"VZ":-5866,"WFC":-2401,"WMT":-403,"X":-22,"XOM":3460},
+{"Fecha":"Mar/2019","AAPL":551,"ABEV":-122.625,"ABT":-127,"ADBE":16.005,"AGRO":80.071,"AIG":-388,"AMD":24,"AMGN":-144,"AMX":-135.673,"AMZN":-14,"ARCO":-10.057,"AUY":-51.247,"AXP":-494,"AZN":-340.583,"BA":-170,"BABA":2789,"BAC":-3730,"BBD":-1350,"BBVA":-1187,"BCS":-83.351,"BG":192,"BIDU":260.905,"BIIB":581.1,"BMY":196,"BP":-761.005,"BRFS":-118.754,"BSBR":-828.473,"C":-2382,"CAT":13,"CRM":272,"CS":-1402,"CSCO":126,"CVX":541,"CX":-240.177,"DE":-265.8,"DESP":-5.22,"DIS":3821,"EBAY":46,"ERJ":11.588,"FB":-2835,"FDX":16,"FMX":-235.408,"GE":-716,"GGB":-79.802,"GILD":142,"GLOB":-3.266,"GOLD":-134,"GOOGL":-22,"GS":-1563,"GSK":-765.784,"HD":-273,"HPQ":-131,"HWM":-129,"IBM":101,"INTC":373,"ITUB":-1433,"JD":1052,"JNJ":-847,"JPM":-2838,"KO":-226,"LMT":-243,"LVS":-153,"MCD":-205.9,"MELI":5.216,"MMM":-578,"MO":-777,"MOD":-16.8,"MSFT":211,"NEM":-72,"NFLX":-59.425,"NKE":10,"NOK":-346.317,"NVDA":31,"OGZD":-886.294,"ORCL":-315,"PBR":-2505,"PEP":-164,"PFE":-176,"PG":10,"PTR":-1399,"PYPL":178,"QCOM":-223,"RDS.A":21.223,"SAN":-2574,"SBUX":-15.5,"SID":-169.48,"SLB":-129,"SNAP":5.933,"SONY":-162.055,"T":-1961,"TGT":-110,"TOT":-588.448,"TRIP":2,"TS":24.305,"TSLA":-166.412,"TWTR":2.845,"TX":-2.196,"UGP":7.065,"V":14,"VALE":-1439,"VZ":-921,"WFC":-2604,"WMT":212,"X":-49,"XOM":1505,"ABBV":-748,"AVGO":-906,"BIOX":-22.102,"BRK.B":19499,"CAAP":-54.185,"DOCU":-2.307,"EFX":-726.1,"ETSY":-0.206,"GPRK":-26.83,"HAL":-234,"MA":-15,"PAAS":37.917,"PSX":98,"SHOP":8.361,"SPOT":-143.069,"SQ":-43.821,"UNH":-400,"UNP":-170,"WBA":-335,"ZM":0.592},
+{"Fecha":"Jun/2019","AAPL":422,"ABEV":-101.902,"ABT":-88,"ADBE":-29.785,"AGRO":34.198,"AIG":-436,"AMD":-24,"AMGN":-92,"AMX":-683.38,"AMZN":-281,"ARCO":-10.392,"AUY":-25.596,"AXP":-491,"AZN":-328.377,"BA":95,"BABA":138.035,"BAC":-3874,"BBD":-868.949,"BBVA":-822.514,"BCS":-33.416,"BG":-68,"BIDU":118.546,"BIIB":171.3,"BMY":-242,"BP":-1442,"BRFS":17.526,"BSBR":-890.057,"C":-2439,"CAT":-139,"CRM":-60,"CS":-1348,"CSCO":-19,"CVX":2321,"CX":-229.887,"DE":-360,"DESP":-1.663,"DIS":-809,"EBAY":-42,"ERJ":21.641,"FB":-1794,"FDX":-4186,"FMX":-226.532,"GE":-3156,"GGB":-65.091,"GILD":16,"GLOB":-3.155,"GOLD":-129,"GOOGL":3075,"GS":-1648,"GSK":-655.474,"HD":-283,"HPQ":-753,"HWM":-613,"IBM":180.9,"INTC":-77,"ITUB":-1249,"JD":-143.384,"JNJ":1442,"JPM":-2873,"KO":-24,"LMT":-310,"LVS":440,"MCD":-288.6,"MELI":19.788,"MMM":-340,"MO":-176,"MOD":-8.8,"MSFT":286,"NEM":-113,"NFLX":-205.503,"NKE":55,"NOK":-674.192,"NVDA":35,"OGZD":81.688,"ORCL":-585,"PBR":2674,"PEP":-329,"PFE":-62,"PG":-8549,"PTR":-387.435,"PYPL":298,"QCOM":-199,"RDS.A":377.136,"SAN":-2434,"SBUX":597.5,"SID":-246.268,"SLB":-147,"SNAP":50.722,"SONY":45.414,"T":-2763,"TGT":-114,"TOT":-428.368,"TRIP":2,"TS":-19.029,"TSLA":-319.718,"TWTR":12.093,"TX":-14.747,"UGP":-31.185,"V":-43,"VALE":-1265,"VIST":-3.53,"VZ":-2540,"WFC":-2583,"WMT":-670,"X":-32,"XOM":1450,"ABBV":-2690,"AVGO":-410,"BIOX":-4.372,"BRK.B":9180,"CAAP":-3.499,"DOCU":-1.939,"EFX":-36.1,"ETSY":-1.479,"GPRK":-9.588,"HAL":-260,"MA":107,"PAAS":-3.184,"PSX":616,"SHOP":8.726,"SPOT":-64.048,"SQ":-40.637,"UNH":-418,"UNP":-202,"WBA":63,"ZM":0.973},
+{"Fecha":"Sep/2019","AAPL":650,"ABEV":-47.776,"ABT":-99,"ADBE":-8.548,"AGRO":-99.114,"AIG":-424,"AMD":-62,"AMGN":-173,"AMX":-704.992,"AMZN":-580,"ARCO":-7.924,"AUY":204.774,"AXP":-480,"AZN":-346.812,"BA":-162,"BABA":9205,"BAC":-3910,"BBD":-2190,"BBVA":-1272,"BCS":-1899,"BG":-1587,"BIDU":-1248,"BIIB":201,"BMY":-453,"BP":-4190,"BRFS":52.102,"BSBR":4.157,"C":-2206,"CAT":-30,"CRM":-41,"CS":-1316,"CSCO":-92,"CVX":1181,"CX":-221.683,"DE":-416,"DESP":-3.627,"DIS":-773,"EBAY":-123,"ERJ":19.82,"FB":144,"FDX":19,"FMX":-77.097,"GE":-2913,"GGB":-121.823,"GILD":3,"GLOB":-3.222,"GOLD":2562,"GOOGL":-430,"GS":-1558,"GSK":-375.942,"HD":-280,"HPQ":-488,"HWM":-236,"IBM":-308.9,"INTC":168,"ITUB":-2642,"JD":-89.988,"JNJ":-2436,"JPM":-2593,"KO":427,"LMT":-282,"LVS":-168,"MCD":-207.6,"MELI":14.998,"MMM":90,"MO":-5077,"MOD":-9.4,"MSFT":0,"NEM":2290,"NFLX":32.084,"NKE":101,"NOK":-68.934,"NVDA":32,"OGZD":398.781,"ORCL":-458,"PBR":-3793,"PEP":-295,"PFE":7358,"PG":-136,"PTR":-636.69,"PYPL":-143,"QCOM":-92,"RDS.A":2463,"SAN":-1696,"SBUX":3.7,"SID":-324.994,"SLB":-12745,"SNAP":0.182,"SONY":-171.151,"T":-3196,"TGT":-117,"TOT":-1174,"TRIP":5,"TS":8.361,"TSLA":-85,"TWTR":3.618,"TX":-23.835,"UGP":-39.477,"V":-394,"VALE":-1283,"VIST":15.996,"VZ":-996,"WFC":-2466,"WMT":-345,"X":-74,"XOM":1599,"ABBV":-1652,"AVGO":-372,"BIOX":-16.235,"BRK.B":10585,"CAAP":-108.376,"DOCU":-2.742,"EFX":-25.1,"ETSY":-5.843,"GPRK":-12.016,"HAL":-164,"MA":-104,"PAAS":22.208,"PSX":-269,"SHOP":9.089,"SPOT":240.157,"SQ":-32.813,"UNH":-449,"UNP":-213,"WBA":-249,"ZM":4.492},
+{"Fecha":"Dic/2019","AAPL":617,"ABEV":-374.087,"ABT":-165,"ADBE":-1.18,"AGRO":27.363,"AIG":-494,"AMD":-155,"AMGN":-26,"AMX":-517.764,"AMZN":109,"ARCO":-11.899,"AUY":-26.772,"AXP":-444,"AZN":-204.742,"BA":-94,"BABA":2387,"BAC":-3099,"BBD":-995.345,"BBVA":-2913,"BCS":-189.132,"BG":-374,"BIDU":112.557,"BIIB":343.2,"BMY":-830,"BP":-4487,"BRFS":-114.327,"BSBR":1.492,"C":-1964,"CAT":-527,"CRM":32,"CS":-635.443,"CSCO":150,"CVX":1514,"CX":-435.033,"DE":-324,"DESP":-6.705,"DIS":-141,"EBAY":7,"ERJ":-38.086,"FB":311,"FDX":-48,"FMX":-365.949,"GE":-1456,"GGB":-5.032,"GILD":839,"GLOB":-7.258,"GOLD":1728,"GOOGL":1529,"GS":-2498,"GSK":675.472,"HD":-292,"HPQ":-219,"HWM":-102,"IBM":-275,"INTC":1166,"ITUB":-722.229,"JD":686.419,"JNJ":-2175,"JPM":-2558,"KO":180,"LMT":-291,"LVS":-169,"MCD":-164.4,"MELI":5.913,"MMM":-417,"MO":-3765,"MOD":-7.3,"MSFT":194,"NEM":64,"NFLX":-309.179,"NKE":129,"NOK":-150.572,"NVDA":26,"OGZD":362.637,"ORCL":-381,"PBR":-3020,"PEP":-548,"PFE":-3552,"PG":-135,"PTR":-1577,"PYPL":113,"QCOM":-83,"RDS.A":-186.498,"SAN":-43.179,"SBUX":-7,"SID":-33.216,"SLB":-330,"SNAP":-86.776,"SONY":246.087,"T":-3989,"TGT":-108,"TOT":-678.924,"TRIP":-3,"TS":-11.254,"TSLA":-173,"TWTR":5.21,"TX":-21.416,"UGP":-204.832,"V":-42,"VALE":-5725,"VIST":-23.649,"VZ":-3317,"WFC":-2322,"WMT":-195,"X":-268,"XOM":3738,"ABBV":-399,"AVGO":-354,"BIOX":1.056,"BRK.B":30558,"CAAP":-60.368,"DOCU":-1.563,"EFX":-122.7,"ETSY":-3.287,"GPRK":-38.374,"HAL":-1638,"MA":40,"PAAS":-12.252,"PSX":508,"SHOP":12.397,"SPOT":-106.286,"SQ":341.968,"UNH":-437,"UNP":-222,"WBA":-153,"ZM":4.209},
+{"Fecha":"Mar/2020","AAPL":236,"ABEV":-310.712,"ABT":-146,"ADBE":-11,"AGRO":-72.398,"AIG":-678,"AMD":-9,"AMGN":-286,"AMX":-4023,"AMZN":-676,"ARCO":-42.775,"AUY":3.402,"AXP":-404,"AZN":-206.129,"BA":-101,"BABA":-1103,"BAC":-2479,"BBD":-4363,"BBVA":-5166,"BCS":10.221,"BG":-404,"BIDU":-175.386,"BIIB":101.9,"BMY":-1232,"BP":-1767,"BRFS":-180.357,"BSBR":48.172,"C":-1764,"CAT":72,"CRM":187,"CS":-950.085,"CSCO":-203,"CVX":2091,"CX":-193.44,"DE":-114,"DESP":8.361,"DIS":-216,"EBAY":-5,"ERJ":-44.676,"FB":-32,"FDX":9,"FMX":188.53,"GE":4753,"GGB":-47.071,"GILD":-372,"GLOB":-4.399,"GOLD":243,"GOOGL":-171,"GS":-1430,"GSK":-568.568,"HD":-307,"HPQ":-31,"HWM":-129,"IBM":-1284,"INTC":-586,"ITUB":-6025,"JD":26.279,"JNJ":374,"JPM":-2185,"KO":322,"LMT":-61,"LVS":-91,"MCD":-373.5,"MELI":13.014,"MMM":-84,"MO":-1350,"MOD":-27.1,"MSFT":-132,"NEM":274,"NFLX":-162.386,"NKE":-220,"NOK":-182.877,"NVDA":5,"OGZD":-6819,"ORCL":-491,"PBR":-19085,"PEP":-432,"PFE":-308,"PG":-74,"PYPL":-122,"QCOM":-370,"RDS.A":4898,"SAN":-4346,"SBUX":-28,"SID":-371.104,"SLB":-8630,"SNAP":-28.913,"SONY":-619.417,"T":-1392,"TGT":-149,"TOT":-636.785,"TRIP":0,"TS":-643.236,"TSLA":-213,"TWTR":-8.092,"TX":101.355,"UGP":-33.858,"V":-108,"VALE":-2502,"VIST":-6.559,"VZ":-2098,"WFC":-1546,"WMT":172,"X":-326,"XOM":1659,"ABBV":-522,"AVGO":-579,"BIOX":-3.274,"BRK.B":-70771,"CAAP":-48.606,"DOCU":-3.803,"EFX":14.6,"ETSY":-16.372,"GPRK":-91.485,"HAL":-1398,"MA":-123,"PAAS":-42.089,"PSX":-1631,"SHOP":-2.269,"SPOT":60.592,"SQ":-123.951,"UNH":-437,"UNP":-225,"WBA":-266,"ZM":3.992},
+{"Fecha":"Jun/2020","AAPL":678,"ABEV":-154.423,"ABT":-116,"ADBE":-10,"AGRO":3.294,"AIG":-8911,"AMD":-13,"AMGN":-225,"AMX":-525.912,"AMZN":88,"ARCO":-8.697,"AUY":-59.608,"AXP":-276,"AZN":-278.681,"BA":-467,"BABA":3175,"BAC":-1153,"BBD":-166.187,"BBVA":-1837,"BCS":-32.276,"BG":32,"BIDU":295.978,"BIIB":296.8,"BMY":688,"BP":-12436,"BRFS":-29.657,"BSBR":3.601,"C":-1512,"CAT":-284,"CRM":661,"CS":-725.464,"CSCO":3,"CVX":-4040,"CX":-237.052,"DE":-359,"DESP":-12.396,"DIS":-4860,"EBAY":199,"ERJ":-291.147,"FB":168,"FDX":-1163,"FMX":-492.086,"GE":-1609,"GGB":11.855,"GILD":-4496,"GLOB":-6.234,"GOLD":-107,"GOOGL":2045,"GS":-4249,"GSK":1570,"HD":-337,"HPQ":32,"HWM":-269,"IBM":-259.2,"INTC":229,"ITUB":-2639,"JD":1179,"JNJ":-201,"JPM":-1940,"KO":166,"LMT":-251,"LVS":-126,"MCD":-386.9,"MELI":-10.098,"MMM":198,"MO":-1298,"MOD":-10,"MSFT":15,"NEM":114,"NFLX":-322.326,"NKE":75,"NOK":-322.672,"NVDA":-68,"OGZD":2975,"ORCL":-650,"PBR":-622.858,"PEP":-388,"PFE":418,"PG":-135,"PTR":-7.477,"PYPL":834,"QCOM":86,"RDS.A":-21348,"SAN":-14667,"SBUX":-118.7,"SID":-55.137,"SLB":-3828,"SNAP":-16.384,"SONY":953.24,"T":-3560,"TGT":-174,"TOT":-8155,"TRIP":-48,"TS":-17.012,"TSLA":-177,"TWTR":-15.176,"TX":-14.358,"UGP":-8.875,"V":-72,"VALE":-1217,"VIST":-8.243,"VZ":-1174,"WFC":-1254,"WMT":2187,"X":-202,"XOM":-689,"ABBV":-3677,"AVGO":-424,"BIOX":-7.042,"BRK.B":28066,"CAAP":-42.264,"DOCU":-4.512,"EFX":-44.1,"ETSY":-7.424,"GPRK":-26.372,"HAL":-2319,"MA":-63,"PAAS":-6.156,"PSX":-157,"SHOP":-13.293,"SPOT":-317.165,"SQ":-26.781,"UNH":-430,"UNP":-158,"WBA":-2164,"ZM":5.79},
+{"Fecha":"Sep/2020","AAPL":221,"ABEV":-210.298,"ABT":-35,"ADBE":-23,"AGRO":-34.218,"AIG":-501,"AMD":-48,"AMGN":-206,"AMX":-1063,"AMZN":553,"ARCO":-18.083,"AUY":-32.621,"AXP":-247,"AZN":-250.411,"BA":-440,"BABA":1526,"BAC":-1554,"BBD":-857.342,"BBVA":-1238,"BCS":23.249,"BG":-645,"BIDU":1364,"BIIB":65.3,"BMY":891,"BP":-1354,"BRFS":-84.043,"BSBR":0.880968,"C":-1143,"CAT":-263,"CRM":1026,"CS":-760.962,"CSCO":-500,"CVX":321,"CX":-1935,"DE":-272,"DESP":-13.084,"DIS":-140,"EBAY":103,"ERJ":-99.91,"FB":93,"FDX":16,"FMX":-359.259,"GE":-2079,"GGB":-59.205,"GILD":-2335,"GLOB":-8.048,"GOLD":45.889,"GOOGL":2124,"GS":-1361,"GSK":-812.411,"HD":-329,"HPQ":-405,"HWM":-114,"IBM":-379.6,"INTC":7,"ITUB":-1144,"JD":651.698,"JNJ":-1561,"JPM":-1912,"KO":-470,"LMT":-80,"LVS":-201,"MCD":-106.3,"MELI":-30.404,"MMM":-80,"MO":-4718,"MOD":-7.2,"MSFT":248,"NEM":-80,"NFLX":-453.403,"NKE":76,"NOK":-181.164,"NVDA":-71,"OGZD":-5181,"ORCL":-771,"PBR":-4346,"PEP":-236,"PFE":-1204,"PG":100,"PTR":5777,"PYPL":131,"QCOM":-141,"RDS.A":-601.597,"SAN":-14.026,"SBUX":-198.5,"SID":-137.171,"SLB":-290,"SNAP":-31.08,"SONY":-132.466,"T":-2309,"TGT":-136,"TOT":-684.618,"TRIP":-15,"TS":-8.256,"TSLA":-254,"TWTR":-26.424,"TX":-11.569,"UGP":-23.895,"V":-95,"VALE":-1856,"VIST":-17.377,"VZ":-1827,"WFC":-2279,"WMT":737,"X":-85,"XOM":60,"ABBV":-1035,"AVGO":-482,"BIOX":-12.08,"BRK.B":30298,"CAAP":-113.442,"DOCU":-12.015,"EFX":96,"ETSY":-28.176,"GPRK":-15.084,"HAL":-257,"MA":-201,"PAAS":-11.803,"PSX":-902,"SHOP":123.621,"SNOW":0.58,"SPOT":-88.829,"SQ":-29.753,"UNH":-395,"UNP":-258,"WBA":-379,"ZM":2.081},
+{"Fecha":"Dic/2020","AAPL":-304,"ABEV":594.901,"ABT":-26,"ADBE":-32,"AGRO":40.926,"AIG":-339,"AMD":-24,"AMGN":-111,"AMX":679.532,"AMZN":1388,"ARCO":6.21,"AUY":148.103,"AXP":-232,"AZN":-293,"BA":-7042,"BABA":6303,"BAC":-945,"BBD":2332,"BBVA":2649,"BCS":-31.69,"BG":-443,"BIDU":103.216,"BIIB":2504,"BMY":-11182,"BP":272,"BRFS":-111.709,"BSBR":-2.946,"C":-1045,"CAT":-510,"CRM":232,"CS":-1084,"CSCO":-132,"CVX":-634,"CX":-298.984,"DE":-197,"DESP":-13.149,"DIS":-91,"EBAY":424,"ERJ":-60.214,"FB":280,"FDX":-37,"FMX":-409.515,"GE":1625,"GGB":-21.545,"GILD":-1270,"GLOB":-3.929,"GOLD":50.118,"GOOGL":3037,"GS":-1079,"GSK":-830.555,"HD":-327,"HPQ":-201,"HWM":-190,"IBM":-753.7,"INTC":1757,"ITUB":-284.124,"JD":3438,"JNJ":-2583,"JPM":-1428,"KO":397,"LMT":-54,"LVS":-174,"MCD":-154.7,"MELI":-18.889,"MMM":-273,"MO":-42,"MOD":-140.4,"MSFT":440,"NEM":-46,"NFLX":-447.825,"NKE":-67,"NOK":-819.035,"NVDA":-83,"OGZD":1791,"ORCL":-740,"PBR":8020,"PEP":-284,"PFE":-719,"PG":-366,"PYPL":814,"QCOM":78,"RDS.A":-3727,"SAN":-128.757,"SBUX":-92.8,"SID":-48.138,"SLB":103,"SNAP":2.264,"SONY":1135,"T":-21189,"TGT":-639,"TOT":-583.308,"TRIP":-8,"TS":0.223502,"TSLA":-196,"TWTR":-27.905,"TX":150.651,"UGP":34.613,"V":-100,"VALE":-2553,"VIST":-22.694,"VZ":-801,"WFC":-1804,"WMT":-7080,"X":9,"XOM":-25499,"ABBV":-6019,"AVGO":-429,"BIOX":-4.147,"BRK.B":38125,"CAAP":-18.167,"DOCU":-8.416,"EFX":-106.9,"ETSY":-8.128,"GPRK":-125.73,"HAL":-502,"MA":33,"PAAS":40.791,"PSX":-446,"SHOP":-9.759,"SNOW":0.998,"SPOT":-133.525,"SQ":233.22,"UNH":-401,"UNP":-213,"WBA":-1575,"ZM":1.779},
+{"Fecha":"Mar/2021","AAPL":-212,"ABEV":-173.16,"ABT":-90,"ADBE":-31,"AGRO":88.762,"AIG":-401,"AMD":-16,"AMGN":-273,"AMX":-1830,"AMZN":1365,"ARCO":-23.266,"AUY":-35.765,"AXP":-226,"AZN":-238,"BA":-448,"BABA":164.524,"BAC":-853,"BBD":-1446,"BBVA":-1183,"BCS":136.51,"BG":-523,"BIDU":3693,"BIIB":-341.4,"BMY":333,"BP":32,"BRFS":-103.621,"BSBR":7.067,"C":-1018,"CAT":126,"CRM":250,"CS":-599.31,"CSCO":109,"CVX":478,"CX":305.762,"DE":-389,"DESP":-17.139,"DIS":-227,"EBAY":-205,"ERJ":-54.934,"FB":125,"FDX":15,"FMX":-85.142,"GE":-159,"GGB":-33.612,"GILD":-724,"GLOB":-5.102,"GOLD":42.314,"GOOGL":4737,"GS":-1125,"GSK":-2758,"HD":-333,"HPQ":-216,"HWM":-94,"IBM":-704.4,"INTC":-1997,"ITUB":-2214,"JD":287.481,"JNJ":624,"JPM":-1194,"KO":-45,"LMT":-11,"LVS":-178,"MCD":-128.8,"MELI":-81.307,"MMM":-71,"MO":-1688,"MOD":-46.7,"MSFT":188,"NEM":-180,"NFLX":74.646,"NKE":-62,"NOK":24.09,"NVDA":-79,"OGZD":-322.4,"ORCL":-635,"PBR":-5403,"PEP":-172,"PFE":896,"PG":-129,"PTR":-618.277,"PYPL":-287,"QCOM":-37,"RDS.A":2690,"SAN":-165.015,"SBUX":-49.3,"SID":356.238,"SLB":-325,"SNAP":18.164,"SONY":-120.245,"T":2386,"TGT":-116,"TRIP":-12,"TS":19.604,"TSLA":40,"TWTR":-2.178,"TX":20.827,"UGP":-54.616,"V":39,"VALE":-281.685,"VIST":-3.784,"VZ":-915,"WFC":-1030,"WMT":-3565,"X":-239,"XOM":448,"ABBV":-495,"AVGO":-539,"BIOX":-6.252,"BRK.B":5621,"CAAP":-47.176,"DOCU":-38.656,"EFX":-38.1,"ETSY":7.091,"GPRK":-60.677,"HAL":-147,"MA":-3,"PAAS":-40.379,"PSX":-56,"SHOP":1249,"SNOW":2.804,"SPOT":87.927,"SQ":-68.677,"UNH":-397,"UNP":-239,"WBA":-34,"ZM":8.536},
+{"Fecha":"Jun/2021","AAPL":82,"ABEV":-33.026,"ABT":-650,"ADBE":-28,"AGRO":38.326,"AIG":-571,"AMD":-19,"AMGN":-1793,"AMX":781.898,"AMZN":921,"ARCO":-2.362,"AUY":-41.049,"AXP":-210,"AZN":-261,"BA":-324,"BABA":2322,"BAC":-788,"BBD":-2.341,"BBVA":-1171,"BCS":-62.935,"BG":-487,"BIDU":-375.696,"BIIB":-345.3,"BMY":-5,"BP":2461,"BRFS":-137.889,"BSBR":6.127,"C":-912,"CAT":50,"CRM":494,"CS":-754.59,"CSCO":149,"CVX":1006,"CX":-205.447,"DE":-258,"DESP":-14.083,"DIS":-390,"EBAY":-350,"ERJ":-17.71,"FB":146,"FDX":646,"FMX":-328.595,"GE":-1809,"GGB":9.939,"GILD":-548,"GLOB":-20.012,"GOLD":-93.203,"GOOGL":2617,"GS":-1127,"GSK":-499.286,"HD":-321,"HPQ":-199,"HWM":-99,"IBM":-683.5,"INTC":-147,"ITUB":-74.491,"JD":48.154,"JNJ":277,"JPM":-1295,"KO":406,"LMT":19,"LVS":-162,"MCD":-164.7,"MELI":-27.268,"MMM":-85,"MO":-1485,"MOD":-9.1,"MSFT":310,"NEM":-33,"NFLX":-253.841,"NKE":-174,"NOK":-305.024,"NVDA":-208,"OGZD":825.44,"ORCL":-455,"PBR":1926,"PEP":-190,"PFE":861,"PG":-493,"PTR":2259,"PYPL":139,"QCOM":62,"RDS.A":-3432,"SAN":10.851,"SBUX":3.2,"SID":-117.981,"SLB":-111,"SNAP":38.969,"SONY":38.785,"T":-5175,"TGT":-22,"TRIP":-11,"TS":43.362,"TSLA":-42,"TWTR":51.048,"TX":34.599,"UGP":27.889,"V":320,"VALE":-230.119,"VIST":-12.454,"VZ":-341,"WFC":-696,"WMT":-1831,"X":-97,"XOM":275,"ABBV":-3464,"AVGO":-515,"BIOX":-2.318,"BRK.B":26420,"CAAP":-6.808,"DOCU":4.365,"EFX":-28.9,"ETSY":-13.295,"GPRK":-73.648,"HAL":-139,"MA":62,"PAAS":15.53,"PSX":343,"SHOP":771.213,"SNOW":2.124,"SPOT":-4.823,"SQ":-38.781,"UNH":-410,"UNP":-157,"WBA":-375,"ZM":2.619},
+{"Fecha":"Sep/2021","AAPL":-538,"ABEV":-133.665,"ABT":-129,"ADBE":-33,"AGRO":79.837,"AIG":-181,"AMD":50,"AMGN":-228,"AMX":-1297,"AMZN":-526,"ARCO":-27.377,"AUY":-72.404,"AXP":-199,"AZN":-1894,"BA":-344,"BABA":-1710,"BAC":-890,"BBD":-1309,"BBVA":-867.541,"BCS":85.426,"BG":159,"BIDU":-3322,"BIIB":-421.7,"BMY":425,"BP":-495,"BRFS":-178.842,"BSBR":-8.609,"C":-867,"CAT":73,"CRM":261,"CS":-792.829,"CSCO":236,"CVX":2166,"CX":-731.169,"DE":-247,"DESP":-9.983,"DIS":-364,"EBAY":-248,"ERJ":-66.837,"FB":142,"FDX":28,"FMX":-2246,"GE":-799,"GGB":-16.576,"GILD":-444,"GLOB":-19.744,"GOLD":-129.115,"GOOGL":2095,"GS":-1010,"GSK":-604.87,"HD":-326,"HPQ":2337,"HWM":-191,"IBM":-651.7,"IBN":34.386,"INTC":1589,"ITUB":-2825,"JD":-426.549,"JNJ":-2888,"JPM":-1179,"KO":72,"LMT":-1623,"LVS":-315,"MCD":-85.6,"MELI":-34.811,"MMM":-96,"MO":-7452,"MOD":-8.4,"MSFT":286,"NEM":-749,"NFLX":-94.294,"NKE":-106,"NOK":-106.085,"NVDA":-189,"OGZD":-296.507,"ORCL":-775,"PBR":-732.676,"PEP":-151,"PFE":867,"PG":-12,"PTR":-390.943,"PYPL":77,"QCOM":383,"RDS.A":-5746,"SAN":-3.536,"SBUX":830.1,"SID":-143.298,"SLB":-206,"SNAP":109.857,"SONY":-332.234,"T":443,"TGT":-136,"TRIP":-13,"TS":8.017,"TSLA":-173,"TWTR":-750.235,"TX":34.359,"UGP":-36.037,"V":-26,"VALE":-3085,"VIST":-12.28,"VZ":-1340,"WFC":-747,"WMT":-1845,"X":443,"XOM":-96,"ABBV":-1719,"AVGO":-427,"BIOX":-8.308,"BRK.B":4506,"CAAP":-34.373,"DOCU":-2.953,"EFX":-7.8,"ETSY":-24.972,"GPRK":-15.464,"HAL":-142,"MA":70,"PAAS":-7.918,"PSX":-372,"SHOP":1323,"SNOW":10.936,"SPOT":102.549,"SQ":-93.726,"UNH":-422,"UNP":-252,"WBA":-51,"ZM":29.281}]
+
+
+
+const interestExpenseOnDebt = [{"Fecha":"Dic/2018","AAPL":-890,"ABEV":-93.405,"ABT":-268,"ADBE":-27.873,"AGRO":-15.553,"AIG":-407,"AMD":-29,"AMGN":-352,"AMX":-679.998,"AMZN":-387,"ARCO":-13.542,"AUY":-27.461,"AXP":-457,"AZN":-334.2,"BA":-176,"BABA":-192.852,"BAC":-3652,"BBD":-756.782,"BG":-70,"BIDU":-82.981,"BIIB":-49.4,"BMY":-48,"BP":-735.834,"BRFS":-42.022,"C":-2315,"CAT":-98,"CRM":-41,"CS":-970.019,"CSCO":-226,"CVX":-242,"CX":-172.661,"DE":-480,"DESP":-0.018,"DIS":-165,"ERJ":-65.223,"FDX":-129,"FMX":-133.377,"GE":-1252,"GGB":-136.78,"GILD":-257,"GLOB":-3.154,"GOLD":-106,"GOOGL":-59,"GS":-1592,"GSK":-268.866,"HD":-269,"HPQ":-64,"HWM":-87,"IBM":-210,"INTC":-246,"ITUB":-942.354,"JD":-20.94,"JNJ":-306,"JPM":-2680,"KO":-231,"LMT":-171,"LVS":-144,"MCD":-255.7,"MELI":-16.443,"MMM":-84,"MO":-162,"MOD":-6.2,"MSFT":-672,"NEM":-54,"NFLX":-123.807,"NKE":-33,"NOK":-101.555,"NVDA":-14,"OGZD":-194.647,"ORCL":-519,"PBR":-1654,"PEP":-639,"PFE":-370,"PG":-180,"PTR":-818.536,"PYPL":-20,"QCOM":-156,"RDS.A":-962.931,"SBUX":-76.4,"SID":-145.15,"SLB":-178,"SNAP":-1.111,"SONY":-31.125,"T":-2165,"TOT":-710.922,"TRIP":-2,"TS":-7.81,"TSLA":-183.123,"TWTR":-37.273,"TX":-36.603,"UGP":-63.188,"V":-145,"VALE":-539.464,"VZ":-1371,"WFC":-2348,"WMT":-669,"X":-44,"XOM":-215},
+{"Fecha":"Mar/2019","AAPL":-1010,"ABEV":-68.504,"ABT":-214,"ADBE":-40.593,"AGRO":-19.58,"AIG":-349,"AMD":-27,"AMGN":-343,"AMX":-642.96,"AMZN":-366,"ARCO":-9.663,"AUY":-28.459,"AXP":-494,"AZN":-370.902,"BA":-123,"BABA":-193.159,"BAC":-3655,"BBD":-1388,"BG":-69,"BIDU":-102.732,"BIIB":-47.9,"BMY":-45,"BP":-876.217,"BRFS":-126.156,"C":-2374,"CAT":-102,"CRM":-35,"CS":-1488,"CSCO":-244,"CVX":-225,"CX":-203.791,"DE":-484.8,"DESP":-5.22,"DIS":-201,"ERJ":-3.729,"FDX":-135,"FMX":-180.685,"GE":-1144,"GGB":-66.345,"GILD":-254,"GLOB":-3.702,"GOLD":-115,"GOOGL":-66,"GS":-1526,"GSK":-291.727,"HD":-288,"HPQ":-61,"HWM":-85,"IBM":-191,"INTC":-263,"ITUB":-1236,"JD":-27.787,"JNJ":-195,"JPM":-2919,"KO":-222,"LMT":-171,"LVS":-140,"MCD":-273.8,"MELI":-15.559,"MMM":-96,"MO":-382,"MOD":-5.9,"MSFT":671,"NEM":-61,"NFLX":-135.529,"NKE":-30,"NOK":-62.451,"NVDA":-13,"OGZD":-278.686,"ORCL":-509,"PBR":-1334,"PEP":-306,"PFE":-361,"PG":-131,"PTR":-1127,"PYPL":-22,"QCOM":-162,"RDS.A":-1171,"SBUX":-75.3,"SID":-156.696,"SLB":-131,"SNAP":-0.756,"SONY":-16.006,"T":-2125,"TGT":-109,"TOT":-756.576,"TRIP":-2,"TS":-6.987,"TSLA":-164.953,"TWTR":-37.26,"TX":-23.67,"UGP":-70.51,"V":-140,"VALE":-780.878,"VZ":-1368,"WFC":-2523,"WMT":-673,"X":-47,"XOM":-181,"ABBV":-387,"AVGO":-345,"BIOX":-22.216,"BRK.B":-991,"CAAP":-23.49,"DOCU":-7.101,"EFX":-26.7,"ETSY":-4.653,"GPRK":-8.53,"HAL":-151,"MA":-46,"PAAS":-2.669,"PSX":-119,"SPOT":-12.49,"SQ":-4.681,"UNH":-400,"UNP":-247,"WBA":-181},
+{"Fecha":"Jun/2019","AAPL":-866,"ABEV":-51.434,"ABT":-264,"ADBE":-40.577,"AGRO":-23.165,"AIG":-360,"AMD":-25,"AMGN":-332,"AMX":-644.076,"AMZN":-383,"ARCO":-10.398,"AUY":-29.282,"AXP":-491,"AZN":-359.224,"BA":-154,"BABA":-197.234,"BAC":-3751,"BBD":-891.524,"BG":-76,"BIDU":-117.96,"BIIB":-47.7,"BMY":-123,"BP":-848.804,"BRFS":-249.569,"C":-2434,"CAT":-103,"CRM":-34,"CS":-1476,"CSCO":-206,"CVX":-198,"CX":-183.31,"DE":-561,"DESP":-1.663,"DIS":-477,"ERJ":-4.309,"FDX":-136,"FMX":-184.15,"GE":-919,"GGB":-65.457,"GILD":-248,"GLOB":-4.344,"GOLD":-112,"GOOGL":-61,"GS":-1582,"GSK":-304.602,"HD":-302,"HPQ":-57,"HWM":-85,"IBM":-310,"INTC":-255,"ITUB":-1049,"JD":-22.69,"JNJ":-186,"JPM":-2804,"KO":-226,"LMT":-163,"LVS":-142,"MCD":-283.9,"MELI":-14.679,"MMM":-100,"MO":-309,"MOD":-5.9,"MSFT":-669,"NEM":-85,"NFLX":-152.033,"NKE":-32,"NOK":-194.392,"NVDA":-13,"OGZD":-296.703,"ORCL":-525,"PBR":-1737,"PEP":-256,"PFE":-389,"PG":-111,"PTR":-1113,"PYPL":-27,"QCOM":-160,"RDS.A":-1246,"SBUX":-86.3,"SID":-165.934,"SLB":-134,"SNAP":-0.809,"SONY":-44.395,"T":-2133,"TGT":-126,"TOT":-756.65,"TRIP":-2,"TS":-11.297,"TSLA":-179.079,"TWTR":-38.317,"TX":-21.784,"UGP":-70.207,"V":-128,"VALE":-744.875,"VIST":-7.025,"VZ":-1377,"WFC":-2546,"WMT":-641,"X":-33,"XOM":-216,"ABBV":-367,"AVGO":-376,"BIOX":-6.303,"BRK.B":-992,"CAAP":-24.116,"DOCU":-7.156,"EFX":-27.6,"ETSY":-4.678,"GPRK":-8.853,"HAL":-148,"MA":-51,"PAAS":-5.576,"PSX":-115,"SPOT":-13.484,"SQ":-5.143,"UNH":-418,"UNP":-259,"WBA":-187},
+{"Fecha":"Sep/2019","AAPL":-810,"ABEV":-46.723,"ABT":-202,"ADBE":-39.529,"AGRO":-25.21,"AIG":-348,"AMD":-24,"AMGN":-313,"AMX":-679.946,"AMZN":-396,"ARCO":-10.429,"AUY":-53.562,"AXP":-480,"AZN":-350.787,"BA":-203,"BABA":-193.843,"BAC":-3546,"BBD":-2208,"BG":-84,"BIDU":-112.315,"BIIB":-45.8,"BMY":-209,"BP":-877.465,"BRFS":-199.044,"C":-2192,"CAT":-101,"CRM":-32,"CS":-1369,"CSCO":-178,"CVX":-197,"CX":-180.722,"DE":-501,"DESP":-3.627,"DIS":-640,"ERJ":-6.127,"FDX":-137,"FMX":-180.865,"GE":-1215,"GGB":-62.909,"GILD":-250,"GLOB":-10.23,"GOLD":-114,"GOOGL":-69,"GS":-1511,"GSK":-301.986,"HD":-302,"HPQ":-60,"HWM":-86,"IBM":-390,"INTC":-229,"ITUB":-2382,"JD":-23.225,"JNJ":-176,"JPM":-2583,"KO":-223,"LMT":-162,"LVS":-139,"MCD":-280.2,"MELI":-14.451,"MMM":-100,"MO":-293,"MOD":-5.8,"MSFT":-637,"NEM":-79,"NFLX":-160.66,"NKE":-34,"NOK":-108.96,"NVDA":-13,"OGZD":-280.934,"ORCL":-494,"PBR":-1880,"PEP":-236,"PFE":-409,"PG":-108,"PTR":-1062,"PYPL":-29,"QCOM":-150,"RDS.A":-1154,"SBUX":-104.7,"SID":-169.874,"SLB":-158,"SNAP":-8.654,"SONY":-25.937,"T":-2068,"TGT":-120,"TOT":-768.868,"TRIP":-2,"TS":-13.33,"TSLA":-191,"TWTR":-36.226,"TX":-24.325,"UGP":-71.458,"V":-120,"VALE":-1078,"VIST":-8.765,"VZ":-1317,"WFC":-2415,"WMT":-633,"X":-47,"XOM":-232,"ABBV":-490,"AVGO":-362,"BIOX":-5.682,"BRK.B":-985,"CAAP":-24.103,"DOCU":-7.273,"EFX":-28,"ETSY":-5.077,"GPRK":-8.146,"HAL":-147,"MA":-63,"PAAS":-5.524,"PSX":-109,"SPOT":-11.118,"SQ":-5.632,"UNH":-449,"UNP":-266,"WBA":-175},
+{"Fecha":"Dic/2019","AAPL":-785,"ABEV":-44.719,"ABT":-138,"ADBE":-36.211,"AGRO":-20.099,"AIG":-360,"AMD":-18,"AMGN":-301,"AMX":-77.636,"AMZN":-455,"ARCO":-11.327,"AUY":-21.173,"AXP":-444,"AZN":-355.765,"BA":-242,"BABA":-185.797,"BAC":-2956,"BBD":-590.896,"BG":-88,"BIDU":-95.666,"BIIB":-46,"BMY":-279,"BP":-898.028,"BRFS":-148.796,"C":-1959,"CAT":-111,"CRM":-30,"CS":-856.686,"CSCO":-158,"CVX":-178,"CX":-201.615,"DE":-432,"DESP":-6.705,"DIS":-374,"ERJ":-7.405,"FDX":-151,"FMX":-190.338,"GE":-955,"GGB":-44.187,"GILD":-243,"GLOB":-8.525,"GOLD":-118,"GOOGL":-71,"GS":-1408,"GSK":-265.042,"HD":-309,"HPQ":-58,"HWM":-82,"IBM":-357,"INTC":-214,"ITUB":-448.205,"JD":-31.194,"JNJ":-212,"JPM":-2317,"KO":-210,"LMT":-157,"LVS":-149,"MCD":-286.4,"MELI":-21.187,"MMM":-135,"MO":-291,"MOD":-5.6,"MSFT":-654,"NEM":-87,"NFLX":-177.801,"NKE":-25,"NOK":-50.929,"NVDA":-12,"OGZD":-325.474,"ORCL":-465,"PBR":-1417,"PEP":-394,"PFE":-415,"PG":-100,"PTR":-1102,"PYPL":-37,"QCOM":-148,"RDS.A":-1133,"SBUX":-89.1,"SID":-149.968,"SLB":-151,"SNAP":-14.775,"SONY":-10.385,"T":-2078,"TGT":-113,"TOT":-813.703,"TRIP":-2,"TS":-13.161,"TSLA":-180,"TWTR":-26.377,"TX":-37.477,"UGP":-51.145,"V":-111,"VALE":-1161,"VIST":-15.338,"VZ":-1325,"WFC":-2182,"WMT":-652,"X":-54,"XOM":-201,"ABBV":-567,"AVGO":-361,"BIOX":-9.376,"BRK.B":-993,"CAAP":-30.2,"DOCU":-7.364,"EFX":-29.3,"ETSY":-9.912,"GPRK":-11.348,"HAL":-146,"MA":-64,"PAAS":-5.847,"PSX":-139,"SPOT":-11.071,"SQ":-6.06,"UNH":-437,"UNP":-278,"WBA":-166},
+{"Fecha":"Mar/2020","AAPL":-757,"ABEV":-43.022,"ABT":-307,"ADBE":-33,"AGRO":-20.286,"AIG":-355,"AMD":-13,"AMGN":-383,"AMX":-812.957,"AMZN":-402,"ARCO":-14.071,"AUY":-15.403,"AXP":-404,"AZN":-332.208,"BA":-262,"BABA":-166.932,"BAC":-2455,"BBD":-4318,"BG":-77,"BIDU":-107.61,"BIIB":-44.3,"BMY":-362,"BP":-783.49,"BRFS":-93.401,"C":-1709,"CAT":-112,"CRM":-25,"CS":-991.393,"CSCO":-130,"CVX":-162,"CX":-180.271,"DE":-754,"DIS":-379,"ERJ":-3.724,"FDX":-155,"FMX":-266.297,"GE":-815,"GGB":-51.039,"GILD":-241,"GLOB":-2.455,"GOLD":-92,"GOOGL":-73,"GS":-1246,"GSK":-292.589,"HD":-324,"HPQ":-64,"HWM":-91,"IBM":-342,"INTC":-218,"ITUB":-5937,"JD":-29.675,"JNJ":-163,"JPM":-1988,"KO":-189,"LMT":-148,"LVS":-121,"MCD":-283,"MELI":-23.584,"MMM":-121,"MO":-273,"MOD":-5.4,"MSFT":-614,"NEM":-93,"NFLX":-184.083,"NKE":-26,"NOK":-55.084,"NVDA":-25,"OGZD":-252.965,"ORCL":-456,"PBR":-1468,"PEP":-151,"PFE":-390,"PG":-100,"PYPL":-37,"QCOM":-146,"RDS.A":-1119,"SBUX":-110.9,"SID":-148.339,"SLB":-194,"SNAP":-15.113,"SONY":-21.078,"T":-2034,"TGT":-108,"TOT":-904.695,"TRIP":-2,"TS":-8.439,"TSLA":-179,"TWTR":-33.27,"TX":-20.566,"UGP":-51.455,"V":-118,"VALE":-544.019,"VIST":-11.889,"VZ":-1187,"WFC":-1531,"WMT":-592,"X":-54,"XOM":-249,"ABBV":-578,"AVGO":-406,"BIOX":-2.506,"BRK.B":-1024,"CAAP":-26.841,"DOCU":-7.461,"EFX":-30.7,"ETSY":-9.967,"GPRK":-13.214,"HAL":-144,"MA":-69,"PAAS":-4.087,"PSX":-111,"SPOT":-13.22,"SQ":-9.206,"UNH":-437,"UNP":-278,"WBA":-162},
+{"Fecha":"Jun/2020","AAPL":-697,"ABEV":-50.107,"ABT":-161,"ADBE":-27,"AGRO":-24.427,"AIG":-365,"AMD":-14,"AMGN":-319,"AMX":-423.074,"AMZN":-403,"ARCO":-14.297,"AUY":-17.801,"AXP":-276,"AZN":-329.806,"BA":-553,"BABA":-158.429,"BAC":-1096,"BBD":-223.277,"BG":-65,"BIDU":-115.683,"BIIB":-56.6,"BMY":-357,"BP":-784.918,"BRFS":-71.158,"C":-1443,"CAT":-134,"CRM":-25,"CS":-760.751,"CSCO":-119,"CVX":-172,"CX":-197.187,"DE":-360,"DIS":-488,"ERJ":-98.263,"FDX":-174,"FMX":-179.502,"GE":-968,"GGB":-52.492,"GILD":-240,"GLOB":-2.651,"GOLD":-89,"GOOGL":-70,"GS":-1289,"GSK":-284.276,"HD":-346,"HPQ":-55,"HWM":-144,"IBM":-330,"INTC":-273,"ITUB":-1387,"JD":-45.739,"JNJ":-167,"JPM":-1822,"KO":-259,"LMT":-149,"LVS":-96,"MCD":-312.2,"MELI":-26.977,"MMM":-124,"MO":-307,"MOD":-5.4,"MSFT":-686,"NEM":-80,"NFLX":-189.151,"NKE":-59,"NOK":-12.114,"NVDA":-54,"OGZD":-236.705,"ORCL":-580,"PBR":-1186,"PEP":-357,"PFE":-372,"PG":-157,"PTR":-995.434,"PYPL":-55,"QCOM":-143,"RDS.A":-1073,"SBUX":-125.3,"SID":-120.601,"SLB":-236,"SNAP":-24.727,"SONY":-16.787,"T":-2023,"TGT":-117,"TOT":-696.648,"TRIP":-7,"TS":-7.479,"TSLA":-180,"TWTR":-39.828,"TX":-16.923,"UGP":-35.728,"V":-142,"VALE":-564.243,"VIST":-11.115,"VZ":-1232,"WFC":-1254,"WMT":-658,"X":-64,"XOM":-317,"ABBV":-640,"AVGO":-487,"BIOX":-8.249,"BRK.B":-1002,"CAAP":-17.694,"DOCU":-7.56,"EFX":-36.6,"ETSY":-10.026,"GPRK":-16.545,"HAL":-131,"MA":-101,"PAAS":-2.843,"PSX":-117,"SPOT":-323.773,"SQ":-14.769,"UNH":-430,"UNP":-289,"WBA":-155},
+{"Fecha":"Sep/2020","AAPL":-634,"ABEV":-72.773,"ABT":-126,"ADBE":-27,"AGRO":-40.85,"AIG":-379,"AMD":-11,"AMGN":-324,"AMX":-502.586,"AMZN":-428,"ARCO":-14.569,"AUY":-15.163,"AXP":-247,"AZN":-329.809,"BA":-643,"BABA":-159.137,"BAC":-918,"BBD":-776.091,"BG":-62,"BIDU":-109.127,"BIIB":-56.3,"BMY":-346,"BP":-814.344,"BRFS":-111.499,"C":-1113,"CAT":-135,"CRM":-25,"CS":-695.737,"CSCO":-112,"CVX":-164,"CX":-265.546,"DE":-173,"DESP":-4.484,"DIS":-535,"ERJ":-66.92,"FDX":-184,"FMX":-137.381,"GE":-714,"GGB":-48.458,"GILD":-236,"GLOB":-2.333,"GOLD":-88,"GOOGL":-101,"GS":-1105,"GSK":-251.86,"HD":-340,"HPQ":-63,"HWM":-77,"IBM":-306,"INTC":-241,"ITUB":-970.055,"JD":-43.044,"JNJ":-167,"JPM":-1388,"KO":-639,"LMT":-145,"LVS":-142,"MCD":-312.3,"MELI":-24.522,"MMM":-155,"MO":-310,"MOD":-5.2,"MSFT":-589,"NEM":-78,"NFLX":-197.079,"NKE":-70,"NOK":-85.322,"NVDA":-53,"OGZD":-207.509,"ORCL":-614,"PBR":-1361,"PEP":-362,"PFE":-416,"PG":-136,"PTR":-862.464,"PYPL":-58,"QCOM":-166,"RDS.A":-992,"SBUX":-132,"SID":-111.085,"SLB":-138,"SNAP":-28.212,"SONY":-25.476,"T":-1972,"TGT":-122,"TOT":-721.077,"TRIP":-13,"TS":-6.651,"TSLA":-176,"TWTR":-39.614,"TX":-11.654,"UGP":-42.913,"V":-145,"VALE":-880.283,"VIST":-16.606,"VZ":-1192,"WFC":-1026,"WMT":-541,"X":-84,"XOM":-279,"ABBV":-631,"AVGO":-464,"BIOX":-5.281,"BRK.B":-1000,"CAAP":-29.717,"DOCU":-7.684,"EFX":-37.4,"ETSY":-10.615,"GPRK":-15.086,"HAL":-133,"MA":-105,"PAAS":-2.296,"PSX":-132,"SHOP":-1.238,"SPOT":-17.532,"SQ":-14.98,"UNH":-395,"UNP":-295,"WBA":-156},
+{"Fecha":"Dic/2020","AAPL":-638,"ABEV":-236.703,"ABT":-114,"ADBE":-28,"AGRO":-17.711,"AIG":-358,"AMD":-9,"AMGN":-387,"AMX":-607.535,"AMZN":-414,"ARCO":-13.575,"AUY":-17.388,"AXP":-232,"AZN":-323.731,"BA":-698,"BABA":-164.783,"BAC":-839,"BBD":-153.559,"BG":-76,"BIDU":-117.249,"BIIB":-56,"BMY":-355,"BP":-749,"BRFS":-102.969,"C":-1034,"CAT":-129,"CRM":-51,"CS":-648.344,"CSCO":-113,"CVX":-199,"CX":-132.64,"DE":-207,"DESP":-1.447,"DIS":-473,"ERJ":-66.879,"FDX":-184,"FMX":-243.481,"GE":-742,"GGB":-46.592,"GILD":-267,"GLOB":-2.991,"GOLD":-98.19,"GOOGL":-109,"GS":-1055,"GSK":-315.584,"HD":-337,"HPQ":-63,"HWM":-76,"IBM":-356,"INTC":-61,"JD":-44.676,"JNJ":-227,"JPM":-1152,"KO":-287,"LMT":-149,"LVS":-158,"MCD":-297.6,"MELI":-31.607,"MMM":-179,"MO":-315,"MOD":-4.6,"MSFT":-571,"NEM":-72,"NFLX":-197.186,"NKE":-75,"NVDA":-53,"OGZD":-315.894,"ORCL":-600,"PBR":-1161,"PEP":-393,"PFE":-347,"PG":-143,"PYPL":-59,"QCOM":-141,"RDS.A":-908,"SBUX":-127.6,"SID":-106.896,"SLB":-144,"SNAP":-29.176,"SONY":-26.377,"T":-1894,"TGT":-632,"TOT":-685.573,"TRIP":-14,"TS":-4.597,"TSLA":-261,"TWTR":-40.166,"TX":-72.959,"UGP":-37.402,"V":-136,"VALE":-1024,"VIST":-16.678,"VZ":-1218,"WFC":-944,"WMT":-524,"X":-82,"XOM":-313,"ABBV":-670,"AVGO":-420,"BIOX":-5.366,"BRK.B":-1057,"CAAP":-34.171,"DOCU":-7.769,"EFX":-36.9,"ETSY":-11.417,"GPRK":-15.185,"HAL":-135,"MA":-105,"PAAS":-2.477,"PSX":-148,"SHOP":-7.847,"SPOT":-16.691,"SQ":-17.988,"UNH":-401,"UNP":-279,"WBA":-140},
+{"Fecha":"Mar/2021","AAPL":-670,"ABEV":-53.718,"ABT":-66,"ADBE":-30,"AGRO":-19.28,"AIG":-342,"AMD":-9,"AMGN":-308,"AMX":-602.722,"AMZN":-399,"ARCO":-12.599,"AUY":-18.336,"AXP":-226,"AZN":-303,"BA":-679,"BABA":-179.032,"BAC":-819,"BBD":-1464,"BG":-80,"BIDU":-127.02,"BIIB":-64.7,"BMY":-353,"BP":-723,"BRFS":-99.002,"C":-949,"CAT":-141,"CRM":-33,"CS":-601.517,"CSCO":-111,"CVX":-198,"CX":-260.56,"DE":-94,"DESP":-0.933,"DIS":-471,"ERJ":-68.964,"FDX":-187,"FMX":-188.39,"GE":-444,"GGB":-39.098,"GILD":-257,"GLOB":-2.612,"GOLD":-91.68,"GOOGL":-123,"GS":-1051,"GSK":-277.157,"HD":-339,"HPQ":-64,"HWM":-72,"IBM":-265,"INTC":-287,"ITUB":-2153,"JD":-39.792,"JNJ":-179,"JPM":-1194,"KO":-192,"LMT":-140,"LVS":-158,"MCD":-302.1,"MELI":-91.289,"MMM":-141,"MO":-308,"MOD":-4.2,"MSFT":-633,"NEM":-76,"NFLX":-194.44,"NKE":-70,"NOK":-67.451,"NVDA":-53,"OGZD":-224.929,"ORCL":-585,"PBR":-1045,"PEP":-261,"PFE":-336,"PG":-106,"PTR":-814.44,"PYPL":-58,"QCOM":-141,"RDS.A":-892,"SBUX":-118.5,"SID":-117.064,"SLB":-136,"SNAP":-5.031,"SONY":-46.371,"T":-1845,"TGT":-108,"TRIP":-11,"TS":-4.675,"TSLA":-114,"TWTR":-13.185,"TX":-9.516,"UGP":-37.927,"V":-121,"VALE":-1355,"VIST":-20.392,"VZ":-1275,"WFC":-1017,"WMT":-566,"X":-92,"XOM":-258,"ABBV":-635,"AVGO":-570,"BIOX":-4.48,"BRK.B":-1050,"CAAP":-42.061,"DOCU":-7.786,"EFX":-37.2,"ETSY":-1.685,"GPRK":-14.789,"HAL":-135,"MA":-106,"PAAS":-1.987,"PSX":-146,"SHOP":-0.873,"SPOT":-37.339,"SQ":-0.253,"UNH":-397,"UNP":-290,"WBA":-137},
+{"Fecha":"Jun/2021","AAPL":-665,"ABEV":-15.073,"ABT":-136,"ADBE":-28,"AGRO":-27.836,"AIG":-338,"AMD":-10,"AMGN":-302,"AMX":-459.136,"AMZN":-435,"ARCO":-14.861,"AUY":-21.02,"AXP":-210,"AZN":-326,"BA":-673,"BABA":-196.211,"BAC":-733,"BBD":0,"BG":-61,"BIDU":-130.859,"BIIB":-56.4,"BMY":-330,"BP":-682,"BRFS":-104.649,"C":-899,"CAT":-119,"CRM":-40,"CS":-768.869,"CSCO":-98,"CVX":-185,"CX":-167.186,"DE":-385,"DESP":-2.183,"DIS":-466,"ERJ":-58.686,"FDX":-186,"FMX":-243.791,"GE":-460,"GGB":-41.462,"GILD":-256,"GLOB":-3.331,"GOLD":-94.194,"GOOGL":-121,"GS":-901,"GSK":-268.524,"HD":-326,"HPQ":-68,"HWM":-89,"IBM":-267,"INTC":-225,"ITUB":200.597,"JD":-35.978,"JNJ":-145,"JPM":-1110,"KO":-95,"LMT":-142,"LVS":-162,"MCD":-298.6,"MELI":-39.342,"MMM":-125,"MO":-295,"MOD":-4.2,"MSFT":-553,"NEM":-70,"NFLX":-191.322,"NKE":-74,"NOK":-81.983,"NVDA":-60,"OGZD":-240.961,"ORCL":-697,"PBR":-1279,"PEP":-241,"PFE":-316,"PG":-117,"PTR":-761.459,"PYPL":-57,"QCOM":-138,"RDS.A":-893,"SBUX":-119.9,"SID":-138.629,"SLB":-136,"SNAP":-4.564,"SONY":-78.091,"T":-1661,"TGT":-104,"TRIP":-11,"TS":-5.831,"TSLA":-98,"TWTR":-13.893,"TX":-9.221,"UGP":-51.559,"V":-131,"VALE":-577.023,"VIST":-13.813,"VZ":-1397,"WFC":-700,"WMT":-515,"X":-84,"XOM":-254,"ABBV":-619,"AVGO":-466,"BIOX":-6.118,"BRK.B":-1076,"CAAP":-15.271,"DOCU":-1.672,"EFX":-34.9,"ETSY":-1.882,"GPRK":-19.469,"HAL":-134,"MA":-104,"PAAS":-1.695,"PSX":-143,"SHOP":-0.87,"SPOT":-15.673,"SQ":-6.464,"UNH":-410,"UNP":-282,"WBA":-545},
+{"Fecha":"Sep/2021","AAPL":-672,"ABEV":-38.631,"ABT":-119,"ADBE":-27,"AGRO":-21.684,"AIG":-328,"AMD":-7,"AMGN":-319,"AMX":-538.032,"AMZN":-493,"ARCO":-14.651,"AUY":-75.383,"AXP":-199,"AZN":-335,"BA":-669,"BABA":-195.858,"BAC":-824,"BBD":-1339,"BG":-65,"BIDU":-136.034,"BIIB":-66.3,"BMY":-328,"BP":-693,"BRFS":-88.557,"C":-836,"CAT":-114,"CRM":-72,"CS":-737.288,"CSCO":-89,"CVX":-174,"CX":-143.179,"DE":-71,"DESP":-3.283,"DIS":-429,"ERJ":-61.039,"FDX":-160,"FMX":-198.83,"GE":-393,"GGB":-52.094,"GILD":-250,"GLOB":-2.559,"GOLD":-93.36,"GOOGL":-117,"GS":-958,"GSK":-275.567,"HD":-341,"HPQ":-61,"HWM":-63,"IBM":-275,"INTC":-239,"ITUB":-2633,"JD":-42.687,"JNJ":-233,"JPM":-1103,"KO":-208,"LMT":-141,"LVS":-160,"MCD":-295.8,"MELI":-44.395,"MMM":-79,"MO":-260,"MOD":-3.8,"MSFT":-539,"NEM":-69,"NFLX":-190.429,"NKE":-74,"NOK":-58.936,"NVDA":-62,"OGZD":-248.958,"ORCL":-705,"PBR":-1017,"PEP":-231,"PFE":-325,"PG":-109,"PTR":-715.724,"PYPL":-58,"QCOM":-138,"RDS.A":-859,"SBUX":-127.4,"SID":-140.921,"SLB":-130,"SNAP":-4.031,"SONY":-364.918,"T":-1645,"TGT":-105,"TRIP":-12,"TS":-6.32,"TSLA":-140,"TWTR":-13.284,"TX":-7.516,"UGP":-31.197,"V":-125,"VALE":-109.549,"VIST":-13.48,"VZ":-1348,"WFC":-738,"WMT":-486,"X":-75,"XOM":-214,"ABBV":-603,"AVGO":-415,"BIOX":-3.343,"BRK.B":-1056,"CAAP":-42.918,"DOCU":-1.669,"EFX":-35,"ETSY":-2.779,"GPRK":-12.917,"HAL":-131,"MA":-109,"PAAS":-3.403,"PSX":-151,"SHOP":-0.872,"SPOT":-12.966,"SQ":-13.409,"UNH":-422,"UNP":-290,"WBA":-88}]
+
+
+
+const pretaxIncome = [{"Fecha":"Dic/2018","AAPL":23906,"ABEV":1205.5810000000001,"ABT":947,"ADBE":698.969,"AGRO":-2.128000000000016,"AIG":-695,"AMD":3,"AMGN":2185,"AMX":1268.743,"AMZN":3350,"ARCO":24.440999999999942,"AUY":-12.667999999999964,"AZN":760.703,"BA":4046,"BABA":5407,"BAC":8698,"BBD":2447,"BBVA":1811,"BCS":481.12899999999996,"BG":17,"BIDU":207.707,"BIIB":1413.9999999999998,"BMY":1547,"BP":1713,"BRFS":-649.402,"BSBR":1784,"C":5306,"CAT":1367,"CRM":239,"CS":630.613,"CSCO":3343,"CVX":4898,"CX":-0.049999999999954525,"DE":677,"DESP":5.893999999999978,"DIS":3431,"EBAY":516,"ERJ":-46.575000000000024,"FB":7971,"FDX":1177,"FMX":691.362,"GE":858,"GGB":119.97099999999998,"GILD":1016,"GLOB":15.036000000000003,"GOLD":-376.821,"GOOGL":10072,"GS":2708,"GSK":1760.692,"HD":3113,"HPQ":900,"HWM":226,"IBM":4433.1,"IBN":84.928,"INTC":5635,"ITUB":2653,"JD":-671.812,"JNJ":3122,"JPM":8841,"KO":787,"LMT":1483,"LVS":742,"MCD":1751.3999999999999,"MELI":-6.832000000000017,"MMM":1720,"MO":1710,"MOD":26.899999999999984,"MSFT":10385,"NEM":278,"NFLX":119.629,"NKE":997,"NOK":527.7860000000001,"NVDA":324,"OGZD":6810,"ORCL":2806,"PBR":1600,"PEP":1935,"PFE":-946,"PG":3916,"PTR":1041.769,"PYPL":686,"QCOM":559,"RDS.A":6502,"SAN":3865,"SBUX":964.8000000000001,"SID":477.924,"SLB":648,"SNAP":-192.01999999999998,"SONY":3020.196,"T":5745,"TGT":4756,"TOT":1103,"TRIP":22,"TS":171.23100000000002,"TSLA":231.805,"TWTR":206.53699999999998,"TX":471.919,"UGP":213.952,"V":3630,"VALE":2837.189,"VZ":1367,"WFC":7120,"WMT":5664,"X":253,"XOM":8121,"ABBV":8305,"AVGO":5444,"BIOX":0,"BRK.B":63714,"CAAP":371.021,"DOCU":178.385,"EFX":835.3,"ETSY":200.028,"GPRK":151.2,"HAL":5936,"MA":0,"PAAS":167.625,"PSX":28679,"SHOP":343.862,"SNOW":0,"SPOT":1706,"SQ":932.528,"UNH":0,"UNP":5757,"WBA":33793,"ZM":0},
+{"Fecha":"Mar/2019","AAPL":13793,"ABEV":897.819,"ABT":632,"ADBE":702.1530000000001,"AGRO":0.4819999999999851,"AIG":1154,"AMD":4,"AMGN":2314,"AMX":1781.327,"AMZN":4401,"ARCO":21.100000000000016,"AUY":5.770999999999958,"AXP":1958,"AZN":793.4169999999999,"BA":2333,"BABA":4088,"BAC":8767,"BBD":1966,"BBVA":2222,"BCS":1931.649,"BG":88,"BIDU":121.90499999999997,"BIIB":1860.9,"BMY":1979,"BP":3989.995,"BRFS":-74.61,"BSBR":1542,"C":6012,"CAT":2264,"CRM":482,"CS":1065,"CSCO":3615,"CVX":3957,"CX":53.482,"DE":1473.2,"DESP":2.364999999999994,"DIS":7237,"EBAY":673,"ERJ":-10.187000000000035,"FB":3482,"FDX":931,"FMX":253.592,"GE":1274,"GGB":159.70499999999998,"GILD":2350,"GLOB":15.526000000000009,"GOLD":277.241,"GOOGL":8146,"GS":2719,"GSK":1612.216,"HD":3324,"HPQ":883,"HWM":257,"IBM":1888,"IBN":238.381,"INTC":4547,"ITUB":2471,"JD":1222,"JNJ":4422,"JPM":11233,"KO":2132,"LMT":1945,"LVS":829,"MCD":1832,"MELI":15.354999999999983,"MMM":1088,"MO":1516,"MOD":10.60000000000002,"MSFT":10486,"NEM":275,"NFLX":399.575,"NKE":1291,"NOK":-657.317,"NVDA":389,"OGZD":9829.706,"ORCL":3123,"PBR":1559,"PEP":1868,"PFE":4323,"PG":3278,"PTR":3297,"PYPL":717,"QCOM":806,"RDS.A":8006.223,"SAN":3916,"SBUX":819.9,"SID":138.46,"SLB":509,"SNAP":-310.12800000000004,"SONY":1022.9449999999999,"T":5371,"TGT":1014,"TOT":4340.552,"TRIP":33,"TS":283.26800000000003,"TSLA":-645.412,"TWTR":96.5029999999999,"TX":275.89599999999996,"UGP":111.64699999999999,"V":3677,"VALE":-2470,"VZ":6788,"WFC":6848,"WMT":5157,"X":62,"XOM":4289,"ABBV":2544,"AVGO":278,"BIOX":-24.284,"BRK.B":27647,"CAAP":19.094000000000023,"DOCU":-64.93499999999999,"EFX":-642.5,"ETSY":31.437,"GPRK":38.149000000000015,"HAL":192,"MA":2203,"PAAS":42.211,"PSX":340,"SHOP":-24.15099999999997,"SNOW":0,"SPOT":-191.87999999999997,"SQ":-38.02199999999996,"UNH":4432,"UNP":1790,"WBA":1356,"ZM":6.084000000000004},
+{"Fecha":"Jun/2019","AAPL":11911,"ABEV":759.9359999999999,"ABT":1102,"ADBE":710.7009999999999,"AGRO":38.73400000000001,"AIG":1837,"AMD":37,"AMGN":2564,"AMX":1300.62,"AMZN":2889,"ARCO":15.410999999999976,"AUY":44.33400000000002,"AXP":2219,"AZN":171.623,"BA":-3427,"BABA":3710.035,"BAC":8959,"BBD":2122,"BBVA":2372.486,"BCS":1967.584,"BG":272,"BIDU":152.546,"BIIB":1758.8999999999999,"BMY":1776,"BP":2391,"BRFS":81.92200000000001,"BSBR":1655,"C":6165,"CAT":2178,"CRM":164,"CS":1298,"CSCO":3704,"CVX":5935,"CX":147.23200000000003,"DE":1113,"DESP":-17.949999999999992,"DIS":2018,"EBAY":510,"ERJ":-34.53100000000001,"FB":4832,"FDX":-2554,"FMX":447.46799999999996,"GE":-275,"GGB":168.622,"GILD":2410,"GLOB":16.929999999999993,"GOLD":221.83100000000002,"GOOGL":12147,"GS":3127,"GSK":1628.5259999999998,"HD":4613,"HPQ":248,"HWM":-195,"IBM":2771.9,"IBN":604.985,"INTC":4724,"ITUB":2358,"JD":188.616,"JNJ":7041,"JPM":11342,"KO":3049,"LMT":1683,"LVS":1344,"MCD":2007.3000000000002,"MELI":7.299999999999944,"MMM":1446,"MO":2601,"MOD":11.099999999999977,"MSFT":12596,"NEM":20,"NFLX":500.497,"NKE":1243,"NOK":-260.192,"NVDA":606,"OGZD":5606.688,"ORCL":3866,"PBR":7701,"PEP":2567,"PFE":4141,"PG":-5065,"PTR":5103.565,"PYPL":943,"QCOM":5501,"RDS.A":4263.136,"SAN":3119,"SBUX":1677.3,"SID":189.62799999999996,"SLB":593,"SNAP":-254.09599999999998,"SONY":2101.414,"T":5073,"TGT":1021,"TOT":3566.632,"TRIP":68,"TS":229.22000000000003,"TSLA":-369.877,"TWTR":87.77899999999993,"TX":224.454,"UGP":54.65100000000001,"V":3866,"VALE":1098,"VIST":2.595,"VZ":5310,"WFC":7632,"WMT":4913,"X":61,"XOM":4632,"ABBV":807,"AVGO":657,"BIOX":1.5889999999999986,"BRK.B":17759,"CAAP":68.84400000000001,"DOCU":-44.37600000000001,"EFX":89.00000000000003,"ETSY":16.369000000000014,"GPRK":65.122,"HAL":151,"MA":2519,"PAAS":12.790999999999968,"PSX":1829,"SHOP":-28.678000000000026,"SNOW":0,"SPOT":-66.58999999999997,"SQ":-7.453999999999951,"UNH":4326,"UNP":2058,"WBA":1197,"ZM":2.530000000000002},
+{"Fecha":"Sep/2019","AAPL":16127,"ABEV":714.3230000000001,"ABT":1103,"ADBE":834.5350000000001,"AGRO":-43.28099999999998,"AIG":1260,"AMD":126,"AMGN":2277,"AMX":1323.008,"AMZN":2632,"ARCO":34.191000000000024,"AUY":234.896,"AXP":2266,"AZN":438.188,"BA":1177,"BABA":12190,"BAC":6859,"BBD":1070,"BBVA":2104,"BCS":304,"BG":-1510,"BIDU":-912,"BIIB":1779,"BMY":1349,"BP":-894,"BRFS":209.835,"BSBR":911.503,"C":6022,"CAT":2005,"CRM":64,"CS":1158,"CSCO":3686,"CVX":4049,"CX":187.93200000000002,"DE":825,"DESP":-3.8380000000000125,"DIS":1258,"EBAY":390,"ERJ":37.34000000000001,"FB":7329,"FDX":996,"FMX":577.903,"GE":-1249,"GGB":32.366,"GILD":-1501,"GLOB":19.254000000000005,"GOLD":3186.133,"GOOGL":8628,"GS":2416,"GSK":2384.058,"HD":3667,"HPQ":492,"HWM":209,"IBM":1531.1,"IBN":800.939,"INTC":6719,"ITUB":1003,"JD":193.012,"JNJ":1647,"JPM":11405,"KO":3092,"LMT":1781,"LVS":751,"MCD":2152.8,"MELI":-66.92700000000006,"MMM":1966,"MO":-2128,"MOD":-1.1000000000000174,"MSFT":12686,"NEM":2778,"NFLX":1012.0840000000001,"NKE":1561,"NOK":185.066,"NVDA":959,"OGZD":3240.781,"ORCL":2522,"PBR":753,"PEP":2669,"PFE":10727,"PG":4343,"PTR":2713.31,"PYPL":484,"QCOM":615,"RDS.A":7554,"SAN":2272,"SBUX":1004.3000000000001,"SID":-160.21800000000002,"SLB":-11971,"SNAP":-228.671,"SONY":2441.849,"T":4886,"TGT":1217,"TOT":2976,"TRIP":73,"TS":194.07599999999996,"TSLA":176,"TWTR":47.762999999999984,"TX":184.308,"UGP":115.007,"V":3711,"VALE":2475.495,"VIST":15.439000000000002,"VZ":6923,"WFC":6116,"WMT":4373,"X":-128,"XOM":4721,"ABBV":2001,"AVGO":544,"BIOX":-10.216999999999999,"BRK.B":20489,"CAAP":-49.669,"DOCU":-67.46400000000001,"EFX":96.50000000000003,"ETSY":10.088999999999988,"GPRK":48.51399999999999,"HAL":372,"MA":2534,"PAAS":66.55699999999999,"PSX":943,"SHOP":-24.445999999999998,"SNOW":0,"SPOT":300.211,"SQ":31.52900000000004,"UNH":4565,"UNP":2021,"WBA":708,"ZM":6.756999999999986},
+{"Fecha":"Dic/2019","AAPL":25918,"ABEV":914.913,"ABT":1240,"ADBE":957.139,"AGRO":25.226999999999983,"AIG":1036,"AMD":205,"AMGN":1983,"AMX":1900.2359999999999,"AMZN":4053,"ARCO":48.250999999999976,"AUY":42.957000000000015,"AXP":1986,"AZN":320.25800000000004,"BA":-2342,"BABA":8003,"BAC":8169,"BBD":-920.57,"BBVA":511,"BCS":1411.868,"BG":-55,"BIDU":773.557,"BIIB":1729.2,"BMY":-129,"BP":-562,"BRFS":63.28399999999999,"BSBR":1509,"C":5702,"CAT":1365,"CRM":-4,"CS":1226,"CSCO":3534,"CVX":-8405,"CX":-152.37200000000007,"DE":569,"DESP":-6.711999999999991,"DIS":2632,"EBAY":634,"ERJ":-91.44499999999995,"FB":9169,"FDX":572,"FMX":397.051,"GE":1571,"GGB":72.013,"GILD":1901,"GLOB":17.322000000000006,"GOLD":2525.174,"GOOGL":10704,"GS":2321,"GSK":2196.4719999999998,"HD":3111,"HPQ":878,"HWM":304,"IBM":3999,"IBN":949.77,"INTC":8068,"ITUB":1797,"JD":646.419,"JNJ":4218,"JPM":10565,"KO":2420,"LMT":1832,"LVS":848,"MCD":2026.6999999999998,"MELI":-62.974000000000004,"MMM":1212,"MO":-1223,"MOD":2.7,"MSFT":14085,"NEM":620,"NFLX":148.82100000000003,"NKE":1249,"NOK":872.428,"NVDA":1016,"OGZD":3145.637,"ORCL":2856,"PBR":2042,"PEP":2208,"PFE":-1508,"PG":4532,"PTR":2679,"PYPL":854,"QCOM":947,"RDS.A":2098.502,"SAN":4372.821,"SBUX":1143.8,"SID":159.166,"SLB":452,"SNAP":-240.37199999999996,"SONY":2854.087,"T":3138,"TGT":901,"TOT":3016.076,"TRIP":20,"TS":145.919,"TSLA":174,"TWTR":157.75300000000001,"TX":61.58699999999999,"UGP":-70.923,"V":3974,"VALE":-3242,"VIST":-26.528000000000013,"VZ":3712,"WFC":3602,"WMT":5673,"X":-447,"XOM":6414,"ABBV":3074,"AVGO":747,"BIOX":16.093,"BRK.B":36801,"CAAP":-9.08900000000002,"DOCU":-45.55999999999999,"EFX":23.899999999999963,"ETSY":22.750999999999983,"GPRK":17.734000000000016,"HAL":-1837,"MA":2475,"PAAS":64.55099999999997,"PSX":1066,"SHOP":-18.539999999999957,"SNOW":0,"SPOT":-190.89299999999997,"SQ":391.019,"UNH":4658,"UNP":1878,"WBA":882,"ZM":2.5299999999999834},
+{"Fecha":"Mar/2020","AAPL":13135,"ABEV":335.212,"ABT":633,"ADBE":919,"AGRO":-77.04699999999998,"AIG":2558,"AMD":168,"AMGN":2020,"AMX":-2027,"AMZN":3383,"ARCO":-50.45500000000002,"AUY":80.134,"AXP":452,"AZN":941.871,"BA":-1503,"BABA":-81,"BAC":4531,"BBD":-2380,"BBVA":-1581,"BCS":1166.221,"BG":-248,"BIDU":-238.386,"BIIB":1699.7000000000003,"BMY":-304,"BP":-4261,"BRFS":-9.756,"BSBR":-1424,"C":3110,"CAT":1513,"CRM":47,"CS":1240,"CSCO":3444,"CVX":4145,"CX":66.44599999999997,"DE":928,"DESP":-14.514000000000006,"DIS":1060,"EBAY":631,"ERJ":-7.936999999999976,"FB":5861,"FDX":420,"FMX":677.53,"GE":6475,"GGB":52.268,"GILD":2003,"GLOB":19.247999999999998,"GOLD":953.201,"GOOGL":7757,"GS":1348,"GSK":2332.432,"HD":2969,"HPQ":826,"HWM":291,"IBM":-46,"IBN":272.917,"INTC":6614,"ITUB":-2145,"JD":359.279,"JNJ":6509,"JPM":3116,"KO":3010,"LMT":2030,"LVS":-26,"MCD":1444,"MELI":-16.67999999999996,"MMM":1567,"MO":2108,"MOD":-2.3000000000000256,"MSFT":12843,"NEM":779,"NFLX":795.614,"NKE":881,"NOK":-139.877,"NVDA":981,"OGZD":-3799,"ORCL":3104,"PBR":-14600,"PEP":1711,"PFE":3885,"PG":3450,"PTR":-66980,"PYPL":263,"QCOM":598,"RDS.A":-232,"SAN":1975,"SBUX":390.5,"SID":-237.47400000000002,"SLB":-8089,"SNAP":-305.277,"SONY":-37.41700000000003,"T":6265,"TGT":1051,"TOT":-766.785,"TRIP":-27,"TS":-531.761,"TSLA":70,"TWTR":-15.535000000000098,"TX":238.73899999999998,"UGP":71.94,"V":3829,"VALE":-380.42700000000013,"VIST":-16.24100000000001,"VZ":5676,"WFC":664,"WMT":5396,"X":-410,"XOM":-258,"ABBV":3098,"AVGO":304,"BIOX":-3.8080000000000025,"BRK.B":-63049,"CAAP":-16.100999999999992,"DOCU":-46.156000000000006,"EFX":150.49999999999997,"ETSY":9.693000000000012,"GPRK":-59.26699999999999,"HAL":-896,"MA":1987,"PAAS":-20.399000000000004,"PSX":-2478,"SHOP":-60.12399999999996,"SNOW":0,"SPOT":45.587,"SQ":-105.46500000000006,"UNH":4559,"UNP":1918,"WBA":1096,"ZM":14.544999999999998},
+{"Fecha":"Jun/2020","AAPL":13137,"ABEV":208.83000000000004,"ABT":526,"ADBE":1001,"AGRO":-9.252999999999986,"AIG":-9661,"AMD":160,"AMGN":2030,"AMX":1279.088,"AMZN":6221,"ARCO":-87.15599999999999,"AUY":9.866999999999983,"AXP":622,"AZN":988.9479999999999,"BA":-3423,"BABA":8071,"BAC":3799,"BBD":171.071,"BBVA":1186,"BCS":445.655,"BG":690,"BIDU":809.9780000000001,"BIIB":2037.8999999999999,"BMY":1627,"BP":-20987,"BRFS":74.758,"BSBR":29.572,"C":1448,"CAT":678,"CRM":839,"CS":1610,"CSCO":3306,"CVX":-10597,"CX":42.60100000000003,"DE":1270,"DESP":-65.08500000000001,"DIS":-4840,"EBAY":1003,"ERJ":-387.152,"FB":6131,"FDX":-319,"FMX":-144.086,"GE":-2339,"GGB":83.179,"GILD":-2973,"GLOB":13.384000000000002,"GOLD":835.193,"GOOGL":8277,"GS":1291,"GSK":3255,"HD":5730,"HPQ":751,"HWM":-86,"IBM":1579.8,"IBN":604.663,"INTC":5935,"ITUB":-845.281,"JD":1863,"JNJ":3940,"JPM":5565,"KO":2197,"LMT":1962,"LVS":-1039,"MCD":649.1,"MELI":89.34000000000005,"MMM":1629,"MO":2565,"MOD":-8.600000000000009,"MSFT":13422,"NEM":550,"NFLX":1034.674,"NKE":-804,"NOK":174.32799999999997,"NVDA":609,"OGZD":2251,"ORCL":3745,"PBR":-407.85799999999995,"PEP":2168,"PFE":3952,"PG":3461,"PTR":-1218.477,"PYPL":1799,"QCOM":868,"RDS.A":-23798,"SAN":-8885,"SBUX":-812.6,"SID":150.56199999999995,"SLB":-3627,"SNAP":-326.99199999999996,"SONY":2975.24,"T":2498,"TGT":329,"TOT":-8528,"TRIP":-179,"TS":-105.31400000000002,"TSLA":150,"TWTR":-289.10599999999994,"TX":50.887,"UGP":22.545999999999992,"V":2932,"VALE":1581.625,"VIST":-31.21,"VZ":6187,"WFC":-6249,"WMT":8646,"X":-594,"XOM":-1640,"ABBV":-693,"AVGO":409,"BIOX":4.506999999999998,"BRK.B":35409,"CAAP":-119.024,"DOCU":-45.67099999999999,"EFX":122.69999999999996,"ETSY":112.31599999999997,"GPRK":-31.998,"HAL":-2083,"MA":1690,"PAAS":24.510000000000005,"PSX":-445,"SHOP":4.368000000000002,"SNOW":0,"SPOT":-501.584,"SQ":-12.204999999999977,"UNH":8811,"UNP":1496,"WBA":-1773,"ZM":29.17499999999996},
+{"Fecha":"Sep/2020","AAPL":14901,"ABEV":453.81899999999996,"ABT":1421,"ADBE":1047,"AGRO":32.191999999999965,"AIG":368,"AMD":401,"AMGN":2206,"AMX":1026,"AMZN":6809,"ARCO":-22.55300000000001,"AUY":103.74899999999997,"AXP":1364,"AZN":946.5889999999999,"BA":-925,"BABA":3497,"BAC":4546,"BBD":966.178,"BBVA":2321,"BCS":1481.249,"BG":305,"BIDU":2254,"BIIB":957.3999999999999,"BMY":2257,"BP":476,"BRFS":58.218999999999994,"BSBR":878.576,"C":4076,"CAT":863,"CRM":1250,"CS":872.932,"CSCO":2681,"CVX":-44,"CX":-1482.498,"DE":1115,"DESP":-47.57300000000001,"DIS":-580,"EBAY":774,"ERJ":-147.83900000000006,"FB":8133,"FDX":1606,"FMX":163.74099999999999,"GE":-1660,"GGB":187.31799999999998,"GILD":825,"GLOB":16.411000000000016,"GOLD":1457.051,"GOOGL":13359,"GS":4299,"GSK":2143.589,"HD":4523,"HPQ":776,"HWM":-12,"IBM":1829.4,"IBN":924.069,"INTC":5041,"ITUB":835.222,"JD":1235.6979999999999,"JNJ":4401,"JPM":11661,"KO":2181,"LMT":2056,"LVS":-748,"MCD":2217,"MELI":52.96900000000005,"MMM":1805,"MO":-324,"MOD":22.799999999999986,"MSFT":16124,"NEM":880,"NFLX":861.597,"NKE":1715,"NOK":324.836,"NVDA":1348,"OGZD":-4527,"ORCL":2633,"PBR":-736,"PEP":2833,"PFE":2176,"PG":5297,"PTR":8762,"PYPL":1144,"QCOM":3306,"RDS.A":706.403,"SAN":3615.974,"SBUX":442.5,"SID":368.0450000000001,"SLB":-54,"SNAP":-198.94400000000002,"SONY":2822.534,"T":3934,"TGT":2189,"TOT":787.382,"TRIP":-58,"TS":-86.10499999999999,"TSLA":555,"TWTR":29.68299999999997,"TX":184.244,"UGP":82.60000000000001,"V":3055,"VALE":3633.8770000000004,"VIST":-34.009,"VZ":5851,"WFC":2864,"WMT":7115,"X":-258,"XOM":-372,"ABBV":2500,"AVGO":593,"BIOX":-4.604000000000003,"BRK.B":37930,"CAAP":-174.745,"DOCU":-63.717999999999975,"EFX":300.1,"ETSY":90.39299999999999,"GPRK":11.981000000000005,"HAL":-1,"MA":1915,"PAAS":91.58999999999999,"PSX":-1350,"SHOP":186.36699999999996,"SNOW":-77.103,"SPOT":-136.28000000000003,"SQ":34.838999999999984,"UNH":4256,"UNP":1773,"WBA":537,"ZM":190.18499999999997},
+{"Fecha":"Dic/2020","AAPL":33579,"ABEV":1569.003,"ABT":2388,"ADBE":1191,"AGRO":67.504,"AIG":-558,"AMD":546,"AMGN":1877,"AMX":2716.532,"AMZN":7765,"ARCO":28.31000000000008,"AUY":299.173,"AXP":1858,"AZN":1223,"BA":-8625,"BABA":13698,"BAC":6119,"BBD":1778,"BBVA":4354,"BCS":853.0029999999999,"BG":666,"BIDU":854.245,"BIIB":352.6999999999998,"BMY":-10451,"BP":318,"BRFS":92.28399999999999,"BSBR":2042,"C":5831,"CAT":941,"CRM":425,"CS":-97.362,"CSCO":3255,"CVX":-957,"CX":51.974999999999966,"DE":1528,"DESP":-34.86,"DIS":46,"EBAY":1109,"ERJ":10.115000000000009,"FB":13055,"FDX":1406,"FMX":259.485,"GE":2721,"GGB":307.116,"GILD":1814,"GLOB":28.020999999999983,"GOLD":1415.2279999999998,"GOOGL":18689,"GS":5541,"GSK":1092.4450000000002,"HD":3756,"HPQ":1296,"HWM":71,"IBM":1305.3,"IBN":1024,"INTC":7488,"ITUB":2494,"JD":3360,"JNJ":1647,"JPM":15065,"KO":2361,"LMT":2187,"LVS":-368,"MCD":1830.1,"MELI":-44.318999999999946,"MMM":1710,"MO":2541,"MOD":-113.80000000000001,"MSFT":18337,"NEM":934,"NFLX":506.175,"NKE":1456,"NOK":592.965,"NVDA":1470,"OGZD":5548,"ORCL":3015,"PBR":13825,"PEP":2357,"PFE":178,"PG":4877,"PTR":69351,"PYPL":1859,"QCOM":2604,"RDS.A":-4378,"SAN":1432,"SBUX":808.1,"SID":577.389,"SLB":471,"SNAP":-94.97200000000005,"SONY":4569,"T":-15553,"TGT":1298,"TOT":981.692,"TRIP":-104,"TS":-6.927497999999982,"TSLA":379,"TWTR":223.97800000000004,"TX":612.7170000000001,"UGP":121.91499999999999,"V":3748,"VALE":1298,"VIST":-31.247,"VZ":6253,"WFC":3302,"WMT":-593,"X":-45,"XOM":-26613,"ABBV":-1507,"AVGO":1137,"BIOX":5.567999999999998,"BRK.B":45403,"CAAP":-60.015999999999984,"DOCU":-56.55000000000001,"EFX":94.99999999999997,"ETSY":153.30700000000007,"GPRK":-106.513,"HAL":-240,"MA":2168,"PAAS":160.03500000000003,"PSX":-691,"SHOP":109.75300000000006,"SNOW":-168.45600000000002,"SPOT":-212.75799999999995,"SQ":298.683,"UNH":3116,"UNP":1793,"WBA":-521,"ZM":194.02100000000007},
+{"Fecha":"Mar/2021","AAPL":28011,"ABEV":534.317,"ABT":2043,"ADBE":1434,"AGRO":28.272999999999982,"AIG":4728,"AMD":642,"AMGN":1857,"AMX":261,"AMZN":10268,"ARCO":-29.729000000000063,"AUY":91.07499999999997,"AXP":2993,"AZN":1641,"BA":-572,"BABA":-1017.476,"BAC":9166,"BBD":1434,"BBVA":2127,"BCS":3307.51,"BG":1109,"BIDU":4124,"BIIB":467,"BMY":2530,"BP":5810,"BRFS":5.099000000000032,"BSBR":951.017,"C":10309,"CAT":1997,"CHL":0,"CRM":604,"CS":-835.502,"CSCO":3591,"CVX":2177,"CX":711.7719999999999,"DE":2312,"DESP":-37.271,"DIS":1230,"EBAY":725,"ERJ":-89.29700000000004,"FB":11503,"FDX":1049,"FMX":396.858,"GE":237,"GGB":572.7860000000001,"GILD":2264,"GLOB":28.83800000000001,"GOLD":1109.948,"GOOGL":21283,"GS":8337,"GSK":-684,"HD":5448,"HMY":0,"HPQ":1336,"HWM":113,"IBM":914.6,"IBN":961.726,"INTC":3906,"ITUB":1478,"JD":531.481,"JNJ":7429,"JPM":17697,"KO":2763,"LMT":2211,"LVS":-266,"LYG":0,"MCD":1953.2,"MELI":9.09900000000006,"MMM":1945,"MO":1937,"MOD":-19.700000000000045,"MSFT":17236,"NEM":743,"NFLX":2033.646,"NKE":1636,"NOK":452.09,"NVDA":2044,"OGZD":6744.6,"ORCL":3322,"PBR":390,"PEP":2174,"PFE":5683,"PG":3877,"PTR":6207.723,"PYPL":872,"QCOM":2129,"RDS.A":12431,"SAN":3644.985,"SBUX":890.3000000000001,"SID":1270.738,"SLB":386,"SNAP":-285.43500000000006,"SONY":854.755,"T":10064,"TGT":1730,"TOT":0,"TRIP":-96,"TS":63.57899999999994,"TSLA":533,"TWTR":49.993999999999915,"TX":911.107,"UGP":45.59400000000001,"V":3628,"VALE":7342.616999999999,"VIST":8.616,"VOD":0,"VZ":7078,"WFC":5122,"WMT":3844,"X":92,"XOM":3592,"ABBV":3867,"AVGO":1384,"BIOX":-1.1399999999999997,"BRK.B":14528,"CAAP":-66.18699999999998,"DOCU":-63.553,"EFX":268.49999999999994,"ETSY":157.72999999999996,"GPRK":3.0829999999999984,"HAL":223,"MA":2190,"PAAS":30.443999999999996,"PSX":-771,"SHOP":1369.357,"SNOW":-197.593,"SPOT":104.96699999999997,"SQ":39.36299999999996,"UNH":6342,"UNP":1754,"WBA":946,"ZM":264.6529999999999},
+{"Fecha":"Jun/2021","AAPL":24369,"ABEV":684.783,"ABT":1348,"ADBE":1389,"AGRO":60.274,"AIG":147,"AMD":821,"AMGN":558,"AMX":3092.898,"AMZN":8634,"ARCO":15.249000000000033,"AUY":86.55900000000003,"AXP":3010,"AZN":792,"BA":549,"BABA":7098,"BAC":8042,"BBD":1992.659,"BBVA":1361,"BCS":3608.065,"BG":419,"BIDU":160.30399999999997,"BIIB":582.1000000000001,"BMY":1553,"BP":4268,"BRFS":-34.10900000000004,"BSBR":1976.127,"C":7348,"CAT":1870,"CHL":0,"CRM":826,"CS":892.986,"CSCO":3735,"CVX":4422,"CX":320.61299999999994,"DE":2150,"DESP":-37.770999999999994,"DIS":995,"EBAY":401,"ERJ":78.03899999999999,"FB":12513,"FDX":2613,"FMX":375.405,"GE":-1037,"GGB":1018.216,"GILD":1817,"GLOB":25.540000000000013,"GOLD":924.323,"GOOGL":21985,"GS":6840,"GSK":2032.714,"HD":6318,"HMY":0,"HPQ":1326,"HWM":110,"IBM":1558.5,"IBN":905.492,"INTC":5745,"ITUB":2570,"JD":81.154,"JNJ":6662,"JPM":15097,"KO":3618,"LMT":2170,"LVS":-286,"LYG":0,"MCD":2376.3,"MELI":139.15199999999996,"MMM":1938,"MO":2909,"MOD":4.700000000000026,"MSFT":19405,"NEM":943,"NFLX":1594.159,"NKE":1854,"NOK":502.976,"NVDA":2394,"OGZD":8021.4400000000005,"ORCL":4210,"PBR":10899,"PEP":3014,"PFE":6608,"PG":3564,"PTR":6096,"PYPL":1356,"QCOM":2257,"RDS.A":2895,"SAN":4490.851,"SBUX":1411.3,"SID":1269.3790000000001,"SLB":542,"SNAP":-153.5370000000001,"SONY":2549.785,"T":2625,"TGT":2609,"TOT":0,"TRIP":-46,"TS":161.33200000000002,"TSLA":1293,"TWTR":80.87599999999998,"TX":1287.6889999999999,"UGP":6.888999999999999,"V":4389,"VALE":10042.428,"VIST":32.40799999999998,"VOD":0,"VZ":7824,"WFC":8189,"WMT":5923,"X":975,"XOM":6307,"ABBV":1163,"AVGO":1486,"BIOX":9.708999999999994,"BRK.B":35721,"CAAP":-32.452,"DOCU":-62.553,"EFX":277.30000000000007,"ETSY":85.75599999999999,"GPRK":0.41900000000002535,"HAL":295,"MA":2478,"PAAS":96.68900000000002,"PSX":436,"SHOP":918.875,"SNOW":-203.47000000000006,"SPOT":9.75700000000004,"SQ":194.24899999999997,"UNH":5568,"UNP":2316,"WBA":748,"ZM":228.93599999999995},
+{"Fecha":"Sep/2021","AAPL":23248,"ABEV":601.1360000000001,"ABT":2493,"ADBE":1413,"AGRO":52.228000000000044,"AIG":2176,"AMD":1003,"AMGN":2155,"AMX":1107,"AMZN":4315,"ARCO":23.436000000000032,"AUY":56.611999999999995,"AXP":2951,"AZN":-1994,"BA":-310,"BABA":610,"BAC":8950,"BBD":1722,"BBVA":2704.459,"BCS":2702.426,"BG":741,"BIDU":-2966,"BIIB":291.8,"BMY":2157,"BP":-1795,"BRFS":-48.09200000000001,"BSBR":728.386,"C":5862,"CAT":1775,"CHL":0,"CRM":299,"CS":1098,"CSCO":3657,"CVX":8055,"CX":-271.48900000000003,"DE":1613,"DESP":-25.599000000000007,"DIS":290,"EBAY":434,"ERJ":-26.903999999999982,"FB":10565,"FDX":1457,"FMX":643.313,"GE":584,"GGB":1376.386,"GILD":3438,"GLOB":32.675,"GOLD":829.157,"GOOGL":23064,"GS":6842,"GSK":2405.13,"HD":5469,"HMY":0,"HPQ":3553,"HWM":23,"IBM":1327.3,"IBN":1161.386,"INTC":6858,"ITUB":1773,"JD":-117.54899999999998,"JNJ":3849,"JPM":14111,"KO":3084,"LMT":679,"LVS":-621,"LYG":0,"MCD":2691.2000000000003,"MELI":125.53900000000002,"MMM":1757,"MO":-3302,"MOD":5.999999999999977,"MSFT":20524,"NEM":-71,"NFLX":1659.706,"NKE":2106,"NOK":533.915,"NVDA":2638,"OGZD":8489.493,"ORCL":2728,"PBR":7544.324,"PEP":3045,"PFE":7836,"PG":5035,"PTR":5005.057,"PYPL":1165,"QCOM":3285,"RDS.A":179,"SAN":4325.464,"SBUX":2247.9,"SID":505.182,"SLB":691,"SNAP":-71.42999999999992,"SONY":2495.766,"T":7812,"TGT":2370,"TOT":0,"TRIP":3,"TS":231.147,"TSLA":1882,"TWTR":-726.894,"TX":1758.9489999999998,"UGP":53.073000000000015,"V":4298,"VALE":3438.795,"VIST":40.02199999999999,"VOD":0,"VZ":8374,"WFC":6926,"WMT":4147,"X":2262,"XOM":9606,"ABBV":3688,"AVGO":1726,"BIOX":5.083000000000002,"BRK.B":12484,"CAAP":-28.46500000000002,"DOCU":-61.553,"EFX":265.5,"ETSY":83.80699999999999,"GPRK":68.91900000000001,"HAL":316,"MA":2816,"PAAS":69.58699999999999,"PSX":448,"SHOP":1340.33,"SNOW":-189.20000000000002,"SPOT":190.63900000000004,"SQ":-2.725999999999999,"UNH":5290,"UNP":2180,"WBA":907,"ZM":323.39500000000004}]
+
+
+
+const equityInEarnings = [{"Fecha":"Dic/2018","ABEV":0.288905,"AMD":-1,"AMX":1.197,"AMZN":4,"AUY":4.351,"AZN":-35.701,"BABA":-124.472,"BBVA":-21.68,"BIDU":-56.381,"BP":655.507,"BRFS":0.787922,"BSBR":2.555,"CAT":3,"CX":13.463,"DE":6.5,"ERJ":-0.157584,"FMX":70.472,"GGB":-56.298,"GLOB":0,"GOLD":1,"GSK":6.432,"ITUB":72.751,"JD":-24.762,"MMM":0,"NEM":-8,"NOK":20.539,"OGZD":1251,"PBR":32.305,"PTR":940.117,"RDS.A":1340,"SAN":233.919,"SID":10.426,"TOT":662.134,"TS":50.898,"TX":47.779,"UGP":-1.47,"VALE":103.48},
+{"Fecha":"Mar/2019","ABEV":-0.566946,"AMD":-1,"AMX":0.807154,"AMZN":-4,"AUY":-1.99,"AZN":-27.287,"BABA":122.744,"BIDU":-127.488,"BIIB":-28.7,"BP":842.866,"BRFS":-0.043795,"BSBR":7.706,"CAT":7,"CX":1.208,"DE":6.4,"ERJ":-0.015925,"FMX":48.02,"GGB":3.776,"GLOB":0,"GOLD":28,"GSK":74.234,"ITUB":60.782,"JD":-106.352,"MMM":0,"NEM":-5,"NOK":-5.677,"OGZD":969.735,"PBR":131.65,"PTR":347.034,"RDS.A":1500,"SAN":173.726,"SID":6.857,"TOT":711.542,"TS":29.157,"TX":14.636,"UGP":-1.85,"VALE":83.157,"BIOX":0,"CAAP":-0.414,"PAAS":0.607994,"WBA":9},
+{"Fecha":"Jun/2019","ABEV":-0.186474,"AMX":-0.102098,"AMZN":-7,"AUY":2.867,"AZN":-31.843,"BABA":75.758,"BBVA":-16.855,"BIDU":62.863,"BIIB":-16.3,"BP":742.33,"BRFS":-0.219381,"BSBR":8.017,"CAT":6,"CX":9.937,"DE":7,"ERJ":-0.008673,"FMX":71.605,"GGB":-9.843,"GLOB":0,"GOLD":50,"GSK":-5.141,"ITUB":88.773,"JD":-44.452,"MMM":0,"NEM":26,"NOK":-6.742,"OGZD":794.93,"PBR":119.894,"PTR":346.698,"RDS.A":628.891,"SAN":171.919,"SID":7.415,"TOT":812.699,"TS":26.312,"TX":20.439,"UGP":-0.78518,"VALE":-729.791,"VIST":0,"BIOX":0.7061,"CAAP":-0.371,"PAAS":0.316372,"WBA":-5},
+{"Fecha":"Sep/2019","ABEV":-2.078,"AMD":1,"AMX":-0.348202,"AMZN":-4,"AUY":-16.757,"AZN":-31.799,"BABA":-1705,"BBVA":-6.671,"BIDU":-103.906,"BIIB":-21.8,"BP":868.521,"BRFS":-0.179403,"BSBR":9.127,"CAT":7,"CX":19.151,"DE":1,"ERJ":-0.024189,"FMX":90.962,"GGB":2.44,"GLOB":0,"GOLD":38,"GSK":20.954,"ITUB":79.623,"JD":-28.396,"MMM":0,"NEM":32,"NOK":3.336,"OGZD":1001,"PBR":112.379,"PTR":277.937,"RDS.A":764.18,"SAN":152.322,"SID":16.143,"TOT":1368,"TS":13.113,"TX":1.796,"UGP":-2.078,"VALE":126.064,"VIST":0.083325,"BIOX":0,"CAAP":-0.159,"PAAS":0.078797,"WBA":4},
+{"Fecha":"Dic/2019","ABEV":-2.721,"AMX":-1.267,"AMZN":1,"AUY":-0.305384,"AZN":-25.339,"BABA":307.296,"BIDU":-13.342,"BIIB":-12.6,"BP":813.901,"BSBR":12.828,"CAT":8,"CX":18.079,"DE":-1,"ERJ":-0.189728,"FMX":73.131,"GGB":-0.5772,"GLOB":0,"GOLD":49,"GSK":5.146,"ITUB":102.516,"JD":-73.554,"MMM":0,"NEM":42,"NOK":23.25,"OGZD":426.762,"PBR":-209.891,"PTR":223.127,"RDS.A":728.761,"SAN":-131.75,"SID":1.639,"TOT":504.918,"TS":13.455,"TX":23.696,"UGP":1.494,"VALE":-154.659,"VIST":-0.084307,"BIOX":0,"CAAP":-4.444,"PAAS":14.5002,"WBA":-9},
+{"Fecha":"Mar/2020","ABEV":-1.482,"AMX":0.129855,"AMZN":-104,"AUY":-3.874,"AZN":-4.003,"BABA":507.959,"BIDU":25.935,"BIIB":-14.8,"BP":-266.167,"BSBR":6.748,"CAT":5,"CX":4.795,"DE":-17,"ERJ":3.423,"FMX":12.973,"GGB":2.35,"GLOB":0,"GOLD":54,"GSK":11.499,"ITUB":64.959,"JD":-160.515,"MMM":0,"NEM":37,"NOK":-4.407,"OGZD":683.901,"PBR":-322.332,"RDS.A":854.535,"SAN":107.964,"SID":-10.104,"TOT":731.753,"TS":1.888,"TX":6.015,"UGP":-2.784,"VALE":-171.803,"VIST":0,"BIOX":-0.13208,"CAAP":-0.866,"PAAS":-2.768,"WBA":15},
+{"Fecha":"Jun/2020","ABEV":-3.017,"AMD":1,"AMX":-12.289,"AMZN":6,"AZN":-16.039,"BABA":49.236,"BBVA":-9.911,"BIDU":-244.344,"BIIB":15.1,"BP":-668.634,"BSBR":3.585,"CAT":8,"CX":8.693,"DE":-2,"ERJ":-0.04218,"FMX":-72.367,"GGB":-0.759991,"GLOB":0,"GOLD":61,"GSK":23.586,"ITUB":58.346,"JD":564.893,"MMM":0,"NEM":29,"NOK":6.608,"OGZD":401.018,"PBR":-202.355,"PTR":111.591,"RDS.A":-161.394,"SAN":-256.595,"SID":5.269,"TOT":-450.654,"TS":4.442,"TX":-19.418,"UGP":-2.466,"VALE":-517.536,"VIST":0,"CAAP":-3.415,"PAAS":0.040688,"WBA":7},
+{"Fecha":"Sep/2020","ABEV":-2.046,"AMD":1,"AMX":0.022862,"AMZN":91,"AUY":3.093,"AZN":-1.018,"BABA":613.424,"BBVA":-10.519,"BIDU":-78.918,"BIIB":-13.1,"BP":-263.644,"BSBR":5.759,"CAT":-5,"CX":17.86,"DE":-28,"ERJ":-0.03422,"FMX":102.448,"GGB":13.296,"GLOB":-0.293,"GOLD":95,"GSK":14.208,"ITUB":68.811,"JD":-39.36,"MMM":0,"NEM":53,"OGZD":323.704,"PBR":-170.541,"PTR":124.014,"RDS.A":490.642,"SAN":52.596,"SID":4.83,"TOT":95.198,"TS":21.414,"TX":13.049,"UGP":-0.89585,"VALE":-39.181,"VIST":0,"BIOX":0.239712,"CAAP":0.255,"PAAS":1.075,"WBA":27},
+{"Fecha":"Dic/2020","ABEV":-1.746,"AMD":3,"AMX":-0.177028,"AMZN":23,"AZN":-6.051,"BABA":-543.39,"BBVA":-15.498,"BIDU":-22.786,"BIIB":18,"BP":789,"BSBR":5.904,"CAT":6,"CX":17.682,"DE":4,"ERJ":-0.400256,"FMX":-71.366,"GGB":13.831,"GLOB":-0.247,"GOLD":79.779,"GSK":-7.923,"ITUB":78.718,"JD":253.485,"MMM":-4,"NEM":70,"NOK":23.844,"OGZD":499.12,"PBR":32.043,"RDS.A":629,"SAN":-7.153,"SID":11.583,"TOT":73.164,"TS":81.543,"TX":57.086,"UGP":-2.427,"VALE":-309.883,"BIOX":0.065975,"CAAP":-2.15,"PAAS":3.107,"WBA":23},
+{"Fecha":"Mar/2021","ABEV":-2.29,"AMD":2,"AMX":0.661988,"AMZN":-5,"AUY":0.906723,"AZN":-4,"BABA":924.792,"BBVA":-7.227,"BIDU":-23.305,"BIIB":-18.2,"BP":761,"BSBR":5.579,"CAT":9,"CX":3.345,"DE":8,"ERJ":0.956679,"FMX":41.068,"GGB":27.185,"GOLD":103.769,"GSK":22.062,"ITUB":79.754,"JD":105.309,"MMM":1,"NEM":50,"NOK":-4.818,"OGZD":959.651,"PBR":185.97,"PTR":499.9,"RDS.A":995,"SAN":91.541,"SID":2.454,"TS":79.141,"TX":46.996,"UGP":-2.231,"VALE":-17.05,"BIOX":0.906241,"CAAP":-0.455,"PAAS":0.199479,"WBA":13},
+{"Fecha":"Jun/2021","ABEV":-1.706,"AMD":2,"AMX":0.132303,"AMZN":12,"AZN":-44,"BABA":943.577,"BBVA":1.206,"BIDU":-0.61945,"BIIB":34.3,"BP":799,"BSBR":8.689,"CAT":14,"CX":15.469,"DE":8,"ERJ":0.608597,"FMX":51.482,"GGB":44.804,"GLOB":-0.233,"GOLD":103.118,"GSK":22.377,"ITUB":74.302,"JD":80.959,"MMM":2,"NEM":49,"OGZD":983.589,"PBR":1003,"PTR":649.493,"RDS.A":1114,"SAN":104.89,"SID":10.421,"TS":145.829,"TX":170.1,"UGP":0.242191,"VALE":-428.133,"BIOX":-0.214499,"CAAP":-0.891,"PAAS":3.292,"WBA":575},
+{"Fecha":"Sep/2021","ABEV":-3.698,"AMD":2,"AMX":5.119,"AMZN":-4,"AZN":-7,"BABA":852.994,"BBVA":3.536,"BIDU":-0.618336,"BIIB":1.1,"BP":1300,"BSBR":6.3,"CAT":21,"CX":18.85,"DE":1,"ERJ":1.33,"FMX":367.608,"GGB":51.838,"GOLD":100.312,"GSK":4.134,"ITUB":31.548,"JD":-286.102,"MMM":4,"NEM":39,"NOK":-8.251,"OGZD":1106,"PBR":290.623,"PTR":589.119,"RDS.A":1014,"SAN":155.592,"SID":18.162,"TS":154.139,"TX":83.978,"UGP":-2.119,"VALE":128.145,"BIOX":-0.222236,"CAAP":-1.138,"PAAS":0.536324,"WBA":23}]
+
+
+
+const taxes = [{"Fecha":"Dic/2018","AAPL":-3941,"ABEV":-296.232,"ABT":-292,"ADBE":-20.977,"AGRO":-2.127,"AIG":137,"AMD":35,"AMGN":-257,"AMX":-717.154,"AMZN":-327,"ARCO":-15.158,"AUY":-51.054,"AXP":179,"AZN":276.682,"BA":-622,"BABA":-807.549,"BAC":-1420,"BBD":-1102,"BBVA":-480.39,"BCS":-186.534,"BG":-73,"BIDU":-69.97,"BIIB":-469.6,"BMY":-357,"BP":-1604,"BRFS":90.086,"BSBR":-797.535,"C":-1001,"CAT":-321,"CRM":123,"CS":-341.415,"CSCO":-521,"CVX":-1175,"CX":-46.604,"DE":-184.1,"DESP":-2.864,"DIS":-645,"EBAY":247,"ERJ":27.42,"FB":-1089,"FDX":-242,"FMX":-180.089,"GE":94,"GGB":39.17,"GILD":-1013,"GLOB":-3.527,"GOLD":-776,"GOOGL":-1124,"GS":-170,"GSK":-95.197,"HD":-769,"HPQ":-97,"HWM":-8,"IBM":-2481,"IBN":-36.281,"INTC":-440,"ITUB":-924.757,"JD":-8.814,"JNJ":-80,"JPM":-1775,"KO":5,"LMT":-230,"LVS":-782,"MCD":-336.1,"MELI":4.496,"MMM":-371,"MO":-459,"MOD":-8.6,"MSFT":-1965,"NEM":-260,"NFLX":14.538,"NKE":-150,"NOK":-317.217,"NVDA":243,"OGZD":-1078,"ORCL":-441,"PBR":-849.905,"PEP":4932,"PFE":563,"PG":-700,"PTR":-668.187,"PYPL":-102,"QCOM":509,"RDS.A":-2242,"SAN":-1343,"SBUX":-205.1,"SID":-23.397,"SLB":-100,"SNAP":0.352,"SONY":893.152,"T":-615,"TOT":-590.444,"TRIP":-15,"TS":1.717,"TSLA":-21.878,"TWTR":48.766,"TX":-69.111,"UGP":-82.6,"V":-653,"VALE":909.262,"VZ":698,"WFC":-966,"WMT":-1851,"X":339,"XOM":-1915},
+{"Fecha":"Mar/2019","AAPL":-2232,"ABEV":-167.87,"ABT":40,"ADBE":-28.093,"AGRO":-2.717,"AIG":-217,"AMD":13,"AMGN":-322,"AMX":-729.386,"AMZN":-836,"ARCO":-8.876,"AUY":-7.861,"AXP":-408,"AZN":-197.073,"BA":-184,"BABA":-744.915,"BAC":-1456,"BBD":-410.105,"BBVA":-634.725,"BCS":-322.984,"BG":-38,"BIDU":-43.583,"BIIB":-422.5,"BMY":-264,"BP":-1802,"BRFS":46.924,"BSBR":-574.614,"C":-1275,"CAT":-387,"CRM":-90,"CS":-313.961,"CSCO":-571,"CVX":-1315,"CX":-61.839,"DE":-343.5,"DESP":-0.479,"DIS":-1647,"EBAY":-152,"ERJ":7.418,"FB":-1053,"FDX":-192,"FMX":-100.525,"GE":-222,"GGB":-43.17,"GILD":-382,"GLOB":-3.427,"GOLD":-167,"GOOGL":-1489,"GS":-468,"GSK":-403.73,"HD":-811,"HPQ":-101,"HWM":-70,"IBM":-289,"IBN":-21.732,"INTC":-573,"ITUB":-699.393,"JD":-41.454,"JNJ":-673,"JPM":-2054,"KO":-486,"LMT":-241,"LVS":-85,"MCD":-502.9,"MELI":-3.491,"MMM":-195,"MO":-395,"MOD":-4.2,"MSFT":-1677,"NEM":-125,"NFLX":-55.607,"NKE":-190,"NOK":161.236,"NVDA":5,"OGZD":-2312,"ORCL":-343,"PBR":-564.823,"PEP":-446,"PFE":-433,"PG":-502,"PTR":-1266,"PYPL":-50,"QCOM":-143,"RDS.A":-3284,"SAN":-1541,"SBUX":-161.2,"SID":-121.792,"SLB":-79,"SNAP":-0.279,"SONY":-102.871,"T":-1023,"TGT":-216,"TOT":-1910,"TRIP":-7,"TS":-70.009,"TSLA":-22.873,"TWTR":94.301,"TX":-69.218,"UGP":-44.636,"V":-700,"VALE":648.719,"VZ":-1628,"WFC":-881,"WMT":-1251,"X":-8,"XOM":-1883,"ABBV":-88,"AVGO":203,"BIOX":1.605,"BRK.B":-5915,"CAAP":5.731,"EFX":88.1,"ETSY":0.142,"GPRK":-18.46,"HAL":-40,"MA":-341,"PAAS":-7.254,"PSX":-70,"SPOT":30.658,"SQ":-0.129,"UNH":-875,"UNP":-399,"WBA":-226,"ZM":-0.387},
+{"Fecha":"Jun/2019","AAPL":-1867,"ABEV":-92.882,"ABT":-96,"ADBE":-78.179,"AGRO":-15.472,"AIG":-446,"AMD":-2,"AMGN":-385,"AMX":-537.681,"AMZN":-257,"ARCO":-4.981,"AUY":-32.763,"AXP":-458,"AZN":-33.833,"BA":485,"BABA":-983.533,"BAC":-1611,"BBD":-568.852,"BBVA":-648.348,"BCS":-381.717,"BG":-60,"BIDU":-60.958,"BIIB":-248.1,"BMY":-337,"BP":-1238,"BRFS":-30.534,"BSBR":-772.889,"C":-1373,"CAT":-565,"CRM":-73,"CS":-364.004,"CSCO":-1498,"CVX":-1645,"CX":-52.801,"DE":-221,"DESP":1.483,"DIS":-395,"EBAY":-107,"ERJ":14.479,"FB":-2216,"FDX":585,"FMX":-113.697,"GE":148,"GGB":-64.314,"GILD":-535,"GLOB":-3.545,"GOLD":-41,"GOOGL":-2200,"GS":-706,"GSK":-275.042,"HD":-1134,"HPQ":931,"HWM":74,"IBM":-269,"IBN":-186.153,"INTC":-545,"ITUB":-740.028,"JD":-64.3,"JNJ":-1434,"JPM":-1690,"KO":-421,"LMT":-263,"LVS":-236,"MCD":-490.9,"MELI":8.917,"MMM":-315,"MO":-604,"MOD":-2.9,"MSFT":591,"NEM":-20,"NFLX":-230.266,"NKE":-254,"NOK":51.688,"NVDA":-54,"OGZD":-1459,"ORCL":-126,"PBR":-2962,"PEP":-524,"PFE":915,"PG":-172,"PTR":-2066,"PYPL":-120,"QCOM":-3352,"RDS.A":-1746,"SAN":-1227,"SBUX":-303.7,"SID":285.466,"SLB":-99,"SNAP":-1.078,"SONY":-591.435,"T":-1099,"TGT":-229,"TOT":-1572,"TRIP":-34,"TS":-14.955,"TSLA":-19.431,"TWTR":1032,"TX":-47.606,"UGP":-22.63,"V":-765,"VALE":-474.08,"VIST":1.294,"VZ":-1236,"WFC":-1294,"WMT":-1233,"X":7,"XOM":-1241,"ABBV":-66,"AVGO":36,"BIOX":-3.541,"BRK.B":-3586,"CAAP":-13.122,"DOCU":-1.346,"EFX":-20.7,"ETSY":1.854,"GPRK":-33.642,"HAL":-74,"MA":-471,"PAAS":-9.15,"PSX":-325,"SPOT":-19.102,"SQ":0.476,"UNH":-941,"UNP":-488,"WBA":-156,"ZM":-0.316},
+{"Fecha":"Sep/2019","AAPL":-2441,"ABEV":-55.945,"ABT":-143,"ADBE":-41.725,"AGRO":12.974,"AIG":-287,"AMD":-7,"AMGN":-309,"AMX":-588.268,"AMZN":-494,"ARCO":-9.793,"AUY":-17.355,"AXP":-511,"AZN":-128.191,"BA":-10,"BABA":-401.227,"BAC":-1082,"BBD":409.055,"BBVA":-541.465,"BCS":-331.568,"BG":28,"BIDU":-133.125,"BIIB":-211.3,"BMY":17,"BP":-701.574,"BRFS":-91.635,"BSBR":77.711,"C":-1079,"CAT":-518,"CRM":-173,"CS":-259.648,"CSCO":-760,"CVX":-1469,"CX":-35.702,"DE":-104,"DESP":0.154,"DIS":-344,"EBAY":-80,"ERJ":-37.967,"FB":-1238,"FDX":-251,"FMX":-174.496,"GE":-41,"GGB":37.856,"GILD":333,"GLOB":-4.176,"GOLD":-791,"GOOGL":-1560,"GS":-539,"GSK":-289.66,"HD":-898,"HPQ":-104,"HWM":-114,"IBM":151,"IBN":-575.821,"INTC":-729,"ITUB":304.884,"JD":-86.211,"JNJ":106,"JPM":-2325,"KO":-503,"LMT":-173,"LVS":-82,"MCD":-544.3,"MELI":-79.155,"MMM":-378,"MO":-474,"MOD":-3.7,"MSFT":-2008,"NEM":-558,"NFLX":-347.079,"NKE":-194,"NOK":-88.947,"NVDA":-60,"OGZD":-709.715,"ORCL":-345,"PBR":-992.259,"PEP":-559,"PFE":-3047,"PG":-726,"PTR":-938.857,"PYPL":-22,"QCOM":-109,"RDS.A":-2333,"SAN":-1435,"SBUX":-201.5,"SID":-75.781,"SLB":598,"SNAP":1.296,"SONY":-576.934,"T":-937,"TGT":-279,"TOT":-1526,"TRIP":-23,"TS":-106.751,"TSLA":-26,"TWTR":-11.241,"TX":-80.118,"UGP":-35.354,"V":-686,"VALE":-974.368,"VIST":5.917,"VZ":-1586,"WFC":-1304,"WMT":-1052,"X":44,"XOM":-1474,"ABBV":-117,"AVGO":171,"BIOX":2.239,"BRK.B":-3832,"CAAP":17.373,"DOCU":-1.168,"EFX":-14,"ETSY":4.712,"GPRK":-41.757,"HAL":-76,"MA":-426,"PAAS":-29.014,"PSX":-150,"SHOP":-48.338,"SPOT":-32.243,"SQ":-2.606,"UNH":-936,"UNP":-466,"WBA":-26,"ZM":-1.216},
+{"Fecha":"Dic/2019","AAPL":-3682,"ABEV":112.719,"ABT":-191,"ADBE":-105.286,"AGRO":-15.605,"AIG":-216,"AMD":-35,"AMGN":-280,"AMX":-795.575,"AMZN":-786,"ARCO":-15.187,"AUY":-27.79,"AXP":-293,"AZN":37.502,"BA":1332,"BABA":-1193,"BAC":-1175,"BBD":2115,"BBVA":-474.965,"BCS":-243.17,"BG":-16,"BIDU":-43.149,"BIIB":-276.1,"BMY":-931,"BP":-234.136,"BRFS":105.059,"BSBR":-183.51,"C":-703,"CAT":-276,"CRM":-244,"CS":-364.698,"CSCO":-656,"CVX":1738,"CX":-10.596,"DE":-50,"DESP":4.067,"DIS":-459,"EBAY":-76,"ERJ":-92.382,"FB":-1820,"FDX":-12,"FMX":-155.035,"GE":-726,"GGB":-46.96,"GILD":788,"GLOB":-3.869,"GOLD":-784,"GOOGL":-33,"GS":-404,"GSK":-249.603,"HD":-630,"HPQ":-200,"HWM":5,"IBM":-324,"IBN":-231.782,"INTC":-1163,"ITUB":217.665,"JD":-68.008,"JNJ":-208,"JPM":-2045,"KO":-355,"LMT":-334,"LVS":-65,"MCD":-454.6,"MELI":8.976,"MMM":-242,"MO":-591,"MOD":-1.7,"MSFT":-2436,"NEM":-129,"NFLX":437.637,"NKE":-134,"NOK":-272.357,"NVDA":-66,"OGZD":-1021,"ORCL":-499,"PBR":241.229,"PEP":-430,"PFE":1181,"PG":-789,"PTR":-990.443,"PYPL":-347,"QCOM":-22,"RDS.A":-1725,"SAN":-760.608,"SBUX":-258.5,"SID":115.228,"SLB":-109,"SNAP":-0.332,"SONY":-643.707,"T":-434,"TGT":-195,"TOT":-856.953,"TRIP":-5,"TS":-9.87,"TSLA":-42,"TWTR":-39.321,"TX":3.768,"UGP":4.514,"V":-702,"VALE":1407,"VIST":-17.862,"VZ":1505,"WFC":-678,"WMT":-1379,"X":-233,"XOM":-684,"ABBV":-273,"AVGO":100,"BIOX":-3.444,"BRK.B":-7571,"CAAP":-29.462,"DOCU":-1.038,"EFX":-13.1,"ETSY":8.54,"GPRK":-17.903,"HAL":183,"MA":-375,"PAAS":-26.418,"PSX":-256,"SHOP":19.311,"SPOT":-39.857,"SQ":-0.508,"UNH":-990,"UNP":-475,"WBA":-32,"ZM":-0.319},
+{"Fecha":"Mar/2020","AAPL":-1886,"ABEV":-62.645,"ABT":-89,"ADBE":36,"AGRO":22.606,"AIG":-904,"AMD":-6,"AMGN":-195,"AMX":600.445,"AMZN":-744,"ARCO":-1.869,"AUY":-33.736,"AXP":-85,"AZN":-185.116,"BA":862,"BABA":-376.563,"BAC":-521,"BBD":3148,"BBVA":-204.911,"BCS":-90.715,"BG":55,"BIDU":-28.371,"BIIB":-292,"BMY":-462,"BP":139.087,"BRFS":3.037,"BSBR":2283,"C":-576,"CAT":-425,"CRM":52,"CS":113.597,"CSCO":-670,"CVX":-564,"CX":-48.807,"DE":-245,"DESP":-0.709,"DIS":-525,"EBAY":-146,"ERJ":-201.613,"FB":-959,"FDX":-105,"FMX":-235.617,"GE":-63,"GGB":-4.658,"GILD":-465,"GLOB":-6.078,"GOLD":-386,"GOOGL":-921,"GS":-135,"GSK":-199.318,"HD":-724,"HPQ":-62,"HWM":-76,"IBM":1226,"IBN":-50.271,"INTC":-953,"ITUB":2904,"JD":-46.776,"JNJ":-713,"JPM":-251,"KO":-215,"LMT":-313,"LVS":-25,"MCD":-338,"MELI":-4.429,"MMM":-273,"MO":-558,"MOD":-4.1,"MSFT":-2091,"NEM":23,"NFLX":-86.803,"NKE":-34,"NOK":33.05,"NVDA":-64,"OGZD":1502,"ORCL":-505,"PBR":3784,"PEP":-360,"PFE":-475,"PG":-541,"PYPL":-179,"QCOM":-130,"RDS.A":-646.405,"SAN":-1370,"SBUX":-65.4,"SID":-46.189,"SLB":721,"SNAP":-0.659,"SONY":181.011,"T":-1302,"TGT":-218,"TOT":36.988,"TRIP":11,"TS":-135.723,"TSLA":-2,"TWTR":7.139,"TX":-264.183,"UGP":-30.713,"V":-745,"VALE":694.859,"VIST":-4.46,"VZ":-1389,"WFC":-159,"WMT":-1322,"X":19,"XOM":-512,"ABBV":-88,"AVGO":76,"BIOX":0.366382,"BRK.B":13352,"CAAP":-9.194,"DOCU":-1.251,"EFX":-36,"ETSY":2.829,"GPRK":-30.275,"HAL":-119,"MA":-294,"PAAS":-49.82,"PSX":51,"SHOP":28.695,"SPOT":-44.067,"SQ":-0.535,"UNH":-1094,"UNP":-444,"WBA":-160,"ZM":0.794},
+{"Fecha":"Jun/2020","AAPL":-1884,"ABEV":30.315,"ABT":11,"ADBE":100,"AGRO":-2.811,"AIG":1896,"AMD":-4,"AMGN":-227,"AMX":-350.549,"AMZN":-984,"ARCO":-2.426,"AUY":-9.867,"AXP":-365,"AZN":-223.546,"BA":1028,"BABA":-1569,"BAC":-266,"BBD":490.298,"BBVA":-296.241,"BCS":-52.138,"BG":-168,"BIDU":-172.395,"BIIB":-446.1,"BMY":-1707,"BP":4092,"BRFS":-16.678,"BSBR":349.556,"C":-131,"CAT":-227,"CRM":1786,"CS":-405.803,"CSCO":-670,"CVX":2320,"CX":-40.367,"DE":-457,"DESP":8.011,"DIS":331,"EBAY":-263,"ERJ":77.321,"FB":-953,"FDX":-15,"FMX":-245.917,"GE":199,"GGB":-24.255,"GILD":-373,"GLOB":-3.365,"GOLD":-258,"GOOGL":-1318,"GS":-918,"GSK":-249.517,"HD":-1398,"HPQ":-17,"HWM":2,"IBM":-209,"IBN":-131.864,"INTC":-830,"ITUB":433.325,"JD":-112.374,"JNJ":-314,"JPM":-878,"KO":-438,"LMT":-336,"LVS":54,"MCD":-164.9,"MELI":-33.393,"MMM":-342,"MO":-627,"MOD":0.2,"MSFT":-2220,"NEM":-164,"NFLX":-315.406,"NKE":14,"NOK":-88.101,"NVDA":13,"OGZD":-530.323,"ORCL":-580,"PBR":88.263,"PEP":-510,"PFE":-519,"PG":-675,"PTR":-299.928,"PYPL":-269,"QCOM":-23,"RDS.A":5820,"SAN":-2956,"SBUX":133.9,"SID":-72.882,"SLB":199,"SNAP":1.041,"SONY":-677.772,"T":-935,"TGT":-45,"TOT":487.956,"TRIP":26,"TS":49.806,"TSLA":-21,"TWTR":-1089,"TX":12.128,"UGP":-10.444,"V":-559,"VALE":-158.842,"VIST":-8.418,"VZ":-1348,"WFC":3917,"WMT":-2207,"X":5,"XOM":471,"ABBV":-46,"AVGO":159,"BIOX":-1.577,"BRK.B":-9002,"CAAP":46.653,"DOCU":-2.133,"EFX":-26.6,"ETSY":-15.891,"GPRK":12.144,"HAL":402,"MA":-270,"PAAS":-4.804,"PSX":378,"SHOP":31.63,"SPOT":109.026,"SQ":0.752,"UNH":-2115,"UNP":-364,"WBA":40,"ZM":-2.1},
+{"Fecha":"Sep/2020","AAPL":-2228,"ABEV":-13.404,"ABT":-189,"ADBE":-105,"AGRO":-11.925,"AIG":-74,"AMD":-12,"AMGN":-185,"AMX":-98.179,"AMZN":-569,"ARCO":-7.049,"AUY":-51.376,"AXP":-291,"AZN":-205.622,"BA":459,"BABA":-276.214,"BAC":335,"BBD":-178.429,"BBVA":-612.451,"BCS":-423.642,"BG":-38,"BIDU":-233.864,"BIIB":-240.8,"BMY":-379,"BP":-465.194,"BRFS":-16.542,"BSBR":-176.88,"C":-815,"CAT":-187,"CRM":-169,"CS":-280.469,"CSCO":-507,"CVX":-165,"CX":19.385,"DE":-329,"DESP":5.838,"DIS":-49,"EBAY":-153,"ERJ":28.84,"FB":-287,"FDX":-361,"FMX":-54.111,"GE":501,"GGB":-52.412,"GILD":-472,"GLOB":-3.779,"GOLD":-284,"GOOGL":-2112,"GS":-932,"GSK":-311.274,"HD":-1091,"HPQ":-108,"HWM":48,"IBM":-128,"IBN":-194.473,"INTC":-765,"ITUB":44.262,"JD":-99.786,"JNJ":-847,"JPM":-2218,"KO":-441,"LMT":-303,"LVS":17,"MCD":-454.5,"MELI":-37.635,"MMM":-387,"MO":-632,"MOD":-13.9,"MSFT":-2231,"NEM":-305,"NFLX":-71.484,"NKE":-197,"NOK":-86.491,"NVDA":-12,"OGZD":847.68,"ORCL":-344,"PBR":596.799,"PEP":-526,"PFE":26,"PG":-989,"PTR":-2526,"PYPL":-123,"QCOM":-346,"RDS.A":105.865,"SAN":-1276,"SBUX":-49.7,"SID":-137.957,"SLB":-19,"SNAP":-0.909,"SONY":1544,"T":-766,"TGT":-499,"TOT":-698.797,"TRIP":10,"TS":28.689,"TSLA":-186,"TWTR":-1024,"TX":-27.131,"UGP":-30.381,"V":-918,"VALE":-791.806,"VIST":5.562,"VZ":-1347,"WFC":-645,"WMT":-1914,"X":24,"XOM":-337,"ABBV":-187,"AVGO":96,"BIOX":-2.006,"BRK.B":-7517,"CAAP":-36.463,"DOCU":-0.842,"EFX":-75.4,"ETSY":1.368,"GPRK":-16.332,"HAL":-18,"MA":-402,"PAAS":-27.562,"PSX":624,"SHOP":4.701,"SNOW":-0.531,"SPOT":17.532,"SQ":1.369,"UNH":-1000,"UNP":-410,"WBA":-208,"ZM":-4.196},
+{"Fecha":"Dic/2020","AAPL":-4824,"ABEV":-291.521,"ABT":-230,"ADBE":1053,"AGRO":-20.195,"AIG":542,"AMD":1232,"AMGN":-262,"AMX":-878.659,"AMZN":-566,"ARCO":-6.188,"AUY":-193.823,"AXP":-420,"AZN":-163.378,"BA":186,"BABA":-1387,"BAC":-649,"BBD":-755.598,"BBVA":-573.444,"BCS":-215.231,"BG":-97,"BIDU":-154.823,"BIIB":-13.3,"BMY":424,"BP":398.36,"BRFS":75.461,"BSBR":-1359,"C":-1183,"CAT":-167,"CRM":-158,"CS":-289.874,"CSCO":-710,"CVX":301,"CX":18.492,"DE":-308,"DESP":8.244,"DIS":-16,"EBAY":-328,"ERJ":-13.129,"FB":-1836,"FDX":-180,"FMX":-153.434,"GE":-162,"GGB":-124.925,"GILD":-270,"GLOB":-9.085,"GOLD":-413.216,"GOOGL":-3462,"GS":-1035,"GSK":23.768,"HD":-899,"HPQ":-228,"HWM":35,"IBM":-25,"IBN":-208.462,"INTC":-1631,"ITUB":-1056,"JD":50.057,"JNJ":91,"JPM":-2929,"KO":-887,"LMT":-395,"LVS":-8,"MCD":-452.8,"MELI":-6.565,"MMM":-316,"MO":-619,"MOD":-81.6,"MSFT":-2874,"NEM":-258,"NFLX":35.739,"NKE":-205,"NOK":-3733,"NVDA":-13,"OGZD":-1259,"ORCL":-530,"PBR":-2661,"PEP":-498,"PFE":170,"PG":-990,"PYPL":-292,"QCOM":-149,"RDS.A":169.429,"SAN":-729.621,"SBUX":-186.1,"SID":132.379,"SLB":-89,"SNAP":-18.127,"SONY":-992.104,"T":2038,"TGT":-284,"TOT":-149.335,"TRIP":31,"TS":34.967,"TSLA":-83,"TWTR":-1.903,"TX":-8.873,"UGP":-39.764,"V":-622,"VALE":-187.875,"VIST":17.435,"VZ":-1535,"WFC":-108,"WMT":-1415,"X":94,"XOM":6010,"ABBV":1545,"AVGO":187,"BIOX":-3.836,"BRK.B":-9273,"CAAP":13.194,"DOCU":-1.941,"EFX":-16.8,"ETSY":-4.769,"GPRK":-13.4,"HAL":13,"MA":-383,"PAAS":9.732,"PSX":197,"SHOP":14.119,"SNOW":-0.433,"SPOT":64.378,"SQ":-4.448,"UNH":-764,"UNP":-413,"WBA":199,"ZM":4.621},
+{"Fecha":"Mar/2021","AAPL":-4381,"ABEV":-33.233,"ABT":-250,"ADBE":-172,"AGRO":-8.938,"AIG":-798,"AMD":-89,"AMGN":-211,"AMX":-125.643,"AMZN":-2156,"ARCO":0.07,"AUY":-39.291,"AXP":-758,"AZN":-46,"BA":11,"BABA":-1088,"BAC":-1116,"BBD":-300.272,"BBVA":-588.993,"BCS":-683.931,"BG":-192,"BIDU":-236.754,"BIIB":-44.2,"BMY":-501,"BP":-1642,"BRFS":-0.512833,"BSBR":-215.093,"C":-2332,"CAT":-475,"CRM":-135,"CS":580.547,"CSCO":-728,"CVX":-779,"CX":-74.747,"DE":-530,"DESP":-0.292,"DIS":-108,"EBAY":-156,"ERJ":-1.273,"FB":-2006,"FDX":-157,"FMX":-130.625,"GE":-142,"GGB":-149.038,"GILD":-542,"GLOB":-7.171,"GOLD":-376.794,"GOOGL":-3353,"GS":-1501,"GSK":-355.754,"HD":-1303,"HPQ":-108,"HWM":-33,"IBM":51,"IBN":-230.39,"INTC":-545,"ITUB":-423.041,"JD":-74.003,"JNJ":-1232,"JPM":-3397,"KO":-508,"LMT":-374,"LVS":-14,"MCD":-415.5,"MELI":-43.549,"MMM":-319,"MO":-516,"MOD":5.1,"MSFT":-1779,"NEM":-235,"NFLX":-327.787,"NKE":-187,"NOK":-119.244,"NVDA":-132,"OGZD":-1449,"ORCL":1745,"PBR":-343.105,"PEP":-451,"PFE":-806,"PG":-628,"PTR":-1824,"PYPL":225,"QCOM":-367,"RDS.A":-2453,"SAN":-1377,"SBUX":-230.5,"SID":-233.282,"SLB":-74,"SNAP":-1.44,"SONY":109.765,"T":-2122,"TGT":-350,"TRIP":16,"TS":-41.744,"TSLA":-69,"TWTR":18.001,"TX":-258.654,"UGP":-18.437,"V":-602,"VALE":-1816,"VIST":-3.758,"VZ":-1700,"WFC":-326,"WMT":-1033,"X":-1,"XOM":-796,"ABBV":-312,"AVGO":-6,"BIOX":-0.39071,"BRK.B":-2688,"CAAP":-0.822,"DOCU":-8.859,"EFX":-65.6,"ETSY":-13.962,"GPRK":-13.42,"HAL":-52,"MA":-362,"PAAS":-38.261,"PSX":132,"SHOP":-111.099,"SNOW":-1.342,"SPOT":-77.087,"SQ":-0.947,"UNH":-1364,"UNP":-413,"WBA":-42,"ZM":-4.043},
+{"Fecha":"Jun/2021","AAPL":-2625,"ABEV":-129.982,"ABT":-159,"ADBE":-270,"AGRO":-44.608,"AIG":3,"AMD":-113,"AMGN":-94,"AMX":-887.802,"AMZN":-868,"ARCO":-10.258,"AUY":-179.861,"AXP":-660,"AZN":-214,"BA":18,"BABA":-1409,"BAC":1182,"BBD":-853.63,"BBVA":-353.249,"BCS":-367.822,"BG":-50,"BIDU":-340.233,"BIIB":409.1,"BMY":-492,"BP":-1784,"BRFS":-3.687,"BSBR":-1227,"C":-1155,"CAT":-470,"CRM":-291,"CS":-621.686,"CSCO":-726,"CVX":-1328,"CX":-58.409,"DE":-491,"DESP":6.413,"DIS":133,"EBAY":-107,"ERJ":5.671,"FB":-2119,"FDX":-745,"FMX":-165.479,"GE":466,"GGB":-318.78,"GILD":-300,"GLOB":-5.36,"GOLD":-340.09,"GOOGL":-3460,"GS":-1354,"GSK":95.102,"HD":-1511,"HPQ":-218,"HWM":-36,"IBM":-227,"IBN":-230.728,"INTC":-684,"ITUB":-991.829,"JD":-88.213,"JNJ":-384,"JPM":-3149,"KO":-994,"LMT":-355,"LVS":6,"MCD":-156.7,"MELI":-70.702,"MMM":-415,"MO":-759,"MOD":-1.9,"MSFT":-2947,"NEM":-341,"NFLX":-240.776,"NKE":-345,"NOK":-79.571,"NVDA":-20,"OGZD":-1859,"ORCL":-124,"PBR":-3765,"PEP":-642,"PFE":-1044,"PG":-656,"PTR":-1143,"PYPL":-172,"QCOM":-230,"RDS.A":-571,"SAN":-1605,"SBUX":-257.1,"SID":-237.629,"SLB":-99,"SNAP":1.879,"SONY":-640.733,"T":-751,"TGT":-512,"TRIP":6,"TS":-16.953,"TSLA":-115,"TWTR":-15.651,"TX":-305.412,"UGP":-10.371,"V":-1814,"VALE":-2083,"VIST":-26.903,"VZ":-1875,"WFC":-1445,"WMT":-1559,"X":37,"XOM":-1526,"ABBV":-394,"AVGO":7,"BIOX":-8.119,"BRK.B":-7296,"CAAP":-22.101,"DOCU":-1.982,"EFX":-61.2,"ETSY":12.5,"GPRK":-2.887,"HAL":-65,"MA":-412,"PAAS":-29.345,"PSX":-62,"SHOP":-40.222,"SNOW":0.251,"SPOT":-33.758,"SQ":9.36,"UNH":-1196,"UNP":-518,"WBA":-246,"ZM":-1.4},
+{"Fecha":"Sep/2021","AAPL":-2697,"ABEV":112.857,"ABT":-393,"ADBE":-206,"AGRO":-15.265,"AIG":-439,"AMD":-82,"AMGN":-271,"AMX":-235.042,"AMZN":-1155,"ARCO":1.439,"AUY":-30.888,"AXP":-624,"AZN":350,"BA":178,"BABA":-940.953,"BAC":-1259,"BBD":-440.864,"BBVA":-754.383,"BCS":-436.774,"BG":-92,"BIDU":284.28,"BIIB":25.9,"BMY":-605,"BP":-1850,"BRFS":-3.156,"BSBR":3.192,"C":-1193,"CAT":-368,"CRM":169,"CS":-620.759,"CSCO":-677,"CVX":-1940,"CX":-99.96,"DE":-330,"DESP":1.654,"DIS":-34,"EBAY":-151,"ERJ":-19.936,"FB":-1371,"FDX":-345,"FMX":-209.912,"GE":-2,"GGB":-358.002,"GILD":-852,"GLOB":-7.065,"GOLD":-320.801,"GOOGL":-4128,"GS":-1464,"GSK":-523.578,"HD":-1340,"HPQ":-454,"HWM":4,"IBM":-188,"IBN":-274.652,"INTC":-35,"ITUB":-581.437,"JD":-100.82,"JNJ":-182,"JPM":-2424,"KO":-609,"LMT":-65,"LVS":27,"MCD":-541.5,"MELI":-30.908,"MMM":-324,"MO":582,"MOD":-5.4,"MSFT":-19,"NEM":-222,"NFLX":-211.888,"NKE":-232,"NOK":-111.979,"NVDA":-174,"OGZD":-1644,"ORCL":-224,"PBR":-1865,"PEP":-802,"PFE":331,"PG":-909,"PTR":-1692,"PYPL":-78,"QCOM":-487,"RDS.A":-1510,"SAN":-1475,"SBUX":-483,"SID":-269.837,"SLB":-129,"SNAP":-0.992,"SONY":-624.09,"T":-1539,"TGT":-553,"TRIP":-2,"TS":-58.505,"TSLA":-223,"TWTR":190.325,"TX":-483.475,"UGP":20.648,"V":-714,"VALE":366.063,"VIST":-35.29,"VZ":-1820,"WFC":-1521,"WMT":-1015,"X":-260,"XOM":-2664,"ABBV":-508,"AVGO":150,"BIOX":-2.595,"BRK.B":-1840,"CAAP":-4.33,"DOCU":-0.158,"EFX":-58.8,"ETSY":6.131,"GPRK":-31.907,"HAL":-76,"MA":-402,"PAAS":-50.042,"PSX":40,"SHOP":-192.02,"SNOW":-0.514,"SPOT":-188.596,"SQ":-0.452,"UNH":-1099,"UNP":-507,"WBA":-586,"ZM":-6.8}]
+
+
+
+const nonControlling = [{"Fecha":"Dic/2018","ABEV":-27.078,"AGRO":-0.515,"AIG":-62,"AMX":-14.804,"ARCO":-0.047,"AZN":24.792,"BABA":301.855,"BBD":-9.632,"BBVA":-165.455,"BCS":-96.483,"BG":-7,"BIDU":218.729,"BIIB":1.9,"BMY":2,"BP":-4.958,"BRFS":7.617,"BSBR":-18.688,"C":16,"CAT":-1,"CS":4.017,"CVX":7,"CX":-2.862,"DE":-1.1,"DIS":2,"ERJ":-1.234,"FMX":-187.958,"GE":-99,"GGB":-1.53,"GILD":0,"GLOB":0,"GOLD":-32,"GSK":-109.347,"IBM":0.9,"IBN":-47.912,"ITUB":-53.579,"JD":10.519,"KO":2,"LVS":-130,"MMM":-2,"MO":-1,"MOD":-0.3,"NEM":-13,"NOK":-14.834,"OGZD":-388.903,"ORCL":-32,"PBR":-230.073,"PEP":-13,"PFE":-11,"PG":-22,"PTR":-668.331,"RDS.A":-55.535,"SAN":-395.951,"SBUX":0.2,"SID":-13.644,"SLB":-10,"SONY":-108.989,"T":-272,"TOT":-47.793,"TS":0.756724,"TSLA":-70.595,"TX":-81.984,"UGP":3.178,"VALE":-45.962,"VZ":-126,"WFC":-90,"WMT":-126,"XOM":-206},
+{"Fecha":"Mar/2019","ABEV":-23.15,"AGRO":-0.918,"AIG":-283,"AMX":-39.817,"ARCO":-0.059,"AZN":30.319,"BABA":363.341,"BBD":-11.01,"BBVA":-265.699,"BCS":-22.14,"BG":-5,"BIDU":0.444725,"BMY":-5,"BP":-65.691,"BRFS":0.32249,"BSBR":-17.013,"C":-25,"CAT":-3,"CS":0,"CVX":7,"CX":-15.277,"DE":-1.4,"DIS":-159,"ERJ":-1.302,"FMX":-84.154,"GE":-59,"GGB":-0.961632,"GILD":7,"GLOB":0,"GOLD":-29,"GSK":-201.865,"IBM":-7,"IBN":-50.651,"ITUB":-41.406,"JD":11.779,"KO":-25,"LVS":-162,"MMM":-2,"MO":-1,"MOD":-0.1,"NEM":-32,"NOK":-2.271,"OGZD":-358.046,"ORCL":-35,"PBR":-55.474,"PEP":-9,"PFE":-6,"PG":-31,"PTR":-858.913,"RDS.A":-157.658,"SAN":-459.863,"SBUX":4.4,"SID":-25.039,"SLB":-9,"SONY":-122.036,"T":-252,"TOT":-29.022,"TS":0.290221,"TSLA":-34.49,"TX":-6.597,"UGP":-2.36,"VALE":32.82,"VZ":-128,"WFC":-107,"WMT":-64,"XOM":-56,"BRK.B":-71,"CAAP":6.03,"EFX":-1.5,"PAAS":-0.534358,"PSX":-66,"UNH":-90,"WBA":18},
+{"Fecha":"Jun/2019","ABEV":-24.277,"AGRO":-0.271,"AIG":-281,"AMX":-27.965,"ARCO":-0.01,"AZN":22.887,"BABA":312.116,"BBD":-11.48,"BBVA":-270.8,"BCS":-21.849,"BG":2,"BIDU":198.846,"BMY":-7,"BP":-81.597,"BRFS":-0.798189,"BSBR":-13.203,"C":-10,"CAT":1,"CS":0,"CVX":15,"CX":-9.288,"DE":0,"DIS":-186,"ERJ":-1.976,"FMX":-110.423,"GE":23,"GGB":-0.820382,"GILD":5,"GLOB":0,"GOLD":-29,"GSK":-110.531,"IBM":-4.9,"IBN":-57.469,"ITUB":-41.58,"JD":10.687,"KO":-21,"LVS":-154,"MMM":-4,"MO":-1,"MOD":-0.2,"NEM":-25,"NOK":1.124,"OGZD":-287.193,"ORCL":-40,"PBR":-123.976,"PEP":-8,"PFE":-10,"PG":-4,"PTR":-721.092,"RDS.A":-163.193,"SAN":-501.149,"SBUX":-0.4,"SID":-38.106,"SLB":-2,"SONY":-126.307,"T":-261,"TOT":-48.041,"TS":1.789,"TSLA":-19.072,"TX":-24.752,"UGP":-3.095,"VALE":8.856,"VZ":-130,"WFC":-132,"WMT":-70,"XOM":-261,"BIOX":0.123334,"BRK.B":-100,"CAAP":-6.228,"EFX":-1.5,"HAL":-2,"PAAS":-0.131054,"PSX":-80,"UNH":-92,"WBA":-12},
+{"Fecha":"Sep/2019","ABEV":-26.887,"AGRO":0.062,"AIG":-317,"AMX":-63.913,"ARCO":-0.046,"AZN":18.881,"BABA":255.417,"BBD":-7.858,"BBVA":-193.46,"BCS":-4.93,"BG":-6,"BIDU":240.879,"BMY":-13,"BP":-17.887,"BRFS":-2.645,"BSBR":-13.632,"C":-15,"CAT":0,"CS":-5.071,"CVX":0,"CX":-4.974,"DE":-1,"DIS":-129,"ERJ":-1.959,"FMX":-120.387,"GE":7,"GGB":-0.926243,"GILD":3,"GLOB":0,"GOLD":-158,"GSK":-202.146,"IBM":-7.1,"IBN":-64.405,"ITUB":-85.67,"JD":8.774,"KO":4,"LVS":-136,"MMM":-5,"MO":2,"MOD":0.1,"NEM":-26,"NOK":-3.336,"OGZD":-255.514,"ORCL":-46,"PBR":62.237,"PEP":-10,"PFE":-4,"PG":-24,"PTR":-789.626,"RDS.A":-144.091,"SAN":-432.505,"SBUX":0.4,"SID":-30.816,"SLB":-10,"SONY":-114.405,"T":-249,"TOT":-44.586,"TS":5.978,"TSLA":-7,"TX":-15.481,"UGP":-2.4,"VALE":20.25,"VZ":-143,"WFC":-202,"WMT":-33,"XOM":-77,"BIOX":0.927368,"BRK.B":-133,"CAAP":7.889,"EFX":-1.4,"HAL":-1,"PAAS":-0.061841,"PSX":-81,"UNH":-91,"WBA":-9},
+{"Fecha":"Dic/2019","ABEV":-28.981,"AGRO":0.013,"AIG":60,"AMX":-2.151,"ARCO":-0.105,"AZN":36.489,"BABA":308.999,"BBD":-8.118,"BBVA":-205.929,"BCS":-54.038,"BG":12,"BIDU":183.81,"BMY":4,"BP":1.014,"BRFS":0.337672,"BSBR":-13.254,"C":-16,"CAT":1,"CS":-1.01,"CVX":57,"CX":-6.215,"DE":-1,"DIS":-40,"ERJ":-0.554608,"FMX":-66.644,"GE":9,"GGB":-0.640362,"GILD":7,"GLOB":0,"GOLD":-389,"GSK":-280.482,"IBM":-6,"IBN":-62.358,"ITUB":-9.96,"JD":11.372,"KO":-23,"LVS":-154,"MMM":-1,"MO":-5,"MOD":0.2,"NEM":4,"NOK":0,"OGZD":-125.048,"ORCL":-28,"PBR":-93.528,"PEP":-12,"PFE":-10,"PG":-26,"PTR":-720.761,"RDS.A":-125.683,"SAN":-399.679,"SBUX":0.4,"SID":-21.725,"SLB":-10,"SONY":-99.403,"T":-310,"TOT":-49.285,"TS":3.337,"TSLA":-27,"TX":-19.334,"UGP":0.274267,"VALE":433.839,"VZ":-122,"WFC":-51,"WMT":-153,"XOM":-40,"BIOX":-1.335,"BRK.B":-71,"CAAP":5.668,"EFX":-1.6,"HAL":1,"PAAS":0.224966,"PSX":-74,"UNH":-127,"WBA":3},
+{"Fecha":"Mar/2020","ABEV":-26.761,"AGRO":-0.713,"AIG":95,"AMX":-38.878,"ARCO":-0.008,"AZN":30.019,"BA":13,"BABA":403.215,"BBD":-10.366,"BBVA":-188.386,"BCS":20.443,"BG":-6,"BIDU":246.314,"BIIB":6.5,"BMY":-9,"BP":20.013,"BRFS":-1.722,"BSBR":-1.891,"C":6,"CAT":-1,"CS":3.098,"CVX":18,"CX":-4.94,"DE":0,"DIS":-60,"ERJ":-1.505,"FMX":-66.117,"GE":-36,"GGB":-1.058,"GILD":13,"GLOB":0,"GOLD":-263,"GSK":-145.656,"IBM":-4.5,"IBN":-49.947,"ITUB":-49.055,"JD":2.241,"KO":-20,"LVS":50,"MMM":-2,"MO":2,"MOD":-0.3,"NEM":-2,"NOK":-1.102,"OGZD":-121.886,"ORCL":-49,"PBR":269.021,"PEP":-13,"PFE":-9,"PG":-40,"RDS.A":-1.001,"SAN":-348.128,"SBUX":3.6,"SID":-11.008,"SLB":-8,"SONY":-28.437,"T":-353,"TOT":31.989,"TS":5.662,"TSLA":-52,"TX":7.693,"UGP":-1.794,"VALE":77.825,"VZ":-131,"WFC":148,"WMT":-84,"XOM":160,"BIOX":0.452716,"BRK.B":-49,"CAAP":11.106,"EFX":-1.9,"HAL":-2,"PAAS":0.404454,"PSX":-69,"UNH":-83,"WBA":-5},
+{"Fecha":"Jun/2020","ABEV":-8.272,"AGRO":0.13,"AIG":-162,"AMX":-55.07,"ARCO":0.038,"AZN":18.044,"BA":19,"BABA":162.802,"BBD":-9.885,"BBVA":-178.405,"BCS":-26.069,"BG":-1,"BIDU":111.591,"BIIB":-64.4,"BMY":-5,"BP":675.651,"BRFS":-0.605577,"BSBR":-1.408,"C":0,"CAT":-1,"CS":2.076,"CVX":7,"CX":-2.111,"DE":0,"DIS":-209,"ERJ":-2.847,"FMX":-39.326,"GE":10,"GGB":-0.009477,"GILD":7,"GLOB":0,"GOLD":-265,"GSK":-219.724,"IBM":-6.8,"IBN":-61.85,"ITUB":673.772,"JD":4.739,"KO":20,"LVS":165,"MMM":3,"MO":5,"MOD":-0.2,"NEM":-3,"NOK":-5.506,"OGZD":-60.451,"ORCL":-38,"PBR":18.582,"PEP":-12,"PFE":-8,"PG":14,"PTR":-532.986,"RDS.A":-30.073,"SAN":-158.583,"SBUX":-0.3,"SID":-18.716,"SLB":-6,"SONY":-128.248,"T":-282,"TOT":53.433,"TS":2.365,"TSLA":-25,"TX":0.455147,"UGP":-1.665,"VALE":76.424,"VZ":-139,"WFC":-47,"WMT":37,"XOM":89,"ABBV":1,"BIOX":-0.880799,"BRK.B":-112,"CAAP":20.355,"EFX":-0.2,"HAL":5,"PAAS":0.662204,"PSX":-74,"UNH":-59,"WBA":18},
+{"Fecha":"Sep/2020","ABEV":-15.653,"AGRO":-0.251,"AIG":-11,"AMX":-74.937,"ARCO":-0.01,"AZN":-3.054,"BA":17,"BABA":324.49,"BBD":-7.748,"BBVA":-365.834,"BCS":-5.166,"BG":7,"BIDU":35.557,"BIIB":-2.4,"BMY":-6,"BP":-145.564,"BRFS":-0.356703,"BSBR":-0.859584,"C":-24,"CAT":-3,"CS":1.087,"CVX":2,"CX":-10.292,"DE":-1,"DESP":0.069,"DIS":-81,"ERJ":-1.675,"FMX":-66.465,"GE":45,"GGB":-1.682,"GILD":7,"GOLD":-389,"GSK":-240.236,"IBM":-3.4,"IBN":-73.143,"ITUB":-68.253,"JD":-3.635,"KO":-3,"LVS":166,"MMM":-4,"MO":4,"MOD":-0.3,"NEM":-17,"NOK":-4.675,"OGZD":-49.194,"ORCL":-43,"PBR":22.875,"PEP":-16,"PFE":-8,"PG":-31,"PTR":-571.218,"RDS.A":-58.022,"SAN":-347.133,"SBUX":-0.1,"SID":-33.626,"SLB":-9,"SONY":-36.442,"T":-352,"TOT":21.268,"TS":2.975,"TSLA":-38,"TX":-27.083,"UGP":-2.207,"VALE":100.961,"VZ":-147,"WFC":-184,"WMT":-66,"XOM":29,"ABBV":-5,"BIOX":-0.601296,"BRK.B":-276,"CAAP":67.68,"EFX":-0.8,"HAL":2,"PAAS":0.47984,"PSX":-73,"UNH":-84,"WBA":17},
+{"Fecha":"Dic/2020","ABEV":-19.33,"AIG":-37,"AMX":-22.182,"ARCO":-0.086,"AZN":7.06,"BA":19,"BABA":218.805,"BBD":-10.365,"BBVA":-129.949,"BCS":-48.856,"BG":-10,"BIDU":104.121,"BIIB":0.3,"BP":-128.08,"BRFS":1.178,"BSBR":-2.145,"C":-22,"CS":-3.319,"CVX":-9,"CX":-3.581,"DESP":0.213,"DIS":-1,"ERJ":2.087,"FMX":-96.079,"GE":-11,"GGB":-1.569,"GILD":7,"GOLD":-381.509,"GSK":-213.911,"IBM":-7.3,"IBN":-70.692,"ITUB":146.692,"JD":6.624,"KO":-18,"LVS":77,"MMM":-1,"MO":-2,"MOD":-0.3,"NEM":60,"NOK":4.769,"OGZD":-143.069,"ORCL":-46,"PBR":-104.092,"PEP":-14,"PFE":-11,"PG":-33,"RDS.A":-58.493,"SAN":-364.81,"SID":-31.052,"SLB":-8,"SONY":-17.409,"T":-368,"TOT":-12.027,"TS":-2.956,"TSLA":-26,"TX":-69.213,"UGP":-1.014,"VALE":94.235,"VZ":-130,"WFC":-202,"WMT":-83,"XOM":533,"ABBV":-2,"BIOX":-1.151,"BRK.B":-295,"CAAP":9.69,"EFX":-3.2,"HAL":-8,"PAAS":-0.136034,"PSX":-45,"UNH":-140,"WBA":-9},
+{"Fecha":"Mar/2021","ABEV":-19.692,"AGRO":-1.121,"AIG":-54,"AMX":-46.343,"ARCO":-0.054,"AZN":-1,"BA":24,"BABA":335.685,"BBD":-11.122,"BBVA":-285.463,"BCS":-5.516,"BG":-86,"BIDU":95.844,"BIIB":5.6,"BMY":-8,"BP":-233,"BRFS":0.361538,"BSBR":-1.725,"C":-33,"CAT":-1,"CS":-23.178,"CVX":-21,"CX":-7.861,"DESP":0.18,"DIS":-210,"ERJ":0.232508,"FMX":-83.221,"GE":-5,"GGB":-3.504,"GILD":7,"GOLD":-294.181,"GSK":-257.853,"IBM":-7.6,"IBN":-61.019,"ITUB":-97.821,"JD":-3.891,"KO":-10,"LVS":64,"MMM":-3,"MO":3,"MOD":-0.4,"NEM":-20,"NOK":-2.409,"OGZD":-246.546,"ORCL":-53,"PBR":-19.893,"PEP":-9,"PFE":-9,"PG":20,"PTR":-605.621,"RDS.A":-124,"SAN":-422.774,"SID":-83.458,"SLB":-13,"SONY":-1.15,"T":-392,"TS":5.581,"TSLA":-26,"TX":-102.575,"UGP":-0.961242,"VALE":68.487,"VZ":-133,"WFC":-54,"WMT":-81,"XOM":-66,"ABBV":-2,"BIOX":-0.555966,"BRK.B":-129,"CAAP":23.401,"EFX":-1.3,"HAL":-1,"PAAS":-0.237763,"PSX":-15,"UNH":-116,"WBA":4},
+{"Fecha":"Jun/2021","ABEV":-8.281,"AGRO":1.199,"AIG":-51,"AMX":-64.544,"ARCO":-0.058,"BA":20,"BABA":345.808,"BBD":-9.1,"BBVA":-288.145,"BCS":-20.978,"BG":-7,"BIDU":89.975,"BIIB":-577,"BMY":-6,"BP":-238,"BRFS":-0.812407,"BSBR":-1.942,"C":-10,"CAT":-1,"CS":6.59,"CVX":-12,"CX":-10.015,"DESP":0.258,"DIS":-205,"ERJ":-1.272,"FMX":-108.656,"GE":3,"GGB":-3.389,"GILD":5,"GOLD":-280.599,"GSK":-199.994,"IBM":-6.5,"IBN":-31.102,"ITUB":-63.336,"JD":49.052,"KO":17,"LVS":50,"MMM":-1,"MO":-1,"MOD":-0.5,"NEM":-11,"NOK":-8.439,"OGZD":-116.947,"ORCL":-47,"PBR":-35.166,"PEP":-14,"PFE":-26,"PG":-2,"PTR":-1681,"RDS.A":-131,"SAN":-499.13,"SBUX":-0.8,"SID":-103.397,"SLB":-12,"SONY":-11.755,"T":-304,"TS":3.758,"TSLA":-36,"TX":-135.397,"UGP":-2.427,"VALE":49.689,"VZ":-149,"WFC":-704,"WMT":-88,"XOM":-91,"ABBV":-3,"BIOX":-0.741514,"BRK.B":-331,"CAAP":21.47,"EFX":-0.8,"HAL":-3,"PAAS":-0.299438,"PSX":-80,"UNH":-106,"WBA":27},
+{"Fecha":"Sep/2021","ABEV":-30.627,"AGRO":-0.304,"AIG":-70,"AMX":-88.391,"ARCO":-0.17,"AZN":-1,"BA":23,"BABA":326.327,"BBD":-9.711,"BBVA":-305.289,"BCS":-1.378,"BG":4,"BIDU":121.812,"BIIB":11.1,"BMY":-6,"BP":-199,"BRFS":-0.882768,"BSBR":-0.429625,"C":-24,"CAT":-2,"CS":-4.356,"CVX":-4,"CX":1.792,"DE":-1,"DESP":0.273,"DIS":-96,"ERJ":0.71738,"FMX":-96.445,"GE":73,"GGB":-3.083,"GILD":6,"GLOB":-0.132,"GOLD":-262.196,"GSK":-275.567,"IBM":-8.3,"IBN":-64.618,"ITUB":-60.993,"JD":71.425,"KO":-4,"LVS":127,"MMM":-3,"MO":-2,"MOD":-0.2,"NEM":246,"NOK":-10.609,"OGZD":-35.591,"ORCL":-42,"PBR":-15.678,"PEP":-19,"PFE":-12,"PG":-14,"PTR":-487.403,"RDS.A":-130,"SAN":-444.379,"SBUX":-0.2,"SID":-33.482,"SLB":-12,"SONY":-11.718,"T":-355,"TS":3.636,"TSLA":-41,"TX":-163.514,"UGP":-0.966322,"VALE":-70.922,"VZ":-147,"WFC":-283,"WMT":-27,"XOM":-192,"ABBV":-1,"BIOX":-1.391,"BRK.B":-300,"CAAP":18.895,"EFX":-1.2,"HAL":-4,"PAAS":0.031782,"PSX":-86,"UNH":-105,"WBA":14}]
+
+
+
+const afterTaxOtherIncomeExpense = [{"Fecha":"Dic/2018","ABT":-5,"AXP":-16,"BA":-2,"BCS":-216.122,"BIDU":-18.794,"C":-49,"DE":-0.1,"FDX":-2,"GE":0,"JPM":-41,"MO":-1,"MOD":-0.1,"TSLA":0,"V":-105},
+{"Fecha":"Mar/2019","ABT":-4,"AXP":-11,"BA":-2,"BCS":-234.424,"BIDU":0,"C":-59,"DE":0,"FDX":-1,"GE":-3,"JPM":-52,"MO":-2,"MOD":-0.1,"TSLA":0,"V":-106,"ABBV":-12,"BIOX":1.2,"ETSY":-0.015,"PSX":-1,"ZM":0},
+{"Fecha":"Jun/2019","ABT":-6,"AXP":-13,"BCS":-235.199,"BIDU":0,"C":-50,"DE":0,"FDX":2,"GE":0,"JPM":-56,"MO":-2,"TSLA":0,"V":-110,"ABBV":-8,"BIOX":0,"ETSY":-0.009,"PSX":-2,"ZM":-2.016},
+{"Fecha":"Sep/2019","ABT":-6,"AXP":-11,"BA":-1,"BCS":-326.638,"BIDU":0,"C":-27,"DE":0,"FDX":-1,"GE":0,"JPM":-51,"MO":-1,"TSLA":0,"V":-109,"ABBV":-10,"BIOX":0,"ETSY":0,"PSX":-2,"ZM":-0.02},
+{"Fecha":"Dic/2019","ABT":-5,"AXP":-12,"BCS":-238.023,"BIDU":0,"C":-33,"DE":0,"FDX":-1,"GE":0,"JPM":-43,"MO":-2,"TSLA":0,"V":-118,"ABBV":-13,"BIOX":0,"ETSY":0,"PSX":-1,"ZM":-0.004},
+{"Fecha":"Mar/2020","ABT":-3,"AXP":-2,"BCS":-282.367,"BIDU":0,"C":-21,"DE":0,"FDX":-1,"GE":0,"JPM":-13,"MO":-2,"TSLA":0,"V":-111,"ABBV":-14,"BIOX":0,"ETSY":0,"PSX":-1,"ZM":-0.026},
+{"Fecha":"Jun/2020","ABT":-3,"AXP":-2,"BCS":-255.724,"BIDU":0,"C":-11,"DE":0,"FDX":1,"GE":0,"JPM":-21,"MO":-3,"TSLA":0,"V":-85,"ABBV":-18,"BIOX":0,"ETSY":0,"PSX":-2,"ZM":-0.039},
+{"Fecha":"Sep/2020","ABT":-6,"AXP":-7,"BCS":-263.485,"BIDU":0,"C":-18,"DE":0,"FDX":-2,"GE":0,"JPM":-47,"MMM":-1,"MO":-1,"TSLA":-31,"V":-77,"ABBV":-17,"BIOX":0,"ETSY":0,"PSX":-2,"ZM":-0.247},
+{"Fecha":"Dic/2020","ABT":-11,"AXP":-10,"BCS":-298.419,"BIDU":0,"C":-23,"DE":0,"FDX":-2,"GE":-6,"JPM":-57,"MO":-2,"OGZD":-19.789,"TSLA":0,"V":-88,"ABBV":-16,"BIOX":0,"ETSY":0,"PSX":-2,"ZM":-0.202},
+{"Fecha":"Mar/2021","ABT":-8,"AXP":-15,"BBVA":-120.449,"BCS":-268.884,"C":-66,"FDX":-3,"GE":2,"JPM":-70,"MO":-3,"OGZD":-27.636,"V":-75,"ABBV":-24,"PSX":-2,"ZM":-0.217},
+{"Fecha":"Jun/2021","ABT":-5,"AXP":-16,"BABA":11.305,"BBVA":-121.768,"BCS":-271.321,"C":-41,"FDX":-4,"GE":-2,"JPM":-59,"MO":-3,"OGZD":-26.23,"V":-60,"ABBV":-17,"PSX":-3,"ZM":-0.148},
+{"Fecha":"Sep/2021","ABT":-8,"AXP":-23,"BABA":-18.705,"BBVA":-91.94,"BCS":-271.434,"C":-26,"FDX":-2,"GE":-9,"JPM":-56,"MO":-2,"OGZD":-27.741,"V":-81,"ABBV":-21,"PSX":-2,"ZM":-0.154}]
+
+
+
+const NetIncomeBeforeDsicontinued = [{"Fecha":"Dic/2018","AAPL":19965,"ABEV":882.577,"ABT":650,"ADBE":678.24,"AGRO":-4.770000000000016,"AIG":-620,"AMD":37,"AMGN":1928,"AMX":537.9819999999999,"AMZN":3027,"ARCO":9.235999999999942,"AUY":-59.37099999999997,"AXP":1994,"AZN":1026.4759999999999,"BA":3422,"BABA":4776.834000000001,"BAC":7278,"BBD":1335.368,"BBVA":1143.475,"BCS":-18.010000000000048,"BG":-63,"BIDU":281.29100000000005,"BIIB":946.2999999999997,"BMY":1192,"BP":759.5490000000001,"BRFS":-550.9110780000001,"BSBR":970.3320000000001,"C":4272,"CAT":1048,"CHL":0,"CRM":362,"CS":293.21500000000003,"CSCO":2822,"CVX":3730,"CX":-36.052999999999955,"DE":498.19999999999993,"DESP":3.029999999999978,"DIS":2788,"EBAY":763,"ERJ":-20.546584000000024,"FB":6882,"FDX":933,"FMX":393.7869999999999,"GE":853,"GGB":101.31299999999997,"GILD":3,"GLOB":11.509000000000004,"GOLD":-1197,"GOOGL":8948,"GS":2538,"GSK":1562.5800000000002,"HD":2344,"HMY":0,"HPQ":803,"HWM":218,"IBM":1953.0000000000005,"IBN":259.846,"INTC":5195,"ITUB":1747.4150000000002,"JD":-694.869,"JNJ":3042,"JPM":7025,"KO":794,"LMT":1253,"LVS":-170,"LYG":0,"MCD":1415.2999999999997,"MELI":-2.3360000000000163,"MMM":1347,"MO":1249,"MOD":17.89999999999998,"MSFT":8420,"NEM":-3,"NFLX":134.167,"NKE":847,"NOK":216.27400000000006,"NVDA":567,"OGZD":6594.097,"ORCL":2333,"PBR":552.3270000000001,"PEP":6854,"PFE":-394,"PG":3194,"PTR":645.368,"PYPL":584,"QCOM":1068,"RDS.A":5544.465,"SAN":2359.968,"SBUX":759.9000000000001,"SID":451.30899999999997,"SLB":538,"SNAP":-191.66799999999998,"SONY":3804.359,"T":4858,"TGT":4756,"TOT":1126.8970000000002,"TRIP":7,"TS":224.60272400000002,"TSLA":139.33200000000002,"TWTR":255.30299999999997,"TX":368.603,"UGP":133.06,"V":2872,"VALE":3803.9689999999996,"VIST":0,"VOD":0,"VZ":1939,"WFC":6064,"WMT":3687,"X":592,"XOM":6000,"ABBV":8305,"AVGO":5444,"BIOX":0,"BRK.B":63714,"CAAP":371.021,"DOCU":178.385,"EFX":835.3,"ETSY":200.028,"GPRK":151.2,"HAL":5936,"MA":0,"PAAS":167.625,"PSX":28679,"SHOP":343.862,"SNOW":0,"SPOT":1706,"SQ":932.528,"UNH":0,"UNP":5757,"WBA":33793,"ZM":0},
+{"Fecha":"Mar/2019","AAPL":11561,"ABEV":706.519,"ABT":668,"ADBE":674.241,"AGRO":-3.153000000000015,"AIG":654,"AMD":16,"AMGN":1992,"AMX":1012.9311540000001,"AMZN":3561,"ARCO":12.165000000000017,"AUY":-4.080000000000042,"AXP":1539,"AZN":599.3759999999999,"BA":2147,"BABA":3829.1699999999996,"BAC":7311,"BBD":1544.885,"BBVA":1321.576,"BCS":1352.1009999999999,"BG":45,"BIDU":-48.72127500000003,"BIIB":1409.7,"BMY":1710,"BP":2965.17,"BRFS":-27.407305000000004,"BSBR":958.0789999999998,"C":4653,"CAT":1881,"CHL":0,"CRM":392,"CS":751.039,"CSCO":3044,"CVX":2649,"CX":-22.426000000000002,"DE":1134.7,"DESP":1.885999999999994,"DIS":5431,"EBAY":521,"ERJ":-4.086925000000035,"FB":2429,"FDX":738,"FMX":116.93300000000002,"GE":990,"GGB":119.349368,"GILD":1975,"GLOB":12.099000000000009,"GOLD":109.24099999999999,"GOOGL":6657,"GS":2251,"GSK":1080.8549999999998,"HD":2513,"HMY":0,"HPQ":782,"HWM":187,"IBM":1592,"IBN":165.998,"INTC":3974,"ITUB":1790.9830000000002,"JD":1085.973,"JNJ":3749,"JPM":9127,"KO":1621,"LMT":1704,"LVS":582,"LYG":0,"MCD":1329.1,"MELI":11.863999999999983,"MMM":891,"MO":1118,"MOD":6.20000000000002,"MSFT":8809,"NEM":113,"NFLX":343.96799999999996,"NKE":1101,"NOK":-504.02900000000005,"NVDA":394,"OGZD":8129.395,"ORCL":2745,"PBR":1070.3530000000003,"PEP":1413,"PFE":3884,"PG":2745,"PTR":1519.121,"PYPL":667,"QCOM":663,"RDS.A":6064.565,"SAN":2088.8630000000003,"SBUX":663.1,"SID":-2.01,"SLB":421,"SNAP":-310.40700000000004,"SONY":798.038,"T":4096,"TGT":798,"TOT":3113.072,"TRIP":26,"TS":242.706221,"TSLA":-702.7750000000001,"TWTR":190.80399999999992,"TX":214.71699999999996,"UGP":62.801,"V":2871,"VALE":-1705.3039999999999,"VIST":0,"VOD":0,"VZ":5032,"WFC":5860,"WMT":3842,"X":54,"XOM":2350,"ABBV":2444,"AVGO":481,"BIOX":-21.479,"BRK.B":21661,"CAAP":30.441000000000024,"DOCU":-64.93499999999999,"EFX":-555.9,"ETSY":31.564,"GPRK":19.689000000000014,"HAL":152,"MA":1862,"PAAS":35.030636,"PSX":203,"SHOP":-24.15099999999997,"SNOW":0,"SPOT":-161.22199999999998,"SQ":-38.15099999999996,"UNH":3467,"UNP":1391,"WBA":1157,"ZM":5.6970000000000045},
+{"Fecha":"Jun/2019","AAPL":10044,"ABEV":643.024,"ABT":1000,"ADBE":632.593,"AGRO":22.991000000000007,"AIG":1110,"AMD":35,"AMGN":2179,"AMX":734.8719019999997,"AMZN":2625,"ARCO":10.419999999999977,"AUY":14.438000000000017,"AXP":1748,"AZN":128.834,"BA":-2942,"BABA":3114.3759999999997,"BAC":7348,"BBD":1541.6680000000001,"BBVA":1436.483,"BCS":1328.8190000000002,"BG":214,"BIDU":353.297,"BIIB":1494.5,"BMY":1432,"BP":1813.733,"BRFS":50.37043000000001,"BSBR":876.9250000000001,"C":4732,"CAT":1620,"CHL":0,"CRM":91,"CS":933.996,"CSCO":2206,"CVX":4305,"CX":95.08000000000004,"DE":899,"DESP":-16.46699999999999,"DIS":1437,"EBAY":403,"ERJ":-22.036673000000015,"FB":2616,"FDX":-1967,"FMX":294.953,"GE":-104,"GGB":93.64461800000004,"GILD":1880,"GLOB":13.384999999999993,"GOLD":201.83100000000002,"GOOGL":9947,"GS":2421,"GSK":1237.812,"HD":3479,"HMY":0,"HPQ":1179,"HWM":-121,"IBM":2498,"IBN":361.363,"INTC":4179,"ITUB":1665.1650000000002,"JD":90.55100000000002,"JNJ":5607,"JPM":9596,"KO":2607,"LMT":1420,"LVS":954,"LYG":0,"MCD":1516.4,"MELI":16.216999999999942,"MMM":1127,"MO":1994,"MOD":7.999999999999976,"MSFT":13187,"NEM":1,"NFLX":270.231,"NKE":989,"NOK":-214.12200000000004,"NVDA":552,"OGZD":4655.425,"ORCL":3740,"PBR":4734.918000000001,"PEP":2035,"PFE":5046,"PG":-5241,"PTR":2663.171,"PYPL":823,"QCOM":2149,"RDS.A":2982.834,"SAN":1562.77,"SBUX":1373.1999999999998,"SID":444.40299999999996,"SLB":492,"SNAP":-255.17399999999998,"SONY":1383.6720000000003,"T":3713,"TGT":792,"TOT":2759.29,"TRIP":34,"TS":242.366,"TSLA":-408.38,"TWTR":1119.779,"TX":182.103,"UGP":28.140820000000016,"V":2991,"VALE":-97.01500000000004,"VIST":3.8890000000000002,"VOD":0,"VZ":3944,"WFC":6206,"WMT":3610,"X":68,"XOM":3130,"ABBV":733,"AVGO":693,"BIOX":-1.122566000000001,"BRK.B":14073,"CAAP":49.12300000000001,"DOCU":-45.72200000000001,"EFX":66.80000000000003,"ETSY":18.214000000000013,"GPRK":31.479999999999997,"HAL":75,"MA":2048,"PAAS":3.8263179999999677,"PSX":1422,"SHOP":-28.678000000000026,"SNOW":0,"SPOT":-85.69199999999998,"SQ":-6.977999999999951,"UNH":3293,"UNP":1570,"WBA":1024,"ZM":0.19800000000000217},
+{"Fecha":"Sep/2019","AAPL":13686,"ABEV":629.341,"ABT":954,"ADBE":792.763,"AGRO":-30.244999999999976,"AIG":656,"AMD":120,"AMGN":1968,"AMX":670.4787980000001,"AMZN":2134,"ARCO":24.352000000000025,"AUY":200.784,"AXP":1744,"AZN":297.07899999999995,"BA":1166,"BABA":10339.189999999999,"BAC":5777,"BBD":1471.1970000000001,"BBVA":1362.404,"BCS":-359.13599999999997,"BG":-1488,"BIDU":-908.1519999999999,"BIIB":1545.9,"BMY":1353,"BP":-744.94,"BRFS":115.375597,"BSBR":984.7090000000001,"C":4901,"CAT":1494,"CHL":0,"CRM":-109,"CS":893.281,"CSCO":2926,"CVX":2580,"CX":166.40700000000004,"DE":721,"DESP":-3.6840000000000126,"DIS":785,"EBAY":310,"ERJ":-2.610188999999988,"FB":6091,"FDX":744,"FMX":373.982,"GE":-1283,"GGB":71.735757,"GILD":-1165,"GLOB":15.078000000000005,"GOLD":2275.133,"GOOGL":7068,"GS":1877,"GSK":1913.2060000000004,"HD":2769,"HMY":0,"HPQ":388,"HWM":95,"IBM":1675,"IBN":160.71299999999994,"INTC":5990,"ITUB":1301.837,"JD":87.17899999999999,"JNJ":1753,"JPM":9029,"KO":2593,"LMT":1608,"LVS":533,"LYG":0,"MCD":1608.5000000000002,"MELI":-146.08200000000005,"MMM":1583,"MO":-2601,"MOD":-4.700000000000018,"MSFT":10678,"NEM":2226,"NFLX":665.0050000000001,"NKE":1367,"NOK":96.11900000000001,"NVDA":899,"OGZD":3276.5519999999997,"ORCL":2137,"PBR":-64.643,"PEP":2100,"PFE":7676,"PG":3593,"PTR":1262.764,"PYPL":462,"QCOM":506,"RDS.A":5841.089,"SAN":556.8170000000001,"SBUX":803.2,"SID":-250.67200000000003,"SLB":-11383,"SNAP":-227.375,"SONY":1750.5100000000002,"T":3700,"TGT":938,"TOT":2773.414,"TRIP":50,"TS":106.41599999999995,"TSLA":143,"TWTR":36.521999999999984,"TX":90.505,"UGP":75.175,"V":2916,"VALE":1647.4409999999998,"VIST":21.439325000000004,"VOD":0,"VZ":5194,"WFC":4610,"WMT":3288,"X":-84,"XOM":3170,"ABBV":1874,"AVGO":715,"BIOX":-7.0506319999999985,"BRK.B":16524,"CAAP":-24.566,"DOCU":-68.63200000000002,"EFX":81.10000000000002,"ETSY":14.800999999999988,"GPRK":6.756999999999991,"HAL":295,"MA":2108,"PAAS":37.559955999999985,"PSX":710,"SHOP":-72.78399999999999,"SNOW":0,"SPOT":267.968,"SQ":28.923000000000037,"UNH":3538,"UNP":1555,"WBA":677,"ZM":5.520999999999987},
+{"Fecha":"Dic/2019","AAPL":22236,"ABEV":995.938,"ABT":1044,"ADBE":851.861,"AGRO":9.634999999999982,"AIG":880,"AMD":170,"AMGN":1703,"AMX":1101.2429999999997,"AMZN":3268,"ARCO":32.95899999999998,"AUY":14.86161600000002,"AXP":1681,"AZN":368.91,"BA":-1010,"BABA":7426.295,"BAC":6994,"BBD":1186.312,"BBVA":-169.89399999999998,"BCS":876.6369999999998,"BG":-59,"BIDU":900.876,"BIIB":1440.5,"BMY":-1056,"BP":18.778999999999957,"BRFS":168.680672,"BSBR":1325.064,"C":4950,"CAT":1098,"CHL":0,"CRM":-248,"CS":860.292,"CSCO":2878,"CVX":-6610,"CX":-151.10400000000007,"DE":517,"DESP":-2.6449999999999907,"DIS":2133,"EBAY":558,"ERJ":-184.57133599999995,"FB":7349,"FDX":559,"FMX":248.50300000000004,"GE":854,"GGB":23.835438,"GILD":2696,"GLOB":13.453000000000007,"GOLD":1401.174,"GOOGL":10671,"GS":1917,"GSK":1671.533,"HD":2481,"HMY":0,"HPQ":678,"HWM":309,"IBM":3669,"IBN":655.63,"INTC":6905,"ITUB":2107.221,"JD":516.229,"JNJ":4010,"JPM":8477,"KO":2042,"LMT":1498,"LVS":629,"LYG":0,"MCD":1572.1,"MELI":-53.998000000000005,"MMM":969,"MO":-1821,"MOD":1.2000000000000002,"MSFT":11649,"NEM":537,"NFLX":586.4580000000001,"NKE":1115,"NOK":623.3209999999999,"NVDA":950,"OGZD":2426.3510000000006,"ORCL":2311,"PBR":1979.8099999999997,"PEP":1766,"PFE":-337,"PG":3717,"PTR":1190.923,"PYPL":507,"QCOM":925,"RDS.A":976.5799999999999,"SAN":3080.7839999999997,"SBUX":885.6999999999999,"SID":254.30800000000002,"SLB":333,"SNAP":-240.70399999999995,"SONY":2110.9770000000003,"T":2394,"TGT":706,"TOT":2614.7560000000003,"TRIP":15,"TS":152.841,"TSLA":105,"TWTR":118.43200000000002,"TX":69.71699999999998,"UGP":-64.64073300000001,"V":3154,"VALE":-1555.8200000000002,"VIST":-44.47430700000001,"VOD":0,"VZ":5095,"WFC":2873,"WMT":4141,"X":-680,"XOM":5690,"ABBV":2788,"AVGO":847,"BIOX":11.314,"BRK.B":29159,"CAAP":-37.32700000000002,"DOCU":-46.597999999999985,"EFX":9.199999999999964,"ETSY":31.290999999999983,"GPRK":-0.16899999999998272,"HAL":-1653,"MA":2100,"PAAS":52.85816599999997,"PSX":735,"SHOP":0.7710000000000434,"SNOW":0,"SPOT":-230.74999999999997,"SQ":390.511,"UNH":3541,"UNP":1403,"WBA":844,"ZM":2.2069999999999834},
+{"Fecha":"Mar/2020","AAPL":11249,"ABEV":244.557,"ABT":541,"ADBE":955,"AGRO":-55.15399999999998,"AIG":1749,"AMD":162,"AMGN":1825,"AMX":-1465.303145,"AMZN":2535,"ARCO":-52.33200000000002,"AUY":42.52400000000001,"AXP":365,"AZN":782.771,"BA":-628,"BABA":453.611,"BAC":4010,"BBD":757.634,"BBVA":-1974.297,"BCS":772.996,"BG":-199,"BIDU":5.49199999999999,"BIIB":1399.4000000000003,"BMY":-775,"BP":-4368.067,"BRFS":-9.332,"BSBR":863.8570000000001,"C":2519,"CAT":1092,"CHL":0,"CRM":99,"CS":1356.695,"CSCO":2774,"CVX":3599,"CX":17.493999999999968,"DE":666,"DESP":-15.223000000000006,"DIS":475,"EBAY":485,"ERJ":-207.63199999999998,"FB":4902,"FDX":314,"FMX":388.76899999999995,"GE":6376,"GGB":48.902,"GILD":1551,"GLOB":13.169999999999998,"GOLD":400,"GOOGL":6836,"GS":1213,"GSK":1998.9569999999994,"HD":2245,"HMY":0,"HPQ":764,"HWM":215,"IBM":1175.5,"IBN":172.69899999999996,"INTC":5661,"ITUB":774.9039999999999,"JD":154.229,"JNJ":5796,"JPM":2852,"KO":2775,"LMT":1717,"LVS":-1,"LYG":0,"MCD":1106,"MELI":-21.10899999999996,"MMM":1292,"MO":1550,"MOD":-6.700000000000025,"MSFT":10752,"NEM":837,"NFLX":708.811,"NKE":847,"NOK":-112.33600000000003,"NVDA":917,"OGZD":-1734.9850000000001,"ORCL":2571,"PBR":-10869.311,"PEP":1338,"PFE":3401,"PG":2869,"PTR":-66980,"PYPL":84,"QCOM":468,"RDS.A":-24.871000000000006,"SAN":364.83599999999996,"SBUX":328.70000000000005,"SID":-304.77500000000003,"SLB":-7376,"SNAP":-305.936,"SONY":115.15699999999997,"T":4610,"TGT":833,"TOT":33.94500000000008,"TRIP":-16,"TS":-659.934,"TSLA":16,"TWTR":-8.396000000000097,"TX":-11.73600000000003,"UGP":36.648999999999994,"V":2973,"VALE":220.4539999999999,"VIST":-20.70100000000001,"VOD":0,"VZ":4156,"WFC":653,"WMT":3990,"X":-391,"XOM":-610,"ABBV":2996,"AVGO":380,"BIOX":-3.120982000000003,"BRK.B":-49746,"CAAP":-15.054999999999994,"DOCU":-47.407000000000004,"EFX":112.59999999999997,"ETSY":12.522000000000013,"GPRK":-89.54199999999999,"HAL":-1017,"MA":1693,"PAAS":-72.58254600000001,"PSX":-2497,"SHOP":-31.42899999999996,"SNOW":0,"SPOT":1.5200000000000031,"SQ":-106.00000000000006,"UNH":3382,"UNP":1474,"WBA":946,"ZM":15.312999999999999},
+{"Fecha":"Jun/2020","AAPL":11253,"ABEV":227.96,"ABT":534,"ADBE":1101,"AGRO":-11.933999999999985,"AIG":-7927,"AMD":157,"AMGN":1803,"AMX":861.18,"AMZN":5243,"ARCO":-89.544,"AUY":0,"AXP":255,"AZN":767.4069999999998,"BA":-2376,"BABA":6714.038,"BAC":3533,"BBD":651.484,"BBVA":701.443,"BCS":111.72399999999999,"BG":521,"BIDU":504.83000000000004,"BIIB":1542.5,"BMY":-85,"BP":-16887.982999999997,"BRFS":57.474423,"BSBR":381.30499999999995,"C":1306,"CAT":458,"CHL":0,"CRM":2625,"CS":1206.2730000000001,"CSCO":2636,"CVX":-8270,"CX":8.816000000000027,"DE":811,"DESP":-57.07400000000001,"DIS":-4718,"EBAY":740,"ERJ":-312.7201799999999,"FB":5178,"FDX":-333,"FMX":-501.696,"GE":-2130,"GGB":58.15453200000001,"GILD":-3339,"GLOB":10.019000000000002,"GOLD":357,"GOOGL":6959,"GS":373,"GSK":2809.345,"HD":4332,"HMY":0,"HPQ":734,"HWM":-84,"IBM":1364,"IBN":410.94899999999996,"INTC":5105,"ITUB":320.1620000000001,"JD":2320.2580000000003,"JNJ":3626,"JPM":4666,"KO":1779,"LMT":1626,"LVS":-820,"LYG":0,"MCD":484.20000000000005,"MELI":55.947000000000045,"MMM":1290,"MO":1940,"MOD":-8.600000000000009,"MSFT":11202,"NEM":412,"NFLX":719.268,"NKE":-790,"NOK":87.32899999999998,"NVDA":622,"OGZD":2061.244,"ORCL":3116,"PBR":-503.36799999999994,"PEP":1646,"PFE":3425,"PG":2800,"PTR":-1939.8000000000002,"PYPL":1530,"QCOM":845,"RDS.A":-18169.467,"SAN":-12256.178,"SBUX":-679,"SID":64.23299999999995,"SLB":-3434,"SNAP":-325.95099999999996,"SONY":2169.22,"T":1281,"TGT":284,"TOT":-8437.265,"TRIP":-153,"TS":-48.701000000000015,"TSLA":104,"TWTR":-1378.106,"TX":44.052147,"UGP":7.97099999999999,"V":2288,"VALE":981.6709999999999,"VIST":-39.628,"VOD":0,"VZ":4700,"WFC":-2379,"WMT":6476,"X":-589,"XOM":-1080,"ABBV":-756,"AVGO":568,"BIOX":2.049200999999998,"BRK.B":26295,"CAAP":-55.431,"DOCU":-47.803999999999995,"EFX":95.89999999999996,"ETSY":96.42499999999997,"GPRK":-19.854,"HAL":-1676,"MA":1420,"PAAS":20.408892000000005,"PSX":-143,"SHOP":35.998000000000005,"SNOW":0,"SPOT":-392.558,"SQ":-11.452999999999976,"UNH":6637,"UNP":1132,"WBA":-1708,"ZM":27.03599999999996},
+{"Fecha":"Sep/2020","AAPL":12673,"ABEV":423.06,"ABT":1226,"ADBE":942,"AGRO":20.015999999999963,"AIG":283,"AMD":390,"AMGN":2021,"AMX":852.906862,"AMZN":6331,"ARCO":-29.612000000000013,"AUY":55.46599999999997,"AXP":1066,"AZN":736.8949999999999,"BA":-449,"BABA":4158.7,"BAC":4881,"BBD":780.001,"BBVA":1332.1960000000001,"BCS":788.956,"BG":274,"BIDU":1976.7749999999999,"BIIB":701.0999999999998,"BMY":1872,"BP":-398.40200000000004,"BRFS":41.32029699999999,"BSBR":706.595416,"C":3219,"CAT":668,"CHL":0,"CRM":1081,"CS":593.55,"CSCO":2174,"CVX":-207,"CX":-1455.545,"DE":757,"DESP":-41.666000000000004,"DIS":-710,"EBAY":621,"ERJ":-120.70822000000005,"FB":7846,"FDX":1243,"FMX":145.61299999999997,"GE":-1114,"GGB":146.51999999999998,"GILD":360,"GLOB":12.339000000000016,"GOLD":882,"GOOGL":11247,"GS":3367,"GSK":1606.2870000000003,"HD":3432,"HMY":0,"HPQ":668,"HWM":36,"IBM":1698,"IBN":656.453,"INTC":4276,"ITUB":880.042,"JD":1092.917,"JNJ":3554,"JPM":9396,"KO":1737,"LMT":1753,"LVS":-565,"LYG":0,"MCD":1762.5,"MELI":15.334000000000053,"MMM":1413,"MO":-953,"MOD":8.599999999999985,"MSFT":13893,"NEM":611,"NFLX":790.1129999999999,"NKE":1518,"NOK":233.67000000000002,"NVDA":1336,"OGZD":-3404.8100000000004,"ORCL":2251,"PBR":-286.86699999999996,"PEP":2291,"PFE":2194,"PG":4277,"PTR":5788.795999999999,"PYPL":1021,"QCOM":2960,"RDS.A":1244.8880000000001,"SAN":2045.4370000000001,"SBUX":392.7,"SID":201.29200000000006,"SLB":-82,"SNAP":-199.853,"SONY":4330.092,"T":2816,"TGT":1690,"TOT":205.0509999999999,"TRIP":-48,"TS":-33.02699999999999,"TSLA":300,"TWTR":28.659,"TX":143.079,"UGP":49.11615000000001,"V":2060,"VALE":2903.851,"VIST":-28.447,"VOD":0,"VZ":4357,"WFC":2035,"WMT":5135,"X":-234,"XOM":-680,"ABBV":2291,"AVGO":689,"BIOX":-6.971584000000002,"BRK.B":30137,"CAAP":-143.273,"DOCU":-64.55999999999997,"EFX":223.9,"ETSY":91.76099999999998,"GPRK":-4.3509999999999955,"HAL":-17,"MA":1513,"PAAS":65.58283999999999,"PSX":-801,"SHOP":191.06799999999996,"SNOW":-77.634,"SPOT":-118.74800000000003,"SQ":36.207999999999984,"UNH":3172,"UNP":1363,"WBA":373,"ZM":185.74199999999996},
+{"Fecha":"Dic/2020","AAPL":28755,"ABEV":1256.406,"ABT":2147,"ADBE":2244,"AGRO":47.309000000000005,"AIG":-53,"AMD":1781,"AMGN":1615,"AMX":1815.513972,"AMZN":7222,"ARCO":22.036000000000083,"AUY":105.35,"AXP":1429,"AZN":1060.631,"BA":-8420,"BABA":11986.415,"BAC":5470,"BBD":1012.037,"BBVA":3635.1090000000004,"BCS":290.49699999999996,"BG":559,"BIDU":780.7570000000001,"BIIB":357.6999999999998,"BMY":-10027,"BP":1377.2800000000002,"BRFS":168.923,"BSBR":686.759,"C":4603,"CAT":780,"CHL":0,"CRM":267,"CS":-390.555,"CSCO":2545,"CVX":-665,"CX":84.56799999999997,"DE":1224,"DESP":-26.403,"DIS":29,"EBAY":781,"ERJ":-1.3272559999999909,"FB":11219,"FDX":1224,"FMX":-61.39399999999996,"GE":2542,"GGB":194.453,"GILD":1551,"GLOB":18.688999999999982,"GOLD":700.2819999999997,"GOOGL":15227,"GS":4506,"GSK":894.3790000000001,"HD":2857,"HMY":0,"HPQ":1068,"HWM":106,"IBM":1273,"IBN":744.846,"INTC":5857,"ITUB":1663.4099999999999,"JD":3670.1659999999997,"JNJ":1738,"JPM":12079,"KO":1456,"LMT":1792,"LVS":-299,"LYG":0,"MCD":1377.3,"MELI":-50.88399999999994,"MMM":1389,"MO":1918,"MOD":-195.70000000000002,"MSFT":15463,"NEM":806,"NFLX":541.914,"NKE":1251,"NOK":-3111.422,"NVDA":1457,"OGZD":4625.262,"ORCL":2442,"PBR":11091.951,"PEP":1845,"PFE":337,"PG":3854,"PTR":69351,"PYPL":1567,"QCOM":2455,"RDS.A":-3638.064,"SAN":330.416,"SBUX":622,"SID":690.299,"SLB":374,"SNAP":-113.09900000000005,"SONY":3559.4869999999996,"T":-13883,"TGT":1014,"TOT":893.4939999999999,"TRIP":-73,"TS":106.62650200000002,"TSLA":270,"TWTR":222.07500000000005,"TX":591.7170000000001,"UGP":78.71,"V":3038,"VALE":894.477,"VIST":-13.812000000000001,"VOD":0,"VZ":4588,"WFC":2992,"WMT":-2091,"X":49,"XOM":-20070,"ABBV":20,"AVGO":1324,"BIOX":0.6469749999999979,"BRK.B":35835,"CAAP":-39.28199999999998,"DOCU":-58.491000000000014,"EFX":74.99999999999997,"ETSY":148.53800000000007,"GPRK":-119.91300000000001,"HAL":-235,"MA":1785,"PAAS":172.73796600000003,"PSX":-541,"SHOP":123.87200000000006,"SNOW":-168.889,"SPOT":-148.37999999999994,"SQ":294.235,"UNH":2212,"UNP":1380,"WBA":-308,"ZM":198.44000000000008},
+{"Fecha":"Mar/2021","AAPL":23630,"ABEV":479.10200000000003,"ABT":1785,"ADBE":1262,"AGRO":18.21399999999998,"AIG":3876,"AMD":555,"AMGN":1646,"AMX":89.675988,"AMZN":8107,"ARCO":-29.71300000000006,"AUY":52.69072299999998,"AXP":2220,"AZN":1590,"BA":-537,"BABA":-844.999,"BAC":8050,"BBD":1122.606,"BBVA":1124.8680000000002,"BCS":2349.179,"BG":831,"BIDU":3959.785,"BIIB":410.20000000000005,"BMY":2021,"BP":4696,"BRFS":4.947705000000033,"BSBR":739.778,"C":7878,"CAT":1530,"CHL":0,"CRM":469,"CS":-278.1329999999999,"CSCO":2863,"CVX":1377,"CX":632.509,"DE":1790,"DESP":-37.383,"DIS":912,"EBAY":569,"ERJ":-89.38081300000005,"FB":9497,"FDX":889,"FMX":224.07999999999998,"GE":92,"GGB":447.429,"GILD":1729,"GLOB":21.667000000000012,"GOLD":542.7420000000002,"GOOGL":17930,"GS":6836,"GSK":-1275.545,"HD":4145,"HMY":0,"HPQ":1228,"HWM":80,"IBM":958,"IBN":670.317,"INTC":3361,"ITUB":1036.892,"JD":558.896,"JNJ":6197,"JPM":14230,"KO":2245,"LMT":1837,"LVS":-216,"LYG":0,"MCD":1537.7,"MELI":-34.44999999999994,"MMM":1624,"MO":1421,"MOD":-15.000000000000046,"MSFT":15457,"NEM":538,"NFLX":1705.859,"NKE":1449,"NOK":325.619,"NVDA":1912,"OGZD":5981.0689999999995,"ORCL":5014,"PBR":212.972,"PEP":1714,"PFE":4868,"PG":3269,"PTR":4278.0019999999995,"PYPL":1097,"QCOM":1762,"RDS.A":10849,"SAN":1936.7520000000004,"SBUX":659.8000000000001,"SID":956.4520000000001,"SLB":299,"SNAP":-286.87500000000006,"SONY":963.37,"T":7550,"TGT":1380,"TOT":0,"TRIP":-80,"TS":106.55699999999995,"TSLA":438,"TWTR":67.99499999999992,"TX":596.8739999999999,"UGP":23.964758000000007,"V":2951,"VALE":5578.053999999999,"VIST":4.858,"VOD":0,"VZ":5245,"WFC":4742,"WMT":2730,"X":91,"XOM":2730,"ABBV":3529,"AVGO":1378,"BIOX":-1.1804349999999997,"BRK.B":11711,"CAAP":-44.06299999999999,"DOCU":-72.41199999999999,"EFX":201.59999999999994,"ETSY":143.76799999999997,"GPRK":-10.337000000000002,"HAL":170,"MA":1828,"PAAS":-7.855284000000007,"PSX":-656,"SHOP":1258.258,"SNOW":-198.935,"SPOT":27.879999999999967,"SQ":38.415999999999954,"UNH":4862,"UNP":1341,"WBA":921,"ZM":260.3929999999999},
+{"Fecha":"Jun/2021","AAPL":21744,"ABEV":544.8140000000001,"ABT":1184,"ADBE":1119,"AGRO":16.865000000000006,"AIG":99,"AMD":710,"AMGN":464,"AMX":2140.684303,"AMZN":7778,"ARCO":4.933000000000034,"AUY":-93.30199999999996,"AXP":2264,"AZN":534,"BA":587,"BABA":6989.6900000000005,"BAC":9224,"BBD":1129.929,"BBVA":599.0439999999999,"BCS":2947.944,"BG":362,"BIDU":-90.57345000000004,"BIIB":448.5,"BMY":1055,"BP":3045,"BRFS":-38.608407000000035,"BSBR":755.874,"C":6142,"CAT":1413,"CHL":0,"CRM":535,"CS":277.88999999999993,"CSCO":3009,"CVX":3082,"CX":267.65799999999996,"DE":1667,"DESP":-31.099999999999994,"DIS":923,"EBAY":294,"ERJ":83.04659699999999,"FB":10394,"FDX":1864,"FMX":152.7519999999999,"GE":-570,"GGB":740.851,"GILD":1522,"GLOB":19.947000000000013,"GOLD":406.7520000000001,"GOOGL":18525,"GS":5486,"GSK":1950.1989999999998,"HD":4807,"HMY":0,"HPQ":1108,"HWM":74,"IBM":1325,"IBN":643.6619999999999,"INTC":5061,"ITUB":1589.1370000000002,"JD":122.952,"JNJ":6278,"JPM":11889,"KO":2641,"LMT":1815,"LVS":-230,"LYG":0,"MCD":2219.6000000000004,"MELI":68.44999999999996,"MMM":1524,"MO":2146,"MOD":2.300000000000026,"MSFT":16458,"NEM":640,"NFLX":1353.383,"NKE":1509,"NOK":414.96599999999995,"NVDA":2374,"OGZD":7002.852000000001,"ORCL":4039,"PBR":8101.834,"PEP":2358,"PFE":5538,"PG":2906,"PTR":3921.4930000000004,"PYPL":1184,"QCOM":2027,"RDS.A":3307,"SAN":2491.611,"SBUX":1153.3999999999999,"SID":938.7740000000002,"SLB":431,"SNAP":-151.6580000000001,"SONY":1897.2969999999998,"T":1570,"TGT":2097,"TOT":0,"TRIP":-40,"TS":293.96600000000007,"TSLA":1142,"TWTR":65.22499999999998,"TX":1016.9799999999998,"UGP":-5.666809000000001,"V":2515,"VALE":7580.984,"VIST":5.504999999999981,"VOD":0,"VZ":5800,"WFC":6040,"WMT":4276,"X":1012,"XOM":4690,"ABBV":749,"AVGO":1493,"BIOX":0.6339869999999945,"BRK.B":28094,"CAAP":-33.974,"DOCU":-8.354,"EFX":215.30000000000007,"ETSY":98.25599999999999,"GPRK":-2.4679999999999747,"HAL":227,"MA":2066,"PAAS":70.33656200000003,"PSX":291,"SHOP":878.653,"SNOW":-203.21900000000005,"SPOT":-24.000999999999962,"SQ":203.60899999999998,"UNH":4266,"UNP":1798,"WBA":1104,"ZM":227.38799999999995},
+{"Fecha":"Sep/2021","AAPL":20551,"ABEV":679.6680000000001,"ABT":2092,"ADBE":1207,"AGRO":36.65900000000004,"AIG":1667,"AMD":923,"AMGN":1884,"AMX":788.6859999999999,"AMZN":3156,"ARCO":24.70500000000003,"AUY":25.723999999999993,"AXP":1803,"AZN":-1652,"BA":-109,"BABA":829.6630000000001,"BAC":7691,"BBD":1271.425,"BBVA":1556.3829999999998,"BCS":1992.84,"BG":653,"BIDU":-2560.526336,"BIIB":329.90000000000003,"BMY":1546,"BP":-2544,"BRFS":-52.13076800000001,"BSBR":737.4483749999999,"C":4619,"CAT":1426,"CHL":0,"CRM":468,"CS":472.885,"CSCO":2980,"CVX":6111,"CX":-350.8070000000001,"DE":1283,"DESP":-23.672000000000008,"DIS":160,"EBAY":283,"ERJ":-44.792619999999985,"FB":9194,"FDX":1110,"FMX":704.5640000000001,"GE":646,"GGB":1067.139,"GILD":2592,"GLOB":25.477999999999994,"GOLD":346.4720000000001,"GOOGL":18936,"GS":5378,"GSK":1610.1190000000001,"HD":4129,"HMY":0,"HPQ":3099,"HWM":27,"IBM":1131,"IBN":822.116,"INTC":6823,"ITUB":1162.118,"JD":-433.04599999999994,"JNJ":3667,"JPM":11631,"KO":2471,"LMT":614,"LVS":-467,"LYG":0,"MCD":2149.7000000000003,"MELI":94.63100000000001,"MMM":1434,"MO":-2724,"MOD":0.39999999999997654,"MSFT":20505,"NEM":-8,"NFLX":1447.818,"NKE":1874,"NOK":403.076,"NVDA":2464,"OGZD":7888.161,"ORCL":2462,"PBR":5954.268999999999,"PEP":2224,"PFE":8155,"PG":4112,"PTR":3414.7729999999992,"PYPL":1087,"QCOM":2798,"RDS.A":-447,"SAN":2561.6769999999997,"SBUX":1764.7,"SID":220.02500000000006,"SLB":550,"SNAP":-72.42199999999993,"SONY":1859.9579999999999,"T":5918,"TGT":1817,"TOT":0,"TRIP":1,"TS":330.41700000000003,"TSLA":1618,"TWTR":-536.569,"TX":1195.9379999999996,"UGP":70.63567800000001,"V":3503,"VALE":3862.081,"VIST":4.731999999999992,"VOD":0,"VZ":6407,"WFC":5122,"WMT":3105,"X":2002,"XOM":6750,"ABBV":3158,"AVGO":1876,"BIOX":0.8747640000000021,"BRK.B":10344,"CAAP":-15.038000000000022,"DOCU":-25.501,"EFX":205.5,"ETSY":89.93799999999999,"GPRK":37.012000000000015,"HAL":236,"MA":2414,"PAAS":20.11310599999998,"PSX":400,"SHOP":1148.31,"SNOW":-189.71400000000003,"SPOT":2.043000000000035,"SQ":-3.177999999999999,"UNH":4086,"UNP":1673,"WBA":358,"ZM":316.44100000000003}]
+
+
+
+const discontinuedOperations = [{"Fecha":"Dic/2018","AAPL":0,"ABEV":0,"ABT":-1,"AIG":-2,"AMZN":0,"ARCO":0,"BG":-2,"BRFS":0,"C":-8,"CX":0,"DIS":0,"EBAY":-3,"ERJ":0,"FMX":140.742,"GE":-92,"GLOB":0,"GOLD":0,"GOOGL":0,"HWM":0,"IBM":-2,"KO":76,"LMT":0,"MCD":0,"MELI":0,"NEM":5,"NFLX":0,"NOK":2.282,"PBR":0,"PFE":0,"SAN":0,"TGT":1,"TSLA":0},
+{"Fecha":"Mar/2019","AAPL":0,"ABEV":0,"ABT":0,"AIG":0,"AMZN":0,"ARCO":0,"BG":0,"BRFS":-238.843,"C":-2,"CX":0,"DIS":21,"EBAY":-3,"ERJ":-38.591,"GE":33,"GLOB":0,"GOLD":0,"GOOGL":0,"HWM":0,"IBM":-2,"KO":57,"LMT":0,"MCD":0,"MELI":0,"NEM":-26,"NFLX":0,"NOK":-3.406,"PBR":0,"PFE":0,"SAN":0,"TGT":3,"TSLA":0,"AVGO":-10,"PAAS":-1.92,"WBA":0},
+{"Fecha":"Jun/2019","AAPL":0,"ABEV":0,"ABT":0,"AIG":-1,"AMZN":0,"ARCO":0,"BG":0,"BRFS":-5.463,"C":17,"CX":0,"DIS":323,"EBAY":-1,"ERJ":28.699,"GE":230,"GLOB":0,"GOLD":0,"GOOGL":0,"HWM":0,"IBM":-1,"KO":0,"LMT":0,"MCD":0,"MELI":0,"NEM":-26,"NFLX":0,"NOK":-3.371,"PBR":77.038,"PFE":0,"SAN":0,"TGT":0,"TSLA":0,"AVGO":-2,"PAAS":14.983,"WBA":0},
+{"Fecha":"Sep/2019","AAPL":0,"ABEV":0,"ABT":0,"AIG":0,"AMZN":0,"ARCO":0,"BG":0,"BRFS":-32.748,"C":-15,"CX":1.984,"DIS":269,"EBAY":0,"ERJ":-76.629,"GE":61,"GLOB":0,"GOLD":0,"GOOGL":0,"HWM":0,"IBM":-1,"KO":0,"LMT":0,"MCD":0,"MELI":0,"NEM":-48,"NFLX":0,"NOK":-2.224,"PBR":2356,"PFE":4,"SAN":0,"TGT":8,"TSLA":0,"AVGO":0,"PAAS":0,"WBA":0},
+{"Fecha":"Dic/2019","AAPL":0,"ABEV":0,"ABT":0,"AIG":49,"AMZN":0,"ARCO":0,"BG":0,"BRFS":-2.685,"C":-4,"CX":1.004,"DIS":-26,"EBAY":-2,"ERJ":-26.58,"GE":340,"GLOB":0,"GOLD":0,"GOOGL":0,"HWM":0,"IBM":1,"KO":0,"LMT":0,"MCD":0,"MELI":0,"NEM":28,"NFLX":0,"NOK":0,"PBR":0,"PFE":0,"SAN":0,"TGT":1,"TSLA":0,"AVGO":0,"PAAS":0,"WBA":0},
+{"Fecha":"Mar/2020","AAPL":0,"ABEV":0,"ABT":0,"AIG":0,"AMZN":0,"ARCO":0,"BG":0,"BRFS":-0.95378,"C":-18,"CX":11.707,"DIS":-15,"EBAY":2927,"ERJ":-78.297,"GE":-172,"GLOB":0,"GOLD":0,"GOOGL":0,"HWM":0,"IBM":-1,"KO":0,"LMT":0,"MCD":0,"MELI":0,"NEM":-15,"NFLX":0,"NOK":-16.525,"PBR":0,"PFE":0,"SAN":0,"TGT":0,"TSLA":0,"AVGO":5,"PAAS":0,"WBA":0},
+{"Fecha":"Jun/2020","AAPL":0,"ABEV":0,"ABT":0,"AIG":-1,"AMZN":0,"ARCO":0,"BG":0,"BRFS":-0.371262,"C":-1,"CX":-56.078,"DIS":-3,"EBAY":6,"ERJ":0,"GE":17,"GLOB":0,"GOLD":0,"GOOGL":0,"HWM":-12,"IBM":-1,"KO":0,"LMT":0,"MCD":0,"MELI":0,"NEM":-68,"NFLX":0,"NOK":15.418,"PBR":0,"PFE":0,"SAN":0,"TGT":0,"TSLA":0,"AVGO":-5,"PAAS":0,"WBA":0},
+{"Fecha":"Sep/2020","AAPL":0,"ABEV":0,"ABT":0,"AIG":5,"AMZN":0,"ARCO":0,"BG":0,"BRFS":-1.587,"C":-7,"CX":-80.232,"DIS":0,"EBAY":43,"ERJ":0,"GE":-26,"GLOB":0,"GOLD":0,"GOOGL":0,"HWM":0,"IBM":-1,"KO":0,"LMT":-55,"MCD":0,"MELI":0,"NEM":228,"NFLX":0,"NOK":-7.013,"PBR":0,"PFE":0,"SAN":0,"TGT":0,"TSLA":0,"AVGO":-1,"PAAS":0,"WBA":0},
+{"Fecha":"Dic/2020","AAPL":0,"ABEV":0,"ABT":4,"BBVA":-2061,"BG":0,"BRFS":-0.962762,"C":6,"CX":-14.783,"DIS":-12,"EBAY":64,"ERJ":0,"GE":88,"HWM":0,"IBM":92,"KO":0,"LMT":0,"NEM":18,"NOK":4.769,"PBR":0,"PFE":257,"TGT":0,"AVGO":0,"PAAS":0,"WBA":0},
+{"Fecha":"Mar/2021","BBVA":213.194,"BRFS":-0.402236,"C":-2,"CX":31.965,"DIS":-11,"EBAY":72,"GE":-149,"IBM":-1,"LMT":0,"LVS":-62,"NEM":21,"NOK":-10.84,"PFE":9,"AVGO":0,"WBA":105},
+{"Fecha":"Jun/2021","BBVA":89.216,"BRFS":-7.96,"C":10,"CX":1.639,"DIS":-5,"EBAY":10440,"GE":533,"LVS":38,"NEM":10,"NOK":1.206,"PFE":24,"WBA":93},
+{"Fecha":"Sep/2021","BBVA":0,"BRFS":-1.367,"C":-1,"CX":-7.038,"DIS":-1,"EBAY":-19,"GE":4208,"LVS":99,"NEM":11,"NOK":1.179,"PFE":-9,"WBA":268}]
+
+
+
+const netIncome = [{"Fecha":"Dic/2018","AAPL":19965,"ABEV":882.577,"ABT":649,"ADBE":678.24,"AGRO":-4.770000000000016,"AIG":-622,"AMD":37,"AMGN":1928,"AMX":537.9819999999999,"AMZN":3027,"ARCO":9.235999999999942,"AUY":-59.37099999999997,"AXP":1994,"AZN":1026.4759999999999,"BA":3422,"BABA":4776.834000000001,"BAC":7278,"BBD":1335.368,"BBVA":1143.475,"BCS":-18.010000000000048,"BG":-65,"BIDU":281.29100000000005,"BIIB":946.2999999999997,"BMY":1192,"BP":759.5490000000001,"BRFS":-550.9110780000001,"BSBR":970.3320000000001,"C":4264,"CAT":1048,"CHL":0,"CRM":362,"CS":293.21500000000003,"CSCO":2822,"CVX":3730,"CX":-36.052999999999955,"DE":498.19999999999993,"DESP":3.029999999999978,"DIS":2788,"EBAY":760,"ERJ":-20.546584000000024,"FB":6882,"FDX":933,"FMX":534.5289999999999,"GE":761,"GGB":101.31299999999997,"GILD":3,"GLOB":11.509000000000004,"GOLD":-1197,"GOOGL":8948,"GS":2538,"GSK":1562.5800000000002,"HD":2344,"HMY":0,"HPQ":803,"HWM":218,"IBM":1951.0000000000005,"IBN":259.846,"INTC":5195,"ITUB":1747.4150000000002,"JD":-694.869,"JNJ":3042,"JPM":7025,"KO":870,"LMT":1253,"LVS":-170,"LYG":0,"MCD":1415.2999999999997,"MELI":-2.3360000000000163,"MMM":1347,"MO":1249,"MOD":17.89999999999998,"MSFT":8420,"NEM":2,"NFLX":134.167,"NKE":847,"NOK":218.55600000000007,"NVDA":567,"OGZD":6594.097,"ORCL":2333,"PBR":552.3270000000001,"PEP":6854,"PFE":-394,"PG":3194,"PTR":645.368,"PYPL":584,"QCOM":1068,"RDS.A":5544.465,"SAN":2359.968,"SBUX":759.9000000000001,"SID":451.30899999999997,"SLB":538,"SNAP":-191.66799999999998,"SONY":3804.359,"T":4858,"TGT":4757,"TOT":1126.8970000000002,"TRIP":7,"TS":224.60272400000002,"TSLA":139.33200000000002,"TWTR":255.30299999999997,"TX":368.603,"UGP":133.06,"V":2872,"VALE":3803.9689999999996,"VIST":0,"VOD":0,"VZ":1939,"WFC":6064,"WMT":3687,"X":592,"XOM":6000,"ABBV":8305,"AVGO":5444,"BIOX":0,"BRK.B":63714,"CAAP":371.021,"DOCU":178.385,"EFX":835.3,"ETSY":200.028,"GPRK":151.2,"HAL":5936,"MA":0,"PAAS":167.625,"PSX":28679,"SHOP":343.862,"SNOW":0,"SPOT":1706,"SQ":932.528,"UNH":0,"UNP":5757,"WBA":33793,"ZM":0},
+{"Fecha":"Mar/2019","AAPL":11561,"ABEV":706.519,"ABT":668,"ADBE":674.241,"AGRO":-3.153000000000015,"AIG":654,"AMD":16,"AMGN":1992,"AMX":1012.9311540000001,"AMZN":3561,"ARCO":12.165000000000017,"AUY":-4.080000000000042,"AXP":1539,"AZN":599.3759999999999,"BA":2147,"BABA":3829.1699999999996,"BAC":7311,"BBD":1544.885,"BBVA":1321.576,"BCS":1352.1009999999999,"BG":45,"BIDU":-48.72127500000003,"BIIB":1409.7,"BMY":1710,"BP":2965.17,"BRFS":-266.25030499999997,"BSBR":958.0789999999998,"C":4651,"CAT":1881,"CHL":0,"CRM":392,"CS":751.039,"CSCO":3044,"CVX":2649,"CX":-22.426000000000002,"DE":1134.7,"DESP":1.885999999999994,"DIS":5452,"EBAY":518,"ERJ":-42.67792500000004,"FB":2429,"FDX":738,"FMX":116.93300000000002,"GE":1023,"GGB":119.349368,"GILD":1975,"GLOB":12.099000000000009,"GOLD":109.24099999999999,"GOOGL":6657,"GS":2251,"GSK":1080.8549999999998,"HD":2513,"HMY":0,"HPQ":782,"HWM":187,"IBM":1590,"IBN":165.998,"INTC":3974,"ITUB":1790.9830000000002,"JD":1085.973,"JNJ":3749,"JPM":9127,"KO":1678,"LMT":1704,"LVS":582,"LYG":0,"MCD":1329.1,"MELI":11.863999999999983,"MMM":891,"MO":1118,"MOD":6.20000000000002,"MSFT":8809,"NEM":87,"NFLX":343.96799999999996,"NKE":1101,"NOK":-507.43500000000006,"NVDA":394,"OGZD":8129.395,"ORCL":2745,"PBR":1070.3530000000003,"PEP":1413,"PFE":3884,"PG":2745,"PTR":1519.121,"PYPL":667,"QCOM":663,"RDS.A":6064.565,"SAN":2088.8630000000003,"SBUX":663.1,"SID":-2.01,"SLB":421,"SNAP":-310.40700000000004,"SONY":798.038,"T":4096,"TGT":801,"TOT":3113.072,"TRIP":26,"TS":242.706221,"TSLA":-702.7750000000001,"TWTR":190.80399999999992,"TX":214.71699999999996,"UGP":62.801,"V":2871,"VALE":-1705.3039999999999,"VIST":0,"VOD":0,"VZ":5032,"WFC":5860,"WMT":3842,"X":54,"XOM":2350,"ABBV":2444,"AVGO":471,"BIOX":-21.479,"BRK.B":21661,"CAAP":30.441000000000024,"DOCU":-64.93499999999999,"EFX":-555.9,"ETSY":31.564,"GPRK":19.689000000000014,"HAL":152,"MA":1862,"PAAS":33.110636,"PSX":203,"SHOP":-24.15099999999997,"SNOW":0,"SPOT":-161.22199999999998,"SQ":-38.15099999999996,"UNH":3467,"UNP":1391,"WBA":1157,"ZM":5.6970000000000045},
+{"Fecha":"Jun/2019","AAPL":10044,"ABEV":643.024,"ABT":1000,"ADBE":632.593,"AGRO":22.991000000000007,"AIG":1109,"AMD":35,"AMGN":2179,"AMX":734.8719019999997,"AMZN":2625,"ARCO":10.419999999999977,"AUY":14.438000000000017,"AXP":1748,"AZN":128.834,"BA":-2942,"BABA":3114.3759999999997,"BAC":7348,"BBD":1541.6680000000001,"BBVA":1436.483,"BCS":1328.8190000000002,"BG":214,"BIDU":353.297,"BIIB":1494.5,"BMY":1432,"BP":1813.733,"BRFS":44.90743000000001,"BSBR":876.9250000000001,"C":4749,"CAT":1620,"CHL":0,"CRM":91,"CS":933.996,"CSCO":2206,"CVX":4305,"CX":95.08000000000004,"DE":899,"DESP":-16.46699999999999,"DIS":1760,"EBAY":402,"ERJ":6.662326999999987,"FB":2616,"FDX":-1967,"FMX":294.953,"GE":126,"GGB":93.64461800000004,"GILD":1880,"GLOB":13.384999999999993,"GOLD":201.83100000000002,"GOOGL":9947,"GS":2421,"GSK":1237.812,"HD":3479,"HMY":0,"HPQ":1179,"HWM":-121,"IBM":2497,"IBN":361.363,"INTC":4179,"ITUB":1665.1650000000002,"JD":90.55100000000002,"JNJ":5607,"JPM":9596,"KO":2607,"LMT":1420,"LVS":954,"LYG":0,"MCD":1516.4,"MELI":16.216999999999942,"MMM":1127,"MO":1994,"MOD":7.999999999999976,"MSFT":13187,"NEM":-25,"NFLX":270.231,"NKE":989,"NOK":-217.49300000000005,"NVDA":552,"OGZD":4655.425,"ORCL":3740,"PBR":4811.956,"PEP":2035,"PFE":5046,"PG":-5241,"PTR":2663.171,"PYPL":823,"QCOM":2149,"RDS.A":2982.834,"SAN":1562.77,"SBUX":1373.1999999999998,"SID":444.40299999999996,"SLB":492,"SNAP":-255.17399999999998,"SONY":1383.6720000000003,"T":3713,"TGT":792,"TOT":2759.29,"TRIP":34,"TS":242.366,"TSLA":-408.38,"TWTR":1119.779,"TX":182.103,"UGP":28.140820000000016,"V":2991,"VALE":-97.01500000000004,"VIST":3.8890000000000002,"VOD":0,"VZ":3944,"WFC":6206,"WMT":3610,"X":68,"XOM":3130,"ABBV":733,"AVGO":691,"BIOX":-1.122566000000001,"BRK.B":14073,"CAAP":49.12300000000001,"DOCU":-45.72200000000001,"EFX":66.80000000000003,"ETSY":18.214000000000013,"GPRK":31.479999999999997,"HAL":75,"MA":2048,"PAAS":18.80931799999997,"PSX":1422,"SHOP":-28.678000000000026,"SNOW":0,"SPOT":-85.69199999999998,"SQ":-6.977999999999951,"UNH":3293,"UNP":1570,"WBA":1024,"ZM":0.19800000000000217},
+{"Fecha":"Sep/2019","AAPL":13686,"ABEV":629.341,"ABT":954,"ADBE":792.763,"AGRO":-30.244999999999976,"AIG":656,"AMD":120,"AMGN":1968,"AMX":670.4787980000001,"AMZN":2134,"ARCO":24.352000000000025,"AUY":200.784,"AXP":1744,"AZN":297.07899999999995,"BA":1166,"BABA":10339.189999999999,"BAC":5777,"BBD":1471.1970000000001,"BBVA":1362.404,"BCS":-359.13599999999997,"BG":-1488,"BIDU":-908.1519999999999,"BIIB":1545.9,"BMY":1353,"BP":-744.94,"BRFS":82.62759700000001,"BSBR":984.7090000000001,"C":4886,"CAT":1494,"CHL":0,"CRM":-109,"CS":893.281,"CSCO":2926,"CVX":2580,"CX":168.39100000000005,"DE":721,"DESP":-3.6840000000000126,"DIS":1054,"EBAY":310,"ERJ":-79.239189,"FB":6091,"FDX":744,"FMX":373.982,"GE":-1222,"GGB":71.735757,"GILD":-1165,"GLOB":15.078000000000005,"GOLD":2275.133,"GOOGL":7068,"GS":1877,"GSK":1913.2060000000004,"HD":2769,"HMY":0,"HPQ":388,"HWM":95,"IBM":1674,"IBN":160.71299999999994,"INTC":5990,"ITUB":1301.837,"JD":87.17899999999999,"JNJ":1753,"JPM":9029,"KO":2593,"LMT":1608,"LVS":533,"LYG":0,"MCD":1608.5000000000002,"MELI":-146.08200000000005,"MMM":1583,"MO":-2601,"MOD":-4.700000000000018,"MSFT":10678,"NEM":2178,"NFLX":665.0050000000001,"NKE":1367,"NOK":93.89500000000001,"NVDA":899,"OGZD":3276.5519999999997,"ORCL":2137,"PBR":2291.357,"PEP":2100,"PFE":7680,"PG":3593,"PTR":1262.764,"PYPL":462,"QCOM":506,"RDS.A":5841.089,"SAN":556.8170000000001,"SBUX":803.2,"SID":-250.67200000000003,"SLB":-11383,"SNAP":-227.375,"SONY":1750.5100000000002,"T":3700,"TGT":946,"TOT":2773.414,"TRIP":50,"TS":106.41599999999995,"TSLA":143,"TWTR":36.521999999999984,"TX":90.505,"UGP":75.175,"V":2916,"VALE":1647.4409999999998,"VIST":21.439325000000004,"VOD":0,"VZ":5194,"WFC":4610,"WMT":3288,"X":-84,"XOM":3170,"ABBV":1874,"AVGO":715,"BIOX":-7.0506319999999985,"BRK.B":16524,"CAAP":-24.566,"DOCU":-68.63200000000002,"EFX":81.10000000000002,"ETSY":14.800999999999988,"GPRK":6.756999999999991,"HAL":295,"MA":2108,"PAAS":37.559955999999985,"PSX":710,"SHOP":-72.78399999999999,"SNOW":0,"SPOT":267.968,"SQ":28.923000000000037,"UNH":3538,"UNP":1555,"WBA":677,"ZM":5.520999999999987},
+{"Fecha":"Dic/2019","AAPL":22236,"ABEV":995.938,"ABT":1044,"ADBE":851.861,"AGRO":9.634999999999982,"AIG":929,"AMD":170,"AMGN":1703,"AMX":1101.2429999999997,"AMZN":3268,"ARCO":32.95899999999998,"AUY":14.86161600000002,"AXP":1681,"AZN":368.91,"BA":-1010,"BABA":7426.295,"BAC":6994,"BBD":1186.312,"BBVA":-169.89399999999998,"BCS":876.6369999999998,"BG":-59,"BIDU":900.876,"BIIB":1440.5,"BMY":-1056,"BP":18.778999999999957,"BRFS":165.99567199999998,"BSBR":1325.064,"C":4946,"CAT":1098,"CHL":0,"CRM":-248,"CS":860.292,"CSCO":2878,"CVX":-6610,"CX":-150.10000000000008,"DE":517,"DESP":-2.6449999999999907,"DIS":2107,"EBAY":556,"ERJ":-211.15133599999996,"FB":7349,"FDX":559,"FMX":248.50300000000004,"GE":1194,"GGB":23.835438,"GILD":2696,"GLOB":13.453000000000007,"GOLD":1401.174,"GOOGL":10671,"GS":1917,"GSK":1671.533,"HD":2481,"HMY":0,"HPQ":678,"HWM":309,"IBM":3670,"IBN":655.63,"INTC":6905,"ITUB":2107.221,"JD":516.229,"JNJ":4010,"JPM":8477,"KO":2042,"LMT":1498,"LVS":629,"LYG":0,"MCD":1572.1,"MELI":-53.998000000000005,"MMM":969,"MO":-1821,"MOD":1.2000000000000002,"MSFT":11649,"NEM":565,"NFLX":586.4580000000001,"NKE":1115,"NOK":623.3209999999999,"NVDA":950,"OGZD":2426.3510000000006,"ORCL":2311,"PBR":1979.8099999999997,"PEP":1766,"PFE":-337,"PG":3717,"PTR":1190.923,"PYPL":507,"QCOM":925,"RDS.A":976.5799999999999,"SAN":3080.7839999999997,"SBUX":885.6999999999999,"SID":254.30800000000002,"SLB":333,"SNAP":-240.70399999999995,"SONY":2110.9770000000003,"T":2394,"TGT":707,"TOT":2614.7560000000003,"TRIP":15,"TS":152.841,"TSLA":105,"TWTR":118.43200000000002,"TX":69.71699999999998,"UGP":-64.64073300000001,"V":3154,"VALE":-1555.8200000000002,"VIST":-44.47430700000001,"VOD":0,"VZ":5095,"WFC":2873,"WMT":4141,"X":-680,"XOM":5690,"ABBV":2788,"AVGO":847,"BIOX":11.314,"BRK.B":29159,"CAAP":-37.32700000000002,"DOCU":-46.597999999999985,"EFX":9.199999999999964,"ETSY":31.290999999999983,"GPRK":-0.16899999999998272,"HAL":-1653,"MA":2100,"PAAS":52.85816599999997,"PSX":735,"SHOP":0.7710000000000434,"SNOW":0,"SPOT":-230.74999999999997,"SQ":390.511,"UNH":3541,"UNP":1403,"WBA":844,"ZM":2.2069999999999834},
+{"Fecha":"Mar/2020","AAPL":11249,"ABEV":244.557,"ABT":541,"ADBE":955,"AGRO":-55.15399999999998,"AIG":1749,"AMD":162,"AMGN":1825,"AMX":-1465.303145,"AMZN":2535,"ARCO":-52.33200000000002,"AUY":42.52400000000001,"AXP":365,"AZN":782.771,"BA":-628,"BABA":453.611,"BAC":4010,"BBD":757.634,"BBVA":-1974.297,"BCS":772.996,"BG":-199,"BIDU":5.49199999999999,"BIIB":1399.4000000000003,"BMY":-775,"BP":-4368.067,"BRFS":-10.28578,"BSBR":863.8570000000001,"C":2501,"CAT":1092,"CHL":0,"CRM":99,"CS":1356.695,"CSCO":2774,"CVX":3599,"CX":29.20099999999997,"DE":666,"DESP":-15.223000000000006,"DIS":460,"EBAY":3412,"ERJ":-285.929,"FB":4902,"FDX":314,"FMX":388.76899999999995,"GE":6204,"GGB":48.902,"GILD":1551,"GLOB":13.169999999999998,"GOLD":400,"GOOGL":6836,"GS":1213,"GSK":1998.9569999999994,"HD":2245,"HMY":0,"HPQ":764,"HWM":215,"IBM":1174.5,"IBN":172.69899999999996,"INTC":5661,"ITUB":774.9039999999999,"JD":154.229,"JNJ":5796,"JPM":2852,"KO":2775,"LMT":1717,"LVS":-1,"LYG":0,"MCD":1106,"MELI":-21.10899999999996,"MMM":1292,"MO":1550,"MOD":-6.700000000000025,"MSFT":10752,"NEM":822,"NFLX":708.811,"NKE":847,"NOK":-128.86100000000002,"NVDA":917,"OGZD":-1734.9850000000001,"ORCL":2571,"PBR":-10869.311,"PEP":1338,"PFE":3401,"PG":2869,"PTR":-66980,"PYPL":84,"QCOM":468,"RDS.A":-24.871000000000006,"SAN":364.83599999999996,"SBUX":328.70000000000005,"SID":-304.77500000000003,"SLB":-7376,"SNAP":-305.936,"SONY":115.15699999999997,"T":4610,"TGT":833,"TOT":33.94500000000008,"TRIP":-16,"TS":-659.934,"TSLA":16,"TWTR":-8.396000000000097,"TX":-11.73600000000003,"UGP":36.648999999999994,"V":2973,"VALE":220.4539999999999,"VIST":-20.70100000000001,"VOD":0,"VZ":4156,"WFC":653,"WMT":3990,"X":-391,"XOM":-610,"ABBV":2996,"AVGO":385,"BIOX":-3.120982000000003,"BRK.B":-49746,"CAAP":-15.054999999999994,"DOCU":-47.407000000000004,"EFX":112.59999999999997,"ETSY":12.522000000000013,"GPRK":-89.54199999999999,"HAL":-1017,"MA":1693,"PAAS":-72.58254600000001,"PSX":-2497,"SHOP":-31.42899999999996,"SNOW":0,"SPOT":1.5200000000000031,"SQ":-106.00000000000006,"UNH":3382,"UNP":1474,"WBA":946,"ZM":15.312999999999999},
+{"Fecha":"Jun/2020","AAPL":11253,"ABEV":227.96,"ABT":534,"ADBE":1101,"AGRO":-11.933999999999985,"AIG":-7928,"AMD":157,"AMGN":1803,"AMX":861.18,"AMZN":5243,"ARCO":-89.544,"AUY":0,"AXP":255,"AZN":767.4069999999998,"BA":-2376,"BABA":6714.038,"BAC":3533,"BBD":651.484,"BBVA":701.443,"BCS":111.72399999999999,"BG":521,"BIDU":504.83000000000004,"BIIB":1542.5,"BMY":-85,"BP":-16887.982999999997,"BRFS":57.103161,"BSBR":381.30499999999995,"C":1305,"CAT":458,"CHL":0,"CRM":2625,"CS":1206.2730000000001,"CSCO":2636,"CVX":-8270,"CX":-47.26199999999997,"DE":811,"DESP":-57.07400000000001,"DIS":-4721,"EBAY":746,"ERJ":-312.7201799999999,"FB":5178,"FDX":-333,"FMX":-501.696,"GE":-2113,"GGB":58.15453200000001,"GILD":-3339,"GLOB":10.019000000000002,"GOLD":357,"GOOGL":6959,"GS":373,"GSK":2809.345,"HD":4332,"HMY":0,"HPQ":734,"HWM":-96,"IBM":1363,"IBN":410.94899999999996,"INTC":5105,"ITUB":320.1620000000001,"JD":2320.2580000000003,"JNJ":3626,"JPM":4666,"KO":1779,"LMT":1626,"LVS":-820,"LYG":0,"MCD":484.20000000000005,"MELI":55.947000000000045,"MMM":1290,"MO":1940,"MOD":-8.600000000000009,"MSFT":11202,"NEM":344,"NFLX":719.268,"NKE":-790,"NOK":102.74699999999999,"NVDA":622,"OGZD":2061.244,"ORCL":3116,"PBR":-503.36799999999994,"PEP":1646,"PFE":3425,"PG":2800,"PTR":-1939.8000000000002,"PYPL":1530,"QCOM":845,"RDS.A":-18169.467,"SAN":-12256.178,"SBUX":-679,"SID":64.23299999999995,"SLB":-3434,"SNAP":-325.95099999999996,"SONY":2169.22,"T":1281,"TGT":284,"TOT":-8437.265,"TRIP":-153,"TS":-48.701000000000015,"TSLA":104,"TWTR":-1378.106,"TX":44.052147,"UGP":7.97099999999999,"V":2288,"VALE":981.6709999999999,"VIST":-39.628,"VOD":0,"VZ":4700,"WFC":-2379,"WMT":6476,"X":-589,"XOM":-1080,"ABBV":-756,"AVGO":563,"BIOX":2.049200999999998,"BRK.B":26295,"CAAP":-55.431,"DOCU":-47.803999999999995,"EFX":95.89999999999996,"ETSY":96.42499999999997,"GPRK":-19.854,"HAL":-1676,"MA":1420,"PAAS":20.408892000000005,"PSX":-143,"SHOP":35.998000000000005,"SNOW":0,"SPOT":-392.558,"SQ":-11.452999999999976,"UNH":6637,"UNP":1132,"WBA":-1708,"ZM":27.03599999999996},
+{"Fecha":"Sep/2020","AAPL":12673,"ABEV":423.06,"ABT":1226,"ADBE":942,"AGRO":20.015999999999963,"AIG":288,"AMD":390,"AMGN":2021,"AMX":852.906862,"AMZN":6331,"ARCO":-29.612000000000013,"AUY":55.46599999999997,"AXP":1066,"AZN":736.8949999999999,"BA":-449,"BABA":4158.7,"BAC":4881,"BBD":780.001,"BBVA":1332.1960000000001,"BCS":788.956,"BG":274,"BIDU":1976.7749999999999,"BIIB":701.0999999999998,"BMY":1872,"BP":-398.40200000000004,"BRFS":39.733296999999986,"BSBR":706.595416,"C":3212,"CAT":668,"CHL":0,"CRM":1081,"CS":593.55,"CSCO":2174,"CVX":-207,"CX":-1535.777,"DE":757,"DESP":-41.666000000000004,"DIS":-710,"EBAY":664,"ERJ":-120.70822000000005,"FB":7846,"FDX":1243,"FMX":145.61299999999997,"GE":-1140,"GGB":146.51999999999998,"GILD":360,"GLOB":12.339000000000016,"GOLD":882,"GOOGL":11247,"GS":3367,"GSK":1606.2870000000003,"HD":3432,"HMY":0,"HPQ":668,"HWM":36,"IBM":1697,"IBN":656.453,"INTC":4276,"ITUB":880.042,"JD":1092.917,"JNJ":3554,"JPM":9396,"KO":1737,"LMT":1698,"LVS":-565,"LYG":0,"MCD":1762.5,"MELI":15.334000000000053,"MMM":1413,"MO":-953,"MOD":8.599999999999985,"MSFT":13893,"NEM":839,"NFLX":790.1129999999999,"NKE":1518,"NOK":226.657,"NVDA":1336,"OGZD":-3404.8100000000004,"ORCL":2251,"PBR":-286.86699999999996,"PEP":2291,"PFE":2194,"PG":4277,"PTR":5788.795999999999,"PYPL":1021,"QCOM":2960,"RDS.A":1244.8880000000001,"SAN":2045.4370000000001,"SBUX":392.7,"SID":201.29200000000006,"SLB":-82,"SNAP":-199.853,"SONY":4330.092,"T":2816,"TGT":1690,"TOT":205.0509999999999,"TRIP":-48,"TS":-33.02699999999999,"TSLA":300,"TWTR":28.659,"TX":143.079,"UGP":49.11615000000001,"V":2060,"VALE":2903.851,"VIST":-28.447,"VOD":0,"VZ":4357,"WFC":2035,"WMT":5135,"X":-234,"XOM":-680,"ABBV":2291,"AVGO":688,"BIOX":-6.971584000000002,"BRK.B":30137,"CAAP":-143.273,"DOCU":-64.55999999999997,"EFX":223.9,"ETSY":91.76099999999998,"GPRK":-4.3509999999999955,"HAL":-17,"MA":1513,"PAAS":65.58283999999999,"PSX":-801,"SHOP":191.06799999999996,"SNOW":-77.634,"SPOT":-118.74800000000003,"SQ":36.207999999999984,"UNH":3172,"UNP":1363,"WBA":373,"ZM":185.74199999999996},
+{"Fecha":"Dic/2020","AAPL":28755,"ABEV":1256.406,"ABT":2151,"ADBE":2244,"AGRO":47.309000000000005,"AIG":-53,"AMD":1781,"AMGN":1615,"AMX":1815.513972,"AMZN":7222,"ARCO":22.036000000000083,"AUY":105.35,"AXP":1429,"AZN":1060.631,"BA":-8420,"BABA":11986.415,"BAC":5470,"BBD":1012.037,"BBVA":1574,"BCS":290.49699999999996,"BG":559,"BIDU":780.7570000000001,"BIIB":357.6999999999998,"BMY":-10027,"BP":1377.2800000000002,"BRFS":167.960238,"BSBR":686.759,"C":4609,"CAT":780,"CHL":0,"CRM":267,"CS":-390.555,"CSCO":2545,"CVX":-665,"CX":69.78499999999997,"DE":1224,"DESP":-26.403,"DIS":17,"EBAY":845,"ERJ":-1.3272559999999909,"FB":11219,"FDX":1224,"FMX":-61.39399999999996,"GE":2630,"GGB":194.453,"GILD":1551,"GLOB":18.688999999999982,"GOLD":700.2819999999997,"GOOGL":15227,"GS":4506,"GSK":894.3790000000001,"HD":2857,"HMY":0,"HPQ":1068,"HWM":106,"IBM":1365,"IBN":744.846,"INTC":5857,"ITUB":1663.4099999999999,"JD":3670.1659999999997,"JNJ":1738,"JPM":12079,"KO":1456,"LMT":1792,"LVS":-299,"LYG":0,"MCD":1377.3,"MELI":-50.88399999999994,"MMM":1389,"MO":1918,"MOD":-195.70000000000002,"MSFT":15463,"NEM":824,"NFLX":541.914,"NKE":1251,"NOK":-3106.6530000000002,"NVDA":1457,"OGZD":4625.262,"ORCL":2442,"PBR":11091.951,"PEP":1845,"PFE":594,"PG":3854,"PTR":69351,"PYPL":1567,"QCOM":2455,"RDS.A":-3638.064,"SAN":330.416,"SBUX":622,"SID":690.299,"SLB":374,"SNAP":-113.09900000000005,"SONY":3559.4869999999996,"T":-13883,"TGT":1014,"TOT":893.4939999999999,"TRIP":-73,"TS":106.62650200000002,"TSLA":270,"TWTR":222.07500000000005,"TX":591.7170000000001,"UGP":78.71,"V":3038,"VALE":894.477,"VIST":-13.812000000000001,"VOD":0,"VZ":4588,"WFC":2992,"WMT":-2091,"X":49,"XOM":-20070,"ABBV":20,"AVGO":1324,"BIOX":0.6469749999999979,"BRK.B":35835,"CAAP":-39.28199999999998,"DOCU":-58.491000000000014,"EFX":74.99999999999997,"ETSY":148.53800000000007,"GPRK":-119.91300000000001,"HAL":-235,"MA":1785,"PAAS":172.73796600000003,"PSX":-541,"SHOP":123.87200000000006,"SNOW":-168.889,"SPOT":-148.37999999999994,"SQ":294.235,"UNH":2212,"UNP":1380,"WBA":-308,"ZM":198.44000000000008},
+{"Fecha":"Mar/2021","AAPL":23630,"ABEV":479.10200000000003,"ABT":1785,"ADBE":1262,"AGRO":18.21399999999998,"AIG":3876,"AMD":555,"AMGN":1646,"AMX":89.675988,"AMZN":8107,"ARCO":-29.71300000000006,"AUY":52.69072299999998,"AXP":2220,"AZN":1590,"BA":-537,"BABA":-844.999,"BAC":8050,"BBD":1122.606,"BBVA":1338.0620000000001,"BCS":2349.179,"BG":831,"BIDU":3959.785,"BIIB":410.20000000000005,"BMY":2021,"BP":4696,"BRFS":4.545469000000033,"BSBR":739.778,"C":7876,"CAT":1530,"CHL":0,"CRM":469,"CS":-278.1329999999999,"CSCO":2863,"CVX":1377,"CX":664.474,"DE":1790,"DESP":-37.383,"DIS":901,"EBAY":641,"ERJ":-89.38081300000005,"FB":9497,"FDX":889,"FMX":224.07999999999998,"GE":-57,"GGB":447.429,"GILD":1729,"GLOB":21.667000000000012,"GOLD":542.7420000000002,"GOOGL":17930,"GS":6836,"GSK":-1275.545,"HD":4145,"HMY":0,"HPQ":1228,"HWM":80,"IBM":957,"IBN":670.317,"INTC":3361,"ITUB":1036.892,"JD":558.896,"JNJ":6197,"JPM":14230,"KO":2245,"LMT":1837,"LVS":-278,"LYG":0,"MCD":1537.7,"MELI":-34.44999999999994,"MMM":1624,"MO":1421,"MOD":-15.000000000000046,"MSFT":15457,"NEM":559,"NFLX":1705.859,"NKE":1449,"NOK":314.77900000000005,"NVDA":1912,"OGZD":5981.0689999999995,"ORCL":5014,"PBR":212.972,"PEP":1714,"PFE":4877,"PG":3269,"PTR":4278.0019999999995,"PYPL":1097,"QCOM":1762,"RDS.A":10849,"SAN":1936.7520000000004,"SBUX":659.8000000000001,"SID":956.4520000000001,"SLB":299,"SNAP":-286.87500000000006,"SONY":963.37,"T":7550,"TGT":1380,"TOT":0,"TRIP":-80,"TS":106.55699999999995,"TSLA":438,"TWTR":67.99499999999992,"TX":596.8739999999999,"UGP":23.964758000000007,"V":2951,"VALE":5578.053999999999,"VIST":4.858,"VOD":0,"VZ":5245,"WFC":4742,"WMT":2730,"X":91,"XOM":2730,"ABBV":3529,"AVGO":1378,"BIOX":-1.1804349999999997,"BRK.B":11711,"CAAP":-44.06299999999999,"DOCU":-72.41199999999999,"EFX":201.59999999999994,"ETSY":143.76799999999997,"GPRK":-10.337000000000002,"HAL":170,"MA":1828,"PAAS":-7.855284000000007,"PSX":-656,"SHOP":1258.258,"SNOW":-198.935,"SPOT":27.879999999999967,"SQ":38.415999999999954,"UNH":4862,"UNP":1341,"WBA":1026,"ZM":260.3929999999999},
+{"Fecha":"Jun/2021","AAPL":21744,"ABEV":544.8140000000001,"ABT":1184,"ADBE":1119,"AGRO":16.865000000000006,"AIG":99,"AMD":710,"AMGN":464,"AMX":2140.684303,"AMZN":7778,"ARCO":4.933000000000034,"AUY":-93.30199999999996,"AXP":2264,"AZN":534,"BA":587,"BABA":6989.6900000000005,"BAC":9224,"BBD":1129.929,"BBVA":688.2599999999999,"BCS":2947.944,"BG":362,"BIDU":-90.57345000000004,"BIIB":448.5,"BMY":1055,"BP":3045,"BRFS":-46.568407000000036,"BSBR":755.874,"C":6152,"CAT":1413,"CHL":0,"CRM":535,"CS":277.88999999999993,"CSCO":3009,"CVX":3082,"CX":269.29699999999997,"DE":1667,"DESP":-31.099999999999994,"DIS":918,"EBAY":10734,"ERJ":83.04659699999999,"FB":10394,"FDX":1864,"FMX":152.7519999999999,"GE":-37,"GGB":740.851,"GILD":1522,"GLOB":19.947000000000013,"GOLD":406.7520000000001,"GOOGL":18525,"GS":5486,"GSK":1950.1989999999998,"HD":4807,"HMY":0,"HPQ":1108,"HWM":74,"IBM":1325,"IBN":643.6619999999999,"INTC":5061,"ITUB":1589.1370000000002,"JD":122.952,"JNJ":6278,"JPM":11889,"KO":2641,"LMT":1815,"LVS":-192,"LYG":0,"MCD":2219.6000000000004,"MELI":68.44999999999996,"MMM":1524,"MO":2146,"MOD":2.300000000000026,"MSFT":16458,"NEM":650,"NFLX":1353.383,"NKE":1509,"NOK":416.17199999999997,"NVDA":2374,"OGZD":7002.852000000001,"ORCL":4039,"PBR":8101.834,"PEP":2358,"PFE":5562,"PG":2906,"PTR":3921.4930000000004,"PYPL":1184,"QCOM":2027,"RDS.A":3307,"SAN":2491.611,"SBUX":1153.3999999999999,"SID":938.7740000000002,"SLB":431,"SNAP":-151.6580000000001,"SONY":1897.2969999999998,"T":1570,"TGT":2097,"TOT":0,"TRIP":-40,"TS":293.96600000000007,"TSLA":1142,"TWTR":65.22499999999998,"TX":1016.9799999999998,"UGP":-5.666809000000001,"V":2515,"VALE":7580.984,"VIST":5.504999999999981,"VOD":0,"VZ":5800,"WFC":6040,"WMT":4276,"X":1012,"XOM":4690,"ABBV":749,"AVGO":1493,"BIOX":0.6339869999999945,"BRK.B":28094,"CAAP":-33.974,"DOCU":-8.354,"EFX":215.30000000000007,"ETSY":98.25599999999999,"GPRK":-2.4679999999999747,"HAL":227,"MA":2066,"PAAS":70.33656200000003,"PSX":291,"SHOP":878.653,"SNOW":-203.21900000000005,"SPOT":-24.000999999999962,"SQ":203.60899999999998,"UNH":4266,"UNP":1798,"WBA":1197,"ZM":227.38799999999995},
+{"Fecha":"Sep/2021","AAPL":20551,"ABEV":679.6680000000001,"ABT":2092,"ADBE":1207,"AGRO":36.65900000000004,"AIG":1667,"AMD":923,"AMGN":1884,"AMX":788.6859999999999,"AMZN":3156,"ARCO":24.70500000000003,"AUY":25.723999999999993,"AXP":1803,"AZN":-1652,"BA":-109,"BABA":829.6630000000001,"BAC":7691,"BBD":1271.425,"BBVA":1556.3829999999998,"BCS":1992.84,"BG":653,"BIDU":-2560.526336,"BIIB":329.90000000000003,"BMY":1546,"BP":-2544,"BRFS":-53.49776800000001,"BSBR":737.4483749999999,"C":4618,"CAT":1426,"CHL":0,"CRM":468,"CS":472.885,"CSCO":2980,"CVX":6111,"CX":-357.8450000000001,"DE":1283,"DESP":-23.672000000000008,"DIS":159,"EBAY":264,"ERJ":-44.792619999999985,"FB":9194,"FDX":1110,"FMX":704.5640000000001,"GE":4854,"GGB":1067.139,"GILD":2592,"GLOB":25.477999999999994,"GOLD":346.4720000000001,"GOOGL":18936,"GS":5378,"GSK":1610.1190000000001,"HD":4129,"HMY":0,"HPQ":3099,"HWM":27,"IBM":1131,"IBN":822.116,"INTC":6823,"ITUB":1162.118,"JD":-433.04599999999994,"JNJ":3667,"JPM":11631,"KO":2471,"LMT":614,"LVS":-368,"LYG":0,"MCD":2149.7000000000003,"MELI":94.63100000000001,"MMM":1434,"MO":-2724,"MOD":0.39999999999997654,"MSFT":20505,"NEM":3,"NFLX":1447.818,"NKE":1874,"NOK":404.255,"NVDA":2464,"OGZD":7888.161,"ORCL":2462,"PBR":5954.268999999999,"PEP":2224,"PFE":8146,"PG":4112,"PTR":3414.7729999999992,"PYPL":1087,"QCOM":2798,"RDS.A":-447,"SAN":2561.6769999999997,"SBUX":1764.7,"SID":220.02500000000006,"SLB":550,"SNAP":-72.42199999999993,"SONY":1859.9579999999999,"T":5918,"TGT":1817,"TOT":0,"TRIP":1,"TS":330.41700000000003,"TSLA":1618,"TWTR":-536.569,"TX":1195.9379999999996,"UGP":70.63567800000001,"V":3503,"VALE":3862.081,"VIST":4.731999999999992,"VOD":0,"VZ":6407,"WFC":5122,"WMT":3105,"X":2002,"XOM":6750,"ABBV":3158,"AVGO":1876,"BIOX":0.8747640000000021,"BRK.B":10344,"CAAP":-15.038000000000022,"DOCU":-25.501,"EFX":205.5,"ETSY":89.93799999999999,"GPRK":37.012000000000015,"HAL":236,"MA":2414,"PAAS":20.11310599999998,"PSX":400,"SHOP":1148.31,"SNOW":-189.71400000000003,"SPOT":2.043000000000035,"SQ":-3.177999999999999,"UNH":4086,"UNP":1673,"WBA":626,"ZM":316.44100000000003}]
+
+
+
+const ebit = [{"Fecha":"Dic/2018","AAPL":23034,"ABEV":1589.929,"ABT":1176,"ADBE":689.807,"AGRO":2.0649999999999835,"AIG":-148,"AMD":33,"AMGN":2346,"AMX":1884,"AMZN":3872,"ARCO":38.85399999999994,"AUY":55.888000000000034,"AXP":457,"AZN":1322,"BA":4177,"BABA":3873,"BAC":12537,"BBD":3201.849,"BBVA":3564,"BCS":510.717,"BG":-134,"BIDU":160,"BIIB":1390.1999999999998,"BMY":1590,"BP":2745,"BRFS":12.976999999999975,"BSBR":1762.843,"C":7640,"CAT":1979,"CHL":0,"CRM":137,"CS":1737.613,"CSCO":3407,"CVX":2644,"CX":402.446,"DE":1025,"DESP":5.911999999999978,"DIS":3376,"EBAY":652,"ERJ":-91.96300000000002,"FB":7820,"FDX":1168,"FMX":690,"GE":2577,"GGB":239.75799999999998,"GILD":1950,"GLOB":20.802000000000003,"GOLD":158.86,"GOOGL":8078,"GS":4816,"GSK":2054,"HD":3625,"HMY":0,"HPQ":788,"HWM":312,"IBM":4740,"IBN":84.928,"INTC":6263,"ITUB":3868,"JD":-136,"JNJ":4206,"JPM":11502,"KO":1839,"LMT":1942,"LVS":911,"LYG":0,"MCD":2087.2,"MELI":-0.8190000000000168,"MMM":1790,"MO":2142,"MOD":34.499999999999986,"MSFT":10170,"NEM":363,"NFLX":216,"NKE":970,"NOK":756,"NVDA":294,"OGZD":11896,"ORCL":3296,"PBR":5225,"PEP":2753,"PFE":3255,"PG":4059,"PTR":1907,"PYPL":645,"QCOM":970,"RDS.A":2208,"SAN":6736,"SBUX":988.7,"SID":220.661,"SLB":695,"SNAP":-194.94199999999998,"SONY":2426,"T":6691,"TGT":4756,"TOT":2695,"TRIP":23,"TS":174.91000000000003,"TSLA":419,"TWTR":203.87399999999997,"TX":439.44,"UGP":163.864,"V":3724,"VALE":3698.913,"VIST":0,"VOD":0,"VZ":7233,"WFC":9521,"WMT":6067,"X":275,"XOM":4661,"ABBV":8305,"AVGO":5444,"BIOX":0,"BRK.B":63714,"CAAP":371.021,"DOCU":178.385,"EFX":835.3,"ETSY":200.028,"GPRK":151.2,"HAL":5936,"MA":0,"PAAS":167.625,"PSX":28679,"SHOP":343.862,"SNOW":0,"SPOT":1706,"SQ":932.528,"UNH":0,"UNP":5757,"WBA":33793,"ZM":0},
+{"Fecha":"Mar/2019","AAPL":13242,"ABEV":1020.444,"ABT":759,"ADBE":686.1480000000001,"AGRO":-79.58900000000001,"AIG":1542,"AMD":-20,"AMGN":2458,"AMX":1917,"AMZN":4415,"ARCO":31.157000000000018,"AUY":57.01799999999996,"AXP":2452,"AZN":1134,"BA":2503,"BABA":1299,"BAC":12497,"BBD":3316,"BBVA":3409,"BCS":2015,"BG":-104,"BIDU":-139,"BIIB":1279.8000000000002,"BMY":1783,"BP":4751,"BRFS":44.144000000000005,"BSBR":2370.473,"C":8394,"CAT":2251,"CHL":0,"CRM":210,"CS":2467,"CSCO":3489,"CVX":3416,"CX":293.659,"DE":1739,"DESP":7.584999999999994,"DIS":3416,"EBAY":627,"ERJ":-21.775000000000034,"FB":6317,"FDX":915,"FMX":489,"GE":1990,"GGB":239.507,"GILD":2208,"GLOB":18.79200000000001,"GOLD":411.241,"GOOGL":8168,"GS":4282,"GSK":2378,"HD":3597,"HMY":0,"HPQ":1014,"HWM":386,"IBM":1787,"IBN":238.381,"INTC":4174,"ITUB":3904,"JD":170,"JNJ":5269,"JPM":14071,"KO":2358,"LMT":2188,"LVS":982,"LYG":0,"MCD":2037.9,"MELI":10.138999999999982,"MMM":1666,"MO":2293,"MOD":27.40000000000002,"MSFT":10275,"NEM":347,"NFLX":459,"NKE":1281,"NOK":-311,"NVDA":358,"OGZD":10716,"ORCL":3438,"PBR":4064,"PEP":2032,"PFE":4499,"PG":3268,"PTR":4696,"PYPL":539,"QCOM":1029,"RDS.A":7985,"SAN":6490,"SBUX":835.4,"SID":307.94,"SLB":638,"SNAP":-316.06100000000004,"SONY":1185,"T":7332,"TGT":1124,"TOT":4929,"TRIP":31,"TS":258.963,"TSLA":-479,"TWTR":93.6579999999999,"TX":278.092,"UGP":104.582,"V":3663,"VALE":-1031,"VIST":0,"VOD":0,"VZ":7709,"WFC":9452,"WMT":4945,"X":111,"XOM":2784,"ABBV":3292,"AVGO":1184,"BIOX":-2.1819999999999986,"BRK.B":8148,"CAAP":73.27900000000002,"DOCU":-62.627999999999986,"EFX":83.60000000000002,"ETSY":31.643,"GPRK":64.97900000000001,"HAL":426,"MA":2218,"PAAS":4.293999999999997,"PSX":242,"SHOP":-32.51199999999997,"SNOW":0,"SPOT":-48.81099999999998,"SQ":5.799000000000035,"UNH":4832,"UNP":1960,"WBA":1691,"ZM":5.492000000000004},
+{"Fecha":"Jun/2019","AAPL":11489,"ABEV":861.838,"ABT":1190,"ADBE":740.4859999999999,"AGRO":4.5360000000000085,"AIG":2273,"AMD":61,"AMGN":2656,"AMX":1984,"AMZN":3170,"ARCO":25.802999999999976,"AUY":69.93000000000002,"AXP":2710,"AZN":500,"BA":-3522,"BABA":3572,"BAC":12833,"BBD":2990.949,"BBVA":3195,"BCS":2001,"BG":340,"BIDU":33.999999999999986,"BIIB":1587.6,"BMY":2018,"BP":3833,"BRFS":64.39600000000002,"BSBR":2545.057,"C":8604,"CAT":2317,"CHL":0,"CRM":224,"CS":2646,"CSCO":3723,"CVX":3614,"CX":377.119,"DE":1473,"DESP":-16.286999999999992,"DIS":2827,"EBAY":552,"ERJ":-56.17200000000001,"FB":6626,"FDX":1632,"FMX":674,"GE":2881,"GGB":233.71300000000002,"GILD":2394,"GLOB":20.084999999999994,"GOLD":350.831,"GOOGL":9072,"GS":4775,"GSK":2284,"HD":4896,"HMY":0,"HPQ":1001,"HWM":418,"IBM":2591,"IBN":604.985,"INTC":4801,"ITUB":3607,"JD":332,"JNJ":5599,"JPM":14215,"KO":3073,"LMT":1993,"LVS":904,"LYG":0,"MCD":2295.9,"MELI":-12.488000000000056,"MMM":1786,"MO":2777,"MOD":19.899999999999977,"MSFT":12310,"NEM":133,"NFLX":706,"NKE":1188,"NOK":414,"NVDA":571,"OGZD":5525,"ORCL":4451,"PBR":5027,"PEP":2896,"PFE":4203,"PG":3484,"PTR":5491,"PYPL":645,"QCOM":5700,"RDS.A":3886.0000000000005,"SAN":5553,"SBUX":1079.8,"SID":435.89599999999996,"SLB":740,"SNAP":-304.818,"SONY":2056,"T":7836,"TGT":1135,"TOT":3995,"TRIP":66,"TS":248.24900000000002,"TSLA":-50.15899999999999,"TWTR":75.68599999999992,"TX":239.20100000000002,"UGP":85.83600000000001,"V":3909,"VALE":2363,"VIST":6.125,"VOD":0,"VZ":7850,"WFC":10215,"WMT":5583,"X":93,"XOM":3182,"ABBV":3497,"AVGO":1067,"BIOX":5.9609999999999985,"BRK.B":8579,"CAAP":72.343,"DOCU":-42.43700000000001,"EFX":125.10000000000002,"ETSY":17.848000000000013,"GPRK":74.71,"HAL":411,"MA":2412,"PAAS":15.97499999999997,"PSX":1213,"SHOP":-37.404000000000025,"SNOW":0,"SPOT":-2.541999999999973,"SQ":33.18300000000005,"UNH":4744,"UNP":2260,"WBA":1134,"ZM":1.5570000000000022},
+{"Fecha":"Sep/2019","AAPL":15477,"ABEV":762.099,"ABT":1202,"ADBE":843.0830000000001,"AGRO":55.83300000000003,"AIG":1684,"AMD":188,"AMGN":2450,"AMX":2028,"AMZN":3212,"ARCO":42.11500000000002,"AUY":30.121999999999986,"AXP":2746,"AZN":785,"BA":1339,"BABA":2985,"BAC":10769,"BBD":3260,"BBVA":3376,"BCS":2203,"BG":77,"BIDU":336,"BIIB":1578,"BMY":1802,"BP":3296,"BRFS":157.733,"BSBR":907.346,"C":8228,"CAT":2035,"CHL":0,"CRM":105,"CS":2474,"CSCO":3778,"CVX":2868,"CX":409.615,"DE":1241,"DESP":-0.21100000000001273,"DIS":2031,"EBAY":513,"ERJ":17.52000000000001,"FB":7185,"FDX":977,"FMX":655,"GE":1664,"GGB":154.189,"GILD":-1504,"GLOB":22.476000000000006,"GOLD":624.1329999999998,"GOOGL":9058,"GS":3974,"GSK":2760,"HD":3947,"HMY":0,"HPQ":980,"HWM":445,"IBM":1840,"IBN":800.939,"INTC":6551,"ITUB":3645,"JD":283,"JNJ":4083,"JPM":13998,"KO":2665,"LMT":2063,"LVS":919,"LYG":0,"MCD":2360.4,"MELI":-81.92500000000007,"MMM":1876,"MO":2949,"MOD":8.299999999999983,"MSFT":12686,"NEM":488,"NFLX":980,"NKE":1460,"NOK":254,"NVDA":927,"OGZD":2842,"ORCL":2980,"PBR":4546,"PEP":2964,"PFE":3369,"PG":4479,"PTR":3350,"PYPL":627,"QCOM":707,"RDS.A":5091,"SAN":3968,"SBUX":1000.6,"SID":164.776,"SLB":774,"SNAP":-228.85299999999998,"SONY":2613,"T":8082,"TGT":1334,"TOT":4150,"TRIP":68,"TS":185.71499999999997,"TSLA":261,"TWTR":44.14499999999998,"TX":208.143,"UGP":154.484,"V":4105,"VALE":3758.495,"VIST":-0.5569999999999986,"VOD":0,"VZ":7919,"WFC":8582,"WMT":4718,"X":-54,"XOM":3122,"ABBV":3653,"AVGO":916,"BIOX":6.018000000000001,"BRK.B":9904,"CAAP":58.70700000000001,"DOCU":-64.72200000000001,"EFX":121.60000000000002,"ETSY":15.931999999999988,"GPRK":60.52999999999999,"HAL":536,"MA":2638,"PAAS":44.34899999999999,"PSX":1212,"SHOP":-33.535,"SNOW":0,"SPOT":60.054,"SQ":64.34200000000004,"UNH":5014,"UNP":2234,"WBA":957,"ZM":2.2649999999999864},
+{"Fecha":"Dic/2019","AAPL":25301,"ABEV":1289,"ABT":1405,"ADBE":958.319,"AGRO":-2.136000000000017,"AIG":1530,"AMD":360,"AMGN":2009,"AMX":2418,"AMZN":3944,"ARCO":60.14999999999998,"AUY":69.72900000000001,"AXP":2430,"AZN":525,"BA":-2248,"BABA":5616,"BAC":11268,"BBD":74.77499999999998,"BBVA":3424,"BCS":1601,"BG":319,"BIDU":661,"BIIB":1386,"BMY":701,"BP":3925,"BRFS":177.611,"BSBR":1507.508,"C":7666,"CAT":1892,"CHL":0,"CRM":-36,"CS":1861.443,"CSCO":3384,"CVX":-9919,"CX":282.66099999999994,"DE":893,"DESP":-0.006999999999990791,"DIS":2773,"EBAY":627,"ERJ":-53.35899999999995,"FB":8858,"FDX":620,"FMX":763,"GE":3027,"GGB":77.045,"GILD":1062,"GLOB":24.580000000000005,"GOLD":797.174,"GOOGL":9175,"GS":4819,"GSK":1520.9999999999998,"HD":3403,"HMY":0,"HPQ":1097,"HWM":406,"IBM":4274,"IBN":949.77,"INTC":6902,"ITUB":2519.2290000000003,"JD":-40,"JNJ":6393,"JPM":13123,"KO":2240,"LMT":2123,"LVS":1017,"LYG":0,"MCD":2191.1,"MELI":-68.887,"MMM":1629,"MO":2542,"MOD":10,"MSFT":13891,"NEM":556,"NFLX":458,"NKE":1120,"NOK":1023,"NVDA":990,"OGZD":2783,"ORCL":3237,"PBR":5062,"PEP":2756,"PFE":2044,"PG":4667,"PTR":4256,"PYPL":741,"QCOM":1030,"RDS.A":2285,"SAN":4416,"SBUX":1150.8,"SID":192.382,"SLB":782,"SNAP":-153.59599999999995,"SONY":2608,"T":7127,"TGT":1009,"TOT":3695,"TRIP":23,"TS":157.173,"TSLA":347,"TWTR":152.543,"TX":83.00299999999999,"UGP":133.909,"V":4016,"VALE":2483,"VIST":-2.879000000000012,"VOD":0,"VZ":7029,"WFC":5924,"WMT":5868,"X":-179,"XOM":2676,"ABBV":3473,"AVGO":1101,"BIOX":15.036999999999999,"BRK.B":6243,"CAAP":51.27899999999998,"DOCU":-43.996999999999986,"EFX":146.59999999999997,"ETSY":26.037999999999982,"GPRK":56.10800000000002,"HAL":-199,"MA":2435,"PAAS":76.80299999999997,"PSX":558,"SHOP":-30.936999999999955,"SNOW":0,"SPOT":-84.60699999999997,"SQ":49.05099999999999,"UNH":5095,"UNP":2100,"WBA":1035,"ZM":-1.6790000000000163},
+{"Fecha":"Mar/2020","AAPL":12899,"ABEV":645.924,"ABT":779,"ADBE":930,"AGRO":-4.648999999999987,"AIG":3236,"AMD":177,"AMGN":2306,"AMX":1996,"AMZN":4059,"ARCO":-7.680000000000021,"AUY":76.732,"AXP":856,"AZN":1148,"BA":-1402,"BABA":1022,"BAC":7010,"BBD":1983,"BBVA":3585,"BCS":1156,"BG":156,"BIDU":-63,"BIIB":1597.8000000000002,"BMY":928,"BP":-2494,"BRFS":170.601,"BSBR":-1472.172,"C":4874,"CAT":1441,"CHL":0,"CRM":-140,"CS":2190.085,"CSCO":3647,"CVX":2054,"CX":259.88599999999997,"DE":1042,"DESP":-22.875000000000007,"DIS":1276,"EBAY":636,"ERJ":36.739000000000026,"FB":5893,"FDX":411,"FMX":489,"GE":1722,"GGB":99.339,"GILD":2375,"GLOB":23.647,"GOLD":710.201,"GOOGL":7928,"GS":2778,"GSK":2901,"HD":3276,"HMY":0,"HPQ":857,"HWM":420,"IBM":1238,"IBN":272.917,"INTC":7200,"ITUB":3880,"JD":333,"JNJ":6135,"JPM":5301,"KO":2688,"LMT":2091,"LVS":65,"LYG":0,"MCD":1817.5,"MELI":-29.69399999999996,"MMM":1651,"MO":3458,"MOD":24.799999999999976,"MSFT":12975,"NEM":505,"NFLX":958,"NKE":1101,"NOK":43,"NVDA":976,"OGZD":3020,"ORCL":3595,"PBR":4485,"PEP":2143,"PFE":4193,"PG":3524,"PTR":-66980,"PYPL":385,"QCOM":968,"RDS.A":-5130,"SAN":6321,"SBUX":418.5,"SID":133.62999999999997,"SLB":541,"SNAP":-276.364,"SONY":582,"T":7657,"TGT":1200,"TOT":-130,"TRIP":-27,"TS":111.47500000000002,"TSLA":283,"TWTR":-7.443000000000097,"TX":137.38399999999996,"UGP":105.798,"V":3937,"VALE":2121.573,"VIST":-9.68200000000001,"VOD":0,"VZ":7774,"WFC":2210,"WMT":5224,"X":-84,"XOM":-1917,"ABBV":3620,"AVGO":883,"BIOX":-0.5340000000000025,"BRK.B":7722,"CAAP":32.50500000000001,"DOCU":-42.35300000000001,"EFX":135.89999999999998,"ETSY":26.065000000000012,"GPRK":32.21800000000001,"HAL":502,"MA":2110,"PAAS":21.689999999999994,"PSX":-847,"SHOP":-57.85499999999996,"SNOW":0,"SPOT":-15.004999999999995,"SQ":18.485999999999933,"UNH":4996,"UNP":2143,"WBA":1362,"ZM":10.552999999999997},
+{"Fecha":"Jun/2020","AAPL":12459,"ABEV":363.25300000000004,"ABT":642,"ADBE":1011,"AGRO":-12.546999999999986,"AIG":-750,"AMD":173,"AMGN":2255,"AMX":1805,"AMZN":6133,"ARCO":-78.45899999999999,"AUY":69.47499999999998,"AXP":898,"AZN":1267.629,"BA":-2956,"BABA":4896,"BAC":4952,"BBD":337.25800000000004,"BBVA":3023,"BCS":477.931,"BG":658,"BIDU":514,"BIIB":1741.1,"BMY":939,"BP":-8551,"BRFS":104.41499999999999,"BSBR":25.971,"C":2960,"CAT":962,"CHL":0,"CRM":178,"CS":2335.464,"CSCO":3303,"CVX":-6557,"CX":279.653,"DE":1629,"DESP":-52.68900000000001,"DIS":20,"EBAY":804,"ERJ":-96.005,"FB":5963,"FDX":844,"FMX":348,"GE":-730,"GGB":71.324,"GILD":1523,"GLOB":19.618000000000002,"GOLD":942.193,"GOOGL":6232,"GS":5540,"GSK":1685,"HD":6067,"HMY":0,"HPQ":719,"HWM":183,"IBM":1839,"IBN":604.663,"INTC":5706,"ITUB":1793.719,"JD":684,"JNJ":4141,"JPM":7505,"KO":2031,"LMT":2213,"LVS":-913,"LYG":0,"MCD":1036,"MELI":99.43800000000005,"MMM":1431,"MO":3863,"MOD":1.3999999999999915,"MSFT":13407,"NEM":436,"NFLX":1357,"NKE":-879,"NOK":497,"NVDA":677,"OGZD":-724,"ORCL":4395,"PBR":215,"PEP":2556,"PFE":3534,"PG":3596,"PTR":-1211,"PYPL":965,"QCOM":782,"RDS.A":-2450,"SAN":5782,"SBUX":-693.9,"SID":205.69899999999996,"SLB":201,"SNAP":-310.60799999999995,"SONY":2021.9999999999998,"T":6058,"TGT":503,"TOT":-373,"TRIP":-131,"TS":-88.30200000000002,"TSLA":327,"TWTR":-273.92999999999995,"TX":65.245,"UGP":31.420999999999992,"V":3004,"VALE":2798.625,"VIST":-22.967,"VOD":0,"VZ":7361,"WFC":-4995,"WMT":6459,"X":-392,"XOM":-951,"ABBV":2984,"AVGO":833,"BIOX":11.548999999999998,"BRK.B":7343,"CAAP":-76.75999999999999,"DOCU":-41.15899999999999,"EFX":166.79999999999995,"ETSY":119.73999999999998,"GPRK":-5.626000000000001,"HAL":236,"MA":1753,"PAAS":30.666000000000004,"PSX":-288,"SHOP":17.661,"SNOW":0,"SPOT":-184.41899999999998,"SQ":14.576000000000022,"UNH":9241,"UNP":1654,"WBA":391,"ZM":23.384999999999962},
+{"Fecha":"Sep/2020","AAPL":14680,"ABEV":664.117,"ABT":1456,"ADBE":1070,"AGRO":66.40999999999997,"AIG":869,"AMD":449,"AMGN":2412,"AMX":2089,"AMZN":6256,"ARCO":-4.470000000000013,"AUY":136.36999999999998,"AXP":1611,"AZN":1197,"BA":-485,"BABA":1971,"BAC":6100,"BBD":1823.52,"BBVA":3559,"BCS":1458,"BG":950,"BIDU":890,"BIIB":892.0999999999999,"BMY":1366,"BP":1830,"BRFS":142.262,"BSBR":877.695032,"C":5219,"CAT":1126,"CHL":0,"CRM":224,"CS":1633.894,"CSCO":3181,"CVX":-365,"CX":452.50199999999995,"DE":1387,"DESP":-34.489000000000004,"DIS":-440,"EBAY":671,"ERJ":-47.92900000000006,"FB":8040,"FDX":1590,"FMX":523,"GE":419,"GGB":246.52299999999997,"GILD":3160,"GLOB":24.459000000000017,"GOLD":1411.162,"GOOGL":11235,"GS":5660,"GSK":2956,"HD":4852,"HMY":0,"HPQ":1181,"HWM":102,"IBM":2209,"IBN":924.069,"INTC":5034,"ITUB":1979.222,"JD":583.9999999999999,"JNJ":5962,"JPM":13573,"KO":2651,"LMT":2136,"LVS":-547,"LYG":0,"MCD":2323.3,"MELI":83.37300000000005,"MMM":1885,"MO":4394,"MOD":29.999999999999986,"MSFT":15876,"NEM":960,"NFLX":1315,"NKE":1639,"NOK":506,"NVDA":1419,"OGZD":654,"ORCL":3404,"PBR":3610,"PEP":3069,"PFE":3380,"PG":5197,"PTR":2985,"PYPL":1013,"QCOM":3447,"RDS.A":1308,"SAN":3630,"SBUX":641,"SID":505.21600000000007,"SLB":236,"SNAP":-167.86400000000003,"SONY":2955,"T":6243,"TGT":2325,"TOT":1472,"TRIP":-43,"TS":-77.84899999999999,"TSLA":809,"TWTR":56.10699999999997,"TX":195.813,"UGP":106.495,"V":3150,"VALE":5489.877,"VIST":-16.632,"VOD":0,"VZ":7678,"WFC":5143,"WMT":6378,"X":-173,"XOM":-432,"ABBV":3535,"AVGO":1075,"BIOX":7.475999999999997,"BRK.B":7632,"CAAP":-61.30300000000001,"DOCU":-51.702999999999975,"EFX":204.10000000000002,"ETSY":118.56899999999999,"GPRK":27.065000000000005,"HAL":256,"MA":2116,"PAAS":103.39299999999999,"PSX":-448,"SHOP":62.74599999999997,"SNOW":-77.68299999999999,"SPOT":-47.451000000000036,"SQ":64.59199999999998,"UNH":4651,"UNP":2031,"WBA":916,"ZM":188.10399999999998},
+{"Fecha":"Dic/2020","AAPL":33883,"ABEV":974.102,"ABT":2414,"ADBE":1223,"AGRO":26.578000000000003,"AIG":-219,"AMD":570,"AMGN":1988,"AMX":2037,"AMZN":6377,"ARCO":22.10000000000008,"AUY":151.07,"AXP":2090,"AZN":1516,"BA":-1583,"BABA":7395,"BAC":7064,"BBD":-554,"BBVA":1705,"BCS":884.693,"BG":1109,"BIDU":751.029,"BIIB":-2151.3,"BMY":731,"BP":46,"BRFS":203.993,"BSBR":2044.946,"C":6876,"CAT":1451,"CHL":0,"CRM":193,"CS":986.638,"CSCO":3387,"CVX":-323,"CX":350.95899999999995,"DE":1725,"DESP":-21.711,"DIS":137,"EBAY":685,"ERJ":70.32900000000001,"FB":12775,"FDX":1443,"FMX":669,"GE":1096,"GGB":328.661,"GILD":3084,"GLOB":31.94999999999998,"GOLD":1365.11,"GOOGL":15652,"GS":6620,"GSK":1923,"HD":4083,"HMY":0,"HPQ":1497,"HWM":261,"IBM":2059,"IBN":1024,"INTC":5731,"ITUB":2778.124,"JD":-78,"JNJ":4230,"JPM":16493,"KO":1964,"LMT":2241,"LVS":-194,"LYG":0,"MCD":1984.8,"MELI":-25.429999999999946,"MMM":1983,"MO":2583,"MOD":26.599999999999994,"MSFT":17897,"NEM":980,"NFLX":954,"NKE":1523,"NOK":1412,"NVDA":1553,"OGZD":3757,"ORCL":3755,"PBR":5805,"PEP":2641,"PFE":897,"PG":5243,"PTR":69351,"PYPL":1045,"QCOM":2526,"RDS.A":-651,"SAN":1560.757,"SBUX":900.9,"SID":625.527,"SLB":368,"SNAP":-97.23600000000005,"SONY":3434,"T":5636,"TGT":1937,"TOT":1565,"TRIP":-96,"TS":-7.150999999999982,"TSLA":575,"TWTR":251.88300000000004,"TX":462.0660000000001,"UGP":87.30199999999999,"V":3848,"VALE":3851,"VIST":-8.553,"VOD":0,"VZ":7054,"WFC":5106,"WMT":6487,"X":-54,"XOM":-1114,"ABBV":4512,"AVGO":1566,"BIOX":9.714999999999998,"BRK.B":7278,"CAAP":-41.84899999999998,"DOCU":-48.134000000000015,"EFX":201.89999999999998,"ETSY":161.43500000000006,"GPRK":19.217,"HAL":262,"MA":2135,"PAAS":119.24400000000003,"PSX":-245,"SHOP":119.51200000000006,"SNOW":-169.454,"SPOT":-79.23299999999995,"SQ":65.463,"UNH":3517,"UNP":2006,"WBA":1054,"ZM":192.24200000000008},
+{"Fecha":"Mar/2021","AAPL":28223,"ABEV":707.477,"ABT":2133,"ADBE":1465,"AGRO":-60.48900000000002,"AIG":5129,"AMD":658,"AMGN":2130,"AMX":2091,"AMZN":8903,"ARCO":-6.463000000000065,"AUY":126.83999999999997,"AXP":3219,"AZN":1879,"BA":-124,"BABA":-1182,"BAC":10019,"BBD":2880,"BBVA":3310,"BCS":3171,"BG":1632,"BIDU":431,"BIIB":808.4,"BMY":2197,"BP":5778,"BRFS":108.72000000000003,"BSBR":943.95,"C":11327,"CAT":1871,"CHL":0,"CRM":354,"CS":-236.192,"CSCO":3482,"CVX":1699,"CX":406.00999999999993,"DE":2701,"DESP":-20.132,"DIS":1457,"EBAY":930,"ERJ":-34.36300000000004,"FB":11378,"FDX":1034,"FMX":482,"GE":396,"GGB":606.398,"GILD":2988,"GLOB":33.94000000000001,"GOLD":1067.634,"GOOGL":16546,"GS":9462,"GSK":2074,"HD":5781,"HMY":0,"HPQ":1552,"HWM":207,"IBM":1619,"IBN":961.726,"INTC":5903,"ITUB":3692,"JD":244,"JNJ":6805,"JPM":18891,"KO":2808,"LMT":2222,"LVS":-88,"LYG":0,"MCD":2082,"MELI":90.40600000000006,"MMM":2016,"MO":3625,"MOD":26.999999999999957,"MSFT":17048,"NEM":923,"NFLX":1959,"NKE":1698,"NOK":428,"NVDA":2123,"OGZD":7067,"ORCL":3957,"PBR":5793,"PEP":2346,"PFE":4787,"PG":4006,"PTR":6826,"PYPL":1159,"QCOM":2166,"RDS.A":9741,"SAN":3810,"SBUX":939.6,"SID":914.5,"SLB":711,"SNAP":-303.59900000000005,"SONY":975,"T":7678,"TGT":1846,"TOT":0,"TRIP":-84,"TS":43.97499999999994,"TSLA":493,"TWTR":52.17199999999991,"TX":890.28,"UGP":100.21000000000001,"V":3589,"VALE":7624.302,"VIST":12.399999999999999,"VOD":0,"VZ":7993,"WFC":6152,"WMT":7409,"X":331,"XOM":3144,"ABBV":4362,"AVGO":1923,"BIOX":5.112,"BRK.B":8907,"CAAP":-19.01099999999998,"DOCU":-24.897,"EFX":306.59999999999997,"ETSY":150.63899999999995,"GPRK":63.76,"HAL":370,"MA":2193,"PAAS":70.823,"PSX":-715,"SHOP":120.35699999999997,"SNOW":-200.397,"SPOT":17.039999999999964,"SQ":108.03999999999996,"UNH":6739,"UNP":1993,"WBA":980,"ZM":256.1169999999999},
+{"Fecha":"Jun/2021","AAPL":24287,"ABEV":717.809,"ABT":1998,"ADBE":1417,"AGRO":21.948,"AIG":718,"AMD":840,"AMGN":2351,"AMX":2311,"AMZN":7713,"ARCO":17.611000000000033,"AUY":127.60800000000003,"AXP":3220,"AZN":1053,"BA":873,"BABA":4776,"BAC":8830,"BBD":1995,"BBVA":2532,"BCS":3671,"BG":906,"BIDU":536,"BIIB":927.4000000000001,"BMY":1558,"BP":1807,"BRFS":103.77999999999997,"BSBR":1970,"C":8260,"CAT":1820,"CHL":0,"CRM":332,"CS":1647.576,"CSCO":3586,"CVX":3416,"CX":526.06,"DE":2408,"DESP":-23.687999999999995,"DIS":1385,"EBAY":751,"ERJ":95.749,"FB":12367,"FDX":1967,"FMX":704,"GE":772,"GGB":1008.277,"GILD":2365,"GLOB":45.552000000000014,"GOLD":1017.526,"GOOGL":19368,"GS":7967,"GSK":2532,"HD":6639,"HMY":0,"HPQ":1525,"HWM":209,"IBM":2242,"IBN":905.492,"INTC":5892,"ITUB":2644.491,"JD":32.99999999999999,"JNJ":6385,"JPM":16392,"KO":3212,"LMT":2151,"LVS":-124,"LYG":0,"MCD":2541,"MELI":166.41999999999996,"MMM":2023,"MO":4394,"MOD":13.800000000000026,"MSFT":19095,"NEM":976,"NFLX":1848,"NKE":2028,"NOK":808,"NVDA":2602,"OGZD":7196,"ORCL":4665,"PBR":8973,"PEP":3204,"PFE":5747,"PG":4057,"PTR":3837,"PYPL":1217,"QCOM":2195,"RDS.A":6327,"SAN":4480,"SBUX":1408.1,"SID":1387.3600000000001,"SLB":653,"SNAP":-192.50600000000009,"SONY":2511,"T":7800,"TGT":2631,"TOT":0,"TRIP":-35,"TS":117.97000000000003,"TSLA":1335,"TWTR":29.827999999999975,"TX":1253.09,"UGP":-21,"V":4069,"VALE":10272.547,"VIST":44.86199999999998,"VOD":0,"VZ":8165,"WFC":8885,"WMT":7754,"X":1072,"XOM":6032,"ABBV":4627,"AVGO":2001,"BIOX":12.026999999999994,"BRK.B":9301,"CAAP":-25.644,"DOCU":-10.737,"EFX":306.20000000000005,"ETSY":99.05099999999999,"GPRK":74.06700000000002,"HAL":434,"MA":2416,"PAAS":81.15900000000002,"PSX":93,"SHOP":147.66200000000003,"SNOW":-205.59400000000005,"SPOT":14.580000000000041,"SQ":233.02999999999997,"UNH":5978,"UNP":2473,"WBA":1123,"ZM":226.31699999999995},
+{"Fecha":"Sep/2021","AAPL":23786,"ABEV":734.801,"ABT":2622,"ADBE":1446,"AGRO":-27.60899999999996,"AIG":2357,"AMD":953,"AMGN":2383,"AMX":2404,"AMZN":4841,"ARCO":50.81300000000003,"AUY":129.016,"AXP":3150,"AZN":-100,"BA":34,"BABA":2320,"BAC":9840,"BBD":3031,"BBVA":3572,"BCS":2617,"BG":582,"BIDU":356,"BIIB":713.5,"BMY":1732,"BP":-1300,"BRFS":130.75,"BSBR":736.995,"C":6729,"CAT":1702,"CHL":0,"CRM":38,"CS":1890.829,"CSCO":3421,"CVX":5889,"CX":459.67999999999995,"DE":1860,"DESP":-15.616000000000007,"DIS":654,"EBAY":682,"ERJ":39.93300000000002,"FB":10423,"FDX":1429,"FMX":645.56,"GE":1383,"GGB":1392.962,"GILD":3882,"GLOB":52.419,"GOLD":958.272,"GOOGL":20969,"GS":7852,"GSK":3010,"HD":5795,"HMY":0,"HPQ":1216,"HWM":214,"IBM":1979,"IBN":1127,"INTC":5269,"ITUB":4598,"JD":309,"JNJ":6737,"JPM":15290,"KO":3012,"LMT":2302,"LVS":-306,"LYG":0,"MCD":2776.8,"MELI":160.35000000000002,"MMM":1853,"MO":4150,"MOD":14.399999999999977,"MSFT":20238,"NEM":678,"NFLX":1754,"NKE":2212,"NOK":640,"NVDA":2827,"OGZD":8786,"ORCL":3503,"PBR":8277,"PEP":3196,"PFE":6969,"PG":5047,"PTR":5396,"PYPL":1088,"QCOM":2902,"RDS.A":5925,"SAN":4329,"SBUX":1417.8000000000002,"SID":648.48,"SLB":897,"SNAP":-181.28699999999992,"SONY":2828,"T":7369,"TGT":2506,"TOT":0,"TRIP":16,"TS":223.13,"TSLA":2055,"TWTR":23.341000000000008,"TX":1724.59,"UGP":89.11000000000001,"V":4324,"VALE":6523.795,"VIST":52.30199999999999,"VOD":0,"VZ":9714,"WFC":7673,"WMT":5992,"X":1819,"XOM":9702,"ABBV":5407,"AVGO":2153,"BIOX":13.391000000000002,"BRK.B":7978,"CAAP":5.907999999999976,"DOCU":-22.39,"EFX":273.3,"ETSY":108.779,"GPRK":84.38300000000001,"HAL":458,"MA":2746,"PAAS":77.505,"PSX":820,"SHOP":17.329999999999927,"SNOW":-200.13600000000002,"SPOT":88.09000000000003,"SQ":91,"UNH":5712,"UNP":2432,"WBA":958,"ZM":294.11400000000003}]
+
+
+
+const ebitda = [{"Fecha":"Dic/2018","AAPL":26429,"ABEV":1895.065,"ABT":1939,"ADBE":796.527,"AGRO":43.46199999999998,"AIG":1401,"AMD":76,"AMGN":2836,"AMX":3637,"AMZN":8134,"ARCO":67.36899999999994,"AUY":185.94000000000003,"AXP":3528,"AZN":2970,"BA":4760,"BABA":4878,"BAC":9409,"BBD":2830.17,"BBVA":3912.026,"BCS":510.717,"BG":25,"BIDU":2098,"BIIB":1543.1999999999998,"BMY":1780,"BP":6699,"BRFS":139.30699999999996,"BSBR":1763,"C":6304,"CAT":2680,"CHL":0,"CRM":586,"CS":1039.305,"CSCO":3894,"CVX":7987,"CX":614.3710000000001,"DE":1528.3,"DESP":10.380999999999979,"DIS":4108,"EBAY":824,"ERJ":-18.476000000000028,"FB":9045,"FDX":1996,"FMX":946.3620000000001,"GE":4452,"GGB":372.109,"GILD":2308,"GLOB":26.407000000000004,"GOLD":614.86,"GOOGL":10658,"GS":4275,"GSK":2818.145,"HD":4174,"HMY":0,"HPQ":956,"HWM":461,"IBM":5851,"IBN":84.928,"INTC":8756,"ITUB":3003.155,"JD":97.434,"JNJ":5941,"JPM":10897,"KO":2118,"LMT":2246,"LVS":1200,"LYG":0,"MCD":2466.2,"MELI":11.080999999999984,"MMM":2161,"MO":2201,"MOD":53.59999999999999,"MSFT":13165,"NEM":766,"NFLX":2302,"NKE":1141,"NOK":1174.772,"NVDA":372,"OGZD":14478,"ORCL":4000,"PBR":8247,"PEP":3516,"PFE":4896,"PG":4709,"PTR":8360,"PYPL":868,"QCOM":1323,"RDS.A":7722,"SAN":7478.836,"SBUX":1339.5,"SID":308.556,"SLB":1614,"SNAP":-172.26,"SONY":4242,"T":14583,"TGT":4756,"TOT":5785,"TRIP":54,"TS":420.95500000000004,"TSLA":915.7370000000001,"TWTR":314.597,"TX":584.721,"UGP":219.072,"V":3883,"VALE":4465.298,"VIST":0,"VOD":0,"VZ":11585,"WFC":8697,"WMT":8798,"X":412,"XOM":9260,"ABBV":8305,"AVGO":5444,"BIOX":0,"BRK.B":63714,"CAAP":371.021,"DOCU":178.385,"EFX":835.3,"ETSY":200.028,"GPRK":151.2,"HAL":5936,"MA":0,"PAAS":167.625,"PSX":28679,"SHOP":343.862,"SNOW":0,"SPOT":1706,"SQ":932.528,"UNH":0,"UNP":5757,"WBA":33793,"ZM":0},
+{"Fecha":"Mar/2019","AAPL":16282,"ABEV":1298.21,"ABT":1512,"ADBE":831.0460000000002,"AGRO":-42.872000000000014,"AIG":2841,"AMD":26,"AMGN":2953,"AMX":3982,"AMZN":9269,"ARCO":60.10500000000002,"AUY":177.62199999999996,"AXP":3558,"AZN":1817.187,"BA":3024,"BABA":2427,"BAC":9260,"BBD":2299.226,"BBVA":3854.102,"BCS":2015,"BG":35,"BIDU":83.066,"BIIB":1400.9,"BMY":1969,"BP":9259,"BRFS":194.007,"BSBR":2370,"C":6951,"CAT":2892,"CHL":0,"CRM":856,"CS":1216.722,"CSCO":3970,"CVX":7596,"CX":561.1189999999999,"DE":2252.2,"DESP":12.182999999999993,"DIS":4244,"EBAY":796,"ERJ":1.065999999999967,"FB":7672,"FDX":1766,"FMX":834.377,"GE":3702,"GGB":373.772,"GILD":2567,"GLOB":24.43800000000001,"GOLD":891.241,"GOOGL":10781,"GS":3124,"GSK":3919,"HD":4144,"HMY":0,"HPQ":1195,"HWM":523,"IBM":3233,"IBN":238.381,"INTC":6799,"ITUB":2968.726,"JD":235.765,"JNJ":7030,"JPM":11632,"KO":2633,"LMT":2465,"LVS":1283,"LYG":0,"MCD":2430.5,"MELI":25.832999999999984,"MMM":2041,"MO":2346,"MOD":46.70000000000002,"MSFT":13201,"NEM":689,"NFLX":2616,"NKE":1459,"NOK":157.947,"NVDA":449,"OGZD":13335,"ORCL":4179,"PBR":7990,"PEP":2530,"PFE":6044,"PG":3979,"PTR":12746,"PYPL":769,"QCOM":1374,"RDS.A":13998,"SAN":7338.192,"SBUX":1208.1,"SID":397.302,"SLB":1541,"SNAP":-292.742,"SONY":3109,"T":14538,"TGT":1772,"TOT":8398,"TRIP":62,"TS":390.398,"TSLA":-11.423000000000002,"TWTR":207.1319999999999,"TX":438.318,"UGP":181.235,"V":3823,"VALE":-226.96299999999997,"VIST":0,"VOD":0,"VZ":11940,"WFC":8814,"WMT":7659,"X":254,"XOM":7355,"ABBV":3795,"AVGO":2636,"BIOX":-2.1820000000000004,"BRK.B":10565,"CAAP":118.79800000000003,"DOCU":-50.627999999999986,"EFX":161.20000000000002,"ETSY":45.155,"GPRK":91.66900000000001,"HAL":847,"MA":2357,"PAAS":55.416999999999994,"PSX":579,"SHOP":-25.67999999999997,"SNOW":0,"SPOT":-24.96599999999998,"SQ":31.460000000000036,"UNH":5471,"UNP":2509,"WBA":2190,"ZM":16.235000000000007},
+{"Fecha":"Jun/2019","AAPL":14422,"ABEV":1144.778,"ABT":1941,"ADBE":886.0959999999999,"AGRO":69.00900000000001,"AIG":3631,"AMD":131,"AMGN":3157,"AMX":4149,"AMZN":8372,"ARCO":56.122999999999976,"AUY":198.731,"AXP":3857,"AZN":1223.424,"BA":-2976,"BABA":4701,"BAC":9516,"BBD":2478.265,"BBVA":3641.09,"BCS":2001,"BG":495,"BIDU":253.507,"BIIB":1704.6999999999998,"BMY":2202,"BP":8398,"BRFS":211.68,"BSBR":2545,"C":7122,"CAT":2964,"CHL":0,"CRM":898,"CS":1399.375,"CSCO":4187,"CVX":7985,"CX":642.508,"DE":1978.5,"DESP":-10.514999999999992,"DIS":4131,"EBAY":727,"ERJ":-8.632000000000012,"FB":8128,"FDX":2498,"FMX":1042.536,"GE":4568,"GGB":368.09299999999996,"GILD":2742,"GLOB":25.885999999999996,"GOLD":852.831,"GOOGL":11907,"GS":3592,"GSK":3281.348,"HD":5456,"HMY":0,"HPQ":1191,"HWM":557,"IBM":3885,"IBN":604.985,"INTC":7355,"ITUB":2845.746,"JD":353.666,"JNJ":7304,"JPM":12572,"KO":3400,"LMT":2281,"LVS":1193,"LYG":0,"MCD":2694.2000000000003,"MELI":4.792999999999942,"MMM":2162,"MO":2830,"MOD":38.799999999999976,"MSFT":15234,"NEM":693,"NFLX":2971,"NKE":1366,"NOK":873.5740000000001,"NVDA":663,"OGZD":8239,"ORCL":5205,"PBR":8436,"PEP":3454,"PFE":5731,"PG":4304,"PTR":13448,"PYPL":873,"QCOM":6053,"RDS.A":10552,"SAN":6373.267,"SBUX":1439.9,"SID":530.6759999999999,"SLB":1678,"SNAP":-282.15799999999996,"SONY":3420,"T":14937,"TGT":1779,"TOT":7602,"TRIP":96,"TS":383.58500000000004,"TSLA":528.413,"TWTR":191.3019999999999,"TX":239.201,"UGP":157.60200000000003,"V":4074,"VALE":3328.786,"VIST":50.472,"VOD":0,"VZ":12082,"WFC":10373,"WMT":8305,"X":243,"XOM":7813,"ABBV":3999,"AVGO":2508,"BIOX":7.509,"BRK.B":11035,"CAAP":119.533,"DOCU":-26.33800000000001,"EFX":207.60000000000002,"ETSY":27.658000000000015,"GPRK":100.52499999999999,"HAL":831,"MA":2556,"PAAS":77.52099999999997,"PSX":1552,"SHOP":-30.029000000000025,"SNOW":0,"SPOT":19.931000000000026,"SQ":59.63000000000005,"UNH":5398,"UNP":2811,"WBA":1656,"ZM":15.547000000000002},
+{"Fecha":"Sep/2019","AAPL":17409,"ABEV":1078.4370000000001,"ABT":1956,"ADBE":993.6320000000001,"AGRO":119.77300000000002,"AIG":2860,"AMD":257,"AMGN":2958,"AMX":4125,"AMZN":8775,"ARCO":72.51700000000002,"AUY":144.528,"AXP":3925,"AZN":1496.512,"BA":1915,"BABA":4128,"BAC":7661,"BBD":1428.923,"BBVA":3824.071,"BCS":2203,"BG":211,"BIDU":545.807,"BIIB":1691.5,"BMY":1989,"BP":7566,"BRFS":302.72900000000004,"BSBR":907.346,"C":7019,"CAT":2680,"CHL":0,"CRM":934,"CS":1345.363,"CSCO":4239,"CVX":7243,"CX":678.712,"DE":1738,"DESP":6.0209999999999875,"DIS":3327,"EBAY":683,"ERJ":62.89600000000001,"FB":8601,"FDX":1856,"FMX":1022.662,"GE":3164,"GGB":280.675,"GILD":-1157,"GLOB":28.522000000000006,"GOLD":1207.133,"GOOGL":11978,"GS":2936,"GSK":3392.322,"HD":4541,"HMY":0,"HPQ":1180,"HWM":576,"IBM":3509,"IBN":800.939,"INTC":9230,"ITUB":1552.766,"JD":480.515,"JNJ":5810,"JPM":12526,"KO":3028,"LMT":2365,"LVS":1203,"LYG":0,"MCD":2773.8,"MELI":-62.38200000000007,"MMM":2255,"MO":3006,"MOD":27.69999999999998,"MSFT":15657,"NEM":1098,"NFLX":3293,"NKE":1629,"NOK":715.413,"NVDA":1019,"OGZD":5583,"ORCL":3730,"PBR":8058,"PEP":3542,"PFE":4922,"PG":5202,"PTR":10707,"PYPL":854,"QCOM":1057,"RDS.A":11863,"SAN":4781.866,"SBUX":1366.3,"SID":267.125,"SLB":1674,"SNAP":-208.207,"SONY":4275,"T":15031,"TGT":1957,"TOT":8126,"TRIP":100,"TS":319.102,"TSLA":791.851,"TWTR":164.13099999999997,"TX":208.143,"UGP":223.202,"V":4277,"VALE":4688.266,"VIST":45.543000000000006,"VOD":0,"VZ":12033,"WFC":8372,"WMT":7441,"X":107,"XOM":7995,"ABBV":4156,"AVGO":2360,"BIOX":7.174,"BRK.B":12438,"CAAP":96.971,"DOCU":-33.918000000000006,"EFX":205.70000000000002,"ETSY":28.739999999999988,"GPRK":88.33299999999998,"HAL":953,"MA":2801,"PAAS":109.57,"PSX":1554,"SHOP":-24.791999999999994,"SNOW":0,"SPOT":84.51399999999998,"SQ":91.06300000000005,"UNH":5723,"UNP":2791,"WBA":1483,"ZM":18.316999999999986},
+{"Fecha":"Dic/2019","AAPL":28117,"ABEV":1597.132,"ABT":2161,"ADBE":1142.011,"AGRO":39.472999999999985,"AIG":2703,"AMD":433,"AMGN":2711,"AMX":4346,"AMZN":10114,"ARCO":93.69799999999998,"AUY":193.002,"AXP":3759,"AZN":2190,"BA":-1620,"BABA":6821,"BAC":8751,"BBD":-129.176,"BBVA":3873.5,"BCS":1601,"BG":439,"BIDU":936.644,"BIIB":1498.9,"BMY":1953,"BP":8419,"BRFS":319.44399999999996,"BSBR":1507,"C":6745,"CAT":2536,"CHL":0,"CRM":826,"CS":1593.972,"CSCO":3841,"CVX":6545,"CX":555.3059999999999,"DE":1431,"DESP":6.1880000000000095,"DIS":4071,"EBAY":794,"ERJ":-14.142999999999951,"FB":10326,"FDX":1521,"FMX":1152.38,"GE":4433,"GGB":208.147,"GILD":1412,"GLOB":31.342000000000006,"GOLD":1344.174,"GOOGL":12588,"GS":3875,"GSK":2195.185,"HD":3998,"HMY":0,"HPQ":1295,"HWM":535,"IBM":5924,"IBN":949.77,"INTC":9870,"ITUB":2367.131,"JD":179.374,"JNJ":8209,"JPM":13137,"KO":2640,"LMT":2445,"LVS":1308,"LYG":0,"MCD":2604.7,"MELI":-48.087,"MMM":2092,"MO":2605,"MOD":29.5,"MSFT":17094,"NEM":1284,"NFLX":3065,"NKE":1294,"NOK":1517.893,"NVDA":1096,"OGZD":5768,"ORCL":3985,"PBR":8153,"PEP":3554,"PFE":3428,"PG":5344,"PTR":11583,"PYPL":968,"QCOM":1381,"RDS.A":11648,"SAN":5292.858,"SBUX":1520,"SID":310.829,"SLB":1630,"SNAP":-132.97599999999994,"SONY":4133,"T":14088,"TGT":1647,"TOT":7902,"TRIP":56,"TS":296.31899999999996,"TSLA":924,"TWTR":269.016,"TX":252.345,"UGP":207.24,"V":4198,"VALE":3515,"VIST":36.63199999999999,"VOD":0,"VZ":11134,"WFC":3480,"WMT":8696,"X":-17,"XOM":7599,"ABBV":3982,"AVGO":2545,"BIOX":16.281,"BRK.B":8900,"CAAP":93.97899999999998,"DOCU":-26.361999999999984,"EFX":233.49999999999997,"ETSY":41.30899999999998,"GPRK":85.89200000000002,"HAL":173,"MA":2611,"PAAS":148.89599999999996,"PSX":904,"SHOP":-18.235999999999954,"SNOW":0,"SPOT":-58.03599999999997,"SQ":75.51599999999999,"UNH":5813,"UNP":2659,"WBA":1512,"ZM":5.225999999999984},
+{"Fecha":"Mar/2020","AAPL":15685,"ABEV":908.899,"ABT":1607,"ADBE":1118,"AGRO":12.54900000000001,"AIG":5114,"AMD":255,"AMGN":3203,"AMX":3925,"AMZN":9421,"ARCO":27.667999999999978,"AUY":172.743,"AXP":3814,"AZN":1989.527,"BA":-846,"BABA":2406,"BAC":4987,"BBD":-2006.009,"BBVA":4022.363,"BCS":1156,"BG":269,"BIDU":194.777,"BIIB":1717.7000000000003,"BMY":3398,"BP":1568,"BRFS":298.687,"BSBR":-1472,"C":4092,"CAT":2055,"CHL":0,"CRM":765,"CS":1525.334,"CSCO":4093,"CVX":6392,"CX":526.584,"DE":1571,"DESP":-15.303000000000008,"DIS":2609,"EBAY":783,"ERJ":95.06300000000002,"FB":7490,"FDX":1319,"FMX":868.8050000000001,"GE":3053,"GGB":224.022,"GILD":2724,"GLOB":35.134,"GOLD":1340.201,"GOOGL":11031,"GS":1969,"GSK":3148.87,"HD":3883,"HMY":0,"HPQ":1055,"HWM":549,"IBM":2872,"IBN":272.917,"INTC":10250,"ITUB":-1785.739,"JD":513.3240000000001,"JNJ":7882,"JPM":5510,"KO":3055,"LMT":2392,"LVS":355,"LYG":0,"MCD":2238.8,"MELI":-8.14399999999996,"MMM":2091,"MO":3523,"MOD":44.09999999999998,"MSFT":16093,"NEM":1108,"NFLX":3470,"NKE":1271,"NOK":359.18,"NVDA":1083,"OGZD":5998,"ORCL":4343,"PBR":7694,"PEP":2676,"PFE":5411,"PG":4323,"PTR":-58785,"PYPL":678,"QCOM":1308,"RDS.A":1218,"SAN":7124.118,"SBUX":796.2,"SID":234.92499999999995,"SLB":1333,"SNAP":-255.15999999999997,"SONY":2898,"T":14879,"TGT":1899,"TOT":3504,"TRIP":5,"TS":278.396,"TSLA":836,"TWTR":113.2059999999999,"TX":301.847,"UGP":175.589,"V":4129,"VALE":2945.022,"VIST":23.56899999999999,"VOD":0,"VZ":11924,"WFC":3482,"WMT":8015,"X":76,"XOM":3902,"ABBV":4179,"AVGO":2611,"BIOX":0.72099,"BRK.B":10307,"CAAP":87.869,"DOCU":-23.495000000000008,"EFX":230.2,"ETSY":41.22800000000001,"GPRK":73.05900000000001,"HAL":850,"MA":2254,"PAAS":97.492,"PSX":-499,"SHOP":-43.48899999999996,"SNOW":0,"SPOT":13.638000000000005,"SQ":53.67199999999993,"UNH":5719,"UNP":2690,"WBA":1854,"ZM":34.42699999999999},
+{"Fecha":"Jun/2020","AAPL":15211,"ABEV":605.222,"ABT":1467,"ADBE":1202,"AGRO":19.025000000000013,"AIG":-68,"AMD":255,"AMGN":3185,"AMX":3596,"AMZN":11881,"ARCO":-48.18399999999999,"AUY":149.224,"AXP":2827,"AZN":1979.368,"BA":-2409,"BABA":6112,"BAC":4304,"BBD":393.686,"BBVA":3429.368,"BCS":477.931,"BG":762,"BIDU":729.141,"BIIB":1853.8999999999999,"BMY":3584,"BP":-4604,"BRFS":214.043,"BSBR":25.971,"C":2338,"CAT":1570,"CHL":0,"CRM":1077,"CS":1931.024,"CSCO":3747,"CVX":-245,"CX":558.693,"DE":2176,"DESP":-44.487,"DIS":1397,"EBAY":976,"ERJ":29.759,"FB":7667,"FDX":1771,"FMX":677.467,"GE":868,"GGB":184.95600000000002,"GILD":1873,"GLOB":26.970000000000002,"GOLD":1523.193,"GOOGL":9623,"GS":4750,"GSK":1685,"HD":6682,"HMY":0,"HPQ":916,"HWM":256,"IBM":3518,"IBN":604.663,"INTC":8769,"ITUB":636.98,"JD":499.637,"JNJ":5867,"JPM":7832,"KO":2412,"LMT":2520,"LVS":-628,"LYG":0,"MCD":1461.7,"MELI":122.09000000000005,"MMM":1923,"MO":3928,"MOD":19.999999999999993,"MSFT":16911,"NEM":1004,"NFLX":3991,"NKE":-703,"NOK":820.773,"NVDA":1081,"OGZD":2003,"ORCL":5118,"PBR":2593,"PEP":3145,"PFE":4785,"PG":4410,"PTR":6858,"PYPL":1262,"QCOM":1145,"RDS.A":3859,"SAN":3382.875,"SBUX":-10.699999999999932,"SID":290.37399999999997,"SLB":698,"SNAP":-289.68299999999994,"SONY":3389,"T":13343,"TGT":1144,"TOT":3148,"TRIP":-99,"TS":62.12099999999998,"TSLA":894,"TWTR":-150.09299999999996,"TX":221.535,"UGP":90.78299999999999,"V":3201,"VALE":3604.327,"VIST":8.755999999999997,"VOD":0,"VZ":11542,"WFC":-537,"WMT":9230,"X":-233,"XOM":3965,"ABBV":4533,"AVGO":2563,"BIOX":11.545,"BRK.B":9867,"CAAP":-26.348000000000006,"DOCU":-20.795999999999992,"EFX":264.59999999999997,"ETSY":133.91099999999997,"GPRK":19.029,"HAL":487,"MA":1898,"PAAS":81.754,"PSX":60,"SHOP":37.592,"SNOW":0,"SPOT":-153.58299999999997,"SQ":52.85000000000002,"UNH":9958,"UNP":2205,"WBA":868,"ZM":56.70299999999996},
+{"Fecha":"Sep/2020","AAPL":17382,"ABEV":910.8979999999999,"ABT":2264,"ADBE":1260,"AGRO":109.27999999999997,"AIG":1532,"AMD":542,"AMGN":3313,"AMX":3963,"AMZN":12779,"ARCO":26.369999999999987,"AUY":245.30699999999996,"AXP":2680,"AZN":2012.362,"BA":80,"BABA":3300,"BAC":5658,"BBD":1325.502,"BBVA":3986.781,"BCS":1458,"BG":1056,"BIDU":1107.242,"BIIB":1006.8999999999999,"BMY":4002,"BP":5297,"BRFS":256.025,"BSBR":877.695,"C":5135,"CAT":1719,"CHL":0,"CRM":1165,"CS":1307.768,"CSCO":3632,"CVX":3655,"CX":728.554,"DE":1891,"DESP":-26.653000000000006,"DIS":858,"EBAY":823,"ERJ":-7.879000000000076,"FB":9738,"FDX":2516,"FMX":860.586,"GE":2221,"GGB":366.87,"GILD":3514,"GLOB":32.71100000000002,"GOLD":2002.162,"GOOGL":14713,"GS":5023,"GSK":3783.91,"HD":5483,"HMY":0,"HPQ":1377,"HWM":170,"IBM":3892,"IBN":924.069,"INTC":8157,"ITUB":1214.504,"JD":775.927,"JNJ":7780,"JPM":14326,"KO":3009,"LMT":2455,"LVS":-255,"LYG":0,"MCD":2763.4,"MELI":111.60700000000006,"MMM":2366,"MO":4456,"MOD":49.29999999999998,"MSFT":18521,"NEM":1590,"NFLX":4077,"NKE":1815,"NOK":833.264,"NVDA":1718,"OGZD":3334,"ORCL":4105,"PBR":6212,"PEP":3678,"PFE":4642,"PG":5868,"PTR":9065,"PYPL":1311,"QCOM":3786,"RDS.A":7382,"SAN":4425.952,"SBUX":1315.4,"SID":596.3430000000001,"SLB":700,"SNAP":-146.06000000000003,"SONY":4449,"T":13273,"TGT":2929,"TOT":4713,"TRIP":-13,"TS":102.01700000000002,"TSLA":1393,"TWTR":178.08999999999997,"TX":346.299,"UGP":166.912,"V":3346,"VALE":6263.912,"VIST":23.096999999999994,"VOD":0,"VZ":11870,"WFC":6253,"WMT":9149,"X":-11,"XOM":4551,"ABBV":5810,"AVGO":2794,"BIOX":8.633,"BRK.B":10215,"CAAP":-11.747999999999998,"DOCU":-26.970999999999975,"EFX":307.20000000000005,"ETSY":134.32299999999998,"GPRK":55.31100000000001,"HAL":486,"MA":2257,"PAAS":156.03099999999998,"PSX":-90,"SHOP":80.61599999999999,"SNOW":-67.231,"SPOT":-14.725000000000023,"SQ":103.65499999999999,"UNH":5370,"UNP":2586,"WBA":1396,"ZM":228.77599999999998},
+{"Fecha":"Dic/2020","AAPL":36549,"ABEV":1226.777,"ABT":3280,"ADBE":1419,"AGRO":75.122,"AIG":678,"AMD":671,"AMGN":2861,"AMX":4101,"AMZN":13995,"ARCO":52.49000000000008,"AUY":268.591,"AXP":2535,"AZN":2319.7799999999997,"BA":-1005,"BABA":8949,"BAC":6712,"BBD":-413.46599999999995,"BBVA":1858.174,"BCS":884.693,"BG":1221,"BIDU":993.6759999999999,"BIIB":-2041.8000000000002,"BMY":3466,"BP":3472,"BRFS":318.99,"BSBR":2045,"C":6893,"CAT":1966,"CHL":0,"CRM":1352,"CS":732.4300000000001,"CSCO":3823,"CVX":3732,"CX":643.788,"DE":2263,"DESP":-12.078999999999999,"DIS":1435,"EBAY":822,"ERJ":143.596,"FB":14638,"FDX":2379,"FMX":1048.1100000000001,"GE":2383,"GGB":455.32,"GILD":3511,"GLOB":41.61199999999998,"GOLD":1914.36,"GOOGL":19377,"GS":6063,"GSK":3183,"HD":4749,"HMY":0,"HPQ":1700,"HWM":328,"IBM":3758,"IBN":1024,"INTC":8734,"ITUB":3057.864,"JD":140.968,"JNJ":6170,"JPM":17317,"KO":2394,"LMT":2604,"LVS":99,"LYG":0,"MCD":2449.1,"MELI":7.126000000000047,"MMM":2481,"MO":2648,"MOD":42.89999999999999,"MSFT":20658,"NEM":1845,"NFLX":3969,"NKE":1708,"NOK":1744.621,"NVDA":1840,"OGZD":6433,"ORCL":4486,"PBR":7720,"PEP":3458,"PFE":2051,"PG":5914,"PTR":69351,"PYPL":1346,"QCOM":2890,"RDS.A":5578,"SAN":2407.455,"SBUX":1597.6,"SID":829.763,"SLB":796,"SNAP":-74.42500000000004,"SONY":5146,"T":12615,"TGT":2540,"TOT":5045,"TRIP":-65,"TS":178.28900000000002,"TSLA":1193,"TWTR":380.591,"TX":613.9000000000001,"UGP":148.88799999999998,"V":4045,"VALE":4685.468,"VIST":37.135999999999996,"VOD":0,"VZ":11251,"WFC":6454,"WMT":9306,"X":108,"XOM":3877,"ABBV":6577,"AVGO":3294,"BIOX":11.022,"BRK.B":10182,"CAAP":4.40000000000002,"DOCU":-21.692000000000014,"EFX":306,"ETSY":174.53600000000006,"GPRK":49.487,"HAL":491,"MA":2285,"PAAS":201.78500000000003,"PSX":118,"SHOP":137.40500000000006,"SNOW":-158.05100000000002,"SPOT":-44.65899999999995,"SQ":107.40499999999997,"UNH":4249,"UNP":2563,"WBA":1529,"ZM":238.42800000000008},
+{"Fecha":"Mar/2021","AAPL":31020,"ABEV":938.075,"ABT":3067,"ADBE":1659,"AGRO":-37.78200000000002,"AIG":6552,"AMD":765,"AMGN":2971,"AMX":4081,"AMZN":16411,"ARCO":23.902999999999935,"AUY":231.31499999999997,"AXP":2966,"AZN":2676,"BA":412,"BABA":470,"BAC":5941,"BBD":-1127.3029999999999,"BBVA":3682.186,"BCS":3171,"BG":1738,"BIDU":679.792,"BIIB":955.3,"BMY":4932,"BP":9145,"BRFS":229.43100000000004,"BSBR":943.95,"C":11340,"CAT":2457,"CHL":0,"CRM":1353,"CS":-434.859,"CSCO":3968,"CVX":5989,"CX":684.264,"DE":3217,"DESP":-10.442000000000002,"DIS":2729,"EBAY":1070,"ERJ":15.914999999999957,"FB":13350,"FDX":1990,"FMX":847.9490000000001,"GE":1149,"GGB":724.811,"GILD":3461,"GLOB":46.57900000000001,"GOLD":1611.6680000000001,"GOOGL":19299,"GS":8909,"GSK":2571.7799999999997,"HD":6484,"HMY":0,"HPQ":1738,"HWM":275,"IBM":3291,"IBN":961.726,"INTC":8805,"ITUB":1778.531,"JD":465.865,"JNJ":8699,"JPM":19822,"KO":3174,"LMT":2558,"LVS":167,"LYG":0,"MCD":2535.9,"MELI":128.82200000000006,"MMM":2476,"MO":3688,"MOD":41.399999999999956,"MSFT":19984,"NEM":1522,"NFLX":4714,"NKE":1880,"NOK":760.438,"NVDA":2404,"OGZD":9857,"ORCL":4689,"PBR":8387,"PEP":2906,"PFE":6013,"PG":4689,"PTR":15188,"PYPL":1459,"QCOM":2553,"RDS.A":15553,"SAN":4632.664,"SBUX":1633.7,"SID":1002.532,"SLB":1142,"SNAP":-280.10100000000006,"SONY":2665,"T":13487,"TGT":2483,"TOT":0,"TRIP":-55,"TS":188.44399999999993,"TSLA":1114,"TWTR":183.2239999999999,"TX":1040.162,"UGP":161.799,"V":3790,"VALE":8356.412,"VIST":58.007,"VOD":0,"VZ":12167,"WFC":8988,"WMT":10070,"X":520,"XOM":8148,"ABBV":6577,"AVGO":3456,"BIOX":6.885,"BRK.B":11580,"CAAP":-19.01099999999999,"DOCU":1.3840000000000074,"EFX":423.29999999999995,"ETSY":163.71899999999997,"GPRK":87.512,"HAL":596,"MA":2356,"PAAS":148.36,"PSX":-353,"SHOP":136.15700000000004,"SNOW":-188.547,"SPOT":53.17499999999996,"SQ":157.67299999999997,"UNH":7497,"UNP":2542,"WBA":1440,"ZM":308.81999999999994},
+{"Fecha":"Jun/2021","AAPL":27119,"ABEV":963.62,"ABT":2872,"ADBE":1610,"AGRO":63.789,"AIG":1665,"AMD":950,"AMGN":3206,"AMX":4322,"AMZN":15751,"ARCO":47.40700000000003,"AUY":235.28700000000003,"AXP":2956,"AZN":1806,"BA":1424,"BABA":6320,"BAC":8566,"BBD":2292.683,"BBVA":2899.716,"BCS":3671,"BG":1012,"BIDU":801.744,"BIIB":1000.3000000000001,"BMY":4201,"BP":5438,"BRFS":238.77899999999997,"BSBR":1970,"C":8343,"CAT":2407,"CHL":0,"CRM":1385,"CS":1254.354,"CSCO":4075,"CVX":7953,"CX":817.088,"DE":2923,"DESP":-14.633999999999995,"DIS":2651,"EBAY":872,"ERJ":153.833,"FB":14353,"FDX":2942,"FMX":1072.657,"GE":1543,"GGB":1127.481,"GILD":2929,"GLOB":60.54100000000001,"GOLD":1534.106,"GOOGL":22313,"GS":7586,"GSK":3460.645,"HD":7350,"HMY":0,"HPQ":1721,"HWM":276,"IBM":3922,"IBN":905.492,"INTC":8749,"ITUB":3083.41,"JD":259.15700000000004,"JNJ":8224,"JPM":17285,"KO":3595,"LMT":2485,"LVS":134,"LYG":0,"MCD":3004.4,"MELI":212.52899999999997,"MMM":2495,"MO":4459,"MOD":27.300000000000026,"MSFT":22439,"NEM":1594,"NFLX":4693,"NKE":2229,"NOK":1137.136,"NVDA":2888,"OGZD":9976,"ORCL":5417,"PBR":11495,"PEP":3857,"PFE":7429,"PG":4767,"PTR":12227,"PYPL":1533,"QCOM":2601,"RDS.A":12217,"SAN":5321.528,"SBUX":2095.2,"SID":1487.1490000000001,"SLB":1080,"SNAP":-164.23600000000008,"SONY":4275,"T":13561,"TGT":3298,"TOT":0,"TRIP":-7,"TS":267.59700000000004,"TSLA":2016,"TWTR":164.64,"TX":1401.0549999999998,"UGP":43.858000000000004,"V":4273,"VALE":11118.986,"VIST":96.65299999999998,"VOD":0,"VZ":12185,"WFC":11825,"WMT":10395,"X":1274,"XOM":10984,"ABBV":6828,"AVGO":3505,"BIOX":14.055,"BRK.B":11973,"CAAP":13.3,"DOCU":16.247999999999973,"EFX":425.90000000000003,"ETSY":112.03599999999999,"GPRK":95.92700000000002,"HAL":657,"MA":2602,"PAAS":150.971,"PSX":463,"SHOP":162.325,"SNOW":-192.40100000000004,"SPOT":51.95400000000004,"SQ":282.039,"UNH":6756,"UNP":3023,"WBA":1630,"ZM":242.70399999999995},
+{"Fecha":"Sep/2021","AAPL":26775,"ABEV":996.847,"ABT":3469,"ADBE":1446,"AGRO":30.682000000000038,"AIG":3577,"AMD":1065,"AMGN":3233,"AMX":4418,"AMZN":13789,"ARCO":81.84500000000003,"AUY":241.346,"AXP":2900,"AZN":2688,"BA":557,"BABA":3821,"BAC":9489,"BBD":1939.579,"BBVA":3942.119,"BCS":2617,"BG":687,"BIDU":561.597,"BIIB":846.2,"BMY":4476,"BP":2644,"BRFS":260.925,"BSBR":736.995,"C":6928,"CAT":2295,"CHL":0,"CRM":1345,"CS":1496.051,"CSCO":3954,"CVX":10229,"CX":734.826,"DE":2341,"DESP":-4.559000000000006,"DIS":1929,"EBAY":801,"ERJ":85.26000000000002,"FB":12418,"FDX":2400,"FMX":1025.189,"GE":2109,"GGB":1521.577,"GILD":4360,"GLOB":69.399,"GOLD":1509.493,"GOOGL":24273,"GS":7403,"GSK":4369,"HD":6509,"HMY":0,"HPQ":1416,"HWM":282,"IBM":3662,"IBN":1127,"INTC":8228,"ITUB":2194.969,"JD":546.463,"JNJ":8551,"JPM":16115,"KO":3374,"LMT":2631,"LVS":-44,"LYG":0,"MCD":3246,"MELI":212.586,"MMM":2329,"MO":4212,"MOD":27.49999999999998,"MSFT":23450,"NEM":1365,"NFLX":4787,"NKE":2389,"NOK":967.685,"NVDA":3125,"OGZD":11591,"ORCL":4260,"PBR":11017,"PEP":3846,"PFE":8329,"PG":5758,"PTR":12734,"PYPL":1411,"QCOM":3327,"RDS.A":11931,"SAN":5134.068,"SBUX":2112.6,"SID":755.994,"SLB":1322,"SNAP":-148.77699999999993,"SONY":4874,"T":12988,"TGT":3139,"TOT":0,"TRIP":43,"TS":371.595,"TSLA":2816,"TWTR":156.78900000000002,"TX":1869.031,"UGP":156.27,"V":4526,"VALE":7222.993,"VIST":101.714,"VOD":0,"VZ":13675,"WFC":10625,"WMT":8642,"X":2015,"XOM":14692,"ABBV":7530,"AVGO":3656,"BIOX":15.251,"BRK.B":10646,"CAAP":45.597,"DOCU":5.27699999999999,"EFX":391.8,"ETSY":131.99,"GPRK":109.10100000000001,"HAL":682,"MA":2934,"PAAS":161.978,"PSX":1187,"SHOP":30.93400000000004,"SNOW":-186.22100000000003,"SPOT":126.98800000000003,"SQ":150.043,"UNH":6508,"UNP":2985,"WBA":1633,"ZM":311.196}]
+
+
+
+const averageBasicSharesOutstandin = [{"Fecha":"Dic/2018","AAPL":18943,"ABEV":15721,"ABT":1756,"ADBE":488.246,"AGRO":116.556,"AIG":887.509,"AMD":1002,"AMGN":635,"AMX":3302,"AMZN":490,"ARCO":209.076,"AUY":949.337,"AXP":850,"AZN":2534,"BA":567.641,"BABA":2576,"BAC":9856,"BBD":8836,"BBVA":6621,"BCS":4269,"BG":141.111,"BIDU":349.349,"BIIB":199.8,"BMY":1632,"BP":3335,"BRFS":811.416,"C":2401,"CAT":581.4,"CRM":766,"CS":2564,"CSCO":4470,"CVX":1893,"CX":1544,"DE":318.5,"DESP":69.187,"DIS":1490,"EBAY":945,"ERJ":183.525,"FB":2872,"FDX":262,"FMX":357.823,"GE":1087.5,"GGB":1699,"GILD":1290,"GLOB":35.961,"GOLD":1168,"GOOGL":695.556,"GS":379.5,"GSK":2460,"HD":1116,"HPQ":1556,"HWM":483.239,"IBM":901.3,"IBN":3221,"INTC":4549,"ITUB":9721,"JD":1539,"JNJ":2724,"JPM":3336,"KO":4262,"LMT":283.1,"LVS":780,"MCD":769.5,"MELI":45.203,"MMM":580.7,"MO":1874,"MOD":50.5,"MSFT":7692,"NEM":533,"NFLX":436.385,"NKE":1581,"NOK":5593,"NVDA":2436,"OGZD":11064,"ORCL":3720,"PBR":6522,"PEP":1410,"PFE":5788,"PG":2500,"PTR":1830,"PYPL":1177,"RDS.A":4114,"SAN":16943,"SBUX":1242,"SID":1380,"SLB":1384,"SNAP":1325,"SONY":1269,"T":7296,"TGT":519.9,"TOT":2608,"TRIP":138,"TS":590.268,"TSLA":860.13,"TWTR":760.525,"TX":196.308,"UGP":1086,"V":2207,"VALE":5126,"VZ":4137,"WFC":4666,"WMT":2896,"X":176.091,"XOM":4270},
+{"Fecha":"Mar/2019","AAPL":18696,"ABEV":15723,"ABT":1763,"ADBE":488.056,"AGRO":116.556,"AIG":875.383,"AMD":1044,"AMGN":622,"AMX":3301,"AMZN":491,"ARCO":206.756,"AUY":949.918,"AXP":841,"AZN":2534,"BA":567.1,"BABA":2579,"BAC":9726,"BBD":11663,"BBVA":6641,"BCS":4282,"BG":141.205,"BIDU":349.666,"BIIB":196.6,"BMY":1634,"BP":3363,"BRFS":811.416,"C":2340,"CAT":572.4,"CRM":771,"CS":2573,"CSCO":4370,"CVX":1888,"CX":1532,"DE":317.9,"DESP":69.294,"DIS":1530,"EBAY":900,"ERJ":183.93,"FB":2856,"FDX":261,"FMX":357.823,"GE":1088.875,"GGB":1696,"GILD":1276,"GLOB":36.205,"GOLD":1745,"GOOGL":694.869,"GS":379.8,"GSK":2468,"HD":1101,"HPQ":1529,"HWM":471,"IBM":889.582,"IBN":3223,"INTC":4492,"ITUB":9729,"JD":1539,"JNJ":2661,"JPM":3298,"KO":4271,"LMT":282.5,"LVS":774,"MCD":764.9,"MELI":45.98,"MMM":577.5,"MO":1874,"MOD":50.7,"MSFT":7672,"NEM":534,"NFLX":436.947,"NKE":1573,"NOK":5596,"NVDA":2428,"OGZD":11050,"ORCL":3526,"PBR":6522,"PEP":1406,"PFE":5635,"PG":2509,"PTR":1830,"PYPL":1171,"QCOM":1213,"RDS.A":4076,"SAN":16935,"SBUX":1239,"SID":1373,"SLB":1385,"SNAP":1341,"SONY":1261,"T":7313,"TGT":515.7,"TOT":2601,"TRIP":138.417,"TS":590.269,"TSLA":864.945,"TWTR":764.55,"TX":196.308,"UGP":1058,"V":2195,"VALE":5183,"VZ":4138,"WFC":4552,"WMT":2869,"X":173.241,"XOM":4270,"ABBV":1480,"AVGO":397,"BIOX":29.63,"BRK.B":2460,"CAAP":160.022,"DOCU":172.101,"EFX":120.7,"ETSY":119.679,"GPRK":61.561,"HAL":873,"MA":1026,"PAAS":176.467,"PSX":457.599,"SHOP":110.921,"SPOT":180.614,"SQ":419.289,"UNH":958,"UNP":716.8,"WBA":928.4,"ZM":272.337},
+{"Fecha":"Jun/2019","AAPL":18283,"ABEV":15727,"ABT":1769,"ADBE":487.535,"AGRO":116.706,"AIG":876.383,"AMD":1084,"AMGN":607,"AMX":3301,"AMZN":493,"ARCO":206.541,"AUY":950.292,"AXP":834,"AZN":2622,"BA":564.7,"BABA":2597,"BAC":9523,"BBD":9719,"BBVA":6652,"BCS":4307,"BG":141.497,"BIDU":349.968,"BIIB":190.3,"BMY":1636,"BP":3389,"BRFS":811.44,"C":2286,"CAT":567.8,"CRM":776,"CS":2546,"CSCO":4269,"CVX":1889,"CX":1534,"DE":315.9,"DESP":69.497,"DIS":1802,"EBAY":860,"ERJ":183.96,"FB":2855,"FDX":260.808,"FMX":357.823,"GE":1090.5,"GGB":1697,"GILD":1270,"GLOB":36.516,"GOLD":1752,"GOOGL":693.969,"GS":374.5,"GSK":2474,"HD":1095,"HPQ":1499,"HWM":445,"IBM":886.274,"IBN":3227,"INTC":4466,"ITUB":9743,"JD":1539,"JNJ":2653,"JPM":3251,"KO":4269,"LMT":282.2,"LVS":772,"MCD":761.8,"MELI":49.319,"MMM":577.7,"MO":1870,"MOD":50.7,"MSFT":7655,"NEM":766,"NFLX":437.587,"NKE":1570,"NOK":5599,"NVDA":2436,"OGZD":11050,"ORCL":3389,"PBR":6522,"PEP":1401,"PFE":5562,"PG":2502,"PTR":1830,"PYPL":1175,"QCOM":1217,"RDS.A":4050,"SAN":16930,"SBUX":1211,"SID":1380,"SLB":1384,"SNAP":1363,"SONY":1249,"T":7323,"TGT":512.1,"TOT":2602,"TRIP":139.07,"TS":590.269,"TSLA":883.27,"TWTR":768.755,"TX":196.308,"UGP":1086,"V":2182,"VALE":5182,"VIST":75.918,"VZ":4138,"WFC":4469,"WMT":2853,"X":171.992,"XOM":4271,"ABBV":1480,"AVGO":398,"BIOX":36.121,"BRK.B":2452,"CAAP":160.022,"DOCU":175.389,"EFX":120.8,"ETSY":120.199,"GPRK":60.781,"HAL":874,"MA":1020,"PAAS":209.461,"PSX":453.681,"SHOP":112.013,"SPOT":180.409,"SQ":423.305,"UNH":950,"UNP":705.5,"WBA":909.9,"ZM":273.486},
+{"Fecha":"Sep/2019","AAPL":17963,"ABEV":15729,"ABT":1772,"ADBE":485.848,"AGRO":116.776,"AIG":877.009,"AMD":1097,"AMGN":599,"AMX":3300,"AMZN":495,"ARCO":206.79,"AUY":950.413,"AXP":825,"AZN":2624,"BA":564.6,"BABA":2600,"BAC":9304,"BBD":9719,"BBVA":6652,"BCS":4298,"BG":141.562,"BIDU":347.932,"BIIB":184,"BMY":1632,"BP":3395,"BRFS":811.537,"C":2221,"CAT":556.3,"CRM":879,"CS":2505,"CSCO":4246,"CVX":1881,"CX":1531,"DE":313.9,"DESP":69.503,"DIS":1804,"EBAY":830,"ERJ":183.98,"FB":2854,"FDX":260,"FMX":357.823,"GE":1091.25,"GGB":1697,"GILD":1267,"GLOB":36.718,"GOLD":1756,"GOOGL":692.741,"GS":370,"GSK":2476,"HD":1089,"HPQ":1476,"HWM":436,"IBM":886.018,"IBN":3230,"INTC":4391,"ITUB":9744,"JD":1539,"JNJ":2635,"JPM":3199,"KO":4280,"LMT":282,"LVS":769,"MCD":756.6,"MELI":49.711,"MMM":576.5,"MO":1868,"MOD":50.8,"MSFT":7634,"NEM":820,"NFLX":438.09,"NKE":1562,"NOK":5600,"NVDA":2440,"OGZD":11300,"ORCL":3317,"PBR":6522,"PEP":1397,"PFE":5545,"PG":2504,"PTR":1830,"PYPL":1175,"QCOM":1197,"RDS.A":4009,"SAN":17328,"SBUX":1185,"SID":1380,"SLB":1385,"SNAP":1393,"SONY":1237,"T":7327,"TGT":509.7,"TOT":2598,"TRIP":139.324,"TS":590.269,"TSLA":895,"TWTR":772.789,"TX":196.308,"UGP":1086,"V":2167,"VALE":5181,"VIST":83.898,"VZ":4138,"WFC":4359,"WMT":2843,"X":170.801,"XOM":4271,"ABBV":1481,"AVGO":397,"BIOX":36.121,"BRK.B":2450,"CAAP":160.022,"DOCU":178.314,"EFX":121,"ETSY":120.351,"GPRK":59.524,"HAL":876,"MA":1013,"PAAS":209.535,"PSX":449.005,"SHOP":113.087,"SPOT":179.864,"SQ":427.124,"UNH":949,"UNP":699.3,"WBA":899.6,"ZM":276.226},
+{"Fecha":"Dic/2019","AAPL":17660,"ABEV":15730,"ABT":1763,"ADBE":483.731,"AGRO":117.086,"AIG":878.21,"AMD":1140,"AMGN":593,"AMX":3300,"AMZN":496,"ARCO":206.79,"AUY":950.433,"AXP":814,"AZN":2624,"BA":562.909,"BABA":2632,"BAC":9017,"BBD":9719,"BBVA":6655,"BCS":4327,"BG":141.667,"BIDU":345.86,"BIIB":177.8,"BMY":1918,"BP":3376,"BRFS":811.76,"C":2149,"CAT":550.3,"CRM":889,"CS":2473,"CSCO":4242,"CVX":1872,"CX":1507,"DE":313.5,"DESP":69.539,"DIS":1805,"EBAY":807,"ERJ":184.02,"FB":2853,"FDX":261,"FMX":357.823,"GE":1092,"GGB":1699,"GILD":1266,"GLOB":36.897,"GOLD":1778,"GOOGL":688.806,"GS":362.4,"GSK":2477,"HD":1083,"HPQ":1454,"HWM":432.802,"IBM":887.1,"IBN":3234,"INTC":4319,"ITUB":9746,"JD":1539,"JNJ":2633,"JPM":3141,"KO":4282,"LMT":281.4,"LVS":767,"MCD":749.2,"MELI":49.71,"MMM":576.3,"MO":1858,"MOD":50.8,"MSFT":7621,"NEM":818,"NFLX":438.547,"NKE":1561,"NOK":5605,"NVDA":2448,"OGZD":11823,"ORCL":3245,"PBR":6522,"PEP":1391,"PFE":5535,"PG":2487,"PTR":1830,"PYPL":1174,"QCOM":1144,"RDS.A":3954,"SAN":17332,"SBUX":1180,"SID":1380,"SLB":1384,"SNAP":1410,"SONY":1227,"T":7312,"TGT":506.2,"TOT":2586,"TRIP":139,"TS":590.268,"TSLA":900,"TWTR":776.647,"TX":196.308,"UGP":1086,"V":2155,"VALE":5128,"VIST":87.04,"VZ":4139,"WFC":4197,"WMT":2836,"X":170.041,"XOM":4269,"ABBV":1479,"AVGO":398,"BIOX":36.121,"BRK.B":2442,"CAAP":160.022,"DOCU":180.859,"EFX":121.1,"ETSY":118.404,"GPRK":59.404,"HAL":878,"MA":1008,"PAAS":209.671,"PSX":445.332,"SHOP":116.027,"SPOT":182.943,"SQ":430.136,"UNH":960,"UNP":692.2,"WBA":891.4,"ZM":276.72},
+{"Fecha":"Mar/2020","AAPL":17440,"ABEV":15723,"ABT":1769,"ADBE":482.4,"AGRO":116.794,"AIG":874.214,"AMD":1170,"AMGN":590,"AMX":3300,"AMZN":498,"ARCO":206.791,"AUY":951.058,"AXP":807,"AZN":2624,"BA":565.4,"BABA":2679,"BAC":8816,"BBD":10691,"BBVA":6655,"BCS":4320,"BG":141.899,"BIDU":345.778,"BIIB":172.8,"BMY":2258,"BP":3363,"BRFS":811.76,"C":2098,"CAT":546.8,"CRM":896,"CS":2466,"CSCO":4230,"CVX":1862,"CX":1518,"DE":313.2,"DESP":69.668,"DIS":1808,"EBAY":753,"ERJ":183.93,"FB":2851,"FDX":261,"FMX":357.823,"GE":1093,"GGB":1699,"GILD":1262,"GLOB":37.008,"GOLD":1778,"GOOGL":686.465,"GS":358,"GSK":2483,"HD":1073,"HPQ":1435,"HWM":435,"IBM":887.969,"IBN":3236,"INTC":4266,"ITUB":9751,"JD":1539,"JNJ":2634,"JPM":3096,"KO":4289,"LMT":281.3,"LVS":764,"MCD":744.8,"MELI":49.71,"MMM":576.8,"MO":1858,"MOD":50.9,"MSFT":7602,"NEM":807,"NFLX":439.352,"NKE":1556,"NOK":5608,"NVDA":2456,"OGZD":11800,"ORCL":3190,"PBR":6522,"PEP":1390,"PFE":5545,"PG":2476,"PYPL":1173,"QCOM":1139,"RDS.A":3910,"SAN":17326,"SBUX":1172,"SID":1380,"SLB":1387,"SNAP":1426,"SONY":1224,"T":7187,"TGT":501,"TOT":2573,"TRIP":136.24,"TS":590.269,"TSLA":915,"TWTR":780.688,"TX":196.308,"UGP":1087,"V":2145,"VALE":5129,"VIST":87.166,"VZ":4139,"WFC":4105,"WMT":2831,"X":170.224,"XOM":4270,"ABBV":1481,"AVGO":401,"BIOX":36.121,"BRK.B":2434,"CAAP":160.022,"DOCU":182.978,"EFX":121.3,"ETSY":118.138,"GPRK":60.649,"HAL":878,"MA":1005,"PAAS":209.779,"PSX":441.345,"SHOP":116.807,"SPOT":185.046,"SQ":434.94,"UNH":949,"UNP":684.3,"WBA":884.5,"ZM":279.891},
+{"Fecha":"Jun/2020","AAPL":17250,"ABEV":15733,"ABT":1773,"ADBE":481,"AGRO":117.831,"AIG":866.968,"AMD":1174,"AMGN":588,"AMX":3297,"AMZN":500,"ARCO":206.99,"AUY":951.457,"AXP":804,"AZN":2624,"BA":566.4,"BABA":2698,"BAC":8740,"BBD":9719,"BBVA":6659,"BCS":4333,"BG":141.565,"BIDU":343.777,"BIIB":160.6,"BMY":2263,"BP":3370,"BRFS":809.613,"C":2082,"CAT":541.5,"CRM":904,"CS":2474,"CSCO":4227,"CVX":1853,"CX":1487,"DE":313,"DESP":69.767,"DIS":1809,"EBAY":703,"ERJ":184.043,"FB":2850,"FDX":261.954,"FMX":357.823,"GE":1094,"GGB":1701,"GILD":1255,"GLOB":37.686,"GOLD":1778,"GOOGL":681.768,"GS":355.7,"GSK":2489,"HD":1073,"HPQ":1417,"HWM":436,"IBM":889.435,"IBN":3239,"INTC":4246,"ITUB":9762,"JD":1481,"JNJ":2633,"JPM":3076,"KO":4295,"LMT":279.8,"LVS":764,"MCD":743.8,"MELI":49.71,"MMM":577,"MO":1858,"MOD":50.9,"MSFT":7580,"NEM":803,"NFLX":440.569,"NKE":1556,"NOK":5610,"NVDA":2464,"OGZD":11800,"ORCL":3091,"PBR":6522,"PEP":1387,"PFE":5554,"PG":2480,"PTR":1830,"PYPL":1173,"QCOM":1127,"RDS.A":3895,"SAN":17332,"SBUX":1169,"SID":1380,"SLB":1388,"SNAP":1447,"SONY":1221,"T":7145,"TGT":500.1,"TOT":2586,"TRIP":134.213,"TS":590.269,"TSLA":930,"TWTR":785.909,"TX":196.308,"UGP":1088,"V":2132,"VALE":5130,"VIST":87.395,"VZ":4139,"WFC":4106,"WMT":2832,"X":175.327,"XOM":4271,"ABBV":1647,"AVGO":403,"BIOX":36.121,"BRK.B":2418,"CAAP":160.022,"DOCU":184.862,"EFX":121.4,"ETSY":118.866,"GPRK":60.596,"HAL":877,"MA":1004,"PAAS":210.041,"PSX":438.756,"SHOP":118.741,"SPOT":186.553,"SQ":440.117,"UNH":949,"UNP":677.7,"WBA":875.4,"ZM":282.851},
+{"Fecha":"Sep/2020","AAPL":17058,"ABEV":15733,"ABT":1774,"ADBE":480,"AGRO":117.741,"AIG":867.713,"AMD":1184,"AMGN":585,"AMX":3322,"AMZN":501,"ARCO":207.266,"AUY":952.479,"AXP":804,"AZN":2624,"BA":566.6,"BABA":2700,"BAC":8733,"BBD":9719,"BBVA":6638,"BCS":4325,"BG":139.643,"BIDU":339.825,"BIIB":156.9,"BMY":2257,"BP":3375,"BRFS":807.406,"C":2082,"CAT":542.3,"CRM":911,"CS":2455,"CSCO":4230,"CVX":1854,"CX":1490,"DE":314.1,"DESP":71.501,"DIS":1809,"EBAY":696,"ERJ":184.043,"FB":2850,"FDX":262,"FMX":357.823,"GE":1095,"GGB":1701,"GILD":1255,"GLOB":39.629,"GOLD":1778,"GOOGL":679.449,"GS":355.9,"GSK":2490,"HD":1073,"HPQ":1347,"HWM":436,"IBM":891.381,"IBN":3344,"INTC":4188,"ITUB":9762,"JD":1548,"JNJ":2633,"JPM":3078,"KO":4296,"LMT":279.3,"LVS":764,"MCD":744.5,"MELI":49.721,"MMM":577.8,"MO":1858,"MOD":51.3,"MSFT":7566,"NEM":803,"NFLX":441.526,"NKE":1562,"NOK":5614,"NVDA":2472,"OGZD":11800,"ORCL":3041,"PBR":6522,"PEP":1384,"PFE":5557,"PG":2486,"PTR":1830,"PYPL":1172,"QCOM":1130,"RDS.A":3894,"SAN":17332,"SBUX":1173,"SID":1380,"SLB":1391,"SNAP":1466,"SONY":1228,"T":7147,"TGT":500.6,"TOT":2629,"TRIP":134.436,"TS":590.269,"TSLA":937,"TWTR":790.827,"TX":196.308,"UGP":1088,"V":2127,"VALE":5130,"VIST":87.621,"VZ":4140,"WFC":4124,"WMT":2833,"X":220.402,"XOM":4271,"ABBV":1769,"AVGO":405,"BIOX":36.368,"BRK.B":2380,"CAAP":160.022,"DOCU":186.423,"EFX":121.5,"ETSY":121.978,"GPRK":60.612,"HAL":882,"MA":1001,"PAAS":210.16,"PSX":438.916,"SHOP":120.511,"SNOW":276.695,"SPOT":188.843,"SQ":444.458,"UNH":950,"UNP":675,"WBA":866.5,"ZM":284.783},
+{"Fecha":"Dic/2020","AAPL":16935,"ABEV":15735,"ABT":1771,"ADBE":479,"AGRO":117.297,"AIG":868.4,"AMD":1205,"AMGN":581,"AMX":3343,"AMZN":502,"ARCO":207.266,"AUY":952.435,"AXP":805,"AZN":2624,"BA":574.744,"BABA":2705,"BAC":8725,"BBD":9719,"BBVA":6654,"BCS":4336,"BG":139.79,"BIDU":336.907,"BIIB":153.7,"BMY":2252,"BP":3372,"BRFS":807.707,"C":2082,"CAT":544.5,"CRM":916,"CS":2433,"CSCO":4223,"CVX":1911,"CX":1471,"DE":313.5,"DESP":80.997,"DIS":1812,"EBAY":688,"ERJ":184.043,"FB":2850,"FDX":264,"FMX":357.823,"GE":1095,"GGB":1701,"GILD":1255,"GLOB":39.713,"GOLD":1778,"GOOGL":675.582,"GS":356,"GSK":2491,"HD":1074,"HPQ":1285,"HWM":433.281,"IBM":892.6,"IBN":3449,"INTC":4094,"ITUB":9762,"JD":1551,"JNJ":2633,"JPM":3080,"KO":4300,"LMT":279.7,"LVS":764,"MCD":745.4,"MELI":49.82,"MMM":578.7,"MO":1858,"MOD":51.3,"MSFT":7555,"NEM":802,"NFLX":442.22,"NKE":1573,"NOK":5617,"NVDA":2476,"OGZD":11823,"ORCL":2977,"PBR":6522,"PEP":1380,"PFE":5562,"PG":2476,"PYPL":1172,"QCOM":1134,"RDS.A":3892,"SAN":17312,"SBUX":1175,"SID":1380,"SLB":1392,"SNAP":1484,"SONY":1235,"T":7150,"TGT":500.8,"TOT":2629,"TRIP":135,"TS":590.268,"TSLA":960,"TWTR":793.789,"TX":196.308,"UGP":1090,"V":2136,"VALE":5130,"VIST":87.706,"VZ":4140,"WFC":4138,"WMT":2826,"X":220.412,"XOM":4272,"ABBV":1765,"AVGO":407,"BIOX":38.017,"BRK.B":2336,"CAAP":160.022,"DOCU":188.717,"EFX":121.7,"ETSY":125.975,"GPRK":60.72,"HAL":885,"MA":996,"PAAS":210.193,"PSX":439.115,"SHOP":122.181,"SNOW":283.12,"SPOT":189.852,"SQ":452.869,"UNH":946,"UNP":672.2,"WBA":865.3,"ZM":287.598},
+{"Fecha":"Mar/2021","AAPL":16753,"ABT":1777,"ADBE":479,"AGRO":116.103,"AIG":868.105,"AMD":1213,"AMGN":577,"AMX":3327,"AMZN":504,"ARCO":207.266,"AUY":962.071,"AXP":804,"AZN":2624,"BA":585.4,"BABA":2707,"BAC":8700,"BBD":10691,"BBVA":6668,"BCS":4314,"BG":140.342,"BIDU":336.5,"BIIB":151.9,"BMY":2236,"BP":3383,"BRFS":807.707,"C":2082,"CAT":546.4,"CRM":921,"CS":2447,"CSCO":4219,"CVX":1913,"CX":1471,"DE":312.8,"DESP":81.175,"DIS":1817,"EBAY":681,"ERJ":183.757,"FB":2847,"FDX":265,"FMX":357.823,"GE":1097,"GGB":1703,"GILD":1256,"GLOB":39.899,"GOLD":1778,"GOOGL":673.22,"GS":356.6,"GSK":2497,"HD":1071,"HPQ":1234,"HWM":434,"IBM":893.631,"IBN":3458,"INTC":4056,"ITUB":9769,"JD":1554,"JNJ":2632,"JPM":3074,"KO":4307,"LMT":279,"LVS":764,"MCD":745.8,"MELI":49.868,"MMM":580.5,"MO":1857,"MOD":51.6,"MSFT":7539,"NEM":801,"NFLX":443.224,"NKE":1578,"NOK":5624,"NVDA":2484,"OGZD":11823,"ORCL":2913,"PBR":6522,"PEP":1380,"PFE":5584,"PG":2459,"PTR":1830,"PYPL":1173,"QCOM":1133,"RDS.A":3891,"SAN":17312,"SBUX":1178,"SID":1380,"SLB":1398,"SNAP":1502,"SONY":1238,"T":7161,"TGT":498.6,"TRIP":135.746,"TS":590.269,"TSLA":961,"TWTR":795.633,"TX":196.308,"UGP":1088,"V":2137,"VALE":5130,"VIST":87.871,"VZ":4141,"WFC":4141,"WMT":2815,"X":249.351,"XOM":4272,"ABBV":1769,"AVGO":409,"BIOX":38.757,"BRK.B":2300,"CAAP":160.022,"DOCU":194.342,"EFX":121.8,"ETSY":126.215,"GPRK":61.032,"HAL":889,"MA":994,"PAAS":210.261,"PSX":439.504,"SHOP":123.244,"SNOW":287.918,"SPOT":190.565,"SQ":454.973,"UNH":945,"UNP":667.6,"WBA":864.2,"ZM":293.795},
+{"Fecha":"Jun/2021","AAPL":16629,"ABT":1779,"ADBE":478,"AGRO":116.305,"AIG":862.931,"AMD":1216,"AMGN":573,"AMX":3305,"AMZN":505,"ARCO":207.517,"AUY":965.595,"AXP":801,"AZN":2624,"BA":587.5,"BABA":2719,"BAC":8621,"BBD":9710,"BBVA":6654,"BCS":4262,"BG":141.537,"BIDU":347.75,"BIIB":149.7,"BMY":2227,"BP":3379,"BRFS":807.934,"C":2057,"CAT":547.9,"CRM":933,"CS":2454,"CSCO":4216,"CVX":1918,"CX":1496,"DE":311,"DESP":81.452,"DIS":1818,"EBAY":674,"ERJ":183.658,"FB":2834,"FDX":267.348,"FMX":357.823,"GE":1098,"GGB":1705,"GILD":1255,"GLOB":40.522,"GOLD":1779,"GOOGL":668.958,"GS":350.8,"GSK":2502,"HD":1058,"HPQ":1185,"HWM":432,"IBM":895.043,"IBN":3460,"INTC":4049,"ITUB":9780,"JD":1553,"JNJ":2633,"JPM":3037,"KO":4313,"LMT":277.4,"LVS":764,"MCD":746.6,"MELI":49.822,"MMM":581,"MO":1849,"MOD":51.8,"MSFT":7527,"NEM":801,"NFLX":443.159,"NKE":1579,"NOK":5629,"NVDA":2493,"OGZD":11823,"ORCL":2847,"PBR":6522,"PEP":1382,"PFE":5598,"PG":2430,"PTR":1830,"PYPL":1174,"QCOM":1129,"RDS.A":3895,"SAN":17312,"SBUX":1179,"SID":1380,"SLB":1398,"SNAP":1547,"SONY":1239,"T":7168,"TGT":493.1,"TRIP":137.076,"TS":590.269,"TSLA":971,"TWTR":796.472,"TX":196.308,"UGP":1090,"V":2127,"VALE":5098,"VIST":88.199,"VZ":4141,"WFC":4125,"WMT":2799,"X":269.872,"XOM":4276,"ABBV":1769,"AVGO":411,"BIOX":40.64,"BRK.B":2279,"CAAP":160.022,"DOCU":195.996,"EFX":121.8,"ETSY":126.978,"GPRK":61.077,"HAL":890,"MA":990,"PAAS":210.284,"PSX":439.94,"SHOP":124.548,"SNOW":291.386,"SPOT":191.173,"SQ":455.431,"UNH":944,"UNP":658.5,"WBA":864.7,"ZM":295.713},
+{"Fecha":"Sep/2021","AAPL":16487,"ABT":1775,"ADBE":477,"AGRO":115.28,"AIG":852.765,"AMD":1214,"AMGN":567,"AMX":3224,"AMZN":507,"ARCO":210.478,"AUY":964.715,"AXP":786,"AZN":2992,"BA":589,"BABA":2684,"BAC":8431,"BBD":9690,"BBVA":6654,"BCS":4266,"BG":141.434,"BIDU":347.25,"BIIB":148,"BMY":2219,"BP":3358,"BRFS":807.709,"C":2009,"CAT":544,"CRM":980,"CS":2430,"CSCO":4218,"CVX":1918,"CX":1494,"DE":309.1,"DESP":81.841,"DIS":1818,"EBAY":647,"ERJ":183.658,"FB":2814,"FDX":266,"FMX":357.823,"GE":1098,"GGB":1706,"GILD":1256,"GLOB":41.625,"GOLD":1779,"GOOGL":665.758,"GS":348.3,"GSK":2504,"HD":1049,"HPQ":1128,"HWM":429,"IBM":897.097,"IBN":3465,"INTC":4061,"ITUB":9780,"JD":1553,"JNJ":2633,"JPM":3000,"KO":4318,"LMT":276.2,"LVS":764,"MCD":747.1,"MELI":49.597,"MMM":579.6,"MO":1842,"MOD":52,"MSFT":7513,"NEM":799,"NFLX":442.778,"NKE":1582,"NOK":5632,"NVDA":2499,"OGZD":11823,"ORCL":2769,"PBR":6522,"PEP":1382,"PFE":5609,"PG":2428,"PTR":1830,"PYPL":1174,"QCOM":1129,"RDS.A":3887,"SAN":17312,"SBUX":1180,"SID":1380,"SLB":1402,"SNAP":1581,"SONY":1240,"T":7171,"TGT":484.8,"TRIP":137.789,"TS":590.269,"TSLA":998,"TWTR":797.985,"TX":196.308,"UGP":1090,"V":2123,"VALE":5081,"VIST":88.419,"VZ":4142,"WFC":4056,"WMT":2785,"X":270.175,"XOM":4276,"ABBV":1770,"AVGO":412,"BIOX":41.104,"BRK.B":2255,"CAAP":160.022,"DOCU":197.597,"EFX":121.9,"ETSY":126.634,"GPRK":60.742,"HAL":894,"MA":986,"PAAS":210.299,"PSX":440.193,"SHOP":125.071,"SNOW":297.717,"SPOT":191.485,"SQ":460.654,"UNH":943,"UNP":648.7,"WBA":865.1,"ZM":297.375}]
