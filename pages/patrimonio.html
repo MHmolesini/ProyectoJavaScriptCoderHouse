@@ -4,26 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <title>Patrimonio</title>
 </head>
 <body>
     <main>
         <aside>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/posicion.html">Posicion</a></li>
-                    <li><a href="../pages/resumen.html">Resumen</a></li>
-                    <li><a href="../pages/resultados.html">Estado de resultados</a></li>
-                    <li><a href="../pages/patrimonio.html">Estado Patrimonial</a></li>
-                    <li><a href="../pages/flujoDeFondos.html">Estado de Flujo de fondos</a></li>
-                    <li><a href="../pages/rentabilidad.html">Rentabilidad</a></li>
-                    <li><a href="../pages/liquidez.html">Liquidez</a></li>
-                    <li><a href="../pages/endeudamiento.html">Endeudamiento</a></li>
-                    <li><a href="../pages/gestion.html">Gestion</a></li>
-                    <li><a href="../pages/valoracion.html">Valoracion</a></li>
-                </ul>
-            </nav>
+            <div class="sidebar close">
+                <div class="logo-details">
+                  <i class="bx bxl-c-plus-plus"></i>
+                  <span class="logo_name">Dash</span>
+                </div>
+        
+                <ul class="nav-links">
+                  <li>
+                    <a href="./index.html">
+                      <i class="bx bx-grid-alt"></i>
+                      <span class="link_name">Inicio</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="../index.html">Inicio</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                        <i class="bx bx-collection"></i>
+                        <span class="link_name">Posicion</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="../pages/posicion.html">Posicion</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                        <i class="bx bx-book-alt"></i>
+                        <span class="link_name">Resumen</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="../pages/resumen.html">Resumen</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <div class="iocn-link">
+                      <a href="#">
+                        <i class="bx bx-line-chart"></i>
+                        
+                        <span class="link_name">Estado</span>
+                      </a>
+                      <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <ul class="sub-menu">
+                      <li><a class="link_name" href="#">Estado</a></li>
+                      <li><a href="#">Resultados</a></li>
+                      <li><a href="#">Patrimonio</a></li>
+                      <li><a href="#">Flujo de fondos</a></li>
+                    </ul>
+                  </li>
+        
+                  <li>
+                    <div class="iocn-link">
+                      <a href="#">
+                        <i class="bx bx-pie-chart-alt-2"></i>
+                        <span class="link_name">Ratios</span>
+                      </a>
+                      <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <ul class="sub-menu">
+                      <li><a class="link_name" href="#">Ratios</a></li>
+                      <li><a href="../pages/rentabilidad.html">Rentabilidad</a></li>
+                      <li><a href="../pages/liquidez.html">Liquidez</a></li>
+                      <li><a href="../pages/endeudamiento.html">Endeudamiento</a></li>
+                      <li><a href="../pages/gestion.html">Gestion</a></li>
+                      <li><a href="../pages/valoracion.html">Valoracion</a></li>
+                    </ul>
+                  </li>
+        
+                  <li>
+                    <a href="#">
+                      <i class="bx bx-compass"></i>
+                      <span class="link_name">Explore</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Explore</a></li>
+                    </ul>
+                  </li>
+        
+                  <li>
+                <div class="profile-details">
+                  <div class="profile-content">
+                    <!--<img src="image/profile.jpg" alt="profileImg">-->
+                  </div>
+                  <div class="name-job">
+                    <div class="profile_name">Prem Shahi</div>
+                    <div class="job">Web Desginer</div>
+                  </div>
+                  <i class="bx bx-log-out"></i>
+                </div>
+              </li>
+            </ul>
+              </div>
+              <section class="home-section">
+                <div class="home-content">
+                  <i class="bx bx-menu"></i>
+                  <span class="text">Drop Down Sidebar</span>
+                </div>
+              </section>
         </aside>
         <section>
             <form>
