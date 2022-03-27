@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <title>Patrimonio</title>
 </head>
 <body>
@@ -115,216 +116,222 @@
 
         <div class="home-filters">
           <form>
-            <select>
-              <option value="1">Apple</option>
-              <option value="2">AbbVie</option>
-              <option value="3">Ambev</option>
-              <option value="4">Abbott Laboratories</option>
-              <option value="5">Adobe</option>
-              <option value="6">Adecoagro</option>
-              <option value="7">American International Group</option>
-              <option value="8">Advanced Micro Devices</option>
-              <option value="9">Amgen</option>
-              <option value="10">America Movil</option>
-              <option value="11">Amazon</option>
-                <option value="12">Arcos Dorados Holdings</option>
-                <option value="13">Yamana Gold</option>
-                <option value="14">Broadcom</option>
-                <option value="15">American Express Company</option>
-                <option value="16">Astrazeneca</option>
-                <option value="17">Boeing Company</option>
-                        <option value="18">Alibaba Group Holdings</option>
-                        <option value="19">Bank of America Corporation</option>
-                        <option value="20">Banco Bradesco</option>
-                        <option value="21">Banco Bilbao Vizcaya Argentaria</option>
-                        <option value="22">Barclays</option>
-                        <option value="23">Bunge Limited</option>
-                        <option value="24">Baidu</option>
-                        <option value="25">Biogen</option>
-                        <option value="26">Bioceres Crop Solutions</option>
-                        <option value="27">Bristol-Myers Squibb Company</option>
-                        <option value="28">BP</option>
-                        <option value="29">BRF</option>
-                        <option value="30">Berkshire Hathaway</option>
-                        <option value="31">Banco Santander Brasil</option>
-                        <option value="32">Citigroup</option>
-                        <option value="33">Corporation America Airports</option>
-                        <option value="34">Caterpillar</option>
-                        <option value="35">Salesforce</option>
-                        <option value="36">Credit Suisse Group</option>
-                        <option value="37">Cisco Systems</option>
-                        <option value="38">Chevron Corporation</option>
-                        <option value="39">Cemex</option>
-                        <option value="40">Deere & Company</option>
-                        <option value="41">Despegar</option>
-                        <option value="42">Walt Disney Company</option>
-                        <option value="43">DocuSign</option>
-                        <option value="44">eBay</option>
-                        <option value="45">Equifax</option>
-                        <option value="46">Embraer</option>
-                        <option value="47">Etsy</option>
-                        <option value="48">Meta Plataforms</option>
-                        <option value="49">FedEx Corporation</option>
-                        <option value="50">Fomento Economico Mexicano</option>
-                        <option value="51">General Electric Company</option>
-                        <option value="52">Gerdau</option>
-                        <option value="53">Gilead Sciences</option>
-                        <option value="54">Globant</option>
-                        <option value="55">Barrick Gold Corporation</option>
-                        <option value="56">Alphabet</option>
-                        <option value="57">Geopark</option>
-                        <option value="58">Goldman Sachs Group</option>
-                        <option value="59">GlaxoSmithKline</option>
-                        <option value="60">Halliburton Company</option>
-                        <option value="61">Home Depot</option>
-                        <option value="62">Harmony Gold Mining Company Limited</option>
-                        <option value="63">HP</option>
-                        <option value="64">Howmet Aerospace</option>
-                        <option value="65">International Business Machines Corporation</option>
-                        <option value="66">ICICI Bank Limited</option>
-                        <option value="67">Intel Corporation</option>
-                        <option value="68">Itau Unibanco Banco Holding</option>
-                        <option value="69">JD</option>
-                        <option value="70">Johnson & Johnson</option>
-                        <option value="71">JP Morgan Chase & Co</option>
-                        <option value="72">Coca Cola Company</option>
-                        <option value="73">Lockheed Martin Corporation</option>
-                        <option value="74">Las Vegas Sands Corporation</option>
-                        <option value="75">Lloyds Banking group</option>
-                        <option value="76">Mastercard Incorporated</option>
-                        <option value="77">McDonald's Corporation</option>
-                        <option value="78">Mercado Libre</option>
-                        <option value="79">3M Company</option>
-                        <option value="80">Altria Group</option>
-                        <option value="81">Modine Manufacturing Company</option>
-                        <option value="82">Microsoft Corporation</option>
-                        <option value="83">Newmont Corporation</option>
-                        <option value="84">Netflix</option>
-                        <option value="85">Nike</option>
-                        <option value="86">Nokia Corporation Sponsored</option>
-                        <option value="87">Nvidia Corporation</option>
-                        <option value="88">Gazprom</option>
-                        <option value="89">Oracle Corporation</option>
-                        <option value="90">Pan America Silver Corporation</option>
-                        <option value="91">Petroleo Brasileiro</option>
-                        <option value="92">Pepsico</option>
-                        <option value="93">Pfizer</option>
-                        <option value="94">Procter & Gamble Company</option>
-                        <option value="95">Phillips 66</option>
-                        <option value="96">PetroChina Company Limited</option>
-                        <option value="97">PayPal Holdings</option>
-                        <option value="98">Qualcomm Incorporated</option>
-                        <option value="99">Banco Santander</option>
-                        <option value="100">Starbucks Corporation</option>
-                        <option value="101">Shopify</option>
-                        <option value="102">Companhia Siderurgica Nacional</option>
-                        <option value="103">Schlumberger</option>
-                        <option value="104">Snapchat</option>
-                        <option value="105">Snowflake</option>
-                        <option value="106">Sony Group Corporation</option>
-                        <option value="107">Spotify Technology</option>
-                        <option value="108">Block</option>
-                        <option value="109">AT&T</option>
-                        <option value="110">Target Corporation</option>
-                        <option value="111">TripAdvisor</option>
-                        <option value="112">Tenaris</option>
-                        <option value="113">Tesla</option>
-                        <option value="114">Twitter</option>
-                        <option value="115">Ternium</option>
-                        <option value="116">Ultrapar Participacoes</option>
-                        <option value="117">UnitedHealth Group Incorporated</option>
-                        <option value="118">Union Pacific Corporation</option>
-                        <option value="119">Visa</option>
-                        <option value="120">Vale</option>
-                        <option value="121">Vista</option>
-                        <option value="122">Vodafone Group</option>
-                        <option value="123">Verizon Communications</option>
-                        <option value="124">Walgreens Boots Alliance</option>
-                        <option value="125">Well Fargo & Company</option>
-                        <option value="126">Walmart</option>
-                        <option value="127">United States Steel Corporation</option>
-                        <option value="128">Exxon Mobil Corporation</option>
-                        <option value="129">Zoom Video Communications</option>
-                        <option value="130">Total Energies</option>
-                    </select>
-              <select>
-                <option value="1">Sep/2019</option>
-                <option value="2">Dic/2019</option>
-                <option value="3">Mar/2020</option>
-                <option value="4">Jun/2020</option>
-                <option value="5">Sep/2020</option>
-                <option value="6">Dic/2020</option>
-                <option value="7">Mar/2021</option>
-                <option value="8">Jun/2021</option>
-                <option value="9">Sep/2021</option>
-                <option value="10">Dic/2021</option>
-                <option value="11">Mar/2022</option>
-              </select>
-            </form>
-          </div>
+            <select id="home-filters__select" onclick="seleccionarfiltro1()">
+              <option value="AAPL">Apple</option>
+              <option value="ABBV">AbbVie</option>
+              <option value="ABEV">Ambev</option>
+              <option value="ABT">Abbott Laboratories</option>
+              <option value="ADBE">Adobe</option>
+              <option value="AGRO">Adecoagro</option>
+              <option value="AIG">American International Group</option>
+              <option value="AMD">Advanced Micro Devices</option>
+              <option value="AMGN">Amgen</option>
+              <option value="AMX">America Movil</option>
+              <option value="AMZN">Amazon</option>
+              <option value="ARCO">Arcos Dorados Holdings</option>
+              <option value="AUY">Yamana Gold</option>
+              <option value="AVGO">Broadcom</option>
+              <option value="AXP">American Express Company</option>
+              <option value="AZN">Astrazeneca</option>
+              <option value="BA">Boeing Company</option>
+              <option value="BABA">Alibaba Group Holdings</option>
+              <option value="BAC">Bank of America Corporation</option>
+              <option value="BBD">Banco Bradesco</option>
+              <option value="BBVA">Banco Bilbao Vizcaya Argentaria</option>
+              <option value="BCS">Barclays</option>
+              <option value="BG">Bunge Limited</option>
+              <option value="BIDU">Baidu</option>
+              <option value="BIIB">Biogen</option>
+              <option value="BIOX">Bioceres Crop Solutions</option>
+              <option value="BMY">Bristol-Myers Squibb Company</option>
+              <option value="BP">BP</option>
+              <option value="BRFS">BRF</option>
+              <option value="BRK.B">Berkshire Hathaway</option>
+              <option value="BSBR">Banco Santander Brasil</option>
+              <option value="C">Citigroup</option>
+              <option value="CAAP">Corporation America Airports</option>
+              <option value="CAT">Caterpillar</option>
+              <option value="CRM">Salesforce</option>
+              <option value="CS">Credit Suisse Group</option>
+              <option value="CSCO">Cisco Systems</option>
+              <option value="CVX">Chevron Corporation</option>
+              <option value="CX">Cemex</option>
+              <option value="DE">Deere & Company</option>
+              <option value="DESP">Despegar</option>
+              <option value="DIS">Walt Disney Company</option>
+              <option value="DOCU">DocuSign</option>
+              <option value="EBAY">eBay</option>
+              <option value="EFX">Equifax</option>
+              <option value="ERJ">Embraer</option>
+              <option value="ETSY">Etsy</option>
+              <option value="FB">Meta Plataforms</option>
+              <option value="FDX">FedEx Corporation</option>
+              <option value="FMX">Fomento Economico Mexicano</option>
+              <option value="GE">General Electric Company</option>
+              <option value="GGB">Gerdau</option>
+              <option value="GILD">Gilead Sciences</option>
+              <option value="GLOB">Globant</option>
+              <option value="GOLD">Barrick Gold Corporation</option>
+              <option value="GOOGL">Alphabet</option>
+              <option value="GPRK">Geopark</option>
+              <option value="GS">Goldman Sachs Group</option>
+              <option value="GSK">GlaxoSmithKline</option>
+              <option value="HAL">Halliburton Company</option>
+              <option value="HD">Home Depot</option>
+              <option value="HMY">Harmony Gold Mining Company Limited</option>
+              <option value="HPQ">HP</option>
+              <option value="HWM">Howmet Aerospace</option>
+              <option value="IBM">International Business Machines Corporation</option>
+              <option value="IBN">ICICI Bank Limited</option>
+              <option value="INTC">Intel Corporation</option>
+              <option value="ITUB">Itau Unibanco Banco Holding</option>
+              <option value="JD">JD</option>
+              <option value="JNJ">Johnson & Johnson</option>
+              <option value="JPM">JP Morgan Chase & Co</option>
+              <option value="KO">Coca Cola Company</option>
+              <option value="LMT">Lockheed Martin Corporation</option>
+              <option value="LVS">Las Vegas Sands Corporation</option>
+              <option value="LYG">Lloyds Banking group</option>
+              <option value="MA">Mastercard Incorporated</option>
+              <option value="MCD">McDonald's Corporation</option>
+              <option value="MELI">Mercado Libre</option>
+              <option value="MMM">3M Company</option>
+              <option value="MO">Altria Group</option>
+              <option value="MOD">Modine Manufacturing Company</option>
+              <option value="MSFT">Microsoft Corporation</option>
+              <option value="NEM">Newmont Corporation</option>
+              <option value="NFLX">Netflix</option>
+              <option value="NKE">Nike</option>
+              <option value="NOK">Nokia Corporation Sponsored</option>
+              <option value="NVDA">Nvidia Corporation</option>
+              <option value="OGZD">Gazprom</option>
+              <option value="ORCL">Oracle Corporation</option>
+              <option value="PAAS">Pan America Silver Corporation</option>
+              <option value="PBR">Petroleo Brasileiro</option>
+              <option value="PEP">Pepsico</option>
+              <option value="PFE">Pfizer</option>
+              <option value="PG">Procter & Gamble Company</option>
+              <option value="PSX">Phillips 66</option>
+              <option value="PTR">PetroChina Company Limited</option>
+              <option value="PYPL">PayPal Holdings</option>
+              <option value="QCOM">Qualcomm Incorporated</option>
+              <option value="SAN">Banco Santander</option>
+              <option value="SBUX">Starbucks Corporation</option>
+              <option value="SHOP">Shopify</option>
+              <option value="SID">Companhia Siderurgica Nacional</option>
+              <option value="SLB">Schlumberger</option>
+              <option value="SNAP">Snapchat</option>
+              <option value="SNOW">Snowflake</option>
+              <option value="SONY">Sony Group Corporation</option>
+              <option value="SOPT">Spotify Technology</option>
+              <option value="SQ">Block</option>
+              <option value="T">AT&T</option>
+              <option value="TGT">Target Corporation</option>
+              <option value="TRIP">TripAdvisor</option>
+              <option value="TS">Tenaris</option>
+              <option value="TSLA">Tesla</option>
+              <option value="TWTR">Twitter</option>
+              <option value="TX">Ternium</option>
+              <option value="UGP">Ultrapar Participacoes</option>
+              <option value="UNH">UnitedHealth Group Incorporated</option>
+              <option value="UNP">Union Pacific Corporation</option>
+              <option value="V">Visa</option>
+              <option value="VALE">Vale</option>
+              <option value="VIST">Vista</option>
+              <option value="VOD">Vodafone Group</option>
+              <option value="VZ">Verizon Communications</option>
+              <option value="WBA">Walgreens Boots Alliance</option>
+              <option value="WFC">Well Fargo & Company</option>
+              <option value="WMT">Walmart</option>
+              <option value="X">United States Steel Corporation</option>
+              <option value="XOM">Exxon Mobil Corporation</option>
+              <option value="ZM">Zoom Video Communications</option>
+              <option value="TOT">Total Energies</option>
+            </select>
+            <select id="home-filters__select2" onclick="seleccionarfiltro2()">
+              <option value="Sep/2019">Sep/2019</option>
+              <option value="Dic/2019">Dic/2019</option>
+              <option value="Mar/2020">Mar/2020</option>
+              <option value="Jun/2020">Jun/2020</option>
+              <option value="Sep/2020">Sep/2020</option>
+              <option value="Dic/2020">Dic/2020</option>
+              <option value="Mar/2021">Mar/2021</option>
+              <option value="Jun/2021">Jun/2021</option>
+              <option value="Sep/2021">Sep/2021</option>
+              <option value="Dic/2021">Dic/2021</option>
+              <option value="Mar/2022">Mar/2022</option>
+            </select>
+          </form>
+        </div>
     
-            <div class="home-dash">
-                <div id="Banner">
+            <div class="home-dash" id="patrimonio">
+                <div id="Banner2">
                     <h2>Banner</h2>
                 </div>
-                <div>
-                    <h2>Grafico Revenue Q & Y</h2>
+                <div id="AssetsCurrent_NonCurrent">
+                    <h2>Assets Current % Non Current</h2>
                 </div>
-                <div id="Revenue">
-                    <h2>Revenue</h2>
+                <div id="Assets">
+                    <h2>Assets</h2>
                 </div>
-                <div id="GrossProfit">
-                    <h2>Gross Profit</h2>
+                <div id="Liabilities">
+                    <h2>Liabilities</h2>
                 </div>
-                <div id="OperatingIncome">
-                    <h2>Operating Income</h2>
+                <div id="Equity">
+                    <h2>Equity</h2>
                 </div>
-                <div id="NetIncome">
-                    <h2>Net Income</h2>
+                <div id="Debt">
+                    <h2>Debt</h2>
                 </div>
-                <div>
-                    <h2>Grafico barras revenue</h2>
+                <div id="Assets_Liabilities">
+                    <h2>Assets & Liabilities</h2>
                 </div>
-                <div>
-                    <h2>Grafico Weighing</h2>
+                <div id="AssetsPlotBar">
+                    <h2>Grafico barras Assets</h2>
                 </div>
-                <div>
-                    <h2>Grafico Gross Profit Q & Y</h2>
+                <div id="AssetsComponentsPlotColumn">
+                    <h2>Grafico columna aplilada assets component</h2>
+                  </div>
+                <div id="AssetsPlotCake">
+                    <h2>Grafico torta assets</h2>
                 </div>
-                <div id="Ebitda">
-                    <h2>Ebitda</h2>
+                <div id="AssetsLiabilitiesPlotColumn100">
+                    <h2>Grafico columna 100% assets & liabilities</h2>
                 </div>
-                <div>
-                    <h2>Grafico barras gross profit</h2>
+                <div id="CurrentLiabilitiesNonCurrent">
+                  <h2>Current Liabilities & Non Current liabilities</h2>
                 </div>
-                <div>
-                    <h2>Grafico barras operating income</h2>
+                <div id="EquityDebt">
+                    <h2>Equity & Debt</h2>
                 </div>
-                <div>
-                    <h2>Grafico multiple</h2>
+                <div id="LiabilitiesPlotBar">
+                    <h2>Grafico barras Liabilities</h2>
                 </div>
-                <div id="Ebit">
-            <h2>Ebit</h2>
+                <div id="LiabilitiesComponentsPlotColumn">
+            <h2>Grafico columna aplilada liabilities component</h2>
           </div>
-          <div>
-            <h2>Grafico ebitda Q & Y</h2>
+          <div id="EquityPlotBar">
+            <h2>Grafico barras Equity</h2>
           </div>
-          <div>
-            <h2>Grafico Net Income Q & Y</h2>
+          <div id="DebtPlotBar">
+            <h2>Grafico barras Debt</h2>
           </div>
-          <div>
-            <h2>Grafico EPS Q & Y</h2>
+          <div id="AssetsLiabilitiesPlotColumn">
+            <h2>Grafico columnas apiladas Assets & Liabilities</h2>
           </div>
-          <div>
-            <h2>Grafico barras Net income</h2>
+          <div id="LiabilitiesPlotCake">
+            <h2>Grafico torta Liabilities</h2>
           </div>
         </div>
       </div>
     </div>
   </main>
-    
-    <script src="../js/resultados.js"></script>
-    <script src="../js/index.js"></script>
+  
+  <script src="../js/patrimonio2.js"></script>
+  <script src="../js/patrimonio.js"></script>
+  <script src="../js/resultados2.js"></script>
+  <script src="../js/resultados.js"></script>
+  <script src="../js/index.js"></script>
 
 </body>
 </html>

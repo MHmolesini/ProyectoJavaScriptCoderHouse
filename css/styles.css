@@ -253,12 +253,14 @@
   }
 }
 
-/* Graficos del Dashboard */
+/* Graficos del Dashboard RESULTADOS*/
+
+
 
 .home-section .home-dash {
     display: grid;
     grid-template-columns: repeat(12, 5vw);
-    grid-template-rows: repeat(23, 4vh);
+    grid-template-rows: repeat(23, 7vh);
     grid-gap: 20px;
     color: #fff;
 }
@@ -266,6 +268,11 @@
 .home-section .home-dash div {
     border-radius: 15px;
     box-shadow: 2px 2px 10px black;
+}
+
+.home-section .home-dash div p {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .home-section .home-dash div:nth-child(1){
@@ -317,6 +324,7 @@
     grid-column: 5/7;
     grid-row: 10/13; 
     background-color: #E9E242;
+    color: black;
 }
 .home-section .home-dash div:nth-child(11){
     grid-column: 7/13;
@@ -357,4 +365,233 @@
     grid-column: 7/13;
     grid-row: 20/24;
     background-color: #2F334A;
+}
+
+/* Graficos del Dashboard PATRIMONIO*/
+
+.home-section #patrimonio {
+  display: grid;
+  grid-template-columns: repeat(12, 5vw);
+  grid-template-rows: repeat(27, 7vh);
+  grid-gap: 20px;
+  color: #fff;
+}
+
+.home-section .home-dash #Banner2{
+  grid-column: 1/9;
+  grid-row: 1/4;
+  background-color: #2F334A;
+}
+
+.home-section .home-dash #AssetsCurrent_NonCurrent{
+  grid-column: 9/13;
+  grid-row: 1/4; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #Assets{
+  grid-column: 1/4;
+  grid-row: 4/6;
+  background-color: #3DAC63;
+}
+.home-section .home-dash #Liabilities{
+  grid-column: 4/7;
+  grid-row: 4/6;
+  background-color: #E97E42;
+}
+.home-section .home-dash #Equity{
+  grid-column: 7/10;
+  grid-row: 4/6;
+  background-color: #4C87DF;
+}
+.home-section .home-dash #Debt{
+  grid-column: 10/13;
+  grid-row: 4/6;
+  background-color: #D34343;
+}
+.home-section .home-dash #Assets_Liabilities{
+  grid-column: 1/5;
+  grid-row: 6/9; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #AssetsPlotBar{
+  grid-column: 5/11;
+  grid-row: 6/10; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #AssetsComponentsPlotColumn{
+  grid-column: 11/13;
+  grid-row: 6/10; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #AssetsPlotCake{
+  grid-column: 1/5;
+  grid-row: 9/14;
+  background-color: #2F334A;
+}
+.home-section .home-dash #AssetsLiabilitiesPlotColumn100{
+  grid-column: 5/13;
+  grid-row: 10/15; /* mirar */
+  background-color: #2F334A;
+}
+.home-section .home-dash #CurrentLiabilitiesNonCurrent{
+  grid-column: 1/5;
+  grid-row: 14/17; /* mirar */
+  background-color: #2F334A;
+}
+.home-section .home-dash #EquityDebt{
+  grid-column: 1/5;
+  grid-row: 17/20; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #LiabilitiesPlotBar{
+  grid-column: 5/11;
+  grid-row: 15/20; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #LiabilitiesComponentsPlotColumn{
+  grid-column: 11/13;
+  grid-row: 15/20; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #EquityPlotBar{
+  grid-column: 1/7;
+  grid-row: 20/24; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #DebtPlotBar{
+  grid-column: 7/13;
+  grid-row: 20/24; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #AssetsLiabilitiesPlotColumn{
+  grid-column: 1/9;
+  grid-row: 24/28; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #LiabilitiesPlotCake{
+  grid-column: 9/13;
+  grid-row: 24/28; 
+  background-color: #2F334A;
+}
+
+/* Graficos del Dashboard PATRIMONIO*/
+
+.home-section #rentabilidad {
+  display: grid;
+  grid-template-columns: repeat(12, 5vw);
+  grid-template-rows: repeat(29, 7vh);
+  grid-gap: 20px;
+  color: #fff;
+}
+
+.home-section .home-dash #Banner4{
+  grid-column: 1/9;
+  grid-row: 1/4;
+  background-color: #2F334A;
+}
+
+.home-section .home-dash #CogsEps{
+  grid-column: 9/13;
+  grid-row: 1/4; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #EPS{
+  grid-column: 1/4;
+  grid-row: 4/6;
+  background-color: #3DAC63;
+}
+.home-section .home-dash #GrossMargin{
+  grid-column: 4/7;
+  grid-row: 4/6;
+  background-color: #E97E42;
+}
+.home-section .home-dash #NetMargin{
+  grid-column: 7/10;
+  grid-row: 4/6;
+  background-color: #B74FDB;
+}
+.home-section .home-dash #EbitdaMargin{
+  grid-column: 10/13;
+  grid-row: 4/6;
+  background-color: #E9E242;
+}
+.home-section .home-dash #EarningPerSharePlotColumnLine{
+  grid-column: 1/7;
+  grid-row: 6/10; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #GrossMarginPlotColumnLine{
+  grid-column: 7/13;
+  grid-row: 6/10; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #DividendPayout{
+  grid-column: 1/4;
+  grid-row: 10/12; 
+  background-color: #D34343;
+}
+.home-section .home-dash #DividendYieldPayout{
+  grid-column: 1/4;
+  grid-row: 12/15; /*mirar*/
+  background-color: #2F334A;
+}
+.home-section .home-dash #MarginPlotBar{
+  grid-column: 4/10;
+  grid-row: 10/15; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #FCFMargin{
+  grid-column: 10/13;
+  grid-row: 10/12; 
+  background-color: #4C87DF;
+}
+.home-section .home-dash #RoaRoeRoic{
+  grid-column: 10/13;
+  grid-row: 12/15; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #NetMarginPlotColumn{
+  grid-column: 1/7;
+  grid-row: 15/19; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #EbitdaMarginPlotColumn{
+  grid-column: 7/13;
+  grid-row: 15/19; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #RotaRote{
+  grid-column: 1/5;
+  grid-row: 19/22; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #Roa{
+  grid-column: 5/7;
+  grid-row: 19/22; 
+  background-color: #3DAC63;
+}
+.home-section .home-dash #Roe{
+  grid-column: 7/9;
+  grid-row: 19/22; 
+  background-color: #B74FDB;
+}
+.home-section .home-dash #QualityRatio{
+  grid-column: 9/13;
+  grid-row: 19/22; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #DividendPayoutPlotColumn{
+  grid-column: 1/7;
+  grid-row: 22/26; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #FCFMarginPlotColumn{
+  grid-column: 7/13;
+  grid-row: 22/26; 
+  background-color: #2F334A;
+}
+.home-section .home-dash #ReturnAssetsLiabilitiesPlot{
+  grid-column: 1/13;
+  grid-row: 26/30; 
+  background-color: #2F334A;
 }
