@@ -20,18 +20,22 @@ let arrow = document.querySelectorAll(".arrow");
 
 // se crea una variable vacia, en el que posteriormente se le asignara el valor de las ventas de una determinada empresa, en una fecha en concreto.
 
-let empresas;
-let fechas;
+let empresas = "AAPL";
+let fechas = "Sep/2020";
 
-function seleccionarfiltro1() {
-    let homeFilters__select1 = document.getElementById("home-filters__select").value;
-    empresas = homeFilters__select1;
-}
 
-function seleccionarfiltro2() {
-    let homeFilters__select2 = document.getElementById("home-filters__select2").value;
-    fechas = homeFilters__select2;
-}
+// function seleccionarfiltro1(i) {
+//     console.log(i);
+//     // let homeFilters__select1 = document.getElementById("home-filters__select").value;
+//     // empresas = homeFilters__select1;
+// }
+
+// function seleccionarfiltro2() {
+//     let homeFilters__select2 = document.getElementById("home-filters__select2").value;
+//     fechas = homeFilters__select2;
+//     console.log(fechas);
+// }
+
 
 
 // Resultados
@@ -80,6 +84,8 @@ let busquedaB1;
 let resultadoB1;
 let busquedaB2;
 let resultadoB2;
+let busquedaB3;
+let resultadoB3;
 
 
 // Grafico de columnas Revenue 
@@ -257,1023 +263,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('Assets_Liabilities', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('AssetsPlotBar', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Net Income'
-        },
-        xAxis: {
-            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
-        },
-        yAxis: {
-            title: {
-                text: 'Net Income'
-            }
-        },
-        series: [{
-            name: empresas,
-            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
-            color: '#B74FDB',
-        }],
-        
-    });
-});
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('AssetsComponentsPlotColumn', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Assets Components'
-    },
-    // xAxis: {
-    //     categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
-    // },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Total fruit consumption'
-        },
-        stackLabels: {
-            enabled: true,
-            style: {
-                fontWeight: 'bold',
-                color: ( // theme
-                    Highcharts.defaultOptions.title.style &&
-                    Highcharts.defaultOptions.title.style.color
-                ) || 'gray'
-            }
-        }
-    },
-    // legend: {
-    //     align: 'right',
-    //     x: -30,
-    //     verticalAlign: 'top',
-    //     y: 25,
-    //     floating: true,
-    //     backgroundColor:
-    //         Highcharts.defaultOptions.legend.backgroundColor || 'white',
-    //     borderColor: '#CCC',
-    //     borderWidth: 1,
-    //     shadow: false
-    // },
-    tooltip: {
-        headerFormat: '<b>{point.x}</b><br/>',
-        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal',
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    series: [{
-        name: 'John',
-        data: [5]
-    }, {
-        name: 'Jane',
-        data: [2]
-    }, {
-        name: 'Joe',
-        data: [3]
-    }]
-});
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('AssetsPlotCake', {
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
-    },
-    title: {
-        text: 'Weighting of Assets'
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    accessibility: {
-        point: {
-            valueSuffix: '%'
-        }
-    },
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            // dataLabels: {
-            //     enabled: true,
-            //     format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-            // }
-        }
-    },
-    series: [{
-        name: 'Brands',
-        colorByPoint: true,
-        data: [{
-            name: 'Chrome',
-            y: 61.41,
-            sliced: true,
-            selected: true
-        }, {
-            name: 'Internet Explorer',
-            y: 11.84
-        }, {
-            name: 'Firefox',
-            y: 10.85
-        }, {
-            name: 'Edge',
-            y: 4.67
-        }, {
-            name: 'Safari',
-            y: 4.18
-        }, {
-            name: 'Sogou Explorer',
-            y: 1.64
-        }, {
-            name: 'Opera',
-            y: 1.6
-        }, {
-            name: 'QQ',
-            y: 1.2
-        }, {
-            name: 'Other',
-            y: 2.61
-        }]
-    }]
-});
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('CurrentLiabilitiesNonCurrent', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('EquityDebt', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('LiabilitiesPlotBar', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Net Income'
-        },
-        xAxis: {
-            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
-        },
-        yAxis: {
-            title: {
-                text: 'Net Income'
-            }
-        },
-        series: [{
-            name: empresas,
-            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
-            color: '#B74FDB',
-        }],
-        
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('LiabilitiesComponentsPlotColumn', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Assets Components'
-    },
-    // xAxis: {
-    //     categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
-    // },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Total fruit consumption'
-        },
-        stackLabels: {
-            enabled: true,
-            style: {
-                fontWeight: 'bold',
-                color: ( // theme
-                    Highcharts.defaultOptions.title.style &&
-                    Highcharts.defaultOptions.title.style.color
-                ) || 'gray'
-            }
-        }
-    },
-    // legend: {
-    //     align: 'right',
-    //     x: -30,
-    //     verticalAlign: 'top',
-    //     y: 25,
-    //     floating: true,
-    //     backgroundColor:
-    //         Highcharts.defaultOptions.legend.backgroundColor || 'white',
-    //     borderColor: '#CCC',
-    //     borderWidth: 1,
-    //     shadow: false
-    // },
-    tooltip: {
-        headerFormat: '<b>{point.x}</b><br/>',
-        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal',
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    series: [{
-        name: 'John',
-        data: [5]
-    }, {
-        name: 'Jane',
-        data: [2]
-    }, {
-        name: 'Joe',
-        data: [3]
-    }]
-});
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('EquityPlotBar', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Net Income'
-        },
-        xAxis: {
-            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
-        },
-        yAxis: {
-            title: {
-                text: 'Net Income'
-            }
-        },
-        series: [{
-            name: empresas,
-            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
-            color: '#B74FDB',
-        }],
-        
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('DebtPlotBar', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Net Income'
-        },
-        xAxis: {
-            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
-        },
-        yAxis: {
-            title: {
-                text: 'Net Income'
-            }
-        },
-        series: [{
-            name: empresas,
-            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
-            color: '#B74FDB',
-        }],
-        
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('LiabilitiesPlotCake', {
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
-    },
-    title: {
-        text: 'Weighting of Assets'
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    accessibility: {
-        point: {
-            valueSuffix: '%'
-        }
-    },
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            // dataLabels: {
-            //     enabled: true,
-            //     format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-            // }
-        }
-    },
-    series: [{
-        name: 'Brands',
-        colorByPoint: true,
-        data: [{
-            name: 'Chrome',
-            y: 61.41,
-            sliced: true,
-            selected: true
-        }, {
-            name: 'Internet Explorer',
-            y: 11.84
-        }, {
-            name: 'Firefox',
-            y: 10.85
-        }, {
-            name: 'Edge',
-            y: 4.67
-        }, {
-            name: 'Safari',
-            y: 4.18
-        }, {
-            name: 'Sogou Explorer',
-            y: 1.64
-        }, {
-            name: 'Opera',
-            y: 1.6
-        }, {
-            name: 'QQ',
-            y: 1.2
-        }, {
-            name: 'Other',
-            y: 2.61
-        }]
-    }]
-});
-});
-
-// RENTABILIDAD 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('CogsEps', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('EarningPerSharePlotColumnLine', {
-    chart: {
-        zoomType: 'xy'
-    },
-    title: {
-        text: 'Average Monthly Temperature and Rainfall in Tokyo'
-    },
-    subtitle: {
-        text: 'Source: WorldClimate.com'
-    },
-    xAxis: [{
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        crosshair: true
-    }],
-    yAxis: [{ // Primary yAxis
-        labels: {
-            format: '{value}°C',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        },
-        title: {
-            text: 'Temperature',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        }
-    }, { // Secondary yAxis
-        title: {
-            text: 'Rainfall',
-            style: {
-                color: Highcharts.getOptions().colors[0]
-            }
-        },
-        labels: {
-            format: '{value} mm',
-            style: {
-                color: Highcharts.getOptions().colors[0]
-            }
-        },
-        opposite: true
-    }],
-    tooltip: {
-        shared: true
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'left',
-        x: 120,
-        verticalAlign: 'top',
-        y: 100,
-        floating: true,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || // theme
-            'rgba(255,255,255,0.25)'
-    },
-    series: [{
-        name: 'Rainfall',
-        type: 'column',
-        yAxis: 1,
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-        tooltip: {
-            valueSuffix: ' mm'
-        }
-
-    }, {
-        name: 'Temperature',
-        type: 'spline',
-        data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
-        tooltip: {
-            valueSuffix: '°C'
-        }
-    }]
-});
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('GrossMarginPlotColumnLine', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Assets Components'
-    },
-    // xAxis: {
-    //     categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
-    // },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Total fruit consumption'
-        },
-        stackLabels: {
-            enabled: true,
-            style: {
-                fontWeight: 'bold',
-                color: ( // theme
-                    Highcharts.defaultOptions.title.style &&
-                    Highcharts.defaultOptions.title.style.color
-                ) || 'gray'
-            }
-        }
-    },
-    // legend: {
-    //     align: 'right',
-    //     x: -30,
-    //     verticalAlign: 'top',
-    //     y: 25,
-    //     floating: true,
-    //     backgroundColor:
-    //         Highcharts.defaultOptions.legend.backgroundColor || 'white',
-    //     borderColor: '#CCC',
-    //     borderWidth: 1,
-    //     shadow: false
-    // },
-    tooltip: {
-        headerFormat: '<b>{point.x}</b><br/>',
-        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal',
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    series: [{
-        name: 'John',
-        data: [5]
-    }, {
-        name: 'Jane',
-        data: [2]
-    }, {
-        name: 'Joe',
-        data: [3]
-    }]
-});
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('DividendYieldPayout', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('MarginPlotBar', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('RoaRoeRoic', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('NetMarginPlotColumn', {
-    chart: {
-        zoomType: 'xy'
-    },
-    title: {
-        text: 'Average Monthly Temperature and Rainfall in Tokyo'
-    },
-    subtitle: {
-        text: 'Source: WorldClimate.com'
-    },
-    xAxis: [{
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        crosshair: true
-    }],
-    yAxis: [{ // Primary yAxis
-        labels: {
-            format: '{value}°C',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        },
-        title: {
-            text: 'Temperature',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        }
-    }, { // Secondary yAxis
-        title: {
-            text: 'Rainfall',
-            style: {
-                color: Highcharts.getOptions().colors[0]
-            }
-        },
-        labels: {
-            format: '{value} mm',
-            style: {
-                color: Highcharts.getOptions().colors[0]
-            }
-        },
-        opposite: true
-    }],
-    tooltip: {
-        shared: true
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'left',
-        x: 120,
-        verticalAlign: 'top',
-        y: 100,
-        floating: true,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || // theme
-            'rgba(255,255,255,0.25)'
-    },
-    series: [{
-        name: 'Rainfall',
-        type: 'column',
-        yAxis: 1,
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-        tooltip: {
-            valueSuffix: ' mm'
-        }
-
-    }, {
-        name: 'Temperature',
-        type: 'spline',
-        data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
-        tooltip: {
-            valueSuffix: '°C'
-        }
-    }]
-});
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('EbitdaMarginPlotColumn', {
-    chart: {
-        zoomType: 'xy'
-    },
-    title: {
-        text: 'Average Monthly Temperature and Rainfall in Tokyo'
-    },
-    subtitle: {
-        text: 'Source: WorldClimate.com'
-    },
-    xAxis: [{
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        crosshair: true
-    }],
-    yAxis: [{ // Primary yAxis
-        labels: {
-            format: '{value}°C',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        },
-        title: {
-            text: 'Temperature',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        }
-    }, { // Secondary yAxis
-        title: {
-            text: 'Rainfall',
-            style: {
-                color: Highcharts.getOptions().colors[0]
-            }
-        },
-        labels: {
-            format: '{value} mm',
-            style: {
-                color: Highcharts.getOptions().colors[0]
-            }
-        },
-        opposite: true
-    }],
-    tooltip: {
-        shared: true
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'left',
-        x: 120,
-        verticalAlign: 'top',
-        y: 100,
-        floating: true,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || // theme
-            'rgba(255,255,255,0.25)'
-    },
-    series: [{
-        name: 'Rainfall',
-        type: 'column',
-        yAxis: 1,
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-        tooltip: {
-            valueSuffix: ' mm'
-        }
-
-    }, {
-        name: 'Temperature',
-        type: 'spline',
-        data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
-        tooltip: {
-            valueSuffix: '°C'
-        }
-    }]
-});
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('RotaRote', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('QualityRatio', {
-        chart: {
-            type: 'bar',
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Revenue Growth Q', 'Revenue Growth Y']
-        },
-        yAxis: {
-            title: {
-                text: null
-            }
-        },
-        series: [{
-            name: null,
-            data: [valor1[0][1], valor2[0][1]],
-            color: '#3DAC63',
-        }],
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('DividendPayoutPlotColumn', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Assets Components'
-    },
-    // xAxis: {
-    //     categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
-    // },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Total fruit consumption'
-        },
-        stackLabels: {
-            enabled: true,
-            style: {
-                fontWeight: 'bold',
-                color: ( // theme
-                    Highcharts.defaultOptions.title.style &&
-                    Highcharts.defaultOptions.title.style.color
-                ) || 'gray'
-            }
-        }
-    },
-    // legend: {
-    //     align: 'right',
-    //     x: -30,
-    //     verticalAlign: 'top',
-    //     y: 25,
-    //     floating: true,
-    //     backgroundColor:
-    //         Highcharts.defaultOptions.legend.backgroundColor || 'white',
-    //     borderColor: '#CCC',
-    //     borderWidth: 1,
-    //     shadow: false
-    // },
-    tooltip: {
-        headerFormat: '<b>{point.x}</b><br/>',
-        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal',
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    series: [{
-        name: 'John',
-        data: [5]
-    }, {
-        name: 'Jane',
-        data: [2]
-    }, {
-        name: 'Joe',
-        data: [3]
-    }]
-});
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('FCFMarginPlotColumn', {
-    chart: {
-        zoomType: 'xy'
-    },
-    title: {
-        text: 'Average Monthly Temperature and Rainfall in Tokyo'
-    },
-    subtitle: {
-        text: 'Source: WorldClimate.com'
-    },
-    xAxis: [{
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        crosshair: true
-    }],
-    yAxis: [{ // Primary yAxis
-        labels: {
-            format: '{value}°C',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        },
-        title: {
-            text: 'Temperature',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        }
-    }, { // Secondary yAxis
-        title: {
-            text: 'Rainfall',
-            style: {
-                color: Highcharts.getOptions().colors[0]
-            }
-        },
-        labels: {
-            format: '{value} mm',
-            style: {
-                color: Highcharts.getOptions().colors[0]
-            }
-        },
-        opposite: true
-    }],
-    tooltip: {
-        shared: true
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'left',
-        x: 120,
-        verticalAlign: 'top',
-        y: 100,
-        floating: true,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || // theme
-            'rgba(255,255,255,0.25)'
-    },
-    series: [{
-        name: 'Rainfall',
-        type: 'column',
-        yAxis: 1,
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-        tooltip: {
-            valueSuffix: ' mm'
-        }
-
-    }, {
-        name: 'Temperature',
-        type: 'spline',
-        data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
-        tooltip: {
-            valueSuffix: '°C'
-        }
-    }]
-});
-});
 // A traves de este switch se establecera las condiciones a ejecutar dependiendo del nombre de la empresa que el usuario haya indicado anteriormente, en el que, iterando en los arrays, que estan en el otro archivo .js, y ubicandose en la fecha tambien indicada por el usuario, hasta hallar el datos de las ventas de esa empresa en concreto. 
 switch(fechas){
     case "Dic/2018":
@@ -1337,11 +326,16 @@ switch(fechas){
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
         // PATRIMONIO - Grafico 1
-        // busquedaB1 = totalCurrentAssets.find(i => i.Fecha === fechas);
-        // resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
 
-        // busquedaB2 = totalNonCurrentAssets.find(i => i.Fecha === fechas);
-        // resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
 
         break;
     case "Mar/2019":
@@ -1412,6 +406,17 @@ switch(fechas){
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
 
         break;
     case "Jun/2019":
@@ -1474,6 +479,17 @@ switch(fechas){
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
         break;
     case "Sep/2019":
         // RESULTADO - Grafico 1
@@ -1535,7 +551,17 @@ switch(fechas){
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
-     
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
         break;
     case "Dic/2019":
         // RESULTADO - Grafico 1
@@ -1597,7 +623,18 @@ switch(fechas){
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
-   
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
+
         break;
     case "Mar/2020":
         // RESULTADO - Grafico 1
@@ -1658,6 +695,17 @@ switch(fechas){
 
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
+
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
 
 
         break;
@@ -1721,6 +769,17 @@ switch(fechas){
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
 
         break;
     case "Sep/2020":
@@ -1782,6 +841,17 @@ switch(fechas){
 
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
+
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
 
 
         break;
@@ -1845,6 +915,17 @@ switch(fechas){
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
 
         break;
     case "Mar/2021":
@@ -1907,6 +988,18 @@ switch(fechas){
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
+
         break;
     case "Jun/2021":
         // RESULTADO - Grafico 1
@@ -1967,6 +1060,17 @@ switch(fechas){
 
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
+
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
 
 
         break;
@@ -2030,15 +1134,30 @@ switch(fechas){
         busquedaA16 = epsGrowthY.find(i => i.Fecha === fechas);
         resultadoA16 = Object.entries(busquedaA16).filter(([i]) => i.includes(empresas));
 
+        // PATRIMONIO - Grafico 1
+        busquedaB1 = assetsCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB1 = Object.entries(busquedaB1).filter(([i]) => i.includes(empresas));
+
+        busquedaB2 = assetsNonCurrentGrowthY.find(i => i.Fecha === fechas);
+        resultadoB2 = Object.entries(busquedaB2).filter(([i]) => i.includes(empresas));
+
+        // Grafico 2
+        busquedaB3 = totalAssets.find(i => i.Fecha === fechas);
+        resultadoB3 = Object.entries(busquedaB3).filter(([i]) => i.includes(empresas));
+
+
         break;
 }
 
+// Resultados
 let parrafo1;
 let parrafo2;
 let parrafo3;
 let parrafo4;
 let parrafo5;
 let parrafo6;
+
+let parrafo7;
 
 let divBanner = document.getElementById("Banner");
 let divRevenue = document.getElementById("Revenue");
@@ -2048,6 +1167,8 @@ let divNetIncome = document.getElementById("NetIncome");
 let divEbitda = document.getElementById("Ebitda");
 let divEbit = document.getElementById("Ebit");
 
+let divAssets = document.getElementById("Assets");
+
 
 function resultadosCards(){
     parrafo1 = document.createElement("p");
@@ -2056,6 +1177,8 @@ function resultadosCards(){
     parrafo4 = document.createElement("p");
     parrafo5 = document.createElement("p");
     parrafo6 = document.createElement("p");
+
+    parrafo7 = document.createElement("p");
 
     parrafo1.innerHTML = "<br>"+ resultadoA3[0][1].toFixed(2) +" M";
     divRevenue.appendChild(parrafo1);
@@ -2074,6 +1197,10 @@ function resultadosCards(){
 
     parrafo6.innerHTML = "<br>"+ resultadoA10[0][1].toFixed(2) +" M";
     divEbit.appendChild(parrafo6);
+
+    
+    parrafo7.innerHTML = "<br>"+ resultadoB3[0][1].toFixed(2) +" M";
+    divAssets.appendChild(parrafo7);
 }
 resultadosCards();
 
