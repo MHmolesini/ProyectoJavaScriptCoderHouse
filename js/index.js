@@ -11,15 +11,10 @@ let arrow = document.querySelectorAll(".arrow");
   console.log(sidebarBtn);
   sidebarBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("close");
-  });
+});
 
-
-// Se le solicita al usuario que ingrese el nombre de una de las empresas incluidas en el menu desplegable (aun no estan el 100%) y una fecha.
-
-
-
-// se crea una variable vacia, en el que posteriormente se le asignara el valor de las ventas de una determinada empresa, en una fecha en concreto.
-
+// Por medio de los filtros, el usuario selecciona la empresa que desea analizar, y la fecha en la que se hara dicho analisis. 
+// ------------------------------- a revisar ----------------------------------
 let empresas = "AAPL";
 let fechas = "Sep/2020";
 
@@ -36,7 +31,7 @@ let fechas = "Sep/2020";
 //     console.log(fechas);
 // }
 
-
+// Se crean variables vacias, ordenadas por las paginas HTML, en las que luego de seleccionar los valores de los filtros, estas variables, tomaran los valores correspondientes de las Bases de Datos.
 
 // Resultados
 let busquedaA1;
@@ -87,7 +82,7 @@ let resultadoB2;
 let busquedaB3;
 let resultadoB3;
 
-
+// Variables que se utilizan para las columnas de los graficos estaticos (graficos de columnas).
 // Grafico de columnas Revenue 
 let mes1 = revenue.find(i => i.Fecha === "Dic/2018");
 let mes2 = revenue.find(i => i.Fecha === "Mar/2019");
@@ -193,77 +188,74 @@ let valor47 = Object.entries(mes47).filter(([i]) => i.includes(empresas));
 let valor48 = Object.entries(mes48).filter(([i]) => i.includes(empresas));
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('WeighingPlot', {
-        chart: {
-            type: 'waterfall',
-        },
-        title: {
-            text: 'Highcharts Waterfall',
-        },
-        xAxis: {
-            type: 'category',
-        },
-        yAxis: {
-            title: {
-                text: 'USD',
-            },
-        },
-        legend: {
-            enabled: false,
-        },
-        tooltip: {
-            pointFormat: '<b>${point.y:,.2f}</b> USD',
-        },
-        series: [{
-            upColor: Highcharts.getOptions().colors[2],
-            color: Highcharts.getOptions().colors[3],
-            data: [{
-                name: 'Revenue',
-                y: 120000,
-            }, {
-                name: 'Cost of Goods',
-                y: 569000,
-            }, {
-                name: 'Operating Expenses',
-                y: 231000,
-            }, {
-                name: 'Non-Operating Income',
-                isIntermediateSum: true,
-                color: Highcharts.getOptions().colors[1],
-            }, {
-                name: 'Interest Expense on Debt',
-                y: -342000,
-            }, {
-                name: 'Taxes',
-                y: -233000,
-            }, {
-                name: 'Others',
-                isSum: true,
-                color: Highcharts.getOptions().colors[1],
-            }, {
-                name: 'Net Income',
-                isSum: true,
-                color: Highcharts.getOptions().colors[1],
-            }],
-            dataLabels: {
-                enabled: true,
-                formatter: function () {
-                    return Highcharts.numberFormat(this.y / 1000, 0, ',') + 'k';
-                },
-                style: {
-                    fontWeight: 'bold',
-                }
-            },
-            pointPadding: 0,
-        }]
-    });
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     const chart = Highcharts.chart('WeighingPlot', {
+//         chart: {
+//             type: 'waterfall',
+//         },
+//         title: {
+//             text: 'Highcharts Waterfall',
+//         },
+//         xAxis: {
+//             type: 'category',
+//         },
+//         yAxis: {
+//             title: {
+//                 text: 'USD',
+//             },
+//         },
+//         legend: {
+//             enabled: false,
+//         },
+//         tooltip: {
+//             pointFormat: '<b>${point.y:,.2f}</b> USD',
+//         },
+//         series: [{
+//             upColor: Highcharts.getOptions().colors[2],
+//             color: Highcharts.getOptions().colors[3],
+//             data: [{
+//                 name: 'Revenue',
+//                 y: 120000,
+//             }, {
+//                 name: 'Cost of Goods',
+//                 y: 569000,
+//             }, {
+//                 name: 'Operating Expenses',
+//                 y: 231000,
+//             }, {
+//                 name: 'Non-Operating Income',
+//                 isIntermediateSum: true,
+//                 color: Highcharts.getOptions().colors[1],
+//             }, {
+//                 name: 'Interest Expense on Debt',
+//                 y: -342000,
+//             }, {
+//                 name: 'Taxes',
+//                 y: -233000,
+//             }, {
+//                 name: 'Others',
+//                 isSum: true,
+//                 color: Highcharts.getOptions().colors[1],
+//             }, {
+//                 name: 'Net Income',
+//                 isSum: true,
+//                 color: Highcharts.getOptions().colors[1],
+//             }],
+//             dataLabels: {
+//                 enabled: true,
+//                 formatter: function () {
+//                     return Highcharts.numberFormat(this.y / 1000, 0, ',') + 'k';
+//                 },
+//                 style: {
+//                     fontWeight: 'bold',
+//                 }
+//             },
+//             pointPadding: 0,
+//         }]
+//     });
+// });
 
-
-
-
-// A traves de este switch se establecera las condiciones a ejecutar dependiendo del nombre de la empresa que el usuario haya indicado anteriormente, en el que, iterando en los arrays, que estan en el otro archivo .js, y ubicandose en la fecha tambien indicada por el usuario, hasta hallar el datos de las ventas de esa empresa en concreto. 
+// A traves de este Switch se establecera las condiciones a ejecutar dependiendo de la fecha que el usuario haya seleccionado en el filtro, y el nombre de la empresa, para asi buscar los valores que se desean encontrar en los distintos arrays objects, ubicados en las bases de datos (ej: resultado.js) y asignando dichos valores en las variables vacias de mas arriba.
 switch(fechas){
     case "Dic/2018":
         // RESULTADO - Grafico 1
@@ -1149,6 +1141,7 @@ switch(fechas){
         break;
 }
 
+// Por medio de estas variables, se les asignan un selector dedsde los archivos .html, en los que luego, por medio de esa funcion, se imprimira un texto en pantalla.
 // Resultados
 let parrafo1;
 let parrafo2;
@@ -1168,7 +1161,6 @@ let divEbitda = document.getElementById("Ebitda");
 let divEbit = document.getElementById("Ebit");
 
 let divAssets = document.getElementById("Assets");
-
 
 function resultadosCards(){
     parrafo1 = document.createElement("p");
@@ -1203,4 +1195,3 @@ function resultadosCards(){
     divAssets.appendChild(parrafo7);
 }
 resultadosCards();
-

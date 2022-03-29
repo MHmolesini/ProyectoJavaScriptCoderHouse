@@ -1,4 +1,4 @@
-/* Google Fonts Import Link */
+/* Menu desplegable */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -254,9 +254,6 @@
 }
 
 /* Graficos del Dashboard RESULTADOS*/
-
-
-
 .home-section .home-dash {
     display: grid;
     grid-template-columns: repeat(12, 5vw);
@@ -368,7 +365,6 @@
 }
 
 /* Graficos del Dashboard PATRIMONIO*/
-
 .home-section #patrimonio {
   display: grid;
   grid-template-columns: repeat(12, 5vw);
@@ -475,7 +471,6 @@
 }
 
 /* Graficos del Dashboard PATRIMONIO*/
-
 .home-section #rentabilidad {
   display: grid;
   grid-template-columns: repeat(12, 5vw);
