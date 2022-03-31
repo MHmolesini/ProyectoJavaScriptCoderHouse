@@ -381,3 +381,289 @@ const epsGrowthY = [{"Fecha":"Sep/2020","AAPL":0.699,"ABEV":0.4369,"ABT":0.6117,
 {"Fecha":"Mar/2021","AAPL":0.6855,"ABEV":0.5081,"ABT":0.7177,"ADBE":0.75,"AGRO":0.1452,"AIG":0.1694,"AMD":0.9032,"AMGN":0.5,"AMX":0.871,"AMZN":0.8145,"ARCO":0.0403,"AUY":0.4032,"AXP":0.4839,"AZN":0.8226,"BA":0.8548,"BABA":0.5403,"BAC":0.5323,"BBD":0.371,"BBVA":0.9274,"BCS":0.6452,"BG":0.129,"BIDU":0.9758,"BIIB":0.3065,"BMY":0.1048,"BP":0.8629,"BRFS":0.5242,"BSBR":0,"C":0.5726,"CAT":0.3387,"CHL":0,"CRM":0.0161,"CS":0.2661,"CSCO":0.5161,"CVX":0.1129,"CX":0.0726,"DE":0.7339,"DESP":0.8871,"DIS":0.1774,"EBAY":0.3548,"ERJ":0.4919,"FB":0.7258,"FDX":0.0323,"FMX":0.2177,"GE":0.2258,"GGB":0.879,"GILD":0.2339,"GLOB":0.5806,"GOLD":0.2984,"GOOGL":0.7016,"GS":0.7903,"GSK":0.3145,"HD":0.6613,"HMY":0,"HPQ":0.6694,"HWM":0.2581,"IBM":0.3226,"IBN":0.7581,"INTC":0.4435,"ITUB":0.3468,"JD":0.9355,"JNJ":0.4597,"JPM":0.6774,"KO":0.379,"LMT":0.6048,"LVS":0.1613,"LYG":0,"MCD":0.4758,"MELI":0.2419,"MMM":0.6129,"MO":0.0887,"MOD":1,"MSFT":0.621,"NEM":0.3871,"NFLX":0.7419,"NKE":0.4113,"NOK":0.0645,"NVDA":0.7097,"OGZD":0.5484,"ORCL":0.6371,"PBR":0.0806,"PEP":0.5645,"PFE":0.3629,"PG":0.8387,"PTR":0,"PYPL":0.8306,"QCOM":0.7823,"RDS.A":0.1532,"SAN":0.1371,"SBUX":0.2742,"SID":0.9597,"SLB":0.25,"SNAP":0.4355,"SONY":0.7742,"T":0.2097,"TGT":0.6532,"TOT":0,"TRIP":0.0968,"TS":0.1855,"TSLA":0.0484,"TWTR":0.1935,"TX":0.8952,"UGP":0.7984,"V":0.4516,"VALE":0.9919,"VIST":0.7661,"VOD":0,"VZ":0.5565,"WFC":0.2903,"WMT":0.4194,"X":0.3306,"XOM":0.121,"ABBV":0.2823,"AVGO":0.6935,"BIOX":0.0081,"BRK.B":0.9516,"CAAP":0.9435,"DOCU":0.5968,"EFX":0.8065,"ETSY":0.9113,"GPRK":0.8468,"HAL":0.3952,"MA":0.4274,"PAAS":0.9194,"PSX":0.0565,"SHOP":0.0242,"SNOW":0,"SPOT":0.9677,"SQ":0.5887,"UNH":0.629,"UNP":0.4677,"WBA":0.2016,"ZM":0.9839},
 {"Fecha":"Jun/2021","AAPL":0.6129,"ABEV":0.5242,"ABT":0.75,"ADBE":0.5968,"AGRO":0.0968,"AIG":0.129,"AMD":0.9194,"AMGN":0.3468,"AMX":0.8952,"AMZN":0.7742,"ARCO":0.25,"AUY":0.2661,"AXP":0.6613,"AZN":0.6694,"BA":0.8548,"BABA":0.371,"BAC":0.5645,"BBD":0.4355,"BBVA":0.0081,"BCS":0.9032,"BG":0.0887,"BIDU":0.9677,"BIIB":0.2339,"BMY":0.9919,"BP":0.1532,"BRFS":0.2742,"BSBR":0,"C":0.6371,"CAT":0.4597,"CHL":0,"CRM":0.4274,"CS":0.2097,"CSCO":0.4194,"CVX":0.1452,"CX":1,"DE":0.7339,"DESP":0.6048,"DIS":0.1129,"EBAY":0.8306,"ERJ":0.2177,"FB":0.629,"FDX":0.8871,"FMX":0.3871,"GE":0.2258,"GGB":0.9355,"GILD":0.0242,"GLOB":0.5323,"GOLD":0.2984,"GOOGL":0.7419,"GS":0.879,"GSK":0.2419,"HD":0.5403,"HMY":0,"HPQ":0.6855,"HWM":0.2903,"IBM":0.3145,"IBN":0.6935,"INTC":0.3548,"ITUB":0.4919,"JD":0.6452,"JNJ":0.5081,"JPM":0.7177,"KO":0.379,"LMT":0.4839,"LVS":0.0484,"LYG":0,"MCD":0.5806,"MELI":0.2016,"MMM":0.5,"MO":0.0403,"MOD":0.9516,"MSFT":0.5565,"NEM":0.3306,"NFLX":0.621,"NKE":0.7823,"NOK":0.0565,"NVDA":0.7581,"OGZD":0.8065,"ORCL":0.5887,"PBR":0.0645,"PEP":0.5161,"PFE":0.4032,"PG":0.4758,"PTR":0,"PYPL":0.7016,"QCOM":0.871,"RDS.A":0.121,"SAN":0.1371,"SBUX":0.7661,"SID":0.0323,"SLB":0.1855,"SNAP":0.3065,"SONY":0.6532,"T":0.1774,"TGT":0.7984,"TOT":0,"TRIP":0.7903,"TS":0.1048,"TSLA":0.9274,"TWTR":0.1694,"TX":0.9597,"UGP":0.8226,"V":0.4113,"VALE":0.9758,"VIST":0.2581,"VOD":0,"VZ":0.4516,"WFC":0.8387,"WMT":0.2823,"X":0.1613,"XOM":0.0806,"ABBV":0.3387,"AVGO":0.7097,"BIOX":0.0726,"BRK.B":0.9113,"CAAP":0.7258,"DOCU":0.3952,"EFX":0.8145,"ETSY":0.8468,"GPRK":0.5484,"HAL":0.1935,"MA":0.4435,"PAAS":0.9435,"PSX":0.5726,"SHOP":0.0161,"SNOW":0,"SPOT":0.3226,"SQ":0.6774,"UNH":0.3629,"UNP":0.4677,"WBA":0.8629,"ZM":0.9839},
 {"Fecha":"Sep/2021","AAPL":0.6613,"ABEV":0.6048,"ABT":0.75,"ADBE":0.5887,"AGRO":0.0323,"AIG":0.0726,"AMD":0.8871,"AMGN":0.3306,"AMX":0.8468,"AMZN":0.5726,"ARCO":0.1371,"AUY":0.3468,"AXP":0.7823,"AZN":0.3065,"BA":0.7016,"BABA":0.4194,"BAC":0.6371,"BBD":0.5323,"BBVA":0.0081,"BCS":0.8306,"BG":0.8952,"BIDU":0.2984,"BIIB":0.2339,"BMY":0.9919,"BP":0.129,"BRFS":0.2258,"BSBR":0,"C":0.7177,"CAT":0.5968,"CHL":0,"CRM":0.2581,"CS":0.1694,"CSCO":0.4597,"CVX":0.0968,"CX":0.121,"DE":0.7581,"DESP":0.3629,"DIS":0.1048,"EBAY":0.8065,"ERJ":0.1774,"FB":0.629,"FDX":0.8226,"FMX":0.8548,"GE":0.6774,"GGB":0.9597,"GILD":0.9274,"GLOB":0.6532,"GOLD":0.3145,"GOOGL":0.7339,"GS":0.8387,"GSK":0.2419,"HD":0.5161,"HMY":0,"HPQ":0.8145,"HWM":0.2903,"IBM":0.2823,"IBN":0.5403,"INTC":0.4274,"ITUB":0.5242,"JD":0.3871,"JNJ":0.4516,"JPM":0.7258,"KO":0.4435,"LMT":0.3952,"LVS":0.5806,"LYG":0,"MCD":0.5565,"MELI":0.0242,"MMM":0.4919,"MO":0.8629,"MOD":1,"MSFT":0.5484,"NEM":0.3387,"NFLX":0.6855,"NKE":0.7742,"NOK":0.0484,"NVDA":0.7419,"OGZD":0.0161,"ORCL":0.5645,"PBR":0.0403,"PEP":0.4758,"PFE":0.7661,"PG":0.4355,"PTR":0,"PYPL":0.6129,"QCOM":0.6694,"RDS.A":0.1129,"SAN":0.0887,"SBUX":0.9032,"SID":0.9677,"SLB":0.1452,"SNAP":0.2742,"SONY":0.4113,"T":0.1855,"TGT":0.6935,"TOT":0,"TRIP":0.4032,"TS":0.0645,"TSLA":0.9435,"TWTR":0.1935,"TX":0.9758,"UGP":0.9113,"V":0.4677,"VALE":0.9516,"VIST":0.1613,"VOD":0,"VZ":0.5,"WFC":0.9355,"WMT":0.25,"X":0.0806,"XOM":0.0565,"ABBV":0.371,"AVGO":0.7903,"BIOX":0.2177,"BRK.B":0.7984,"CAAP":0.2661,"DOCU":0.3226,"EFX":0.621,"ETSY":0.7097,"GPRK":0.3548,"HAL":0.1532,"MA":0.5081,"PAAS":0.871,"PSX":0.2016,"SHOP":0.9839,"SNOW":0,"SPOT":0.2097,"SQ":0.6452,"UNH":0.379,"UNP":0.4839,"WBA":0.9194,"ZM":0.879}]
+
+
+
+// -------------------------------------------------------------------------------------------------
+
+
+
+// Graficos Resultados
+
+// Grafico de barras Revenue Growth Q & Revenue Growth Y
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('revenueQY', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Revenue Growth Q', 'Revenue Growth Y']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: empresas,
+            data: [resultadoA1[0][1]*100, resultadoA2[0][1]*100],
+            color: '#3DAC63',
+        }],
+    });
+});
+
+// Grafico de columnas Revenue 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('RevenuePlotColumn', {
+        chart: {
+            type: 'column',
+            spacingTop: 8,
+            spacingLeft: 0,
+            spacingRight: 10,
+        },
+        title: {
+            text: 'Revenue'
+        },
+        xAxis: {
+            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
+        },
+        yAxis: {
+            title: {
+                text: 'Revenue'
+            }
+        },
+        legend: false,
+        series: [{
+            name: empresas,
+            data: [valor1[0][1], valor2[0][1], valor3[0][1], valor4[0][1], valor5[0][1], valor6[0][1], valor7[0][1], valor8[0][1], valor9[0][1], valor10[0][1], valor11[0][1], valor12[0][1]],
+            color: '#3DAC63',
+        }],
+        
+    });
+});
+
+// Grafico de Cascada del Estado de Resultado
+
+// Grafico de barras Gross Profit Growth Q & Y
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('grossProfitQY', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Gross Profit Growth Q', 'Gross Profit Growth Y']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [resultadoA7[0][1]*100, resultadoA8[0][1]*100],
+            color: '#E97E42',
+        }],
+    });
+});
+
+// Grafico de columnas Gross Profit 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('grossProfitPlot', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Gross Profit'
+        },
+        xAxis: {
+            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
+        },
+        yAxis: {
+            title: {
+                text: 'Gross Profit'
+            }
+        },
+        legend: false,
+        series: [{
+            name: empresas,
+            data: [valor13[0][1], valor14[0][1], valor15[0][1], valor16[0][1], valor17[0][1], valor18[0][1], valor19[0][1], valor20[0][1], valor21[0][1], valor22[0][1], valor23[0][1], valor24[0][1]],
+            color: '#E97E42',
+        }],
+        
+    });
+});
+
+// Grafico de columnas Operating Income
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('operatingIncomePlot', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Operating Income'
+        },
+        xAxis: {
+            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
+        },
+        yAxis: {
+            title: {
+                text: 'Operating Income'
+            }
+        },
+        legend: false,
+        series: [{
+            name: empresas,
+            data: [valor25[0][1], valor26[0][1], valor27[0][1], valor28[0][1], valor29[0][1], valor30[0][1], valor31[0][1], valor32[0][1], valor33[0][1], valor34[0][1], valor35[0][1], valor36[0][1]],
+            color: '#4C87DF',
+        }],
+        
+    });
+});
+
+// Grafico de barras EBITDA Growth Q & Y
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('ebitdaQY', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['EBITDA Growth Q', 'EBITDA Growth Y']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [resultadoA11[0][1]*100, resultadoA12[0][1]*100],
+            color: '#E9E242',
+        }],
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('MultiplePlot', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Gross Profit', 'Operating Income', 'Pretax Income', 'Net Income', 'EBITDA']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [resultadoA10, resultadoA11, valor3[0][1], resultadoA13, resultadoA14],
+            color: '#E9E242',
+        }],
+    });
+});
+
+// Grafico de barras Net Income Growth Q & Y
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('netIncomeQY', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Net Income Growth Q', 'Net Income Growth Y']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [resultadoA13[0][1]*100, resultadoA14[0][1]*100],
+            color: '#B74FDB',
+        }],
+    });
+});
+
+// Grafico de barras EPS Growth Q & Y
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('epsQY', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['EPS Growth Q', 'EPS Growth Y']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [resultadoA15[0][1]*100, resultadoA16[0][1]*100],
+            color: '#D34343',
+        }],
+    });
+});
+
+// Grafico de columnas Net Income
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('netIncomePlot', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Net Income'
+        },
+        xAxis: {
+            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
+        },
+        yAxis: {
+            title: {
+                text: 'Net Income'
+            }
+        },
+        legend: false,
+        series: [{
+            name: empresas,
+            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
+            color: '#B74FDB',
+        }],
+        
+    });
+});

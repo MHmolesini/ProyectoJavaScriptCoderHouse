@@ -13,6 +13,13 @@ let arrow = document.querySelectorAll(".arrow");
     sidebar.classList.toggle("close");
 });
 
+const botonSwitch = document.querySelector("#switch");
+botonSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    botonSwitch.classList.toggle('active');
+});
+
+
 // Por medio de los filtros, el usuario selecciona la empresa que desea analizar, y la fecha en la que se hara dicho analisis. 
 // ------------------------------- a revisar ----------------------------------
 let empresas = "AAPL";
@@ -1170,7 +1177,6 @@ function resultadosCards(){
     parrafo5 = document.createElement("p");
     parrafo6 = document.createElement("p");
 
-    parrafo7 = document.createElement("p");
 
     parrafo1.innerHTML = "<br>"+ resultadoA3[0][1].toFixed(2) +" M";
     divRevenue.appendChild(parrafo1);
@@ -1189,9 +1195,28 @@ function resultadosCards(){
 
     parrafo6.innerHTML = "<br>"+ resultadoA10[0][1].toFixed(2) +" M";
     divEbit.appendChild(parrafo6);
-
-    
-    parrafo7.innerHTML = "<br>"+ resultadoB3[0][1].toFixed(2) +" M";
-    divAssets.appendChild(parrafo7);
 }
 resultadosCards();
+
+function patrimonioCards(){
+    parrafo7 = document.createElement("p");
+
+    parrafo7.innerHTML = `<br> ${resultadoB3[0][1].toFixed(2)} M`;
+    divAssets.appendChild(parrafo7); 
+}
+patrimonioCards();
+
+// let prueba = revenue.map((i) => i.AAPL);
+// console.log(prueba);
+
+// let td;
+// let tablaA1 = document.getElementById("tablaA1");
+
+// function tablaA() {
+//     td = document.createElement("td");
+
+//     td.innerHTML = prueba[0];
+//     tablaA1.appendChild(td);
+// }
+// tablaA();
+//

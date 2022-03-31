@@ -60,9 +60,9 @@
                     </div>
                     <ul class="sub-menu">
                       <li><a class="link_name" href="#">Estado</a></li>
-                      <li><a href="#">Resultados</a></li>
-                      <li><a href="#">Patrimonio</a></li>
-                      <li><a href="#">Flujo de fondos</a></li>
+                      <li><a href="../pages/resultados.html">Resultados</a></li>
+                      <li><a href="../pages/patrimonio.html">Patrimonio</a></li>
+                      <li><a href="../pages/flujoDeFondos.html">Flujo de fondos</a></li>
                     </ul>
                   </li>
         
@@ -107,26 +107,1238 @@
                 </div>
               </li>
             </ul>
-              </div>
-              <section class="home-section">
-                <div class="home-content">
-                  <i class="bx bx-menu"></i>
-                  <span class="text">Drop Down Sidebar</span>
-                </div>
-              </section>
-        </aside>
-        <section>
+          </div>
+      
+          <section class="home-section">
+            <div class="home-content">
+              <i class="bx bx-menu"></i>
+              <span class="text">Drop Down Sidebar</span>
+              <button class="switch" id="switch">
+                <span><i class="bx bx-sun"></i></span>
+                <span><i class="bx bx-moon"></i></span>
+              </button>
+          </div>
 
-        </section>
+            <div id="resumen">
+              <div class="home-filters">
+                <form>
+                  <select id="home-filters__select">
+                    <option value="AAPL">Apple</option>
+                    <option value="ABBV">AbbVie</option>
+                    <option value="ABEV">Ambev</option>
+                    <option value="ABT">Abbott Laboratories</option>
+                    <option value="ADBE">Adobe</option>
+                    <option value="AGRO">Adecoagro</option>
+                    <option value="AIG">American International Group</option>
+                    <option value="AMD">Advanced Micro Devices</option>
+                    <option value="AMGN">Amgen</option>
+                    <option value="AMX">America Movil</option>
+                    <option value="AMZN">Amazon</option>
+                    <option value="ARCO">Arcos Dorados Holdings</option>
+                    <option value="AUY">Yamana Gold</option>
+                    <option value="AVGO">Broadcom</option>
+                    <option value="AXP">American Express Company</option>
+                    <option value="AZN">Astrazeneca</option>
+                    <option value="BA">Boeing Company</option>
+                    <option value="BABA">Alibaba Group Holdings</option>
+                    <option value="BAC">Bank of America Corporation</option>
+                    <option value="BBD">Banco Bradesco</option>
+                    <option value="BBVA">Banco Bilbao Vizcaya Argentaria</option>
+                    <option value="BCS">Barclays</option>
+                    <option value="BG">Bunge Limited</option>
+                    <option value="BIDU">Baidu</option>
+                    <option value="BIIB">Biogen</option>
+                    <option value="BIOX">Bioceres Crop Solutions</option>
+                    <option value="BMY">Bristol-Myers Squibb Company</option>
+                    <option value="BP">BP</option>
+                    <option value="BRFS">BRF</option>
+                    <option value="BRK.B">Berkshire Hathaway</option>
+                    <option value="BSBR">Banco Santander Brasil</option>
+                    <option value="C">Citigroup</option>
+                    <option value="CAAP">Corporation America Airports</option>
+                    <option value="CAT">Caterpillar</option>
+                    <option value="CRM">Salesforce</option>
+                    <option value="CS">Credit Suisse Group</option>
+                    <option value="CSCO">Cisco Systems</option>
+                    <option value="CVX">Chevron Corporation</option>
+                    <option value="CX">Cemex</option>
+                    <option value="DE">Deere & Company</option>
+                    <option value="DESP">Despegar</option>
+                    <option value="DIS">Walt Disney Company</option>
+                    <option value="DOCU">DocuSign</option>
+                    <option value="EBAY">eBay</option>
+                    <option value="EFX">Equifax</option>
+                    <option value="ERJ">Embraer</option>
+                    <option value="ETSY">Etsy</option>
+                    <option value="FB">Meta Plataforms</option>
+                    <option value="FDX">FedEx Corporation</option>
+                    <option value="FMX">Fomento Economico Mexicano</option>
+                    <option value="GE">General Electric Company</option>
+                    <option value="GGB">Gerdau</option>
+                    <option value="GILD">Gilead Sciences</option>
+                    <option value="GLOB">Globant</option>
+                    <option value="GOLD">Barrick Gold Corporation</option>
+                    <option value="GOOGL">Alphabet</option>
+                    <option value="GPRK">Geopark</option>
+                    <option value="GS">Goldman Sachs Group</option>
+                    <option value="GSK">GlaxoSmithKline</option>
+                    <option value="HAL">Halliburton Company</option>
+                    <option value="HD">Home Depot</option>
+                    <option value="HMY">Harmony Gold Mining Company Limited</option>
+                    <option value="HPQ">HP</option>
+                    <option value="HWM">Howmet Aerospace</option>
+                    <option value="IBM">International Business Machines Corporation</option>
+                    <option value="IBN">ICICI Bank Limited</option>
+                    <option value="INTC">Intel Corporation</option>
+                    <option value="ITUB">Itau Unibanco Banco Holding</option>
+                    <option value="JD">JD</option>
+                    <option value="JNJ">Johnson & Johnson</option>
+                    <option value="JPM">JP Morgan Chase & Co</option>
+                    <option value="KO">Coca Cola Company</option>
+                    <option value="LMT">Lockheed Martin Corporation</option>
+                    <option value="LVS">Las Vegas Sands Corporation</option>
+                    <option value="LYG">Lloyds Banking group</option>
+                    <option value="MA">Mastercard Incorporated</option>
+                    <option value="MCD">McDonald's Corporation</option>
+                    <option value="MELI">Mercado Libre</option>
+                    <option value="MMM">3M Company</option>
+                    <option value="MO">Altria Group</option>
+                    <option value="MOD">Modine Manufacturing Company</option>
+                    <option value="MSFT">Microsoft Corporation</option>
+                    <option value="NEM">Newmont Corporation</option>
+                    <option value="NFLX">Netflix</option>
+                    <option value="NKE">Nike</option>
+                    <option value="NOK">Nokia Corporation Sponsored</option>
+                    <option value="NVDA">Nvidia Corporation</option>
+                    <option value="OGZD">Gazprom</option>
+                    <option value="ORCL">Oracle Corporation</option>
+                    <option value="PAAS">Pan America Silver Corporation</option>
+                    <option value="PBR">Petroleo Brasileiro</option>
+                    <option value="PEP">Pepsico</option>
+                    <option value="PFE">Pfizer</option>
+                    <option value="PG">Procter & Gamble Company</option>
+                    <option value="PSX">Phillips 66</option>
+                    <option value="PTR">PetroChina Company Limited</option>
+                    <option value="PYPL">PayPal Holdings</option>
+                    <option value="QCOM">Qualcomm Incorporated</option>
+                    <option value="SAN">Banco Santander</option>
+                    <option value="SBUX">Starbucks Corporation</option>
+                    <option value="SHOP">Shopify</option>
+                    <option value="SID">Companhia Siderurgica Nacional</option>
+                    <option value="SLB">Schlumberger</option>
+                    <option value="SNAP">Snapchat</option>
+                    <option value="SNOW">Snowflake</option>
+                    <option value="SONY">Sony Group Corporation</option>
+                    <option value="SOPT">Spotify Technology</option>
+                    <option value="SQ">Block</option>
+                    <option value="T">AT&T</option>
+                    <option value="TGT">Target Corporation</option>
+                    <option value="TRIP">TripAdvisor</option>
+                    <option value="TS">Tenaris</option>
+                    <option value="TSLA">Tesla</option>
+                    <option value="TWTR">Twitter</option>
+                    <option value="TX">Ternium</option>
+                    <option value="UGP">Ultrapar Participacoes</option>
+                    <option value="UNH">UnitedHealth Group Incorporated</option>
+                    <option value="UNP">Union Pacific Corporation</option>
+                    <option value="V">Visa</option>
+                    <option value="VALE">Vale</option>
+                    <option value="VIST">Vista</option>
+                    <option value="VOD">Vodafone Group</option>
+                    <option value="VZ">Verizon Communications</option>
+                    <option value="WBA">Walgreens Boots Alliance</option>
+                    <option value="WFC">Well Fargo & Company</option>
+                    <option value="WMT">Walmart</option>
+                    <option value="X">United States Steel Corporation</option>
+                    <option value="XOM">Exxon Mobil Corporation</option>
+                    <option value="ZM">Zoom Video Communications</option>
+                    <option value="TOT">Total Energies</option>
+                  </select>
+                </form>
+              </div>
+
+              <div id="resumen__dash">
+                <div id="resumen__dash__1">
+                  <h2>Estado de Resultados</h2>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Dic/2018</th>
+                        <th>Mar/2019</th>
+                        <th>Jun/2019</th>
+                        <th>Sep/2019</th>
+                        <th>Dic/2019</th>
+                        <th>Mar/2020</th>
+                        <th>Jun/2020</th>
+                        <th>Sep/2020</th>
+                        <th>Dic/2020</th>
+                        <th>Mar/2021</th>
+                        <th>Jun/2021</th>
+                        <th>Sep/2021</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="tablaA1">
+                        <td>Revenue</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Cost of Goods</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Deprecation & Amortization</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Gross Profit</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Operating Expenses</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Operating Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Non Operating Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Interest Expense on Debt</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Pretax Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Taxes</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Others</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Net Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>EBIT</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>EBITDA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div id="resumen__dash__2">
+                  <h2>Estado Patrimonial</h2>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Dic/2018</th>
+                        <th>Mar/2019</th>
+                        <th>Jun/2019</th>
+                        <th>Sep/2019</th>
+                        <th>Dic/2019</th>
+                        <th>Mar/2020</th>
+                        <th>Jun/2020</th>
+                        <th>Sep/2020</th>
+                        <th>Dic/2020</th>
+                        <th>Mar/2021</th>
+                        <th>Jun/2021</th>
+                        <th>Sep/2021</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Total Assets</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Current Assets</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Cash and Short Term Investment</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Total Receivables</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Total Inventory</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Prepaid Expenses</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Other Current Assets</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Non Current Assets</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Long Term Investment</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Net Property Plant Equipment</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Deferred Tax Assets</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Net Intangible Assets</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Others Long Term Assets</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Total Liabilities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Current Liabilities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Short Term Debt</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Accounts Payable</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Income Tax Payable</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <!-- faltan -->
+                      <tr>
+                        <td>Deferred Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Other Current Liabilities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Non Current Liabilities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Long Term Debt</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Provision for Risks and Charge</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Deferred Tax Liabilities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Deferred Income Non Current</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Other Liabilities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Total Equity</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Total Liabilities and Shareholders</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div id="resumen__dash__3">
+                  <h2>Estado de Flujo de Fondos</h2>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Dic/2018</th>
+                        <th>Mar/2019</th>
+                        <th>Jun/2019</th>
+                        <th>Sep/2019</th>
+                        <th>Dic/2019</th>
+                        <th>Mar/2020</th>
+                        <th>Jun/2020</th>
+                        <th>Sep/2020</th>
+                        <th>Dic/2020</th>
+                        <th>Mar/2021</th>
+                        <th>Jun/2021</th>
+                        <th>Sep/2021</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cash From Operating Activities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Funds From Operations</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Net Income (CF)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Depreciation & Amortization</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Deferred Taxes</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Non Cash Items</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Changes in Working Capital</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Change in Accounts Receivable</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Change in Taxes Payable</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Change in Accounts Payable</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Change in Accrued Expenses</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Change in Inventory</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Change in Other Assets & Liabilities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Cash From Investing Activities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Purchase & Acquisition of Business</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Purchase Sale of Investment</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Capital Expenditure</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Other Investing Cash Flow Items</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Cash From Financing Activities</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Issuance Retirement of Stock</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Issuance Retirement of Debt</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Total Cash Dividend Paid</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Other financing Cash Flow Items</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Free Cash Flow</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+
     </main>
+  
     
-  <script src="../js/rentabilidad2.js"></script>
-  <script src="../js/rentabilidad.js"></script>
-  <script src="../js/patrimonio2.js"></script>
-  <script src="../js/patrimonio.js"></script>
-  <script src="../js/resultados2.js"></script>
-  <script src="../js/resultados.js"></script>
-  <script src="../js/index.js"></script>
+    
+    
+    <script src="../js/rentabilidad.js"></script>
+    <script src="../js/patrimonio.js"></script>
+    <script src="../js/resultados.js"></script>
+    <script src="../js/posicion.js"></script>
+    <script src="../js/resumen.js"></script>
+    <script src="../js/index.js"></script>
 
 </body>
 </html>

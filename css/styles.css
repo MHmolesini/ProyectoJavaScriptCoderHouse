@@ -253,6 +253,68 @@
   }
 }
 
+/* -------------------------Boton-------------------------- */
+
+.home-section .home-content .switch {
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.home-section .home-content .switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+.home-section .home-content .switch:active {
+  background: orange;
+  color: #000;
+}
+.home-section .home-content .switch:active::after {
+  right: 0;
+  left: unset;
+}
+.home-section .home-content .switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+.home-section:active{
+  background: white;
+}
+
+
+/* ------------------------RESUMEN------------------------- */
+#resumen__dash div table th, td {
+  font-weight: bolder;
+  text-align: left;
+  border-bottom: 1px solid #2F334A;
+  color: white;
+  padding: 10px 20px;
+}
+
+#resumen__dash div table tbody tr:nth-child(even) {
+  background-color: #2F334A;
+}
+
+
+
 /* Graficos del Dashboard RESULTADOS*/
 .home-section .home-dash {
     display: grid;

@@ -256,3 +256,490 @@ const assetsGrowthY = [{"Fecha":"Dic/2019","AAPL":0.0813,"ABEV":0.4228,"ABT":0.2
 {"Fecha":"Mar/2020","AAPL":0.5159,"ABEV":0.5873,"ABT":0.6032,"ADBE":0.7381,"AGRO":0.4921,"AIG":0.5714,"AMD":0.9762,"AMGN":0.3095,"AMX":0.5079,"AMZN":0.9286,"ARCO":0.2063,"AUY":0.7143,"AXP":0.4206,"AZN":0.6667,"BA":0.4841,"BABA":0.9127,"BAC":0.6587,"BBD":0.3968,"BBVA":0.5238,"BCS":0.5397,"BG":0.873,"BIDU":0.8968,"BIIB":0.0714,"BMY":0.0476,"BP":0.2222,"BRFS":0.2619,"BSBR":0.4762,"C":0.4444,"CAT":0.5476,"CHL":0,"CRM":0.8016,"CS":0.5,"CSCO":0.3571,"CVX":0.3016,"CX":0.1667,"DE":0.3413,"DESP":0.8889,"DIS":0.1905,"EBAY":0.2381,"ERJ":0.1111,"FB":0.746,"FDX":0.7619,"FMX":0.4286,"GE":0.0952,"GGB":0.381,"GILD":0.6508,"GLOB":0.9524,"GOLD":0.4524,"GOOGL":0.7857,"GS":0.7778,"GSK":0.3651,"HD":0.8254,"HMY":0,"HPQ":0.3492,"HWM":0.0159,"IBM":0.1825,"IBN":0.754,"INTC":0.3254,"ITUB":0.2778,"JD":0.9603,"JNJ":0.6349,"JPM":0.7302,"KO":0.1508,"LMT":0.4683,"LVS":0.1746,"LYG":0,"MCD":0.2937,"MELI":0.7063,"MMM":0.3333,"MO":0.0794,"MOD":0.0238,"MSFT":0.5794,"NEM":0.4048,"NFLX":0.6825,"NKE":0.9048,"NOK":0.246,"NVDA":0.8651,"OGZD":0.619,"ORCL":0.8175,"PBR":0.119,"PEP":0.5635,"PFE":0.1349,"PG":0.2143,"PTR":0,"PYPL":0.881,"QCOM":0.6984,"RDS.A":0.1587,"SAN":0.5952,"SBUX":0.3889,"SID":0.8095,"SLB":0.0397,"SNAP":0.8571,"SONY":0.6429,"T":0.2698,"TGT":0.7937,"TOT":0.0079,"TRIP":0.0635,"TS":0.1984,"TSLA":0.9206,"TWTR":0.627,"TX":0.5317,"UGP":0.4603,"V":0.6111,"VALE":0.4127,"VIST":0.373,"VOD":0,"VZ":0.7222,"WFC":0.2302,"WMT":0.3175,"X":0.7698,"XOM":0.1032,"ABBV":0.9444,"AVGO":0.127,"BIOX":0.8413,"BRK.B":0.6905,"CAAP":0.0873,"DOCU":0.8333,"EFX":0.8492,"ETSY":0.9365,"GPRK":0.0317,"HAL":0.0556,"MA":0.6746,"PAAS":0.1429,"PSX":0.4365,"SHOP":0.9921,"SNOW":0,"SPOT":0.9683,"SQ":0.9841,"UNH":0.5556,"UNP":0.254,"WBA":0.2857,"ZM":1},
 {"Fecha":"Jun/2020","AAPL":0.3622,"ABEV":0.6614,"ABT":0.4724,"ADBE":0.7402,"AGRO":0.6142,"AIG":0.4252,"AMD":0.9685,"AMGN":0.0787,"AMX":0.622,"AMZN":0.874,"ARCO":0.4488,"AUY":0.748,"AXP":0.2283,"AZN":0.8346,"BA":0.063,"BABA":0.8661,"BAC":0.5591,"BBD":0.7244,"BBVA":0.0472,"BCS":0.5906,"BG":0.8583,"BIDU":0.8819,"BIIB":0.1496,"BMY":0.0236,"BP":0.5039,"BRFS":0.5827,"BSBR":0.7323,"C":0.378,"CAT":0.4803,"CHL":0,"CRM":0.9291,"CS":0.189,"CSCO":0.315,"CVX":0.4961,"CX":0.1024,"DE":0.3858,"DESP":0.9606,"DIS":0.1575,"EBAY":0.9528,"ERJ":0.2441,"FB":0.8268,"FDX":0.6299,"FMX":0.5118,"GE":0.0945,"GGB":0.7165,"GILD":0.8031,"GLOB":0.937,"GOLD":0.3228,"GOOGL":0.7953,"GS":0.811,"GSK":0.2835,"HD":0.6063,"HMY":0,"HPQ":0.3465,"HWM":0.0551,"IBM":0.126,"IBN":0.5669,"INTC":0.2677,"ITUB":0.5354,"JD":0.9134,"JNJ":0.5984,"JPM":0.6693,"KO":0.1339,"LMT":0.4016,"LVS":0.1181,"LYG":0,"MCD":0.3543,"MELI":0.6457,"MMM":0.4882,"MO":0.0394,"MOD":0.0315,"MSFT":0.5748,"NEM":0.2913,"NFLX":0.5433,"NKE":0.7874,"NOK":0.1732,"NVDA":0.9213,"OGZD":0.5197,"ORCL":0.6535,"PBR":0.2756,"PEP":0.3307,"PFE":0.1417,"PG":0.1969,"PTR":0.3386,"PYPL":0.7087,"QCOM":0.7717,"RDS.A":0.3701,"SAN":0.4094,"SBUX":0.2598,"SID":0.9449,"SLB":0.0709,"SNAP":0.9055,"SONY":0.7008,"T":0.2362,"TGT":0.6378,"TOT":0.0079,"TRIP":0.4331,"TS":0.3071,"TSLA":0.8976,"TWTR":0.8189,"TX":0.7795,"UGP":0.6772,"V":0.4409,"VALE":0.6929,"VIST":0.5512,"VOD":0,"VZ":0.7559,"WFC":0.2047,"WMT":0.252,"X":0.8425,"XOM":0.1102,"ABBV":0.2126,"AVGO":0.0866,"BIOX":0.8504,"BRK.B":0.685,"CAAP":0.2992,"DOCU":0.7638,"EFX":0.4173,"ETSY":0.9843,"GPRK":0.0157,"HAL":0.2205,"MA":0.5276,"PAAS":0.1811,"PSX":0.3937,"SHOP":0.9921,"SNOW":0,"SPOT":0.8898,"SQ":0.9764,"UNH":0.4646,"UNP":0.1654,"WBA":0.4567,"ZM":1},
 {"Fecha":"Sep/2020","AAPL":0.5433,"ABEV":0.6299,"ABT":0.4803,"ADBE":0.7717,"AGRO":0.6772,"AIG":0.3386,"AMD":0.9606,"AMGN":0.2362,"AMX":0.5591,"AMZN":0.8819,"ARCO":0.378,"AUY":0.685,"AXP":0.1969,"AZN":0.9764,"BA":0.0551,"BABA":0.8504,"BAC":0.6693,"BBD":0.5197,"BBVA":0.0472,"BCS":0.3307,"BG":0.7638,"BIDU":0.8661,"BIIB":0.1417,"BMY":0.0394,"BP":0.5827,"BRFS":0.4961,"BSBR":0.5748,"C":0.4331,"CAT":0.4173,"CHL":0,"CRM":0.9291,"CS":0.1575,"CSCO":0.2677,"CVX":0.5039,"CX":0.0709,"DE":0.6535,"DESP":0.8189,"DIS":0.2598,"EBAY":0.9685,"ERJ":0.1339,"FB":0.7402,"FDX":0.4252,"FMX":0.4646,"GE":0.0945,"GGB":0.8346,"GILD":0.5906,"GLOB":0.9449,"GOLD":0.252,"GOOGL":0.7559,"GS":0.8583,"GSK":0.2835,"HD":0.5669,"HMY":0,"HPQ":0.622,"HWM":0.063,"IBM":0.1102,"IBN":0.5118,"INTC":0.7244,"ITUB":0.4488,"JD":0.8898,"JNJ":0.4094,"JPM":0.7323,"KO":0.0866,"LMT":0.3071,"LVS":0.126,"LYG":0,"MCD":0.3622,"MELI":0.7795,"MMM":0.4567,"MO":0.0236,"MOD":0.0315,"MSFT":0.6378,"NEM":0.189,"NFLX":0.6063,"NKE":0.7008,"NOK":0.2047,"NVDA":0.937,"OGZD":0.8268,"ORCL":0.5276,"PBR":0.3701,"PEP":0.2756,"PFE":0.2283,"PG":0.2205,"PTR":0.3858,"PYPL":0.6929,"QCOM":0.748,"RDS.A":0.3465,"SAN":0.3228,"SBUX":0.4724,"SID":0.8976,"SLB":0.0787,"SNAP":0.9134,"SONY":0.5512,"T":0.2913,"TGT":0.4882,"TOT":0.0079,"TRIP":0.7165,"TS":0.4016,"TSLA":0.8425,"TWTR":0.6457,"TX":0.874,"UGP":0.4409,"V":0.315,"VALE":0.5354,"VIST":0.7874,"VOD":0,"VZ":0.7953,"WFC":0.2992,"WMT":0.1654,"X":0.9213,"XOM":0.1181,"ABBV":0.2126,"AVGO":0.1496,"BIOX":0.9055,"BRK.B":0.6142,"CAAP":0.3937,"DOCU":0.7087,"EFX":0.8031,"ETSY":0.9528,"GPRK":0.0157,"HAL":0.2441,"MA":0.6614,"PAAS":0.1811,"PSX":0.3543,"SHOP":0.9921,"SNOW":0,"SPOT":0.811,"SQ":0.9843,"UNH":0.5984,"UNP":0.1732,"WBA":0.1024,"ZM":1}]
+
+
+// -------------------------------------------------------------------------------------------------------------------------
+
+
+
+// Graficos Patrimonio
+
+// Grafico de barras Assets Current & Assets Non Current
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('AssetsCurrent_NonCurrent', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Assets Current', 'Assets Non Current']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [resultadoB1[0][1]*100, resultadoB2[0][1]*100],
+            color: '#3DAC63',
+        }],
+    });
+});
+
+
+
+
+// .------------------------------------A corregir -----------------------------------------------
+
+// Grafico de barras Assets & Liabilities
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('Assets_Liabilities', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Assets', 'Liabilities']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [valor1[0][1], valor2[0][1]],
+            color: '#3DAC63',
+        }],
+    });
+});
+
+// Grafico de columna Assets
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('AssetsPlotBar', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Assets'
+        },
+        xAxis: {
+            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
+        },
+        yAxis: {
+            title: {
+                text: 'Assets'
+            }
+        },
+        legend: false,
+        series: [{
+            name: empresas,
+            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
+            color: '#B74FDB',
+        }],
+        
+    });
+});
+
+// Grafico de columna apilada Componentes Assets
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('AssetsComponentsPlotColumn', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Assets Components'
+        },
+        // xAxis: {
+        //     categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        // },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total fruit consumption'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: ( // theme
+                        Highcharts.defaultOptions.title.style &&
+                        Highcharts.defaultOptions.title.style.color
+                    ) || 'gray'
+                }
+            }
+        },
+        // legend: {
+        //     align: 'right',
+        //     x: -30,
+        //     verticalAlign: 'top',
+        //     y: 25,
+        //     floating: true,
+        //     backgroundColor:
+        //         Highcharts.defaultOptions.legend.backgroundColor || 'white',
+        //     borderColor: '#CCC',
+        //     borderWidth: 1,
+        //     shadow: false
+        // },
+        tooltip: {
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        series: [{
+            name: 'John',
+            data: [5]
+        }, {
+            name: 'Jane',
+            data: [2]
+        }, {
+            name: 'Joe',
+            data: [3]
+        }]
+    });
+});
+
+// Grafico de torta Componentes Assets
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('AssetsPlotCake', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Weighting of Assets'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                // dataLabels: {
+                //     enabled: true,
+                //     format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                // }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Chrome',
+                y: 61.41,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Internet Explorer',
+                y: 11.84
+            }, {
+                name: 'Firefox',
+                y: 10.85
+            }, {
+                name: 'Edge',
+                y: 4.67
+            }, {
+                name: 'Safari',
+                y: 4.18
+            }, {
+                name: 'Sogou Explorer',
+                y: 1.64
+            }, {
+                name: 'Opera',
+                y: 1.6
+            }, {
+                name: 'QQ',
+                y: 1.2
+            }, {
+                name: 'Other',
+                y: 2.61
+            }]
+        }]
+    });
+});
+
+// Grafico de barras Current Liabilities & Non Current Liabilities
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('CurrentLiabilitiesNonCurrent', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Current Liabilities', 'Non Current Liabilities']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [valor1[0][1], valor2[0][1]],
+            color: '#E97E42',
+        }],
+    });
+});
+
+// Grafico de barras Equity & Debt
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('EquityDebt', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Equity', 'Debt']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        legend: false,
+        series: [{
+            name: null,
+            data: [valor1[0][1], valor2[0][1]],
+            color: '#4C87DF',
+        }],
+    });
+});
+
+// Grafico de columna Liabilities
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('LiabilitiesPlotBar', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Liabilities'
+        },
+        xAxis: {
+            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
+        },
+        yAxis: {
+            title: {
+                text: 'Liabilities'
+            }
+        },
+        legend: false,
+        series: [{
+            name: empresas,
+            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
+            color: '#E97E42',
+        }],
+        
+    });
+});
+
+// Grafico de columnas apiladas Componentes Liabilities
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('LiabilitiesComponentsPlotColumn', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Assets Components'
+        },
+        // xAxis: {
+        //     categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        // },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total fruit consumption'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: ( // theme
+                        Highcharts.defaultOptions.title.style &&
+                        Highcharts.defaultOptions.title.style.color
+                    ) || 'gray'
+                }
+            }
+        },
+        // legend: {
+        //     align: 'right',
+        //     x: -30,
+        //     verticalAlign: 'top',
+        //     y: 25,
+        //     floating: true,
+        //     backgroundColor:
+        //         Highcharts.defaultOptions.legend.backgroundColor || 'white',
+        //     borderColor: '#CCC',
+        //     borderWidth: 1,
+        //     shadow: false
+        // },
+        tooltip: {
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        series: [{
+            name: 'John',
+            data: [5]
+        }, {
+            name: 'Jane',
+            data: [2]
+        }, {
+            name: 'Joe',
+            data: [3]
+        }]
+    });
+});
+
+// Grafico de columna Equity
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('EquityPlotBar', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Equity'
+        },
+        xAxis: {
+            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
+        },
+        yAxis: {
+            title: {
+                text: 'Equity'
+            }
+        },
+        legend: false,
+        series: [{
+            name: empresas,
+            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
+            color: '#4C87DF',
+        }],
+        
+    });
+});
+
+// Grafico de columna Debt
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('DebtPlotBar', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Debt'
+        },
+        xAxis: {
+            categories: ['Dic/2018', 'Mar/2019', 'Jun/2019', 'Sep/2019', 'Dic/2019', 'Mar/2020', 'Jun/2020', 'Sep/2020', 'Dic/2020', 'Mar/2021', 'Jun/2021', 'Sep/2021']
+        },
+        yAxis: {
+            title: {
+                text: 'Debt'
+            }
+        },
+        series: [{
+            name: empresas,
+            data: [valor37[0][1], valor38[0][1], valor39[0][1], valor40[0][1], valor41[0][1], valor42[0][1], valor43[0][1], valor44[0][1], valor45[0][1], valor46[0][1], valor47[0][1], valor48[0][1]],
+            color: '#B74FDB',
+        }],
+        
+    });
+});
+
+// Grafico de torta Componentes Liabilities
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('LiabilitiesPlotCake', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Weighting of Assets'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                // dataLabels: {
+                //     enabled: true,
+                //     format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                // }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Chrome',
+                y: 61.41,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Internet Explorer',
+                y: 11.84
+            }, {
+                name: 'Firefox',
+                y: 10.85
+            }, {
+                name: 'Edge',
+                y: 4.67
+            }, {
+                name: 'Safari',
+                y: 4.18
+            }, {
+                name: 'Sogou Explorer',
+                y: 1.64
+            }, {
+                name: 'Opera',
+                y: 1.6
+            }, {
+                name: 'QQ',
+                y: 1.2
+            }, {
+                name: 'Other',
+                y: 2.61
+            }]
+        }]
+    });
+});
