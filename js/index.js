@@ -19,6 +19,294 @@ botonSwitch.addEventListener('click', () => {
     botonSwitch.classList.toggle('active');
 });
 
+// Estados financieros de la empresa (AAPL)
+
+//"fecha":  "2021-09-25" ,
+// "símbolo":  
+// "moneda reportada": 
+// "cik":  
+// "fecha de llenado":  
+// "fecha aceptada" :  
+// "añocalendario" : 
+// "período" : 
+// "ingresos" : 
+// "costOfRevenue" :  
+// "beneficio bruto": 
+// "proporción de beneficio bruto":  
+// "InvestigaciónDindevelopentExpenses":  
+// "GeneralandadminInsexpenses":  
+// "SellingAndMarketingExpenses":  
+// "SellingGeneralandAdminInsignExpenses":  
+// "OtrosExpenses":  
+// "OperationExpess": 
+// "CostandExPess" :  
+// "COSTANICIE":
+// " INTERNESTEPENSE ":
+// "depreciación y amortización":
+// "ebitda" : 
+// "Ebitdaratio": 
+// "operatingIncome": 
+// "operatingIncomeRatio": 
+// "totalOtherIncomeExpensesNet":  
+// "incomeBeforeTax": 
+// "incomeBeforeTaxRatio": , 
+// "incomeTaxExpense":  
+// "netIncome":  
+// "proporción de ingresos netos":  
+// "eps":  
+// "epsdiluido":  
+// "weightedAverageShsOut" : 
+// "weightedAverageShsOutDil" : 
+// "enlace" :  
+// " index.htm finalLink":  
+// "ingresos de intereses":
+const API_URL = "https://financialmodelingprep.com/api/v3/income-statement/AAPL?limit=120&apikey=07469b7ca38e2cfbcb54480fd03cd1c1";
+
+fetch(API_URL)
+.then(response => response.json() )
+.then(data => {
+    console.log(data)
+})
+.catch(err => console.log(err));
+
+// Estado financieros de la empresa https://financialmodelingprep.com/api/v3/balance-sheet-statement/AAPL?limit=120&apikey=07469b7ca38e2cfbcb54480fd03cd1c1
+
+// "fecha": "2021-09-25",
+//   "símbolo" : "AAPL",
+//   "moneda reportada": "USD",
+//   "cik": "0000320193",
+//   "fecha de llenado": "2021-10-29",
+//   "fecha aceptada": "2021-10-28 18:04:28",
+//   "añocalendario": "2021",
+//   "período": "año fiscal",
+//   "efectivo y equivalentes de efectivo": 34940000000,
+//   "inversiones a corto plazo": 27699000000,
+//   "efectivo e inversiones a corto plazo": 62639000000,
+//   "cuentas por cobrar netas": 51506000000,
+//   "inventario": 6580000000,
+//   "otros activos actuales": 14111000000,
+//   "activos actuales totales": 134836000000,
+//   "propiedadPlantEquipmentNet": 39440000000,
+//   "buena voluntad": 0.0,
+//   "activos intangibles": 0.0,
+//   "buena voluntad y activos intangibles": 0.0,
+//   "inversiones a largo plazo": 127877000000,
+//   "activos fiscales": 0.0,
+//   "otros activos no corrientes": 48849000000,
+//   "total de activos no corrientes": 216166000000,
+//   "otros Activos" : 0.0,
+//   "Activos totales": 351002000000,
+//   "cuentas por pagar": 54763000000,
+//   "deuda a corto plazo": 15613000000,
+//   "impuestos a pagar": 0.0,
+//   "Ingresos diferidos": 7612000000,
+//   "otrosPasivosCorrientes" : 47493000000,
+//   "pasivo actual total": 125481000000,
+//   "deuda a largo plazo": 109106000000,
+//   "Ingresos diferidos no actuales": 0.0,
+//   "DeferredTaxLiabilitiesNonCurrent": 0.0,
+//   "otrosPasivosNoCorrientes" : 53325000000,
+//   "pasivo total no corriente": 162431000000,
+//   "otrosPasivos" : 0.0,
+//   "obligaciones de arrendamiento de capital": 0.0,
+//   "pasivo total": 287912000000,
+//   "Stock preferido": 0.0,
+//   "acción común": 57365000000,
+//   "ganancias retenidas": 5562000000,
+//   "Pérdida total acumulada de otros ingresos": 163000000,
+//   "otrototalAccionistasPatrimonio" : 0.0,
+//   "patrimonio total de los accionistas": 63090000000,
+//   "pasivo total y patrimonio de los accionistas": 351002000000,
+//   "interés minoritario": 0,
+//   "equidad total": 63090000000,
+//   "pasivo total y patrimonio total": 351002000000,
+//   "inversionestotales": 155576000000,
+//   "deuda total": 124719000000,
+//   "deuda neta": 89779000000,
+//   "enlace": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/0000320193-21-000105-index.htm",
+//   "enlace final": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+
+// Estado de flujo de efectivo
+//https://financialmodelingprep.com/api/v3/cash-flow-statement/AAPL?limit=120&apikey=07469b7ca38e2cfbcb54480fd03cd1c1
+
+// "fecha": "2021-09-25",
+// "símbolo" : "AAPL",
+// "moneda reportada": "USD",
+// "cik": "0000320193",
+// "fecha de llenado": "2021-10-29",
+// "fecha aceptada": "2021-10-28 18:04:28",
+// "añocalendario": "2021",
+// "período": "año fiscal",
+// "ingreso neto": 94680000000,
+// "depreciación y amortización": 11284000000,
+// "impuesto sobre la renta diferido": -4774000000,
+// "Compensación basada en acciones": 7906000000,
+// "cambioEnCapitalDeTrabajo": -4911000000,
+// "cuentas por cobrar": -10125000000,
+// "inventario": -2642000000,
+// "cuentas por pagar": 12326000000,
+// "otro capital de trabajo": 1676000000,
+// "otros artículos que no son en efectivo": -147000000,
+// "NetCashProvidedByOperatingActivities": 104038000000,
+// "inversionesEnPropiedadPlantaYEquipo" : -11085000000,
+// "adquisicionesNet": -33000000,
+// "comprasDeInversiones" : -109689000000,
+// "vencimientosdeventasdeinversiones": 106870000000,
+// "otras actividades de inversión": -608000000,
+// "NetCashUsedForInvestingActivites": -14545000000,
+// "reembolso de la deuda": -8750000000,
+// "acción común emitida": 1105000000,
+// "StockComúnRecomprado": -85971000000,
+// "dividendos pagados": -14467000000,
+// "otras actividades de financiación": 14730000000,
+// "NetCashUsedProvidedByFinancingActivities": -93353000000,
+// "efectoDeCambiosForexEnCash": 0.0,
+// "netChangeInCash" : -3860000000,
+// "efectivo al final del período": 35929000000,
+// "efectivo al comienzo del período": 39789000000,
+// "flujo de efectivo operativo": 104038000000,
+// "gastos de capital": -11085000000,
+// "freeCashFlow": 92953000000,
+// "enlace": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/0000320193-21-000105-index.htm",
+// "enlace final": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+
+// Coeficicientes de la empresa https://financialmodelingprep.com/api/v3/ratios/AAPL?limit=40&apikey=07469b7ca38e2cfbcb54480fd03cd1c1
+
+//"symbol" : "AAPL",
+// "date" : "2021-09-25",
+// "period" : "FY",
+// "currentRatio" : 1.0745531195957954,
+// "quickRatio" : 0.9096596297447422,
+// "cashRatio" : 0.2784485300563432,
+// "daysOfSalesOutstanding" : 51.390968708397914,
+// "daysOfInventoryOutstanding" : 11.27659274770989,
+// "operatingCycle" : 62.667561456107805,
+// "daysOfPayablesOutstanding" : 93.85107122231561,
+// "cashConversionCycle" : -31.183509766207806,
+// "grossProfitMargin" : 0.4177935962516778,
+// "operatingProfitMargin" : 0.29782377527561593,
+// "pretaxProfitMargin" : 0.2985290459437369,
+// "netProfitMargin" : 0.2588179335569424,
+// "effectiveTaxRate" : 0.13302260844085087,
+// "returnOnAssets" : 0.26974205275183616,
+// "returnOnEquity" : 1.5007132667617689,
+// "returnOnCapitalEmployed" : 0.48309913489209433,
+// "netIncomePerEBT" : 0.8669773915591491,
+// "ebtPerEbit" : 1.0023680804780217,
+// "ebitPerRevenue" : 0.29782377527561593,
+// "debtRatio" : 0.8202574344305731,
+// "debtEquityRatio" : 4.563512442542399,
+// "longTermDebtToCapitalization" : 0.6336151826987851,
+// "totalDebtToCapitalization" : 0.6640736066961648,
+// "interestCoverage" : 41.19054820415879,
+// "cashFlowToDebtRatio" : 0.8341792349201004,
+// "companyEquityMultiplier" : 5.563512442542399,
+// "receivablesTurnover" : 7.102415252591931,
+// "payablesTurnover" : 3.889140478060004,
+// "inventoryTurnover" : 32.367933130699086,
+// "fixedAssetTurnover" : 9.275278904665315,
+// "assetTurnover" : 1.042207736708053,
+// "operatingCashFlowPerShare" : 6.229345884552985,
+// "freeCashFlowPerShare" : 5.56562398361035,
+// "cashPerShare" : 3.750552652516527,
+// "payoutRatio" : 0.15279890156316012,
+// "operatingCashFlowSalesRatio" : 0.284399030116151,
+// "freeCashFlowOperatingCashFlowRatio" : 0.8934523923950864,
+// "cashFlowCoverageRatios" : 0.8341792349201004,
+// "shortTermCoverageRatios" : 6.663549606097483,
+// "capitalExpenditureCoverageRatio" : -9.385475868290483,
+// "dividendPaidAndCapexCoverageRatio" : 30.76227084565346,
+// "dividendPayoutRatio" : 0.15279890156316012,
+// "priceBookValueRatio" : 39.34818597842333,
+// "priceToBookRatio" : 39.34818597842333,
+// "priceToSalesRatio" : 6.786117248183458,
+// "priceEarningsRatio" : 26.219656246078664,
+// "priceToFreeCashFlowsRatio" : 26.706798633489267,
+// "priceToOperatingCashFlowsRatio" : 23.86125313230481,
+// "priceCashFlowRatio" : 23.86125313230481,
+// "priceEarningsToGrowthRatio" : 0.3677417888750864,
+// "priceSalesRatio" : 6.786117248183458,
+// "dividendYield" : 0.005827647019057021,
+// "enterpriseValueMultiple" : 20.889553448047103,
+// "priceFairValue" : 39.34818597842333
+
+// Valor empresarial de la empresa https://financialmodelingprep.com/api/v3/enterprise-values/AAPL?limit=40&apikey=07469b7ca38e2cfbcb54480fd03cd1c1
+// "símbolo" : "AAPL",
+//   "fecha": "2021-09-25",
+//   "precio de las existencias": 148.639999,
+//   "númeroDeAcciones": 16701272000,
+//   "capitalización de mercado": 2482477053378.728,
+//   "menosEfectivoYEquivalentesEfectivo": 34940000000,
+//   "añadirDeudaTotal": 124719000000,
+//   "valor empresarial": 2572256053378.728
+
+// Resultados creciemiento https://financialmodelingprep.com/api/v3/income-statement-growth/AAPL?limit=40&apikey=07469b7ca38e2cfbcb54480fd03cd1c1
+// balance crecimiento https://financialmodelingprep.com/api/v3/balance-sheet-statement-growth/AAPL?limit=40&apikey=07469b7ca38e2cfbcb54480fd03cd1c1
+// flujo de fondos https://financialmodelingprep.com/api/v3/cash-flow-statement-growth/AAPL?limit=40&apikey=07469b7ca38e2cfbcb54480fd03cd1c1
+
+// Metricas clave de la empresa https://financialmodelingprep.com/api/v3/key-metrics/AAPL?limit=40&apikey=07469b7ca38e2cfbcb54480fd03cd1c1
+// "símbolo" : "AAPL",
+//   "fecha": "2021-09-25",
+//   "período": "año fiscal",
+//   "ingresos por acción": 21.90354123925411,
+//   "NetIncomePerShare": 5.669029281123018,
+//   "operatingCashFlowPerShare": 6.229345884552985,
+//   "freeCashFlowPerShare": 5.56562398361035,
+//   "dinero por acción": 3.750552652516527,
+//   "ValorLibroPerShare" : 3.7775565837141025,
+//   "tangibleBookValuePerShare": 3.7775565837141025,
+//   "accionistasEquityPerShare": 3.7775565837141025,
+//   "interestDebtPerShare": 7.6260059712817085,
+//   "MarketCap": 2482477053378.728,
+//   "valor empresarial": 2572256053378.728,
+//   "relación": 26.219656246078664,
+//   "relación precio a ventas": 6.786117248183458,
+//   "pocfratio" : 23.86125313230481,
+//   "pfcfRatio" : 26.706798633489267,
+//   "pbRatio" : 39.34818597842333,
+//   "ptbRatio" : 39.34818597842333,
+//   "evToSales": 7.031537772653343,
+//   "valor empresarial sobre EBITDA": 20.889553448047103,
+//   "evToOperatingCashFlow": 24.724197441115056,
+//   "evToFreeCashFlow": 27.672652344504513,
+//   "rendimiento de ganancias": 0.03813932534487584,
+//   "rendimiento de flujo de efectivo libre": 0.03744364922668191,
+//   "deuda a la equidad": 1.729370740212395,
+//   "deuda a activos": 0.8202574344305731,
+//   "deuda neta a EBITDA": 0.7291044048856549,
+//   "relación actual": 1.0745531195957954,
+//   "cobertura de interés": 41.19054820415879,
+//   "calidad de ingresos": 1.0988381918039714,
+//   "rendimiento de dividendos": 0.005827647019057021,
+//   "relación de pago": 0.15279890156316012,
+//   "ventasGeneralAndAdministrativeToRevenue" : 0.0,
+//   "investigación y desarrollo a ingresos": 0.059904269074427925,
+//   "intangiblesToTotalActives" : 0.0,
+//   "capexToOperatingCashFlow": -0.1065476076049136,
+//   "capexToRevenue" : -0.030302036264033657,
+//   "capexToDepreciation" : -0.9823644097837646,
+//   "Compensación a ingresos basada en acciones": 0.021611898845597662,
+//   "número graham": 21.950837680915992,
+//   "roico" : 0.48309913489209433,
+//   "returnOnTangibleAssets": 0.26974205275183616,
+//   "grahamNetNet": -10.97841529675105,
+//   "capital de trabajo": 9355000000,
+//   "valor de activo tangible": nulo,
+//   "valor de activo neto actual": -153076000000,
+//   "Capital invertido": 1.9768426058012363,
+//   "promedio de cuentas por cobrar": 44475500000,
+//   "promedio de cuentas por pagar": 48529500000,
+//   "inventariopromedio": 5320500000,
+//   "daysSalesOutstanding": 51.390968708397914,
+//   "daysPayablesOutstanding": 93.85107122231561,
+//   "daysOfInventoryOnHand": 11.27659274770989,
+//   "Volumen de cuentas por cobrar": 7.102415252591931,
+//   "Volumen de cuentas por pagar" : 3.889140478060004,
+//   "Volumen de inventario": 32.367933130699086,
+//   "hueva" : 1.5007132667617689,
+//   "capexPerShare": -0.6637219009426348
+
+// FCF descontado https://financialmodelingprep.com/api/v3/discounted-cash-flow/AAPL?apikey=07469b7ca38e2cfbcb54480fd03cd1c1
 
 // Por medio de los filtros, el usuario selecciona la empresa que desea analizar, y la fecha en la que se hara dicho analisis. 
 // ------------------------------- a revisar ----------------------------------
