@@ -10,130 +10,770 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <main>
-        <aside>
-            <div class="sidebar close">
-                <div class="logo-details">
-                  <i class="bx bxl-c-plus-plus"></i>
-                  <span class="logo_name">Dash</span>
-                </div>
-        
-                <ul class="nav-links">
-                  <li>
-                    <a href="./index.html">
-                      <i class="bx bx-grid-alt"></i>
-                      <span class="link_name">Inicio</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="./index.html">Inicio</a></li>
-                    </ul>
-                  </li>
+  <main>
+    <div id="dashboard">
+      <form>
+        <input class="dashboard__form__input" type="text" placeholder="Ingrese el Ticket...">
+        <button class="dashboard__form__button" type="submit">Buscar</button>
+      </form>
+      <div class="dashboard__div">
+        <h2>Estado de Resultados</h2>
+        <div class="dashboard__div__1">
+          <div class="dashboard__div__1__panel">
+            <div>Revenue</div>
+            <div>Gross Margin</div>
+            <div>EBITDA</div>
+            <div>operating Income</div>
+            <div>Net Income</div>
+            <div>EPS</div>
+          </div>
 
-                  <li>
-                    <a href="#">
-                        <i class="bx bx-collection"></i>
-                        <span class="link_name">Posicion</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="./pages/posicion.html">Posicion</a></li>
-                    </ul>
-                  </li>
+          <div class="dashboard__div__1__tabla">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>2017</th>
+                  <th>2018</th>
+                  <th>2019</th>
+                  <th>2020</th>
+                  <th>2021</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Revenue</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>365.817.000.000</td>
+                </tr>
+                <tr>
+                  <td>Cost of Revenue</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>212.981.000.000</td>
+                </tr>
+                <tr>
+                  <td>Gross Profit</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>152.836.000.000</td>
+                </tr>
+                <tr>
+                  <td>Research And Development Expenses</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>21.914.000.000</td>
+                </tr>
+                <tr>
+                  <td>Selling General And Administrative Expenses</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>21.973.000.000</td>
+                </tr>
+                <tr>
+                  <td>Operating Expenses</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>43.887.000.000</td>
+                </tr>
+                <tr>
+                  <td>Interest Income</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>2.843.000.000</td>
+                </tr>
+                <tr>
+                  <td>Interest Expense</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>2.645.000.000</td>
+                </tr>
+                <tr>
+                  <td>Depreciation And Amortization</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>11.284.000.000</td>
+                </tr>
+                <tr>
+                  <td>Operating Income</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>108.949.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Other Income Expenses Net</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>258.000.000</td>
+                </tr>
+                <tr>
+                  <td>Income Before Tax</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>109.207.000.000</td>
+                </tr>
+                <tr>
+                  <td>Income Tax Expense</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>14.527.000.000</td>
+                </tr>
+                <tr>
+                  <td>Net Income</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>94.680.000.000</td>
+                </tr>
+                <tr>
+                  <td>Ebitda</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>123.136.000.000</td>
+                </tr>
+                <tr>
+                  <td>EPS</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>5.67</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-                  <li>
-                    <a href="#">
-                        <i class="bx bx-book-alt"></i>
-                        <span class="link_name">Resumen</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="./pages/resumen.html">Resumen</a></li>
-                    </ul>
-                  </li>
+        <h2>Estado Patrimonial</h2>
+        <div class="dashboard__div__1">
+          <div class="dashboard__div__1__panel">
+            <div>Assets</div>
+            <div>Liabilities</div>
+            <div>Equity</div>
+            <div>Debt</div>
+          </div>
 
-                  <li>
-                    <div class="iocn-link">
-                      <a href="#">
-                        <i class="bx bx-line-chart"></i>
-                        
-                        <span class="link_name">Estado</span>
-                      </a>
-                      <i class="bx bxs-chevron-down arrow"></i>
-                    </div>
-                    <ul class="sub-menu">
-                      <li><a class="link_name" href="#">Estado</a></li>
-                      <li><a href="./pages/resultados.html">Resultados</a></li>
-                      <li><a href="./pages/patrimonio.html">Patrimonio</a></li>
-                      <li><a href="./pages/flujoDeFondos.html">Flujo de fondos</a></li>
-                    </ul>
-                  </li>
-        
-                  <li>
-                    <div class="iocn-link">
-                      <a href="#">
-                        <i class="bx bx-pie-chart-alt-2"></i>
-                        <span class="link_name">Ratios</span>
-                      </a>
-                      <i class="bx bxs-chevron-down arrow"></i>
-                    </div>
-                    <ul class="sub-menu">
-                      <li><a class="link_name" href="#">Ratios</a></li>
-                      <li><a href="./pages/rentabilidad.html">Rentabilidad</a></li>
-                      <li><a href="./pages/liquidez.html">Liquidez</a></li>
-                      <li><a href="./pages/endeudamiento.html">Endeudamiento</a></li>
-                      <li><a href="./pages/gestion.html">Gestion</a></li>
-                      <li><a href="./pages/valoracion.html">Valoracion</a></li>
-                    </ul>
-                  </li>
-        
-                  <li>
-                    <a href="#">
-                      <i class="bx bx-compass"></i>
-                      <span class="link_name">Explore</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Explore</a></li>
-                    </ul>
-                  </li>
-        
-                  <li>
-                <div class="profile-details">
-                  <div class="profile-content">
-                    <!--<img src="image/profile.jpg" alt="profileImg">-->
-                  </div>
-                  <div class="name-job">
-                    <div class="profile_name">Prem Shahi</div>
-                    <div class="job">Web Desginer</div>
-                  </div>
-                  <i class="bx bx-log-out"></i>
-                </div>
-              </li>
-            </ul>
-              </div>
-              <section class="home-section">
-                <div class="home-content">
-                  <i class="bx bx-menu"></i>
-                  <span class="text">Drop Down Sidebar</span>
-                  <button class="switch" id="switch">
-                    <span><i class="bx bx-sun"></i></span>
-                    <span><i class="bx bx-moon"></i></span>
-                  </button>
-                </div>
+          <div class="dashboard__div__1__tabla">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>2017</th>
+                  <th>2018</th>
+                  <th>2019</th>
+                  <th>2020</th>
+                  <th>2021</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Total Assets</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>351.002.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Current Assets</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>212.981.000.000</td>
+                </tr>
+                <tr>
+                  <td>Cash And Cash Equivalents</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>34.940.000.000</td>
+                </tr>
+                <tr>
+                  <td>Short Term Investments</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>27.699.000.000</td>
+                </tr>
+                <tr>
+                  <td>Net Receivables</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>51.506.000.000</td>
+                </tr>
+                <tr>
+                  <td>inventory</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>6.580.000.000</td>
+                </tr>
+                <tr>
+                  <td>Other Current Assets</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>14.111.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Non Current Assets</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>216.166.000.000</td>
+                </tr>
+                <tr>
+                  <td>Property Plant Equipment Net</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>39.440.000.000</td>
+                </tr>
+                <tr>
+                  <td>Goodwill And Intangible Assets</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>0.0</td>
+                </tr>
+                <tr>
+                  <td>Long Term Investments</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>127.877.000.000</td>
+                </tr>
+                <tr>
+                  <td>taxAssets</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>0.0</td>
+                </tr>
+                <tr>
+                  <td>Other Non Current Assets</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>48.849.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Liabilities And Total Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>351.002.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Liabilities</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>287.912.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Current Liabilities</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>125.481.000.000</td>
+                </tr>
+                <tr>
+                  <td>Account Payables</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>54.763.000.000</td>
+                </tr>
+                <tr>
+                  <td>Short Term Debt</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>15.613.000.000</td>
+                </tr>
+                <tr>
+                  <td>Tax Payables</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>0.0</td>
+                </tr>
+                <tr>
+                  <td>Deferred Revenue</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>7.612.000.000</td>
+                </tr>
+                <tr>
+                  <td>Other Current Liabilities</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>47.493.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Non Current Liabilities</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>162.431.000.000</td>
+                </tr>
+                <tr>
+                  <td>Long Term Debt</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>109.106.000.000</td>
+                </tr>
+                <tr>
+                  <td>Deferred Revenue Non Current</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>0.0</td>
+                </tr>
+                <tr>
+                  <td>Deferred Tax Liabilities Non Current</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>0.0</td>
+                </tr>
+                <tr>
+                  <td>Other Non Current Liabilities</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>53.325.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>63.090.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Investments</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>155.576.000.000</td>
+                </tr>
+                <tr>
+                  <td>Total Debt</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>124.719.000.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-                <div id="api">
+        <h2>Estado de Flujo de Efectivo</h2>
+        <div class="dashboard__div__1">
+          <div class="dashboard__div__1__panel">
+            <div>Net Cash Provided By Operating Activities</div>
+            <div>Net Cash Used Provided By Financing Activities</div>
+            <div>Equity</div>
+            <div>Debt</div>
+          </div>
 
-                </div>
-              </section>
-        </aside>
-        <section>
+          <div class="dashboard__div__1__tabla">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>2017</th>
+                  <th>2018</th>
+                  <th>2019</th>
+                  <th>2020</th>
+                  <th>2021</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Net Income</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>94.680.000.000</td>
+                </tr>
+                <tr>
+                  <td>Net Cash Provided By Operating Activities</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>104.038.000.000</td>
+                </tr>
+                <tr>
+                  <td>Depreciation And Amortization</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>11.284.000.000</td>
+                </tr>
+                <tr>
+                  <td>Deferred Income Tax</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-4.774.000.000</td>
+                </tr>
+                <tr>
+                  <td>Stock Based Compensation</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>7.906.000.000</td>
+                </tr>
+                <tr>
+                  <td>Change In Working Capital</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-4.911.000.000</td>
+                </tr>
+                <tr>
+                  <td>1.Accounts Receivables</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-10.125.000.000</td>
+                </tr>
+                <tr>
+                  <td>2.Inventory</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-2.642.000.000</td>
+                </tr>
+                <tr>
+                  <td>3.Accounts Payables</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>12.326.000.000</td>
+                </tr>
+                <tr>
+                  <td>4.Other Working Capital</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1.676.000.000</td>
+                </tr>
+                <tr>
+                  <td>Other Non Cash Items</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-147.000.000</td>
+                </tr>
+                <tr>
+                  <td>Net Cash Used For Investing Activites</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-14.545.000.000</td>
+                </tr>
+                <tr>
+                  <td>Investments In Property Plant And Equipment</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-11.085.000.000</td>
+                </tr>
+                <tr>
+                  <td>Acquisitions Net</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-33.000.000</td>
+                </tr>
+                <tr>
+                  <td>Purchases Of Investments</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-109.689.000.000</td>
+                </tr>
+                <tr>
+                  <td>Sales Maturities Of Investments</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>106.870.000.000</td>
+                </tr>
+                <tr>
+                  <td>Other Investing Activites</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-608.000.000</td>
+                </tr>
+                <tr>
+                  <td>Net Cash Used Provided By Financing Activities</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-93.353.000.000</td>
+                </tr>
+                <tr>
+                  <td>Debt Repayment</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-8.750.000.000</td>
+                </tr>
+                <tr>
+                  <td>Common Stock Issued</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1.105.000.000</td>
+                </tr>
+                <tr>
+                  <td>Common Stock Repurchased</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-85.971.000.000</td>
+                </tr>
+                <tr>
+                  <td>Dividends Paid</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-14.467.000.000</td>
+                </tr>
+                <tr>
+                  <td>Other Financing Activites</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>14.730.000.000</td>
+                </tr>
+                <tr>
+                  <td>Cash At Beginning Of Period</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>39.789.000.000</td>
+                </tr>
+                <tr>
+                  <td>Net Change In Cash</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>-3.860.000.000</td>
+                </tr>
+                <tr>
+                  <td>Cash At End Of Period</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>35.929.000.000</td>
+                </tr>
+                <tr>
+                  <td>Free Cash Flow</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>92.953.000.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-        </section>
-    </main>
+        <h2>Rentabilidad</h2>
+        <div class="dashboard__div__1">
+          <div class="dashboard__div__1__panel">
+            <div></div>
+            <div>Gross Profit Margin</div>
+            <div>Operating Profit Margin</div>
+            <div>Net Profit Margin</div>
+            <div>1.EPS</div>
+            <div></div>
+            <div></div>
+            <div>Dividend Yield</div>
+            <div>Dividend Payout Ratio</div>
+            <div>Return On Assets</div>
+            <div>Return On Equity</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <h2>Liquidez</h2>
+        <div class="dashboard__div__1">
+          <div class="dashboard__div__1__panel">
+            <div>Quick Ratio</div>
+            <div>Current Ratio</div>
+            <div></div>
+            <div>Interest Coverage</div>
+            <div></div>
+            <div></div>
+            <div>Cash Flow To Debt Ratio</div>
+          </div>
+        </div>
+
+        <h2>Endeudamiento</h2>
+        <div class="dashboard__div__1">
+          <div class="dashboard__div__1__panel">
+            <div>Debt To Assets</div>
+            <div>Debt Equity Ratio</div>
+            <div>Debt To Equity</div>
+            <div>Net Debt To EBITDA</div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <h2>Gestion</h2>
+        <div class="dashboard__div__1">
+          <div class="dashboard__div__1__panel">
+            <div>Inventory Turnover</div>
+            <div>Asset Turnover</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>Cash Conversion Cycle</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>Days Of Inventory Outstanding</div>
+            <div>Days Of Payables Outstanding</div>
+            <div>Days Of Sales Outstanding</div>
+          </div>
+        </div>
+
+        <h2>Valoracion</h2>
+        <div class="dashboard__div__1">
+          <div class="dashboard__div__1__panel">
+            <div>Market Capitalization</div>
+            <div>Price Earnings Ratio</div>
+            <div>Price Sales Ratio</div>
+            <div>Price Cash Flow Ratio</div>
+            <div>Price Book Value Ratio</div>
+            <div>Price To Free Cash Flows Ratio</div>
+            <div>Enterprise Value Over EBITDA</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>Graham Number</div>
+            <div></div>
+            <div></div>
+            <div>Price Earnings To Growth Ratio</div>
+            <div></div>
+            <div>Earnings Yield</div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
     
-    <script src="./js/posicion.js"></script>
-    <script src="./js/resumen.js"></script>
-    <script src="./js/rentabilidad.js"></script>
-    <script src="./js/patrimonio.js"></script>
-    <script src="./js/resultados.js"></script>
-    <script src="./js/index.js"></script>
+  <script src="./js/index.js"></script>
 
 </body>
 </html>

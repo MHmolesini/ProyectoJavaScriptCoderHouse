@@ -6,6 +6,161 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+/* -------------------------------------Buscador--------------------------------------- */
+
+#dashboard {
+  width: 100vw;
+  background-color: rgb(246, 246, 242);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#dashboard form {
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dashboard form .dashboard__form__input {
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 10px black;
+  margin: 10px;
+  padding: 10px;
+}
+
+#dashboard form .dashboard__form__button {
+  background-color: rgb(149, 52, 175);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  height: 35px;
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgb(73, 15, 91);
+  margin: 10px;
+}
+
+#dashboard form .dashboard__form__button:hover {
+  background-color: white;
+  color: rgb(149, 52, 175);
+  cursor: pointer;
+}
+
+/* -------------------------------------Dashboard--------------------------------------- */
+#dashboard .dashboard__div {
+  width: 80%;
+
+}
+
+#dashboard .dashboard__div h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------------------------------Dashboard Panel------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div {
+  width: 13%;
+  /* background-color: red; */
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px black;
+  cursor: pointer;
+}
+
+.dashboard__div__1__panel div:nth-child(1) {
+  background-color: #3DAC63;
+}
+.dashboard__div__1__panel div:nth-child(2) {
+  background-color: #E97E42;
+}
+.dashboard__div__1__panel div:nth-child(3) {
+  background-color: #E9E242;
+}
+.dashboard__div__1__panel div:nth-child(4) {
+  background-color: #4C87DF;
+}
+.dashboard__div__1__panel div:nth-child(5) {
+  background-color: #B74FDB;
+}
+.dashboard__div__1__panel div:nth-child(6) {
+  background-color: #D34343;
+}
+
+/* ---------------------------------Dashboard Tabla------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  margin: 2rem 0;
+  border-radius: 10px; 
+  box-shadow: 4px 4px 4px rgb(81, 77, 77);
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table {
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead {
+  border: 1px black;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead tr{
+  background-color: #3DAC63;
+  color: white;
+  text-align: center;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead tr th {
+  width: 16%;
+  padding: 10px 20px;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr:nth-child(even) {
+  background-color: rgb(246, 246, 242);
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr:nth-child(2), tr:nth-child(4), tr:nth-child(5), tr:nth-child(6),tr:nth-child(8), tr:nth-child(9), tr:nth-child(13) {
+  color: #D34343;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr td {
+  padding: 5px 20px;
+  text-align: right;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr td:nth-child(1) {
+  text-align: left;
+  min-width: 100px;
+  font-weight: 700;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr:nth-child(4) td:nth-child(1) {
+  padding-left: 40px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
 .sidebar{
   position: fixed;
   top: 0;
@@ -301,7 +456,7 @@
 
 
 /* ------------------------RESUMEN------------------------- */
-#resumen__dash div table th, td {
+/* #resumen__dash div table th, td {
   font-weight: bolder;
   text-align: left;
   border-bottom: 1px solid #2F334A;
@@ -311,7 +466,7 @@
 
 #resumen__dash div table tbody tr:nth-child(even) {
   background-color: #2F334A;
-}
+} */
 
 
 
