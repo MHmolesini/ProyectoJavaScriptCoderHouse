@@ -46,7 +46,723 @@ function mostrarEmpresa(empresa){
     apiDiv.appendChild(div2);
 }
 
+Highcharts.chart('revenue', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Revenue'
+    },
+    xAxis: {
+        categories: [
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Revenue (M)'
+        }
+    },
+    // tooltip: {
+    //     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+    //     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+    //         '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+    //     footerFormat: '</table>',
+    //     shared: true,
+    //     useHTML: true
+    // },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    legend: false,
+    series: [{
+        name: 'Tokyo',
+        data: [149.9, 91.5, 50.4, 129.2, 144.0],
+        color: '#3DAC63',
+    }]
+});
 
+Highcharts.chart('grossProft', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Gross Proft'
+    },
+    xAxis: {
+        categories: [
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Revenue (M)'
+        }
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    legend: false,
+    series: [{
+        name: 'Tokyo',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0],
+        color: '#E97E42',
+    }]
+});
+
+Highcharts.chart('ebitda', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'EBITDA'
+    },
+    xAxis: {
+        categories: [
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Revenue (M)'
+        }
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    legend: false,
+    series: [{
+        name: 'Tokyo',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0],
+        color: '#E9E242',
+    }]
+});
+
+Highcharts.chart('operatingIncome', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Operating Income'
+    },
+    xAxis: {
+        categories: [
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Revenue (M)'
+        }
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    legend: false,
+    series: [{
+        name: 'Tokyo',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0],
+        color: '#4C87DF',
+    }]
+});
+
+Highcharts.chart('netIncome', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Net Income'
+    },
+    xAxis: {
+        categories: [
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Revenue (M)'
+        }
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    legend: false,
+    series: [{
+        name: 'Tokyo',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0],
+        color: '#B74FDB',
+    }]
+});
+
+Highcharts.chart('eps', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Earning per Share'
+    },
+    xAxis: {
+        categories: [
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Revenue (M)'
+        }
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    legend: false,
+    series: [{
+        name: 'Tokyo',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0],
+        color: '#D34343',
+    }]
+});
+
+
+// ------------------------------
+
+Highcharts.chart('currentAssetsPlot', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Total Current Assets'
+    },
+    xAxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        },
+        stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: ( // theme
+                    Highcharts.defaultOptions.title.style &&
+                    Highcharts.defaultOptions.title.style.color
+                ) || 'gray'
+            }
+        }
+    },
+    legend: {
+        align: 'right',
+        x: -30,
+        verticalAlign: 'top',
+        y: 25,
+        floating: true,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || 'white',
+        borderColor: '#CCC',
+        borderWidth: 1,
+        shadow: false
+    },
+    tooltip: {
+        headerFormat: '<b>{point.x}</b><br/>',
+        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [{
+        name: 'Cash and Cash Equivalent',
+        data: [5, 3, 4, 7, 2]
+    }, {
+        name: 'Short Term Investment',
+        data: [2, 2, 3, 2, 1]
+    }, {
+        name: 'Net Receivables',
+        data: [3, 4, 4, 2, 5]
+    }, {
+        name: 'Inventory',
+        data: [3, 4, 4, 2, 5]
+    }, {
+        name: 'Other Current Assets',
+        data: [3, 4, 4, 2, 5]
+    }]
+});
+
+Highcharts.chart('nonCurrentAssetsPlot', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Total Current Assets'
+    },
+    xAxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        },
+        stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: ( // theme
+                    Highcharts.defaultOptions.title.style &&
+                    Highcharts.defaultOptions.title.style.color
+                ) || 'gray'
+            }
+        }
+    },
+    legend: {
+        align: 'right',
+        x: -30,
+        verticalAlign: 'top',
+        y: 25,
+        floating: true,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || 'white',
+        borderColor: '#CCC',
+        borderWidth: 1,
+        shadow: false
+    },
+    tooltip: {
+        headerFormat: '<b>{point.x}</b><br/>',
+        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [{
+        name: 'Property Plant Equipment Net',
+        data: [5, 3, 4, 7, 2]
+    }, {
+        name: 'Goodwill and Intangible Assets',
+        data: [2, 2, 3, 2, 1]
+    }, {
+        name: 'Long Term Investment',
+        data: [3, 4, 4, 2, 5]
+    }, {
+        name: 'Tax Assets',
+        data: [3, 4, 4, 2, 5]
+    }, {
+        name: 'Other Non Current Assets',
+        data: [3, 4, 4, 2, 5]
+    }]
+});
+
+Highcharts.chart('assetsPlot', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Total Current Assets'
+    },
+    xAxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        },
+        stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: ( // theme
+                    Highcharts.defaultOptions.title.style &&
+                    Highcharts.defaultOptions.title.style.color
+                ) || 'gray'
+            }
+        }
+    },
+    legend: {
+        align: 'right',
+        x: -30,
+        verticalAlign: 'top',
+        y: 25,
+        floating: true,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || 'white',
+        borderColor: '#CCC',
+        borderWidth: 1,
+        shadow: false
+    },
+    tooltip: {
+        headerFormat: '<b>{point.x}</b><br/>',
+        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [{
+        name: 'Current Assets',
+        data: [5, 3, 4, 7, 2]
+    }, {
+        name: 'Non Current Assets',
+        data: [2, 2, 3, 2, 1]
+    }]
+});
+
+Highcharts.chart('assetsPlot100', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Stacked column chart'
+    },
+    xAxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        }
+    },
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+        shared: true
+    },
+    plotOptions: {
+        column: {
+            stacking: 'percent'
+        }
+    },
+    series: [{
+        name: 'Current Assets',
+        data: [5, 3, 4, 7, 2]
+    }, {
+        name: 'Non Current Assets',
+        data: [2, 2, 3, 2, 1]
+    }]
+});
+
+Highcharts.chart('currentLiabilitiesPlot', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Total Current Assets'
+    },
+    xAxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        },
+        stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: ( // theme
+                    Highcharts.defaultOptions.title.style &&
+                    Highcharts.defaultOptions.title.style.color
+                ) || 'gray'
+            }
+        }
+    },
+    legend: {
+        align: 'right',
+        x: -30,
+        verticalAlign: 'top',
+        y: 25,
+        floating: true,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || 'white',
+        borderColor: '#CCC',
+        borderWidth: 1,
+        shadow: false
+    },
+    tooltip: {
+        headerFormat: '<b>{point.x}</b><br/>',
+        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [{
+        name: 'Account Payables',
+        data: [5, 3, 4, 7, 2]
+    }, {
+        name: 'Short Term Debt',
+        data: [2, 2, 3, 2, 1]
+    }, {
+        name: 'Tax Payables',
+        data: [3, 4, 4, 2, 5]
+    }, {
+        name: 'Deferred Revenue',
+        data: [3, 4, 4, 2, 5]
+    }, {
+        name: 'Other Current Liabilities',
+        data: [3, 4, 4, 2, 5]
+    }]
+});
+
+Highcharts.chart('nonCurrentLiabilitiesPlot', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Total Non Current Liabilities'
+    },
+    xAxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        },
+        stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: ( // theme
+                    Highcharts.defaultOptions.title.style &&
+                    Highcharts.defaultOptions.title.style.color
+                ) || 'gray'
+            }
+        }
+    },
+    legend: {
+        align: 'right',
+        x: -30,
+        verticalAlign: 'top',
+        y: 25,
+        floating: true,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || 'white',
+        borderColor: '#CCC',
+        borderWidth: 1,
+        shadow: false
+    },
+    tooltip: {
+        headerFormat: '<b>{point.x}</b><br/>',
+        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [{
+        name: 'Long Term Debt',
+        data: [2, 2, 3, 2, 1]
+    }, {
+        name: 'Deferred Revenue Non Current',
+        data: [3, 4, 4, 2, 5]
+    }, {
+        name: 'Deferred Tax Liabilities Non Current',
+        data: [3, 4, 4, 2, 5]
+    }, {
+        name: 'Other Non Current Liabilities',
+        data: [3, 4, 4, 2, 5]
+    }]
+});
+
+Highcharts.chart('liabilitiesPlot', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Stacked column chart'
+    },
+    xAxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        }
+    },
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+        shared: true
+    },
+    plotOptions: {
+        column: {
+            stacking: 'percent'
+        }
+    },
+    series: [{
+        name: 'Current Liabilities',
+        data: [5, 3, 4, 7, 2]
+    }, {
+        name: 'Non Current Liabilities',
+        data: [2, 2, 3, 2, 1]
+    }]
+});
+
+Highcharts.chart('liabilitiesPlot100', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Stacked column chart'
+    },
+    xAxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        }
+    },
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+        shared: true
+    },
+    plotOptions: {
+        column: {
+            stacking: 'percent'
+        }
+    },
+    series: [{
+        name: 'Current Liabilities',
+        data: [5, 3, 4, 7, 2]
+    }, {
+        name: 'Non Current Liabilities',
+        data: [2, 2, 3, 2, 1]
+    }]
+});
+
+Highcharts.chart('assetsLiabilities', {
+
+    chart: {
+        type: 'column'
+    },
+
+    title: {
+        text: 'Total fruit consumption, grouped by gender'
+    },
+
+    xAxis: {
+        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+    },
+
+    yAxis: {
+        allowDecimals: false,
+        min: 0,
+        title: {
+            text: 'Number of fruits'
+        }
+    },
+
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.x + '</b><br/>' +
+                this.series.name + ': ' + this.y + '<br/>' +
+                'Total: ' + this.point.stackTotal;
+        }
+    },
+
+    plotOptions: {
+        column: {
+            stacking: 'normal'
+        }
+    },
+
+    series: [{
+        name: 'John',
+        data: [5, 3, 4, 7, 2],
+        stack: 'male'
+    }, {
+        name: 'Joe',
+        data: [3, 4, 4, 2, 5],
+        stack: 'male'
+    }, {
+        name: 'Jane',
+        data: [2, 5, 6, 2, 1],
+        stack: 'female'
+    }, {
+        name: 'Janet',
+        data: [3, 0, 4, 4, 3],
+        stack: 'female'
+    }]
+});
 
 // Estados financieros de la empresa (AAPL)
 

@@ -6,10 +6,115 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+/* -------------------------------------Menu--------------------------------------- */
+#nav {
+  width: 5vw;
+  height: 100vh;
+  background-color: rgb(246, 246, 242);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+}
+
+#nav .nav__link li {
+  text-align: center;
+}
+
+#nav .nav__link li a {
+  color: #2F334A;
+}
+
+#nav .nav__link li a i {
+  font-size: 30px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#nav .nav__link li a span {
+  display: none; 
+}
+
+.sidebar .logo-details i{
+  font-size: 30px;
+  color: #fff;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* -------------------------------------Boton--------------------------------------- */
+#switch {
+  width: 5vw;
+  height: 100vh; 
+  position: fixed; 
+  right: 0;
+  top: 0;
+  background-color: rgb(246, 246, 242);
+  float: right;
+  z-index: 1000;
+}
+
+#switch .switch__boton {
+  background: #2F334A;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
+#switch .switch__boton::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #4aae38;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+#switch .switch__boton:active {
+  background: orange;
+  color: #000;
+}
+
+#switch .switch__boton:active::after {
+  right: 0;
+  left: unset;
+}
+
+#switch .switch__boton span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+
+
+
+
+
+
 /* -------------------------------------Buscador--------------------------------------- */
 
 #dashboard {
-  width: 100vw;
+  width: 90vw;
+  position: absolute;
+  left: 5vw;
   background-color: rgb(246, 246, 242);
   display: flex;
   flex-direction: column;
@@ -18,7 +123,6 @@
 }
 
 #dashboard form {
-  
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -57,7 +161,6 @@
 /* -------------------------------------Dashboard--------------------------------------- */
 #dashboard .dashboard__div {
   width: 80%;
-
 }
 
 #dashboard .dashboard__div h2 {
@@ -88,6 +191,10 @@
   border-radius: 10px;
   box-shadow: 4px 4px 12px black;
   cursor: pointer;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div:hover {
+  box-shadow: 6px 6px 18px black;
 }
 
 .dashboard__div__1__panel div:nth-child(1) {
@@ -122,11 +229,13 @@
 #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table {
   border-collapse: collapse;
   padding: 10px;
+  border-radius: 10px; 
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead {
+/* #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead {
   border: 1px black;
-}
+  border-radius: 5px;
+} */
 
 #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead tr{
   background-color: #3DAC63;
@@ -134,31 +243,97 @@
   text-align: center;
 }
 
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table td{
+  border-bottom: 1px solid rgb(212, 208, 208);
+}
+
+
+/* #dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table td:nth-child(16){
+  border-bottom: none;
+} */
+
 #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead tr th {
-  width: 16%;
+  width: 100%;
   padding: 10px 20px;
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr:nth-child(even) {
-  background-color: rgb(246, 246, 242);
-}
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr:nth-child(2), tr:nth-child(4), tr:nth-child(5), tr:nth-child(6),tr:nth-child(8), tr:nth-child(9), tr:nth-child(13) {
-  color: #D34343;
-}
-
 #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr td {
-  padding: 5px 20px;
+  padding: 4px 20px;
   text-align: right;
 }
 #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr td:nth-child(1) {
   text-align: left;
-  min-width: 100px;
   font-weight: 700;
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr:nth-child(4) td:nth-child(1) {
+/* ---------------------------------Dashboard Tabla 1------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table tbody tr:nth-child(3), tr:nth-child(10), tr:nth-child(12), tr:nth-child(14) {
+  background-color: #92959b;
+  color: white;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table tbody tr:nth-child(2), tr:nth-child(4), tr:nth-child(5), tr:nth-child(6),tr:nth-child(8), tr:nth-child(9), tr:nth-child(13) {
+  color: #D34343;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table tbody tr:nth-child(4) td:nth-child(1) {
   padding-left: 40px;
 }
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table tbody tr:nth-child(5) td:nth-child(1) {
+  padding-left: 40px;
+}
+
+
+/* ---------------------------------Dashboard Graficos 1------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(25, 3.04%);
+  grid-template-rows: repeat(22, 50px);
+  grid-gap: 1%;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos div {
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px black;
+  width: 100%;
+  height: 100%;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos div:hover {
+  box-shadow: 4px 4px 15px rgb(19, 90, 33);
+  cursor: pointer;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos div:nth-child(1) {
+  grid-column: 1/13;
+  grid-row: 1/6;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos div:nth-child(2) {
+  grid-column: 14/26;
+  grid-row: 1/6;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos div:nth-child(3) {
+  grid-column: 1/13;
+  grid-row: 7/12;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos div:nth-child(4) {
+  grid-column: 14/26;
+  grid-row: 7/12;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos div:nth-child(5) {
+  grid-column: 1/13;
+  grid-row: 13/18;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__graficos div:nth-child(6) {
+  grid-column: 14/26;
+  grid-row: 13/18;
+}
+
+
+
+
+
+
 
 /* ----------------------------------------------------------------------------------------- */
 .sidebar{

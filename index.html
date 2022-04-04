@@ -11,6 +11,66 @@
 </head>
 <body>
   <main>
+    <nav id="nav">
+      <ul class="nav__link">
+        <li>
+          <a href="#">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+            <span class="link_name">Income Statement</span>
+          </a>
+        </li>
+        <li>
+          <a href="#estadoPatrimonial">
+            <i class="bx bxs-pie-chart-alt-2"></i>
+            <span class="link_name">Balance Sheet Statement</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+            <span class="link_name">Cash Flow Statement</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+            <span class="link_name">Profitability</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+            <span class="link_name">Liquidity</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+            <span class="link_name">Indebtedness</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+            <span class="link_name">Management</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+            <span class="link_name">Assessment</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="switch">
+      <button class="switch__boton">
+        <span><i class="bx bx-sun"></i></span>
+        <span><i class="bx bx-moon"></i></span>
+      </button>
+    </div>
+
     <div id="dashboard">
       <form>
         <input class="dashboard__form__input" type="text" placeholder="Ingrese el Ticket...">
@@ -28,7 +88,7 @@
             <div>EPS</div>
           </div>
 
-          <div class="dashboard__div__1__tabla">
+          <div class="dashboard__div__1__tabla" id="dashboard__div__1__tabla1">
             <table>
               <thead>
                 <tr>
@@ -43,10 +103,10 @@
               <tbody>
                 <tr>
                   <td>Revenue</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>125.456.879.525</td>
+                  <td>125.456.879.525</td>
+                  <td>125.456.879.525</td>
+                  <td>125.456.879.525</td>
                   <td>365.817.000.000</td>
                 </tr>
                 <tr>
@@ -66,7 +126,7 @@
                   <td>152.836.000.000</td>
                 </tr>
                 <tr>
-                  <td>Research And Development Expenses</td>
+                  <td>R & D Expenses</td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -172,9 +232,19 @@
               </tbody>
             </table>
           </div>
+
+          <div class="dashboard__div__1__graficos">
+            <div id="revenue">Revenue</div>
+            <div id="grossProft">Gross Profit</div>
+            <div id="ebitda">EBITDA</div>
+            <div id="operatingIncome">Operating Income</div>
+            <div id="netIncome">Net Income</div>
+            <div id="eps">EPS</div>
+
+          </div>
         </div>
 
-        <h2>Estado Patrimonial</h2>
+        <h2 id="estadoPatrimonial">Estado Patrimonial</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
             <div>Assets</div>
@@ -183,7 +253,7 @@
             <div>Debt</div>
           </div>
 
-          <div class="dashboard__div__1__tabla">
+          <div class="dashboard__div__1__tabla" id="dashboard__div__1__tabla2">
             <table>
               <thead>
                 <tr>
@@ -431,6 +501,21 @@
               </tbody>
             </table>
           </div>
+
+          <div class="dashboard__div__1__graficos">
+            <div id="currentAssetsPlot">Current Assets Component</div>
+            <div id="nonCurrentAssetsPlot">Non Current Assets Component</div>
+            <div id="assetsPlot">Total Assets Component</div>
+            <div id="assetsPlot100">Total Assets Component 100%</div>
+
+            <div id="currentLiabilitiesPlot">Current Liabilities Components</div>
+            <div id="nonCurrentLiabilitiesPlot">Non Current Liabilities Component</div>
+            <div id="liabilitiesPlot">Total Liabilities Component</div>
+            <div id="liabilitiesPlot100">Total Liabilities Component 100%</div>
+
+            <div id="assetsLiabilities">Assets & Liabilities</div>
+            <div id="assetsLiabilities100">Assets & Liabilities 100%</div>
+          </div>
         </div>
 
         <h2>Estado de Flujo de Efectivo</h2>
@@ -442,7 +527,7 @@
             <div>Debt</div>
           </div>
 
-          <div class="dashboard__div__1__tabla">
+          <div class="dashboard__div__1__tabla" id="dashboard__div__1__tabla3">
             <table>
               <thead>
                 <tr>
