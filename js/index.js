@@ -1,27 +1,18 @@
-// Menu Desplegable
-// let arrow = document.querySelectorAll(".arrow");
-//   for (var i = 0; i < arrow.length; i++) {
-//     arrow[i].addEventListener("click", (e)=>{
-//    let arrowParent = e.target.parentElement.parentElement;
-//    arrowParent.classList.toggle("showMenu");
-//     });
-//   }
-//   let sidebar = document.querySelector(".sidebar");
-//   let sidebarBtn = document.querySelector(".bx-menu");
-//   console.log(sidebarBtn);
-//   sidebarBtn.addEventListener("click", ()=>{
-//     sidebar.classList.toggle("close");
-// });
+// Switch Toggle
 
-// const botonSwitch = document.querySelector("#switch");
-// botonSwitch.addEventListener('click', () => {
-//     document.body.classList.toggle('dark');
-//     botonSwitch.classList.toggle('active');
-// });
+const botonSwitch = document.querySelector(".switch__boton__label");
+botonSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    botonSwitch.classList.toggle('active');
+});
+
 // -----------------------------------------------------------------------
+
 const input = document.querySelector('.dashboard__form__input');
 const button = document.querySelector('.dashboard__form__button');
 const apiDiv = document.querySelector('.dashboard__div');
+
+const dashboardPanel = document.querySelector('.dashboard__div__1__panel');
 
 button.addEventListener('click', (i) => {
     i.preventDefault();
@@ -38,12 +29,50 @@ function buscarEmpresa(empresa){
 
 function mostrarEmpresa(empresa){
     const revenue2 = document.createElement('p');
-    revenue2.innerHTML = empresa[4].revenue;
+    revenue2.innerHTML = `${empresa[0].revenue/1000000} M`;
 
-    const div2 = document.createElement('div');
-    div2.appendChild(revenue2);
+    const revenueCard = document.querySelector('#revenueCard');
+    revenueCard.appendChild(revenue2);
 
-    apiDiv.appendChild(div2);
+
+    const revenue3 = document.createElement('p');
+    revenue3.innerHTML = `${empresa[0].grossProfit/1000000} M`;
+
+    const grossMarginCard = document.querySelector('#grossMarginCard');
+    grossMarginCard.appendChild(revenue3);
+
+
+    const revenue4 = document.createElement('p');
+    revenue4.innerHTML = `${empresa[0].ebitda/1000000} M`;
+
+    const ebitdaCard = document.querySelector('#ebitdaCard');
+    ebitdaCard.appendChild(revenue4);
+
+
+    const revenue5 = document.createElement('p');
+    revenue5.innerHTML = `${empresa[0].operatingIncome/1000000} M`;
+
+    const operatingCard = document.querySelector('#operatingCard');
+    operatingCard.appendChild(revenue5);
+
+
+    const revenue6 = document.createElement('p');
+    revenue6.innerHTML = `${empresa[0].netIncome/1000000} M`;
+
+    const netIncomeCard = document.querySelector('#netIncomeCard');
+    netIncomeCard.appendChild(revenue6);
+
+
+    const revenue7 = document.createElement('p');
+    revenue7.innerHTML = `${empresa[0].eps}`;
+
+    const epsCard = document.querySelector('#epsCard');
+    epsCard.appendChild(revenue7);
+
+    // const div2 = document.createElement('div');
+    // div2.appendChild(revenue2);
+
+    // apiDiv.appendChild(div2);
 }
 
 Highcharts.chart('revenue', {

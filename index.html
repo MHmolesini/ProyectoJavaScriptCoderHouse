@@ -14,7 +14,7 @@
     <nav id="nav">
       <ul class="nav__link">
         <li>
-          <a href="#">
+          <a href="#estadoDeResultados">
             <i class="bx bxs-bar-chart-alt-2"></i>
             <span class="link_name">Income Statement</span>
           </a>
@@ -26,38 +26,38 @@
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="bx bxs-bar-chart-alt-2"></i>
+          <a href="#estadoDeFlujoDeEfectivo">
+            <i class="bx bx-money-withdraw"></i>
             <span class="link_name">Cash Flow Statement</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="bx bxs-bar-chart-alt-2"></i>
+          <a href="#rentabilidad">
+            <i class="bx bx-line-chart"></i>
             <span class="link_name">Profitability</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="bx bxs-bar-chart-alt-2"></i>
+          <a href="#liquidez">
+            <i class="bx bx-coin-stack"></i>
             <span class="link_name">Liquidity</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="bx bxs-bar-chart-alt-2"></i>
+          <a href="#endeudamiento">
+            <i class="bx bxs-credit-card"></i>
             <span class="link_name">Indebtedness</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="bx bxs-bar-chart-alt-2"></i>
+          <a href="#gestion">
+            <i class="bx bxs-chalkboard"></i>
             <span class="link_name">Management</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="bx bxs-bar-chart-alt-2"></i>
+          <a href="#valoracion">
+            <i class="bx bx-dollar"></i>
             <span class="link_name">Assessment</span>
           </a>
         </li>
@@ -65,10 +65,10 @@
     </nav>
 
     <div id="switch">
-      <button class="switch__boton">
-        <span><i class="bx bx-sun"></i></span>
-        <span><i class="bx bx-moon"></i></span>
-      </button>
+      <div class="switch__boton">
+        <input type="checkbox" id="switch__boton__input">
+        <label for="switch__boton__input" class="switch__boton__label"></label>
+      </div>
     </div>
 
     <div id="dashboard">
@@ -77,15 +77,15 @@
         <button class="dashboard__form__button" type="submit">Buscar</button>
       </form>
       <div class="dashboard__div">
-        <h2>Estado de Resultados</h2>
+        <h2 id="estadoDeResultados">Estado de Resultados</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
-            <div>Revenue</div>
-            <div>Gross Margin</div>
-            <div>EBITDA</div>
-            <div>operating Income</div>
-            <div>Net Income</div>
-            <div>EPS</div>
+            <div id="revenueCard">Revenue</div>
+            <div id="grossMarginCard">Gross Margin</div>
+            <div id="ebitdaCard">EBITDA</div>
+            <div id="operatingCard">operating Income</div>
+            <div id="netIncomeCard">Net Income</div>
+            <div id="epsCard">EPS</div>
           </div>
 
           <div class="dashboard__div__1__tabla" id="dashboard__div__1__tabla1">
@@ -518,7 +518,7 @@
           </div>
         </div>
 
-        <h2>Estado de Flujo de Efectivo</h2>
+        <h2 id="estadoDeFlujoDeEfectivo">Estado de Flujo de Efectivo</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
             <div>Net Cash Provided By Operating Activities</div>
@@ -761,7 +761,7 @@
           </div>
         </div>
 
-        <h2>Rentabilidad</h2>
+        <h2 id="rentabilidad">Rentabilidad</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
             <div></div>
@@ -784,7 +784,7 @@
           </div>
         </div>
 
-        <h2>Liquidez</h2>
+        <h2 id="liquidez">Liquidez</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
             <div>Quick Ratio</div>
@@ -797,7 +797,7 @@
           </div>
         </div>
 
-        <h2>Endeudamiento</h2>
+        <h2 id="endeudamiento">Endeudamiento</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
             <div>Debt To Assets</div>
@@ -809,7 +809,7 @@
           </div>
         </div>
 
-        <h2>Gestion</h2>
+        <h2 id="gestion">Gestion</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
             <div>Inventory Turnover</div>
@@ -830,7 +830,7 @@
           </div>
         </div>
 
-        <h2>Valoracion</h2>
+        <h2 id="valoracion">Valoracion</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
             <div>Market Capitalization</div>
