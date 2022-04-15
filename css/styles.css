@@ -25,6 +25,12 @@
   color: #2F334A;
 }
 
+#nav .nav__link li a i:hover {
+  transform: scale(1.3);
+  transition: 600ms;
+  color: rgb(149, 52, 175);
+}
+
 #nav .nav__link li a i {
   font-size: 30px;
   height: 50px;
@@ -116,6 +122,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5vh;
 }
 
 #dashboard form .dashboard__form__input {
@@ -166,7 +173,7 @@
 }
 
 /* ---------------------------------Dashboard Panel------------------------------------ */
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel {
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel, .dashboard__div__2__panel {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -174,7 +181,7 @@
   height: 100px;
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div {
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div, .dashboard__div__2__panel div {
   width: 13%;
   /* background-color: red; */
   border-radius: 10px;
@@ -187,17 +194,19 @@
   text-transform: uppercase;
   text-align: center;
   color: white;
+  margin: 5px 0;
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div p {
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div p, .dashboard__div__2__panel div p {
   letter-spacing: 1px;
   font-size: 1.2rem;
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div:hover {
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div:hover, .dashboard__div__2__panel div:hover {
   box-shadow: 6px 6px 18px black;
 }
 
+/* ---------------------------------Dashboard Panel 1------------------------------------ */
 .dashboard__div__1__panel div:nth-child(1) {
   background-color: #3DAC63;
 }
@@ -219,16 +228,17 @@
 }
 
 /* ---------------------------------Dashboard Tabla------------------------------------ */
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla {
-  width: 80%;
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla, .dashboard__div__2__tabla {
+  width: 90%;
   margin: 0 auto;
   background-color: white;
   margin: 2rem 0;
   border-radius: 10px; 
   box-shadow: 4px 4px 4px rgb(81, 77, 77);
+  font-size: 16px;
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table {
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table, .dashboard__div__2__tabla table {
   border-collapse: collapse;
   padding: 10px;
   border-radius: 10px; 
@@ -239,13 +249,13 @@
   border-radius: 5px;
 } */
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead tr{
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead tr, .dashboard__div__2__tabla table thead tr {
   background-color: #3DAC63;
-  color: white;
+  /* color: white; */
   text-align: center;
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table td{
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table td, .dashboard__div__2__tabla table td {
   border-bottom: 1px solid rgb(212, 208, 208);
 }
 
@@ -254,16 +264,16 @@
   border-bottom: none;
 } */
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead tr th {
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table thead tr th, .dashboard__div__2__tabla table thead tr th {
   width: 100%;
   padding: 10px 20px;
 }
 
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr td {
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr td, .dashboard__div__2__tabla table tbody tr td {
   padding: 4px 20px;
   text-align: right;
 }
-#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr td:nth-child(1) {
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla table tbody tr td:nth-child(1), .dashboard__div__2__tabla table tbody tr td:nth-child(1) {
   text-align: left;
   font-weight: 700;
 }
@@ -271,12 +281,12 @@
 /* ---------------------------------Dashboard Tabla 1------------------------------------ */
 #dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table tbody tr:nth-child(3), tr:nth-child(10), tr:nth-child(12), tr:nth-child(14) {
   background-color: #92959b;
-  color: white;
+  /* color: white; */
 }
 
-#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table tbody tr:nth-child(2), tr:nth-child(4), tr:nth-child(5), tr:nth-child(6),tr:nth-child(8), tr:nth-child(9), tr:nth-child(13) {
+/* #dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table tbody tr:nth-child(2), tr:nth-child(4), tr:nth-child(5), tr:nth-child(6),tr:nth-child(8), tr:nth-child(9), tr:nth-child(13) {
   color: #D34343;
-}
+} */
 #dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla1 table tbody tr:nth-child(4) td:nth-child(1) {
   padding-left: 40px;
 }
@@ -331,6 +341,271 @@
   grid-row: 13/18;
 }
 
+/* ---------------------------------Dashboard Panel 2------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__2__panel div:nth-child(3) {
+  background-color: #4C87DF;
+  color: white;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__2__panel div:nth-child(4) {
+  background-color: #D34343;
+}
+
+/* ---------------------------------Dashboard Tabla 2------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla2 table td {
+  color: black;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla2 table thead tr {
+  background-color: #4C87DF;
+  color: white;
+  text-align: center;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla2 table tbody tr:nth-child(10), tr:nth-child(12) {
+  background-color: white;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla2 table tbody tr:nth-child(1), tr:nth-child(2), tr:nth-child(8), tr:nth-child(14), tr:nth-child(15), tr:nth-child(16), tr:nth-child(22), tr:nth-child(27) {
+  background-color: #92959b;
+  /* color: white; */
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla2 table tbody tr:nth-child(1) td:nth-child(1), tr:nth-child(14) td:nth-child(1), tr:nth-child(15) td:nth-child(1), tr:nth-child(27) td:nth-child(1) {
+  padding-left: 60px;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla2 table tbody tr:nth-child(2) td:nth-child(1), tr:nth-child(8) td:nth-child(1), tr:nth-child(16) td:nth-child(1), tr:nth-child(22) td:nth-child(1) {
+  padding-left: 40px;
+}
+
+
+/* ---------------------------------Dashboard Graficos 2------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(25, 3.04%);
+  grid-template-rows: repeat(42, 50px);
+  grid-gap: 1%;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div {
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px black;
+  width: 100%;
+  height: 100%;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:hover {
+  box-shadow: 4px 4px 15px rgb(19, 90, 33);
+  cursor: pointer;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(1) {
+  grid-column: 1/13;
+  grid-row: 1/6;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(2) {
+  grid-column: 14/26;
+  grid-row: 1/6;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(3) {
+  grid-column: 1/13;
+  grid-row: 7/12;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(4) {
+  grid-column: 14/26;
+  grid-row: 7/12;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(5) {
+  grid-column: 1/13;
+  grid-row: 13/18;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(6) {
+  grid-column: 14/26;
+  grid-row: 13/18;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(7) {
+  grid-column: 1/13;
+  grid-row: 19/24;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(8) {
+  grid-column: 14/26;
+  grid-row: 19/24;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(9) {
+  grid-column: 1/13;
+  grid-row: 25/30;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__2__graficos div:nth-child(10) {
+  grid-column: 14/26;
+  grid-row: 25/30;
+}
+
+/* ---------------------------------Dashboard Panel 2------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__3__panel div, .dashboard__div__2__panel div {
+  width: 20%;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__3__panel div:nth-child(3) {
+  background-color: #4C87DF;
+  color: white;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__3__panel div:nth-child(4) {
+  background-color: #B74FDB;
+}
+
+
+/* ---------------------------------Dashboard Tabla 3------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla3 table td {
+  color: black;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla3 table thead tr {
+  background-color: #B74FDB;
+  /* color: white;
+  text-align: center; */
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla3 table tbody tr:nth-child(8), tr:nth-child(10), tr:nth-child(12), tr:nth-child(14), tr:nth-child(15), tr:nth-child(16), tr:nth-child(22), tr:nth-child(24), tr:nth-child(30) {
+  background-color: white;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla3 table tbody tr:nth-child(1), tr:nth-child(2), tr:nth-child(12), tr:nth-child(18), tr:nth-child(24) {
+  background-color: #92959b;
+  color: white;
+}
+
+/* #dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla3 table tbody tr:nth-child(1) td:nth-child(1), tr:nth-child(14) td:nth-child(1), tr:nth-child(15) td:nth-child(1), tr:nth-child(27) td:nth-child(1) {
+  padding-left: 60px;
+} */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__1__tabla3 table tbody tr:nth-child(1) td:nth-child(1), tr:nth-child(2) td:nth-child(1), tr:nth-child(12) td:nth-child(1), tr:nth-child(18) td:nth-child(1), tr:nth-child(24) td:nth-child(1) {
+  padding-left: 40px;
+} 
+
+/* ---------------------------------Dashboard Graficos 3------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__3__graficos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(25, 3.04%);
+  grid-template-rows: repeat(14, 50px);
+  grid-gap: 1%;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__3__graficos div {
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px black;
+  width: 100%;
+  height: 100%;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__3__graficos div:hover {
+  box-shadow: 4px 4px 15px rgb(19, 90, 33);
+  cursor: pointer;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__3__graficos div:nth-child(1) {
+  grid-column: 1/13;
+  grid-row: 1/6;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__3__graficos div:nth-child(2) {
+  grid-column: 14/26;
+  grid-row: 1/6;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__3__graficos div:nth-child(3) {
+  grid-column: 1/13;
+  grid-row: 7/12;
+}
+#dashboard .dashboard__div .dashboard__div__1 .dashboard__div__3__graficos div:nth-child(4) {
+  grid-column: 14/26;
+  grid-row: 7/12;
+}
+
+/* ---------------------------------Dashboard Panel Rentabilidad------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel {
+  flex-wrap: wrap;
+  height: 350px;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div {
+  height: 100px;
+}
+
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div:nth-child(2) {
+  background-color: #E97E42;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div:nth-child(3) {
+  background-color: #4C87DF;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div:nth-child(4) {
+  background-color: #B74FDB;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div:nth-child(5) {
+  background-color: #D34343;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div:nth-child(8) {
+  background-color: #E9E242;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div:nth-child(9) {
+  background-color: #E9E242;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div:nth-child(10) {
+  background-color: #3DAC63;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div:nth-child(11) {
+  background-color: #4C87DF;
+}
+
+/* ---------------------------------Dashboard Panel liquidez------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__5__panel {
+  flex-wrap: wrap;
+  height: 250px;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__5__panel div {
+  height: 100px;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__5__panel div:nth-child(1) {
+  background-color: #E9E242;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__5__panel div:nth-child(2) {
+  background-color: #E9E242;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__5__panel div:nth-child(4) {
+  background-color: #E97E42;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__5__panel div:nth-child(7) {
+  background-color: #D34343;
+}
+
+
+/* ---------------------------------Dashboard Panel Endeudamiento------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__6__panel {
+  flex-wrap: wrap;
+  height: 150px;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__6__panel div {
+  height: 100px;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__6__panel div:nth-child(1), #dashboard__div__6__panel div:nth-child(2), #dashboard__div__6__panel div:nth-child(3) {
+  background-color: #D34343;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__6__panel div:nth-child(4) {
+  background-color: #4C87DF;
+}
+
+
+/* ---------------------------------Dashboard Panel Gestion------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__7__panel {
+  flex-wrap: wrap;
+  height: 350px;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__7__panel div {
+  height: 100px;
+}
+
+/* ---------------------------------Dashboard Panel Valoracion------------------------------------ */
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__8__panel {
+  flex-wrap: wrap;
+  align-items: space-around;
+  height: 350px;
+}
+#dashboard .dashboard__div .dashboard__div__1 #dashboard__div__8__panel div {
+  height: 100px;
+}
 
 /* -------------------------Boton-------------------------- */
 
@@ -395,7 +670,7 @@
 
 
 /* Graficos del Dashboard RESULTADOS*/
-.home-section .home-dash {
+/* .home-section .home-dash {
     display: grid;
     grid-template-columns: repeat(12, 5vw);
     grid-template-rows: repeat(23, 7vh);
@@ -506,7 +781,7 @@
 }
 
 /* Graficos del Dashboard PATRIMONIO*/
-.home-section #patrimonio {
+/* .home-section #patrimonio {
   display: grid;
   grid-template-columns: repeat(12, 5vw);
   grid-template-rows: repeat(27, 7vh);
@@ -567,12 +842,12 @@
 }
 .home-section .home-dash #AssetsLiabilitiesPlotColumn100{
   grid-column: 5/13;
-  grid-row: 10/15; /* mirar */
+  grid-row: 10/15; /* mirar 
   background-color: #2F334A;
 }
 .home-section .home-dash #CurrentLiabilitiesNonCurrent{
   grid-column: 1/5;
-  grid-row: 14/17; /* mirar */
+  grid-row: 14/17; /* mirar 
   background-color: #2F334A;
 }
 .home-section .home-dash #EquityDebt{
@@ -612,7 +887,7 @@
 }
 
 /* Graficos del Dashboard PATRIMONIO*/
-.home-section #rentabilidad {
+/* .home-section #rentabilidad {
   display: grid;
   grid-template-columns: repeat(12, 5vw);
   grid-template-rows: repeat(29, 7vh);
@@ -668,7 +943,7 @@
 }
 .home-section .home-dash #DividendYieldPayout{
   grid-column: 1/4;
-  grid-row: 12/15; /*mirar*/
+  grid-row: 12/15; /*mirar
   background-color: #2F334A;
 }
 .home-section .home-dash #MarginPlotBar{
@@ -730,4 +1005,4 @@
   grid-column: 1/13;
   grid-row: 26/30; 
   background-color: #2F334A;
-}
+}  */

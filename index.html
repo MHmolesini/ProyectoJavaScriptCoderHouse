@@ -77,7 +77,7 @@
         <button class="dashboard__form__button" type="submit">Buscar</button>
       </form>
       <div class="dashboard__div">
-        <h2 id="estadoDeResultados">Estado de Resultados</h2>
+        <h2 id="estadoDeResultados">Income Statement</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__1__panel">
             <div id="revenueCard">Revenue</div>
@@ -93,141 +93,61 @@
               <thead>
                 <tr>
                   <th></th>
-                  <th>2017</th>
-                  <th>2018</th>
-                  <th>2019</th>
-                  <th>2020</th>
                   <th>2021</th>
+                  <th>2020</th>
+                  <th>2019</th>
+                  <th>2018</th>
+                  <th>2017</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr id="trRevenue">
                   <td>Revenue</td>
-                  <td>125.456.879.525</td>
-                  <td>125.456.879.525</td>
-                  <td>125.456.879.525</td>
-                  <td>125.456.879.525</td>
-                  <td>365.817.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trCostOfRevenue">
                   <td>Cost of Revenue</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>212.981.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trGrossProfit">
                   <td>Gross Profit</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>152.836.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trRDExpenses">
                   <td>R & D Expenses</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>21.914.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trSellingGeneralAdminExpenses">
                   <td>Selling General And Administrative Expenses</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>21.973.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trOperatingExpenses">
                   <td>Operating Expenses</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>43.887.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trInterestIncome">
                   <td>Interest Income</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>2.843.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trInterestExpense">
                   <td>Interest Expense</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>2.645.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trDepreciationAndAmortization">
                   <td>Depreciation And Amortization</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>11.284.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trOperatingIncome">
                   <td>Operating Income</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>108.949.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalOtherIncomeExpensesNet">
                   <td>Total Other Income Expenses Net</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>258.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trIncomeBeforeTax">
                   <td>Income Before Tax</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>109.207.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trIncomeTaxExpense">
                   <td>Income Tax Expense</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>14.527.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trNetIncome">
                   <td>Net Income</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>94.680.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trEbitda">
                   <td>Ebitda</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>123.136.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trEPS">
                   <td>EPS</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>5.67</td>
                 </tr>
               </tbody>
             </table>
@@ -244,265 +164,120 @@
           </div>
         </div>
 
-        <h2 id="estadoPatrimonial">Estado Patrimonial</h2>
+        <h2 id="estadoPatrimonial">Balance Sheet Statement</h2>
         <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel">
-            <div>Assets</div>
-            <div>Liabilities</div>
-            <div>Equity</div>
-            <div>Debt</div>
+          <div class="dashboard__div__1__panel" id="dashboard__div__2__panel">
+            <div id="assetsCard">Assets</div>
+            <div id="liabilitiesCard">Liabilities</div>
+            <div id="equityCard">Equity</div>
+            <div id="debtCard">Debt</div>
           </div>
 
-          <div class="dashboard__div__1__tabla" id="dashboard__div__1__tabla2">
+          <div class="dashboard__div__2__tabla" id="dashboard__div__1__tabla2">
             <table>
               <thead>
                 <tr>
                   <th></th>
-                  <th>2017</th>
-                  <th>2018</th>
-                  <th>2019</th>
-                  <th>2020</th>
                   <th>2021</th>
+                  <th>2020</th>
+                  <th>2019</th>
+                  <th>2018</th>
+                  <th>2017</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr id="trTotalAssets">
                   <td>Total Assets</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>351.002.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalCurrentAssets">
                   <td>Total Current Assets</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>212.981.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trCashAndCashEquivalents">
                   <td>Cash And Cash Equivalents</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>34.940.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trShortTermInvestments">
                   <td>Short Term Investments</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>27.699.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trNetReceivables">
                   <td>Net Receivables</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>51.506.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trInventory">
                   <td>inventory</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>6.580.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trOtherCurrentAssets">
                   <td>Other Current Assets</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>14.111.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalNonCurrentAssets">
                   <td>Total Non Current Assets</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>216.166.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trPropertyPlantEquipmentNet">
                   <td>Property Plant Equipment Net</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>39.440.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trGoodwillAndIntangibleAssets">
                   <td>Goodwill And Intangible Assets</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>0.0</td>
                 </tr>
-                <tr>
+                <tr id="trLongTermInvestments">
                   <td>Long Term Investments</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>127.877.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTaxAssets">
                   <td>taxAssets</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>0.0</td>
                 </tr>
-                <tr>
+                <tr id="trOtherNonCurrentAssets">
                   <td>Other Non Current Assets</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>48.849.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalLiabilitiesAndTotalEquity">
                   <td>Total Liabilities And Total Equity</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>351.002.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalLiabilities">
                   <td>Total Liabilities</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>287.912.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalCurrentLiabilities">
                   <td>Total Current Liabilities</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>125.481.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trAccountPayables">
                   <td>Account Payables</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>54.763.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trShortTermDebt">
                   <td>Short Term Debt</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>15.613.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTaxPayables">
                   <td>Tax Payables</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>0.0</td>
                 </tr>
-                <tr>
+                <tr id="trDeferredRevenue">
                   <td>Deferred Revenue</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>7.612.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trOtherCurrentLiabilities">
                   <td>Other Current Liabilities</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>47.493.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalNonCurrentLiabilities">
                   <td>Total Non Current Liabilities</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>162.431.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trLongTermDebt">
                   <td>Long Term Debt</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>109.106.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trDeferredRevenueNonCurrent">
                   <td>Deferred Revenue Non Current</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>0.0</td>
                 </tr>
-                <tr>
+                <tr id="trDeferredTaxLiabilitiesNonCurrent">
                   <td>Deferred Tax Liabilities Non Current</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>0.0</td>
                 </tr>
-                <tr>
+                <tr id="trOtherNonCurrentLiabilities">
                   <td>Other Non Current Liabilities</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>53.325.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalEquity">
                   <td>Total Equity</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>63.090.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalInvestments">
                   <td>Total Investments</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>155.576.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trTotalDebt">
                   <td>Total Debt</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>124.719.000.000</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="dashboard__div__1__graficos">
+          <div class="dashboard__div__2__graficos">
             <div id="currentAssetsPlot">Current Assets Component</div>
             <div id="nonCurrentAssetsPlot">Non Current Assets Component</div>
             <div id="assetsPlot">Total Assets Component</div>
@@ -518,13 +293,13 @@
           </div>
         </div>
 
-        <h2 id="estadoDeFlujoDeEfectivo">Estado de Flujo de Efectivo</h2>
+        <h2 id="estadoDeFlujoDeEfectivo">Cash Flow Statement</h2>
         <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel">
-            <div>Net Cash Provided By Operating Activities</div>
-            <div>Net Cash Used Provided By Financing Activities</div>
-            <div>Equity</div>
-            <div>Debt</div>
+          <div class="dashboard__div__1__panel" id="dashboard__div__3__panel">
+            <div id="netCashProvidedByOperatingActivitiesCard">Cash From Operating Activities</div>
+            <div id="netCashUsedForInvestingActivitesCard">Cash From Investing Activites</div>
+            <div id="netCashUsedProvidedByFinancingActivitiesCard">Cash From Financing Activities</div>
+            <div id="freeCashFlowCard">Free Cash Flow</div>
           </div>
 
           <div class="dashboard__div__1__tabla" id="dashboard__div__1__tabla3">
@@ -532,325 +307,165 @@
               <thead>
                 <tr>
                   <th></th>
-                  <th>2017</th>
-                  <th>2018</th>
-                  <th>2019</th>
-                  <th>2020</th>
                   <th>2021</th>
+                  <th>2020</th>
+                  <th>2019</th>
+                  <th>2018</th>
+                  <th>2017</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr id="trNetIncomeCF">
                   <td>Net Income</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>94.680.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trNetCashProvidedByOperatingActivities">
                   <td>Net Cash Provided By Operating Activities</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>104.038.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trDepreciationAndAmortizationCF">
                   <td>Depreciation And Amortization</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>11.284.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trDeferredIncomeTax">
                   <td>Deferred Income Tax</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-4.774.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trStockBasedCompensation">
                   <td>Stock Based Compensation</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>7.906.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trChangeInWorkingCapital">
                   <td>Change In Working Capital</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-4.911.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trAccountsReceivables">
                   <td>1.Accounts Receivables</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-10.125.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trInventoryCF">
                   <td>2.Inventory</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-2.642.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trAccountsPayables">
                   <td>3.Accounts Payables</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>12.326.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trOtherWorkingCapital">
                   <td>4.Other Working Capital</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>1.676.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trOtherNonCashItems">
                   <td>Other Non Cash Items</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-147.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trNetCashUsedForInvestingActivites">
                   <td>Net Cash Used For Investing Activites</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-14.545.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trInvestmentsInPropertyPlantAndEquipment">
                   <td>Investments In Property Plant And Equipment</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-11.085.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trAcquisitionsNet">
                   <td>Acquisitions Net</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-33.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trPurchasesOfInvestments">
                   <td>Purchases Of Investments</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-109.689.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trSalesMaturitiesOfInvestments">
                   <td>Sales Maturities Of Investments</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>106.870.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trOtherInvestingActivites">
                   <td>Other Investing Activites</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-608.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trNetCashUsedProvidedByFinancingActivities">
                   <td>Net Cash Used Provided By Financing Activities</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-93.353.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trDebtRepayment">
                   <td>Debt Repayment</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-8.750.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trCommonStockIssued">
                   <td>Common Stock Issued</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>1.105.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trCommonStockRepurchased">
                   <td>Common Stock Repurchased</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-85.971.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trDividendsPaid">
                   <td>Dividends Paid</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-14.467.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trOtherFinancingActivites">
                   <td>Other Financing Activites</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>14.730.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trCashAtBeginningOfPeriod">
                   <td>Cash At Beginning Of Period</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>39.789.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trNetChangeInCash">
                   <td>Net Change In Cash</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>-3.860.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trCashAtEndOfPeriod">
                   <td>Cash At End Of Period</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>35.929.000.000</td>
                 </tr>
-                <tr>
+                <tr id="trFreeCashFlow">
                   <td>Free Cash Flow</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>92.953.000.000</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <div class="dashboard__div__3__graficos">
+            <div id="netCashProvidedByOperatingActivitiesPlot">Net Cash Provided By Operating Activities</div>
+            <div id="netCashUsedForInvestingActivitesPlot">Net Cash Used For Investing Activites</div>
+            <div id="netCashUsedProvidedByFinancingActivitiesPlot">Net Cash Used Provided By Financing Activities</div>
+            <div id="freeCashFlowPlot">Free Cash Flow</div>
           </div>
         </div>
 
         <h2 id="rentabilidad">Rentabilidad</h2>
         <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel">
-            <div></div>
-            <div>Gross Profit Margin</div>
-            <div>Operating Profit Margin</div>
-            <div>Net Profit Margin</div>
-            <div>1.EPS</div>
-            <div></div>
-            <div></div>
-            <div>Dividend Yield</div>
-            <div>Dividend Payout Ratio</div>
-            <div>Return On Assets</div>
-            <div>Return On Equity</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div class="dashboard__div__2__panel" id="dashboard__div__4__panel">
+            <div id="grossProfitMarginCard">Gross Profit Margin</div>
+            <div id="operatingProfitMarginCard">Operating Profit Margin</div>
+            <div id="netProfitMarginCard">Net Profit Margin</div>
+            <div id="ePSCard">EPS</div>
+            <div id="dividendYieldCard">Dividend Yield</div>
+            <div id="dividendPayoutRatioCard">Dividend Payout Ratio</div>
+            <div id="returnOnAssetsCard">Return On Assets</div>
+            <div id="returnOnEquityCard">Return On Equity</div>
           </div>
         </div>
 
         <h2 id="liquidez">Liquidez</h2>
         <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel">
-            <div>Quick Ratio</div>
-            <div>Current Ratio</div>
-            <div></div>
-            <div>Interest Coverage</div>
-            <div></div>
-            <div></div>
-            <div>Cash Flow To Debt Ratio</div>
+          <div class="dashboard__div__1__panel" id="dashboard__div__5__panel">
+            <div id="quickRatioCard">Quick Ratio</div>
+            <div id="currentRatioCard">Current Ratio</div>
+            <div id="interestCoverageCard">Interest Coverage</div>
+            <div id="cashFlowToDebtRatioCard">Cash Flow To Debt Ratio</div>
           </div>
         </div>
 
         <h2 id="endeudamiento">Endeudamiento</h2>
         <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel">
-            <div>Debt To Assets</div>
-            <div>Debt Equity Ratio</div>
-            <div>Debt To Equity</div>
-            <div>Net Debt To EBITDA</div>
-            <div></div>
-            <div></div>
+          <div class="dashboard__div__1__panel" id="dashboard__div__6__panel">
+            <div id="debtToAssetsCard">Debt To Assets</div>
+            <div id="debtEquityRatioCard">Debt Equity Ratio</div>
+            <div id="debtToEquityCard">Debt To Equity</div>
+            <div id="netDebtToEBITDACard">Net Debt To EBITDA</div>
           </div>
         </div>
 
         <h2 id="gestion">Gestion</h2>
         <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel">
-            <div>Inventory Turnover</div>
-            <div>Asset Turnover</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div>Cash Conversion Cycle</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div>Days Of Inventory Outstanding</div>
-            <div>Days Of Payables Outstanding</div>
-            <div>Days Of Sales Outstanding</div>
+          <div class="dashboard__div__1__panel" id="dashboard__div__7__panel">
+            <div id="inventoryTurnoverCard">Inventory Turnover</div>
+            <div id="assetTurnoverCard">Asset Turnover</div>
+            <div id="cashConversionCycleCard">Cash Conversion Cycle</div>
+            <div id="daysOfInventoryOutstandingCard">Days Of Inventory Outstanding</div>
+            <div id="daysOfPayablesOutstandingCard">Days Of Payables Outstanding</div>
+            <div id="daysOfSalesOutstandingCard">Days Of Sales Outstanding</div>
           </div>
         </div>
 
         <h2 id="valoracion">Valoracion</h2>
         <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel">
-            <div>Market Capitalization</div>
-            <div>Price Earnings Ratio</div>
-            <div>Price Sales Ratio</div>
-            <div>Price Cash Flow Ratio</div>
-            <div>Price Book Value Ratio</div>
-            <div>Price To Free Cash Flows Ratio</div>
-            <div>Enterprise Value Over EBITDA</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div>Graham Number</div>
-            <div></div>
-            <div></div>
-            <div>Price Earnings To Growth Ratio</div>
-            <div></div>
-            <div>Earnings Yield</div>
-            <div></div>
-            <div></div>
+          <div class="dashboard__div__1__panel" id="dashboard__div__8__panel">
+            <div id="priceEarningsRatioCard">Price Earnings Ratio</div>
+            <div id="priceSalesRatioCard">Price Sales Ratio</div>
+            <div id="priceCashFlowRatioCard">Price Cash Flow Ratio</div>
+            <div id="priceBookValueRatioCard">Price Book Value Ratio</div>
+            <div id="priceToFreeCashFlowsRatioCard">Price To Free Cash Flows Ratio</div>
+            <div id="enterpriseValueOverEBITDACard">Enterprise Value Over EBITDA</div>
+            <div id="grahamNumberCard">Graham Number</div>
+            <div id="priceEarningsToGrowthRatioCard">Price Earnings To Growth Ratio</div>
+            <div id="earningsYieldCard">Earnings Yield</div>
           </div>
         </div>
 
