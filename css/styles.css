@@ -6,6 +6,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: rgb(246, 246, 242);
+
+}
+body.dark{
+  background-color: #343D5B; 
+}
+
 /* -------------------------------------Menu--------------------------------------- */
 #nav {
   width: 5vw;
@@ -17,8 +25,10 @@
   justify-content: center;
 }
 
+
 #nav .nav__link li {
   text-align: center;
+  list-style: none;
 }
 
 #nav .nav__link li a {
@@ -111,10 +121,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-#dashboard:active {
-  background-color: #343D5B;
 }
 
 #dashboard form {
@@ -559,6 +565,124 @@
     margin-bottom: 2rem;
 }
 }
+
+@media screen and (max-width: 480px){
+  /* ---------------------------------Dashboard Panel Rentabilidad------------------------------------ */
+  #nav {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+  }
+
+  #nav .nav__link {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  #nav .nav__link li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* -------------------------------------Buscador--------------------------------------- */
+
+  #dashboard {
+    width: 100vw;
+    position: relative;
+    top: 7vh;
+    left: 0px;
+  }
+  #dashboard form .dashboard__form__input {
+    width: 70%;
+  }
+  /* -------------------------------------Dashboard--------------------------------------- */
+  #dashboard .dashboard__div {
+    width: 90%;
+  }
+  #dashboard .dashboard__div h2 {
+    font-size: 1.6rem;
+  }
+  /* ---------------------------------Dashboard Panel------------------------------------ */
+  #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel, .dashboard__div__2__panel {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px; 
+  }
+  #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__panel div, .dashboard__div__2__panel div {
+    width: 80%;
+    height: 80px;
+    padding-top: 1rem;
+  }
+
+  /* ---------------------------------Dashboard Tabla------------------------------------ */
+  #dashboard .dashboard__div .dashboard__div__1 .dashboard__div__1__tabla, .dashboard__div__2__tabla {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    margin: 2rem 0;
+    border-radius: 10px; 
+    box-shadow: 4px 4px 4px rgb(81, 77, 77);
+    font-size: 12px;
+  }
+
+  table, table tbody, table tr, table td {
+    display: block;
+    width: 100%;
+    color: black;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    margin-bottom: 15px;
+  }
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  /* ---------------------------------Dashboard Panel 3------------------------------------ */
+  #dashboard .dashboard__div .dashboard__div__1 #dashboard__div__3__panel div, .dashboard__div__2__panel div {
+    width: 80%;
+    height: 100px;  
+  }
+
+  /* ---------------------------------Dashboard Panel Rentabilidad------------------------------------ */
+  #dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 3200px; 
+  
+  }
+
+  #dashboard .dashboard__div .dashboard__div__1 #dashboard__div__4__panel div {
+    height: 100px;
+    width: 80%; 
+  }
+}
+
 
 /* -------------------------Boton-------------------------- */
 

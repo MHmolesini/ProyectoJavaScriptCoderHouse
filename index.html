@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <title>Dashboard</title>
 </head>
@@ -34,31 +35,7 @@
         <li>
           <a href="#rentabilidad">
             <i class="bx bx-line-chart"></i>
-            <span class="link_name">Profitability</span>
-          </a>
-        </li>
-        <li>
-          <a href="#liquidez">
-            <i class="bx bx-coin-stack"></i>
-            <span class="link_name">Liquidity</span>
-          </a>
-        </li>
-        <li>
-          <a href="#endeudamiento">
-            <i class="bx bxs-credit-card"></i>
-            <span class="link_name">Indebtedness</span>
-          </a>
-        </li>
-        <li>
-          <a href="#gestion">
-            <i class="bx bxs-chalkboard"></i>
-            <span class="link_name">Management</span>
-          </a>
-        </li>
-        <li>
-          <a href="#valoracion">
-            <i class="bx bx-dollar"></i>
-            <span class="link_name">Assessment</span>
+            <span class="link_name">Ratios</span>
           </a>
         </li>
       </ul>
@@ -410,76 +387,542 @@
         <h2 id="rentabilidad">Ratios</h2>
         <div class="dashboard__div__1">
           <div class="dashboard__div__2__panel" id="dashboard__div__4__panel">
-            <div id="grossProfitMarginCard">Gross Profit Margin</div>
-            <div id="operatingProfitMarginCard">Operating Profit Margin</div>
-            <div id="netProfitMarginCard">Net Profit Margin</div>
-            <div id="ePSCard">EPS</div>
-            <div id="dividendYieldCard">Dividend Yield</div>
-            <div id="dividendPayoutRatioCard">Dividend Payout Ratio</div>
-            <div id="returnOnAssetsCard">Return On Assets</div>
-            <div id="returnOnEquityCard">Return On Equity</div>
+            <div id="grossProfitMarginCard" data-toggle="modal" data-target="#exampleModalCenter1">Gross Profit Margin</div>
+            <div id="operatingProfitMarginCard" data-toggle="modal" data-target="#exampleModalCenter2">Operating Profit Margin</div>
+            <div id="netProfitMarginCard" data-toggle="modal" data-target="#exampleModalCenter3">Net Profit Margin</div>
+            <div id="ePSCard" data-toggle="modal" data-target="#exampleModalCenter4">EPS</div>
+            <div id="dividendYieldCard" data-toggle="modal" data-target="#exampleModalCenter5">Dividend Yield</div>
+            <div id="dividendPayoutRatioCard" data-toggle="modal" data-target="#exampleModalCenter6">Dividend Payout Ratio</div>
+            <div id="returnOnAssetsCard" data-toggle="modal" data-target="#exampleModalCenter7">Return On Assets</div>
+            <div id="returnOnEquityCard" data-toggle="modal" data-target="#exampleModalCenter8">Return On Equity</div>
             
-            <div id="quickRatioCard">Quick Ratio</div>
-            <div id="currentRatioCard">Current Ratio</div>
-            <div id="interestCoverageCard">Interest Coverage</div>
-            <div id="cashFlowToDebtRatioCard">Cash Flow To Debt Ratio</div>
+            <div id="quickRatioCard" data-toggle="modal" data-target="#exampleModalCenter9">Quick Ratio</div>
+            <div id="currentRatioCard" data-toggle="modal" data-target="#exampleModalCenter10">Current Ratio</div>
+            <div id="interestCoverageCard" data-toggle="modal" data-target="#exampleModalCenter11">Interest Coverage</div>
+            <div id="cashFlowToDebtRatioCard" data-toggle="modal" data-target="#exampleModalCenter12">Cash Flow To Debt Ratio</div>
             
             <!-- <div id="debtToAssetsCard">Debt To Assets</div> -->
-            <div id="debtEquityRatioCard">Debt Equity Ratio</div>
+            <div id="debtEquityRatioCard" data-toggle="modal" data-target="#exampleModalCenter13">Debt Equity Ratio</div>
             <!-- <div id="debtToEquityCard">Debt To Equity</div> -->
             <!-- <div id="netDebtToEBITDACard">Net Debt To EBITDA</div> -->
             
-            <div id="inventoryTurnoverCard">Inventory Turnover</div>
-            <div id="assetTurnoverCard">Asset Turnover</div>
-            <div id="cashConversionCycleCard">Cash Conversion Cycle</div>
-            <div id="daysOfInventoryOutstandingCard">Days Of Inventory Outstanding</div>
-            <div id="daysOfPayablesOutstandingCard">Days Of Payables Outstanding</div>
-            <div id="daysOfSalesOutstandingCard">Days Of Sales Outstanding</div>
+            <div id="inventoryTurnoverCard" data-toggle="modal" data-target="#exampleModalCenter14">Inventory Turnover</div>
+            <div id="assetTurnoverCard" data-toggle="modal" data-target="#exampleModalCenter15">Asset Turnover</div>
+            <div id="cashConversionCycleCard" data-toggle="modal" data-target="#exampleModalCenter16">Cash Conversion Cycle</div>
+            <div id="daysOfInventoryOutstandingCard" data-toggle="modal" data-target="#exampleModalCenter17">Days Of Inventory Outstanding</div>
+            <div id="daysOfPayablesOutstandingCard" data-toggle="modal" data-target="#exampleModalCenter18">Days Of Payables Outstanding</div>
+            <div id="daysOfSalesOutstandingCard" data-toggle="modal" data-target="#exampleModalCenter19">Days Of Sales Outstanding</div>
             
-            <div id="priceEarningsRatioCard">Price Earnings Ratio</div>
-            <div id="priceSalesRatioCard">Price Sales Ratio</div>
-            <div id="priceCashFlowRatioCard">Price Cash Flow Ratio</div>
-            <div id="priceBookValueRatioCard">Price Book Value Ratio</div>
-            <div id="priceToFreeCashFlowsRatioCard">Price To Free Cash Flows Ratio</div>
+            <div id="priceEarningsRatioCard" data-toggle="modal" data-target="#exampleModalCenter20">Price Earnings Ratio</div>
+            <div id="priceSalesRatioCard" data-toggle="modal" data-target="#exampleModalCenter21">Price Sales Ratio</div>
+            <div id="priceCashFlowRatioCard" data-toggle="modal" data-target="#exampleModalCenter22">Price Cash Flow Ratio</div>
+            <div id="priceBookValueRatioCard" data-toggle="modal" data-target="#exampleModalCenter23">Price Book Value Ratio</div>
+            <div id="priceToFreeCashFlowsRatioCard" data-toggle="modal" data-target="#exampleModalCenter24">Price To Free Cash Flows Ratio</div>
             <!-- <div id="enterpriseValueOverEBITDACard">Enterprise Value Over EBITDA</div> -->
             <!-- <div id="grahamNumberCard">Graham Number</div> -->
-            <div id="priceEarningsToGrowthRatioCard">Price Earnings To Growth Ratio</div>
+            <div id="priceEarningsToGrowthRatioCard" data-toggle="modal" data-target="#exampleModalCenter25">Price Earnings To Growth Ratio</div>
             <!-- <div id="earningsYieldCard">Earnings Yield</div> -->
           </div>
         </div>
 
-        <!-- <h2 id="liquidez">Liquidez</h2>
-        <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel" id="dashboard__div__5__panel">
-            
+        <!-- Modal Gross Profit Margin-->
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Gross Profit Margin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Gross margin is a metric analysts use to assess a company's financial health. It is also referred to as the gross profit margin. It represent the ratio of profit to a company after the deduction of direct costs of production and/or the costs of services, including depreciation and amortization from the revenues generated by sales during the period to Total Revenue.
+                </p>
+                <p><strong>Formula: </strong>Gross Income / Revenue</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <h2 id="endeudamiento">Endeudamiento</h2>
-        <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel" id="dashboard__div__6__panel">
-            
+        <!-- Modal Operating Profit Margin-->
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle2">Operating Profit Margin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>It shows the share of income that is available to cover non-operating expenses, such as interest payments, which is why investors pay close attention to this indicator. Overly volatile operating margins are a key indicator of operational risk and predictability. In addition, analyzing a company's past operating margin is a good way to assess whether a significant increase in revenue can continue.
+                </p>
+                <p><strong>Formula: </strong>Operating income / Revenue</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <h2 id="gestion">Gestion</h2>
-        <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel" id="dashboard__div__7__panel">
-            
+        <!-- Modal Net Profit Margin-->
+        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle3">Net Profit Margin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Using this parameter, you can evaluate whether a company’s management brings significant profit from its sales, and whether operating and overhead costs are controlled. For example, if a company has growing income, but its operating expenses simultaneously grow faster than income, then its net profit will decrease. The best companies will aim to grow Net margin or keep it steady over time.
+                </p>
+                <p><strong>Formula: </strong>Net Income / Revenue</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <h2 id="valoracion">Valoracion</h2>
-        <div class="dashboard__div__1">
-          <div class="dashboard__div__1__panel" id="dashboard__div__8__panel">
-            
+        <!-- Modal EPS-->
+        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle4">EPS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Earnings per Share is the amount of earnings per share of issued, ordinary shares. When companies report financial results, earnings per share is one of the most commonly measured metrics.
+                <br>
+                It is worth noting that basic EPS is an approximate measure of a company's earnings per ordinary share. This metric is suitable for companies with a simple capital structure. Basic Earnings per Share do not take into account the dilution impact of convertible securities, which is important when analyzing the profits of companies with more complex capital structures.
+                </p>
+                <p><strong>Formula: </strong>Net Income / Average number of ordinary shares for the last 12 months</p>
+              </div>
+            </div>
           </div>
-        </div> -->
+        </div>
+
+        <!-- Modal Dividend Yield-->
+        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle5">Dividend Yield</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>The dividend yield shows how much a company pays in dividends per year relative to the price of the underlying asset that pays out the dividend. It’s listed as a percentage and is presented as a financial ratio. The word “yield” is often used in fixed income investing to convey how much an asset is paying out just to hold it outright.
+                </p>
+                <p><strong>Formula: </strong>Annual dividends per share / Price per share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Dividend Payout Ratio-->
+        <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle6">Dividend Payout Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>The Dividend payout ratio shows how much in dividends was paid to shareholders relative to the company's net profit. For example, it is the percentage of earnings that was paid by dividends by shareholders. This is calculated as total dividends per share declared including extra dividends for the primary share class of the company for the period divided by Earnings per share, multiplied by 100.
+                </p>
+                <p><strong>Formula: </strong>Dividends per share / Earnings per share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Return On Assets-->
+        <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle7">Return On Assets</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>ROA is calculated as Net income before discontinued operations by the average of Total assets over the past two periods. If the denominator is negative, then the field value will be empty. For quarterly ROA, the calculations take the LTM value of Net income.
+                </p>
+                <p><strong>Formula: </strong>Net income before discontinued operations / Total average assets</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Return On Equity-->
+        <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle8">Return On Equity</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Return on equity is Net income divided by the average of Total shareholders' equity for the last period. Note: if the Total shareholders’ equity is negative, the ratio will be empty or non-existent.
+                </p>
+                <p><strong>Formula: </strong>Net Income / Average of Total shareholders' equity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quick Ratio-->
+        <div class="modal fade" id="exampleModalCenter9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle9">Quick Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Quick ratio counts as Current assets minus Inventories, and the result is divided by Current liabilities.
+                  <br>
+                  If the denominator is negative, the field value will be empty. It is not calculated for banks.
+                </p>
+                <p><strong>Formula: </strong>(Total current assets - Inventories) / Total current liabilities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Current Ratio-->
+        <div class="modal fade" id="exampleModalCenter10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle10">Current Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Current ratio counts as Total current assets, divided into Total current liabilities. Note: if the denominator is negative, the result will be empty.
+                </p>
+                <p><strong>Formula: </strong>Total current assets / Total current liabilities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Interest Coverage-->
+        <div class="modal fade" id="exampleModalCenter11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle11">Interest Coverage</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Interest coverage counts as Operating income divided by Interest expense.
+                  <br>
+                  It measures the stock that a company has to pay interest on its debt. It is used to determine how easy it is for a company to pay its interest expense on outstanding debt.
+                </p>
+                <p><strong>Formula: </strong>Operating income / Interest expense</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Cash Flow To Debt Ratio-->
+        <div class="modal fade" id="exampleModalCenter12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle12">Cash Flow To Debt Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                </p>
+                <p><strong>Formula: </strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Debt Equity Ratio-->
+        <div class="modal fade" id="exampleModalCenter13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle13">Debt Equity Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Debt to equity ratio is the ratio of Total debt to Total equity. This ratio shows the ratio of debt to equity or, in other words, its financial leverage. That is, it shows whether a company’s activities are financed with its own funds or with the help of borrowed funds. In addition, it shows whether it will be able to cover a company's debts if shareholder equity is liquidated.
+                </p>
+                <p><strong>Formula: </strong>Total Debt / Total Equity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Inventory Turnover-->
+        <div class="modal fade" id="exampleModalCenter14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle14">Inventory Turnover</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Inventory turnover counts as Cost of goods sold divided by the average of Total inventories over the past two periods. It is not calculated for banks.
+                </p>
+                <p><strong>Formula: </strong>Cost of goods sold / Total inventories</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Asset Turnover-->
+        <div class="modal fade" id="exampleModalCenter15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle15">Asset Turnover</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Asset turnover can be used to measure the effectiveness with which a company uses its assets to generate income. The higher it is, the more efficient the company is, since higher ratios mean that the company generates more income per dollar of assets. Conversely, if the company has a low Asset turnover, this indicates that it is inefficiently using its assets. This ratio can vary by industry or sector.
+                </p>
+                <p><strong>Formula: </strong>Revenue / Average total assets for two periods</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Cash Conversion Cycle-->
+        <div class="modal fade" id="exampleModalCenter16" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle16">Cash Conversion Cycle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Cash conversion cycle is a metric that shows how quickly a company can convert its investments in inventory and other resources into cash flows from sales. It takes into account how much time a company may need to sell its inventory, collect receivables, and how long it has to pay its bills without incurring penalties.
+                </p>
+                <p><strong>Formula: </strong>Days Of Sales Outstanding + Days Of Inventory Outstanding - Days Of Payables Outstanding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Days Of Inventory Outstanding-->
+        <div class="modal fade" id="exampleModalCenter17" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle17">Days Of Inventory Outstanding</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>This is a parameter that shows the time in days that is spent turning a company's inventory into sales. It is not available for banks.
+                  <br>
+                  This metric is an indicator of a company's inventory management. Low values are preferred for Days Inventory, which means items are selling faster and there is a quick turnaround. Large values indicate that a company has invested too much in stocks and does not have time to sell them.
+                </p>
+                <p><strong>Formula: </strong>Average inventories / Cost of goods sold * Days in period</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Days Of Payables Outstanding-->
+        <div class="modal fade" id="exampleModalCenter18" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle18">Days Of Payables Outstanding</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Days payable counts as Accounts payable divided by Cost of goods sold and multiplied by the number of days in a period. It is not available for banks.
+                  <br>
+                  Companies with high Days payable have the opportunity to have available funds for short-term investments and increase working capital and free cash flow. It is worth considering that the high values of Days payable may not always be a positive sign.
+                </p>
+                <p><strong>Formula: </strong>Accounts Payable / Cost of goods sold * Days in period</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Days Of Sales Outstanding-->
+        <div class="modal fade" id="exampleModalCenter19" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle19">Days Of Sales Outstanding</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Days Sales Outstanding Ratio counts as Accounts Receivable divided by Revenue and multiplied by the number of days in the period. It is not calculated for banks.
+                  <br>
+                  This value is the average number of days spent on revenue after sales. Thus, it shows how successfully a company operates with receivables.
+                </p>
+                <p><strong>Formula: </strong>Accounts receivable / Revenue * Days in period</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Price Earnings Ratio-->
+        <div class="modal fade" id="exampleModalCenter20" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle20">Price Earnings Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>The Price to earnings ratio measures the market price of a stock relative to its earnings per share. This metric shows how much investors are willing to pay for the profits the company generates.
+                </p>
+                <p><strong>Formula: </strong>Price per share / Diluted earnings per share TTM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Price Sales Ratio-->
+        <div class="modal fade" id="exampleModalCenter21" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle21">Price Sales Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Price to sales ratio is the ratio of a company’s stock price to its total sales. This ratio shows you how much money investors are paying for every dollar in sales.
+                </p>
+                <p><strong>Formula: </strong>Price per share / Revenues per share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Price Cash Flow Ratio-->
+        <div class="modal fade" id="exampleModalCenter22" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle22">Price Cash Flow Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Price to operating cash flow is the ratio of the share price to Operating cash flow. Essentially, Price to operating cash flow measures how much money a company generates relative to its share price.
+                </p>
+                <p><strong>Formula: </strong>Price to cash flow ratio = Price close * Common shares outstanding / Cash from operating activities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Price Book Value Ratio-->
+        <div class="modal fade" id="exampleModalCenter23" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle23">Price Book Value Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>The Price to book ratio is the result of dividing the current market share price by Book value per share.
+                  <br>
+                  The Price to book ratio shows how much value is in the company relative to the share price. Book value is the sum of all the company parts if it were to be liquidated today. A lower Price to book ratio may mean a company is undervalued because it’s trading for less than what it’s worth fully liquidated.
+                </p>
+                <p><strong>Formula: </strong>Price per share / Book Value per Share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Price To Free Cash Flows Ratio-->
+        <div class="modal fade" id="exampleModalCenter24" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle24">Price To Free Cash Flows Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Price to free cash flow is an equity valuation metric used to compare a company’s per-share market price to its per-share amount of free cash flow.
+                </p>
+                <p><strong>Formula: </strong>Price to free cash flow ratio = Price close * Common shares outstanding / Free cash flow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Price Earnings To Growth Ratio-->
+        <div class="modal fade" id="exampleModalCenter25" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle25">Price Earnings To Growth Ratio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>The PEG ratio is used to find undervalued growth stocks. It is the P/E ratio (price-to-earnings ratio) divided by the growth rate. Considering a good growth stock grows at a rate equal to its P/E, the PEG Ratio can be used to find companies whose growth has not yet been priced into its stock price i.e. the stock is inexpensive based on the expected rate of growth.
+                </p>
+                <p><strong>Formula: </strong>Price / EPS / EPS growth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </div>
   </main>
     
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./js/index.js"></script>
 
 </body>
