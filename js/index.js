@@ -2,8 +2,8 @@
 
 const botonSwitch = document.querySelector("#switch__boton__input");
 botonSwitch.addEventListener('click', () => {
-    document.body.classList.toggle('.dark');
-    botonSwitch.classList.toggle('.active');
+    document.body.classList.toggle('dark');
+    botonSwitch.classList.toggle('active');
 });
 
 // -----------------------------------------------------------------------
